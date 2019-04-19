@@ -33,6 +33,7 @@ import com.l2jmobius.Config;
 import com.l2jmobius.Server;
 import com.l2jmobius.commons.database.DatabaseBackup;
 import com.l2jmobius.commons.database.DatabaseFactory;
+import com.l2jmobius.commons.util.PropertiesParser;
 import com.l2jmobius.gameserver.network.loginserverpackets.game.ServerStatus;
 import com.l2jmobius.loginserver.network.ClientNetworkManager;
 import com.l2jmobius.loginserver.ui.Gui;
@@ -43,8 +44,10 @@ import com.l2jmobius.loginserver.ui.Gui;
 public final class LoginServer
 {
 	public final Logger LOGGER = Logger.getLogger(LoginServer.class.getName());
-	
-	public static final int PROTOCOL_REV = 0x0106;
+
+    private static final String LOGIN_CONFIG_FILE = "./config/LoginServer.ini";
+
+    public static final int PROTOCOL_REV = 0x0106;
 	private static LoginServer INSTANCE;
 	private GameServerListener _gameServerListener;
 	private Thread _restartLoginServer;
@@ -63,9 +66,12 @@ public final class LoginServer
 	private LoginServer() throws Exception
 	{
 		Server.serverMode = Server.MODE_LOGINSERVER;
+
+        final PropertiesParser serverSettings = new PropertiesParser(LOGIN_CONFIG_FILE);
+        final Boolean LOGIN_IN_GUI_INTERFACE = serverSettings.getBoolean("GameServerInGuiInterface", true);
 		
 		// GUI
-		if (false && !GraphicsEnvironment.isHeadless())
+		if (LOGIN_IN_GUI_INTERFACE && !GraphicsEnvironment.isHeadless())
 		{
 			System.out.println("LoginServer: Running in GUI mode.");
 			new Gui();

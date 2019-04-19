@@ -33,6 +33,7 @@ import com.l2jmobius.Server;
 import com.l2jmobius.commons.concurrent.ThreadPool;
 import com.l2jmobius.commons.database.DatabaseFactory;
 import com.l2jmobius.commons.util.DeadLockDetector;
+import com.l2jmobius.commons.util.PropertiesParser;
 import com.l2jmobius.gameserver.cache.HtmCache;
 import com.l2jmobius.gameserver.data.sql.impl.AnnouncementsTable;
 import com.l2jmobius.gameserver.data.sql.impl.CharNameTable;
@@ -151,7 +152,9 @@ import com.l2jmobius.gameserver.util.Broadcast;
 
 public class GameServer
 {
-	private static final Logger LOGGER = Logger.getLogger(GameServer.class.getName());
+    private static final String SERVER_CONFIG_FILE = "./config/Server.ini";
+
+    private static final Logger LOGGER = Logger.getLogger(GameServer.class.getName());
 	
 	private final DeadLockDetector _deadDetectThread;
 	private static GameServer INSTANCE;
@@ -171,9 +174,12 @@ public class GameServer
 	{
 		final long serverLoadStart = System.currentTimeMillis();
 		Server.serverMode = Server.MODE_GAMESERVER;
+
+        final PropertiesParser serverSettings = new PropertiesParser(SERVER_CONFIG_FILE);
+        final Boolean GAMESERVER_IN_GUI_INTERFACE = serverSettings.getBoolean("GameServerInGuiInterface", true);
 		
 		// GUI
-		if (false && !GraphicsEnvironment.isHeadless())
+		if (GAMESERVER_IN_GUI_INTERFACE && !GraphicsEnvironment.isHeadless())
 		{
 			System.out.println("GameServer: Running in GUI mode.");
 			new Gui();

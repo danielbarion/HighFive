@@ -102,7 +102,7 @@ public final class Config
 	private static final String CHAT_FILTER_FILE = "./config/chatfilter.txt";
 	private static final String HEXID_FILE = "./config/hexid.txt";
 	private static final String IPCONFIG_FILE = "./config/ipconfig.xml";
-	
+
 	// --------------------------------------------------
 	// Custom Config File Definitions
 	// --------------------------------------------------
@@ -138,7 +138,7 @@ public final class Config
 	private static final String CUSTOM_WAREHOUSE_SORTING_CONFIG_FILE = "./config/Custom/WarehouseSorting.ini";
 	private static final String CUSTOM_WEDDING_CONFIG_FILE = "./config/Custom/Wedding.ini";
 	private static final String CUSTOM_WALKER_BOT_PROTECTION_CONFIG_FILE = "./config/Custom/WalkerBotProtection.ini";
-	
+
 	// --------------------------------------------------
 	// Variable Definitions
 	// --------------------------------------------------
