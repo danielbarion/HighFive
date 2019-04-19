@@ -1,0 +1,1666 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="9000" levels="1" name="PC room private weapon strengthening order sheet - D grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9001" levels="1" name="PC room private armor strengthening order sheet - C grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9002" levels="1" name="PC room private armor strengthening order sheet - B grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9003" levels="1" name="PC room private weapon strengthening order sheet - A grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9004" levels="1" name="PC room private armor strengthening order sheet - S grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9005" levels="1" name="PC room private blessed weapon strengthening order sheet - D grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9006" levels="1" name="PC room private blessed weapon strengthening order sheet - C grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9007" levels="1" name="PC room private blessed weapon strengthening order sheet - B grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9008" levels="1" name="PC room private blessed weapon strengthening order sheet - A grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9009" levels="1" name="PC room private blessed weapon strengthening order sheet - S grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9010" levels="1" name="Cool air cannon">
+		<!-- Fires the cool air cannon It can only be used during humid weather. -->
+		<set name="castRange" val="200" />
+		<set name="coolTime" val="700" />
+		<set name="effectPoint" val="-10000" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1300" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15364" /> <!-- Cool Pack -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="13270" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="9011" levels="1" name="Might">
+		<!-- Increases P. Atk. by 15% for 60 minutes. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9012" levels="1" name="Shield">
+		<!-- Increases P. Def. by 15% for 60 minutes. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PD_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9013" levels="1" name="Wind Walk">
+		<!-- Increases Speed by 15% for 60 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9014" levels="1" name="Focus">
+		<!-- Increases critical attack likelihood by 30% for 60 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9015" levels="1" name="Death Whisper">
+		<!-- Increases critical attack influence by 35% for 60 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmg" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9016" levels="1" name="Guidance">
+		<!-- Increases accuracy by 4 for 60 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="HIT_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9017" levels="1" name="Blessed Shield">
+		<!-- Increases shield defense likelihood by 30% for 60 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="SHIELD_PROB_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="rShld" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9018" levels="1" name="Blessed Body">
+		<!-- Increases maximum HP by 35% for 60 minutes. -->
+		<set name="abnormalLvl" val="7" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAX_HP_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9019" levels="1" name="Haste">
+		<!-- Increases Atk. Spd. by 33% for 60 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9020" levels="1" name="Vampiric Rage">
+		<!-- Restores 9% of general physical damage inflicted by enemies as HP for 60 minutes. -->
+		<set name="abnormalLvl" val="5" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9021" levels="1" name="Berserker Spirit">
+		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 60 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="BERSERKER" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.08" />
+				<mul stat="pAtkSpd" val="1.08" />
+				<mul stat="mAtk" val="1.16" />
+				<mul stat="mAtkSpd" val="1.08" />
+				<add stat="runSpd" val="8" />
+				<mul stat="pDef" val="0.92" />
+				<mul stat="mDef" val="0.84" />
+				<sub stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9022" levels="1" name="Magic Barrier">
+		<!-- Increases magic resistance by 30% for 60 minutes. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MD_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mDef" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9023" levels="1" name="Blessed Soul">
+		<!-- Increases maximum MP by 35% for 60 minutes. -->
+		<set name="abnormalLvl" val="7" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAX_MP_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9024" levels="1" name="Empower">
+		<!-- Increases M. Atk. by 75% for 60 minutes. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MA_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9025" levels="1" name="Acumen">
+		<!-- Increases Casting Spd. by 30% for 60 minutes. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9026" levels="1" name="Clarity">
+		<!-- For 60 minutes, decreases physical skill MP consumption by 20%, magic skill's MP consumption by 10%, and song/dance skill's MP consumption by 20%. Consumes 3 Spirit Ore. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CHEAP_MAGIC" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="physicalMpConsumeRate" val="0.8" />
+				<mul stat="magicalMpConsumeRate" val="0.9" />
+				<mul stat="danceMpConsumeRate" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9027" levels="1" name="PC cafe personal instant lottery">
+		<table name="#extractableItems">
+			15359,1,0.001;15360,1,0.1;15361,1,2.0;15362,1,20.0;15363,1,77.899
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15358" /> <!-- For PC Cafe exclusive Instant Lottery - 30-day limited period -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9028" levels="1" name="Cool air cannon of fortune">
+		<!-- Fires the cool air cannon of fortune. It can only be used during humid weather. -->
+		<set name="coolTime" val="700" />
+		<set name="effectPoint" val="-10000" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15365" /> <!-- Lucky Cool Pack -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9029" levels="1" name="Watermelon Seed">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15366" /> <!-- Watermelon seed -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="13271" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9030" levels="1" name="Honey Watermelon Seed">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15367" /> <!-- Honey Watermelon Seed -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="13275" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9031" levels="1" name="Copied Watermelon Seed">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15368" /> <!-- Copied Watermelon Seed -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="13271" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9032" levels="1" name="Copied Honey Watermelon Seed">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15369" /> <!-- Copied Honey Watermelon Seed -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="13275" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9033" levels="1" name="Herdsman's Love Scroll">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15381" /> <!-- Event - Herdsman's Love Scroll - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9034" levels="1" name="Vitality Belt Enchant Scroll">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15382" /> <!-- Event - Vitality Belt Enchant Scroll - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9035" levels="1" name="Steamed Rice Cake">
+		<!-- Vitality is maintained for 10 minutes. Delicious steamed rice cake effect. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="VP_KEEP" />
+		<set name="abnormalVisualEffect" val="VP_KEEP" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.etc.event_steamed_rice_cake_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15379" /> <!-- Steamed Rice Cake -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9036" levels="1" name="Special July 7th Parcel">
+		<table name="#extractableItems">
+			15379,5,15384,1,65;15379,5,15385,1,24.99;15379,5,15386,1,10;15379,5,15387,1,0.01
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15372" /> <!-- Special July 7th Parcel -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9037" levels="1" name="Special July 7th Parcel (Event)">
+		<table name="#extractableItems">
+			15380,5,15389,1,65;15380,5,15390,1,24.99;15380,5,15391,1,10;15380,5,15392,1,0.01
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15376" /> <!-- Special July 7th Parcel (Event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9038" levels="1" name="Steamed Rice Cake">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15379" /> <!-- Steamed Rice Cake -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp">
+				<param value="20000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9039" levels="1" name="Steamed Rice Cake">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15380" /> <!-- Steamed Rice Cake (Event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp">
+				<param value="20000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9040" levels="1" name="PC Cafe Points">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15426" /> <!-- Hero's Summon Point - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="604800000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9041" levels="1" name="Sixth Anniversary Cake">
+		<!-- Sixth Anniversary celebratory cake. Vitality is recovered for 1 hour when acquiring Exp. -->
+		<set name="abnormalLvl" val="8" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="VP_UP" />
+		<set name="abnormalVisualEffect" val="VP_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.event_six_party_cake_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15427" /> <!-- 6th Anniversary Party Cake - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9042" levels="1" name="6th Anniversary Cube">
+		<table name="#extractableItems">
+			13143,1,0.0002;14105,1,0.0002;14108,1,0.0002;14109,1,0.0002;14110,1,0.0002;14111,1,0.0002;13144,1,0.0002;14106,1,0.0002;14112,1,0.0002;14113,1,0.0002;14114,1,0.0002;13145,1,0.0002;14107,1,0.0002;14115,1,0.0002;14116,1,0.0002;14117,1,0.0002;13887,1,0.0002;9514,1,0.00033;9515,1,0.00033;9516,1,0.00033;9517,1,0.00033;9518,1,0.00033;9529,1,0.00033;9519,1,0.00033;9520,1,0.00033;9521,1,0.00033;9522,1,0.00033;9523,1,0.00033;9524,1,0.00033;9525,1,0.00033;9526,1,0.00033;9527,1,0.00033;9528,1,0.00033;13886,1,0.00033;13457,1,0.00005;13458,1,0.00005;13459,1,0.00005;13460,1,0.00005;13461,1,0.00005;13462,1,0.00005;13463,1,0.00005;13464,1,0.00005;13465,1,0.00005;13466,1,0.00005;13467,1,0.00005;13468,1,0.00005;13469,1,0.00005;13470,1,0.00005;10215,1,0.00009;10216,1,0.00009;10217,1,0.00009;10218,1,0.00009;10219,1,0.00009;10220,1,0.00009;10221,1,0.00009;10222,1,0.00009;10223,1,0.00009;10224,1,0.00009;10225,1,0.00009;10226,1,0.00009;9380,1,0.00016;9446,1,0.00016;9384,1,0.00016;9449,1,0.00016;9450,1,0.00016;9445,1,0.00016;9443,1,0.00016;9442,1,0.00016;10252,1,0.00016;9448,1,0.00016;10253,1,0.00016;9384,1,0.00016;9444,1,0.00016;9447,1,0.00016;15428,1,0.1111;10480,1,0.0004;10481,1,0.0004;10482,1,0.0004;13071,1,0.0002;13072,1,0.0002;13073,1,0.0002;12365,1,0.1466;12366,1,0.1466;12370,1,0.1466;12371,1,0.1466;729,1,0.1466;730,1,0.1466;959,1,0.1466;960,1,0.1466;5908,1,0.0489;5911,1,0.0489;5914,1,0.0489;9570,1,0.0489;9571,1,0.0489;9572,1,0.0489;13420,1,0.1466;15427,1,9.6773;13421,1,4.8387;14683,1,3.2174;14684,1,3.2174;14685,1,3.2174;14686,1,3.2174;14687,1,3.2174;14689,1,3.2174;14690,1,3.2174;14691,1,3.2174;14692,1,3.2174;14693,1,3.2174;14695,1,3.2174;14696,1,3.2174;14697,1,3.2174;14698,1,3.2174;14699,1,3.2174;8751,1,2.0161;8752,1,2.0161;9575,1,2.0161;10485,1,2.0161;8761,1,2.0161;8762,1,2.0161;9576,1,2.0161;10486,1,2.0161;2133,1,6.4516;2134,1,12.9032
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="82800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9043" levels="1" name="6th Anniversary Cube">
+		<table name="#extractableItems">
+			13143,1,0.0002;14105,1,0.0002;14108,1,0.0002;14109,1,0.0002;14110,1,0.0002;14111,1,0.0002;13144,1,0.0002;14106,1,0.0002;14112,1,0.0002;14113,1,0.0002;14114,1,0.0002;13145,1,0.0002;14107,1,0.0002;14115,1,0.0002;14116,1,0.0002;14117,1,0.0002;13887,1,0.0002;9514,1,0.00033;9515,1,0.00033;9516,1,0.00033;9517,1,0.00033;9518,1,0.00033;9529,1,0.00033;9519,1,0.00033;9520,1,0.00033;9521,1,0.00033;9522,1,0.00033;9523,1,0.00033;9524,1,0.00033;9525,1,0.00033;9526,1,0.00033;9527,1,0.00033;9528,1,0.00033;13886,1,0.00033;13457,1,0.00005;13458,1,0.00005;13459,1,0.00005;13460,1,0.00005;13461,1,0.00005;13462,1,0.00005;13463,1,0.00005;13464,1,0.00005;13465,1,0.00005;13466,1,0.00005;13467,1,0.00005;13468,1,0.00005;13469,1,0.00005;13470,1,0.00005;10215,1,0.00009;10216,1,0.00009;10217,1,0.00009;10218,1,0.00009;10219,1,0.00009;10220,1,0.00009;10221,1,0.00009;10222,1,0.00009;10223,1,0.00009;10224,1,0.00009;10225,1,0.00009;10226,1,0.00009;9380,1,0.00016;9446,1,0.00016;9384,1,0.00016;9449,1,0.00016;9450,1,0.00016;9445,1,0.00016;9443,1,0.00016;9442,1,0.00016;10252,1,0.00016;9448,1,0.00016;10253,1,0.00016;9384,1,0.00016;9444,1,0.00016;9447,1,0.00016;15428,1,0.1111;10480,1,0.0004;10481,1,0.0004;10482,1,0.0004;13071,1,0.0002;13072,1,0.0002;13073,1,0.0002;12365,1,0.1466;12366,1,0.1466;12370,1,0.1466;12371,1,0.1466;729,1,0.1466;730,1,0.1466;959,1,0.1466;960,1,0.1466;5908,1,0.0489;5911,1,0.0489;5914,1,0.0489;9570,1,0.0489;9571,1,0.0489;9572,1,0.0489;13420,1,0.1466;15427,1,9.6773;13421,1,4.8387;14683,1,3.2174;14684,1,3.2174;14685,1,3.2174;14686,1,3.2174;14687,1,3.2174;14689,1,3.2174;14690,1,3.2174;14691,1,3.2174;14692,1,3.2174;14693,1,3.2174;14695,1,3.2174;14696,1,3.2174;14697,1,3.2174;14698,1,3.2174;14699,1,3.2174;8751,1,2.0161;8752,1,2.0161;9575,1,2.0161;10485,1,2.0161;8761,1,2.0161;8762,1,2.0161;9576,1,2.0161;10486,1,2.0161;2133,1,6.4516;2134,1,12.9032
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="82800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9044" levels="1" name="6th Anniversary Cube">
+		<table name="#extractableItems">
+			13143,1,0.0002;14105,1,0.0002;14108,1,0.0002;14109,1,0.0002;14110,1,0.0002;14111,1,0.0002;13144,1,0.0002;14106,1,0.0002;14112,1,0.0002;14113,1,0.0002;14114,1,0.0002;13145,1,0.0002;14107,1,0.0002;14115,1,0.0002;14116,1,0.0002;14117,1,0.0002;13887,1,0.0002;9514,1,0.00033;9515,1,0.00033;9516,1,0.00033;9517,1,0.00033;9518,1,0.00033;9529,1,0.00033;9519,1,0.00033;9520,1,0.00033;9521,1,0.00033;9522,1,0.00033;9523,1,0.00033;9524,1,0.00033;9525,1,0.00033;9526,1,0.00033;9527,1,0.00033;9528,1,0.00033;13886,1,0.00033;13457,1,0.00005;13458,1,0.00005;13459,1,0.00005;13460,1,0.00005;13461,1,0.00005;13462,1,0.00005;13463,1,0.00005;13464,1,0.00005;13465,1,0.00005;13466,1,0.00005;13467,1,0.00005;13468,1,0.00005;13469,1,0.00005;13470,1,0.00005;10215,1,0.00009;10216,1,0.00009;10217,1,0.00009;10218,1,0.00009;10219,1,0.00009;10220,1,0.00009;10221,1,0.00009;10222,1,0.00009;10223,1,0.00009;10224,1,0.00009;10225,1,0.00009;10226,1,0.00009;9380,1,0.00016;9446,1,0.00016;9384,1,0.00016;9449,1,0.00016;9450,1,0.00016;9445,1,0.00016;9443,1,0.00016;9442,1,0.00016;10252,1,0.00016;9448,1,0.00016;10253,1,0.00016;9384,1,0.00016;9444,1,0.00016;9447,1,0.00016;15428,1,0.1111;10480,1,0.0004;10481,1,0.0004;10482,1,0.0004;13071,1,0.0002;13072,1,0.0002;13073,1,0.0002;12365,1,0.1466;12366,1,0.1466;12370,1,0.1466;12371,1,0.1466;729,1,0.1466;730,1,0.1466;959,1,0.1466;960,1,0.1466;5908,1,0.0489;5911,1,0.0489;5914,1,0.0489;9570,1,0.0489;9571,1,0.0489;9572,1,0.0489;13420,1,0.1466;15427,1,9.6773;13421,1,4.8387;14683,1,3.2174;14684,1,3.2174;14685,1,3.2174;14686,1,3.2174;14687,1,3.2174;14689,1,3.2174;14690,1,3.2174;14691,1,3.2174;14692,1,3.2174;14693,1,3.2174;14695,1,3.2174;14696,1,3.2174;14697,1,3.2174;14698,1,3.2174;14699,1,3.2174;8751,1,2.0161;8752,1,2.0161;9575,1,2.0161;10485,1,2.0161;8761,1,2.0161;8762,1,2.0161;9576,1,2.0161;10486,1,2.0161;2133,1,6.4516;2134,1,12.9032
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="82800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9045" levels="1" name="6th Anniversary Cube">
+		<table name="#extractableItems">
+			13143,1,0.0002;14105,1,0.0002;14108,1,0.0002;14109,1,0.0002;14110,1,0.0002;14111,1,0.0002;13144,1,0.0002;14106,1,0.0002;14112,1,0.0002;14113,1,0.0002;14114,1,0.0002;13145,1,0.0002;14107,1,0.0002;14115,1,0.0002;14116,1,0.0002;14117,1,0.0002;13887,1,0.0002;9514,1,0.00033;9515,1,0.00033;9516,1,0.00033;9517,1,0.00033;9518,1,0.00033;9529,1,0.00033;9519,1,0.00033;9520,1,0.00033;9521,1,0.00033;9522,1,0.00033;9523,1,0.00033;9524,1,0.00033;9525,1,0.00033;9526,1,0.00033;9527,1,0.00033;9528,1,0.00033;13886,1,0.00033;13457,1,0.00005;13458,1,0.00005;13459,1,0.00005;13460,1,0.00005;13461,1,0.00005;13462,1,0.00005;13463,1,0.00005;13464,1,0.00005;13465,1,0.00005;13466,1,0.00005;13467,1,0.00005;13468,1,0.00005;13469,1,0.00005;13470,1,0.00005;10215,1,0.00009;10216,1,0.00009;10217,1,0.00009;10218,1,0.00009;10219,1,0.00009;10220,1,0.00009;10221,1,0.00009;10222,1,0.00009;10223,1,0.00009;10224,1,0.00009;10225,1,0.00009;10226,1,0.00009;9380,1,0.00016;9446,1,0.00016;9384,1,0.00016;9449,1,0.00016;9450,1,0.00016;9445,1,0.00016;9443,1,0.00016;9442,1,0.00016;10252,1,0.00016;9448,1,0.00016;10253,1,0.00016;9384,1,0.00016;9444,1,0.00016;9447,1,0.00016;15428,1,0.1111;10480,1,0.0004;10481,1,0.0004;10482,1,0.0004;13071,1,0.0002;13072,1,0.0002;13073,1,0.0002;12365,1,0.1466;12366,1,0.1466;12370,1,0.1466;12371,1,0.1466;729,1,0.1466;730,1,0.1466;959,1,0.1466;960,1,0.1466;5908,1,0.0489;5911,1,0.0489;5914,1,0.0489;9570,1,0.0489;9571,1,0.0489;9572,1,0.0489;13420,1,0.1466;15427,1,9.6773;13421,1,4.8387;14683,1,3.2174;14684,1,3.2174;14685,1,3.2174;14686,1,3.2174;14687,1,3.2174;14689,1,3.2174;14690,1,3.2174;14691,1,3.2174;14692,1,3.2174;14693,1,3.2174;14695,1,3.2174;14696,1,3.2174;14697,1,3.2174;14698,1,3.2174;14699,1,3.2174;8751,1,2.0161;8752,1,2.0161;9575,1,2.0161;10485,1,2.0161;8761,1,2.0161;8762,1,2.0161;9576,1,2.0161;10486,1,2.0161;2133,1,6.4516;2134,1,12.9032
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="82800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9046" levels="1" name="6th Anniversary Cube">
+		<table name="#extractableItems">
+			13143,1,0.0002;14105,1,0.0002;14108,1,0.0002;14109,1,0.0002;14110,1,0.0002;14111,1,0.0002;13144,1,0.0002;14106,1,0.0002;14112,1,0.0002;14113,1,0.0002;14114,1,0.0002;13145,1,0.0002;14107,1,0.0002;14115,1,0.0002;14116,1,0.0002;14117,1,0.0002;13887,1,0.0002;9514,1,0.00033;9515,1,0.00033;9516,1,0.00033;9517,1,0.00033;9518,1,0.00033;9529,1,0.00033;9519,1,0.00033;9520,1,0.00033;9521,1,0.00033;9522,1,0.00033;9523,1,0.00033;9524,1,0.00033;9525,1,0.00033;9526,1,0.00033;9527,1,0.00033;9528,1,0.00033;13886,1,0.00033;13457,1,0.00005;13458,1,0.00005;13459,1,0.00005;13460,1,0.00005;13461,1,0.00005;13462,1,0.00005;13463,1,0.00005;13464,1,0.00005;13465,1,0.00005;13466,1,0.00005;13467,1,0.00005;13468,1,0.00005;13469,1,0.00005;13470,1,0.00005;10215,1,0.00009;10216,1,0.00009;10217,1,0.00009;10218,1,0.00009;10219,1,0.00009;10220,1,0.00009;10221,1,0.00009;10222,1,0.00009;10223,1,0.00009;10224,1,0.00009;10225,1,0.00009;10226,1,0.00009;9380,1,0.00016;9446,1,0.00016;9384,1,0.00016;9449,1,0.00016;9450,1,0.00016;9445,1,0.00016;9443,1,0.00016;9442,1,0.00016;10252,1,0.00016;9448,1,0.00016;10253,1,0.00016;9384,1,0.00016;9444,1,0.00016;9447,1,0.00016;15428,1,0.1111;10480,1,0.0004;10481,1,0.0004;10482,1,0.0004;13071,1,0.0002;13072,1,0.0002;13073,1,0.0002;12365,1,0.1466;12366,1,0.1466;12370,1,0.1466;12371,1,0.1466;729,1,0.1466;730,1,0.1466;959,1,0.1466;960,1,0.1466;5908,1,0.0489;5911,1,0.0489;5914,1,0.0489;9570,1,0.0489;9571,1,0.0489;9572,1,0.0489;13420,1,0.1466;15427,1,9.6773;13421,1,4.8387;14683,1,3.2174;14684,1,3.2174;14685,1,3.2174;14686,1,3.2174;14687,1,3.2174;14689,1,3.2174;14690,1,3.2174;14691,1,3.2174;14692,1,3.2174;14693,1,3.2174;14695,1,3.2174;14696,1,3.2174;14697,1,3.2174;14698,1,3.2174;14699,1,3.2174;8751,1,2.0161;8752,1,2.0161;9575,1,2.0161;10485,1,2.0161;8761,1,2.0161;8762,1,2.0161;9576,1,2.0161;10486,1,2.0161;2133,1,6.4516;2134,1,12.9032
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="82800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9047" levels="1" name="6th Anniversary Cube">
+		<table name="#extractableItems">
+			13143,1,0.0002;14105,1,0.0002;14108,1,0.0002;14109,1,0.0002;14110,1,0.0002;14111,1,0.0002;13144,1,0.0002;14106,1,0.0002;14112,1,0.0002;14113,1,0.0002;14114,1,0.0002;13145,1,0.0002;14107,1,0.0002;14115,1,0.0002;14116,1,0.0002;14117,1,0.0002;13887,1,0.0002;9514,1,0.00033;9515,1,0.00033;9516,1,0.00033;9517,1,0.00033;9518,1,0.00033;9529,1,0.00033;9519,1,0.00033;9520,1,0.00033;9521,1,0.00033;9522,1,0.00033;9523,1,0.00033;9524,1,0.00033;9525,1,0.00033;9526,1,0.00033;9527,1,0.00033;9528,1,0.00033;13886,1,0.00033;13457,1,0.00005;13458,1,0.00005;13459,1,0.00005;13460,1,0.00005;13461,1,0.00005;13462,1,0.00005;13463,1,0.00005;13464,1,0.00005;13465,1,0.00005;13466,1,0.00005;13467,1,0.00005;13468,1,0.00005;13469,1,0.00005;13470,1,0.00005;10215,1,0.00009;10216,1,0.00009;10217,1,0.00009;10218,1,0.00009;10219,1,0.00009;10220,1,0.00009;10221,1,0.00009;10222,1,0.00009;10223,1,0.00009;10224,1,0.00009;10225,1,0.00009;10226,1,0.00009;9380,1,0.00016;9446,1,0.00016;9384,1,0.00016;9449,1,0.00016;9450,1,0.00016;9445,1,0.00016;9443,1,0.00016;9442,1,0.00016;10252,1,0.00016;9448,1,0.00016;10253,1,0.00016;9384,1,0.00016;9444,1,0.00016;9447,1,0.00016;15428,1,0.1111;10480,1,0.0004;10481,1,0.0004;10482,1,0.0004;13071,1,0.0002;13072,1,0.0002;13073,1,0.0002;12365,1,0.1466;12366,1,0.1466;12370,1,0.1466;12371,1,0.1466;729,1,0.1466;730,1,0.1466;959,1,0.1466;960,1,0.1466;5908,1,0.0489;5911,1,0.0489;5914,1,0.0489;9570,1,0.0489;9571,1,0.0489;9572,1,0.0489;13420,1,0.1466;15427,1,9.6773;13421,1,4.8387;14683,1,3.2174;14684,1,3.2174;14685,1,3.2174;14686,1,3.2174;14687,1,3.2174;14689,1,3.2174;14690,1,3.2174;14691,1,3.2174;14692,1,3.2174;14693,1,3.2174;14695,1,3.2174;14696,1,3.2174;14697,1,3.2174;14698,1,3.2174;14699,1,3.2174;8751,1,2.0161;8752,1,2.0161;9575,1,2.0161;10485,1,2.0161;8761,1,2.0161;8762,1,2.0161;9576,1,2.0161;10486,1,2.0161;2133,1,6.4516;2134,1,12.9032
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="82800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9048" levels="1" name="6th Anniversary Cube">
+		<table name="#extractableItems">
+			13143,1,0.0002;14105,1,0.0002;14108,1,0.0002;14109,1,0.0002;14110,1,0.0002;14111,1,0.0002;13144,1,0.0002;14106,1,0.0002;14112,1,0.0002;14113,1,0.0002;14114,1,0.0002;13145,1,0.0002;14107,1,0.0002;14115,1,0.0002;14116,1,0.0002;14117,1,0.0002;13887,1,0.0002;9514,1,0.00033;9515,1,0.00033;9516,1,0.00033;9517,1,0.00033;9518,1,0.00033;9529,1,0.00033;9519,1,0.00033;9520,1,0.00033;9521,1,0.00033;9522,1,0.00033;9523,1,0.00033;9524,1,0.00033;9525,1,0.00033;9526,1,0.00033;9527,1,0.00033;9528,1,0.00033;13886,1,0.00033;13457,1,0.00005;13458,1,0.00005;13459,1,0.00005;13460,1,0.00005;13461,1,0.00005;13462,1,0.00005;13463,1,0.00005;13464,1,0.00005;13465,1,0.00005;13466,1,0.00005;13467,1,0.00005;13468,1,0.00005;13469,1,0.00005;13470,1,0.00005;10215,1,0.00009;10216,1,0.00009;10217,1,0.00009;10218,1,0.00009;10219,1,0.00009;10220,1,0.00009;10221,1,0.00009;10222,1,0.00009;10223,1,0.00009;10224,1,0.00009;10225,1,0.00009;10226,1,0.00009;9380,1,0.00016;9446,1,0.00016;9384,1,0.00016;9449,1,0.00016;9450,1,0.00016;9445,1,0.00016;9443,1,0.00016;9442,1,0.00016;10252,1,0.00016;9448,1,0.00016;10253,1,0.00016;9384,1,0.00016;9444,1,0.00016;9447,1,0.00016;15428,1,0.1111;10480,1,0.0004;10481,1,0.0004;10482,1,0.0004;13071,1,0.0002;13072,1,0.0002;13073,1,0.0002;12365,1,0.1466;12366,1,0.1466;12370,1,0.1466;12371,1,0.1466;729,1,0.1466;730,1,0.1466;959,1,0.1466;960,1,0.1466;5908,1,0.0489;5911,1,0.0489;5914,1,0.0489;9570,1,0.0489;9571,1,0.0489;9572,1,0.0489;13420,1,0.1466;15427,1,9.6773;13421,1,4.8387;14683,1,3.2174;14684,1,3.2174;14685,1,3.2174;14686,1,3.2174;14687,1,3.2174;14689,1,3.2174;14690,1,3.2174;14691,1,3.2174;14692,1,3.2174;14693,1,3.2174;14695,1,3.2174;14696,1,3.2174;14697,1,3.2174;14698,1,3.2174;14699,1,3.2174;8751,1,2.0161;8752,1,2.0161;9575,1,2.0161;10485,1,2.0161;8761,1,2.0161;8762,1,2.0161;9576,1,2.0161;10486,1,2.0161;2133,1,6.4516;2134,1,12.9032
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="82800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9049" levels="1" name="Golden Spice">
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="-150" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15474" /> <!-- Golden Spice -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="18873,18874,18875,18876,18877,18878,18879,18880,18881,18882,18883,18884,18885,18886,18887,18888,18889,18890,18891,18892,18893,18894,18895,18896,18897,18898,18899,18900" />
+		</cond>
+	</skill>
+	<skill id="9050" levels="1" name="Crystal Spice">
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="-150" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15475" /> <!-- Crystal Spice -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="18873,18874,18875,18876,18877,18878,18879,18880,18881,18882,18883,18884,18885,18886,18887,18888,18889,18890,18891,18892,18893,18894,18895,18896,18897,18898,18899,18900" />
+		</cond>
+	</skill>
+	<skill id="9051" levels="1" name="Blessed Golden Spice">
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="-150" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15476" /> <!-- Blessed Golden Spice -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="18873,18880,18887,18894" />
+		</cond>
+	</skill>
+	<skill id="9052" levels="1" name="Blessed Crystal Spice">
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="-150" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15477" /> <!-- Blessed Crystal Spice -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="18873,18880,18887,18894" />
+		</cond>
+	</skill>
+	<skill id="9053" levels="1" name="S Grade Golden Spice">
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="-150" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15478" /> <!-- Golden Spice (S-Grade) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="18873,18880,18887,18894" />
+		</cond>
+	</skill>
+	<skill id="9054" levels="1" name="S Grade Crystal Spice">
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="-150" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15479" /> <!-- Crystal Spice (S-Grade) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="18873,18880,18887,18894" />
+		</cond>
+	</skill>
+	<skill id="9055" levels="1" name="Golden Spice Capsule">
+		<table name="#extractableItems">
+			15474,50,90;15474,40,15476,5,5;15474,40,15478,5,5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="hitTime" val="500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15482" /> <!-- Golden Spice Crate -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9056" levels="1" name="Crystal Spice Capsule">
+		<table name="#extractableItems">
+			15475,50,90;15475,40,15477,5,5;15475,40,15479,5,5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="hitTime" val="500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15483" /> <!-- Crystal Spice Compressed Pack -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9057" levels="1" name="Freezing Core">
+		<!-- Prevents user from being affected by Freya's Eternal Blizzard. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="SKILL_IGNORE" />
+		<set name="affectRange" val="2000" />
+		<set name="icon" val="icon.skill1418" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1200000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="COMMAND_CHANNEL" />
+		<cond msgId="113" addName="1">
+			<player insideZoneId="90578" />
+		</cond>
+		<for>
+			<effect name="ResistSkill">
+				<param skillId1="6662" />
+				<param skillId2="6274" />
+				<param skillId3="6275" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9058" levels="1" name="Black Freezing Core">
+		<!-- Prevents user from being affected by Freya's Eternal Blizzard. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="SKILL_IGNORE" />
+		<set name="affectRange" val="2000" />
+		<set name="icon" val="icon.skill1418" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15470" /> <!-- Black Frozen Core -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1200000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="COMMAND_CHANNEL" />
+		<cond msgId="113" addName="1">
+			<player insideZoneId="90578" />
+		</cond>
+		<for>
+			<effect name="ResistSkill">
+				<param skillId1="6662" />
+				<param skillId2="6274" />
+				<param skillId3="6275" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9059" levels="1" name="Torch Light">
+		<!-- Lights the Torch -->
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-10000" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+	</skill>
+	<skill id="9060" levels="1" name="Maguen Machine">
+		<!-- Skill that allows you to collect Plasma. -->
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="4000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="9000" />
+		<set name="targetType" val="AURA" />
+	</skill>
+	<skill id="9061" levels="1" name="Uldie Summon Scroll">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15431" /> <!-- Event - Uldie Summon Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9062" levels="1" name="Belldandy Summon Scroll">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15432" /> <!-- Event - Belldandy Summon Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9063" levels="1" name="Skooldie Summon Scroll">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15433" /> <!-- Event - Skooldie Summon Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9064" levels="1" name="Halloween Toy Chest">
+		<table name="#extractableItems">
+			15443,1,20;15444,1,20;15445,1,20;15446,1,20;15447,1,20
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15434" /> <!-- Halloween Toy Chest -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9065" levels="1" name="Shiny Halloween Toy Chest">
+		<table name="#extractableItems">
+			15450,1,20;15451,1,20;15452,1,20;15453,1,20;15449,1,20
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15435" /> <!-- Shiny Halloween Toy Chest -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9066" levels="1" name="Scroll of Transformation Box">
+		<table name="#extractableItems">
+			10131,1,33;10132,1,33;10133,1,34
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15437" /> <!-- Transformation Scroll Box -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9067" levels="1" name="Potion of Vitality Maintenance">
+		<!-- Vitality is maintained for 10 minutes. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="VP_KEEP" />
+		<set name="abnormalVisualEffect" val="VP_KEEP" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.etc_lesser_potion_blue_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15438" /> <!-- Vitality Maintaining Potion (10 minutes) -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="vitalityConsumeRate" val="0" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9068" levels="2" name="Potion of Vitality Maintenance">
+		<!-- Vitality is maintained for 30 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="VP_KEEP" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.etc_lesser_potion_scarlet_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15440" /> <!-- Vitality Maintaining Potion (30 Minutes) -->
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="vitalityConsumeRate" val="0" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9069" levels="1" name="10,000 SP scroll">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15439" /> <!-- 10,000 SP scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="GiveSp">
+				<param sp="10000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9070" levels="1" name="Halloween Pumpkin">
+		<table name="#extractableItems">
+			15463,1,14055,1,50;15463,1,10649,1,50
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15461" /> <!-- Halloween Nectar Pumpkin - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9071" levels="1" name="Halloween Pumpkin - event">
+		<table name="#extractableItems">
+			15463,1,14055,1,50;15463,1,10649,1,50
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15467" /> <!-- Halloween Nectar Pumpkin (Event) - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9072" levels="1" name="Small Halloween Pumpkin">
+		<table name="#extractableItems">
+			14706,1,5;14711,1,5;14705,1,10;14704,1,10;14710,1,10;14709,1,10;15439,1,10;14065,1,15;13273,1,15;13016,10,15
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15463" /> <!-- Small Halloween Pumpkin - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9073" levels="1" name="Energy of Vampiric Rage">
+		<!-- Converts 9% of inflicted physical-damage to HP for 20 minutes. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="480" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="icon.xel_mahun_vampiric_rage_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="40" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9074" levels="1" name="Salmon Soup">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="600000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Heal">
+				<param power="2300" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9075" levels="1" name="Awful Soup">
+		<set name="castRange" val="150" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="300" />
+		<set name="hitTime" val="1000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15507" /> <!-- Foul Fruit -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+	</skill>
+	<skill id="9076" levels="1" name="Secret Door Key">
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-1" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15690" /> <!-- Secret Key -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="UNLOCKABLE" />
+		<cond msgId="113" addName="1">
+			<target npcId="23150001,23150002" />
+		</cond>
+		<for>
+			<effect name="OpenDoor">
+				<param chance="100" isItem="true" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9077" levels="1" name="Open Packaged Book">
+		<table name="#extractableItems">
+			8619,1,40;8620,1,40;15715,1,20
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="15716" /> <!-- Packaged Book -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9078" levels="1" name="Rainbow Springs Potion">
+		<!-- Increases the regen rate of HP/MP/CP by 30%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="SIGNAL_A" />
+		<set name="icon" val="icon.etc_cp_potion_i01" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="300000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regHp" val="1.3" />
+				<mul stat="regMp" val="1.3" />
+				<mul stat="regCp" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9079" levels="1" name="Santa's Buff Scroll">
+		<!-- For 1 hour, receives help from a great spirit to increase Max MP by 20%, MP recovery bonus by 20%, HP recovery bonus by 20%, the chance of prominent damage occurring through magic damage by 2, the power of critical attacks by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buffs by 10%. Decreases Speed by 20% and MP consumption for skill use by 5%. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="icon" val="icon.mysterious_wedding_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="16408" /> <!-- Santa's Buff Scroll - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regHp" val="1.2" />
+				<mul stat="maxMp" val="1.2" />
+				<mul stat="regMp" val="1.2" />
+				<mul stat="physicalMpConsumeRate" val="0.95" />
+				<mul stat="magicalMpConsumeRate" val="0.95" />
+				<mul stat="danceMpConsumeRate" val="0.95" />
+				<add stat="mCritRate" val="2" />
+				<mul stat="critDmg" val="1.2" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9080" levels="1" name="Santa's Sock">
+		<table name="#extractableItems">
+			16408,1,14739,1,5561,1,82.9;14678,1,10;14679,1,5;14680,1,2;14681,1,0.1
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="16407" /> <!-- Santa's Stocking - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9081" levels="1" name="Christmas Cake">
+		<set name="icon" val="icon.event_six_party_cake_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="16403" /> <!-- Christmas Cake -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp">
+				<param value="20000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9082" levels="1" name="White Christmas Petition">
+		<!-- Vitality is maintained for 10 minutes. Petition asking for it to snow on Christmas. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="VP_KEEP" />
+		<set name="abnormalVisualEffect" val="VP_KEEP" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="icon.etc_candle_white_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="16404" /> <!-- White Christmas Wish Candle -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="vitalityConsumeRate" val="0" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9083" levels="1" name="Christmas Cake - event">
+		<set name="icon" val="icon.event_six_party_cake_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="16405" /> <!-- Christmas Cake (event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp">
+				<param value="20000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9084" levels="1" name="White Christmas Petition - event">
+		<!-- Vitality is maintained for 10 minutes. Petition asking for it to snow on Christmas. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="VP_KEEP" />
+		<set name="abnormalVisualEffect" val="VP_KEEP" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="icon.etc_candle_white_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="16406" /> <!-- White Christmas Wish Candle (event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="vitalityConsumeRate" val="0" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9085" levels="1" name="Santa Claus's Gift">
+		<table name="#extractableItems">
+			13457,1,0.0000498;13458,1,0.0000498;13459,1,0.0000498;13460,1,0.0000498;13461,1,0.0000498;13462,1,0.0000498;13463,1,0.0000498;13464,1,0.0000498;13465,1,0.0000498;13466,1,0.0000498;13467,1,0.0000498;13468,1,0.0000498;13469,1,0.0000498;13470,1,0.0000498;10215,1,0.0001162;10216,1,0.0001162;10217,1,0.0001162;10218,1,0.0001162;10219,1,0.0001162;10220,1,0.0001162;10221,1,0.0001162;10222,1,0.0001162;10223,1,0.0001162;10224,1,0.0001162;10225,1,0.0001162;10226,1,0.0001162;9380,1,0.0001486;9446,1,0.0001486;9384,1,0.0001486;9449,1,0.0001486;9450,1,0.0001486;9445,1,0.0001486;9443,1,0.0001486;9442,1,0.0001486;10252,1,0.0001486;9448,1,0.0001486;10253,1,0.0001486;9384,1,0.0001486;9444,1,0.0001486;9447,1,0.0001486;13143,1,0.0000733;14105,1,0.0000733;14108,1,0.0000733;14109,1,0.0000733;14110,1,0.0000733;14111,1,0.0000733;13144,1,0.0000733;14106,1,0.0000733;14112,1,0.0000733;14113,1,0.0000733;14114,1,0.0000733;13145,1,0.0000733;14107,1,0.0000733;14115,1,0.0000733;14116,1,0.0000733;14117,1,0.0000733;13887,1,0.0000733;9514,1,0.0001458;9515,1,0.0001458;9516,1,0.0001458;9517,1,0.0001458;9518,1,0.0001458;9529,1,0.0001458;9519,1,0.0001458;9520,1,0.0001458;9521,1,0.0001458;9522,1,0.0001458;9523,1,0.0001458;9524,1,0.0001458;9525,1,0.0001458;9526,1,0.0001458;9527,1,0.0001458;9528,1,0.0001458;13886,1,0.0001458;9570,1,0.0008261;9571,1,0.0008261;9572,1,0.0008261;10480,1,0.0004649;10481,1,0.0004649;10482,1,0.0004649;13071,1,0.0002325;13072,1,0.0002325;13073,1,0.0002325;729,1,0.5263449;959,1,0.5263449;730,1,0.7655924;960,1,0.7655924;1538,1,1.4975597;14686,1,0.7681786;14687,1,0.7681786;14693,1,0.7686099;14692,1,0.7686099;14698,1,0.7681786;14699,1,0.7681786;15439,1,1.5217011;14611,1,0.12009793;5560,1,1.5389435;5562,1,0.2401959;5563,1,0.2401959;5564,1,0.2401959;5565,1,0.2401959;5566,1,0.2401959;6622,1,1.3044378;14701,1,22.5439206;17005,1,63.06608387
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17003" /> <!-- Santa Claus's Gift - Event -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="9086" levels="1" name="Santa - Potion of Will">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="CpHeal">
+				<param power="300" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9087" levels="1" name="Create Item">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17030" /> <!-- Forgotten Scroll - Create Item Lv 10 -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id_lvl="172,10" />
+				</not>
+				<player active_skill_id_lvl="172,9" />
+				<player class_id_restriction="118" />
+				<player level="82" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="172" skillLvl="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9088" levels="1" name="Cupid's Arrow">
+		<!-- Shoots a heart-arrow. -->
+		<set name="effectPoint" val="-1000" />
+		<set name="icon" val="icon.skill3260" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17067" /> <!-- Event - Cupid's Fatigue Relief Potion -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9089" levels="1" name="Cupid's Major Cure">
+		<!-- Shoots a big heart-arrow. -->
+		<set name="effectPoint" val="-1000" />
+		<set name="icon" val="icon.skill3260" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17068" /> <!-- Event - Cupid's Powerful Fatigue Relief Potion -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="9090" levels="1" name="Fighter's Will">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17034" /> <!-- Forgotten Scroll - Fighter's Will - For Events -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="758" />
+				</not>
+				<player class_id_restriction="88, 89, 90, 91, 92, 93, 99, 100, 101, 102, 106, 107, 108, 109, 113, 114, 117, 118, 131, 132, 133, 134 " />
+				<player level="81" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="758" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9091" levels="1" name="Archer's Will">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17035" /> <!-- Forgotten Scroll - Archer's Will - For Events -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="759" />
+				</not>
+				<player class_id_restriction="88, 89, 90, 91, 92, 93, 99, 100, 101, 102, 106, 107, 108, 109, 113, 114, 117, 118, 131, 132, 133, 134 " />
+				<player level="81" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="759" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9092" levels="1" name="Magician's Will">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17036" /> <!-- Forgotten Scroll - Magician's Will - For Events -->
+		<set name="learnSkillId" val="945" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="945" />
+				</not>
+				<player class_id_restriction="94, 95, 96, 97, 98, 103, 104, 105, 110, 111, 112, 115, 116" />
+				<player level="81" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="945" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9093" levels="1" name="Protection of Rune">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17037" /> <!-- Forgotten Scroll - Protection of Rune - For Events -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="755" />
+				</not>
+				<player class_id_restriction="88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 131, 132, 133, 134, 136 " />
+				<player level="82" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="755" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9094" levels="1" name="Protection of Elemental">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17038" /> <!-- Forgotten Scroll - Protection of Elemental - For Events -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="756" />
+				</not>
+				<player class_id_restriction="88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 131, 132, 133, 134, 136 " />
+				<player level="82" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="756" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9095" levels="1" name="Protection of Alignment">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17039" /> <!-- Forgotten Scroll - Protection of Alignment - For Events -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="757" />
+				</not>
+				<player class_id_restriction="88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 131, 132, 133, 134, 136 " />
+				<player level="82" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="757" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9096" levels="1" name="Event - White Baby Tiger Scroll">
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17062" /> <!-- Event - Scroll of Summon Baby White Tiger -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="13286" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9097" levels="1" name="Event - White Baby King-Tiger Scroll">
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17064" /> <!-- Event - Scroll of Summon Baby White Tiger Captain -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="13287" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9098" levels="1" name="Event - Sad White Baby Tiger Scroll">
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17063" /> <!-- Event - Scroll of Summon Gloomy Baby White Tiger -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="13293" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="9099" levels="1" name="Event - Sad White Baby King-Tiger Scroll">
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="17065" /> <!-- Event - Scroll of Summon Gloomy Baby White Tiger Captain -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="13294" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+</list>

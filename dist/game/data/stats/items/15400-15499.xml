@@ -1,0 +1,1493 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="15400" type="Armor" name="Vitality Belt (Event) - 60-day limited period">
+		<!-- Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time. -->
+		<set name="icon" val="icon.event_energy_belt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="enchant_enabled" val="4" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="86400" />
+	</item>
+	<item id="15401" type="Armor" name="Vitality Belt (Event) - 90-day limited period">
+		<!-- Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time. -->
+		<set name="icon" val="icon.event_energy_belt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="enchant_enabled" val="4" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="129600" />
+	</item>
+	<item id="15402" type="Armor" name="Vitality Belt (Event) - Permanent Use">
+		<!-- Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time. -->
+		<set name="icon" val="icon.event_energy_belt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="enchant_enabled" val="4" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15403" type="Weapon" name="Player Commendation - Berserker Blade - Player Commendation Weapon">
+		<!-- PC cafe exclusive item that contains the strength of the Berserker Blade. Can be enchanted using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Critical by 73. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. -->
+		<set name="icon" val="icon.weapon_berserker_blade_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1380" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="enchant_enabled" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3010-4" /> <!-- Special Ability: Focus -->
+		<set name="duration" val="180" />
+		<set name="time" val="21600" />
+		<set name="useSkillDisTime" val="1" />
+		<for>
+			<set stat="pAtk" val="190" />
+			<set stat="mAtk" val="83" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+		</for>
+	</item>
+	<item id="15404" type="EtcItem" name="6th Anniversary Party Gift Box (2003) - Event">
+		<!-- Contains the 6th Anniversary Party Cube, a 30-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15418,1,1,100" />
+	</item>
+	<item id="15405" type="EtcItem" name="6th Anniversary Party Gift Box (2004) - Event">
+		<!-- Contains the 6th Anniversary Party Cube, a 25-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15419,1,1,100" />
+	</item>
+	<item id="15406" type="EtcItem" name="6th Anniversary Party Gift Box (2005) - Event">
+		<!-- Contains the 6th Anniversary Party Cube, a 20-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15420,1,1,100" />
+	</item>
+	<item id="15407" type="EtcItem" name="6th Anniversary Party Gift Box (2006) - Event">
+		<!-- Contains the 6th Anniversary Party Cube, a 15-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15421,1,1,100" />
+	</item>
+	<item id="15408" type="EtcItem" name="6th Anniversary Party Gift Box (2007) - Event">
+		<!-- Contains the 6th Anniversary Party Cube, a 10-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15422,1,1,100" />
+	</item>
+	<item id="15409" type="EtcItem" name="6th Anniversary Party Gift Box (2008) - Event">
+		<!-- Contains the 6th Anniversary Party Cube, a 5-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15423,1,1,100" />
+	</item>
+	<item id="15410" type="EtcItem" name="6th Anniversary Party Gift Box (2009) - Event">
+		<!-- Contains the 6th Anniversary Party Cube, a 3-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15424,1,1,100" />
+	</item>
+	<item id="15411" type="EtcItem" name="6th Anniversary Party Gift Set (2003) - Event">
+		<!-- A hero's treasure box. Contains the 6th Anniversary Party Cube, a 30-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15425,1,1,100;15418,1,1,100" />
+	</item>
+	<item id="15412" type="EtcItem" name="6th Anniversary Party Gift Set (2004) - Event">
+		<!-- A hero's treasure box. Contains the 6th Anniversary Party Cube, a 25-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15425,1,1,100;15419,1,1,100" />
+	</item>
+	<item id="15413" type="EtcItem" name="6th Anniversary Party Gift Set (2005) - Event">
+		<!-- A hero's treasure box. Contains the 6th Anniversary Party Cube, a 20-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15425,1,1,100;15420,1,1,100" />
+	</item>
+	<item id="15414" type="EtcItem" name="6th Anniversary Party Gift Set (2006) - Event">
+		<!-- A hero's treasure box. Contains the 6th Anniversary Party Cube, a 15-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15425,1,1,100;15421,1,1,100" />
+	</item>
+	<item id="15415" type="EtcItem" name="6th Anniversary Party Gift Set (2007) - Event">
+		<!-- A hero's treasure box. Contains the 6th Anniversary Party Cube, a 10-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15425,1,1,100;15422,1,1,100" />
+	</item>
+	<item id="15416" type="EtcItem" name="6th Anniversary Party Gift Set (2008) - Event">
+		<!-- A hero's treasure box. Contains the 6th Anniversary Party Cube, a 5-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15425,1,1,100;15423,1,1,100" />
+	</item>
+	<item id="15417" type="EtcItem" name="6th Anniversary Party Gift Set (2009) - Event">
+		<!-- A hero's treasure box. Contains the 6th Anniversary Party Cube, a 3-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15425,1,1,100;15424,1,1,100" />
+	</item>
+	<item id="15418" type="EtcItem" name="6th Anniversary Party Cube Manage (Event) - 30-day limited period">
+		<!-- When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_cube_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9042-1" /> <!-- 6th Anniversary Cube -->
+		<set name="time" val="43200" />
+	</item>
+	<item id="15419" type="EtcItem" name="6th Anniversary Party Cube Manage (Event) - 25-day limited period">
+		<!-- When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_cube_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9043-1" /> <!-- 6th Anniversary Cube -->
+		<set name="time" val="36000" />
+	</item>
+	<item id="15420" type="EtcItem" name="6th Anniversary Party Cube Manage (Event) - 20-day limited period">
+		<!-- When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_cube_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9044-1" /> <!-- 6th Anniversary Cube -->
+		<set name="time" val="28800" />
+	</item>
+	<item id="15421" type="EtcItem" name="6th Anniversary Party Cube Manage (Event) - 15-day limited period">
+		<!-- When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_cube_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9045-1" /> <!-- 6th Anniversary Cube -->
+		<set name="time" val="21600" />
+	</item>
+	<item id="15422" type="EtcItem" name="6th Anniversary Party Cube Manage (Event) - 10-day limited period">
+		<!-- When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_cube_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9046-1" /> <!-- 6th Anniversary Cube -->
+		<set name="time" val="14400" />
+	</item>
+	<item id="15423" type="EtcItem" name="6th Anniversary Party Cube Manage (Event) - 5-day limited period">
+		<!-- When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_cube_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9047-1" /> <!-- 6th Anniversary Cube -->
+		<set name="time" val="7200" />
+	</item>
+	<item id="15424" type="EtcItem" name="6th Anniversary Party Cube Manage (Event) - 3-day limited period">
+		<!-- When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_cube_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9048-1" /> <!-- 6th Anniversary Cube -->
+		<set name="time" val="4320" />
+	</item>
+	<item id="15425" type="EtcItem" name="Hero's Treasure Box - Event">
+		<!-- Contains an armor set 30-Day Pack, a Hunting Helper Exchange Coupon, and a hero's summon point item. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15211,1,1,100;13273,1,1,100;15426,1,1,100" />
+	</item>
+	<item id="15426" type="EtcItem" name="Hero's Summon Point - Event">
+		<!-- When double clicked, 10000 PC Cafe Points can be acquired. Reuse Delay 7 days. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.etc_pccafe_point_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9040-1" /> <!-- PC Cafe Points -->
+	</item>
+	<item id="15427" type="EtcItem" name="6th Anniversary Party Cake - Event">
+		<!-- Energy is recovered for 1 hour when acquiring Exp. Reuse Delay is 12 hours. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_cake_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9041-1" /> <!-- Sixth Anniversary Cake -->
+	</item>
+	<item id="15428" type="Armor" name="6th Anniversary Party Earring (Event) - 30-day limited period">
+		<!-- 30-day limited-time Item. Increases MP +31 and Resistance to Shock/mind attacks by 20%. Increases Shock/Mental attack rate by 20%. Has the vampiric rage effect. Only one effect is applied even when the two identical earrings are worn. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_six_party_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8361-1" /> <!-- Sixth Anniversary Party Earring -->
+		<set name="time" val="43200" />
+		<for>
+			<add order="0" stat="mDef" val="63" />
+			<add stat="maxMp" val="31" />
+		</for>
+	</item>
+	<item id="15429" type="Armor" name="6th Anniversary Party Belt (Event) - 7-day limited period">
+		<!-- 7-day limited-time Item. Energy is maintained for 30 minutes. Reuse Delay is 23 hours. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.event_energy_belt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="equip_reuse_delay" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8360-1" /> <!-- Vitality Maintenance Effect -->
+		<set name="time" val="10080" />
+	</item>
+	<item id="15430" type="EtcItem" name="Event - Halloween Candy - Event">
+		<!-- Sweet Halloween candy. You can give it to Skooldie to exchange for the Halloween Toy Box. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15431" type="EtcItem" name="Event - Uldie Summon Scroll">
+		<!-- When used, summons the oldest girl Uldie among the Three Siblings, and can play Jack's game. You cannot summon Uldie if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! -->
+		<set name="icon" val="icon.ev_scroll_of_wooldie_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9061-1" /> <!-- Uldie Summon Scroll -->
+	</item>
+	<item id="15432" type="EtcItem" name="Event - Belldandy Summon Scroll">
+		<!-- When used, summons the middle child Belldandy among the Three Siblings, and can play Jack's game. You cannot summon Belldandy if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! -->
+		<set name="icon" val="icon.ev_scroll_of_berdandi_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9062-1" /> <!-- Belldandy Summon Scroll -->
+	</item>
+	<item id="15433" type="EtcItem" name="Event - Skooldie Summon Scroll">
+		<!-- When used, summons the youngest child Skooldie among the Three Siblings, and can play Jack's game. You cannot summon Skooldie if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! Trade Cannot be dropped or destroyed. -->
+		<set name="icon" val="icon.ev_scroll_of_scooldie_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="mp_consume" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9063-1" /> <!-- Skooldie Summon Scroll -->
+	</item>
+	<item id="15434" type="EtcItem" name="Halloween Toy Chest">
+		<!-- Gives a chance to acquire one of Halloween masks. Cannot be exchange, dropped, or destroyed. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9064-1" /> <!-- Halloween Toy Chest -->
+	</item>
+	<item id="15435" type="EtcItem" name="Shiny Halloween Toy Chest">
+		<!-- Gives a chance to acquire one of Shiny Halloween masks. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9065-1" /> <!-- Shiny Halloween Toy Chest -->
+	</item>
+	<item id="15436" type="Weapon" name="Halloween Transformation Stick - 7-day limited period">
+		<!-- You can transform to Halloween Pumpkin. 7-day limited period accessory. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.weapon_pumpkin_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="blessed" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="unequip_skill" val="839-1" />
+		<set name="item_skill" val="8246-1" /> <!-- Transform Pumpkin Ghost -->
+		<set name="time" val="10080" />
+		<for>
+			<set stat="pAtk" val="1" />
+			<set stat="mAtk" val="1" />
+			<set stat="pAtkSpd" val="379" />
+		</for>
+	</item>
+	<item id="15437" type="EtcItem" name="Transformation Scroll Box">
+		<!-- Gives a chance to acquire one of the following transformation scrolls: Omen Beast, Death Blader, and Grail Apostle. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9066-1" /> <!-- Scroll of Transformation Box -->
+	</item>
+	<item id="15438" type="EtcItem" name="Vitality Maintaining Potion (10 minutes)">
+		<!-- Energy is maintained for 10 minutes. Reuse time is 30 minutes. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.etc_lesser_potion_blue_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9067-1" /> <!-- Vitality Maintaining Potion -->
+	</item>
+	<item id="15439" type="EtcItem" name="10,000 SP scroll">
+		<!-- Scroll that replenishes 10,000 SP. -->
+		<set name="icon" val="icon.etc_sp_scroll3_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9069-1" /> <!-- 10,000 SP scroll -->
+	</item>
+	<item id="15440" type="EtcItem" name="Vitality Maintaining Potion (30 Minutes)">
+		<!-- Your Vitality will remain at the same level for 30 minutes. Re-use time is 60 minutes. Cannot be exchanged, dropped or destroyed. -->
+		<set name="icon" val="icon.etc_lesser_potion_scarlet_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9068-2" /> <!-- Vitality Maintaining Potion -->
+	</item>
+	<item id="15441" type="Armor" name="Red Flare Valakas Hair Accessory">
+		<!-- Burning red Valakas Helm. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.ev_valakas_the_flame_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15442" type="Armor" name="Jack O'Lantern Mask">
+		<!-- You can use the card skill necessary for playing Jack's game when equipped. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_jack0_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8369-1;8370-1" /> <!-- Halloween Pumpkin Card -->
+	</item>
+	<item id="15443" type="Armor" name="Super Strong Giant's Mask">
+		<!-- Super Strong Giant's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.br_frankenstein_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8372-1;8369-1;8370-1" /> <!-- Super Strong Giant's Mask -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15444" type="Armor" name="Silent Scream's Mask">
+		<!-- Silent Scream's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_scream_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8373-1;8369-1;8370-1" /> <!-- Silent Scream's Mask -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15445" type="Armor" name="Wrathful Spirit's Mask">
+		<!-- Wrathful Spirit's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_doccabi_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8374-1;8369-1;8370-1" /> <!-- Wrathful Spirit's Mask -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15446" type="Armor" name="Unrotten Corpse's Mask">
+		<!-- Unrotten Corpse's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_mummy_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8375-1;8369-1;8370-1" /> <!-- Unrotten Corpse's Mask -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15447" type="Armor" name="Planet X235 Alien's Mask">
+		<!-- Planet X235 Alien's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_alien_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8376-1;8369-1;8370-1" /> <!-- Planet X235 Alien Mask's Effect -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15448" type="Armor" name="Golden Jack O'Lantern Mask - Permanent Use">
+		<!-- Jack O'Lantern Mask made of gold. Shines brightly. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_golden_jack0_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15449" type="Armor" name="Shiny Planet X235 Alien's Mask">
+		<!-- Gloriously Shiny Planet X235 Alien's Mask You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_shiny_alien_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8376-1;8369-1;8370-1" /> <!-- Planet X235 Alien Mask's Effect -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15450" type="Armor" name="Shiny Super Strong Giant's Mask">
+		<!-- Gloriously Shiny Super Strong Giant's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_shiny_frankenstein_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8372-1;8369-1;8370-1" /> <!-- Super Strong Giant's Mask -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15451" type="Armor" name="Shiny Silent Scream's Mask">
+		<!-- Gloriously Shiny Silent Scream's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_shiny_scream_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8373-1;8369-1;8370-1" /> <!-- Silent Scream's Mask -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15452" type="Armor" name="Shiny Wrathful Spirit's Mask">
+		<!-- Gloriously Shiny Wrathful Spirit's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_shiny_doccabi_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8374-1;8369-1;8370-1" /> <!-- Wrathful Spirit's Mask -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15453" type="Armor" name="Shiny Unrotten Corpse's Mask">
+		<!-- Gloriously Shiny Unrotten Corpse's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ev_shiny_mummy_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8375-1;8369-1;8370-1" /> <!-- Unrotten Corpse's Mask -->
+		<set name="time" val="240" />
+	</item>
+	<item id="15454" type="EtcItem" name="Shiny Planet X235 Alien's Mask Pack - Event">
+		<!-- Contains a Shiny Planet X235 Alien's Mask. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15449,1,1,100" />
+	</item>
+	<item id="15455" type="EtcItem" name="Shiny Super Strong Giant's Mask Pack - Event">
+		<!-- Contains a Shiny Super Strong Giant's Mask. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15450,1,1,100" />
+	</item>
+	<item id="15456" type="EtcItem" name="Shiny Silent Scream's Mask Pack - Event">
+		<!-- Contains a Shiny Silent Scream's Mask. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15451,1,1,100" />
+	</item>
+	<item id="15457" type="EtcItem" name="Shiny Wrathful Spirit's Mask Pack - Event">
+		<!-- Contains a Shiny Wrathful Spirit's Mask. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15452,1,1,100" />
+	</item>
+	<item id="15458" type="EtcItem" name="Shiny Unrotten Corpse's Mask Pack - Event">
+		<!-- Contains a Shiny Unrotten Corpse's Mask. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15453,1,1,100" />
+	</item>
+	<item id="15459" type="EtcItem" name="Halloween Nectar Pumpkin Pack - Event">
+		<!-- Halloween Nectar Pumpkin Pack. Contains 1 Halloween nectar pumpkin. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15461,1,1,100" />
+	</item>
+	<item id="15460" type="EtcItem" name="Halloween King Pumpkin Pack - Event">
+		<!-- Halloween King Pumpkin Pack. Contains 1 Halloween king pumpkin. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15462,1,1,100" />
+	</item>
+	<item id="15461" type="EtcItem" name="Halloween Nectar Pumpkin - Event">
+		<!-- Halloween Nectar Pumpkin. With a certain chance, can obtain an energy replenishing drink or a feather of blessing and 1 small Halloween pumpkin. Can be exchanged. Cannot be dropped, put in private store, or destroyed. -->
+		<set name="icon" val="icon.event_halloween_pumpkin_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9070-1" /> <!-- Halloween Pumpkin -->
+	</item>
+	<item id="15462" type="EtcItem" name="Halloween King Pumpkin - Event">
+		<!-- Halloween King Pumpkin. Contains 6 Halloween nectar pumpkins and a Golden Jack O'Lantern Mask (7 day limited). Can be exchanged. Cannot be dropped, put in private store, or destroyed. -->
+		<set name="icon" val="icon.event_halloween_king_pumpkin_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15461,6,6,100;15464,1,1,100" />
+	</item>
+	<item id="15463" type="EtcItem" name="Small Halloween Pumpkin - Event">
+		<!-- Small Halloween Pumpkin. Double click and you can obtain 1 bonus item with a certain rate of chance. Cannot be exchanged, dropped, put in private store, or destroyed. -->
+		<set name="icon" val="icon.event_halloween_pumpkin_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9072-1" /> <!-- Small Halloween Pumpkin -->
+	</item>
+	<item id="15464" type="Armor" name="Golden Jack O'Lantern Mask - 7-day limited period">
+		<!-- Golden Jack O'Lantern Mask. Shines brightly. Reuse Delay 23 hour. Cannot be exchanged, dropped, or put in private store. Can be destroyed. -->
+		<set name="icon" val="icon.ev_golden_jack0_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="equip_reuse_delay" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8377-1" /> <!-- Golden Jack O'Lantern Mask's Effect -->
+		<set name="time" val="10080" />
+	</item>
+	<item id="15465" type="EtcItem" name="Halloween Nectar Pumpkin Pack (Event) - Event">
+		<!-- Halloween Nectar Pumpkin Pack. Contains 1 Halloween nectar pumpkin. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15461,1,1,100" />
+	</item>
+	<item id="15466" type="EtcItem" name="Halloween King Pumpkin Pack (Event) - Event">
+		<!-- Halloween King Pumpkin Pack. Contains 1 Halloween king pumpkin. Cannot be exchanged, dropped, or stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15462,1,1,100" />
+	</item>
+	<item id="15467" type="EtcItem" name="Halloween Nectar Pumpkin (Event) - Event">
+		<!-- Halloween Nectar Pumpkin. With a certain chance, can obtain an energy replenishing drink or a feather of blessing and 1 small Halloween pumpkin. Can be exchanged. Cannot be dropped, put in private store, or destroyed. -->
+		<set name="icon" val="icon.event_halloween_pumpkin_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9071-1" /> <!-- Halloween Pumpkin - event -->
+	</item>
+	<item id="15468" type="EtcItem" name="Halloween King Pumpkin (Event) - Event">
+		<!-- Halloween King Pumpkin. Contains 6 Halloween nectar pumpkins and a Golden Jack O'Lantern Mask (7 day limited). Can be exchanged. Cannot be dropped, put in private store, or destroyed. -->
+		<set name="icon" val="icon.event_halloween_king_pumpkin_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="15461,6,6,100;15464,1,1,100" />
+	</item>
+	<item id="15469" type="EtcItem" name="Frozen Core">
+		<!-- Magic stone that temporarily neutralizes Freya's powerful magic -->
+		<set name="icon" val="icon.etc_freezing_core_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9057-1" /> <!-- Freezing Core -->
+	</item>
+	<item id="15470" type="EtcItem" name="Black Frozen Core">
+		<!-- Magic stone that temporarily neutralizes Freya's powerful magic -->
+		<set name="icon" val="icon.etc_black_freezing_core_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9058-1" /> <!-- Black Freezing Core -->
+	</item>
+	<item id="15471" type="EtcItem" name="Invisible Weapon for Freya">
+		<set name="icon" val="icon.event_halloween_king_pumpkin_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15472" type="EtcItem" name="Sealed Mystery Sword">
+		<!-- Sacred sword that can neutralize Freya's power. Cannot use it directly due to some unknown M. Atk. -->
+		<set name="icon" val="icon.etc_sealed_mystery_sword_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15473" type="Armor" name="Beast Handler's Whip">
+		<!-- Obtained from Tunatun on the Beast Farm, this whip will enable the bearer to control tamed pets. Must be equipped to use. -->
+		<set name="icon" val="icon.etc_training_whip_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="8363-1;8364-1;8362-1;8378-1" /> <!-- Beast Training - Accompany -->
+	</item>
+	<item id="15474" type="EtcItem" name="Golden Spice">
+		<!-- Feed used to tame baby animals on the Beast Farm. Using this feed will allow the monster to drop adena and/or items, but will give less experience. -->
+		<set name="icon" val="icon.etc_golden_spice_new_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="3" />
+		<set name="price" val="200" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9049-1" /> <!-- Golden Spice -->
+	</item>
+	<item id="15475" type="EtcItem" name="Crystal Spice">
+		<!-- Feed used to tame baby animals on the Beast Farm. This feed will cause the monster to give more experience, but no adena or items. -->
+		<set name="icon" val="icon.etc_crystal_spice_new_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="3" />
+		<set name="price" val="200" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9050-1" /> <!-- Crystal Spice -->
+	</item>
+	<item id="15476" type="EtcItem" name="Blessed Golden Spice">
+		<!-- A better quality feed that has a chance to tame animals on the Beast Farm with just one application. -->
+		<set name="icon" val="icon.etc_golden_spice_blessed_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="3" />
+		<set name="price" val="200" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9051-1" /> <!-- Blessed Golden Spice -->
+	</item>
+	<item id="15477" type="EtcItem" name="Blessed Crystal Spice">
+		<!-- A better quality feed that has a chance to tame animals on the Beast Farm with just one application. -->
+		<set name="icon" val="icon.etc_crystal_spice_blessed_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="3" />
+		<set name="price" val="200" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9052-1" /> <!-- Blessed Crystal Spice -->
+	</item>
+	<item id="15478" type="EtcItem" name="Golden Spice (S-Grade)">
+		<!-- A better quality feed that has a chance to turn Beast Farm babies into fully grown pets with just one application. Using this feed will allow the monster to drop adena and/or items, but will give less experience. -->
+		<set name="icon" val="icon.etc_golden_spice_s_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="3" />
+		<set name="price" val="200" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9053-1" /> <!-- S Grade Golden Spice -->
+	</item>
+	<item id="15479" type="EtcItem" name="Crystal Spice (S-Grade)">
+		<!-- A better quality feed that has a chance to turn Beast Farm babies into fully grown pets with just one application. This feed causes the monster to give more experience, but no adena or items. -->
+		<set name="icon" val="icon.etc_crystal_spice_s_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="3" />
+		<set name="price" val="200" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9054-1" /> <!-- S Grade Crystal Spice -->
+	</item>
+	<item id="15480" type="EtcItem" name="Old Golden Spice">
+		<!-- Old and unusable Beast Farm Feed -->
+		<set name="icon" val="icon.event_halloween_king_pumpkin_i12" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15481" type="EtcItem" name="Old Crystal Spice">
+		<!-- Old and unusable Beast Farm Feed -->
+		<set name="icon" val="icon.event_halloween_king_pumpkin_i13" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15482" type="EtcItem" name="Golden Spice Crate">
+		<!-- This box hold up to 50 Golden Spices. When converted, there is also a chance that Special Feed will be received. -->
+		<set name="icon" val="icon.etc_golden_spice_comp_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="30" />
+		<set name="price" val="9500" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9055-1" /> <!-- Golden Spice Capsule -->
+	</item>
+	<item id="15483" type="EtcItem" name="Crystal Spice Compressed Pack">
+		<!-- Small pack with a compressed Crystal Spice. When you use it, it changes into 50 Crystal Spices. Special Feed may also come out. -->
+		<set name="icon" val="icon.etc_crystal_spice_comp_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="30" />
+		<set name="price" val="9500" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9056-1" /> <!-- Crystal Spice Capsule -->
+	</item>
+	<item id="15484" type="Armor" name="High-level Angel Circlet">
+		<!-- High-level Angel Circlet. Uses 2 hair accessory slots. Blessed Escape skill can be used. -->
+		<set name="icon" val="icon.accessory_highangel_circlet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="price" val="500000" />
+		<set name="equip_reuse_delay" val="10" />
+		<set name="item_skill" val="8509-1" /> <!-- Blessed Escape -->
+	</item>
+	<item id="15485" type="EtcItem" name="Torch">
+		<!-- Can be used to light a fire. Cannot be exchanged, dropped, or put in private store. -->
+		<set name="icon" val="icon.etc_torchlight_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9059-1" /> <!-- Torch Light -->
+		<set name="time" val="4" />
+	</item>
+	<item id="15486" type="EtcItem" name="Spirit Stone Fragment">
+		<!-- Energy from the Seed of Annihilation resides within these Spirit Stone Fragments. Can be used at Special Product Broker Kirklan. -->
+		<set name="icon" val="icon.etc_a_broken_piece_of_soul_stone_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15487" type="EtcItem" name="Maguen Plasma Collector">
+		<!-- This device is used to collect plasma from the Wild Maguen that inhabit the Seed of Annihilation. Under the right circumstances, plasma collection allows you to obtain a pet Maguen. -->
+		<set name="icon" val="icon.etc_machine_for_marguene_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="material" val="CRYSTAL" />
+		<set name="reuse_delay" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9060-1" /> <!-- Maguen Machine -->
+	</item>
+	<item id="15488" type="EtcItem" name="Maguen Pet Collar">
+		<!-- Necklace that summons a Maguen. The summoned Maguen can eat wolf-type feed, and it takes away some of the experience points the Pet Master earns. No exchange, drop, sale, or mail available. -->
+		<set name="icon" val="icon.etc_marguene_pet_collar_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="15489" type="EtcItem" name="Elite Maguen Pet Collar">
+		<!-- Necklace that summons an Elite Maguen. The summoned Maguen can eat wolf-type feed, and it takes away some of the experience points the Pet Master earns. No exchange, drop, sale, or mail available. -->
+		<set name="icon" val="icon.etc_elite_marguene_pet_collar_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="15490" type="EtcItem" name="Maguen Collection Box">
+		<!-- Its contents are a mystery. The only way to find out what is inside is to open it. -->
+		<set name="icon" val="icon.etc_marguene_collection_box_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15491" type="EtcItem" name="Elite Maguen Collection Box">
+		<!-- Its contents are a mystery. The only way to find out what is inside is to open it. -->
+		<set name="icon" val="icon.etc_elite_marguene_collection_box_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15492" type="EtcItem" name="Sel Mahum Salmon Porridge">
+		<!-- Sel Mahum salmon porridge. Smells better than expected but not by much. -->
+		<set name="icon" val="icon.etc_salmon_soup_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="5" />
+		<set name="price" val="1" />
+		<set name="shared_reuse_group" val="6" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="item_skill" val="9074-1" /> <!-- Salmon Soup -->
+	</item>
+	<item id="15493" type="EtcItem" name="Fantasy Mushroom Pouch">
+		<!-- Pouch containing the spores of Fantasy Mushrooms, which grow in the Plains of the Lizardmen. Detailed information can be obtained from Investigator Sally on the Plains of the Lizardmen. -->
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15494" type="EtcItem" name="Sticky Mushroom Pouch">
+		<!-- Pouch containing the spores of Sticky Mushrooms, which grow in the Plains of the Lizardmen. Detailed information can be obtained from Investigator Sally on the Plains of the Lizardmen. -->
+		<set name="icon" val="icon.etc_pouch_gray_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15495" type="EtcItem" name="Vitality Plant Leaf">
+		<!-- Leaf of the Energy Plant, which grows in the Plains of the Lizardmen. Detailed information can be obtained from Investigator Sally on the Plains of the Lizardmen. -->
+		<set name="icon" val="icon.etc_leaf_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15496" type="EtcItem" name="Seer Ugoros Pass">
+		<!-- Document from Investigator Johnny in the Plains of the Lizardmen that verifies you possess the required skills. It indicates that you have the right to go and see Tanta Lizardman Seer Ugoros. Show it to Gatekeeper Batracos near the Plains of the Lizardmen. -->
+		<set name="icon" val="icon.etc_paper_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15497" type="EtcItem" name="High-Grade Lizard Scale">
+		<!-- The highest-quality Lizardman Scale without any blemishes obtained after defeating Tanta Lizardmen Seer Ugoros. Take it to Researcher Ankumi on the Plains of the Lizardmen. -->
+		<set name="icon" val="icon.etc_godad_fish_scale_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15498" type="EtcItem" name="Middle-Grade Lizard Scale">
+		<!-- The medium-quality Lizardman Scale obtained after defeating Tanta Lizardmen Seer Ugoros. Take it to Researcher Ankumi on the Plains of the Lizardmen. -->
+		<set name="icon" val="icon.etc_innadrile_fish_scale_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="15499" type="EtcItem" name="Vial of Tanta Blood">
+		<!-- Vial containing the blood of Tanta Lizardmen. Take it to Investigator Laki on the Plains of the Lizardmen. -->
+		<set name="icon" val="icon.etc_dragons_blood_i04" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+</list>

@@ -1,0 +1,1629 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="23200" levels="1" name="Ball Trapping Penalty Kick Agathion Special Skill - Soccer Ball of Cheers">
+		<!-- Provides a soccer ball containing the mysterious energy of cheering power. When you use the soccer ball, you can receive a gift at random. Reuse delay is 10 seconds. Consumes 500 energy. -->
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<cond msgId="2292">
+			<player agathionId="20991" />
+		</cond>
+		<for>
+			<effect name="Restoration">
+				<param itemId="20993" itemCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23201" levels="1" name="Ball Trapping Gnocian Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1576" />
+		</cond>
+	</skill>
+	<skill id="23202" levels="1" name="Ball Trapping Orodriel Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1577" />
+		</cond>
+	</skill>
+	<skill id="23203" levels="1" name="Penalty Kick Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1578" />
+		</cond>
+	</skill>
+	<skill id="23204" levels="1" name="Ball Trapping Gnocian Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1579" />
+		</cond>
+	</skill>
+	<skill id="23205" levels="1" name="Ball Trapping Orodriel Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1580" />
+		</cond>
+	</skill>
+	<skill id="23206" levels="1" name="Penalty Kick Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1581" />
+		</cond>
+	</skill>
+	<skill id="23207" levels="1" name="Ball Trapping Gnocian Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1582" />
+		</cond>
+	</skill>
+	<skill id="23208" levels="1" name="Ball Trapping Orodriel Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1583" />
+		</cond>
+	</skill>
+	<skill id="23209" levels="1" name="Penalty Kick Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="2292">
+			<player agathionId="1584" />
+		</cond>
+	</skill>
+	<skill id="23210" levels="85" name="Aura Flare">
+		<!-- Attacks a contacted target with non-attribute attack and temporarily decreases one's magic attack power during PvP. Power 60. -->
+		<table name="#effectPoints"> -74 -77 -81 -85 -89 -93 -97 -101 -106 -110 -115 -120 -125 -130 -135 -140 -146 -151 -157 -163 -169 -175 -181 -188 -194 -201 -208 -214 -221 -228 -236 -243 -250 -258 -265 -273 -280 -288 -296 -303 -311 -319 -327 -335 -343 -350 -358 -366 -374 -381 -389 -396 -404 -411 -419 -426 -433 -440 -446 -453 -459 -466 -472 -478 -483 -489 -494 -499 -504 -508 -513 -517 -520 -524 -527 -530 -533 -536 -538 -541 -543 -545 -547 -549 -551 </table>
+		<set name="abnormalLvl" val="0" />
+		<set name="abnormalTime" val="3" />
+		<set name="abnormalType" val="MA_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="icon" val="icon.skill1231" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A3" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23211" levels="85" name="Prominence">
+		<!-- Condenses air to burst flames. Power 75. -->
+		<table name="#effectPoints"> -92 -97 -101 -106 -111 -116 -121 -126 -132 -138 -143 -149 -156 -162 -168 -175 -182 -189 -196 -204 -211 -219 -227 -235 -243 -251 -259 -268 -277 -285 -294 -303 -313 -322 -331 -341 -350 -360 -369 -379 -389 -399 -408 -418 -428 -438 -448 -457 -467 -477 -486 -495 -505 -514 -523 -532 -541 -549 -558 -566 -574 -582 -590 -597 -604 -611 -617 -624 -630 -635 -641 -646 -650 -655 -659 -662 -666 -669 -673 -676 -679 -681 -684 -687 -689 </table>
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="icon" val="icon.skill1230" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23212" levels="85" name="Flame Strike">
+		<!-- Hurls a fireball with a wide range that causes a burning trail. Power 38. -->
+		<table name="#effectPoints"> -92 -97 -101 -106 -111 -116 -121 -126 -132 -138 -143 -149 -156 -162 -168 -175 -182 -189 -196 -204 -211 -219 -227 -235 -243 -251 -259 -268 -277 -285 -294 -303 -313 -322 -331 -341 -350 -360 -369 -379 -389 -399 -408 -418 -428 -438 -448 -457 -467 -477 -486 -495 -505 -514 -523 -532 -541 -549 -558 -566 -574 -582 -590 -597 -604 -611 -617 -624 -630 -635 -641 -646 -650 -655 -659 -662 -666 -669 -673 -676 -679 -681 -684 -687 -689 </table>
+		<set name="affectLimit" val="5-12" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="icon" val="icon.skill1181" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="7000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23213" levels="2" name="Berserker Spirit">
+		<!-- Temporarily decreases P. Def./M. Def./evasion and increases P. Atk./M. Atk./Atk. Spd./Casting Spd./Speed. Effectiveness 1. -->
+		<table name="#abnormalLvls"> 1 2 </table>
+		<table name="#effectPoints"> 331 486 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="BERSERKER" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="icon" val="icon.skill1062" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23214" levels="1" name="Good/Bad of Life">
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Heal">
+				<param power="500" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23215" levels="1" name="Good/Bad of Mind">
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="ManaHeal">
+				<param power="500" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23216" levels="1" name="Granny Tiger Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23217" levels="1" name="Granny Tiger Agathion Special Skill - Fundamentals">
+		<!-- For 1 minute(s), 50% of the standard short-range physical damage inflicted on the enemy is recovered as HP. Reuse delay is 1 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23218" levels="1" name="Flower Fairy Spirit Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23219" levels="1" name="Flower Fairy Spirit Agathion Special Skill - Fairy's Blessing">
+		<!-- For 5 minutes, increases Atk. Spd. by 30% and all attribute defense by 10. Reuse delay is 1 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23220" levels="1" name="Cheerleader Orodriel Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23221" levels="1" name="Cheerleader Orodriel Agathion Special Skill - Joy of Cheering">
+		<!-- For 20 minutes, increases Casting Spd. by 10% and Atk. Spd. by 10%. Decreases MP consumption for skill use by 30%. Reuse delay is 2 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23222" levels="1" name="Cheerleader Lana Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23223" levels="1" name="Cheerleader Lana Agathion Special Skill - Joy of Cheering">
+		<!-- For 20 minutes, increases Casting Spd. by 10% and Atk. Spd. by 10%. Decreases MP consumption for skill use by 30%. Reuse delay is 2 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23224" levels="1" name="Cheerleader Naonin Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23225" levels="1" name="Cheerleader Naonin Agathion Special Skill - Joy of Cheering">
+		<!-- For 20 minutes, increases Casting Spd. by 10% and Atk. Spd. by 10%. Decreases MP consumption for skill use by 30%. Reuse delay is 2 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23226" levels="1" name="Cheerleader Mortia Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23227" levels="1" name="Cheerleader Mortia Agathion Special Skill - Joy of Cheering">
+		<!-- For 20 minutes, increases Casting Spd. by 10% and Atk. Spd. by 10%. Decreases MP consumption for skill use by 30%. Reuse delay is 2 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23228" levels="1" name="Cheerleader Kaurin Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23229" levels="1" name="Cheerleader Kaurin Agathion Special Skill - Joy of Cheering">
+		<!-- For 20 minutes, increases Casting Spd. by 10% and Atk. Spd. by 10%. Decreases MP consumption for skill use by 30%. Reuse delay is 2 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23230" levels="1" name="Cheerleader Meruril Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23231" levels="1" name="Cheerleader Meruril Agathion Special Skill - Joy of Cheering">
+		<!-- For 20 minutes, increases Casting Spd. by 10% and Atk. Spd. by 10%. Decreases MP consumption for skill use by 30%. Reuse delay is 2 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23232" levels="1" name="Handy Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23233" levels="1" name="Handy Agathion Special Skill - Halloween's Blessing">
+		<!-- For 1 hour, increases Max HP by 40% and Max MP by 40%. Increases Atk. Spd. by 20% and P. Atk. by 10%. Increases Resistance to Dark by 20. Reuse delay is 2 hours. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23234" levels="1" name="Singer Dancer Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23235" levels="1" name="Singer Dancer Agathion Special Skill - Song of Hunter">
+		<!-- Increases critical attack rate by 100% for 2 minutes. Reuse delay 20 minutes. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23236" levels="1" name="Zaken Spirit Sword Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23237" levels="1" name="Zaken Spirit Sword Special Skill - Song of the Sword">
+		<!-- For 30 minutes increases Max HP and Max MP by 40%, Atk. Spd. by 20% and P. Atk. by 10%. Re-use delay is 2 hours. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23238" levels="1" name="Master's Blessing - Eye of Pa'agrio">
+		<!-- The GM is always by your side. Combines the increased accuracy effect and critical defense effect for a more advanced effect. For 1 hour, increases accuracy by 4 and decreases the rate of being hit by a critical attack by 30%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_HIT_DEFENCE_CRT_RATE_UP" />
+		<set name="castRange" val="900" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="2500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="77" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="4" />
+				<mul stat="defCritRate" val="0.7" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="HIT_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="HIT_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23239" levels="1" name="Master's Blessing - Soul of Pa'agrio">
+		<!-- The GM is always by your side. Combines the increased M. Atk. effect and M. Def. effect for a more advanced effect. For 1 hour, increases nearby clan members' M. Atk. by 75% and M. Def. by 30%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_MA_MD_UP" />
+		<set name="castRange" val="900" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="2500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="77" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.75" />
+				<mul stat="mDef" val="1.3" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="MA_UP,9;MD_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="MA_UP;MD_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23240" levels="1" name="Master's Blessing - Chant of Magnus">
+		<!-- The GM is always by your side. For 1 hour, receives help from a great spirit to increase Max MP of all party members by 15%, MP recovery bonus by 1.5 when wearing light/heavy armor, MP recovery bonus by 4 when wearing a robe, M. Def. by 30%, M. Atk. by 30%, Casting Spd. by 20%, Resistance to fire/water/wind/earth by 10, Resistance to de-buff attacks by 25, and Resistance to buff canceling attacks by 40. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="castRange" val="900" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="1.15" />
+				<add stat="regMp" val="1.5">
+					<using kind="HEAVY,LIGHT" />
+				</add>
+				<add stat="regMp" val="4">
+					<using kind="MAGIC" />
+				</add>
+				<mul stat="mDef" val="1.3" />
+				<mul stat="mAtk" val="1.3" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<add stat="fireRes" val="10" />
+				<add stat="waterRes" val="10" />
+				<add stat="windRes" val="10" />
+				<add stat="earthRes" val="10" />
+				<sub stat="debuffVuln" val="25" />
+				<sub stat="cancelVuln" val="40" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23241" levels="1" name="Master's Blessing - Chant of Blood Awakening">
+		<!-- The GM is always by your side. Combines general attack damage absorption and attack speed increase for a more advanced blood awakening effect. For 1 hour, increases Atk. Spd. by 33% and bestows the ability to recover as HP 9% of the standard short-range physical damage inflicted on the enemy. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_VAMPIRIC_HASTE" />
+		<set name="castRange" val="900" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="74" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+				<mul stat="pAtkSpd" val="1.33" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="VAMPIRIC_ATTACK,9;ATTACK_TIME_DOWN,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="VAMPIRIC_ATTACK;ATTACK_TIME_DOWN" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23242" levels="1" name="Master's Blessing - Spike">
+		<!-- The GM is always by your side. Adds a spike to a blunt weapon to increase P. Atk. by 5% and its weight for shock attacks by 8% for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_ATTACK_BUFF" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="500" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.05">
+					<using kind="BLUNT" />
+				</mul>
+				<!-- TODO:? <add stat="stunProf" val="8"> <using kind="BLUNT" /> </add> -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="23243" levels="1" name="Master's Blessing - Bowstring">
+		<!-- The GM is always by your side. Enhances the string of a bow or crossbow to increase P. Atk. by 5% and range by 100 for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_ATTACK_BUFF" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="500" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="4000" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.05">
+					<using kind="BOW,CROSSBOW" />
+				</mul>
+				<add stat="pAtkRange" val="100">
+					<using kind="BOW,CROSSBOW" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="23244" levels="1" name="Master's Blessing - Hard Tanning">
+		<!-- The GM is always by your side. Tans armor to increase P. Def. by 5% and evasion by 2 for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_DEFENCE_BUFF" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="500" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.05">
+					<using kind="LIGHT" />
+				</mul>
+				<add stat="rEvas" val="2">
+					<using kind="LIGHT" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="23245" levels="1" name="Master's Blessing - Embroider">
+		<!-- The GM is always by your side. Embroiders a robe to increase P. Def. by 5% and MP recovery bonus by 2 for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_DEFENCE_BUFF" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="500" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.05">
+					<using kind="MAGIC" />
+				</mul>
+				<add stat="regMp" val="2">
+					<using kind="MAGIC" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="23246" levels="1" name="Master's Blessing - Counter Critical">
+		<!-- The GM is always by your side. For 1 hour, increases P. Def. against critical by 30%. When an attack above a certain amount of damage is received, the Critical Damage of general short-range physical attack is increased for 8 seconds. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="COUNTER_CRITICAL" />
+		<set name="castRange" val="900" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="500" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="300" />
+				<param chance="80" />
+				<param skillId="6059" skillLevel="1" /> <!-- Counter Critical -->
+				<param targetType="SELF" />
+				<mul stat="defCritDamage" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23247" levels="1" name="Master's Blessing - Elemental Protection">
+		<!-- The GM is always by your side. For 1 hour, increases Resistance to fire/water/wind/earth attacks by 20. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MD_UP_ATTR" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="waterRes" val="20" />
+				<add stat="fireRes" val="20" />
+				<add stat="windRes" val="20" />
+				<add stat="earthRes" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23248" levels="1" name="Master's Blessing - Arcane Protection">
+		<!-- The GM is always by your side. For 1 hour, increases Resistance to buff canceling attacks by 30 and Resistance to de-buff attacks by 20. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="RESIST_DEBUFF_DISPEL" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<sub stat="cancelVuln" val="30" />
+				<sub stat="debuffVuln" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23249" levels="1" name="Master's Call">
+		<!-- Summons the target's party member somewhere near the target. -->
+		<set name="castRange" val="2000" />
+		<set name="effectRange" val="2500" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="CallParty" />
+		</for>
+	</skill>
+	<skill id="23250" levels="1" name="Kau Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23251" levels="1" name="Tow Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23252" levels="1" name="Griffin Agathion Cute Trick">
+		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23253" levels="1" name="Master's Blessing - Focus">
+		<!-- The GM is always by your side. Increases Critical attack rate by 30% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23254" levels="1" name="Master's Blessing - Death Whisper">
+		<!-- The GM is always by your side. Increases Critical attack power by 35% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmg" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23255" levels="1" name="Master's Blessing - Haste">
+		<!-- The GM is always by your side. Increases Atk. Spd. by 33% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23256" levels="1" name="Master's Blessing - Guidance">
+		<!-- The GM is always by your side. Increases accuracy by 4 for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="HIT_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23257" levels="1" name="Master's Blessing - Blessed Body">
+		<!-- The GM is always by your side. Increases Max HP by 35% for 1 hour. -->
+		<set name="abnormalLvl" val="6" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAX_HP_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23258" levels="1" name="Master's Blessing - Blessed Soul">
+		<!-- The GM is always by your side. Increases Max MP by 35% for 1 hour. -->
+		<set name="abnormalLvl" val="6" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAX_MP_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23259" levels="1" name="Master's Blessing - Agility">
+		<!-- The GM is always by your side. Increase Evasion by 4 for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="AVOID_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23260" levels="1" name="Master's Blessing - Acumen">
+		<!-- The GM is always by your side. Increases Casting Spd. by 30% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23261" levels="1" name="Master's Blessing - Decrease Weight">
+		<!-- The GM is always by your side. Increases the weight penalty interval by 9000 for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DECREASE_WEIGHT_PENALTY" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="weightPenalty" val="9000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23262" levels="1" name="Master's Blessing - Might">
+		<!-- The GM is always by your side. Increases P. Atk. by 15% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23263" levels="1" name="Master's Blessing - Shield">
+		<!-- The GM is always by your side. Increases P. Def. by 15% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PD_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23264" levels="1" name="Master's Blessing - Magic Barrier">
+		<!-- The GM is always by your side. Increases M. Def. by 30% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MD_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mDef" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23265" levels="1" name="Master's Blessing - Vampiric Rage">
+		<!-- The GM is always by your side. For 1 hour, 9% of the standard short-range physical damage inflicted on the enemy is recovered as HP. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="23266" levels="1" name="Master's Blessing - Empower">
+		<!-- The GM is always by your side. Increases M. Atk. by 75% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MA_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23267" levels="1" name="Master's Blessing - Wind Walk">
+		<!-- The GM is always by your side. Increases Speed by 33 for 1 hour. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23268" levels="1" name="Master's Blessing - Berserker Spirit">
+		<!-- The GM is always by your side. For 1 hour, decreases a party member's P. Def. by 8%, M. Def. by 16%, and evasion by 4. Increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="BERSERKER" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.16" />
+				<mul stat="pAtk" val="1.08" />
+				<mul stat="mDef" val="0.84" />
+				<mul stat="pDef" val="0.92" />
+				<mul stat="mAtkSpd" val="1.08" />
+				<mul stat="pAtkSpd" val="1.08" />
+				<add stat="runSpd" val="8" />
+				<sub stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23269" levels="1" name="Master's Blessing - Greater Might">
+		<!-- The GM is always by your side. Increases P. Atk. by 10% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PA_PD_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23270" levels="1" name="Master's Blessing - Greater Shield">
+		<!-- The GM is always by your side. Increases P. Def. by 15% for 1 hour. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PA_PD_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23271" levels="1" name="Master's Blessing - Wild Magic">
+		<!-- The GM is always by your side. For 1 hour, increases by 2 the occurrence rate of damage that is caused by magic damage. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAGIC_CRITICAL_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="mCritRate" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23272" levels="1" name="Master's Blessing - Clarity">
+		<!-- The GM is always by your side. For 1 hour, decreases physical skill MP consumption by 20%, magic skill's MP consumption by 10%, and song/dance skill's MP consumption by 20%. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CHEAP_MAGIC" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="magicalMpConsumeRate" val="0.9" />
+				<mul stat="physicalMpConsumeRate" val="0.8" />
+				<mul stat="danceMpConsumeRate" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23273" levels="1" name="Master's Blessing - Prophecy of Water">
+		<!-- The GM is always by your side. For 1 hour, receives help from a great spirit to increase the chance of prominent damage occurring through magic damage by 2, MP recovery bonus by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buffs by 10%. Decreases Speed by 20% and MP consumption for skill use by 5%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="magicLvl" val="78" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="mCritRate" val="2" />
+				<mul stat="regMp" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="runSpd" val="0.8" />
+				<mul stat="magicalMpConsumeRate" val="0.95" />
+				<mul stat="physicalMpConsumeRate" val="0.95" />
+				<mul stat="danceMpConsumeRate" val="0.95" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23274" levels="1" name="Master's Blessing - Prophecy of Fire">
+		<!-- The GM is always by your side. For 1 hour, receives help from a great spirit to increase Max MP by 20%, HP recovery bonus by 20%, the chance of prominent damage occurring through magic damage by 2, the power of critical attacks by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buffs by 10%. Decreases Speed by 20%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="1.2" />
+				<mul stat="regHp" val="1.2" />
+				<add stat="mCritRate" val="2" />
+				<mul stat="critDmg" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<add stat="accCombat" val="4" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23275" levels="1" name="Master's Blessing - Prophecy of Wind">
+		<!-- The GM is always by your side. For 1 hour, receives help from a great spirit to increase Max HP by 20%, rate of critical attack by 20%, rate of Prominent Damage through magic damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buff by 10%. Decreases Speed by 20%. Bestows the ability to recover as HP 5% of the standard short-range physical damage inflicted on the enemy. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.2" />
+				<mul stat="critRate" val="1.2" />
+				<mul stat="mCritPower" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="runSpd" val="0.8" />
+				<add stat="absorbDam" val="5" /> <!-- absorb 5% HP from damage inflicted on enemies -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="23276" levels="1" name="Master's Blessing - Chant of Victory">
+		<!-- The GM is always by your side. Recovers HP by 20%, and for 1 hour, receives help from a great spirit to increase Max HP by 20%, the chance of prominent damage occurring through magic damage by 2, the rate of critical attack by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, Resistance to de-buffs by 10%, and accuracy by 4. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MaxHp">
+				<param power="20" />
+				<param type="PER" />
+				<param heal="true" />
+				<add stat="mCritRate" val="2" />
+				<mul stat="critDmg" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<sub stat="debuffVuln" val="10" />
+				<add stat="accCombat" val="4" />
+				<mul stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23277" levels="1" name="Master's Blessing - Improve Combat">
+		<!-- The GM is always by your side. Combine P. Atk. increase and P. Def. increase to have more advanced combat power increase effect. For 1 hour, increases P. Atk. by 15% and P. Def. by 15%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_PA_PD_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="70" />
+		<set name="mpConsume" val="1" />
+		<set name="mpInitialConsume" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.15" />
+				<mul stat="pDef" val="1.15" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="PA_UP,9;PD_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="PA_UP;PD_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23278" levels="1" name="Master's Blessing - Improve Magic">
+		<!-- The GM is always by your side. Combine magic power increase and magic resistance increase to have more advanced magic ability increase effect. For 1 hour, increases M. Atk. by 75% and M. Def. by 30%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_MA_MD_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="74" />
+		<set name="mpConsume" val="1" />
+		<set name="mpInitialConsume" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.75" />
+				<mul stat="mDef" val="1.3" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="MA_UP,9;MD_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="MA_UP;MD_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23279" levels="1" name="Master's Blessing - Improve Condition">
+		<!-- The GM is always by your side. Combine maximum HP increase and maximum MP increase to have more advanced mental and physical power. For 1 hour, increases Max HP by 35% and Max MP by 35%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_HP_MP_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="72" />
+		<set name="mpConsume" val="1" />
+		<set name="mpInitialConsume" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.35" />
+				<mul stat="maxMp" val="1.35" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="MAX_HP_UP,9;MAX_MP_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="MAX_HP_UP;MAX_MP_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23280" levels="1" name="Master's Blessing - Improve Critical">
+		<!-- The GM is always by your side. Combine Critical Rate increase and Critical Damage increase to have more advanced critical increase effect. For 1 hour, increases Critical Rate by 30% and Critical Damage by 35%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_CRT_RATE_DMG_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="74" />
+		<set name="mpConsume" val="1" />
+		<set name="mpInitialConsume" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.3" />
+				<mul stat="critDmg" val="1.35" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="CRITICAL_PROB_UP,9;CRITICAL_DMG_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="CRITICAL_PROB_UP;CRITICAL_DMG_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23281" levels="1" name="Master's Blessing - Improve Shield Defense">
+		<!-- The GM is always by your side. Combine shield Def. rate increase and shield P. Def. increase to have more advanced shield ability increase effect. For 1 hour, increases shield defense rate by 30% and shield P. Def. by 50%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_SHIELD_RATE_DEFENCE_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="70" />
+		<set name="mpConsume" val="1" />
+		<set name="mpInitialConsume" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="rShld" val="1.3" />
+				<mul stat="sDef" val="1.5" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="SHIELD_PROB_UP,9;SHIELD_DEFENCE_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="SHIELD_PROB_UP;SHIELD_DEFENCE_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23282" levels="1" name="Master's Blessing - Improve Movement">
+		<!-- The GM is always by your side. Combine Spd. increase and Evasion increase to have more advanced movement increase effect. For 1 hour, increases Speed by 33 and evasion by 4. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_SPEED_AVOID_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="72" />
+		<set name="mpConsume" val="1" />
+		<set name="mpInitialConsume" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+				<add stat="rEvas" val="4" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="SPEED_UP,9;AVOID_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="SPEED_UP;AVOID_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23283" levels="1" name="Master's Blessing - Sharpen Edge">
+		<!-- The GM is always by your side. Sharpens a bladed weapon to increase P. Atk. by 5% and Critical Rate by 20% for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_ATTACK_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.05">
+					<using kind="SWORD,DUAL,ANCIENTSWORD,RAPIER,DAGGER,DUALDAGGER,POLE,DUALFIST" />
+				</mul>
+				<mul stat="critRate" val="1.2">
+					<using kind="SWORD,DUAL,ANCIENTSWORD,RAPIER,DAGGER,DUALDAGGER,POLE,DUALFIST" />
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="23284" levels="1" name="Master's Blessing - Face Harden">
+		<!-- The GM is always by your side. Enhances the armor surface to increase P. Def. by 10% for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_DEFENCE_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="4000" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.1">
+					<using kind="HEAVY" />
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="23285" levels="1" name="Master's Blessing - Blessing of Noblesse">
+		<!-- The GM is always by your side. The target's buff/de-buff doesn't disappear at death but is maintained. But the Blessing of Noblesse and the Amulet of Luck disappear. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PRESERVE_ABNORMAL" />
+		<set name="affectRange" val="200" />
+		<set name="canBeDispeled" val="false" />
+		<set name="hitTime" val="4000" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="NoblesseBless" />
+		</for>
+	</skill>
+	<skill id="23286" levels="1" name="Master's Blessing - Eye of Pa'agrio">
+		<!-- The GM is always by your side. Combines the increased accuracy effect and critical defense effect for a more advanced effect. For 1 hour, increases accuracy by 4 and decreases the rate of being hit by a critical attack by 30%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_HIT_DEFENCE_CRT_RATE_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="77" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="4" />
+				<mul stat="defCritRate" val="0.7" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="HIT_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="HIT_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23287" levels="1" name="Master's Blessing - Soul of Pa'agrio">
+		<!-- The GM is always by your side. Combines the increased M. Atk. effect and M. Def. effect for a more advanced effect. For 1 hour, increases nearby clan members' M. Atk. by 75% and M. Def. by 30%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_MA_MD_UP" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="77" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.75" />
+				<mul stat="mDef" val="1.3" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="MA_UP,9;MD_UP,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="MA_UP;MD_UP" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23288" levels="1" name="Master's Blessing - Chant of Magnus">
+		<!-- The GM is always by your side. For 1 hour, receives help from a great spirit to increase Max MP of all party members by 15%, MP recovery bonus by 1.5 when wearing light/heavy armor, MP recovery bonus by 4 when wearing a robe, M. Def. by 30%, M. Atk. by 30%, Casting Spd. by 20%, Resistance to fire/water/wind/earth by 10, Resistance to de-buff attacks by 25, and Resistance to buff canceling attacks by 40. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="1.15" />
+				<add stat="regMp" val="1.5">
+					<using kind="HEAVY,LIGHT" />
+				</add>
+				<add stat="regMp" val="4">
+					<using kind="MAGIC" />
+				</add>
+				<mul stat="mDef" val="1.3" />
+				<mul stat="mAtk" val="1.3" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<add stat="fireRes" val="10" />
+				<add stat="waterRes" val="10" />
+				<add stat="windRes" val="10" />
+				<add stat="earthRes" val="10" />
+				<sub stat="debuffVuln" val="25" />
+				<sub stat="cancelVuln" val="40" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23289" levels="1" name="Master's Blessing - Chant of Blood Awakening">
+		<!-- The GM is always by your side. Combines general attack damage absorption and attack speed increase for a more advanced blood awakening effect. For 1 hour, increases Atk. Spd. by 33% and bestows the ability to recover as HP 9% of the standard short-range physical damage inflicted on the enemy. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="IMPROVE_VAMPIRIC_HASTE" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="74" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+				<mul stat="pAtkSpd" val="1.33" />
+			</effect>
+			<effect name="DispelBySlot">
+				<param dispel="VAMPIRIC_ATTACK,9;ATTACK_TIME_DOWN,9" />
+			</effect>
+			<effect name="BlockBuffSlot">
+				<param slot="VAMPIRIC_ATTACK;ATTACK_TIME_DOWN" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23290" levels="1" name="Master's Blessing - Spike">
+		<!-- The GM is always by your side. Adds a spike to a blunt weapon to increase P. Atk. by 5% and its weight for shock attacks by 8% for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_ATTACK_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.05">
+					<using kind="BLUNT" />
+				</mul>
+				<!-- TODO:? <add stat="stunProf" val="8"> <using kind="BLUNT" /> </add> -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="23291" levels="1" name="Master's Blessing - Bowstring">
+		<!-- The GM is always by your side. Enhances the string of a bow or crossbow to increase P. Atk. by 5% and range by 100 for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_ATTACK_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.05">
+					<using kind="BOW,CROSSBOW" />
+				</mul>
+				<add stat="pAtkRange" val="100">
+					<using kind="BOW,CROSSBOW" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="23292" levels="1" name="Master's Blessing - Hard Tanning">
+		<!-- The GM is always by your side. Tans armor to increase P. Def. by 5% and evasion by 2 for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_DEFENCE_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.05">
+					<using kind="LIGHT" />
+				</mul>
+				<add stat="rEvas" val="2">
+					<using kind="LIGHT" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="23293" levels="1" name="Master's Blessing - Embroider">
+		<!-- The GM is always by your side. Embroiders a robe to increase P. Def. by 5% and MP recovery bonus by 2 for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DWARF_DEFENCE_BUFF" />
+		<set name="affectRange" val="200" />
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.05">
+					<using kind="MAGIC" />
+				</mul>
+				<add stat="regMp" val="2">
+					<using kind="MAGIC" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="23294" levels="1" name="Master's Blessing - Counter Critical">
+		<!-- The GM is always by your side. For 1 hour, increases P. Def. against critical by 30%. When an attack above a certain amount of damage is received, the Critical Damage of general short-range physical attack is increased for 8 seconds. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="COUNTER_CRITICAL" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="300" />
+				<param chance="80" />
+				<param skillId="6059" skillLevel="1" /> <!-- Counter Critical -->
+				<param targetType="SELF" />
+				<mul stat="defCritDamage" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23295" levels="1" name="Master's Blessing - Elemental Protection">
+		<!-- The GM is always by your side. For 1 hour, increases Resistance to fire/water/wind/earth attacks by 20. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MD_UP_ATTR" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<add stat="waterRes" val="20" />
+				<add stat="fireRes" val="20" />
+				<add stat="windRes" val="20" />
+				<add stat="earthRes" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23296" levels="1" name="Master's Blessing - Arcane Protection">
+		<!-- The GM is always by your side. For 1 hour, increases Resistance to buff canceling attacks by 30 and Resistance to de-buff attacks by 20. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="RESIST_DEBUFF_DISPEL" />
+		<set name="affectRange" val="200" />
+		<set name="hitTime" val="500" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<sub stat="cancelVuln" val="30" />
+				<sub stat="debuffVuln" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23297" levels="1" name="Santa Claus's Blessing">
+		<!-- Rudolph's Blessing. For 20 minutes, increases Atk. Spd. by 10%, Casting Spd. by 10%, and Speed by 10. Rudolph consumes 2 fresh herbs. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="23298" levels="1" name="Flame Hawk">
+		<!-- Envelops in flames to inflict 300 fire damage every second for 10 seconds. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="FLAME_HAWK" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="element" val="0" /> <!-- Fire -->
+		<set name="elementPower" val="20" />
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="83" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="300" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23299" levels="1" name="Arrow Rain">
+		<!-- Envelops in a hurricane to inflict 300 wind damage every second for 10 seconds. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="ARROW_RAIN" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="element" val="2" /> <!-- Wind -->
+		<set name="elementPower" val="20" />
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="83" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="300" />
+			</effect>
+		</for>
+	</skill>
+</list>

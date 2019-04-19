@@ -1,0 +1,2032 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="11400" type="Armor" name="Blue Wolf Gloves - Light Armor Use">
+		<!-- Masterwork Item that increases P. Def. -->
+		<set name="icon" val="icon.armor_t69_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="83" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="590" />
+		<set name="price" val="618800" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3717-1" /> <!-- Blue Wolf Gloves -->
+		<for>
+			<add order="0" stat="pDef" val="44" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11401" type="Armor" name="Blue Wolf Gloves - Robe">
+		<!-- Masterwork Item that increases Max MP and MP Recovery Rate. -->
+		<set name="icon" val="icon.armor_t70_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="83" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="590" />
+		<set name="price" val="618800" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3720-1" /> <!-- Blue Wolf Gloves -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="44" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11402" type="Armor" name="Blue Wolf Tunic">
+		<!-- Masterwork Item that increases Max MP and MP Recovery Rate. -->
+		<set name="icon" val="icon.armor_t70_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="248" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1920" />
+		<set name="price" val="1857000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3721-1" /> <!-- Blue Wolf Tunic -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="83" />
+			<add stat="maxMp" val="377" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11403" type="Armor" name="Blue Wolf Helmet - Heavy Armor">
+		<!-- Masterwork Item that increases Speed and MP Recovery Rate. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="124" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="928300" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3714-1" /> <!-- Blue Wolf Helmet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="66" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11404" type="Armor" name="Blue Wolf Stockings">
+		<!-- Masterwork Item that increases Max MP and MP Recovery Rate. -->
+		<set name="icon" val="icon.armor_t70_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="155" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="920" />
+		<set name="price" val="1160300" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3722-1" /> <!-- Blue Wolf Stockings -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="52" />
+			<add stat="maxMp" val="236" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11405" type="Armor" name="Blue Wolf Breastplate">
+		<!-- Masterwork Item that increases Speed and MP Recovery Rate. -->
+		<set name="icon" val="icon.armor_t68_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="330" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="7820" />
+		<set name="price" val="2475000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3710-1" /> <!-- Blue Wolf Breastplate -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="166" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11406" type="Armor" name="Stockings of Doom">
+		<!-- Masterwork Item that increases Speed, Breath Gauge and MP Recovery Rate. -->
+		<set name="icon" val="icon.armor_t73_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="155" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="910" />
+		<set name="price" val="1160300" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3708-1" /> <!-- Stockings of Doom -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="52" />
+			<add stat="maxMp" val="236" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11407" type="Armor" name="Dark Crystal Gaiters">
+		<!-- Masterwork Item that increases heal power and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t74_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="178" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="3320" />
+		<set name="price" val="2226000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3726-1" /> <!-- Dark Crystal Gaiters -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="107" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11408" type="Armor" name="Dark Crystal Gloves - Heavy Armor">
+		<!-- Masterwork Item that increases heal power and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t74_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3727-1" /> <!-- Dark Crystal Gloves -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11409" type="Armor" name="Dark Crystal Gloves - Light Armor Use">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd. and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t75_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3731-1" /> <!-- Dark Crystal Gloves -->
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11410" type="Armor" name="Dark Crystal Gloves - Robe">
+		<!-- Masterwork Item that increases P. Def. and Speed and decreases Magic Cancel Rate and Resistance to Paralysis -->
+		<set name="icon" val="icon.armor_t76_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3735-1" /> <!-- Dark Crystal Gloves -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11411" type="Armor" name="Dark Crystal Leather Armor">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd. and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t75_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="214" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4300" />
+		<set name="price" val="2671000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3730-1" /> <!-- Dark Crystal Leather Armor -->
+		<for>
+			<add order="0" stat="pDef" val="128" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11412" type="Armor" name="Dark Crystal Robe">
+		<!-- Masterwork Item that increases P. Def., Casting Spd. and Speed, and decreases casting interrupt and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t76_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="347" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="2450" />
+		<set name="price" val="4341000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3736-1" /> <!-- Dark Crystal Robe -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="139" />
+			<add stat="maxMp" val="665" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11413" type="Armor" name="Dark Crystal Boots - Heavy Armor">
+		<!-- Masterwork Item that increases heal power and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t74_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1110" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3728-1" /> <!-- Dark Crystal Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11414" type="Armor" name="Dark Crystal Boots - Light Armor Use">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd. and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t75_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1110" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3732-1" /> <!-- Dark Crystal Boots -->
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11415" type="Armor" name="Dark Crystal Boots - Robe">
+		<!-- Masterwork Item that increases P. Def. and Speed and decreases Magic Cancel Rate and Resistance to Paralysis -->
+		<set name="icon" val="icon.armor_t76_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1110" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3737-1" /> <!-- Dark Crystal Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11416" type="Armor" name="Dark Crystal Shield">
+		<!-- Masterwork Item that increases M. Def. -->
+		<set name="icon" val="icon.shield_dark_crystal_shield_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="75" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1190" />
+		<set name="price" val="935000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3729-1" /> <!-- Dark Crystal Shield -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="243" />
+			<enchant val="0" stat="sDef" />
+		</for>
+	</item>
+	<item id="11417" type="Armor" name="Dark Crystal Helmet - Heavy Armor">
+		<!-- Masterwork Item that increases heal power and paralysis resistance. -->
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="107" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="570" />
+		<set name="price" val="1336000" />
+		<set name="soulshots" val="2" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3724-1" /> <!-- Dark Crystal Helmet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="69" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11418" type="Armor" name="Dark Crystal Breastplate">
+		<!-- Masterwork Item that increases heal power and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t74_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="285" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="7700" />
+		<set name="price" val="3562000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3725-1" /> <!-- Dark Crystal Breastplate -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="171" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11419" type="Armor" name="Dark Crystal Leggings">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd. and paralysis resistance. -->
+		<set name="icon" val="icon.armor_t75_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="134" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1480" />
+		<set name="price" val="1670000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3734-1" /> <!-- Dark Crystal Leggings -->
+		<for>
+			<add order="0" stat="pDef" val="80" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11420" type="Armor" name="Sealed Dark Crystal Gaiters">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t74_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="178" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="3320" />
+		<set name="price" val="2226000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="107" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11421" type="Armor" name="Sealed Dark Crystal Gloves">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t74_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11422" type="Armor" name="Sealed Dark Crystal Leather Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t75_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="214" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4300" />
+		<set name="price" val="2671000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="128" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11423" type="Armor" name="Sealed Dark Crystal Robe">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t76_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="347" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="2450" />
+		<set name="price" val="4341000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="139" />
+			<add stat="maxMp" val="665" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11424" type="Armor" name="Sealed Dark Crystal Boots">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t74_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1110" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11425" type="Armor" name="Sealed Dark Crystal Shield">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.shield_dark_crystal_shield_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="75" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1190" />
+		<set name="price" val="935000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="243" />
+			<enchant val="0" stat="sDef" />
+		</for>
+	</item>
+	<item id="11426" type="Armor" name="Sealed Dark Crystal Helmet - Heavy Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="107" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="570" />
+		<set name="price" val="1336000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="69" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11427" type="Armor" name="Sealed Dark Crystal breastplate">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t74_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="285" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="7700" />
+		<set name="price" val="3562000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="171" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11428" type="Armor" name="Sealed Dark Crystal Leggings">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t75_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="134" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1480" />
+		<set name="price" val="1670000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="80" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11429" type="Armor" name="Sealed Tallum Gloves">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t77_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11430" type="Armor" name="Sealed Tallum Leather Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t78_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="347" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="5400" />
+		<set name="price" val="4341000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="209" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11431" type="Armor" name="Sealed Tallum Boots">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t77_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1130" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11432" type="Armor" name="Sealed Tallum Tunic">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t79_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="214" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1860" />
+		<set name="price" val="2671000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="86" />
+			<add stat="maxMp" val="409" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11433" type="Armor" name="Sealed Tallum Plate Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t77_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="463" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="9780" />
+		<set name="price" val="5788000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="278" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11434" type="Armor" name="Sealed Tallum Helmet - Heavy Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="107" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="570" />
+		<set name="price" val="1336000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="69" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11435" type="Armor" name="Sealed Tallum Stockings">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t79_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="134" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="920" />
+		<set name="price" val="1670000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="53" />
+			<add stat="maxMp" val="256" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11436" type="Armor" name="(Not In Use) Holy Spirit's Cloak">
+		<!-- Masterwork Item -->
+		<set name="icon" val="icon.armor_back09" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="92" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="price" val="1160000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="18" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11437" type="Armor" name="Tallum Gloves - Heavy Armor">
+		<!-- Masterwork Item that increases Atk. Spd., Weight Limit, and Resistance to Poison and Bleed -->
+		<set name="icon" val="icon.armor_t77_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3739-1" /> <!-- Tallum Gloves -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11438" type="Armor" name="Tallum Gloves - Light Armor Use">
+		<!-- Masterwork Item that increases MP Recovery Rate, Max MP, and Resistance to Poison and Bleed -->
+		<set name="icon" val="icon.armor_t78_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3744-1" /> <!-- Tallum Gloves -->
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11439" type="Armor" name="Tallum Gloves - Robe">
+		<!-- Masterwork Item that increases M. Def. and Resistance to poison/bleed -->
+		<set name="icon" val="icon.armor_t79_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="580" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3747-1" /> <!-- Tallum Gloves -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11440" type="Armor" name="Tallum Leather Armor">
+		<!-- Masterwork Item that increases MP Recovery Rate, Max MP, and Resistance to Poison and Bleed -->
+		<set name="icon" val="icon.armor_t78_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="347" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="5400" />
+		<set name="price" val="4341000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3743-1" /> <!-- Tallum Leather Armor -->
+		<for>
+			<add order="0" stat="pDef" val="209" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11441" type="Armor" name="Tallum Boots - Heavy Armor">
+		<!-- Masterwork Item that increases Atk. Spd., Weight Limit, and Resistance to Poison and Bleed -->
+		<set name="icon" val="icon.armor_t77_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1130" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3740-1" /> <!-- Tallum Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11442" type="Armor" name="Tallum Boots - Light Armor Use">
+		<!-- Masterwork Item that increases MP Recovery Rate, Max MP, and Resistance to Poison and Bleed -->
+		<set name="icon" val="icon.armor_t78_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1130" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3745-1" /> <!-- Tallum Boots -->
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11443" type="Armor" name="Tallum Boots - Robe">
+		<!-- Masterwork Item that increases M. Def. and Resistance to poison/bleed -->
+		<set name="icon" val="icon.armor_t79_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1130" />
+		<set name="price" val="890000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3748-1" /> <!-- Tallum Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="46" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11444" type="Armor" name="Tallum Tunic">
+		<!-- Masterwork Item that increases Casting Spd. -->
+		<set name="icon" val="icon.armor_t79_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="214" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1860" />
+		<set name="price" val="2671000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3749-1" /> <!-- Tallum Tunic -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="86" />
+			<add stat="maxMp" val="409" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11445" type="Armor" name="Tallum Plate Armor">
+		<!-- Masterwork Item that increases Atk. Spd., Weight Limit, and Resistance to Poison and Bleed -->
+		<set name="icon" val="icon.armor_t77_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="463" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="9780" />
+		<set name="price" val="5788000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3741-1" /> <!-- Tallum Plate Armor -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="278" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11446" type="Armor" name="Tallum Helmet - Heavy Armor">
+		<!-- Masterwork Item that increases Atk. Spd., Weight Limit, and Resistance to Poison and Bleed -->
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="107" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="570" />
+		<set name="price" val="1336000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3742-1" /> <!-- Tallum Helmet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="69" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11447" type="Armor" name="Tallum Stockings">
+		<!-- Masterwork Item that increases M. Def. and Resistance to poison/bleed -->
+		<set name="icon" val="icon.armor_t79_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="134" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="920" />
+		<set name="price" val="1670000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3750-1" /> <!-- Tallum Stockings -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="53" />
+			<add stat="maxMp" val="256" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11448" type="Armor" name="Majestic Gauntlet - Heavy Armor">
+		<!-- Masterwork Item that increases P. Atk., Accuracy and Resistance to Shock -->
+		<set name="icon" val="icon.armor_t83_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="540" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3752-1" /> <!-- Majestic Gauntlet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11449" type="Armor" name="Majestic Gauntlet - Light Armor Use">
+		<!-- Masterwork Item that increases Bow/Crossbow P. Atk. and Max MP, and decreases Weight Limit and Resistance to Shock -->
+		<set name="icon" val="icon.armor_t84_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="540" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3756-1" /> <!-- Majestic Gauntlet -->
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11450" type="Armor" name="Majestic Gauntlet - Robe">
+		<!-- Masterwork Item that increases Max MP, MP Recovery Rate, and Resistance to Shock.  -->
+		<set name="icon" val="icon.armor_t85_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="540" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3760-1" /> <!-- Majestic Gauntlet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11451" type="Armor" name="Majestic Leather Armor">
+		<!-- Masterwork Item that increases Bow/Crossbow P. Ak. and Max MP, and decreases Weight Limit and Resistance to Shock -->
+		<set name="icon" val="icon.armor_t84_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="528" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="5350" />
+		<set name="price" val="6603000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3757-1" /> <!-- Majestic Leather Armor -->
+		<for>
+			<add order="0" stat="pDef" val="220" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11452" type="Armor" name="Majestic Robe">
+		<!-- Masterwork Item that increases Max MP, Casting Spd., MP Recovery Rate and Resistance to Shock -->
+		<set name="icon" val="icon.armor_t85_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="528" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="2330" />
+		<set name="price" val="6603000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3761-1" /> <!-- Majestic Robe -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="147" />
+			<add stat="maxMp" val="718" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11453" type="Armor" name="Majestic Boots - Heavy Armor">
+		<!-- Masterwork Item that increases P. Atk., Accuracy and Resistance to Shock -->
+		<set name="icon" val="icon.armor_t83_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1110" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3755-1" /> <!-- Majestic Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11454" type="Armor" name="Majestic Boots - Light Armor Use">
+		<!-- Masterwork Item that increases Bow/Crossbow P. Ak. and Max MP, and decreases Weight Limit and Resistance to Shock -->
+		<set name="icon" val="icon.armor_t84_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1110" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3758-1" /> <!-- Majestic Boots -->
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11455" type="Armor" name="Majestic Boots - Robe">
+		<!-- Masterwork Item that increases Max MP, MP Recovery Rate, and Resistance to Shock.  -->
+		<set name="icon" val="icon.armor_t85_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1110" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3762-1" /> <!-- Majestic Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11456" type="Armor" name="Majestic Circlet - Heavy Armor">
+		<!-- Masterwork Item with Resistance to Shock attacks. P. Atk. and Accuracy are increased. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="163" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="550" />
+		<set name="price" val="2032000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3753-1" /> <!-- Majestic Circlet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="73" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11457" type="Armor" name="Majestic Plate Armor">
+		<!-- Masterwork Item that increases P. Atk., Accuracy and Resistance to Shock -->
+		<set name="icon" val="icon.armor_t83_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="704" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="9200" />
+		<set name="price" val="8804000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3754-1" /> <!-- Majestic Plate Armor -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="293" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11458" type="Armor" name="Sealed Majestic Gauntlet">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t83_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="540" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11459" type="Armor" name="Sealed Majestic Leather Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t84_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="528" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="5350" />
+		<set name="price" val="6603000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="220" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11460" type="Armor" name="Sealed Majestic Robe">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t85_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="528" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="2330" />
+		<set name="price" val="6603000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="147" />
+			<add stat="maxMp" val="718" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11461" type="Armor" name="Sealed Majestic Boots">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t83_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1110" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11462" type="Armor" name="Sealed Majestic Circlet - Heavy Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_leather_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="163" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="550" />
+		<set name="price" val="2032000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="73" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11463" type="Armor" name="Sealed Majestic Plate Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t83_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="704" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="9200" />
+		<set name="price" val="8804000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="293" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11464" type="Armor" name="Sealed Armor of Nightmare">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t80_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="704" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="9580" />
+		<set name="price" val="8804000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="293" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11465" type="Armor" name="Sealed Gauntlet of Nightmare">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t80_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="550" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11466" type="Armor" name="Sealed Leather Armor of Nightmare">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t81_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="528" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="5300" />
+		<set name="price" val="6603000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="220" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11467" type="Armor" name="Sealed Robe of Nightmare">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t82_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="528" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="2300" />
+		<set name="price" val="6603000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="147" />
+			<add stat="maxMp" val="718" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11468" type="Armor" name="Sealed Boots of Nightmare">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_t80_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1110" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11469" type="Armor" name="Sealed Shield of Nightmare">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.shield_shield_of_nightmare_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="114" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1180" />
+		<set name="price" val="1422000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="256" />
+			<enchant val="0" stat="sDef" />
+		</for>
+	</item>
+	<item id="11470" type="Armor" name="Sealed Helm of Nightmare - Heavy Armor">
+		<!-- Sealed Masterwork Item. The blacksmith in a village can release the seal on this item. -->
+		<set name="icon" val="icon.armor_leather_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="163" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="560" />
+		<set name="price" val="2032000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="73" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11471" type="Armor" name="Armor of Nightmare">
+		<!-- Masterwork Item that increases P. Atk., and Resistance to Sleep/Hold. -->
+		<set name="icon" val="icon.armor_t80_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="704" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="9580" />
+		<set name="price" val="8804000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3764-1" /> <!-- Armor of Nightmare -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="293" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11472" type="Armor" name="Gauntlet of Nightmare - Heavy Armor">
+		<!-- Masterwork Item that increases P. Atk., and Resistance to Sleep/Hold. -->
+		<set name="icon" val="icon.armor_t80_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="550" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3765-1" /> <!-- Gauntlet of Nightmare -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11473" type="Armor" name="Gauntlet of Nightmare - Light Armor Use">
+		<!-- Masterwork Item that increases M. Def. and Resistance to Sleep/Hold. -->
+		<set name="icon" val="icon.armor_t81_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="550" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3769-1" /> <!-- Gauntlet of Nightmare -->
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11474" type="Armor" name="Gauntlet of Nightmare - Robe">
+		<!-- Masterwork Item that increases MP Recovery Rate, M. Atk., and Resistance to Sleep/Hold. -->
+		<set name="icon" val="icon.armor_t82_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="550" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3771-1" /> <!-- Gauntlet of Nightmare -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11475" type="Armor" name="Leather Armor of Nightmare">
+		<!-- Masterwork Item with Resistance to Sleep/Hold and M. Def. are increased. A portion of the damage inflicted on the enemy is used to recover one's own HP. Excludes damage caused by skills and long-range attack. -->
+		<set name="icon" val="icon.armor_t81_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="528" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="5300" />
+		<set name="price" val="6603000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3768-1" /> <!-- Leather Armor of Nightmare -->
+		<for>
+			<add order="0" stat="pDef" val="220" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11476" type="Armor" name="Robe of Nightmare">
+		<!-- Masterwork Item that increases MP Recovery Rate, M. Atk., and Resistance to Sleep/Hold. -->
+		<set name="icon" val="icon.armor_t82_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="528" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="2300" />
+		<set name="price" val="6603000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3772-1" /> <!-- Robe of Nightmare -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="147" />
+			<add stat="maxMp" val="718" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11477" type="Armor" name="Boots of Nightmare - Heavy Armor">
+		<!-- Masterwork Item that increases P. Atk., and Resistance to Sleep/Hold. -->
+		<set name="icon" val="icon.armor_t80_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1110" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3766-1" /> <!-- Boots of Nightmare -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11478" type="Armor" name="Boots of Nightmare - Light Armor Use">
+		<!-- Masterwork Item with Resistance to Sleep/Hold and M. Def. are increased. -->
+		<set name="icon" val="icon.armor_t81_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1110" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3770-1" /> <!-- Boots of Nightmare -->
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11479" type="Armor" name="Boots of Nightmare - Robe">
+		<!-- Masterwork Item that increases MP Recovery Rate, M. Atk., and Resistance to Sleep/Hold. -->
+		<set name="icon" val="icon.armor_t82_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="108" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1110" />
+		<set name="price" val="1355000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3773-1" /> <!-- Boots of Nightmare -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="49" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11480" type="Armor" name="Shield of Nightmare">
+		<!-- Masterwork Item that increases M. Def. -->
+		<set name="icon" val="icon.shield_shield_of_nightmare_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="114" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1180" />
+		<set name="price" val="1422000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3774-1" /> <!-- Shield of Nightmare -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="256" />
+			<enchant val="0" stat="sDef" />
+		</for>
+	</item>
+	<item id="11481" type="Armor" name="Helm of Nightmare - Heavy Armor">
+		<!-- Masterwork Item with Resistance to Sleep/Hold and P. Atk. are increased. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="163" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="560" />
+		<set name="price" val="2032000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3767-1" /> <!-- Helm of Nightmare -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="73" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11482" type="Armor" name="Great Wolf Oriharukon Armor">
+		<set name="icon" val="icon.etc_wolf_r_a_01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="24236000" /> <!-- H5 Price -->
+		<cond msgId="1518">
+			<player categoryType="GROWN_UP_WOLF_GROUP" />
+		</cond>
+		<for>
+			<add order="0" stat="mDef" val="14" />
+			<add order="0" stat="pDef" val="160" />
+		</for>
+	</item>
+	<item id="11483" type="Armor" name="Draconic Leather Gloves">
+		<!-- Masterwork Item that increases Atk. Spd., P. Atk. and Max MP, and decreases Weight Limit. -->
+		<set name="icon" val="icon.armor_t89_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="153" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="540" />
+		<set name="price" val="3195000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3775-1" /> <!-- Draconic Leather Gloves -->
+		<for>
+			<add order="0" stat="pDef" val="55" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11484" type="Armor" name="Draconic Leather Boots">
+		<!-- Masterwork Item that increases Atk. Spd., P. Atk. and Max MP, and decreases Weight Limit. -->
+		<set name="icon" val="icon.armor_t89_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="153" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1110" />
+		<set name="price" val="3195000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3776-1" /> <!-- Draconic Leather Boots -->
+		<for>
+			<add order="0" stat="pDef" val="55" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11485" type="Armor" name="Draconic Leather Armor">
+		<!-- Masterwork Item that increases Atk. Spd., P. Atk. and Max MP, and decreases Weight Limit. -->
+		<set name="icon" val="icon.armor_t89_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="748" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4950" />
+		<set name="price" val="15577000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3777-1" /> <!-- Draconic Leather Armor -->
+		<for>
+			<add order="0" stat="pDef" val="249" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11486" type="Armor" name="Draconic Leather Helmet">
+		<!-- Masterwork Item that increases Atk. Spd., P. Atk. and Max MP, and decreases Weight Limit. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="230" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="550" />
+		<set name="price" val="4793000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3778-1" /> <!-- Draconic Leather Helmet -->
+		<for>
+			<add order="0" stat="pDef" val="83" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11487" type="Armor" name="Major Arcana Gloves">
+		<!-- Masterwork Item that increases M. Atk. and Speed, and decreases casting interrupt, Resistance to Stun and Weight Limit. -->
+		<set name="icon" val="icon.armor_t90_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="153" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="540" />
+		<set name="price" val="3195000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3779-1" /> <!-- Major Arcana Gloves -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="55" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11488" type="Armor" name="Major Arcana Robe">
+		<!-- Masterwork Item that increases M. Atk. and Speed, and decreases casting interrupt, Resistance to Stun and Weight Limit. -->
+		<set name="icon" val="icon.armor_t90_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="748" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="2300" />
+		<set name="price" val="15577000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3780-1" /> <!-- Major Arcana Robe -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="166" />
+			<add stat="maxMp" val="866" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11489" type="Armor" name="Major Arcana Boots">
+		<!-- Masterwork Item that increases M. Atk. and Speed, and decreases casting interrupt, Resistance to Stun and Weight Limit. -->
+		<set name="icon" val="icon.armor_t90_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="153" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1110" />
+		<set name="price" val="3195000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3781-1" /> <!-- Major Arcana Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="55" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11490" type="Armor" name="Major Arcana Circlet">
+		<!-- Masterwork Item that increases M. Atk. and Speed, and decreases casting interrupt, Resistance to Stun and Weight Limit. -->
+		<set name="icon" val="icon.armor_circlet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="230" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="550" />
+		<set name="price" val="4793000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3782-1" /> <!-- Major Arcana Circlet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="83" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11491" type="Armor" name="Sealed Draconic Leather Gloves">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_t89_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="153" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="540" />
+		<set name="price" val="3195000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="55" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11492" type="Armor" name="Sealed Draconic Leather Boots">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_t89_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="153" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1110" />
+		<set name="price" val="3195000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="55" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11493" type="Armor" name="Sealed Draconic Leather Armor">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_t89_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="748" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4950" />
+		<set name="price" val="15577000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="236" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11494" type="Armor" name="Sealed Draconic Leather Helmet">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_leather_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="230" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="550" />
+		<set name="price" val="4793000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="83" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11495" type="Armor" name="Sealed Major Arcana Gloves">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_t90_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="153" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="540" />
+		<set name="price" val="3195000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="55" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11496" type="Armor" name="Sealed Major Arcana Robe">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_t90_ul_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="748" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="2300" />
+		<set name="price" val="15577000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="157" />
+			<add stat="maxMp" val="866" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11497" type="Armor" name="Sealed Major Arcana Boots">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_t90_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="153" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1110" />
+		<set name="price" val="3195000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="55" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11498" type="Armor" name="Sealed Major Arcana Circlet">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_circlet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="230" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="550" />
+		<set name="price" val="4793000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="83" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="11499" type="Armor" name="Sealed Imperial Crusader Gaiters">
+		<!-- Sealed Masterwork Item -->
+		<set name="icon" val="icon.armor_t88_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="383" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="3260" />
+		<set name="price" val="7988000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="121" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+</list>

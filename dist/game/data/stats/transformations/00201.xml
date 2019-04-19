@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/transformations.xsd">
+	<transform id="201" type="COMBAT" can_swim="0" normal_attackable="1">
+		<Male>
+			<common>
+				<base range="20" attackSpeed="300" attackType="SWORD" critRate="5" mAtk="5" pAtk="5" randomDamage="10" />
+				<stats str="40" int="21" con="43" dex="30" wit="11" men="25" />
+				<defense chest="31" legs="18" head="12" feet="7" gloves="8" underwear="3" cloak="1" />
+				<magicDefense rear="9" lear="9" rfinger="5" lfinger="5" neck="13" />
+				<collision radius="10" height="35" />
+				<moving walk="60" run="125" waterWalk="50" waterRun="50" flyWalk="0" flyRun="0" unknownWalk="0" unknownRun="0" />
+			</common>
+			<actions>1 2 3 4 5 6 7 8 9 11 15 16 17 18 19 21 22 23 32 36 39 40 41 42 43 44 45 46 47 48 50 52 53 54 55 56 57 63 64 65 70 1000 1001 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 1055 1056 1057 1058 1059 1060 1061 1062 1063 1064 1065 1066 1067 1068 1069 1070 1071 1072 1073 1074 1075 1076 1077 1078 1079 1080 1081 1082 1083 1084 1089 1090 1091 1092 1093 1094 1095 1096 1097 1098</actions>
+			<additionalSkills>
+				<skill id="559" level="4" minLevel="65" /> <!-- Spear -->
+				<skill id="560" level="4" minLevel="65" /> <!-- Power Slash -->
+				<skill id="561" level="4" minLevel="65" /> <!-- Bless of Angel -->
+				<skill id="562" level="4" minLevel="65" /> <!-- Wind of Angel -->
+			</additionalSkills>
+			<skills>
+				<skill id="559" level="3" /> <!-- Spear -->
+				<skill id="560" level="3" /> <!-- Power Slash -->
+				<skill id="561" level="3" /> <!-- Bless of Angel -->
+				<skill id="562" level="3" /> <!-- Wind of Angel -->
+				<skill id="619" level="1" /> <!-- Transform Dispel -->
+				<skill id="5491" level="1" /> <!-- Decrease Bow/Crossbow Atk. Spd. -->
+			</skills>
+			<levels>
+				<level val="1" levelMod="0.9" hp="80.8" mp="30.3" cp="40.4" hpRegen="2.0" mpRegen="0.9" cpRegen="2.0" />
+				<level val="2" levelMod="0.91" hp="92.7483" mp="35.8146" cp="46.37415" hpRegen="2.05" mpRegen="0.9" cpRegen="2.0" />
+				<level val="3" levelMod="0.92" hp="104.8279" mp="41.3898" cp="52.41395" hpRegen="2.1" mpRegen="0.9" cpRegen="2.0" />
+				<level val="4" levelMod="0.93" hp="117.0388" mp="47.0256" cp="58.5194" hpRegen="2.15" mpRegen="0.9" cpRegen="2.0" />
+				<level val="5" levelMod="0.94" hp="129.381" mp="52.722" cp="64.6905" hpRegen="2.2" mpRegen="0.9" cpRegen="2.0" />
+				<level val="6" levelMod="0.95" hp="141.8545" mp="58.479" cp="70.92725" hpRegen="2.25" mpRegen="0.9" cpRegen="2.0" />
+				<level val="7" levelMod="0.96" hp="154.4593" mp="64.2966" cp="77.22965" hpRegen="2.3" mpRegen="0.9" cpRegen="2.0" />
+				<level val="8" levelMod="0.97" hp="167.1954" mp="70.1748" cp="83.5977" hpRegen="2.35" mpRegen="0.9" cpRegen="2.0" />
+				<level val="9" levelMod="0.98" hp="180.0628" mp="76.1136" cp="90.0314" hpRegen="2.4" mpRegen="0.9" cpRegen="2.0" />
+				<level val="10" levelMod="0.99" hp="193.0615" mp="82.113" cp="96.53075" hpRegen="2.45" mpRegen="0.9" cpRegen="2.0" />
+				<level val="11" levelMod="1.0" hp="206.1915" mp="88.173" cp="103.09575" hpRegen="2.5" mpRegen="1.2" cpRegen="2.5" />
+				<level val="12" levelMod="1.01" hp="219.4528" mp="94.2936" cp="109.7264" hpRegen="2.6" mpRegen="1.2" cpRegen="2.5" />
+				<level val="13" levelMod="1.02" hp="232.8454" mp="100.4748" cp="116.4227" hpRegen="2.7" mpRegen="1.2" cpRegen="2.5" />
+				<level val="14" levelMod="1.03" hp="246.3693" mp="106.7166" cp="123.18465" hpRegen="2.8" mpRegen="1.2" cpRegen="2.5" />
+				<level val="15" levelMod="1.04" hp="260.0245" mp="113.019" cp="130.01225" hpRegen="2.9" mpRegen="1.2" cpRegen="2.5" />
+				<level val="16" levelMod="1.05" hp="276.522" mp="120.564" cp="138.261" hpRegen="3.0" mpRegen="1.2" cpRegen="2.5" />
+				<level val="17" levelMod="1.06" hp="290.5776" mp="127.0512" cp="145.2888" hpRegen="3.1" mpRegen="1.2" cpRegen="2.5" />
+				<level val="18" levelMod="1.07" hp="304.7658" mp="133.5996" cp="152.3829" hpRegen="3.2" mpRegen="1.2" cpRegen="2.5" />
+				<level val="19" levelMod="1.08" hp="319.0866" mp="140.2092" cp="159.5433" hpRegen="3.3" mpRegen="1.2" cpRegen="2.5" />
+				<level val="20" levelMod="1.09" hp="333.54" mp="146.88" cp="166.77" hpRegen="3.4" mpRegen="1.2" cpRegen="2.5" />
+				<level val="21" levelMod="1.1" hp="367.401" mp="158.517" cp="183.7005" hpRegen="3.5" mpRegen="1.5" cpRegen="3.5" />
+				<level val="22" levelMod="1.11" hp="398.2701" mp="168.8067" cp="199.13506" hpRegen="3.6" mpRegen="1.5" cpRegen="3.5" />
+				<level val="23" levelMod="1.12" hp="429.4173" mp="179.1891" cp="214.70865" hpRegen="3.7" mpRegen="1.5" cpRegen="3.5" />
+				<level val="24" levelMod="1.13" hp="460.8426" mp="189.6642" cp="230.4213" hpRegen="3.8" mpRegen="1.5" cpRegen="3.5" />
+				<level val="25" levelMod="1.14" hp="492.546" mp="200.232" cp="246.273" hpRegen="3.9" mpRegen="1.5" cpRegen="3.5" />
+				<level val="26" levelMod="1.15" hp="529.62" mp="212.94" cp="264.81" hpRegen="4.0" mpRegen="1.5" cpRegen="3.5" />
+				<level val="27" levelMod="1.16" hp="562.1928" mp="223.7976" cp="281.0964" hpRegen="4.1" mpRegen="1.5" cpRegen="3.5" />
+				<level val="28" levelMod="1.17" hp="595.0464" mp="234.7488" cp="297.5232" hpRegen="4.2" mpRegen="1.5" cpRegen="3.5" />
+				<level val="29" levelMod="1.18" hp="628.1808" mp="245.7936" cp="314.0904" hpRegen="4.3" mpRegen="1.5" cpRegen="3.5" />
+				<level val="30" levelMod="1.19" hp="661.596" mp="256.932" cp="330.798" hpRegen="4.4" mpRegen="1.5" cpRegen="3.5" />
+				<level val="31" levelMod="1.2" hp="701.9775" mp="270.7425" cp="350.98874" hpRegen="4.5" mpRegen="1.8" cpRegen="4.5" />
+				<level val="32" levelMod="1.21" hp="736.281" mp="282.177" cp="368.1405" hpRegen="4.6" mpRegen="1.8" cpRegen="4.5" />
+				<level val="33" levelMod="1.22" hp="770.868" mp="293.706" cp="385.434" hpRegen="4.7" mpRegen="1.8" cpRegen="4.5" />
+				<level val="34" levelMod="1.23" hp="805.7385" mp="305.3295" cp="402.86926" hpRegen="4.8" mpRegen="1.8" cpRegen="4.5" />
+				<level val="35" levelMod="1.24" hp="840.8925" mp="317.0475" cp="420.44626" hpRegen="4.9" mpRegen="1.8" cpRegen="4.5" />
+				<level val="36" levelMod="1.25" hp="884.676" mp="331.992" cp="442.338" hpRegen="5.0" mpRegen="1.8" cpRegen="4.5" />
+				<level val="37" levelMod="1.26" hp="920.7372" mp="344.0124" cp="460.3686" hpRegen="5.1" mpRegen="1.8" cpRegen="4.5" />
+				<level val="38" levelMod="1.27" hp="957.0846" mp="356.1282" cp="478.5423" hpRegen="5.2" mpRegen="1.8" cpRegen="4.5" />
+				<level val="39" levelMod="1.28" hp="993.7182" mp="368.3394" cp="496.8591" hpRegen="5.3" mpRegen="1.8" cpRegen="4.5" />
+				<level val="40" levelMod="1.29" hp="1030.638" mp="380.646" cp="515.319" hpRegen="5.4" mpRegen="1.8" cpRegen="4.5" />
+				<level val="41" levelMod="1.3" hp="1090.437" mp="405.102" cp="545.2185" hpRegen="5.5" mpRegen="2.1" cpRegen="5.5" />
+				<level val="42" levelMod="1.31" hp="1140.8982" mp="426.1275" cp="570.4491" hpRegen="5.6" mpRegen="2.1" cpRegen="5.5" />
+				<level val="43" levelMod="1.32" hp="1191.7446" mp="447.3135" cp="595.8723" hpRegen="5.7" mpRegen="2.1" cpRegen="5.5" />
+				<level val="44" levelMod="1.33" hp="1242.9762" mp="468.66" cp="621.4881" hpRegen="5.8" mpRegen="2.1" cpRegen="5.5" />
+				<level val="45" levelMod="1.34" hp="1294.593" mp="490.167" cp="647.2965" hpRegen="5.9" mpRegen="2.1" cpRegen="5.5" />
+				<level val="46" levelMod="1.35" hp="1359.18" mp="516.618" cp="679.59" hpRegen="6.0" mpRegen="2.1" cpRegen="5.5" />
+				<level val="47" levelMod="1.36" hp="1412.0568" mp="538.65" cp="706.0284" hpRegen="6.1" mpRegen="2.1" cpRegen="5.5" />
+				<level val="48" levelMod="1.37" hp="1465.3224" mp="560.844" cp="732.6612" hpRegen="6.2" mpRegen="2.1" cpRegen="5.5" />
+				<level val="49" levelMod="1.38" hp="1518.9768" mp="583.2" cp="759.4884" hpRegen="6.3" mpRegen="2.1" cpRegen="5.5" />
+				<level val="50" levelMod="1.39" hp="1573.02" mp="605.718" cp="786.51" hpRegen="6.4" mpRegen="2.1" cpRegen="5.5" />
+				<level val="51" levelMod="1.4" hp="1642.521" mp="634.2165" cp="821.2605" hpRegen="6.5" mpRegen="2.4" cpRegen="6.5" />
+				<level val="52" levelMod="1.41" hp="1697.8494" mp="657.27" cp="848.9247" hpRegen="6.6" mpRegen="2.4" cpRegen="6.5" />
+				<level val="53" levelMod="1.42" hp="1753.5702" mp="680.487" cp="876.7851" hpRegen="6.7" mpRegen="2.4" cpRegen="6.5" />
+				<level val="54" levelMod="1.43" hp="1809.6833" mp="703.8675" cp="904.8417" hpRegen="6.8" mpRegen="2.4" cpRegen="6.5" />
+				<level val="55" levelMod="1.44" hp="1866.189" mp="727.4115" cp="933.0945" hpRegen="6.9" mpRegen="2.4" cpRegen="6.5" />
+				<level val="56" levelMod="1.45" hp="1940.73" mp="758.01" cp="970.365" hpRegen="7.0" mpRegen="2.4" cpRegen="6.5" />
+				<level val="57" levelMod="1.46" hp="1998.546" mp="782.1" cp="999.273" hpRegen="7.1" mpRegen="2.4" cpRegen="6.5" />
+				<level val="58" levelMod="1.47" hp="2056.758" mp="806.355" cp="1028.379" hpRegen="7.2" mpRegen="2.4" cpRegen="6.5" />
+				<level val="59" levelMod="1.48" hp="2115.366" mp="830.775" cp="1057.683" hpRegen="7.3" mpRegen="2.4" cpRegen="6.5" />
+				<level val="60" levelMod="1.49" hp="2194.137" mp="863.136" cp="1097.0685" hpRegen="7.4" mpRegen="2.4" cpRegen="6.5" />
+				<level val="61" levelMod="1.5" hp="2254.077" mp="888.111" cp="1127.0385" hpRegen="7.5" mpRegen="2.7" cpRegen="7.5" />
+				<level val="62" levelMod="1.51" hp="2314.4165" mp="913.2525" cp="1157.2083" hpRegen="7.6" mpRegen="2.7" cpRegen="7.5" />
+				<level val="63" levelMod="1.52" hp="2375.1558" mp="938.5605" cp="1187.5779" hpRegen="7.7" mpRegen="2.7" cpRegen="7.5" />
+				<level val="64" levelMod="1.53" hp="2414.346" mp="955.35" cp="1207.173" hpRegen="7.8" mpRegen="2.7" cpRegen="7.5" />
+				<level val="65" levelMod="1.54" hp="2475.33" mp="980.76" cp="1237.665" hpRegen="7.9" mpRegen="2.7" cpRegen="7.5" />
+				<level val="66" levelMod="1.55" hp="2513.649" mp="997.1865" cp="1256.8245" hpRegen="8.0" mpRegen="2.7" cpRegen="7.5" />
+				<level val="67" levelMod="1.56" hp="2574.8633" mp="1022.6925" cp="1287.4316" hpRegen="8.1" mpRegen="2.7" cpRegen="7.5" />
+				<level val="68" levelMod="1.57" hp="2612.2825" mp="1038.744" cp="1306.1412" hpRegen="8.2" mpRegen="2.7" cpRegen="7.5" />
+				<level val="69" levelMod="1.58" hp="2648.9563" mp="1054.485" cp="1324.4781" hpRegen="8.3" mpRegen="2.7" cpRegen="7.5" />
+				<level val="70" levelMod="1.59" hp="2659.545" mp="1059.8175" cp="1329.7725" hpRegen="8.4" mpRegen="2.7" cpRegen="7.5" />
+				<level val="71" levelMod="1.6" hp="2668.215" mp="1064.3505" cp="1334.1075" hpRegen="8.5" mpRegen="3.0" cpRegen="8.5" />
+				<level val="72" levelMod="1.61" hp="2674.9446" mp="1068.075" cp="1337.4723" hpRegen="8.6" mpRegen="3.0" cpRegen="8.5" />
+				<level val="73" levelMod="1.62" hp="2706.78" mp="1081.8" cp="1353.39" hpRegen="8.7" mpRegen="3.0" cpRegen="8.5" />
+				<level val="74" levelMod="1.63" hp="2682.496" mp="1073.0625" cp="1341.248" hpRegen="8.8" mpRegen="3.0" cpRegen="8.5" />
+				<level val="75" levelMod="1.64" hp="2683.275" mp="1074.3075" cp="1341.6375" hpRegen="8.9" mpRegen="3.0" cpRegen="8.5" />
+				<level val="76" levelMod="1.65" hp="2682.027" mp="1074.708" cp="1341.0135" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+				<level val="77" levelMod="1.66" hp="2678.7307" mp="1074.255" cp="1339.3654" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+				<level val="78" levelMod="1.67" hp="2703.402" mp="1084.995" cp="1351.701" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+				<level val="79" levelMod="1.68" hp="2696.5488" mp="1083.06" cp="1348.2744" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+				<level val="80" levelMod="1.69" hp="2687.586" mp="1080.246" cp="1343.793" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+				<level val="81" levelMod="1.7" hp="2676.492" mp="1076.544" cp="1338.246" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+				<level val="82" levelMod="1.71" hp="2663.245" mp="1071.945" cp="1331.6226" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+				<level val="83" levelMod="1.72" hp="2647.824" mp="1066.44" cp="1323.912" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+				<level val="84" levelMod="1.73" hp="2663.9275" mp="1073.61" cp="1331.9637" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+				<level val="85" levelMod="1.74" hp="2679.066" mp="1080.378" cp="1339.533" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+				<level val="86" levelMod="1.75" hp="2693.229" mp="1086.7395" cp="1346.6145" hpRegen="10.0" mpRegen="3.0" cpRegen="8.5" />
+				<level val="87" levelMod="1.76" hp="2706.4055" mp="1092.69" cp="1353.2028" hpRegen="10.1" mpRegen="3.0" cpRegen="8.5" />
+				<level val="88" levelMod="1.77" hp="2718.585" mp="1098.225" cp="1359.2925" hpRegen="10.2" mpRegen="3.0" cpRegen="8.5" />
+				<level val="89" levelMod="1.78" hp="2729.7563" mp="1103.34" cp="1364.8782" hpRegen="10.3" mpRegen="3.0" cpRegen="8.5" />
+				<level val="90" levelMod="1.79" hp="2739.909" mp="1108.0305" cp="1369.9545" hpRegen="10.4" mpRegen="3.0" cpRegen="8.5" />
+				<level val="91" levelMod="1.8" hp="2749.032" mp="1112.292" cp="1374.516" hpRegen="10.5" mpRegen="3.0" cpRegen="8.5" />
+				<level val="92" levelMod="1.81" hp="2757.1145" mp="1116.12" cp="1378.5573" hpRegen="10.6" mpRegen="3.0" cpRegen="8.5" />
+				<level val="93" levelMod="1.82" hp="2764.146" mp="1119.51" cp="1382.073" hpRegen="10.7" mpRegen="3.0" cpRegen="8.5" />
+				<level val="94" levelMod="1.83" hp="2770.1155" mp="1122.4575" cp="1385.0577" hpRegen="10.8" mpRegen="3.0" cpRegen="8.5" />
+				<level val="95" levelMod="1.84" hp="2775.012" mp="1124.958" cp="1387.506" hpRegen="10.9" mpRegen="3.0" cpRegen="8.5" />
+				<level val="96" levelMod="1.85" hp="2778.825" mp="1127.007" cp="1389.4125" hpRegen="11.0" mpRegen="3.0" cpRegen="8.5" />
+				<level val="97" levelMod="1.86" hp="2781.5437" mp="1128.6" cp="1390.7719" hpRegen="11.1" mpRegen="3.0" cpRegen="8.5" />
+				<level val="98" levelMod="1.87" hp="2783.157" mp="1129.7325" cp="1391.5785" hpRegen="11.2" mpRegen="3.0" cpRegen="8.5" />
+				<level val="99" levelMod="1.88" hp="2783.6543" mp="1130.4" cp="1391.8271" hpRegen="11.3" mpRegen="3.0" cpRegen="8.5" />
+			</levels>
+		</Male>
+		<Female>
+			<common>
+				<base range="20" attackSpeed="300" attackType="SWORD" critRate="5" mAtk="5" pAtk="5" randomDamage="10" />
+				<stats str="40" int="21" con="43" dex="30" wit="11" men="25" />
+				<defense chest="31" legs="18" head="12" feet="7" gloves="8" underwear="3" cloak="1" />
+				<magicDefense rear="9" lear="9" rfinger="5" lfinger="5" neck="13" />
+				<collision radius="8" height="30" />
+				<moving walk="60" run="125" waterWalk="50" waterRun="50" flyWalk="0" flyRun="0" unknownWalk="0" unknownRun="0" />
+			</common>
+			<actions>1 2 3 4 5 6 7 8 9 11 15 16 17 18 19 21 22 23 32 36 39 40 41 42 43 44 45 46 47 48 50 52 53 54 55 56 57 63 64 65 70 1000 1001 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 1055 1056 1057 1058 1059 1060 1061 1062 1063 1064 1065 1066 1067 1068 1069 1070 1071 1072 1073 1074 1075 1076 1077 1078 1079 1080 1081 1082 1083 1084 1089 1090 1091 1092 1093 1094 1095 1096 1097 1098</actions>
+			<additionalSkills>
+				<skill id="559" level="4" minLevel="65" /> <!-- Spear -->
+				<skill id="560" level="4" minLevel="65" /> <!-- Power Slash -->
+				<skill id="561" level="4" minLevel="65" /> <!-- Bless of Angel -->
+				<skill id="562" level="4" minLevel="65" /> <!-- Wind of Angel -->
+			</additionalSkills>
+			<skills>
+				<skill id="559" level="3" /> <!-- Spear -->
+				<skill id="560" level="3" /> <!-- Power Slash -->
+				<skill id="561" level="3" /> <!-- Bless of Angel -->
+				<skill id="562" level="3" /> <!-- Wind of Angel -->
+				<skill id="619" level="1" /> <!-- Transform Dispel -->
+				<skill id="5491" level="1" /> <!-- Decrease Bow/Crossbow Atk. Spd. -->
+			</skills>
+			<levels>
+				<level val="1" levelMod="0.9" hp="80.8" mp="30.3" cp="40.4" hpRegen="2.0" mpRegen="0.9" cpRegen="2.0" />
+				<level val="2" levelMod="0.91" hp="92.7483" mp="35.8146" cp="46.37415" hpRegen="2.05" mpRegen="0.9" cpRegen="2.0" />
+				<level val="3" levelMod="0.92" hp="104.8279" mp="41.3898" cp="52.41395" hpRegen="2.1" mpRegen="0.9" cpRegen="2.0" />
+				<level val="4" levelMod="0.93" hp="117.0388" mp="47.0256" cp="58.5194" hpRegen="2.15" mpRegen="0.9" cpRegen="2.0" />
+				<level val="5" levelMod="0.94" hp="129.381" mp="52.722" cp="64.6905" hpRegen="2.2" mpRegen="0.9" cpRegen="2.0" />
+				<level val="6" levelMod="0.95" hp="141.8545" mp="58.479" cp="70.92725" hpRegen="2.25" mpRegen="0.9" cpRegen="2.0" />
+				<level val="7" levelMod="0.96" hp="154.4593" mp="64.2966" cp="77.22965" hpRegen="2.3" mpRegen="0.9" cpRegen="2.0" />
+				<level val="8" levelMod="0.97" hp="167.1954" mp="70.1748" cp="83.5977" hpRegen="2.35" mpRegen="0.9" cpRegen="2.0" />
+				<level val="9" levelMod="0.98" hp="180.0628" mp="76.1136" cp="90.0314" hpRegen="2.4" mpRegen="0.9" cpRegen="2.0" />
+				<level val="10" levelMod="0.99" hp="193.0615" mp="82.113" cp="96.53075" hpRegen="2.45" mpRegen="0.9" cpRegen="2.0" />
+				<level val="11" levelMod="1.0" hp="206.1915" mp="88.173" cp="103.09575" hpRegen="2.5" mpRegen="1.2" cpRegen="2.5" />
+				<level val="12" levelMod="1.01" hp="219.4528" mp="94.2936" cp="109.7264" hpRegen="2.6" mpRegen="1.2" cpRegen="2.5" />
+				<level val="13" levelMod="1.02" hp="232.8454" mp="100.4748" cp="116.4227" hpRegen="2.7" mpRegen="1.2" cpRegen="2.5" />
+				<level val="14" levelMod="1.03" hp="246.3693" mp="106.7166" cp="123.18465" hpRegen="2.8" mpRegen="1.2" cpRegen="2.5" />
+				<level val="15" levelMod="1.04" hp="260.0245" mp="113.019" cp="130.01225" hpRegen="2.9" mpRegen="1.2" cpRegen="2.5" />
+				<level val="16" levelMod="1.05" hp="276.522" mp="120.564" cp="138.261" hpRegen="3.0" mpRegen="1.2" cpRegen="2.5" />
+				<level val="17" levelMod="1.06" hp="290.5776" mp="127.0512" cp="145.2888" hpRegen="3.1" mpRegen="1.2" cpRegen="2.5" />
+				<level val="18" levelMod="1.07" hp="304.7658" mp="133.5996" cp="152.3829" hpRegen="3.2" mpRegen="1.2" cpRegen="2.5" />
+				<level val="19" levelMod="1.08" hp="319.0866" mp="140.2092" cp="159.5433" hpRegen="3.3" mpRegen="1.2" cpRegen="2.5" />
+				<level val="20" levelMod="1.09" hp="333.54" mp="146.88" cp="166.77" hpRegen="3.4" mpRegen="1.2" cpRegen="2.5" />
+				<level val="21" levelMod="1.1" hp="367.401" mp="158.517" cp="183.7005" hpRegen="3.5" mpRegen="1.5" cpRegen="3.5" />
+				<level val="22" levelMod="1.11" hp="398.2701" mp="168.8067" cp="199.13506" hpRegen="3.6" mpRegen="1.5" cpRegen="3.5" />
+				<level val="23" levelMod="1.12" hp="429.4173" mp="179.1891" cp="214.70865" hpRegen="3.7" mpRegen="1.5" cpRegen="3.5" />
+				<level val="24" levelMod="1.13" hp="460.8426" mp="189.6642" cp="230.4213" hpRegen="3.8" mpRegen="1.5" cpRegen="3.5" />
+				<level val="25" levelMod="1.14" hp="492.546" mp="200.232" cp="246.273" hpRegen="3.9" mpRegen="1.5" cpRegen="3.5" />
+				<level val="26" levelMod="1.15" hp="529.62" mp="212.94" cp="264.81" hpRegen="4.0" mpRegen="1.5" cpRegen="3.5" />
+				<level val="27" levelMod="1.16" hp="562.1928" mp="223.7976" cp="281.0964" hpRegen="4.1" mpRegen="1.5" cpRegen="3.5" />
+				<level val="28" levelMod="1.17" hp="595.0464" mp="234.7488" cp="297.5232" hpRegen="4.2" mpRegen="1.5" cpRegen="3.5" />
+				<level val="29" levelMod="1.18" hp="628.1808" mp="245.7936" cp="314.0904" hpRegen="4.3" mpRegen="1.5" cpRegen="3.5" />
+				<level val="30" levelMod="1.19" hp="661.596" mp="256.932" cp="330.798" hpRegen="4.4" mpRegen="1.5" cpRegen="3.5" />
+				<level val="31" levelMod="1.2" hp="701.9775" mp="270.7425" cp="350.98874" hpRegen="4.5" mpRegen="1.8" cpRegen="4.5" />
+				<level val="32" levelMod="1.21" hp="736.281" mp="282.177" cp="368.1405" hpRegen="4.6" mpRegen="1.8" cpRegen="4.5" />
+				<level val="33" levelMod="1.22" hp="770.868" mp="293.706" cp="385.434" hpRegen="4.7" mpRegen="1.8" cpRegen="4.5" />
+				<level val="34" levelMod="1.23" hp="805.7385" mp="305.3295" cp="402.86926" hpRegen="4.8" mpRegen="1.8" cpRegen="4.5" />
+				<level val="35" levelMod="1.24" hp="840.8925" mp="317.0475" cp="420.44626" hpRegen="4.9" mpRegen="1.8" cpRegen="4.5" />
+				<level val="36" levelMod="1.25" hp="884.676" mp="331.992" cp="442.338" hpRegen="5.0" mpRegen="1.8" cpRegen="4.5" />
+				<level val="37" levelMod="1.26" hp="920.7372" mp="344.0124" cp="460.3686" hpRegen="5.1" mpRegen="1.8" cpRegen="4.5" />
+				<level val="38" levelMod="1.27" hp="957.0846" mp="356.1282" cp="478.5423" hpRegen="5.2" mpRegen="1.8" cpRegen="4.5" />
+				<level val="39" levelMod="1.28" hp="993.7182" mp="368.3394" cp="496.8591" hpRegen="5.3" mpRegen="1.8" cpRegen="4.5" />
+				<level val="40" levelMod="1.29" hp="1030.638" mp="380.646" cp="515.319" hpRegen="5.4" mpRegen="1.8" cpRegen="4.5" />
+				<level val="41" levelMod="1.3" hp="1090.437" mp="405.102" cp="545.2185" hpRegen="5.5" mpRegen="2.1" cpRegen="5.5" />
+				<level val="42" levelMod="1.31" hp="1140.8982" mp="426.1275" cp="570.4491" hpRegen="5.6" mpRegen="2.1" cpRegen="5.5" />
+				<level val="43" levelMod="1.32" hp="1191.7446" mp="447.3135" cp="595.8723" hpRegen="5.7" mpRegen="2.1" cpRegen="5.5" />
+				<level val="44" levelMod="1.33" hp="1242.9762" mp="468.66" cp="621.4881" hpRegen="5.8" mpRegen="2.1" cpRegen="5.5" />
+				<level val="45" levelMod="1.34" hp="1294.593" mp="490.167" cp="647.2965" hpRegen="5.9" mpRegen="2.1" cpRegen="5.5" />
+				<level val="46" levelMod="1.35" hp="1359.18" mp="516.618" cp="679.59" hpRegen="6.0" mpRegen="2.1" cpRegen="5.5" />
+				<level val="47" levelMod="1.36" hp="1412.0568" mp="538.65" cp="706.0284" hpRegen="6.1" mpRegen="2.1" cpRegen="5.5" />
+				<level val="48" levelMod="1.37" hp="1465.3224" mp="560.844" cp="732.6612" hpRegen="6.2" mpRegen="2.1" cpRegen="5.5" />
+				<level val="49" levelMod="1.38" hp="1518.9768" mp="583.2" cp="759.4884" hpRegen="6.3" mpRegen="2.1" cpRegen="5.5" />
+				<level val="50" levelMod="1.39" hp="1573.02" mp="605.718" cp="786.51" hpRegen="6.4" mpRegen="2.1" cpRegen="5.5" />
+				<level val="51" levelMod="1.4" hp="1642.521" mp="634.2165" cp="821.2605" hpRegen="6.5" mpRegen="2.4" cpRegen="6.5" />
+				<level val="52" levelMod="1.41" hp="1697.8494" mp="657.27" cp="848.9247" hpRegen="6.6" mpRegen="2.4" cpRegen="6.5" />
+				<level val="53" levelMod="1.42" hp="1753.5702" mp="680.487" cp="876.7851" hpRegen="6.7" mpRegen="2.4" cpRegen="6.5" />
+				<level val="54" levelMod="1.43" hp="1809.6833" mp="703.8675" cp="904.8417" hpRegen="6.8" mpRegen="2.4" cpRegen="6.5" />
+				<level val="55" levelMod="1.44" hp="1866.189" mp="727.4115" cp="933.0945" hpRegen="6.9" mpRegen="2.4" cpRegen="6.5" />
+				<level val="56" levelMod="1.45" hp="1940.73" mp="758.01" cp="970.365" hpRegen="7.0" mpRegen="2.4" cpRegen="6.5" />
+				<level val="57" levelMod="1.46" hp="1998.546" mp="782.1" cp="999.273" hpRegen="7.1" mpRegen="2.4" cpRegen="6.5" />
+				<level val="58" levelMod="1.47" hp="2056.758" mp="806.355" cp="1028.379" hpRegen="7.2" mpRegen="2.4" cpRegen="6.5" />
+				<level val="59" levelMod="1.48" hp="2115.366" mp="830.775" cp="1057.683" hpRegen="7.3" mpRegen="2.4" cpRegen="6.5" />
+				<level val="60" levelMod="1.49" hp="2194.137" mp="863.136" cp="1097.0685" hpRegen="7.4" mpRegen="2.4" cpRegen="6.5" />
+				<level val="61" levelMod="1.5" hp="2254.077" mp="888.111" cp="1127.0385" hpRegen="7.5" mpRegen="2.7" cpRegen="7.5" />
+				<level val="62" levelMod="1.51" hp="2314.4165" mp="913.2525" cp="1157.2083" hpRegen="7.6" mpRegen="2.7" cpRegen="7.5" />
+				<level val="63" levelMod="1.52" hp="2375.1558" mp="938.5605" cp="1187.5779" hpRegen="7.7" mpRegen="2.7" cpRegen="7.5" />
+				<level val="64" levelMod="1.53" hp="2414.346" mp="955.35" cp="1207.173" hpRegen="7.8" mpRegen="2.7" cpRegen="7.5" />
+				<level val="65" levelMod="1.54" hp="2475.33" mp="980.76" cp="1237.665" hpRegen="7.9" mpRegen="2.7" cpRegen="7.5" />
+				<level val="66" levelMod="1.55" hp="2513.649" mp="997.1865" cp="1256.8245" hpRegen="8.0" mpRegen="2.7" cpRegen="7.5" />
+				<level val="67" levelMod="1.56" hp="2574.8633" mp="1022.6925" cp="1287.4316" hpRegen="8.1" mpRegen="2.7" cpRegen="7.5" />
+				<level val="68" levelMod="1.57" hp="2612.2825" mp="1038.744" cp="1306.1412" hpRegen="8.2" mpRegen="2.7" cpRegen="7.5" />
+				<level val="69" levelMod="1.58" hp="2648.9563" mp="1054.485" cp="1324.4781" hpRegen="8.3" mpRegen="2.7" cpRegen="7.5" />
+				<level val="70" levelMod="1.59" hp="2659.545" mp="1059.8175" cp="1329.7725" hpRegen="8.4" mpRegen="2.7" cpRegen="7.5" />
+				<level val="71" levelMod="1.6" hp="2668.215" mp="1064.3505" cp="1334.1075" hpRegen="8.5" mpRegen="3.0" cpRegen="8.5" />
+				<level val="72" levelMod="1.61" hp="2674.9446" mp="1068.075" cp="1337.4723" hpRegen="8.6" mpRegen="3.0" cpRegen="8.5" />
+				<level val="73" levelMod="1.62" hp="2706.78" mp="1081.8" cp="1353.39" hpRegen="8.7" mpRegen="3.0" cpRegen="8.5" />
+				<level val="74" levelMod="1.63" hp="2682.496" mp="1073.0625" cp="1341.248" hpRegen="8.8" mpRegen="3.0" cpRegen="8.5" />
+				<level val="75" levelMod="1.64" hp="2683.275" mp="1074.3075" cp="1341.6375" hpRegen="8.9" mpRegen="3.0" cpRegen="8.5" />
+				<level val="76" levelMod="1.65" hp="2682.027" mp="1074.708" cp="1341.0135" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+				<level val="77" levelMod="1.66" hp="2678.7307" mp="1074.255" cp="1339.3654" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+				<level val="78" levelMod="1.67" hp="2703.402" mp="1084.995" cp="1351.701" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+				<level val="79" levelMod="1.68" hp="2696.5488" mp="1083.06" cp="1348.2744" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+				<level val="80" levelMod="1.69" hp="2687.586" mp="1080.246" cp="1343.793" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+				<level val="81" levelMod="1.7" hp="2676.492" mp="1076.544" cp="1338.246" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+				<level val="82" levelMod="1.71" hp="2663.245" mp="1071.945" cp="1331.6226" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+				<level val="83" levelMod="1.72" hp="2647.824" mp="1066.44" cp="1323.912" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+				<level val="84" levelMod="1.73" hp="2663.9275" mp="1073.61" cp="1331.9637" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+				<level val="85" levelMod="1.74" hp="2679.066" mp="1080.378" cp="1339.533" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+				<level val="86" levelMod="1.75" hp="2693.229" mp="1086.7395" cp="1346.6145" hpRegen="10.0" mpRegen="3.0" cpRegen="8.5" />
+				<level val="87" levelMod="1.76" hp="2706.4055" mp="1092.69" cp="1353.2028" hpRegen="10.1" mpRegen="3.0" cpRegen="8.5" />
+				<level val="88" levelMod="1.77" hp="2718.585" mp="1098.225" cp="1359.2925" hpRegen="10.2" mpRegen="3.0" cpRegen="8.5" />
+				<level val="89" levelMod="1.78" hp="2729.7563" mp="1103.34" cp="1364.8782" hpRegen="10.3" mpRegen="3.0" cpRegen="8.5" />
+				<level val="90" levelMod="1.79" hp="2739.909" mp="1108.0305" cp="1369.9545" hpRegen="10.4" mpRegen="3.0" cpRegen="8.5" />
+				<level val="91" levelMod="1.8" hp="2749.032" mp="1112.292" cp="1374.516" hpRegen="10.5" mpRegen="3.0" cpRegen="8.5" />
+				<level val="92" levelMod="1.81" hp="2757.1145" mp="1116.12" cp="1378.5573" hpRegen="10.6" mpRegen="3.0" cpRegen="8.5" />
+				<level val="93" levelMod="1.82" hp="2764.146" mp="1119.51" cp="1382.073" hpRegen="10.7" mpRegen="3.0" cpRegen="8.5" />
+				<level val="94" levelMod="1.83" hp="2770.1155" mp="1122.4575" cp="1385.0577" hpRegen="10.8" mpRegen="3.0" cpRegen="8.5" />
+				<level val="95" levelMod="1.84" hp="2775.012" mp="1124.958" cp="1387.506" hpRegen="10.9" mpRegen="3.0" cpRegen="8.5" />
+				<level val="96" levelMod="1.85" hp="2778.825" mp="1127.007" cp="1389.4125" hpRegen="11.0" mpRegen="3.0" cpRegen="8.5" />
+				<level val="97" levelMod="1.86" hp="2781.5437" mp="1128.6" cp="1390.7719" hpRegen="11.1" mpRegen="3.0" cpRegen="8.5" />
+				<level val="98" levelMod="1.87" hp="2783.157" mp="1129.7325" cp="1391.5785" hpRegen="11.2" mpRegen="3.0" cpRegen="8.5" />
+				<level val="99" levelMod="1.88" hp="2783.6543" mp="1130.4" cp="1391.8271" hpRegen="11.3" mpRegen="3.0" cpRegen="8.5" />
+			</levels>
+		</Female>
+	</transform>
+</list>

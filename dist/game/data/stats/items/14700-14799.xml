@@ -1,0 +1,1432 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="14700" type="EtcItem" name="Greater Healing Potion">
+		<!-- A magical, liquid medicine that greatly restores HP for 15 seconds. -->
+		<set name="icon" val="icon.etc_reagent_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2863-1" /> <!-- Highest Power Healing Potion -->
+		<set name="for_npc" val="true" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="14701" type="EtcItem" name="Greater Quick Healing Potion">
+		<!-- A magical potion that quickly restores a greater amount HP. -->
+		<set name="icon" val="icon.etc_potion_gold_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="180" />
+		<set name="reuse_delay" val="500" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2864-1" /> <!-- Highest Power Quick Healing Potion -->
+		<set name="for_npc" val="true" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="14702" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Weapon (D-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a D-Grade weapon by 20%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. -->
+		<set name="icon" val="icon.ench_wp_stone_i00" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2515-1" /> <!-- Lucky Clover - D-Grade -->
+	</item>
+	<item id="14703" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Weapon (C-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a C-Grade weapon by 18%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. -->
+		<set name="icon" val="icon.ench_wp_stone_i01" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2516-1" /> <!-- Lucky Clover - C-Grade -->
+	</item>
+	<item id="14704" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Weapon (B-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a B-Grade weapon by 15%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. -->
+		<set name="icon" val="icon.ench_wp_stone_i02" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2517-1" /> <!-- Lucky Clover - B-Grade -->
+	</item>
+	<item id="14705" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Weapon (A-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a A-Grade weapon by 12%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. -->
+		<set name="icon" val="icon.ench_wp_stone_i03" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2518-1" /> <!-- Lucky Clover - A-Grade -->
+	</item>
+	<item id="14706" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Weapon (S-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a S-Grade weapon by 10%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. -->
+		<set name="icon" val="icon.ench_wp_stone_i04" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2519-1" /> <!-- Lucky Clover - S-Grade -->
+	</item>
+	<item id="14707" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Armor (D-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a D-Grade armor by 35%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. -->
+		<set name="icon" val="icon.ench_am_stone_i00" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2520-1" /> <!-- Lucky Clover - D-Grade -->
+	</item>
+	<item id="14708" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Armor (C-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a C-Grade armor by 27%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. -->
+		<set name="icon" val="icon.ench_am_stone_i01" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2521-1" /> <!-- Lucky Clover - C-Grade -->
+	</item>
+	<item id="14709" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Armor (B-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a B-Grade armor by 23%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. -->
+		<set name="icon" val="icon.ench_am_stone_i02" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2522-1" /> <!-- Lucky Clover - B-Grade -->
+	</item>
+	<item id="14710" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Armor (A-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a A-Grade armor by 18%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. -->
+		<set name="icon" val="icon.ench_am_stone_i03" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2523-1" /> <!-- Lucky Clover - A-Grade -->
+	</item>
+	<item id="14711" type="EtcItem" name="Agathion Auxiliary Stone: Enchant Armor (S-Grade)">
+		<!-- The Agathion Auxiliary Stone raises the ability to enchant a S-Grade armor by 15%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. -->
+		<set name="icon" val="icon.ench_am_stone_i04" />
+		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2524-1" /> <!-- Lucky Clover - S-Grade -->
+	</item>
+	<item id="14712" type="Armor" name="Cow Hair Accessory">
+		<!-- Hair accessory in the shape of a cow head. -->
+		<set name="icon" val="icon.Accessory2_cow_of_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="14713" type="EtcItem" name="Greater Elixir Gift Box (No-Grade)">
+		<!-- A wrapped gift containing an assortment of Greater Elixirs (No-Grade). Double-click this item in order to receive Greater Elixirs. -->
+		<set name="icon" val="icon.etc_treasure_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14682,3,3,100;14688,3,3,100;14694,3,3,100" />
+	</item>
+	<item id="14714" type="EtcItem" name="Greater Elixir Gift Box (D-Grade)">
+		<!-- A wrapped gift containing an assortment of Greater Elixirs (D-Grade). Double-click this item in order to receive Greater Elixirs. -->
+		<set name="icon" val="icon.etc_treasure_box_i08" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14683,3,3,100;14689,3,3,100;14695,3,3,100" />
+	</item>
+	<item id="14715" type="EtcItem" name="Greater Elixir Gift Box (C-Grade)">
+		<!-- A wrapped gift containing an assortment of Greater Elixirs (C-Grade). Double-click this item in order to receive Greater Elixirs. -->
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14684,3,3,100;14690,3,3,100;14696,3,3,100" />
+	</item>
+	<item id="14716" type="EtcItem" name="Greater Elixir Gift Box (B-Grade)">
+		<!-- A wrapped gift containing an assortment of Greater Elixirs (B-Grade). Double-click this item in order to receive Greater Elixirs. -->
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14685,2,2,100;14691,2,2,100;14697,2,2,100" />
+	</item>
+	<item id="14717" type="EtcItem" name="Greater Elixir Gift Box (A-Grade)">
+		<!-- A wrapped gift containing an assortment of Greater Elixirs (A-Grade). Double-click this item in order to receive Greater Elixirs. -->
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14686,2,2,100;14692,2,2,100;14698,2,2,100" />
+	</item>
+	<item id="14718" type="EtcItem" name="Greater Elixir Gift Box (S-Grade)">
+		<!-- A wrapped gift containing an assortment of Greater Elixirs (S-Grade). Double-click this item in order to receive Greater Elixirs. -->
+		<set name="icon" val="icon.etc_treasure_box_i05" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14687,2,2,100;14693,2,2,100;14699,2,2,100" />
+	</item>
+	<item id="14719" type="EtcItem" name="Full Vitality Event Pack">
+		<!-- A wrapped package that contains 1 Agathion Seal Bracelet - Neolithica. Cannot be exchanged or dropped. Can use a private warehouse. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14675,1,1,100" />
+	</item>
+	<item id="14720" type="EtcItem" name="Event - Apiga">
+		<!-- A common form of currency accepted at the Magic Research Institute. No drop available. -->
+		<set name="icon" val="icon.etc_pig_adena_i01" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14721" type="EtcItem" name="Event - Golden Apiga">
+		<!-- A rare form of currency accepted at the Magic Research Institute. No drop available. -->
+		<set name="icon" val="icon.etc_pig_adena_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14722" type="EtcItem" name="Event - Cupid's Fatigue Recovery Potion">
+		<!-- Decreases fatigue when used on a cow. -->
+		<set name="icon" val="icon.etc_faitgue_relief_of_cupid_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="LIQUID" />
+		<set name="shared_reuse_group" val="13" />
+		<set name="reuse_delay" val="2000" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2867-1" /> <!-- Cupid's Cure -->
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="14723" type="EtcItem" name="Event - Cupid's Powerful Fatigue Recovery Potion">
+		<!-- Decreases fatigue when used on a cow. It has a better effect than Cupid's Fatigue Recovery Potion. -->
+		<set name="icon" val="icon.etc_nutrients_of_cupid_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="LIQUID" />
+		<set name="shared_reuse_group" val="14" />
+		<set name="reuse_delay" val="5000" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2868-1" /> <!-- Cupid's Enhanced Cure -->
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="14724" type="EtcItem" name="Event - Milk Cow Summon Scroll">
+		<!-- Scroll that summons a Milk Cow. If you relieve the Milk Cow's fatigue, you can acquire Apiga. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. -->
+		<set name="icon" val="icon.etc_scroll_of_milkcattle_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2869-1" /> <!-- Event - Milk Cow Summon Scroll -->
+	</item>
+	<item id="14725" type="EtcItem" name="Event - Head Milk Cow Summon Scroll">
+		<!-- Scroll that summons a Head Milk Cow. If you relieve the Head Milk Cow's fatigue, you can acquire Apiga. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. -->
+		<set name="icon" val="icon.etc_scroll_of_milkcattle_b_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2870-1" /> <!-- Event - Head Milk Cow Summon Scroll -->
+	</item>
+	<item id="14726" type="EtcItem" name="Event - Gloomy Milk Cow Summon Scroll">
+		<!-- Scroll that summons a Gloomy Milk Cow. Can sometimes transform into a Bull while trying to recover the Milk Cow. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. -->
+		<set name="icon" val="icon.etc_scroll_of_milkcattle_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2880-1" /> <!-- Event - Gloomy Milk Cow Summon Scroll -->
+	</item>
+	<item id="14727" type="EtcItem" name="Event - Gloomy Head Milk Cow Summon Scroll">
+		<!-- Scroll that summons a Gloomy Head Milk Cow. Can sometimes transform into a Head Bull while trying to recover the Milk Cow. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. -->
+		<set name="icon" val="icon.etc_scroll_of_milkcattle_b_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2881-1" /> <!-- Event - Gloomy Head Milk Cow Summon Scroll -->
+	</item>
+	<item id="14728" type="EtcItem" name="Event - Orr Cube - 30-day limited period">
+		<!-- The Orb Cube can be used once a day for 30 days. Upon double-clicking this item you will receive a Cubic Piece that can be used while speaking with a Warehouse Keeper. No exchange/drop/server removal available. -->
+		<set name="icon" val="icon.etc_ore_cube_event_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2510-1" /> <!-- Wondrous Cubic -->
+		<set name="time" val="43200" />
+	</item>
+	<item id="14729" type="EtcItem" name="Event - Crystal Cube">
+		<!-- Cube that can be used 1 time. You can obtain a Crystal Cube fragment by double clicking. No drop available. -->
+		<set name="icon" val="icon.etc_crystal_cube_event_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2882-1" /> <!-- Crystal Cube -->
+	</item>
+	<item id="14730" type="EtcItem" name="Event - Gold Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_golden_ore_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14731" type="EtcItem" name="Event - Silver Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_silver_ore_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14732" type="EtcItem" name="Event - Bronze Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_cupreous_ore_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14733" type="EtcItem" name="Event - Black Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_earthen_ore_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14734" type="EtcItem" name="Event - Clear Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_clear_crystal_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14735" type="EtcItem" name="Event - Purple Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_violet_crystal_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14736" type="EtcItem" name="Event - Pink Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_pink_crystal_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14737" type="EtcItem" name="Event - Dark Brown Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_dkbrown_crystal_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14738" type="EtcItem" name="Event - Black Crystal Cube Fragment">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. No drop available. -->
+		<set name="icon" val="icon.etc_black_crystal_cube_pc_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14739" type="EtcItem" name="Event - Fresh Milk">
+		<!-- Freshly collected milk. When used, you can feel the effects of Might, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Shield, Focus, Death Whisper, Guidance, Clarity, Wild Magic, and Concentration for 1 hour. -->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2873-1;2874-1;2875-1;2876-1;2877-1;2878-1;2879-1;2885-1;2886-1;2887-1;2888-1;2889-1;2890-1;2891-6" /> <!-- Might -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14740" type="EtcItem" name="Event - Save the Cow Event Pack">
+		<!-- An even pack that can be obtained once every 12 hours per account. In order to use this item, double click it and you will obtain the Milk Cow Summon Scroll and 'Cupid's Fatigue Recovery Potion' that are needed for the event. No exchange available. -->
+		<set name="icon" val="icon.etc_jewel_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14722,60,60,100;14723,15,15,100;14724,1,1,100;14725,1,1,100" />
+	</item>
+	<item id="14741" type="EtcItem" name="Event - Vitality Replenishing Herb Tea 5 minutes">
+		<!-- When you drink it, you can temporarily feel the energy recovery herb's effect. Can be exchanged. -->
+		<set name="icon" val="icon.etc_hot_spring_sulfur_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14742" type="EtcItem" name="Event - Vitality Replenishing Herb Tea 10 minutes">
+		<!-- When used, you can feel the energy recovery herb's effect for 10 minutes. But there is no effect when the "Birthday Gift" buff is applied. No drop available. -->
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2883-1" /> <!-- Vitality Replenishing Herb Tea -->
+	</item>
+	<item id="14743" type="EtcItem" name="Event - Vitality Replenishing Herb Tea 20 minutes">
+		<!-- When used, you can feel the energy recovery herb's effect for 20 minutes. But there is no effect when the "Birthday Gift" buff is applied. No drop available. -->
+		<set name="icon" val="icon.etc_hot_spring_mineral_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2884-1" /> <!-- Vitality Replenishing Herb Tea -->
+	</item>
+	<item id="14744" type="EtcItem" name="Event - Vitality Replenishing Herb Tea 30 minutes">
+		<!-- When you drink it, you can temporarily feel the energy recovery herb's effect. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.etc_hot_spring_sulfur_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="9166-1" /> <!-- Vitality Replenishing Herb Tea -->
+	</item>
+	<item id="14745" type="EtcItem" name="Event - Vitality Replenishing Herb Tea 60 minutes">
+		<!-- When you drink it, you can temporarily feel the energy recovery herb's effect. Can be exchanged. -->
+		<set name="icon" val="icon.etc_hot_spring_sulfur_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14746" type="Armor" name="For Events - Refined Chick Hat">
+		<!-- Refined chick shaped hat. Uses 2 hair accessory slots. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_chicken_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="14747" type="Armor" name="For Events - Refined Black Feather Mask">
+		<!-- Refined Black Feather Mask. Uses 2 hair accessory slots. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="14748" type="Armor" name="For Events - Refined Carnival Circlet">
+		<!-- Refined Carnival Circlet. Uses 2 hair accessory slots. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="14749" type="Armor" name="Afro Perm Wig">
+		<set name="icon" val="icon.accessory_pig_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="price" val="2000000" />
+	</item>
+	<item id="14750" type="Armor" name="Bamboo Hat">
+		<set name="icon" val="icon.accessory_pig_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="price" val="2000000" />
+	</item>
+	<item id="14751" type="Armor" name="Smart Glasses">
+		<set name="icon" val="icon.accessory_pig_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="price" val="2000000" />
+	</item>
+	<item id="14752" type="Armor" name="For Events - Refined Medieval Style Party Mask">
+		<!-- Refined Medieval Style Party Mask. Uses 2 hair accessory slots. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="14753" type="Armor" name="Shadow Item - Refined Chick Hat - Blessed Escape">
+		<!-- Refined chick shaped hat. Uses 2 hair accessory slots. Can use the skill Blessed Return after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_chicken_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3264-1" /> <!-- Blessed Escape -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="30" />
+	</item>
+	<item id="14754" type="Armor" name="Shadow Item - Refined Chick Hat - Big Head">
+		<!-- Refined chick shaped hat. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_chicken_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3265-1" /> <!-- Mysterious Ability -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="10" />
+	</item>
+	<item id="14755" type="Armor" name="Shadow Item - Refined Chick Hat - Firework">
+		<!-- Refined chick shaped hat. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_chicken_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3266-1" /> <!-- Large Fireworks Ability -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="5" />
+	</item>
+	<item id="14756" type="Armor" name="Shadow Item - Refined Black Feather Mask - Blessed Escape">
+		<!-- Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the skill Blessed Return after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3264-1" /> <!-- Blessed Escape -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="30" />
+	</item>
+	<item id="14757" type="Armor" name="Shadow Item - Refined Black Feather Mask - Big Head">
+		<!-- Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3265-1" /> <!-- Mysterious Ability -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="10" />
+	</item>
+	<item id="14758" type="Armor" name="Shadow Item - Refined Black Feather Mask - Firework">
+		<!-- Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3266-1" /> <!-- Large Fireworks Ability -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="5" />
+	</item>
+	<item id="14759" type="Armor" name="Shadow Item - Refined Carnival Circlet - Blessed Escape">
+		<!-- Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the skill Blessed Return after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3264-1" /> <!-- Blessed Escape -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="30" />
+	</item>
+	<item id="14760" type="Armor" name="Shadow Item - Refined Carnival Circlet - Big Head">
+		<!-- Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3265-1" /> <!-- Mysterious Ability -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="10" />
+	</item>
+	<item id="14761" type="Armor" name="Shadow Item - Refined Carnival Circlet - Firework">
+		<!-- Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3266-1" /> <!-- Large Fireworks Ability -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="5" />
+	</item>
+	<item id="14762" type="Armor" name="Shadow Item - Refined Medieval Style Party Mask - Blessed Escape">
+		<!-- Refined Medieval Style Party Mask. Uses 2 hair accessory slots. Can use the skill Blessed Return after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3264-1" /> <!-- Blessed Escape -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="30" />
+	</item>
+	<item id="14763" type="Armor" name="Shadow Item - Refined Medieval Style Party Mask - Big Head">
+		<!-- Refined Medieval Style Party Mask. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3265-1" /> <!-- Mysterious Ability -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="10" />
+	</item>
+	<item id="14764" type="Armor" name="Shadow Item - Refined Medieval Style Party Mask - Firework">
+		<!-- Refined Medieval Style Party Mask. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="3266-1" /> <!-- Large Fireworks Ability -->
+		<set name="duration" val="360" />
+		<set name="useSkillDisTime" val="5" />
+	</item>
+	<item id="14765" type="EtcItem" name="For Events - Extra Entrance Pass - Rim Kamaloka">
+		<!-- Entrance pass that lets you enter Near Kamaloka for a second time. Can cancel the limit on entrance if used while a limit on entrance to Rim Kamaloka exists. Can only be used once a day outside the instant zone. After use, the effect disappears at the corresponding instant dungeon's reset time. Cannot be exchanged, dropped, or destroyed. -->
+		<set name="icon" val="icon.ticket_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2892-1" /> <!-- Event - Extra Entrance Pass - Rim Kamaloka -->
+		<set name="time" val="1440" />
+	</item>
+	<item id="14766" type="EtcItem" name="Special White Day Candy Basket">
+		<!-- Candy basket for showing your heart on White Day. Contains 5 White Day candies. Can receive a bonus limited item (coronet, suit, Agathion - Juju) occasionally. Cannot be dropped or destroyed. Cannot be registered at a private shop. -->
+		<set name="icon" val="icon.etc_candy_basket_i01" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2895-1" /> <!-- Special White Day Candy Basket -->
+	</item>
+	<item id="14767" type="EtcItem" name="White Day Candy Basket">
+		<!-- Candy basket for showing your heart on White Day. Contains 1 White Day candies. Can receive a bonus limited item (Kat the Cat Hat, Agathion Seal Bracelet - Love) occasionally. Cannot be dropped or destroyed. Cannot be registered at a private shop. -->
+		<set name="icon" val="icon.etc_candy_basket_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2896-1" /> <!-- White Day Candy Basket -->
+	</item>
+	<item id="14768" type="EtcItem" name="White Day Solo Package">
+		<!-- White Day gift box for solo players. Contains 1 solo escape petition. Can receive a bonus limited item (wild rose pig candy) occasionally. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop. -->
+		<set name="icon" val="icon.etc_treasure_box_i08" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="14770,1,1,100;14774,1,1,80" />
+	</item>
+	<item id="14769" type="EtcItem" name="White Day Candy">
+		<!-- White Day candy filled with a loving heart. Energy is fully replenished upon use. Duration for reuse: 60 minutes. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop. -->
+		<set name="icon" val="icon.etc_whiteday_candy_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2894-1" /> <!-- White Day Candy -->
+	</item>
+	<item id="14770" type="EtcItem" name="Solo Escape Petition">
+		<!-- Fragrant grass that wishes for a solo player's escape. Energy is maintained for 10 minutes upon use. Re-use time is 30 minutes. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop. -->
+		<set name="icon" val="icon.etc_candle_yellow_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2893-1" /> <!-- Solo Escape Petition -->
+	</item>
+	<item id="14771" type="Armor" name="Kat the Cat Hat - 14-day limited period">
+		<!-- Hat that looks like Kat the Cat. Uses 2 hair accessory slots. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item. -->
+		<set name="icon" val="icon.accessory_cat_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="time" val="20160" />
+	</item>
+	<item id="14772" type="Armor" name="Coronet">
+		<!-- Formal bridal hair accessory. Exclusive female hair accessory that cannot be equipped by males. Uses 2 hair accessory slots. No restore after deletion available for this item. -->
+		<set name="icon" val="icon.accessory_flower_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_depositable" val="false" />
+		<cond msgId="1518">
+			<player sex="1" />
+		</cond>
+	</item>
+	<item id="14773" type="Armor" name="Suit - 14-day limited period">
+		<!-- Tuxedo for males and wedding gown for females. When equipped, armor is cancelled and cannot be used. However, hair accessories, weapons, and magic armor are not cancelled. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item. -->
+		<set name="icon" val="icon.armor_t2000_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="time" val="20160" />
+		<for>
+			<add stat="maxMp" val="15" />
+		</for>
+	</item>
+	<item id="14774" type="Weapon" name="Wild Rose Pig Candy - 14-day limited period">
+		<!-- Even if I'm lonely or sad, I won't cry~ Let's laugh and run through the lush field~. When equipped, can find oneself laughing and running. Can use the head enlarging skill after equipped, and Speed increases by 20. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item. -->
+		<set name="icon" val="icon.etc_pig_candy_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="item_skill" val="8325-1;8326-1" /> <!-- Wild Rose Pig Candy -->
+		<set name="time" val="20160" />
+		<for>
+			<set stat="pAtk" val="1" />
+			<set stat="mAtk" val="1" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+		</for>
+	</item>
+	<item id="14775" type="Armor" name="Agathion Seal Bracelet - Love - 14-day limited period">
+		<!-- Can summon an Agathion of Love when equipped. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="5763-1;8245-1;3267-1" /> <!-- Wink -->
+		<set name="time" val="20160" />
+	</item>
+	<item id="14776" type="Armor" name="Agathion Seal Bracelet - Juju - 14-day limited period">
+		<!-- Can summon a Juju Agathion when equipped. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item. -->
+		<set name="icon" val="icon.high_agathion_bracelet_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="6136-1;8327-1;3267-1;6137-1;6138-1" /> <!-- Agathion Cute Trick - Juju -->
+		<set name="time" val="20160" />
+	</item>
+	<item id="14777" type="EtcItem" name="Baguette's Herb">
+		<!-- For 10 minutes, increases Max HP and increases some HP Regeneration. Cannot be exchanged or dropped. -->
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2897-1" /> <!-- Baguette's Herb -->
+	</item>
+	<item id="14778" type="EtcItem" name="Fresh Cream Herb">
+		<!-- For 10 minutes, increases Max MP and HP. Increases P. Def., M. Def., Resistance to debuff., Atk. Spd., Casting Spd., and Speed. Cannot be exchanged or dropped. -->
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2898-1" /> <!-- Fresh Cream Herb -->
+	</item>
+	<item id="14779" type="EtcItem" name="Cheesecake Herb">
+		<!-- For 10 minutes, increases Max MP and increases some MP Regeneration. Cannot be exchanged or dropped. -->
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2899-1" /> <!-- Cheesecake Herb -->
+	</item>
+	<item id="14780" type="Weapon" name="Baguette's Bread Sword">
+		<!-- Sword made of bread. Contains Baguette's joy. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_samurai_longsword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1350" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="8" />
+		</for>
+	</item>
+	<item id="14781" type="Weapon" name="Baguette's Dagger">
+		<!-- Dagger made of bread. Contains Baguette's tears. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_dagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="attack_range" val="1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1130" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+		</for>
+	</item>
+	<item id="14782" type="Weapon" name="Baguette's Two-handed Sword">
+		<!-- Two-handed sword made of bread. Contains Baguette's passion. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_two_handed_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="2" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2250" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="8" />
+		</for>
+	</item>
+	<item id="14783" type="Weapon" name="Baguette's Mace">
+		<!-- Mace made of bread. Contains Baguette's pain. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_iron_hammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="attack_range" val="3" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1640" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+		</for>
+	</item>
+	<item id="14784" type="Weapon" name="Baguette's Two-handed Hammer">
+		<!-- Hammer made of bread. Can feel Baguette's melancholy. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_barakiel_axe_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="4" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2080" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+		</for>
+	</item>
+	<item id="14785" type="Weapon" name="Baguette's Spear">
+		<!-- Spear made of bread. Can feel Baguette's loneliness. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_short_spear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="5" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="2120" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+		</for>
+	</item>
+	<item id="14786" type="Weapon" name="Baguette's Bow">
+		<!-- Bow made of bread. Can feel Baguette's vigorous energy. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_short_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="6" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1790" />
+		<set name="soulshots" val="8" />
+		<set name="spiritshots" val="2" />
+		<set name="mp_consume" val="2" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+		</for>
+	</item>
+	<item id="14787" type="Weapon" name="Baguette's Fist">
+		<!-- Hand-to-hand combat weapon made of bread. Can feel Baguette's persevering disposition. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_foxs_nail_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="7" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+		</for>
+	</item>
+	<item id="14788" type="Weapon" name="Baguette's Magic Sword">
+		<!-- Magic sword made of bread. Contains Baguette's madness. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_samurai_longsword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="attack_range" val="8" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="830" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<for>
+			<set stat="critRate" val="8" />
+		</for>
+	</item>
+	<item id="14789" type="Weapon" name="Baguette's Staff">
+		<!-- Staff made of bread. Contains Baguette's wisdom. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_apprentices_wand_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="attack_range" val="9" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="990" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<for>
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+		</for>
+	</item>
+	<item id="14790" type="Weapon" name="Baguette's Two-handed Staff">
+		<!-- Two-handed staff made of bread. Contains Baguette's tears. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_willow_staff_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="10" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="340" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="duration" val="600" />
+		<for>
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+		</for>
+	</item>
+	<item id="14791" type="Armor" name="Baguette's Shield">
+		<!-- Shield made of bread. Can feel Baguette's sorrow. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.shield_leather_shield_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="attack_range" val="11" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="460" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="duration" val="600" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="90" />
+		</for>
+	</item>
+	<item id="14792" type="Weapon" name="Baguette's Rapier">
+		<!-- Rapier made of bread. Contains Baguette's sigh. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_rapier_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="attack_range" val="12" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+		</for>
+	</item>
+	<item id="14793" type="Weapon" name="Baguette's Ancient Sword">
+		<!-- Ancient Sword made of bread. Can feel Baguette's regret. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_tulwar_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="13" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1800" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+		</for>
+	</item>
+	<item id="14794" type="Weapon" name="Baguette's Crossbow">
+		<!-- Crossbow made of bread. Contains Baguette's anger. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_hunting_gun_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="14" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1580" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+		</for>
+	</item>
+	<item id="14795" type="Weapon" name="Baguette's Dualsword">
+		<!-- Two-handed sword made of bread. Two-handed sword containing Baguett's great power. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="15" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<for>
+			<set stat="critRate" val="8" />
+		</for>
+	</item>
+	<item id="14796" type="Armor" name="Baguette's Sigil">
+		<!-- Sigil made of bread. Can feel Baguette's ease. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.dynasty_sigil_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="attack_range" val="16" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="930" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+		</for>
+	</item>
+	<item id="14797" type="Weapon" name="Baguette's Two-handed Dagger">
+		<!-- Two-handed dagger made of bread. Can feel Baguette's sharpness. No exchange, drop, or sale available. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.dual_dagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="attack_range" val="17" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2150" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_depositable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player level="81" />
+				<player categoryType="DAGGER_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+		</for>
+	</item>
+	<item id="14798" type="Armor" name="Afro Perm Wig - Black">
+		<!-- Lush Afro perm hair. Cannot undo equip -->
+		<set name="icon" val="icon.accessory_captain_cap_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14799" type="Armor" name="Afro Perm Wig - Gold">
+		<!-- Lush Afro perm hair. Cannot undo equip -->
+		<set name="icon" val="icon.accessory_captain_cap_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="for_npc" val="true" />
+	</item>
+</list>

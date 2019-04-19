@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence maxOccurs="1" minOccurs="1">
+				<xs:element name="group" maxOccurs="4" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence maxOccurs="1" minOccurs="1">
+							<xs:element name="enchant" maxOccurs="30" minOccurs="0">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="adena" type="xs:positiveInteger" use="required" />
+											<xs:attribute name="chance76" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance77" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance78" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance79" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance80" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance81" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance82" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance83" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance84" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="chance85" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="100" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="exp" type="xs:nonNegativeInteger" use="required" />
+											<xs:attribute name="level" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:positiveInteger">
+														<xs:minInclusive value="1" />
+														<xs:maxInclusive value="30" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="sp" type="xs:positiveInteger" use="required" />
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:positiveInteger">
+									<xs:enumeration value="1" />
+									<xs:enumeration value="2" />
+									<xs:enumeration value="5" />
+									<xs:enumeration value="6" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

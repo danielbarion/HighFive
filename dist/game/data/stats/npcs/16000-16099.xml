@@ -1,0 +1,4011 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="16013" level="67" type="L2TamedBeast" name="Trained Buffalo">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="Buff2" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="Buff3" id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill name="Buff4" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="Buff5" id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill name="DeBuff1" id="5196" level="2" /> <!-- Pet Wind Shackle -->
+			<skill name="DeBuff2" id="5197" level="2" /> <!-- Pet Hex -->
+			<skill name="Heal" id="5195" level="6" /> <!-- Pet Greater Heal -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
+			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="281.55251" magical="206.02791" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>460</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5186" level="2" /> <!-- Pet Haste -->
+			<skill id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill id="5196" level="2" /> <!-- Pet Wind Shackle -->
+			<skill id="5197" level="2" /> <!-- Pet Hex -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="22" grown="27" />
+			<height normal="31" grown="38" />
+		</collision>
+	</npc>
+	<npc id="16014" level="67" type="L2TamedBeast" name="Trained Buffalo">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="Buff2" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="Buff3" id="5201" level="1" /> <!-- Pet Concentration -->
+			<skill name="Buff4" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="Buff5" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="DeBuff1" id="5198" level="2" /> <!-- Pet Slow -->
+			<skill name="DeBuff2" id="5199" level="2" /> <!-- Pet Curse Gloom -->
+			<skill name="Heal" id="5200" level="2" /> <!-- Pet Recharge -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
+			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="281.55251" magical="206.02791" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>460</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill id="5194" level="3" /> <!-- Pet Empower -->
+			<skill id="5198" level="2" /> <!-- Pet Slow -->
+			<skill id="5199" level="2" /> <!-- Pet Curse Gloom -->
+			<skill id="5200" level="2" /> <!-- Pet Recharge -->
+			<skill id="5201" level="1" /> <!-- Pet Concentration -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="22" grown="27" />
+			<height normal="31" grown="38" />
+		</collision>
+	</npc>
+	<npc id="16015" level="69" type="L2TamedBeast" name="Trained Cougar">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="Buff2" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="Buff3" id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill name="Buff4" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="Buff5" id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill name="DeBuff1" id="5196" level="3" /> <!-- Pet Wind Shackle -->
+			<skill name="DeBuff2" id="5197" level="3" /> <!-- Pet Hex -->
+			<skill name="Heal" id="5195" level="6" /> <!-- Pet Greater Heal -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
+			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="291.15063" magical="213.05139" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="120" />
+			</speed>
+			<hitTime>450</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5186" level="2" /> <!-- Pet Haste -->
+			<skill id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill id="5196" level="3" /> <!-- Pet Wind Shackle -->
+			<skill id="5197" level="3" /> <!-- Pet Hex -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="34" />
+			<height normal="28" />
+		</collision>
+	</npc>
+	<npc id="16016" level="69" type="L2TamedBeast" name="Trained Cougar">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="Buff2" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="Buff3" id="5201" level="2" /> <!-- Pet Concentration -->
+			<skill name="Buff4" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="Buff5" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="DeBuff1" id="5198" level="3" /> <!-- Pet Slow -->
+			<skill name="DeBuff2" id="5199" level="3" /> <!-- Pet Curse Gloom -->
+			<skill name="Heal" id="5200" level="3" /> <!-- Pet Recharge -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
+			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="291.15063" magical="213.05139" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="120" />
+			</speed>
+			<hitTime>450</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill id="5194" level="3" /> <!-- Pet Empower -->
+			<skill id="5198" level="3" /> <!-- Pet Slow -->
+			<skill id="5199" level="3" /> <!-- Pet Curse Gloom -->
+			<skill id="5200" level="3" /> <!-- Pet Recharge -->
+			<skill id="5201" level="2" /> <!-- Pet Concentration -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="34" />
+			<height normal="28" />
+		</collision>
+	</npc>
+	<npc id="16017" level="65" type="L2TamedBeast" name="Trained Kookaburra">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="Buff2" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="Buff3" id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill name="Buff4" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="Buff5" id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill name="DeBuff1" id="5196" level="1" /> <!-- Pet Wind Shackle -->
+			<skill name="DeBuff2" id="5197" level="1" /> <!-- Pet Hex -->
+			<skill name="Heal" id="5195" level="6" /> <!-- Pet Greater Heal -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
+			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="271.89033" magical="198.95754" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="23" />
+				<run ground="120" />
+			</speed>
+			<hitTime>500</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5186" level="2" /> <!-- Pet Haste -->
+			<skill id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill id="5196" level="1" /> <!-- Pet Wind Shackle -->
+			<skill id="5197" level="1" /> <!-- Pet Hex -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" />
+			<height normal="33" />
+		</collision>
+	</npc>
+	<npc id="16018" level="65" type="L2TamedBeast" name="Trained Kookaburra">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="Buff2" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="Buff3" id="5201" level="1" /> <!-- Pet Concentration -->
+			<skill name="Buff4" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="Buff5" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="DeBuff1" id="5198" level="1" /> <!-- Pet Slow -->
+			<skill name="DeBuff2" id="5199" level="1" /> <!-- Pet Curse Gloom -->
+			<skill name="Heal" id="5200" level="1" /> <!-- Pet Recharge -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
+			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="271.89033" magical="198.95754" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="23" />
+				<run ground="120" />
+			</speed>
+			<hitTime>500</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill id="5194" level="3" /> <!-- Pet Empower -->
+			<skill id="5198" level="1" /> <!-- Pet Slow -->
+			<skill id="5199" level="1" /> <!-- Pet Curse Gloom -->
+			<skill id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill id="5201" level="1" /> <!-- Pet Concentration -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" />
+			<height normal="33" />
+		</collision>
+	</npc>
+	<npc id="16019" level="67" type="L2Monster" name="Tiny Baby Buffalo">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="70" />
+			<param name="MoveAroundSocial1" value="30" />
+			<param name="MoveAroundSocial2" value="70" />
+			<skill name="FeedID1" id="2188" level="1" /> <!-- Golden Spice -->
+			<param name="silhouette1" value="16019" /> <!-- Tiny Baby Buffalo -->
+			<param name="ai_type1" value="mon_tiny_buffalo" />
+			<param name="silhouette2" value="16019" /> <!-- Tiny Baby Buffalo -->
+			<param name="ai_type2" value="mon_tiny_buffalo" />
+			<param name="silhouette_ex" value="16020" /> <!-- Trained Tiny Baby Buffalo -->
+			<param name="ai_type_ex" value="tnpc_tiny_buffalo" />
+			<param name="silhouette_ex2" value="16020" /> <!-- Trained Tiny Baby Buffalo -->
+			<param name="ai_type_ex2" value="tnpc_tiny_buffalo" />
+			<param name="TakeSocial" value="30" />
+			<skill name="PhysicalSpecial" id="4067" level="6" /> <!-- NPC Mortal Blow -->
+			<skill name="SelfRangeDDMagic" id="4072" level="6" /> <!-- Stun -->
+			<!-- <skill name="SelfBuff" id="4074" level="2" /> --> <!-- NPC Haste -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire exp="2145" sp="200" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
+			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="281.55251" magical="206.02791" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="120" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="2188" level="1" /> <!-- Golden Spice -->
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4067" level="6" /> <!-- NPC Mortal Blow -->
+			<skill id="4072" level="6" /> <!-- Stun -->
+			<skill id="4074" level="2" /> <!-- NPC Haste -->
+			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.5</sNpcPropHpRate>
+		<ai type="BALANCED" clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="12" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="16020" level="67" type="L2Monster" name="Trained Tiny Baby Buffalo">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="Buff2" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="Buff3" id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill name="Buff4" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="Buff5" id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill name="DeBuff1" id="5196" level="2" /> <!-- Pet Wind Shackle -->
+			<skill name="DeBuff2" id="5197" level="2" /> <!-- Pet Hex -->
+			<skill name="Heal" id="5195" level="6" /> <!-- Pet Greater Heal -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire exp="2145" sp="200" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
+			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="281.55251" magical="206.02791" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="120" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5186" level="2" /> <!-- Pet Haste -->
+			<skill id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill id="5196" level="2" /> <!-- Pet Wind Shackle -->
+			<skill id="5197" level="2" /> <!-- Pet Hex -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.5</sNpcPropHpRate>
+		<ai type="BALANCED" clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="12" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="16021" level="69" type="L2Monster" name="Tiny Baby Cougar">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="120" />
+			<param name="MoveAroundSocial1" value="30" />
+			<param name="MoveAroundSocial2" value="120" />
+			<skill name="FeedID1" id="2188" level="1" /> <!-- Golden Spice -->
+			<param name="silhouette1" value="16021" /> <!-- Tiny Baby Cougar -->
+			<param name="ai_type1" value="mon_tiny_cougar" />
+			<param name="silhouette2" value="16021" /> <!-- Tiny Baby Cougar -->
+			<param name="ai_type2" value="mon_tiny_cougar" />
+			<param name="silhouette_ex" value="16022" /> <!-- Trained Tiny Baby Cougar -->
+			<param name="ai_type_ex" value="tnpc_tiny_cougar" />
+			<param name="silhouette_ex2" value="16022" /> <!-- Trained Tiny Baby Cougar -->
+			<param name="ai_type_ex2" value="tnpc_tiny_cougar" />
+			<param name="TakeSocial" value="30" />
+			<skill name="PhysicalSpecial" id="4073" level="6" /> <!-- Stun -->
+			<skill name="SelfRangeDDMagic" id="4232" level="6" /> <!-- NPC AE Strike -->
+			<!-- <skill name="SelfBuff" id="4074" level="2" /> --> <!-- NPC Haste -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire exp="2275" sp="218" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
+			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="291.15063" magical="213.05139" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="28" />
+				<run ground="120" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="2188" level="1" /> <!-- Golden Spice -->
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4073" level="6" /> <!-- Stun -->
+			<skill id="4074" level="2" /> <!-- NPC Haste -->
+			<skill id="4232" level="6" /> <!-- NPC AE Strike -->
+			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.5</sNpcPropHpRate>
+		<ai type="BALANCED" clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="15.7" />
+		</collision>
+	</npc>
+	<npc id="16022" level="69" type="L2Monster" name="Trained Tiny Baby Cougar">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="Buff2" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="Buff3" id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill name="Buff4" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="Buff5" id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill name="DeBuff1" id="5196" level="3" /> <!-- Pet Wind Shackle -->
+			<skill name="DeBuff2" id="5197" level="3" /> <!-- Pet Hex -->
+			<skill name="Heal" id="5195" level="6" /> <!-- Pet Greater Heal -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire exp="2275" sp="218" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
+			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="291.15063" magical="213.05139" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="28" />
+				<run ground="120" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5186" level="2" /> <!-- Pet Haste -->
+			<skill id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill id="5188" level="3" /> <!-- Pet Regeneration -->
+			<skill id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill id="5196" level="3" /> <!-- Pet Wind Shackle -->
+			<skill id="5197" level="3" /> <!-- Pet Hex -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.5</sNpcPropHpRate>
+		<ai type="BALANCED" clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="15.7" />
+		</collision>
+	</npc>
+	<npc id="16023" level="65" type="L2Monster" name="Tiny Baby Kookaburra">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="78" />
+			<param name="MoveAroundSocial1" value="30" />
+			<param name="MoveAroundSocial2" value="78" />
+			<skill name="FeedID1" id="2188" level="1" /> <!-- Golden Spice -->
+			<param name="silhouette1" value="16023" /> <!-- Tiny Baby Kookaburra -->
+			<param name="ai_type1" value="mon_tiny_kukaburo" />
+			<param name="silhouette2" value="16023" /> <!-- Tiny Baby Kookaburra -->
+			<param name="ai_type2" value="mon_tiny_kukaburo" />
+			<param name="silhouette_ex" value="16024" /> <!-- Trained Tiny Baby Kookaburra -->
+			<param name="ai_type_ex" value="tnpc_tiny_kukaburo" />
+			<param name="silhouette_ex2" value="16024" /> <!-- Trained Tiny Baby Kookaburra -->
+			<param name="ai_type_ex2" value="tnpc_tiny_kukaburo" />
+			<param name="TakeSocial" value="30" />
+			<skill name="W_LongRangeDDMagic" id="4566" level="6" /> <!-- NPC Eruption - Magic -->
+			<skill name="W_ShortRangeDDMagic" id="4160" level="6" /> <!-- NPC Aura Burn - Magic -->
+			<skill name="SelfRangeDDMagic" id="4571" level="6" /> <!-- NPC Blazing Circle -->
+			<!-- <skill name="SelfBuff" id="4633" level="3" /> --> <!-- NPC Buff - Acumen Empower Berserk -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire exp="2019" sp="183" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
+			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="271.89033" magical="198.95754" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="13" />
+				<run ground="120" />
+			</speed>
+			<hitTime>500</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="2188" level="1" /> <!-- Golden Spice -->
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4160" level="6" /> <!-- NPC Aura Burn - Magic -->
+			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="4566" level="6" /> <!-- NPC Eruption - Magic -->
+			<skill id="4571" level="6" /> <!-- NPC Blazing Circle -->
+			<skill id="4633" level="3" /> <!-- NPC Buff - Acumen Empower Berserk -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.5</sNpcPropHpRate>
+		<ai type="BALANCED" clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="7" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="16024" level="65" type="L2Monster" name="Trained Tiny Baby Kookaburra">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Buff1" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="Buff2" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="Buff3" id="5201" level="1" /> <!-- Pet Concentration -->
+			<skill name="Buff4" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="Buff5" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="DeBuff1" id="5198" level="1" /> <!-- Pet Slow -->
+			<skill name="DeBuff2" id="5199" level="1" /> <!-- Pet Curse Gloom -->
+			<skill name="Heal" id="5200" level="1" /> <!-- Pet Recharge -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire exp="2019" sp="183" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
+			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="271.89033" magical="198.95754" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="13" />
+				<run ground="120" />
+			</speed>
+			<hitTime>500</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill id="5194" level="3" /> <!-- Pet Empower -->
+			<skill id="5198" level="1" /> <!-- Pet Slow -->
+			<skill id="5199" level="1" /> <!-- Pet Curse Gloom -->
+			<skill id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill id="5201" level="1" /> <!-- Pet Concentration -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.5</sNpcPropHpRate>
+		<ai type="BALANCED" clanHelpRange="400" isAggressive="false">
+			<clanList>
+				<clan>NONPET</clan>
+				<clan>PET</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="7" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="16025" level="55" type="L2Pet" name="Great Wolf">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01" id="5442" level="1" /> <!-- Bite Attack -->
+			<param name="Skill01_ID" value="1041" />
+			<skill name="Skill02" id="5443" level="1" /> <!-- Cry of the Wolf -->
+			<param name="Skill02_ID" value="1043" />
+			<skill name="Skill03" id="5444" level="1" /> <!-- Maul -->
+			<param name="Skill03_ID" value="1042" />
+			<skill name="Skill04" id="5445" level="1" /> <!-- Awakening -->
+			<param name="Skill04_ID" value="1044" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="45" />
+				<run ground="170" />
+			</speed>
+			<hitTime>470</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="32" />
+			<height normal="21.412" />
+		</collision>
+	</npc>
+	<npc id="16026" level="55" type="L2Npc" name="Beastly Agathion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="0.01" />
+			<height normal="11.3" />
+		</collision>
+	</npc>
+	<npc id="16027" level="55" type="L2Npc" name="Rainbow Agathion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="0.01" />
+			<height normal="6.7" />
+		</collision>
+	</npc>
+	<npc id="16028" level="55" type="L2Npc" name="Lord Agathion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="0.01" />
+			<height normal="9.5" />
+		</collision>
+	</npc>
+	<npc id="16029" level="55" type="L2Npc" name="Fortress Agasion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="0.01" />
+			<height normal="3.5" />
+		</collision>
+	</npc>
+	<npc id="16030" level="55" type="L2Pet" name="Great Wolf">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01" id="5442" level="1" /> <!-- Bite Attack -->
+			<param name="Skill01_ID" value="1041" />
+			<skill name="Skill02" id="5443" level="1" /> <!-- Cry of the Wolf -->
+			<param name="Skill02_ID" value="1043" />
+			<skill name="Skill03" id="5444" level="1" /> <!-- Maul -->
+			<param name="Skill03_ID" value="1042" />
+			<skill name="Skill04" id="5445" level="1" /> <!-- Awakening -->
+			<param name="Skill04_ID" value="1044" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="45" />
+				<run ground="170" />
+			</speed>
+			<hitTime>420</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" isAggressive="false" />
+		<collision>
+			<radius normal="25" />
+			<height normal="21.412" />
+		</collision>
+	</npc>
+	<npc id="16031" level="55" type="L2Npc" name="Little Angel Agathion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="0.01" />
+			<height normal="4.5475" />
+		</collision>
+	</npc>
+	<npc id="16032" level="55" type="L2Npc" name="Little Devil Agathion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="0.01" />
+			<height normal="5.5" />
+		</collision>
+	</npc>
+	<npc id="16033" level="55" type="L2Npc" name="Rudolph Agathion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="0.01" />
+			<height normal="5.271" />
+		</collision>
+	</npc>
+	<npc id="16034" level="55" type="L2BabyPet" name="Improved Baby Buffalo">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="step0_buff01" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step0_buff02" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step1_buff01" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step1_buff02" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step1_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step1_buff04" id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill name="step2_buff01" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step2_buff02" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step2_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step2_buff04" id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill name="step2_buff05" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="step2_buff06" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="step3_buff01" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step3_buff02" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step3_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step3_buff04" id="5191" level="3" /> <!-- Pet Guidance -->
+			<skill name="step3_buff05" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="step3_buff06" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="step3_buff07" id="5588" level="3" /> <!-- Pet Focus -->
+			<skill name="step3_buff08" id="5589" level="3" /> <!-- Pet Death Whisper -->
+			<skill name="step0_heal01" id="5195" level="5" /> <!-- Pet Greater Heal -->
+			<skill name="step0_heal02" id="5590" level="5" /> <!-- Pet Battle Heal -->
+			<skill name="step1_heal01" id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill name="step1_heal02" id="5590" level="6" /> <!-- Pet Battle Heal -->
+			<skill name="step2_heal01" id="5195" level="7" /> <!-- Pet Greater Heal -->
+			<skill name="step2_heal02" id="5590" level="7" /> <!-- Pet Battle Heal -->
+			<skill name="step3_heal01" id="5195" level="8" /> <!-- Pet Greater Heal -->
+			<skill name="step3_heal02" id="5590" level="8" /> <!-- Pet Battle Heal -->
+			<skill name="step0_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step0_merged_buff02" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step1_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step1_merged_buff02" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step1_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step1_merged_buff04" id="1364" level="1" /> <!-- Eye of Pa'agrio -->
+			<skill name="step2_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step2_merged_buff02" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step2_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step2_merged_buff04" id="1364" level="1" /> <!-- Eye of Pa'agrio -->
+			<skill name="step2_merged_buff05" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step2_merged_buff06" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step3_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step3_merged_buff02" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step3_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step3_merged_buff04" id="1364" level="1" /> <!-- Eye of Pa'agrio -->
+			<skill name="step3_merged_buff05" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step3_merged_buff06" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step3_merged_buff07" id="1502" level="1" /> <!-- Improved Critical Attack -->
+			<skill name="step3_merged_buff08" id="1502" level="1" /> <!-- Improved Critical Attack -->
+			<param name="step0_buff_target01" value="2" />
+			<param name="step0_buff_target02" value="2" />
+			<param name="step1_buff_target01" value="2" />
+			<param name="step1_buff_target02" value="2" />
+			<param name="step1_buff_target03" value="2" />
+			<param name="step1_buff_target04" value="2" />
+			<param name="step2_buff_target01" value="2" />
+			<param name="step2_buff_target02" value="2" />
+			<param name="step2_buff_target03" value="2" />
+			<param name="step2_buff_target04" value="2" />
+			<param name="step2_buff_target05" value="2" />
+			<param name="step2_buff_target06" value="2" />
+			<param name="step3_buff_target01" value="2" />
+			<param name="step3_buff_target02" value="2" />
+			<param name="step3_buff_target03" value="2" />
+			<param name="step3_buff_target04" value="2" />
+			<param name="step3_buff_target05" value="2" />
+			<param name="step3_buff_target06" value="2" />
+			<param name="step3_buff_target07" value="2" />
+			<param name="step3_buff_target08" value="2" />
+			<param name="step0_heal_target01" value="2" />
+			<param name="step0_heal_target02" value="2" />
+			<param name="step1_heal_target01" value="2" />
+			<param name="step1_heal_target02" value="2" />
+			<param name="step2_heal_target01" value="2" />
+			<param name="step2_heal_target02" value="2" />
+			<param name="step3_heal_target01" value="2" />
+			<param name="step3_heal_target02" value="2" />
+			<skill name="step0_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step0_skill_target01" value="1" />
+			<param name="step0_action01" value="1070" />
+			<skill name="step1_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step1_skill_target01" value="1" />
+			<param name="step1_action01" value="1070" />
+			<skill name="step2_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step2_skill_target01" value="1" />
+			<param name="step2_action01" value="1070" />
+			<skill name="step3_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step3_skill_target01" value="1" />
+			<param name="step3_action01" value="1070" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="170" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="12" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="16035" level="55" type="L2BabyPet" name="Improved Baby Kookaburra">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="step0_buff01" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step0_buff02" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="step1_buff01" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step1_buff02" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="step1_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step1_buff04" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step2_buff01" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step2_buff02" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="step2_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step2_buff04" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step2_buff05" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="step2_buff06" id="5201" level="6" /> <!-- Pet Concentration -->
+			<skill name="step3_buff01" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step3_buff02" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="step3_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step3_buff04" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step3_buff05" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="step3_buff06" id="5201" level="6" /> <!-- Pet Concentration -->
+			<skill name="step0_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step0_heal02" id="5590" level="5" /> <!-- Pet Battle Heal -->
+			<skill name="step1_heal01" id="5200" level="3" /> <!-- Pet Recharge -->
+			<skill name="step1_heal02" id="5590" level="6" /> <!-- Pet Battle Heal -->
+			<skill name="step2_heal01" id="5200" level="4" /> <!-- Pet Recharge -->
+			<skill name="step2_heal02" id="5590" level="7" /> <!-- Pet Battle Heal -->
+			<skill name="step3_heal01" id="5200" level="5" /> <!-- Pet Recharge -->
+			<skill name="step3_heal02" id="5590" level="8" /> <!-- Pet Battle Heal -->
+			<skill name="step4_heal01" id="5200" level="6" /> <!-- Pet Recharge -->
+			<skill name="step5_heal01" id="5200" level="7" /> <!-- Pet Recharge -->
+			<skill name="step0_merged_buff01" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step0_merged_buff02" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step1_merged_buff01" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step1_merged_buff02" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step1_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step1_merged_buff04" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step2_merged_buff01" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step2_merged_buff02" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step2_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step2_merged_buff04" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step2_merged_buff05" id="5193" level="1" /> <!-- Pet Acumen -->
+			<skill name="step2_merged_buff06" id="5201" level="3" /> <!-- Pet Concentration -->
+			<skill name="step3_merged_buff01" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step3_merged_buff02" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step3_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step3_merged_buff04" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step3_merged_buff05" id="5193" level="1" /> <!-- Pet Acumen -->
+			<skill name="step3_merged_buff06" id="5201" level="4" /> <!-- Pet Concentration -->
+			<param name="step0_buff_target01" value="2" />
+			<param name="step0_buff_target02" value="2" />
+			<param name="step1_buff_target01" value="2" />
+			<param name="step1_buff_target02" value="2" />
+			<param name="step1_buff_target03" value="2" />
+			<param name="step1_buff_target04" value="2" />
+			<param name="step2_buff_target01" value="2" />
+			<param name="step2_buff_target02" value="2" />
+			<param name="step2_buff_target03" value="2" />
+			<param name="step2_buff_target04" value="2" />
+			<param name="step2_buff_target05" value="2" />
+			<param name="step2_buff_target06" value="2" />
+			<param name="step3_buff_target01" value="2" />
+			<param name="step3_buff_target02" value="2" />
+			<param name="step3_buff_target03" value="2" />
+			<param name="step3_buff_target04" value="2" />
+			<param name="step3_buff_target05" value="2" />
+			<param name="step3_buff_target06" value="2" />
+			<param name="step3_buff_target07" value="2" />
+			<param name="step3_buff_target08" value="2" />
+			<param name="step0_heal_target01" value="2" />
+			<param name="step0_heal_target02" value="2" />
+			<param name="step1_heal_target01" value="2" />
+			<param name="step1_heal_target02" value="2" />
+			<param name="step2_heal_target01" value="2" />
+			<param name="step2_heal_target02" value="2" />
+			<param name="step3_heal_target01" value="2" />
+			<param name="step3_heal_target02" value="2" />
+			<param name="step4_heal_target01" value="2" />
+			<param name="step5_heal_target01" value="2" />
+			<skill name="step0_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step0_skill_target01" value="1" />
+			<param name="step0_action01" value="1070" />
+			<skill name="step1_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step1_skill_target01" value="1" />
+			<param name="step1_action01" value="1070" />
+			<skill name="step2_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step2_skill_target01" value="1" />
+			<param name="step2_action01" value="1070" />
+			<skill name="step3_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step3_skill_target01" value="1" />
+			<param name="step3_action01" value="1070" />
+			<param name="heal_type" value="0" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="13" />
+				<run ground="170" />
+			</speed>
+			<hitTime>500</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="7" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="16036" level="55" type="L2BabyPet" name="Improved Baby Cougar">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="step0_buff01" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step0_buff02" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step1_buff01" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step1_buff02" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step1_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step1_buff04" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step2_buff01" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step2_buff02" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step2_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step2_buff04" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step2_buff05" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="step2_buff06" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="step3_buff01" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step3_buff02" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step3_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step3_buff04" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step3_buff05" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="step3_buff06" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="step3_buff07" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="step3_buff08" id="5588" level="3" /> <!-- Pet Focus -->
+			<skill name="step0_heal01" id="5195" level="5" /> <!-- Pet Greater Heal -->
+			<skill name="step0_heal02" id="5590" level="5" /> <!-- Pet Battle Heal -->
+			<skill name="step1_heal01" id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill name="step1_heal02" id="5590" level="6" /> <!-- Pet Battle Heal -->
+			<skill name="step2_heal01" id="5195" level="7" /> <!-- Pet Greater Heal -->
+			<skill name="step2_heal02" id="5590" level="7" /> <!-- Pet Battle Heal -->
+			<skill name="step3_heal01" id="5195" level="8" /> <!-- Pet Greater Heal -->
+			<skill name="step3_heal02" id="5590" level="8" /> <!-- Pet Battle Heal -->
+			<skill name="step0_merged_buff01" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step0_merged_buff02" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step1_merged_buff01" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step1_merged_buff02" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step1_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step1_merged_buff04" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step2_merged_buff01" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step2_merged_buff02" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step2_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step2_merged_buff04" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step2_merged_buff05" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step2_merged_buff06" id="5193" level="1" /> <!-- Pet Acumen -->
+			<skill name="step3_merged_buff01" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step3_merged_buff02" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step3_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step3_merged_buff04" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step3_merged_buff05" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step3_merged_buff06" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step3_merged_buff07" id="5193" level="1" /> <!-- Pet Acumen -->
+			<skill name="step3_merged_buff08" id="1502" level="1" /> <!-- Improved Critical Attack -->
+			<param name="step0_buff_target01" value="2" />
+			<param name="step0_buff_target02" value="2" />
+			<param name="step1_buff_target01" value="2" />
+			<param name="step1_buff_target02" value="2" />
+			<param name="step1_buff_target03" value="2" />
+			<param name="step1_buff_target04" value="2" />
+			<param name="step2_buff_target01" value="2" />
+			<param name="step2_buff_target02" value="2" />
+			<param name="step2_buff_target03" value="2" />
+			<param name="step2_buff_target04" value="2" />
+			<param name="step2_buff_target05" value="2" />
+			<param name="step2_buff_target06" value="2" />
+			<param name="step3_buff_target01" value="2" />
+			<param name="step3_buff_target02" value="2" />
+			<param name="step3_buff_target03" value="2" />
+			<param name="step3_buff_target04" value="2" />
+			<param name="step3_buff_target05" value="2" />
+			<param name="step3_buff_target06" value="2" />
+			<param name="step3_buff_target07" value="2" />
+			<param name="step3_buff_target08" value="2" />
+			<param name="step0_heal_target01" value="2" />
+			<param name="step0_heal_target02" value="2" />
+			<param name="step1_heal_target01" value="2" />
+			<param name="step1_heal_target02" value="2" />
+			<param name="step2_heal_target01" value="2" />
+			<param name="step2_heal_target02" value="2" />
+			<param name="step3_heal_target01" value="2" />
+			<param name="step3_heal_target02" value="2" />
+			<skill name="step0_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step0_skill_target01" value="1" />
+			<param name="step0_action01" value="1070" />
+			<skill name="step1_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step1_skill_target01" value="1" />
+			<param name="step1_action01" value="1070" />
+			<skill name="step2_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step2_skill_target01" value="1" />
+			<param name="step2_action01" value="1070" />
+			<skill name="step3_skill01" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step3_skill_target01" value="1" />
+			<param name="step3_action01" value="1070" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="28" />
+				<run ground="170" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="11" />
+			<height normal="15.7" />
+		</collision>
+	</npc>
+	<npc id="16037" level="55" type="L2Pet" name="Great Snow Wolf">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="lv_step1" value="60" />
+			<param name="lv_step2" value="65" />
+			<param name="lv_step3" value="70" />
+			<param name="lv_step4" value="75" />
+			<param name="lv_step5" value="80" />
+			<param name="lv_step6" value="85" />
+			<skill name="step0_skill01" id="5442" level="1" /> <!-- Bite Attack -->
+			<skill name="step0_skill02" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step0_action01" value="1041" />
+			<param name="step0_action02" value="1045" />
+			<skill name="step1_skill01" id="5442" level="2" /> <!-- Bite Attack -->
+			<skill name="step1_skill02" id="5443" level="1" /> <!-- Cry of the Wolf -->
+			<skill name="step1_skill03" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step1_action01" value="1041" />
+			<param name="step1_action02" value="1043" />
+			<param name="step1_action03" value="1045" />
+			<skill name="step2_skill01" id="5442" level="3" /> <!-- Bite Attack -->
+			<skill name="step2_skill02" id="5443" level="2" /> <!-- Cry of the Wolf -->
+			<skill name="step2_skill03" id="5444" level="1" /> <!-- Maul -->
+			<skill name="step2_skill04" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step2_action01" value="1041" />
+			<param name="step2_action02" value="1043" />
+			<param name="step2_action03" value="1042" />
+			<param name="step2_action04" value="1045" />
+			<skill name="step3_skill01" id="5442" level="4" /> <!-- Bite Attack -->
+			<skill name="step3_skill02" id="5443" level="3" /> <!-- Cry of the Wolf -->
+			<skill name="step3_skill03" id="5444" level="2" /> <!-- Maul -->
+			<skill name="step3_skill04" id="5445" level="1" /> <!-- Awakening -->
+			<skill name="step3_skill05" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step3_action01" value="1041" />
+			<param name="step3_action02" value="1043" />
+			<param name="step3_action03" value="1042" />
+			<param name="step3_action04" value="1044" />
+			<param name="step3_action05" value="1045" />
+			<skill name="step4_skill01" id="5442" level="4" /> <!-- Bite Attack -->
+			<skill name="step4_skill02" id="5443" level="3" /> <!-- Cry of the Wolf -->
+			<skill name="step4_skill03" id="5444" level="2" /> <!-- Maul -->
+			<skill name="step4_skill04" id="5445" level="1" /> <!-- Awakening -->
+			<skill name="step4_skill05" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step4_action01" value="1041" />
+			<param name="step4_action02" value="1043" />
+			<param name="step4_action03" value="1042" />
+			<param name="step4_action04" value="1044" />
+			<param name="step4_action05" value="1045" />
+			<skill name="step5_skill01" id="5442" level="4" /> <!-- Bite Attack -->
+			<skill name="step5_skill02" id="5443" level="3" /> <!-- Cry of the Wolf -->
+			<skill name="step5_skill03" id="5444" level="2" /> <!-- Maul -->
+			<skill name="step5_skill04" id="5445" level="1" /> <!-- Awakening -->
+			<skill name="step5_skill05" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step5_action01" value="1041" />
+			<param name="step5_action02" value="1043" />
+			<param name="step5_action03" value="1042" />
+			<param name="step5_action04" value="1044" />
+			<param name="step5_action05" value="1045" />
+			<skill name="step6_skill01" id="5442" level="4" /> <!-- Bite Attack -->
+			<skill name="step6_skill02" id="5443" level="3" /> <!-- Cry of the Wolf -->
+			<skill name="step6_skill03" id="5444" level="2" /> <!-- Maul -->
+			<skill name="step6_skill04" id="5445" level="1" /> <!-- Awakening -->
+			<skill name="step6_skill05" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step6_action01" value="1041" />
+			<param name="step6_action02" value="1043" />
+			<param name="step6_action03" value="1042" />
+			<param name="step6_action04" value="1044" />
+			<param name="step6_action05" value="1045" />
+			<param name="step0_skill_target02" value="1" />
+			<param name="step1_skill_target02" value="1" />
+			<param name="step1_skill_target03" value="1" />
+			<param name="step2_skill_target02" value="1" />
+			<param name="step2_skill_target04" value="1" />
+			<param name="step3_skill_target02" value="1" />
+			<param name="step3_skill_target04" value="1" />
+			<param name="step3_skill_target05" value="1" />
+			<param name="step4_skill_target02" value="1" />
+			<param name="step4_skill_target04" value="1" />
+			<param name="step4_skill_target05" value="1" />
+			<param name="step5_skill_target02" value="1" />
+			<param name="step5_skill_target04" value="1" />
+			<param name="step5_skill_target05" value="1" />
+			<param name="step6_skill_target02" value="1" />
+			<param name="step6_skill_target04" value="1" />
+			<param name="step6_skill_target05" value="1" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="45" />
+				<run ground="170" />
+			</speed>
+			<hitTime>420</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="25" />
+			<height normal="21.412" />
+		</collision>
+	</npc>
+	<npc id="16038" level="55" type="L2Pet" name="Red Wind Strider">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="lv_step1" value="60" />
+			<param name="lv_step2" value="65" />
+			<param name="lv_step3" value="70" />
+			<param name="lv_step4" value="75" />
+			<param name="lv_step5" value="80" />
+			<param name="lv_step6" value="85" />
+			<skill name="step0_skill01" id="4710" level="5" /> <!-- Wild Stun -->
+			<skill name="step0_skill02" id="4711" level="5" /> <!-- Wild Defense -->
+			<param name="step0_action01" value="1003" />
+			<param name="step0_action02" value="1004" />
+			<skill name="step1_skill01" id="4710" level="6" /> <!-- Wild Stun -->
+			<skill name="step1_skill02" id="4711" level="6" /> <!-- Wild Defense -->
+			<skill name="step1_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step1_action01" value="1003" />
+			<param name="step1_action02" value="1004" />
+			<param name="step1_action03" value="1046" />
+			<skill name="step2_skill01" id="4710" level="6" /> <!-- Wild Stun -->
+			<skill name="step2_skill02" id="4711" level="6" /> <!-- Wild Defense -->
+			<skill name="step2_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step2_action01" value="1003" />
+			<param name="step2_action02" value="1004" />
+			<param name="step2_action03" value="1046" />
+			<skill name="step3_skill01" id="4710" level="7" /> <!-- Wild Stun -->
+			<skill name="step3_skill02" id="4711" level="7" /> <!-- Wild Defense -->
+			<skill name="step3_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step3_action01" value="1003" />
+			<param name="step3_action02" value="1004" />
+			<param name="step3_action03" value="1046" />
+			<skill name="step4_skill01" id="4710" level="8" /> <!-- Wild Stun -->
+			<skill name="step4_skill02" id="4711" level="8" /> <!-- Wild Defense -->
+			<skill name="step4_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step4_action01" value="1003" />
+			<param name="step4_action02" value="1004" />
+			<param name="step4_action03" value="1046" />
+			<skill name="step5_skill01" id="4710" level="9" /> <!-- Wild Stun -->
+			<skill name="step5_skill02" id="4711" level="9" /> <!-- Wild Defense -->
+			<skill name="step5_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step5_action01" value="1003" />
+			<param name="step5_action02" value="1004" />
+			<param name="step5_action03" value="1046" />
+			<skill name="step6_skill01" id="4710" level="10" /> <!-- Wild Stun -->
+			<skill name="step6_skill02" id="4711" level="10" /> <!-- Wild Defense -->
+			<skill name="step6_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step6_action01" value="1003" />
+			<param name="step6_action02" value="1004" />
+			<param name="step6_action03" value="1046" />
+			<param name="step0_skill_target02" value="1" />
+			<param name="step1_skill_target02" value="1" />
+			<param name="step1_skill_target03" value="1" />
+			<param name="step2_skill_target02" value="1" />
+			<param name="step2_skill_target03" value="1" />
+			<param name="step3_skill_target02" value="1" />
+			<param name="step3_skill_target03" value="1" />
+			<param name="step4_skill_target02" value="1" />
+			<param name="step4_skill_target03" value="1" />
+			<param name="step5_skill_target02" value="1" />
+			<param name="step5_skill_target03" value="1" />
+			<param name="step6_skill_target02" value="1" />
+			<param name="step6_skill_target03" value="1" />
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="170" />
+			</speed>
+			<hitTime>250</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="10" /> <!-- Dragons -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" isAggressive="false" />
+		<collision>
+			<radius normal="23" />
+			<height normal="31" />
+		</collision>
+	</npc>
+	<npc id="16039" level="55" type="L2Pet" name="Red Star Strider">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="lv_step1" value="60" />
+			<param name="lv_step2" value="65" />
+			<param name="lv_step3" value="70" />
+			<param name="lv_step4" value="75" />
+			<param name="lv_step5" value="80" />
+			<param name="lv_step6" value="85" />
+			<skill name="step0_skill01" id="4712" level="5" /> <!-- Bright Burst -->
+			<skill name="step0_skill02" id="4713" level="5" /> <!-- Bright Heal -->
+			<param name="step0_action01" value="1005" />
+			<param name="step0_action02" value="1006" />
+			<skill name="step1_skill01" id="4712" level="6" /> <!-- Bright Burst -->
+			<skill name="step1_skill02" id="4713" level="6" /> <!-- Bright Heal -->
+			<skill name="step1_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step1_action01" value="1005" />
+			<param name="step1_action02" value="1006" />
+			<param name="step1_action03" value="1046" />
+			<skill name="step2_skill01" id="4712" level="6" /> <!-- Bright Burst -->
+			<skill name="step2_skill02" id="4713" level="6" /> <!-- Bright Heal -->
+			<skill name="step2_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step2_action01" value="1005" />
+			<param name="step2_action02" value="1006" />
+			<param name="step2_action03" value="1046" />
+			<skill name="step3_skill01" id="4712" level="7" /> <!-- Bright Burst -->
+			<skill name="step3_skill02" id="4713" level="7" /> <!-- Bright Heal -->
+			<skill name="step3_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step3_action01" value="1005" />
+			<param name="step3_action02" value="1006" />
+			<param name="step3_action03" value="1046" />
+			<skill name="step4_skill01" id="4712" level="8" /> <!-- Bright Burst -->
+			<skill name="step4_skill02" id="4713" level="8" /> <!-- Bright Heal -->
+			<skill name="step4_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step4_action01" value="1005" />
+			<param name="step4_action02" value="1006" />
+			<param name="step4_action03" value="1046" />
+			<skill name="step5_skill01" id="4712" level="9" /> <!-- Bright Burst -->
+			<skill name="step5_skill02" id="4713" level="9" /> <!-- Bright Heal -->
+			<skill name="step5_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step5_action01" value="1005" />
+			<param name="step5_action02" value="1006" />
+			<param name="step5_action03" value="1046" />
+			<skill name="step6_skill01" id="4712" level="10" /> <!-- Bright Burst -->
+			<skill name="step6_skill02" id="4713" level="10" /> <!-- Bright Heal -->
+			<skill name="step6_skill03" id="5585" level="1" /> <!-- Strider Roar -->
+			<param name="step6_action01" value="1005" />
+			<param name="step6_action02" value="1006" />
+			<param name="step6_action03" value="1046" />
+			<param name="step0_skill_target02" value="1" />
+			<param name="step1_skill_target02" value="1" />
+			<param name="step1_skill_target03" value="1" />
+			<param name="step2_skill_target02" value="1" />
+			<param name="step2_skill_target03" value="1" />
+			<param name="step3_skill_target02" value="1" />
+			<param name="step3_skill_target03" value="1" />
+			<param name="step4_skill_target02" value="1" />
+			<param name="step4_skill_target03" value="1" />
+			<param name="step5_skill_target02" value="1" />
+			<param name="step5_skill_target03" value="1" />
+			<param name="step6_skill_target02" value="1" />
+			<param name="step6_skill_target03" value="1" />
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="170" />
+			</speed>
+			<hitTime>250</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="10" /> <!-- Dragons -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" isAggressive="false" />
+		<collision>
+			<radius normal="23" />
+			<height normal="31" />
+		</collision>
+	</npc>
+	<npc id="16040" level="55" type="L2Pet" name="Red Twilight Strider">
+		<!-- Confirmed CT2.5 -->
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="170" />
+			</speed>
+			<hitTime>250</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="10" /> <!-- Dragons -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" isAggressive="false" />
+		<collision>
+			<radius normal="23" />
+			<height normal="31" />
+		</collision>
+	</npc>
+	<npc id="16041" level="55" type="L2Pet" name="Fenrir">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01" id="5442" level="1" /> <!-- Bite Attack -->
+			<param name="Skill01_ID" value="1041" />
+			<skill name="Skill02" id="5443" level="1" /> <!-- Cry of the Wolf -->
+			<param name="Skill02_ID" value="1043" />
+			<skill name="Skill03" id="5444" level="1" /> <!-- Maul -->
+			<param name="Skill03_ID" value="1042" />
+			<skill name="Skill04" id="5445" level="1" /> <!-- Awakening -->
+			<param name="Skill04_ID" value="1044" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="45" />
+				<run ground="170" />
+			</speed>
+			<hitTime>420</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5442" level="1" /> <!-- Bite Attack -->
+			<skill id="5443" level="1" /> <!-- Cry of the Wolf -->
+			<skill id="5444" level="1" /> <!-- Maul -->
+			<skill id="5445" level="1" /> <!-- Awakening -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="25" />
+			<height normal="21.412" />
+		</collision>
+	</npc>
+	<npc id="16042" level="55" type="L2Pet" name="Snow Fenrir">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="lv_step1" value="60" />
+			<param name="lv_step2" value="65" />
+			<param name="lv_step3" value="70" />
+			<param name="lv_step4" value="75" />
+			<param name="lv_step5" value="80" />
+			<param name="lv_step6" value="85" />
+			<skill name="step0_skill01" id="5442" level="1" /> <!-- Bite Attack -->
+			<skill name="step0_skill02" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step0_action01" value="1041" />
+			<param name="step0_action02" value="1045" />
+			<skill name="step1_skill01" id="5442" level="2" /> <!-- Bite Attack -->
+			<skill name="step1_skill02" id="5443" level="1" /> <!-- Cry of the Wolf -->
+			<skill name="step1_skill03" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step1_action01" value="1041" />
+			<param name="step1_action02" value="1043" />
+			<param name="step1_action03" value="1045" />
+			<skill name="step2_skill01" id="5442" level="3" /> <!-- Bite Attack -->
+			<skill name="step2_skill02" id="5443" level="2" /> <!-- Cry of the Wolf -->
+			<skill name="step2_skill03" id="5444" level="1" /> <!-- Maul -->
+			<skill name="step2_skill04" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step2_action01" value="1041" />
+			<param name="step2_action02" value="1043" />
+			<param name="step2_action03" value="1042" />
+			<param name="step2_action04" value="1045" />
+			<skill name="step3_skill01" id="5442" level="4" /> <!-- Bite Attack -->
+			<skill name="step3_skill02" id="5443" level="3" /> <!-- Cry of the Wolf -->
+			<skill name="step3_skill03" id="5444" level="2" /> <!-- Maul -->
+			<skill name="step3_skill04" id="5445" level="1" /> <!-- Awakening -->
+			<skill name="step3_skill05" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step3_action01" value="1041" />
+			<param name="step3_action02" value="1043" />
+			<param name="step3_action03" value="1042" />
+			<param name="step3_action04" value="1044" />
+			<param name="step3_action05" value="1045" />
+			<skill name="step4_skill01" id="5442" level="4" /> <!-- Bite Attack -->
+			<skill name="step4_skill02" id="5443" level="3" /> <!-- Cry of the Wolf -->
+			<skill name="step4_skill03" id="5444" level="2" /> <!-- Maul -->
+			<skill name="step4_skill04" id="5445" level="1" /> <!-- Awakening -->
+			<skill name="step4_skill05" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step4_action01" value="1041" />
+			<param name="step4_action02" value="1043" />
+			<param name="step4_action03" value="1042" />
+			<param name="step4_action04" value="1044" />
+			<param name="step4_action05" value="1045" />
+			<skill name="step5_skill01" id="5442" level="4" /> <!-- Bite Attack -->
+			<skill name="step5_skill02" id="5443" level="3" /> <!-- Cry of the Wolf -->
+			<skill name="step5_skill03" id="5444" level="2" /> <!-- Maul -->
+			<skill name="step5_skill04" id="5445" level="1" /> <!-- Awakening -->
+			<skill name="step5_skill05" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step5_action01" value="1041" />
+			<param name="step5_action02" value="1043" />
+			<param name="step5_action03" value="1042" />
+			<param name="step5_action04" value="1044" />
+			<param name="step5_action05" value="1045" />
+			<skill name="step6_skill01" id="5442" level="4" /> <!-- Bite Attack -->
+			<skill name="step6_skill02" id="5443" level="3" /> <!-- Cry of the Wolf -->
+			<skill name="step6_skill03" id="5444" level="2" /> <!-- Maul -->
+			<skill name="step6_skill04" id="5445" level="1" /> <!-- Awakening -->
+			<skill name="step6_skill05" id="5584" level="1" /> <!-- Wolf Howl -->
+			<param name="step6_action01" value="1041" />
+			<param name="step6_action02" value="1043" />
+			<param name="step6_action03" value="1042" />
+			<param name="step6_action04" value="1044" />
+			<param name="step6_action05" value="1045" />
+			<param name="step0_skill_target02" value="1" />
+			<param name="step1_skill_target02" value="1" />
+			<param name="step1_skill_target03" value="1" />
+			<param name="step2_skill_target02" value="1" />
+			<param name="step2_skill_target04" value="1" />
+			<param name="step3_skill_target02" value="1" />
+			<param name="step3_skill_target04" value="1" />
+			<param name="step3_skill_target05" value="1" />
+			<param name="step4_skill_target02" value="1" />
+			<param name="step4_skill_target04" value="1" />
+			<param name="step4_skill_target05" value="1" />
+			<param name="step5_skill_target02" value="1" />
+			<param name="step5_skill_target04" value="1" />
+			<param name="step5_skill_target05" value="1" />
+			<param name="step6_skill_target02" value="1" />
+			<param name="step6_skill_target04" value="1" />
+			<param name="step6_skill_target05" value="1" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="45" />
+				<run ground="170" />
+			</speed>
+			<hitTime>420</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="25" />
+			<height normal="21.412" />
+		</collision>
+	</npc>
+	<npc id="16043" level="55" type="L2Pet" name="Fox Shaman">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="105" />
+			<skill name="step0_skill01" id="5749" level="1" /> <!-- Thunder Bolt -->
+			<skill name="step0_skill02" id="5750" level="1" /> <!-- Flash -->
+			<skill name="step0_skill03" id="5751" level="1" /> <!-- Lightning Wave -->
+			<skill name="step0_skill04" id="5752" level="1" /> <!-- Flare -->
+			<skill name="step0_skill05" id="5753" level="1" /> <!-- Awakening -->
+			<param name="step0_action01" value="1066" />
+			<param name="step0_action02" value="1067" />
+			<param name="step0_action03" value="1068" />
+			<param name="step0_action04" value="1069" />
+			<param name="step0_action05" value="1065" />
+			<skill name="step1_skill01" id="5749" level="2" /> <!-- Thunder Bolt -->
+			<skill name="step1_skill02" id="5750" level="2" /> <!-- Flash -->
+			<skill name="step1_skill03" id="5751" level="2" /> <!-- Lightning Wave -->
+			<skill name="step1_skill04" id="5752" level="2" /> <!-- Flare -->
+			<param name="step1_action01" value="1066" />
+			<param name="step1_action02" value="1067" />
+			<param name="step1_action03" value="1068" />
+			<param name="step1_action04" value="1069" />
+			<skill name="step2_skill01" id="5749" level="3" /> <!-- Thunder Bolt -->
+			<skill name="step2_skill02" id="5750" level="3" /> <!-- Flash -->
+			<skill name="step2_skill03" id="5751" level="3" /> <!-- Lightning Wave -->
+			<skill name="step2_skill04" id="5752" level="3" /> <!-- Flare -->
+			<param name="step2_action01" value="1066" />
+			<param name="step2_action02" value="1067" />
+			<param name="step2_action03" value="1068" />
+			<param name="step2_action04" value="1069" />
+			<skill name="step3_skill01" id="5749" level="4" /> <!-- Thunder Bolt -->
+			<skill name="step3_skill02" id="5750" level="4" /> <!-- Flash -->
+			<skill name="step3_skill03" id="5751" level="4" /> <!-- Lightning Wave -->
+			<skill name="step3_skill04" id="5752" level="4" /> <!-- Flare -->
+			<param name="step3_action01" value="1066" />
+			<param name="step3_action02" value="1067" />
+			<param name="step3_action03" value="1068" />
+			<param name="step3_action04" value="1069" />
+			<skill name="step4_skill01" id="5749" level="5" /> <!-- Thunder Bolt -->
+			<skill name="step4_skill02" id="5750" level="5" /> <!-- Flash -->
+			<skill name="step4_skill03" id="5751" level="5" /> <!-- Lightning Wave -->
+			<skill name="step4_skill04" id="5752" level="5" /> <!-- Flare -->
+			<param name="step4_action01" value="1066" />
+			<param name="step4_action02" value="1067" />
+			<param name="step4_action03" value="1068" />
+			<param name="step4_action04" value="1069" />
+			<skill name="step5_skill01" id="5749" level="6" /> <!-- Thunder Bolt -->
+			<skill name="step5_skill02" id="5750" level="6" /> <!-- Flash -->
+			<skill name="step5_skill03" id="5751" level="6" /> <!-- Lightning Wave -->
+			<skill name="step5_skill04" id="5752" level="6" /> <!-- Flare -->
+			<param name="step5_action01" value="1066" />
+			<param name="step5_action02" value="1067" />
+			<param name="step5_action03" value="1068" />
+			<param name="step5_action04" value="1069" />
+			<skill name="step6_skill01" id="5749" level="7" /> <!-- Thunder Bolt -->
+			<skill name="step6_skill02" id="5750" level="7" /> <!-- Flash -->
+			<skill name="step6_skill03" id="5751" level="7" /> <!-- Lightning Wave -->
+			<skill name="step6_skill04" id="5752" level="7" /> <!-- Flare -->
+			<param name="step6_action01" value="1066" />
+			<param name="step6_action02" value="1067" />
+			<param name="step6_action03" value="1068" />
+			<param name="step6_action04" value="1069" />
+			<skill name="step7_skill01" id="5749" level="8" /> <!-- Thunder Bolt -->
+			<skill name="step7_skill02" id="5750" level="8" /> <!-- Flash -->
+			<skill name="step7_skill03" id="5751" level="8" /> <!-- Lightning Wave -->
+			<skill name="step7_skill04" id="5752" level="8" /> <!-- Flare -->
+			<param name="step7_action01" value="1066" />
+			<param name="step7_action02" value="1067" />
+			<param name="step7_action03" value="1068" />
+			<param name="step7_action04" value="1069" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<stats str="35" int="32" dex="30" wit="20" con="37" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="35" />
+				<run ground="170" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="10" />
+			<height normal="18.5" />
+		</collision>
+	</npc>
+	<npc id="16044" level="55" type="L2Pet" name="Wild Beast Fighter">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="105" />
+			<skill name="step0_skill04" id="5745" level="1" /> <!-- Death Blow -->
+			<skill name="step0_skill01" id="5746" level="1" /> <!-- Double Attack -->
+			<skill name="step0_skill02" id="5747" level="1" /> <!-- Spin Attack -->
+			<skill name="step0_skill03" id="5748" level="1" /> <!-- Meteor Shower -->
+			<skill name="step0_skill05" id="5753" level="1" /> <!-- Awakening -->
+			<param name="step0_action04" value="1061" />
+			<param name="step0_action01" value="1062" />
+			<param name="step0_action02" value="1063" />
+			<param name="step0_action03" value="1064" />
+			<param name="step0_action05" value="1065" />
+			<skill name="step1_skill04" id="5745" level="2" /> <!-- Death Blow -->
+			<skill name="step1_skill01" id="5746" level="2" /> <!-- Double Attack -->
+			<skill name="step1_skill02" id="5747" level="2" /> <!-- Spin Attack -->
+			<skill name="step1_skill03" id="5748" level="2" /> <!-- Meteor Shower -->
+			<param name="step1_action04" value="1061" />
+			<param name="step1_action01" value="1062" />
+			<param name="step1_action02" value="1063" />
+			<param name="step1_action03" value="1064" />
+			<skill name="step2_skill04" id="5745" level="3" /> <!-- Death Blow -->
+			<skill name="step2_skill01" id="5746" level="3" /> <!-- Double Attack -->
+			<skill name="step2_skill02" id="5747" level="3" /> <!-- Spin Attack -->
+			<skill name="step2_skill03" id="5748" level="3" /> <!-- Meteor Shower -->
+			<param name="step2_action04" value="1061" />
+			<param name="step2_action01" value="1062" />
+			<param name="step2_action02" value="1063" />
+			<param name="step2_action03" value="1064" />
+			<skill name="step3_skill04" id="5745" level="4" /> <!-- Death Blow -->
+			<skill name="step3_skill01" id="5746" level="4" /> <!-- Double Attack -->
+			<skill name="step3_skill02" id="5747" level="4" /> <!-- Spin Attack -->
+			<skill name="step3_skill03" id="5748" level="4" /> <!-- Meteor Shower -->
+			<param name="step3_action04" value="1061" />
+			<param name="step3_action01" value="1062" />
+			<param name="step3_action02" value="1063" />
+			<param name="step3_action03" value="1064" />
+			<skill name="step4_skill04" id="5745" level="5" /> <!-- Death Blow -->
+			<skill name="step4_skill01" id="5746" level="5" /> <!-- Double Attack -->
+			<skill name="step4_skill02" id="5747" level="5" /> <!-- Spin Attack -->
+			<skill name="step4_skill03" id="5748" level="5" /> <!-- Meteor Shower -->
+			<param name="step4_action04" value="1061" />
+			<param name="step4_action01" value="1062" />
+			<param name="step4_action02" value="1063" />
+			<param name="step4_action03" value="1064" />
+			<skill name="step5_skill04" id="5745" level="6" /> <!-- Death Blow -->
+			<skill name="step5_skill01" id="5746" level="6" /> <!-- Double Attack -->
+			<skill name="step5_skill02" id="5747" level="6" /> <!-- Spin Attack -->
+			<skill name="step5_skill03" id="5748" level="6" /> <!-- Meteor Shower -->
+			<param name="step5_action04" value="1061" />
+			<param name="step5_action01" value="1062" />
+			<param name="step5_action02" value="1063" />
+			<param name="step5_action03" value="1064" />
+			<skill name="step6_skill04" id="5745" level="7" /> <!-- Death Blow -->
+			<skill name="step6_skill01" id="5746" level="7" /> <!-- Double Attack -->
+			<skill name="step6_skill02" id="5747" level="7" /> <!-- Spin Attack -->
+			<skill name="step6_skill03" id="5748" level="7" /> <!-- Meteor Shower -->
+			<param name="step6_action04" value="1061" />
+			<param name="step6_action01" value="1062" />
+			<param name="step6_action02" value="1063" />
+			<param name="step6_action03" value="1064" />
+			<skill name="step7_skill04" id="5745" level="8" /> <!-- Death Blow -->
+			<skill name="step7_skill01" id="5746" level="8" /> <!-- Double Attack -->
+			<skill name="step7_skill02" id="5747" level="8" /> <!-- Spin Attack -->
+			<skill name="step7_skill03" id="5748" level="8" /> <!-- Meteor Shower -->
+			<param name="step7_action04" value="1061" />
+			<param name="step7_action01" value="1062" />
+			<param name="step7_action02" value="1063" />
+			<param name="step7_action03" value="1064" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="22" />
+				<run ground="170" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="11" />
+			<height normal="16.5" />
+		</collision>
+	</npc>
+	<npc id="16045" level="55" type="L2BabyPet" name="White Weasel">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="133" />
+			<skill name="step0_buff01" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step0_buff02" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="step0_buff03" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step0_buff04" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step0_buff05" id="5588" level="3" /> <!-- Pet Focus -->
+			<skill name="step0_buff06" id="5589" level="3" /> <!-- Pet Death Whisper -->
+			<skill name="step0_buff07" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="step0_buff08" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="step0_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step0_merged_buff02" id="1504" level="1" /> <!-- Improved Movement -->
+			<skill name="step0_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step0_merged_buff04" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step0_merged_buff05" id="1502" level="1" /> <!-- Improved Critical Attack -->
+			<skill name="step0_merged_buff06" id="1502" level="1" /> <!-- Improved Critical Attack -->
+			<skill name="step0_merged_buff07" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step0_merged_buff08" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step0_skill03" id="5771" level="1" /> <!-- Buff Control -->
+			<skill name="step0_skill04" id="5745" level="1" /> <!-- Death Blow -->
+			<skill name="step0_skill05" id="5753" level="1" /> <!-- Awakening -->
+			<param name="step0_action03" value="1070" />
+			<param name="step0_action04" value="1061" />
+			<param name="step0_action05" value="1065" />
+			<skill name="step1_skill04" id="5745" level="2" /> <!-- Death Blow -->
+			<param name="step1_action04" value="1061" />
+			<skill name="step2_skill04" id="5745" level="3" /> <!-- Death Blow -->
+			<param name="step2_action04" value="1061" />
+			<skill name="step3_skill04" id="5745" level="4" /> <!-- Death Blow -->
+			<param name="step3_action04" value="1061" />
+			<skill name="step4_skill04" id="5745" level="5" /> <!-- Death Blow -->
+			<param name="step4_action04" value="1061" />
+			<skill name="step5_skill04" id="5745" level="6" /> <!-- Death Blow -->
+			<param name="step5_action04" value="1061" />
+			<skill name="step6_skill04" id="5745" level="7" /> <!-- Death Blow -->
+			<param name="step6_action04" value="1061" />
+			<skill name="step7_skill04" id="5745" level="8" /> <!-- Death Blow -->
+			<param name="step7_action04" value="1061" />
+			<skill name="step0_heal01" id="5195" level="1" /> <!-- Pet Greater Heal -->
+			<skill name="step0_heal02" id="5590" level="1" /> <!-- Pet Battle Heal -->
+			<skill name="step1_heal01" id="5195" level="2" /> <!-- Pet Greater Heal -->
+			<skill name="step1_heal02" id="5590" level="2" /> <!-- Pet Battle Heal -->
+			<skill name="step2_heal01" id="5195" level="3" /> <!-- Pet Greater Heal -->
+			<skill name="step2_heal02" id="5590" level="3" /> <!-- Pet Battle Heal -->
+			<skill name="step3_heal01" id="5195" level="4" /> <!-- Pet Greater Heal -->
+			<skill name="step3_heal02" id="5590" level="4" /> <!-- Pet Battle Heal -->
+			<skill name="step4_heal01" id="5195" level="5" /> <!-- Pet Greater Heal -->
+			<skill name="step4_heal02" id="5590" level="5" /> <!-- Pet Battle Heal -->
+			<skill name="step5_heal01" id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill name="step5_heal02" id="5590" level="6" /> <!-- Pet Battle Heal -->
+			<skill name="step6_heal01" id="5195" level="7" /> <!-- Pet Greater Heal -->
+			<skill name="step6_heal02" id="5590" level="7" /> <!-- Pet Battle Heal -->
+			<skill name="step7_heal01" id="5195" level="8" /> <!-- Pet Greater Heal -->
+			<skill name="step7_heal02" id="5590" level="8" /> <!-- Pet Battle Heal -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="170" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" isAggressive="false" />
+		<collision>
+			<radius normal="6.5" />
+			<height normal="12.5" />
+		</collision>
+	</npc>
+	<npc id="16046" level="55" type="L2BabyPet" name="Fairy Princess">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="123" />
+			<skill name="step0_buff01" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="step0_buff02" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="step0_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step0_buff04" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step0_buff05" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="step0_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step0_merged_buff02" id="1504" level="1" /> <!-- Improved Movement -->
+			<skill name="step0_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step0_merged_buff04" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step0_skill03" id="5771" level="1" /> <!-- Buff Control -->
+			<skill name="step0_skill04" id="5752" level="1" /> <!-- Flare -->
+			<skill name="step0_skill05" id="5753" level="1" /> <!-- Awakening -->
+			<param name="step0_action03" value="1070" />
+			<param name="step0_action04" value="1069" />
+			<param name="step0_action05" value="1065" />
+			<skill name="step1_skill04" id="5752" level="2" /> <!-- Flare -->
+			<param name="step1_action04" value="1069" />
+			<skill name="step2_skill04" id="5752" level="3" /> <!-- Flare -->
+			<param name="step2_action04" value="1069" />
+			<skill name="step3_skill04" id="5752" level="4" /> <!-- Flare -->
+			<param name="step3_action04" value="1069" />
+			<skill name="step4_skill04" id="5752" level="5" /> <!-- Flare -->
+			<param name="step4_action04" value="1069" />
+			<skill name="step5_skill04" id="5752" level="6" /> <!-- Flare -->
+			<param name="step5_action04" value="1069" />
+			<skill name="step6_skill04" id="5752" level="7" /> <!-- Flare -->
+			<param name="step6_action04" value="1069" />
+			<skill name="step7_skill04" id="5752" level="8" /> <!-- Flare -->
+			<param name="step7_action04" value="1069" />
+			<skill name="step0_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step0_heal02" id="5590" level="1" /> <!-- Pet Battle Heal -->
+			<skill name="step1_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step1_heal02" id="5590" level="2" /> <!-- Pet Battle Heal -->
+			<skill name="step2_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step2_heal02" id="5590" level="3" /> <!-- Pet Battle Heal -->
+			<skill name="step3_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step3_heal02" id="5590" level="4" /> <!-- Pet Battle Heal -->
+			<skill name="step4_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step4_heal02" id="5590" level="5" /> <!-- Pet Battle Heal -->
+			<skill name="step5_heal01" id="5200" level="3" /> <!-- Pet Recharge -->
+			<skill name="step5_heal02" id="5590" level="6" /> <!-- Pet Battle Heal -->
+			<skill name="step6_heal01" id="5200" level="4" /> <!-- Pet Recharge -->
+			<skill name="step6_heal02" id="5590" level="7" /> <!-- Pet Battle Heal -->
+			<skill name="step7_heal01" id="5200" level="4" /> <!-- Pet Recharge -->
+			<skill name="step7_heal02" id="5590" level="8" /> <!-- Pet Battle Heal -->
+			<param name="heal_type" value="0" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="35" int="32" dex="30" wit="20" con="37" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="35" />
+				<run ground="170" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="16049" level="55" type="L2Npc" name="Love Agathion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="5" />
+			<height normal="3.75" />
+		</collision>
+	</npc>
+	<npc id="16050" level="55" type="L2Pet" name="Owl Monk">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="50" />
+		</parameters>
+		<race>ANIMAL</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="180" />
+			</speed>
+			<hitTime>710</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="4" /> <!-- Animals -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="13" />
+			<height normal="19.5" />
+		</collision>
+	</npc>
+	<npc id="16051" level="55" type="L2BabyPet" name="Spirit Shaman">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<skill name="step0_skill01" id="5749" level="1" /> <!-- Thunder Bolt -->
+			<param name="step0_action01" value="1066" />
+			<param name="step0_skill_target01" value="0" />
+			<skill name="step1_skill01" id="5749" level="2" /> <!-- Thunder Bolt -->
+			<param name="step1_action01" value="1066" />
+			<param name="step1_skill_target01" value="0" />
+			<skill name="step2_skill01" id="5749" level="3" /> <!-- Thunder Bolt -->
+			<param name="step2_action01" value="1066" />
+			<param name="step2_skill_target01" value="0" />
+			<skill name="step3_skill01" id="5749" level="4" /> <!-- Thunder Bolt -->
+			<param name="step3_action01" value="1066" />
+			<param name="step3_skill_target01" value="0" />
+			<skill name="step4_skill01" id="5749" level="5" /> <!-- Thunder Bolt -->
+			<param name="step4_action01" value="1066" />
+			<param name="step4_skill_target01" value="0" />
+			<skill name="step5_skill01" id="5749" level="6" /> <!-- Thunder Bolt -->
+			<param name="step5_action01" value="1066" />
+			<param name="step5_skill_target01" value="0" />
+			<skill name="step6_skill01" id="5749" level="7" /> <!-- Thunder Bolt -->
+			<param name="step6_action01" value="1066" />
+			<param name="step6_skill_target01" value="0" />
+			<skill name="step7_skill01" id="5749" level="8" /> <!-- Thunder Bolt -->
+			<param name="step7_action01" value="1066" />
+			<param name="step7_skill_target01" value="0" />
+			<skill name="step0_skill02" id="5750" level="1" /> <!-- Flash -->
+			<param name="step0_action02" value="1067" />
+			<param name="step0_skill_target02" value="0" />
+			<skill name="step1_skill02" id="5750" level="2" /> <!-- Flash -->
+			<param name="step1_action02" value="1067" />
+			<param name="step1_skill_target02" value="0" />
+			<skill name="step2_skill02" id="5750" level="3" /> <!-- Flash -->
+			<param name="step2_action02" value="1067" />
+			<param name="step2_skill_target02" value="0" />
+			<skill name="step3_skill02" id="5750" level="4" /> <!-- Flash -->
+			<param name="step3_action02" value="1067" />
+			<param name="step3_skill_target02" value="0" />
+			<skill name="step4_skill02" id="5750" level="5" /> <!-- Flash -->
+			<param name="step4_action02" value="1067" />
+			<param name="step4_skill_target02" value="0" />
+			<skill name="step5_skill02" id="5750" level="6" /> <!-- Flash -->
+			<param name="step5_action02" value="1067" />
+			<param name="step5_skill_target02" value="0" />
+			<skill name="step6_skill02" id="5750" level="7" /> <!-- Flash -->
+			<param name="step6_action02" value="1067" />
+			<param name="step6_skill_target02" value="0" />
+			<skill name="step7_skill02" id="5750" level="8" /> <!-- Flash -->
+			<param name="step7_action02" value="1067" />
+			<param name="step7_skill_target02" value="0" />
+			<skill name="step0_skill03" id="5751" level="1" /> <!-- Lightning Wave -->
+			<param name="step0_action03" value="1068" />
+			<param name="step0_skill_target03" value="1" />
+			<skill name="step1_skill03" id="5751" level="2" /> <!-- Lightning Wave -->
+			<param name="step1_action03" value="1068" />
+			<param name="step1_skill_target03" value="1" />
+			<skill name="step2_skill03" id="5751" level="3" /> <!-- Lightning Wave -->
+			<param name="step2_action03" value="1068" />
+			<param name="step2_skill_target03" value="1" />
+			<skill name="step3_skill03" id="5751" level="4" /> <!-- Lightning Wave -->
+			<param name="step3_action03" value="1068" />
+			<param name="step3_skill_target03" value="1" />
+			<skill name="step4_skill03" id="5751" level="5" /> <!-- Lightning Wave -->
+			<param name="step4_action03" value="1068" />
+			<param name="step4_skill_target03" value="1" />
+			<skill name="step5_skill03" id="5751" level="6" /> <!-- Lightning Wave -->
+			<param name="step5_action03" value="1068" />
+			<param name="step5_skill_target03" value="1" />
+			<skill name="step6_skill03" id="5751" level="7" /> <!-- Lightning Wave -->
+			<param name="step6_action03" value="1068" />
+			<param name="step6_skill_target03" value="1" />
+			<skill name="step7_skill03" id="5751" level="8" /> <!-- Lightning Wave -->
+			<param name="step7_action03" value="1068" />
+			<param name="step7_skill_target03" value="1" />
+			<skill name="step0_buff01" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="step0_buff02" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="step0_buff03" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step0_buff04" id="5194" level="3" /> <!-- Pet Empower -->
+			<skill name="step0_buff05" id="5193" level="3" /> <!-- Pet Acumen -->
+			<skill name="step0_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step0_merged_buff02" id="1504" level="1" /> <!-- Improved Movement -->
+			<skill name="step0_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step0_merged_buff04" id="1500" level="1" /> <!-- Improved Magic -->
+			<skill name="step0_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step0_heal02" id="5590" level="1" /> <!-- Pet Battle Heal -->
+			<skill name="step1_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step1_heal02" id="5590" level="2" /> <!-- Pet Battle Heal -->
+			<skill name="step2_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step2_heal02" id="5590" level="3" /> <!-- Pet Battle Heal -->
+			<skill name="step3_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step3_heal02" id="5590" level="4" /> <!-- Pet Battle Heal -->
+			<skill name="step4_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step4_heal02" id="5590" level="5" /> <!-- Pet Battle Heal -->
+			<skill name="step5_heal01" id="5200" level="3" /> <!-- Pet Recharge -->
+			<skill name="step5_heal02" id="5590" level="6" /> <!-- Pet Battle Heal -->
+			<skill name="step6_heal01" id="5200" level="4" /> <!-- Pet Recharge -->
+			<skill name="step6_heal02" id="5590" level="7" /> <!-- Pet Battle Heal -->
+			<skill name="step7_heal01" id="5200" level="4" /> <!-- Pet Recharge -->
+			<skill name="step7_heal02" id="5590" level="8" /> <!-- Pet Battle Heal -->
+			<param name="heal_type" value="0" />
+			<skill name="step0_skill05" id="6054" level="1" /> <!-- Switch Stance -->
+			<param name="step0_action05" value="1084" />
+			<param name="step0_skill_target05" value="1" />
+			<skill name="step0_skill06" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step0_action06" value="1070" />
+			<param name="step0_skill_target06" value="1" />
+		</parameters>
+		<race>ELEMENTAL</race>
+		<sex>MALE</sex>
+		<stats str="35" int="32" dex="30" wit="20" con="37" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="180" />
+			</speed>
+			<hitTime>470</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="7" /> <!-- Spirits -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="12.8" />
+			<height normal="15.6" />
+		</collision>
+	</npc>
+	<npc id="16052" level="55" type="L2BabyPet" name="Toy Knight">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="58" />
+			<skill name="step0_skill01" id="6046" level="1" /> <!-- Piercing Attack -->
+			<param name="step0_action01" value="1072" />
+			<param name="step0_skill_target01" value="0" />
+			<skill name="step1_skill01" id="6046" level="2" /> <!-- Piercing Attack -->
+			<param name="step1_action01" value="1072" />
+			<param name="step1_skill_target01" value="0" />
+			<skill name="step2_skill01" id="6046" level="3" /> <!-- Piercing Attack -->
+			<param name="step2_action01" value="1072" />
+			<param name="step2_skill_target01" value="0" />
+			<skill name="step3_skill01" id="6046" level="4" /> <!-- Piercing Attack -->
+			<param name="step3_action01" value="1072" />
+			<param name="step3_skill_target01" value="0" />
+			<skill name="step4_skill01" id="6046" level="5" /> <!-- Piercing Attack -->
+			<param name="step4_action01" value="1072" />
+			<param name="step4_skill_target01" value="0" />
+			<skill name="step5_skill01" id="6046" level="6" /> <!-- Piercing Attack -->
+			<param name="step5_action01" value="1072" />
+			<param name="step5_skill_target01" value="0" />
+			<skill name="step6_skill01" id="6046" level="7" /> <!-- Piercing Attack -->
+			<param name="step6_action01" value="1072" />
+			<param name="step6_skill_target01" value="0" />
+			<skill name="step7_skill01" id="6046" level="8" /> <!-- Piercing Attack -->
+			<param name="step7_action01" value="1072" />
+			<param name="step7_skill_target01" value="0" />
+			<skill name="step0_skill02" id="6047" level="1" /> <!-- Whirlwind -->
+			<param name="step0_action02" value="1073" />
+			<param name="step0_skill_target02" value="1" />
+			<skill name="step1_skill02" id="6047" level="2" /> <!-- Whirlwind -->
+			<param name="step1_action02" value="1073" />
+			<param name="step1_skill_target02" value="1" />
+			<skill name="step2_skill02" id="6047" level="3" /> <!-- Whirlwind -->
+			<param name="step2_action02" value="1073" />
+			<param name="step2_skill_target02" value="1" />
+			<skill name="step3_skill02" id="6047" level="4" /> <!-- Whirlwind -->
+			<param name="step3_action02" value="1073" />
+			<param name="step3_skill_target02" value="1" />
+			<skill name="step4_skill02" id="6047" level="5" /> <!-- Whirlwind -->
+			<param name="step4_action02" value="1073" />
+			<param name="step4_skill_target02" value="1" />
+			<skill name="step5_skill02" id="6047" level="6" /> <!-- Whirlwind -->
+			<param name="step5_action02" value="1073" />
+			<param name="step5_skill_target02" value="1" />
+			<skill name="step6_skill02" id="6047" level="7" /> <!-- Whirlwind -->
+			<param name="step6_action02" value="1073" />
+			<param name="step6_skill_target02" value="1" />
+			<skill name="step7_skill02" id="6047" level="8" /> <!-- Whirlwind -->
+			<param name="step7_action02" value="1073" />
+			<param name="step7_skill_target02" value="1" />
+			<skill name="step0_skill03" id="6048" level="1" /> <!-- Lance Smash -->
+			<param name="step0_action03" value="1074" />
+			<param name="step0_skill_target03" value="0" />
+			<skill name="step1_skill03" id="6048" level="2" /> <!-- Lance Smash -->
+			<param name="step1_action03" value="1074" />
+			<param name="step1_skill_target03" value="0" />
+			<skill name="step2_skill03" id="6048" level="3" /> <!-- Lance Smash -->
+			<param name="step2_action03" value="1074" />
+			<param name="step2_skill_target03" value="0" />
+			<skill name="step3_skill03" id="6048" level="4" /> <!-- Lance Smash -->
+			<param name="step3_action03" value="1074" />
+			<param name="step3_skill_target03" value="0" />
+			<skill name="step4_skill03" id="6048" level="5" /> <!-- Lance Smash -->
+			<param name="step4_action03" value="1074" />
+			<param name="step4_skill_target03" value="0" />
+			<skill name="step5_skill03" id="6048" level="6" /> <!-- Lance Smash -->
+			<param name="step5_action03" value="1074" />
+			<param name="step5_skill_target03" value="0" />
+			<skill name="step6_skill03" id="6048" level="7" /> <!-- Lance Smash -->
+			<param name="step6_action03" value="1074" />
+			<param name="step6_skill_target03" value="0" />
+			<skill name="step7_skill03" id="6048" level="8" /> <!-- Lance Smash -->
+			<param name="step7_action03" value="1074" />
+			<param name="step7_skill_target03" value="0" />
+			<skill name="step0_skill04" id="6049" level="1" /> <!-- Battle Cry -->
+			<param name="step0_action04" value="1075" />
+			<param name="step0_skill_target04" value="1" />
+			<skill name="step1_skill04" id="6049" level="1" /> <!-- Battle Cry -->
+			<param name="step1_action04" value="1075" />
+			<param name="step1_skill_target04" value="1" />
+			<skill name="step2_skill04" id="6049" level="1" /> <!-- Battle Cry -->
+			<param name="step2_action04" value="1075" />
+			<param name="step2_skill_target04" value="1" />
+			<skill name="step3_skill04" id="6049" level="1" /> <!-- Battle Cry -->
+			<param name="step3_action04" value="1075" />
+			<param name="step3_skill_target04" value="1" />
+			<skill name="step4_skill04" id="6049" level="1" /> <!-- Battle Cry -->
+			<param name="step4_action04" value="1075" />
+			<param name="step4_skill_target04" value="1" />
+			<skill name="step5_skill04" id="6049" level="1" /> <!-- Battle Cry -->
+			<param name="step5_action04" value="1075" />
+			<param name="step5_skill_target04" value="1" />
+			<skill name="step6_skill04" id="6049" level="1" /> <!-- Battle Cry -->
+			<param name="step6_action04" value="1075" />
+			<param name="step6_skill_target04" value="1" />
+			<skill name="step7_skill04" id="6049" level="1" /> <!-- Battle Cry -->
+			<param name="step7_action04" value="1075" />
+			<param name="step7_skill_target04" value="1" />
+			<skill name="step0_buff01" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step0_buff02" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="step0_buff03" id="5586" level="3" /> <!-- Pet Might -->
+			<skill name="step0_buff04" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step0_buff05" id="5588" level="3" /> <!-- Pet Focus -->
+			<skill name="step0_buff06" id="5589" level="3" /> <!-- Pet Death Whisper -->
+			<skill name="step0_buff07" id="5186" level="2" /> <!-- Pet Haste -->
+			<skill name="step0_buff08" id="5187" level="4" /> <!-- Pet Vampiric Rage -->
+			<skill name="step0_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step0_merged_buff02" id="1504" level="1" /> <!-- Improved Movement -->
+			<skill name="step0_merged_buff03" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step0_merged_buff04" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step0_merged_buff05" id="1502" level="1" /> <!-- Improved Critical Attack -->
+			<skill name="step0_merged_buff06" id="1502" level="1" /> <!-- Improved Critical Attack -->
+			<skill name="step0_merged_buff07" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step0_merged_buff08" id="1519" level="1" /> <!-- Chant of Blood Awakening -->
+			<skill name="step0_heal01" id="5195" level="1" /> <!-- Pet Greater Heal -->
+			<skill name="step0_heal02" id="5590" level="1" /> <!-- Pet Battle Heal -->
+			<skill name="step1_heal01" id="5195" level="2" /> <!-- Pet Greater Heal -->
+			<skill name="step1_heal02" id="5590" level="2" /> <!-- Pet Battle Heal -->
+			<skill name="step2_heal01" id="5195" level="3" /> <!-- Pet Greater Heal -->
+			<skill name="step2_heal02" id="5590" level="3" /> <!-- Pet Battle Heal -->
+			<skill name="step3_heal01" id="5195" level="4" /> <!-- Pet Greater Heal -->
+			<skill name="step3_heal02" id="5590" level="4" /> <!-- Pet Battle Heal -->
+			<skill name="step4_heal01" id="5195" level="5" /> <!-- Pet Greater Heal -->
+			<skill name="step4_heal02" id="5590" level="5" /> <!-- Pet Battle Heal -->
+			<skill name="step5_heal01" id="5195" level="6" /> <!-- Pet Greater Heal -->
+			<skill name="step5_heal02" id="5590" level="6" /> <!-- Pet Battle Heal -->
+			<skill name="step6_heal01" id="5195" level="7" /> <!-- Pet Greater Heal -->
+			<skill name="step6_heal02" id="5590" level="7" /> <!-- Pet Battle Heal -->
+			<skill name="step7_heal01" id="5195" level="8" /> <!-- Pet Greater Heal -->
+			<skill name="step7_heal02" id="5590" level="8" /> <!-- Pet Battle Heal -->
+			<skill name="step0_skill05" id="6054" level="1" /> <!-- Switch Stance -->
+			<param name="step0_action05" value="1084" />
+			<param name="step0_skill_target05" value="1" />
+			<skill name="step0_skill06" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step0_action06" value="1070" />
+			<param name="step0_skill_target06" value="1" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<hitTime>670</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="10" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="16053" level="55" type="L2BabyPet" name="Turtle Ascetic">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="100" />
+			<skill name="step0_skill01" id="6050" level="1" /> <!-- Power Smash -->
+			<skill name="step1_skill01" id="6050" level="2" /> <!-- Power Smash -->
+			<skill name="step2_skill01" id="6050" level="3" /> <!-- Power Smash -->
+			<skill name="step3_skill01" id="6050" level="4" /> <!-- Power Smash -->
+			<skill name="step4_skill01" id="6050" level="5" /> <!-- Power Smash -->
+			<skill name="step5_skill01" id="6050" level="6" /> <!-- Power Smash -->
+			<skill name="step6_skill01" id="6050" level="7" /> <!-- Power Smash -->
+			<skill name="step7_skill01" id="6050" level="8" /> <!-- Power Smash -->
+			<skill name="step0_skill02" id="6051" level="1" /> <!-- Energy Burst -->
+			<skill name="step1_skill02" id="6051" level="2" /> <!-- Energy Burst -->
+			<skill name="step2_skill02" id="6051" level="3" /> <!-- Energy Burst -->
+			<skill name="step3_skill02" id="6051" level="4" /> <!-- Energy Burst -->
+			<skill name="step4_skill02" id="6051" level="5" /> <!-- Energy Burst -->
+			<skill name="step5_skill02" id="6051" level="6" /> <!-- Energy Burst -->
+			<skill name="step6_skill02" id="6051" level="7" /> <!-- Energy Burst -->
+			<skill name="step7_skill02" id="6051" level="8" /> <!-- Energy Burst -->
+			<skill name="step0_skill03" id="6052" level="1" /> <!-- Shockwave -->
+			<skill name="step1_skill03" id="6052" level="2" /> <!-- Shockwave -->
+			<skill name="step2_skill03" id="6052" level="3" /> <!-- Shockwave -->
+			<skill name="step3_skill03" id="6052" level="4" /> <!-- Shockwave -->
+			<skill name="step4_skill03" id="6052" level="5" /> <!-- Shockwave -->
+			<skill name="step5_skill03" id="6052" level="6" /> <!-- Shockwave -->
+			<skill name="step6_skill03" id="6052" level="7" /> <!-- Shockwave -->
+			<skill name="step7_skill03" id="6052" level="8" /> <!-- Shockwave -->
+			<skill name="step0_skill04" id="6053" level="1" /> <!-- Ignite -->
+			<skill name="step1_skill04" id="6053" level="1" /> <!-- Ignite -->
+			<skill name="step2_skill04" id="6053" level="1" /> <!-- Ignite -->
+			<skill name="step3_skill04" id="6053" level="1" /> <!-- Ignite -->
+			<skill name="step4_skill04" id="6053" level="1" /> <!-- Ignite -->
+			<skill name="step5_skill04" id="6053" level="1" /> <!-- Ignite -->
+			<skill name="step6_skill04" id="6053" level="1" /> <!-- Ignite -->
+			<skill name="step7_skill04" id="6053" level="1" /> <!-- Ignite -->
+			<param name="step0_action01" value="1076" />
+			<param name="step1_action01" value="1076" />
+			<param name="step2_action01" value="1076" />
+			<param name="step3_action01" value="1076" />
+			<param name="step4_action01" value="1076" />
+			<param name="step5_action01" value="1076" />
+			<param name="step6_action01" value="1076" />
+			<param name="step7_action01" value="1076" />
+			<param name="step0_action02" value="1077" />
+			<param name="step1_action02" value="1077" />
+			<param name="step2_action02" value="1077" />
+			<param name="step3_action02" value="1077" />
+			<param name="step4_action02" value="1077" />
+			<param name="step5_action02" value="1077" />
+			<param name="step6_action02" value="1077" />
+			<param name="step7_action02" value="1077" />
+			<param name="step0_action03" value="1078" />
+			<param name="step1_action03" value="1078" />
+			<param name="step2_action03" value="1078" />
+			<param name="step3_action03" value="1078" />
+			<param name="step4_action03" value="1078" />
+			<param name="step5_action03" value="1078" />
+			<param name="step6_action03" value="1078" />
+			<param name="step7_action03" value="1078" />
+			<param name="step0_action04" value="1079" />
+			<param name="step1_action04" value="1079" />
+			<param name="step2_action04" value="1079" />
+			<param name="step3_action04" value="1079" />
+			<param name="step4_action04" value="1079" />
+			<param name="step5_action04" value="1079" />
+			<param name="step6_action04" value="1079" />
+			<param name="step7_action04" value="1079" />
+			<param name="step0_skill_target01" value="0" />
+			<param name="step1_skill_target01" value="0" />
+			<param name="step2_skill_target01" value="0" />
+			<param name="step3_skill_target01" value="0" />
+			<param name="step4_skill_target01" value="0" />
+			<param name="step5_skill_target01" value="0" />
+			<param name="step6_skill_target01" value="0" />
+			<param name="step7_skill_target01" value="0" />
+			<param name="step0_skill_target02" value="0" />
+			<param name="step1_skill_target02" value="0" />
+			<param name="step2_skill_target02" value="0" />
+			<param name="step3_skill_target02" value="0" />
+			<param name="step4_skill_target02" value="0" />
+			<param name="step5_skill_target02" value="0" />
+			<param name="step6_skill_target02" value="0" />
+			<param name="step7_skill_target02" value="0" />
+			<param name="step0_skill_target03" value="0" />
+			<param name="step1_skill_target03" value="0" />
+			<param name="step2_skill_target03" value="0" />
+			<param name="step3_skill_target03" value="0" />
+			<param name="step4_skill_target03" value="0" />
+			<param name="step5_skill_target03" value="0" />
+			<param name="step6_skill_target03" value="0" />
+			<param name="step7_skill_target03" value="0" />
+			<param name="step0_skill_target04" value="1" />
+			<param name="step1_skill_target04" value="1" />
+			<param name="step2_skill_target04" value="1" />
+			<param name="step3_skill_target04" value="1" />
+			<param name="step4_skill_target04" value="1" />
+			<param name="step5_skill_target04" value="1" />
+			<param name="step6_skill_target04" value="1" />
+			<param name="step7_skill_target04" value="1" />
+			<skill name="step0_buff01" id="5189" level="6" /> <!-- Pet Blessed Body -->
+			<skill name="step0_buff02" id="5192" level="2" /> <!-- Pet Wind Walk -->
+			<skill name="step0_buff03" id="5190" level="6" /> <!-- Pet Blessed Soul -->
+			<skill name="step0_buff04" id="5587" level="3" /> <!-- Pet Shield -->
+			<skill name="step0_buff05" id="5987" level="1" /> <!-- Weapon Maintenance -->
+			<skill name="step0_buff06" id="5988" level="1" /> <!-- Armor Maintenance -->
+			<skill name="step0_merged_buff01" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step0_merged_buff02" id="1504" level="1" /> <!-- Improved Movement -->
+			<skill name="step0_merged_buff03" id="1501" level="1" /> <!-- Improved Condition -->
+			<skill name="step0_merged_buff04" id="1499" level="1" /> <!-- Improved Combat -->
+			<skill name="step0_merged_buff05" id="5987" level="1" /> <!-- Weapon Maintenance -->
+			<skill name="step0_merged_buff06" id="5988" level="1" /> <!-- Armor Maintenance -->
+			<skill name="step0_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step0_heal02" id="5590" level="1" /> <!-- Pet Battle Heal -->
+			<skill name="step1_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step1_heal02" id="5590" level="2" /> <!-- Pet Battle Heal -->
+			<skill name="step2_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step2_heal02" id="5590" level="3" /> <!-- Pet Battle Heal -->
+			<skill name="step3_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step3_heal02" id="5590" level="4" /> <!-- Pet Battle Heal -->
+			<skill name="step4_heal01" id="5200" level="1" /> <!-- Pet Recharge -->
+			<skill name="step4_heal02" id="5590" level="5" /> <!-- Pet Battle Heal -->
+			<skill name="step5_heal01" id="5200" level="3" /> <!-- Pet Recharge -->
+			<skill name="step5_heal02" id="5590" level="6" /> <!-- Pet Battle Heal -->
+			<skill name="step6_heal01" id="5200" level="4" /> <!-- Pet Recharge -->
+			<skill name="step6_heal02" id="5590" level="7" /> <!-- Pet Battle Heal -->
+			<skill name="step7_heal01" id="5200" level="4" /> <!-- Pet Recharge -->
+			<skill name="step7_heal02" id="5590" level="8" /> <!-- Pet Battle Heal -->
+			<param name="heal_type" value="0" />
+			<skill name="step0_skill05" id="6054" level="1" /> <!-- Switch Stance -->
+			<param name="step0_action05" value="1084" />
+			<param name="step0_skill_target05" value="1" />
+			<skill name="step0_skill06" id="5771" level="1" /> <!-- Buff Control -->
+			<param name="step0_action06" value="1070" />
+			<param name="step0_skill_target06" value="1" />
+		</parameters>
+		<race>ANIMAL</race>
+		<sex>MALE</sex>
+		<stats str="38" int="26" dex="30" wit="20" con="40" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="20" />
+				<run ground="180" />
+			</speed>
+			<hitTime>460</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="4" /> <!-- Animals -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="11" />
+			<height normal="10" />
+		</collision>
+	</npc>
+	<npc id="16054" level="55" type="L2Npc" name="Monkey">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="15" />
+			<height normal="7" />
+		</collision>
+	</npc>
+	<npc id="16055" level="55" type="L2Npc" name="Griffon">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="5" />
+			<height normal="5.5" />
+		</collision>
+	</npc>
+	<npc id="16056" level="55" type="L2Npc" name="Joy">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="6.5" />
+			<height normal="6.5" />
+		</collision>
+	</npc>
+	<npc id="16057" level="55" type="L2Npc" name="Sorrow">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="5" />
+			<height normal="5" />
+		</collision>
+	</npc>
+	<npc id="16058" level="55" type="L2Npc" name="Anger">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="3" />
+			<height normal="3" />
+		</collision>
+	</npc>
+	<npc id="16059" level="55" type="L2Npc" name="Boy Bear">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="3" />
+			<height normal="7" />
+		</collision>
+	</npc>
+	<npc id="16060" level="55" type="L2Npc" name="Girl Bear">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="3" />
+			<height normal="7" />
+		</collision>
+	</npc>
+	<npc id="16061" level="55" type="L2Npc" name="Collection Device">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="5.5" />
+			<height normal="6.25" />
+		</collision>
+	</npc>
+	<npc id="16062" level="55" type="L2Npc" name="Knight">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="4.5" />
+			<height normal="7" />
+		</collision>
+	</npc>
+	<npc id="16063" level="55" type="L2Npc" name="Neolithica">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>true</exCrtEffect>
+		<collision>
+			<radius normal="3" />
+			<height normal="5.15" />
+		</collision>
+	</npc>
+	<npc id="16064" level="55" type="L2Npc" name="Juju">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>true</exCrtEffect>
+		<collision>
+			<radius normal="5" />
+			<height normal="7" />
+		</collision>
+	</npc>
+	<npc id="16065" level="55" type="L2Npc" name="Oink Oink">
+		<!-- Confirmed CT2.5 -->
+		<race>ELEMENTAL</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="7" /> <!-- Spirits -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>true</exCrtEffect>
+		<collision>
+			<radius normal="6" />
+			<height normal="5.75" />
+		</collision>
+	</npc>
+	<npc id="16066" level="55" type="L2Npc" name="Light of Dawn">
+		<!-- Confirmed CT2.5 -->
+		<race>ELEMENTAL</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="7" /> <!-- Spirits -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>true</exCrtEffect>
+		<collision>
+			<radius normal="6" />
+			<height normal="5.75" />
+		</collision>
+	</npc>
+	<npc id="16067" level="55" type="L2Pet" name="Deinonychus">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="lv_step1" value="60" />
+			<param name="lv_step2" value="65" />
+			<param name="lv_step3" value="70" />
+			<param name="lv_step4" value="75" />
+			<param name="lv_step5" value="80" />
+			<param name="lv_step6" value="85" />
+			<skill name="step0_skill01" id="6199" level="1" /> <!-- Tail Strike -->
+			<param name="step0_action01" value="1089" />
+			<skill name="step1_skill01" id="6199" level="2" /> <!-- Tail Strike -->
+			<param name="step1_action01" value="1089" />
+			<skill name="step2_skill01" id="6199" level="3" /> <!-- Tail Strike -->
+			<param name="step2_action01" value="1089" />
+			<skill name="step3_skill01" id="6199" level="4" /> <!-- Tail Strike -->
+			<param name="step3_action01" value="1089" />
+			<skill name="step4_skill01" id="6199" level="5" /> <!-- Tail Strike -->
+			<param name="step4_action01" value="1089" />
+			<skill name="step5_skill01" id="6199" level="6" /> <!-- Tail Strike -->
+			<param name="step5_action01" value="1089" />
+			<skill name="step6_skill01" id="6199" level="7" /> <!-- Tail Strike -->
+			<param name="step6_action01" value="1089" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="24" />
+				<run ground="160" />
+			</speed>
+			<hitTime>430</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="5" /> <!-- Blunt Weapons -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="14" />
+			<height normal="14.3" />
+		</collision>
+	</npc>
+	<npc id="16068" level="55" type="L2Pet" name="Guardian's Strider">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="lv_step1" value="60" />
+			<param name="lv_step2" value="65" />
+			<param name="lv_step3" value="70" />
+			<param name="lv_step4" value="75" />
+			<param name="lv_step5" value="80" />
+			<param name="lv_step6" value="85" />
+			<skill name="step0_skill01" id="6205" level="2" /> <!-- Strider Bite -->
+			<skill name="step0_skill02" id="6206" level="2" /> <!-- Strider Fear -->
+			<skill name="step0_skill03" id="6207" level="1" /> <!-- Strider Dash -->
+			<param name="step0_action01" value="1090" />
+			<param name="step0_action02" value="1091" />
+			<param name="step0_action03" value="1092" />
+			<skill name="step1_skill01" id="6205" level="4" /> <!-- Strider Bite -->
+			<skill name="step1_skill02" id="6206" level="4" /> <!-- Strider Fear -->
+			<skill name="step1_skill03" id="6207" level="1" /> <!-- Strider Dash -->
+			<param name="step1_action01" value="1090" />
+			<param name="step1_action02" value="1091" />
+			<param name="step1_action03" value="1092" />
+			<skill name="step2_skill01" id="6205" level="6" /> <!-- Strider Bite -->
+			<skill name="step2_skill02" id="6206" level="6" /> <!-- Strider Fear -->
+			<skill name="step2_skill03" id="6207" level="1" /> <!-- Strider Dash -->
+			<param name="step2_action01" value="1090" />
+			<param name="step2_action02" value="1091" />
+			<param name="step2_action03" value="1092" />
+			<skill name="step3_skill01" id="6205" level="7" /> <!-- Strider Bite -->
+			<skill name="step3_skill02" id="6206" level="7" /> <!-- Strider Fear -->
+			<skill name="step3_skill03" id="6207" level="1" /> <!-- Strider Dash -->
+			<param name="step3_action01" value="1090" />
+			<param name="step3_action02" value="1091" />
+			<param name="step3_action03" value="1092" />
+			<skill name="step4_skill01" id="6205" level="10" /> <!-- Strider Bite -->
+			<skill name="step4_skill02" id="6206" level="10" /> <!-- Strider Fear -->
+			<skill name="step4_skill03" id="6207" level="1" /> <!-- Strider Dash -->
+			<param name="step4_action01" value="1090" />
+			<param name="step4_action02" value="1091" />
+			<param name="step4_action03" value="1092" />
+			<skill name="step5_skill01" id="6205" level="15" /> <!-- Strider Bite -->
+			<skill name="step5_skill02" id="6206" level="15" /> <!-- Strider Fear -->
+			<skill name="step5_skill03" id="6207" level="1" /> <!-- Strider Dash -->
+			<param name="step5_action01" value="1090" />
+			<param name="step5_action02" value="1091" />
+			<param name="step5_action03" value="1092" />
+			<skill name="step6_skill01" id="6205" level="16" /> <!-- Strider Bite -->
+			<skill name="step6_skill02" id="6206" level="16" /> <!-- Strider Fear -->
+			<skill name="step6_skill03" id="6207" level="1" /> <!-- Strider Dash -->
+			<param name="step6_action01" value="1090" />
+			<param name="step6_action02" value="1091" />
+			<param name="step6_action03" value="1092" />
+			<param name="step0_skill_target02" value="1" />
+			<param name="step1_skill_target02" value="1" />
+			<param name="step1_skill_target03" value="1" />
+			<param name="step2_skill_target02" value="1" />
+			<param name="step2_skill_target03" value="1" />
+			<param name="step3_skill_target02" value="1" />
+			<param name="step3_skill_target03" value="1" />
+			<param name="step4_skill_target02" value="1" />
+			<param name="step4_skill_target03" value="1" />
+			<param name="step5_skill_target02" value="1" />
+			<param name="step5_skill_target03" value="1" />
+			<param name="step6_skill_target02" value="1" />
+			<param name="step6_skill_target03" value="1" />
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="170" />
+			</speed>
+			<hitTime>360</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="10" /> <!-- Dragons -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="27" />
+			<height normal="33.5" />
+		</collision>
+	</npc>
+	<npc id="16069" level="55" type="L2Npc" name="Pona">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>true</exCrtEffect>
+		<collision>
+			<radius normal="3" />
+			<height normal="5.15" />
+		</collision>
+	</npc>
+	<npc id="16070" level="55" type="L2Npc" name="Towbat">
+		<!-- Confirmed CT2.5 -->
+		<race>ELEMENTAL</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>true</exCrtEffect>
+		<collision>
+			<radius normal="4" />
+			<height normal="5.87" />
+		</collision>
+	</npc>
+	<npc id="16071" level="55" type="L2Pet" name="Maguen">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="lv_step1" value="60" />
+			<param name="lv_step2" value="65" />
+			<param name="lv_step3" value="70" />
+			<param name="lv_step4" value="75" />
+			<param name="lv_step5" value="80" />
+			<param name="lv_step6" value="85" />
+			<skill name="step0_skill01" id="6618" level="1" /> <!-- Maguen Strike -->
+			<param name="step0_action01" value="1093" />
+			<skill name="step1_skill01" id="6618" level="2" /> <!-- Maguen Strike -->
+			<skill name="step1_skill02" id="6681" level="1" /> <!-- Maguen Speed Walk -->
+			<skill name="step1_skill03" id="6683" level="1" /> <!-- Maguen Recall -->
+			<param name="step1_action01" value="1093" />
+			<param name="step1_action02" value="1094" />
+			<param name="step1_action03" value="1097" />
+			<skill name="step2_skill01" id="6618" level="3" /> <!-- Maguen Strike -->
+			<skill name="step2_skill02" id="6681" level="1" /> <!-- Maguen Speed Walk -->
+			<skill name="step2_skill03" id="6683" level="1" /> <!-- Maguen Recall -->
+			<param name="step2_action01" value="1093" />
+			<param name="step2_action02" value="1094" />
+			<param name="step2_action03" value="1097" />
+			<skill name="step3_skill01" id="6618" level="4" /> <!-- Maguen Strike -->
+			<skill name="step3_skill02" id="6681" level="1" /> <!-- Maguen Speed Walk -->
+			<skill name="step3_skill03" id="6683" level="1" /> <!-- Maguen Recall -->
+			<param name="step3_action01" value="1093" />
+			<param name="step3_action02" value="1094" />
+			<param name="step3_action03" value="1097" />
+			<skill name="step4_skill01" id="6618" level="5" /> <!-- Maguen Strike -->
+			<skill name="step4_skill02" id="6681" level="1" /> <!-- Maguen Speed Walk -->
+			<skill name="step4_skill03" id="6683" level="1" /> <!-- Maguen Recall -->
+			<param name="step4_action01" value="1093" />
+			<param name="step4_action02" value="1094" />
+			<param name="step4_action03" value="1097" />
+			<skill name="step5_skill01" id="6618" level="6" /> <!-- Maguen Strike -->
+			<skill name="step5_skill02" id="6681" level="1" /> <!-- Maguen Speed Walk -->
+			<skill name="step5_skill03" id="6683" level="1" /> <!-- Maguen Recall -->
+			<param name="step5_action01" value="1093" />
+			<param name="step5_action02" value="1094" />
+			<param name="step5_action03" value="1097" />
+			<skill name="step6_skill01" id="6618" level="7" /> <!-- Maguen Strike -->
+			<skill name="step6_skill02" id="6681" level="1" /> <!-- Maguen Speed Walk -->
+			<skill name="step6_skill03" id="6683" level="1" /> <!-- Maguen Recall -->
+			<param name="step6_action01" value="1093" />
+			<param name="step6_action02" value="1094" />
+			<param name="step6_action03" value="1097" />
+			<param name="step1_skill_target02" value="2" />
+			<param name="step1_skill_target03" value="2" />
+			<param name="step2_skill_target02" value="2" />
+			<param name="step2_skill_target03" value="2" />
+			<param name="step3_skill_target02" value="2" />
+			<param name="step3_skill_target03" value="2" />
+			<param name="step4_skill_target02" value="2" />
+			<param name="step4_skill_target03" value="2" />
+			<param name="step5_skill_target02" value="2" />
+			<param name="step5_skill_target03" value="2" />
+			<param name="step6_skill_target02" value="2" />
+			<param name="step6_skill_target03" value="2" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="15" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="5" /> <!-- Blunt Weapons -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="11" />
+			<height normal="13.25" />
+		</collision>
+	</npc>
+	<npc id="16072" level="55" type="L2Pet" name="Elite Maguen">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="lv_step1" value="60" />
+			<param name="lv_step2" value="65" />
+			<param name="lv_step3" value="70" />
+			<param name="lv_step4" value="75" />
+			<param name="lv_step5" value="80" />
+			<param name="lv_step6" value="85" />
+			<skill name="step0_skill01" id="6619" level="1" /> <!-- Maguen Power Strike -->
+			<param name="step0_action01" value="1095" />
+			<skill name="step1_skill01" id="6619" level="2" /> <!-- Maguen Power Strike -->
+			<skill name="step1_skill02" id="6682" level="1" /> <!-- Elite Maguen Speed Walk -->
+			<skill name="step1_skill03" id="6684" level="1" /> <!-- Maguen Party Recall -->
+			<param name="step1_action01" value="1095" />
+			<param name="step1_action02" value="1096" />
+			<param name="step1_action03" value="1098" />
+			<skill name="step2_skill01" id="6619" level="3" /> <!-- Maguen Power Strike -->
+			<skill name="step2_skill02" id="6682" level="1" /> <!-- Elite Maguen Speed Walk -->
+			<skill name="step2_skill03" id="6684" level="1" /> <!-- Maguen Party Recall -->
+			<param name="step2_action01" value="1095" />
+			<param name="step2_action02" value="1096" />
+			<param name="step2_action03" value="1098" />
+			<skill name="step3_skill01" id="6619" level="4" /> <!-- Maguen Power Strike -->
+			<skill name="step3_skill02" id="6682" level="1" /> <!-- Elite Maguen Speed Walk -->
+			<skill name="step3_skill03" id="6684" level="1" /> <!-- Maguen Party Recall -->
+			<param name="step3_action01" value="1095" />
+			<param name="step3_action02" value="1096" />
+			<param name="step3_action03" value="1098" />
+			<skill name="step4_skill01" id="6619" level="5" /> <!-- Maguen Power Strike -->
+			<skill name="step4_skill02" id="6682" level="1" /> <!-- Elite Maguen Speed Walk -->
+			<skill name="step4_skill03" id="6684" level="1" /> <!-- Maguen Party Recall -->
+			<param name="step4_action01" value="1095" />
+			<param name="step4_action02" value="1096" />
+			<param name="step4_action03" value="1098" />
+			<skill name="step5_skill01" id="6619" level="6" /> <!-- Maguen Power Strike -->
+			<skill name="step5_skill02" id="6682" level="1" /> <!-- Elite Maguen Speed Walk -->
+			<skill name="step5_skill03" id="6684" level="1" /> <!-- Maguen Party Recall -->
+			<param name="step5_action01" value="1095" />
+			<param name="step5_action02" value="1096" />
+			<param name="step5_action03" value="1098" />
+			<skill name="step6_skill01" id="6619" level="7" /> <!-- Maguen Power Strike -->
+			<skill name="step6_skill02" id="6682" level="1" /> <!-- Elite Maguen Speed Walk -->
+			<skill name="step6_skill03" id="6684" level="1" /> <!-- Maguen Party Recall -->
+			<param name="step6_action01" value="1095" />
+			<param name="step6_action02" value="1096" />
+			<param name="step6_action03" value="1098" />
+			<param name="step1_skill_target02" value="2" />
+			<param name="step1_skill_target03" value="2" />
+			<param name="step2_skill_target02" value="2" />
+			<param name="step2_skill_target03" value="2" />
+			<param name="step3_skill_target02" value="2" />
+			<param name="step3_skill_target03" value="2" />
+			<param name="step4_skill_target02" value="2" />
+			<param name="step4_skill_target03" value="2" />
+			<param name="step5_skill_target02" value="2" />
+			<param name="step5_skill_target03" value="2" />
+			<param name="step6_skill_target02" value="2" />
+			<param name="step6_skill_target03" value="2" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="15" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4121" level="1" /> <!-- Summoned Monster Magic Protection -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="5" /> <!-- Blunt Weapons -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<corpseTime>86400</corpseTime>
+		<exCrtEffect>false</exCrtEffect>
+		<collision>
+			<radius normal="11" />
+			<height normal="13.25" />
+		</collision>
+	</npc>
+	<npc id="16073" level="55" type="L2Npc" name="Rudolph Agathion">
+		<!-- Confirmed CT2.5 -->
+		<race>ETC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
+			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="223.6362" magical="163.64727" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="19" /> <!-- Others -->
+		</skillList>
+		<shots soul="2" spirit="2" />
+		<exCrtEffect>true</exCrtEffect>
+		<collision>
+			<radius normal="0.01" />
+			<height normal="5.271" />
+		</collision>
+	</npc>
+	<npc id="16074" level="80" type="L2Npc" name="Ball Trapping Gnosian">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="16075" level="80" type="L2Npc" name="Ball Trapping Orodriel">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="16076" level="80" type="L2Npc" name="Penalty Kick">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="16077" level="80" type="L2Npc" name="Antharas">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="16078" level="80" type="L2Npc" name="Nevit's Messenger Kanna">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="16079" level="80" type="L2Npc" name="Guardian of Dawn Kallesin">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+</list>

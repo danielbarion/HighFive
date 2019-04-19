@@ -1,0 +1,2963 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="301" levels="5" name="Summon Big Boom" enchantGroup1="1">
+		<!-- Summons a Big Boom that self-destructs by explosion. Summoning it requires 3 Crystals: D-Grade. Afterwards 5 additional crystals will be consumed at a regular interval for 4 times. 30 percent of acquired Exp will be consumed. -->
+		<table name="#itemConsumeCount"> 3 3 4 4 5 </table>
+		<table name="#magicLvl"> 58 62 66 70 74 </table>
+		<table name="#mpConsume"> 74 82 88 94 100 </table>
+		<table name="#npcIds"> 14702 14703 14704 14705 14706 </table>
+		<table name="#ench1expPenalty"> 0.72 0.74 0.76 0.78 0.8 0.82 0.84 0.86 0.88 0.9 0.92 0.94 0.96 0.98 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </table>
+		<table name="#enchNpcIds"> 14707 14708 14709 14710 14711 14712 14713 14714 14715 14716 14717 14718 14719 14720 14721 14722 14723 14724 14725 14726 14727 14728 14729 14730 14731 14732 14733 14734 14735 14736 </table>
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill0301" />
+		<set name="itemConsumeCount" val="#itemConsumeCount" />
+		<set name="itemConsumeId" val="1458" /> <!-- Crystal (D-Grade) -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
+		<for>
+			<effect name="Summon">
+				<param npcId="#npcIds" />
+				<param consumeItemId="1458" consumeItemCount="5" />
+				<param lifeTime="1200" />
+				<param expMultiplier="0.7" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="Summon">
+				<param npcId="#enchNpcIds" />
+				<param consumeItemId="1458" consumeItemCount="5" />
+				<param lifeTime="1200" />
+				<param expMultiplier="#ench1expPenalty" />
+			</effect>
+		</enchant1for>
+	</skill>
+	<skill id="302" levels="9" name="Spoil Festival" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
+		<!-- Causes Spoil around the enemy. -->
+		<table name="#effectPoints"> -268 -341 -408 -467 -523 -582 -611 -635 -655 </table>
+		<table name="#magicLvl"> 28 36 43 49 55 62 66 70 74 </table>
+		<table name="#mpConsume"> 73 93 113 131 150 172 183 194 204 </table>
+		<table name="#ench1ActivateRates"> 0 1 2 2 3 4 4 5 6 6 7 8 8 9 10 10 11 12 12 13 14 14 15 16 16 17 18 18 19 20 </table>
+		<table name="#ench2ActivateRates"> 0 0 1 1 1 2 2 2 3 3 3 4 4 4 5 5 5 6 6 6 7 7 7 8 8 8 9 9 9 10 </table>
+		<table name="#ench3EarthPower"> 6 8 9 11 12 14 15 17 18 20 21 23 24 26 27 23 30 32 33 35 36 38 39 41 42 44 45 47 48 50 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="affectLimit" val="9-10" />
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1800" />
+		<set name="icon" val="icon.skill0302" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="AREA" />
+		<enchant1 name="abnormalLvl" val="3" />
+		<enchant1 name="abnormalTime" val="30" />
+		<enchant1 name="abnormalType" val="ATTACK_TIME_UP" />
+		<enchant1 name="activateRate" val="#ench1ActivateRates" />
+		<enchant1 name="basicProperty" val="MEN" />
+		<enchant1 name="element" val="3" /> <!-- Earth -->
+		<enchant1 name="elementPower" val="20" />
+		<enchant1 name="isDebuff" val="true" />
+		<enchant1 name="operateType" val="A2" />
+		<enchant1 name="lvlBonusRate" val="1" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="offensive" val="true" />
+		<enchant2 name="abnormalLvl" val="3" />
+		<enchant2 name="abnormalTime" val="15" />
+		<enchant2 name="abnormalType" val="DOT_ATTR" />
+		<enchant2 name="activateRate" val="#ench2ActivateRates" />
+		<enchant2 name="basicProperty" val="MEN" />
+		<enchant2 name="element" val="3" /> <!-- Earth -->
+		<enchant2 name="elementPower" val="20" />
+		<enchant2 name="isDebuff" val="true" />
+		<enchant2 name="operateType" val="A2" />
+		<enchant2 name="lvlBonusRate" val="1" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="offensive" val="true" />
+		<enchant3 name="abnormalLvl" val="1" />
+		<enchant3 name="abnormalTime" val="15" />
+		<enchant3 name="abnormalType" val="HOLY_ATTACK" />
+		<enchant3 name="activateRate" val="80" />
+		<enchant3 name="basicProperty" val="MEN" />
+		<enchant3 name="element" val="3" /> <!-- Earth -->
+		<enchant3 name="elementPower" val="20" />
+		<enchant3 name="isDebuff" val="true" />
+		<enchant3 name="operateType" val="A2" />
+		<enchant3 name="lvlBonusRate" val="1" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="offensive" val="true" />
+		<for>
+			<effect name="Spoil" />
+		</for>
+		<enchant1for>
+			<effect name="Debuff">
+				<mul stat="pAtkSpd" val="0.77" />
+			</effect>
+			<effect name="Spoil" />
+		</enchant1for>
+		<enchant2for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="118" />
+			</effect>
+			<effect name="Spoil" />
+		</enchant2for>
+		<enchant3for>
+			<effect name="Debuff">
+				<sub stat="earthPower" val="#ench3EarthPower" />
+			</effect>
+			<effect name="Spoil" />
+		</enchant3for>
+	</skill>
+	<skill id="303" levels="4" name="Soul of Sagittarius" enchantGroup1="1">
+		<!-- Increases the user's Max MP by 10% for 20 minutes. -->
+		<table name="#abnormalLvls"> 1 2 3 4 </table>
+		<table name="#effectPoints"> 438 549 597 635 </table>
+		<table name="#hpConsume"> 185 271 316 364 </table>
+		<table name="#magicLvl"> 40 58 64 70 </table>
+		<table name="#maxMp"> 1.1 1.15 1.2 1.25 </table>
+		<table name="#ench1abnormalLvl"> 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6 </table>
+		<table name="#ench1hpConsume"> 358 352 346 340 334 328 322 316 310 304 298 292 286 280 274 267 261 255 249 243 237 231 225 219 213 207 201 195 189 183 </table>
+		<table name="#ench1maxMp"> 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.3 1.3 1.3 1.3 1.3 1.3 1.3 1.3 1.3 1.3 1.35 1.35 1.35 1.35 1.35 1.35 1.35 1.35 1.35 1.35 1.35 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="MAX_MP_UP" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="hitTime" val="2000" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="icon" val="icon.skill0303" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="hpConsume" val="#ench1hpConsume" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="#maxMp" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="#ench1maxMp" />
+			</effect>
+		</enchant1for>
+	</skill>
+	<skill id="304" levels="1" name="Song of Vitality" enchantGroup1="1" enchantGroup2="1">
+		<!-- Increases Max HP of all party members by 30% for 2 minutes. Additionally increases MP consumption when singing while song/dance is in effect. -->
+		<table name="#ench1AbnormalTimes"> 125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285 </table>
+		<table name="#ench2MpConsume"> 58 57 56 55 53 52 51 50 48 47 46 45 43 42 41 40 39 37 36 35 34 32 31 30 29 27 26 25 24 22 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SONG_OF_VITALITY" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="611" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0304" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="66" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="aggroPoints" val="655" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="aggroPoints" val="655" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="305" levels="1" name="Song of Vengeance" enchantGroup1="1" enchantGroup2="1">
+		<!-- For 2 minutes, gives a party member the ability to transfer 20% of received standard short-range damage back to the enemy. Additionally increases MP consumption when singing while song/dance is in effect. -->
+		<table name="#ench1AbnormalTimes"> 125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285 </table>
+		<table name="#ench2MpConsume"> 58 57 56 55 53 52 51 50 48 47 46 45 43 42 41 40 39 37 36 35 34 32 31 30 29 27 26 25 24 22 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SONG_OF_VENGEANCE" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="655" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0305" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="74" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<for>
+			<effect name="Buff">
+				<add stat="reflectDam" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="306" levels="1" name="Song of Flame Guard" enchantGroup1="1" enchantGroup2="1">
+		<!-- Increases party members' Resistance to Fire by 30 for 2 minutes. Additionally increases MP consumption when singing while song/dance is in effect. -->
+		<table name="#ench1AbnormalTimes"> 125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285 </table>
+		<table name="#ench2MpConsume"> 58 57 56 55 53 52 51 50 48 47 46 45 43 42 41 40 39 37 36 35 34 32 31 30 29 27 26 25 24 22 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SONG_OF_FLAME_GUARD" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="582" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0306" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="62" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="aggroPoints" val="655" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="aggroPoints" val="655" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<for>
+			<effect name="Buff">
+				<add stat="fireRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="307" levels="1" name="Dance of Aqua Guard" enchantGroup1="1" enchantGroup2="1">
+		<!-- Increases party members' Resistance to Water by 30 for 2 minutes. Additionally increases MP consumption when dancing while song/dance is in effect. Requires a dualsword. -->
+		<table name="#ench1AbnormalTimes"> 125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285 </table>
+		<table name="#ench2MpConsume"> 58 57 56 55 53 52 51 50 48 47 46 45 43 42 41 40 39 37 36 35 34 32 31 30 29 27 26 25 24 22 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="DANCE_OF_AQUA_GUARD" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="635" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0307" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="70" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="aggroPoints" val="655" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="aggroPoints" val="655" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="waterRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="308" levels="1" name="Song of Storm Guard" enchantGroup1="1" enchantGroup2="1">
+		<!-- Increases party members' Resistance to Wind by 30 for 2 minutes. Additionally increases MP consumption when singing while song/dance is in effect. -->
+		<table name="#ench1AbnormalTimes"> 125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285 </table>
+		<table name="#ench2MpConsume"> 58 57 56 55 53 52 51 50 48 47 46 45 43 42 41 40 39 37 36 35 34 32 31 30 29 27 26 25 24 22 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SONG_OF_STORM_GUARD" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="635" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0308" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="70" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="aggroPoints" val="655" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="aggroPoints" val="655" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<for>
+			<effect name="Buff">
+				<add stat="windRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="309" levels="1" name="Dance of Earth Guard" enchantGroup1="1" enchantGroup2="1">
+		<!-- Increases party members' Resistance to Earth by 30 for 2 minutes. Additionally increases MP consumption when dancing while song/dance is in effect. Requires a dualsword. -->
+		<table name="#ench1AbnormalTimes"> 125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285 </table>
+		<table name="#ench2MpConsume"> 58 57 56 55 53 52 51 50 48 47 46 45 43 42 41 40 39 37 36 35 34 32 31 30 29 27 26 25 24 22 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="DANCE_OF_EARTH_GUARD" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="582" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0309" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="62" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="aggroPoints" val="655" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="aggroPoints" val="655" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="earthRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="310" levels="1" name="Dance of the Vampire" enchantGroup1="1" enchantGroup2="1">
+		<!-- For 2 minutes, gives all party members the ability to recover as HP 8% of any standard melee damage inflicted on the enemy. Additionally increases MP consumption when dancing while song/dance is in effect. Requires a dualsword. -->
+		<table name="#ench1AbnormalTimes"> 125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285 </table>
+		<table name="#ench2MpConsume"> 58 57 56 55 53 52 51 50 48 47 46 45 43 42 41 40 39 37 36 35 34 32 31 30 29 27 26 25 24 22 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="DANCE_OF_VAMPIRE" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="655" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0310" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="74" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="8" /> <!-- absorb 8% HP from damage inflicted on enemies -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="311" levels="1" name="Dance of Protection" enchantGroup1="1" enchantGroup2="1">
+		<!-- For 2 minutes, gives all party members the ability to decrease by 30 any environment-related damage received. Additionally increases MP consumption when dancing while song/dance is in effect. Requires a dualsword. -->
+		<table name="#ench1AbnormalTimes"> 125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285 </table>
+		<table name="#ench2MpConsume"> 58 57 56 55 53 52 51 50 48 47 46 45 43 42 41 40 39 37 36 35 34 32 31 30 29 27 26 25 24 22 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="DANCE_OF_PROTECTION" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="611" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0311" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="66" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="aggroPoints" val="655" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="aggroPoints" val="655" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<sub stat="damageZoneVuln" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="312" levels="20" name="Vicious Stance" enchantGroup1="1" enchantGroup2="1">
+		<!-- Increases Critical Damages by 35. Continuously consumes MP proportionately to the user's level. -->
+		<table name="#crit"> 35 48 64 84 109 139 166 196 229 266 306 349 379 410 443 475 509 542 576 609 </table>
+		<table name="#magicLvl"> 20 24 28 32 36 40 43 46 49 52 55 58 60 62 64 66 68 70 72 74 </table>
+		<table name="#mpInitialConsume"> 4 5 5 6 7 7 8 9 9 10 10 11 11 12 12 13 13 13 14 14 </table>
+		<table name="#ench1crit"> 615 620 626 631 637 642 648 653 659 664 670 675 681 686 692 697 702 708 713 719 724 730 735 741 746 752 757 763 768 774 </table>
+		<table name="#ench2mpInitialConsume"> 13 13 13 12 12 12 11 11 11 10 10 10 9 9 9 8 8 8 7 7 7 6 6 6 5 5 5 4 4 4 </table>
+		<table name="#ench2val"> 0.79 0.78 0.78 0.77 0.76 0.76 0.75 0.74 0.74 0.73 0.72 0.72 0.71 0.7 0.7 0.69 0.68 0.68 0.67 0.66 0.66 0.65 0.64 0.64 0.63 0.62 0.62 0.61 0.6 0.6 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0312" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="mpInitialConsume" val="14" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
+		<for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="0.8" />
+				<add stat="critDmgAdd" val="#crit" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="0.8" />
+				<add stat="critDmgAdd" val="#ench1crit" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="#ench2val" />
+				<add stat="critDmgAdd" val="609" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="313" levels="8" name="Snipe" enchantGroup1="1" enchantGroup2="1">
+		<!-- For 2 minutes, increases the user's Accuracy by 3, P. Atk. by 124, range by 50, and Critical Rate by 20% when using a bow. Movement is impossible while skill is being used. Requires a bow. -->
+		<table name="#abnormalLvls"> 1 2 3 4 5 6 7 8 </table>
+		<table name="#accCombat"> 3 3 4 4 5 5 6 6 </table>
+		<table name="#effectPoints"> 566 582 597 611 624 635 646 655 </table>
+		<table name="#magicLvl"> 60 62 64 66 68 70 72 74 </table>
+		<table name="#mpConsume"> 28 29 30 31 32 33 34 34 </table>
+		<table name="#pAtk"> 124 134 145 155 166 177 188 199 </table>
+		<table name="#pAtkRange"> 50 50 100 100 150 150 200 200 </table>
+		<table name="#ench1abnormalLvl"> 9 9 9 9 10 10 10 10 10 11 11 11 11 11 12 12 12 12 12 13 13 13 13 13 14 14 14 14 14 15 </table>
+		<table name="#ench1pAtk"> 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 232 234 236 238 240 242 244 246 248 250 252 254 256 258 260 </table>
+		<table name="#ench2decreasePenalty"> 0.07 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.2 0.22 0.23 0.25 0.26 0.28 0.29 0.31 0.32 0.34 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.47 0.49 0.50 </table>
+		<table name="#ench2MpConsume"> 33 33 32 32 32 31 31 30 30 29 29 28 28 28 27 27 26 26 25 25 25 24 24 23 23 22 22 21 20 20 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SNIPE" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0313" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="75000" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="BOW" />
+		</cond>
+		<for>
+			<effect name="ImmobileBuff">
+				<add stat="pAtk" val="#pAtk">
+					<using kind="BOW" />
+				</add>
+				<add stat="accCombat" val="#accCombat">
+					<using kind="BOW" />
+				</add>
+				<mul stat="critRate" val="1.2">
+					<using kind="BOW" />
+				</mul>
+				<add stat="pAtkRange" val="#pAtkRange">
+					<using kind="BOW" />
+				</add>
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="ImmobileBuff">
+				<add stat="pAtk" val="#ench1pAtk">
+					<using kind="BOW" />
+				</add>
+				<add stat="accCombat" val="6">
+					<using kind="BOW" />
+				</add>
+				<mul stat="critRate" val="1.2">
+					<using kind="BOW" />
+				</mul>
+				<add stat="pAtkRange" val="200">
+					<using kind="BOW" />
+				</add>
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="Buff">
+				<add stat="pAtk" val="199">
+					<using kind="BOW" />
+				</add>
+				<add stat="accCombat" val="6">
+					<using kind="BOW" />
+				</add>
+				<mul stat="critRate" val="1.2">
+					<using kind="BOW" />
+				</mul>
+				<add stat="pAtkRange" val="200">
+					<using kind="BOW" />
+				</add>
+				<mul stat="runSpd" val="#ench2decreasePenalty" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="314" levels="16" name="Fatal Counter" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
+		<!-- Supplements the user's P. Atk. by 2908 Power to fire an agony-inducing arrow at a target. The power of the attack increases as the enemy's HP decreases. Requires a bow. Over-hit is possible. -->
+		<table name="#effectPoints"> -567 -575 -583 -591 -599 -607 -614 -621 -627 -634 -640 -646 -651 -656 -661 -665 </table>
+		<table name="#magicLvl"> 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
+		<table name="#mpConsume"> 116 119 121 122 124 126 129 131 133 135 138 140 142 144 146 148 </table>
+		<table name="#power"> 2908 3030 3154 3280 3408 3537 3668 3800 3933 4067 4201 4336 4470 4604 4738 4870 </table>
+		<table name="#ench1Power"> 4915 4959 5003 5047 5090 5134 5178 5222 5266 5310 5354 5398 5442 5486 5529 5573 5617 5661 5705 5749 5793 5837 5881 5925 5968 6012 6056 6100 6144 6188 </table>
+		<table name="#ench2mpConsume"> 148 145 143 140 138 135 132 130 127 125 122 120 117 115 112 110 107 105 102 100 97 95 92 90 87 85 82 80 77 75 </table>
+		<table name="#enchDuel"> 4955 5040 5125 5210 5295 5380 5465 5551 5636 5721 5806 5891 5976 6061 6147 6232 6317 6402 6487 6572 6657 6742 6828 6913 6998 7083 7168 7253 7338 7424 </table>
+		<table name="#enchElementPower"> 1 3 5 6 8 10 11 13 15 16 18 20 21 23 25 26 28 30 31 33 35 36 38 40 41 43 45 46 48 50 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="1000" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill0314" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="ONE" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<enchant3 name="element" val="0" /> <!-- Fire -->
+		<enchant3 name="elementPower" val="#enchElementPower" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant4 name="element" val="1" /> <!-- Water -->
+		<enchant4 name="elementPower" val="#enchElementPower" />
+		<enchant4 name="magicLvl" val="#enchMagicLvl" />
+		<enchant5 name="element" val="2" /> <!-- Wind -->
+		<enchant5 name="elementPower" val="#enchElementPower" />
+		<enchant5 name="magicLvl" val="#enchMagicLvl" />
+		<enchant6 name="element" val="3" /> <!-- Earth -->
+		<enchant6 name="elementPower" val="#enchElementPower" />
+		<enchant6 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="pvpPower" val="#enchDuel" />
+		<cond msgId="113" addName="1">
+			<using kind="BOW" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttackHpLink" />
+		</for>
+	</skill>
+	<skill id="315" levels="16" name="Crush of Doom" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
+		<!-- Attacks the target with 4558 Power added to P. Atk. Requires a two-handed sword/two-handed blunt weapon to be equipped. Ignores Shield Defense. Over-hit and critical hit are possible. -->
+		<table name="#effectPoints"> -425 -431 -438 -444 -449 -455 -460 -466 -471 -475 -480 -484 -488 -492 -496 -499 </table>
+		<table name="#hpConsume"> 208 212 212 217 221 225 229 233 237 240 244 248 251 255 258 261 </table>
+		<table name="#magicLvl"> 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
+		<table name="#power"> 4558 4750 4944 5142 5342 5545 5751 5958 6166 6376 6586 6797 7006 7218 7427 7635 </table>
+		<table name="#ench1Power"> 7710 7779 7848 7917 7986 8055 8123 8192 8261 8330 8399 8468 8537 8605 8674 8743 8812 8881 8950 9019 9088 9156 9225 9294 9363 9432 9501 9570 9639 9707 </table>
+		<table name="#ench2HpConsume"> 259 256 252 249 245 242 239 235 232 228 225 222 218 215 211 208 205 201 198 195 191 188 184 181 178 174 171 167 164 161 </table>
+		<table name="#enchDuel"> 7768 7901 8035 8168 8302 8435 8569 8702 8836 8969 9103 9236 9370 9503 9637 9770 9903 10037 10170 10304 10437 10571 10704 10838 10971 11105 11238 11372 11505 11639 </table>
+		<table name="#enchElementPower"> 2 4 5 7 9 10 12 14 15 17 18 20 22 23 25 27 28 30 32 33 35 36 38 40 41 43 45 46 48 50 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="baseCritRate" val="15" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="1080" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1620" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="icon" val="icon.skill0315" />
+		<set name="ignoreShld" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="7000" />
+		<set name="targetType" val="ONE" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="hpConsume" val="#ench2HpConsume" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="element" val="0" /> <!-- Fire -->
+		<enchant3 name="elementPower" val="#enchElementPower" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant4 name="element" val="1" /> <!-- Water -->
+		<enchant4 name="elementPower" val="#enchElementPower" />
+		<enchant4 name="magicLvl" val="#enchMagicLvl" />
+		<enchant5 name="element" val="2" /> <!-- Wind -->
+		<enchant5 name="elementPower" val="#enchElementPower" />
+		<enchant5 name="magicLvl" val="#enchMagicLvl" />
+		<enchant6 name="element" val="3" /> <!-- Earth -->
+		<enchant6 name="elementPower" val="#enchElementPower" />
+		<enchant6 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="pvpPower" val="#enchDuel" />
+		<cond msgId="113" addName="1">
+			<and>
+				<using kind="SWORD,BLUNT" />
+				<using slot="lrhand" />
+			</and>
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="316" levels="1" name="Aegis">
+		<!-- Enables Shield Defense in all directions. -->
+		<set name="icon" val="icon.skill0316" />
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<set stat="shieldDefAngle" val="360" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="317" levels="5" name="Focus Attack">
+		<!-- When using a spear, allows user to attack a single enemy with increases in Accuracy of 2 and Critical Damage of 10%. -->
+		<table name="#accCombat"> 2 3 4 5 6 </table>
+		<table name="#cAtk"> 1.1 1.15 1.2 1.25 1.3 </table>
+		<table name="#magicLvl"> 40 49 58 66 74 </table>
+		<table name="#mpConsume"> 18 22 27 31 34 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0317" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmg" val="#cAtk">
+					<using kind="POLE" />
+				</mul>
+				<add stat="accCombat" val="#accCombat">
+					<using kind="POLE" />
+				</add>
+				<set stat="atkCountMax" val="1">
+					<using kind="POLE" />
+				</set>
+			</effect>
+		</for>
+	</skill>
+	<skill id="318" levels="1" name="Aegis Stance" enchantGroup1="1">
+		<!-- Enables Shield Defense from all directions and decreases Shield Defense by 30%. -->
+		<table name="#ench1sDef"> 0.71 0.72 0.73 0.74 0.75 0.76 0.77 0.78 0.79 0.8 0.81 0.82 0.83 0.84 0.85 0.86 0.87 0.88 0.89 0.9 0.91 0.92 0.93 0.94 0.95 0.96 0.97 0.98 0.99 1 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0318" />
+		<set name="magicLvl" val="46" />
+		<set name="mpInitialConsume" val="9" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="sDef" val="0.7" />
+				<set stat="shieldDefAngle" val="360" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="Buff">
+				<mul stat="sDef" val="#ench1sDef" />
+				<set stat="shieldDefAngle" val="360" />
+			</effect>
+		</enchant1for>
+	</skill>
+	<skill id="319" levels="2" name="Agile Movement" enchantGroup1="1" enchantGroup2="1">
+		<!-- Increases Accuracy by 2 and Speed by 5 when equipped with light armor. -->
+		<table name="#accCombat"> 2 3 </table>
+		<table name="#magicLvl"> 20 40 </table>
+		<table name="#runSpd"> 5 10 </table>
+		<table name="#ench1runSpd"> 11 11 11 12 12 12 13 13 13 14 14 14 14 15 15 15 16 16 16 17 17 17 17 18 18 18 19 19 19 20 </table>
+		<table name="#ench2acc"> 4 4 4 4 4 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 6 </table>
+		<set name="icon" val="icon.skill0319" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="#runSpd">
+					<using kind="LIGHT" />
+				</add>
+				<add stat="accCombat" val="#accCombat">
+					<using kind="LIGHT" />
+				</add>
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="Buff">
+				<add stat="runSpd" val="#ench1runSpd">
+					<using kind="LIGHT" />
+				</add>
+				<add stat="accCombat" val="3">
+					<using kind="LIGHT" />
+				</add>
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="Buff">
+				<add stat="runSpd" val="10">
+					<using kind="LIGHT" />
+				</add>
+				<add stat="accCombat" val="#ench2acc">
+					<using kind="LIGHT" />
+				</add>
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="320" levels="10" name="Wrath" enchantGroup1="2" enchantGroup2="2">
+		<!-- A powerful spear thrust weakens nearby enemies' CP by 7%. Requires a polearm. -->
+		<table name="#effectPoints"> -307 -311 -314 -317 -320 -323 -326 -328 -331 -333 </table>
+		<table name="#magicLvl"> 65 66 67 68 69 70 71 72 73 74 </table>
+		<table name="#mpConsume"> 66 67 68 69 70 71 72 73 74 75 </table>
+		<table name="#power"> 7 10 12 15 17 20 22 25 27 30 </table>
+		<table name="#ench1Power"> 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 </table>
+		<table name="#ench2MpConsume"> 74 72 71 69 68 67 65 64 62 61 59 58 56 55 53 52 50 49 48 46 45 43 42 40 39 37 36 34 33 32 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="80" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="400" />
+		<set name="fanRange" val="0,0,80,150" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill0320" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="POLE" />
+		</cond>
+		<for>
+			<effect name="CpDamPercent">
+				<param power="#power" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="321" levels="10" name="Blinding Blow" enchantGroup1="2" enchantGroup2="2">
+		<!-- Attacks the target's vital points with 2751 Power added to P. Atk. and turns his/her back to you. Increases Speed by 40. Requires a dagger. Over-hit and Half-kill are possible. -->
+		<table name="#effectPoints"> -307 -311 -314 -317 -320 -323 -326 -328 -331 -333 </table>
+		<table name="#magicLvl"> 65 66 67 68 69 70 71 72 73 74 </table>
+		<table name="#mpConsume"> 63 64 65 66 67 68 69 70 71 72 </table>
+		<table name="#power"> 2751 2850 2950 3050 3151 3252 3353 3453 3553 3653 </table>
+		<table name="#ench1Power"> 3875 3902 3928 3955 3981 4007 4034 4060 4086 4113 4139 4166 4192 4218 4245 4271 4298 4324 4350 4377 4403 4429 4456 4482 4509 4535 4561 4588 4614 4640 </table>
+		<table name="#ench2MpConsume"> 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 49 48 47 46 45 44 43 42 41 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="SPEED_UP_SPECIAL" />
+		<set name="blowChance" val="25" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill0321" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A3" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="ONE" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="DAGGER,DUALDAGGER" />
+		</cond>
+		<for>
+			<effect name="FatalBlow" />
+			<effect name="Bluff">
+				<param chance="80" />
+			</effect>
+			<effect name="Lethal">
+				<param halfLethal="5" />
+			</effect>
+		</for>
+		<selfEffects>
+			<effect name="Buff">
+				<add stat="runSpd" val="40" />
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="322" levels="6" name="Shield Fortress" enchantGroup1="1" enchantGroup2="1">
+		<!-- Shield Defense. increases by 446. Continuously consumes MP proportionately to the user's level. -->
+		<table name="#magicLvl"> 64 66 68 70 72 74 </table>
+		<table name="#mpInitialConsume"> 12 13 13 13 14 14 </table>
+		<table name="#sDef"> 446 469 491 514 537 560 </table>
+		<table name="#ench1sDef"> 565 569 573 577 582 586 590 594 599 603 607 611 616 620 624 628 632 637 641 645 649 654 658 662 666 671 675 679 683 688 </table>
+		<table name="#ench2mpConsume"> 13 13 13 12 12 12 11 11 11 10 10 10 9 9 9 8 8 8 7 7 7 6 6 6 5 5 5 4 4 4 </table>
+		<table name="#ench2val"> 0.79 0.78 0.78 0.77 0.76 0.76 0.75 0.74 0.74 0.73 0.72 0.72 0.71 0.7 0.7 0.69 0.68 0.68 0.67 0.66 0.66 0.65 0.64 0.64 0.63 0.62 0.62 0.61 0.6 0.6 </table>
+		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0322" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpInitialConsume" val="#ench2mpConsume" />
+		<for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="0.8" />
+				<add stat="sDef" val="#sDef" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="0.8" />
+				<add stat="sDef" val="#ench1sDef" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="#ench2val" />
+				<add stat="sDef" val="560" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="323" levels="1" name="Quiver of Arrow: Grade A">
+		<!-- Summons between 700 and 2800 Mithril arrows. Consumes 1 A-Grade Crystal. -->
+		<table name="#extractableItems">
+			1344,700,30;1344,1400,50;1344,2800,20
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill0323" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="1461" /> <!-- Crystal (A-Grade) -->
+		<set name="magicLvl" val="60" />
+		<set name="mpConsume" val="366" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="600000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="324" levels="1" name="Quiver of Arrow: Grade S">
+		<!-- Summons between 900 and 3600 arrows of light. Consumes 1 S-Grade Crystal. -->
+		<table name="#extractableItems">
+			1345,900,30;1345,1800,50;1345,3600,20
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill0324" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="1462" /> <!-- Crystal (S-Grade) -->
+		<set name="magicLvl" val="72" />
+		<set name="mpConsume" val="398" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="600000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="325" levels="1" name="Strider Siege Assault">
+		<!-- Uses 15005 Power to attack a castle's gate. Can be used while mounted on a Strider. Consumes 5 Spirit Ore. -->
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill0325" />
+		<set name="itemConsumeCount" val="5" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="-1" />
+		<set name="mpConsume" val="151" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15005" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="113" addName="1">
+			<player SiegeZone="126" /> <!-- TODO: add new condition and ride_state -->
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="326" levels="1" name="Build Advanced Headquarters">
+		<!-- Constructs a high quality encampment that possesses double HP of a standard encampment and assist clan member recovery and battle additions during castle sieges. Consumes 300 C-Grade Gemstones. -->
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill0326" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="300" />
+		<set name="itemConsumeId" val="2131" /> <!-- Gemstone C -->
+		<set name="magicLvl" val="-1" />
+		<set name="mpInitialConsume" val="30" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canCreateBase="true" />
+		</cond>
+		<for>
+			<effect name="HeadquarterCreate">
+				<param isAdvanced="true" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="327" levels="1" name="Wyvern Aegis">
+		<!-- For 9 seconds, increases P. Def. by 7000, M. Def. by 6000 and Resistance to buff-canceling attacks by 100%. Can be used while mounted on a Wyvern. Consumes 20 Spirit Ore. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="effectPoint" val="662" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0327" />
+		<set name="itemConsumeCount" val="20" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="-1" />
+		<set name="mpConsume" val="69" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="600000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player flying="true" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="pDef" val="7000">
+					<player flying="true" />
+				</add>
+				<add stat="mDef" val="6000">
+					<player flying="true" />
+				</add>
+				<sub stat="cancelVuln" val="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="328" levels="1" name="Wisdom" enchantGroup1="5" enchantGroup2="5" enchantGroup3="5">
+		<!-- Increases Resistance to Hold, Sleep and Mental attacks by 20. -->
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<table name="#enchTraits"> 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 </table>
+		<set name="icon" val="icon.skill0328" />
+		<set name="magicLvl" val="76" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="DefenceTrait">
+				<param HOLD="20" />
+				<param SLEEP="20" />
+				<param DERANGEMENT="20" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="DefenceTrait">
+				<param HOLD="#enchTraits" />
+				<param SLEEP="20" />
+				<param DERANGEMENT="20" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="DefenceTrait">
+				<param HOLD="20" />
+				<param SLEEP="#enchTraits" />
+				<param DERANGEMENT="20" />
+			</effect>
+		</enchant2for>
+		<enchant3for>
+			<effect name="DefenceTrait">
+				<param HOLD="20" />
+				<param SLEEP="20" />
+				<param DERANGEMENT="#enchTraits" />
+			</effect>
+		</enchant3for>
+	</skill>
+	<skill id="329" levels="1" name="Health" enchantGroup1="5" enchantGroup2="5">
+		<!-- Increases Resistance to poison and Bleed attacks by 20. -->
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<table name="#enchTraits"> 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 </table>
+		<set name="icon" val="icon.skill0329" />
+		<set name="magicLvl" val="76" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="DefenceTrait">
+				<param POISON="20" />
+				<param BLEED="20" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="DefenceTrait">
+				<param POISON="#enchTraits" />
+				<param BLEED="20" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="DefenceTrait">
+				<param POISON="20" />
+				<param BLEED="#enchTraits" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="330" levels="1" name="Skill Mastery">
+		<!-- Depending on user's STR, the re-use time resets or the duration doubles. -->
+		<set name="icon" val="icon.skill0330" />
+		<set name="magicLvl" val="77" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="skillCritical" val="1" /> <!-- STR -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="331" levels="1" name="Skill Mastery">
+		<!-- Depending on user's INT, the re-use time resets or the duration doubles. -->
+		<set name="icon" val="icon.skill0330" />
+		<set name="magicLvl" val="77" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="skillCritical" val="4" /> <!-- INT -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="332" levels="1" name="Extra Inventory">
+		<!-- Increases inventory slots by 1. -->
+		<set name="icon" val="icon.skill0332" />
+		<set name="magicLvl" val="76" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="inventoryLimit" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="333" levels="1" name="Extra Sales Slots">
+		<!-- Increases private store transaction slots by 1. -->
+		<set name="icon" val="icon.skill0333" />
+		<set name="magicLvl" val="76" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="privateBuyLimit" val="1" />
+				<add stat="privateSellLimit" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="334" levels="1" name="Focus Skill Mastery">
+		<!-- Increases Skill Mastery skill rate by 100%. Continuously consumes MP proportionately to the user's level. -->
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0334" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="2" />
+				<mul stat="skillCriticalProbability" val="11" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="335" levels="1" name="Fortitude" enchantGroup1="5" enchantGroup2="5">
+		<!-- Increases Resistance to Paralysis and Stun attacks by 30. Continuously consumes MP proportionately to the user's level. -->
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<table name="#enchTraits"> 31 31 31 32 32 32 32 33 33 33 33 34 34 34 35 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0335" />
+		<set name="magicLvl" val="76" />
+		<set name="mpConsume" val="35" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SHOCK="30" />
+				<param PARALYZE="30" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="DefenceTrait">
+				<param SHOCK="#enchTraits" />
+				<param PARALYZE="30" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="DefenceTrait">
+				<param SHOCK="30" />
+				<param PARALYZE="#enchTraits" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="336" levels="1" name="Arcane Wisdom" enchantGroup1="5">
+		<!-- Maximizes magic efficiency by decreasing MP consumption by 30% and Casting Spd. by 10%. 50 HP is consumed per second. -->
+		<table name="#ench1mpConsume"> 0.7 0.7 0.69 0.69 0.69 0.68 0.68 0.68 0.67 0.67 0.67 0.66 0.66 0.66 0.65 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0336" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="50" />
+				<mul stat="mAtkSpd" val="0.9" />
+				<mul stat="magicalMpConsumeRate" val="0.7" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="50" />
+				<mul stat="mAtkSpd" val="0.9" />
+				<mul stat="magicalMpConsumeRate" val="#ench1mpConsume" />
+			</effect>
+		</enchant1for>
+	</skill>
+	<skill id="337" levels="1" name="Arcane Power" enchantGroup1="5">
+		<!-- Maximizes magic efficiency by increasing M. Atk. by 30% and MP consumption by 10%. Every second, 50 HP is consumed. -->
+		<table name="#ench1mAtk"> 1.303 1.306 1.31 1.313 1.316 1.32 1.323 1.326 1.33 1.333 1.336 1.34 1.343 1.346 1.35 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0337" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="50" />
+				<mul stat="magicalMpConsumeRate" val="1.1" />
+				<mul stat="mAtk" val="1.3" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="50" />
+				<mul stat="magicalMpConsumeRate" val="1.1" />
+				<mul stat="mAtk" val="#ench1mAtk" />
+			</effect>
+		</enchant1for>
+	</skill>
+	<skill id="338" levels="1" name="Arcane Agility" enchantGroup1="5" enchantGroup2="5">
+		<!-- Maximizes magic efficiency by increasing Casting Spd. by 20% and magic MP consumption by 10%, and by decreasing magic re-use time by 10%. 50 HP is consumed per second. -->
+		<table name="#ench1mAtkSpd"> 1.201 1.202 1.204 1.205 1.206 1.208 1.209 1.21 1.212 1.213 1.214 1.216 1.217 1.218 1.22 </table>
+		<table name="#ench2mReuse"> 0.89 0.89 0.89 0.89 0.89 0.89 0.89 0.89 0.89 0.89 0.89 0.89 0.89 0.89 0.88 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0338" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="50" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<mul stat="mReuse" val="0.9" />
+				<mul stat="magicalMpConsumeRate" val="1.1" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="50" />
+				<mul stat="mAtkSpd" val="#ench1mAtkSpd" />
+				<mul stat="mReuse" val="0.9" />
+				<mul stat="magicalMpConsumeRate" val="1.1" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="50" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<mul stat="mReuse" val="#ench2mReuse" />
+				<mul stat="magicalMpConsumeRate" val="1.1" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="339" levels="1" name="Parry Stance" enchantGroup1="5">
+		<!-- Blocks an attack using a weapon. Increases P. Def. by 25% and M. Def. by 25%. Decreases Speed by 10%, Atk. Spd. by 20%, and Accuracy by 4. Continuously consumes MP proportionately to the user's level. -->
+		<table name="#enchDef"> 1.251 1.252 1.254 1.255 1.256 1.258 1.259 1.26 1.262 1.263 1.264 1.266 1.267 1.268 1.27 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0339" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="1" />
+				<mul stat="pDef" val="1.25" />
+				<mul stat="mDef" val="1.25" />
+				<mul stat="pAtkSpd" val="0.8" />
+				<mul stat="runSpd" val="0.9" />
+				<sub stat="accCombat" val="4" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="1" />
+				<mul stat="pDef" val="#enchDef" />
+				<mul stat="mDef" val="#enchDef" />
+				<mul stat="pAtkSpd" val="0.8" />
+				<mul stat="runSpd" val="0.9" />
+				<sub stat="accCombat" val="4" />
+			</effect>
+		</enchant1for>
+	</skill>
+	<skill id="340" levels="1" name="Riposte Stance">
+		<!-- Parries and returns an attack using a weapon. Returns 30% of received standard short-range damage back to the enemy, and reflects buff/de-buff with 30% probability. Decreases Speed by 10%, Atk. Spd. by 20%, and Accuracy by 4. Continuously consumes MP proportionately to the user's level. -->
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill0340" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="35" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="1" />
+				<add stat="reflectDam" val="30" />
+				<add stat="reflectSkillPhysic" val="30" />
+				<add stat="reflectSkillMagic" val="30" />
+				<mul stat="pAtkSpd" val="0.8" />
+				<mul stat="runSpd" val="0.9" />
+				<sub stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="341" levels="1" name="Touch of Life" enchantGroup1="6" enchantGroup2="6">
+		<!-- Gives a divine blessing by sacrificing oneself. Restores HP by 50%, and for 2 minutes, increases Resistance to buff cancel attacks by 100%, Resistance to de-buff attacks by 30%, and the power of received HP recovery magic by 30%. Restores 50 HP every second. -->
+		<table name="#ench1Cost"> 1184 1154 1123 1093 1062 1032 1001 971 940 910 879 849 818 788 757 </table>
+		<table name="#ench2AbnormalTimes"> 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="TOUCH_OF_LIFE" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="810" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1800" />
+		<set name="hpConsume" val="1215" />
+		<set name="icon" val="icon.skill0341" />
+		<set name="magicLvl" val="78" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="300000" />
+		<set name="targetType" val="ONE" />
+		<enchant1 name="hpConsume" val="#ench1Cost" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<not>
+				<target npcType="L2Attackable" />
+			</not>
+		</cond>
+		<for>
+			<effect name="Buff">
+				<sub stat="cancelVuln" val="100" />
+				<sub stat="debuffVuln" val="30" />
+				<mul stat="healEffect" val="1.3" />
+			</effect>
+			<effect name="HealOverTime" ticks="5">
+				<param power="50" />
+			</effect>
+			<effect name="HealPercent">
+				<param power="50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="342" levels="1" name="Touch of Death" enchantGroup1="6" enchantGroup2="6">
+		<!-- Sacrifices oneself to pronounce an Dark curse on the enemy. Cancels up to 5 buffs with 25% probability and consumes 90% CP. For 2 minutes, decreases Max CP by 90% and the power of received HP recovery magic by 30%. Increases susceptibility to de-buff by 30%. -->
+		<table name="#ench1hpConsume"> 647 625 603 581 559 537 515 492 470 448 426 404 382 360 338 </table>
+		<table name="#ench2ActivateRates"> 81 82 82 83 84 84 85 86 86 87 87 88 89 89 90 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="TOUCH_OF_DEATH" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-1338" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1800" />
+		<set name="hpConsume" val="669" />
+		<set name="icon" val="icon.skill0342" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="78" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="150000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="DEATH" />
+		<enchant1 name="hpConsume" val="#ench1hpConsume" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="activateRate" val="#ench2ActivateRates" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="maxCp" val="0.1" />
+				<add stat="debuffVuln" val="30" />
+				<mul stat="healEffect" val="0.7" />
+			</effect>
+			<effect name="DispelByCategory">
+				<param slot="buff" rate="25" max="5" />
+			</effect>
+			<effect name="CpDamPercent">
+				<param power="90" />
+			</effect>
+		</for>
+		<enchant2for>
+			<effect name="Debuff">
+				<mul stat="maxCp" val="0.1" />
+				<add stat="debuffVuln" val="30" />
+				<mul stat="healEffect" val="0.7" />
+			</effect>
+			<effect name="DispelByCategory">
+				<param slot="buff" rate="25" max="5" />
+			</effect>
+			<effect name="CpDamPercent">
+				<param power="90" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="343" levels="1" name="Lethal Shot" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6" enchantGroup5="6" enchantGroup6="6" enchantGroup7="6">
+		<!-- Shoots an arrow that is aimed at a vital spot. Attacks the enemy with 7698 Power added to P. Atk. Requires a bow. Over-hit, Half-Kill, and Critical are possible. -->
+		<table name="#ench1Power"> 8475 8503 8530 8558 8586 8614 8641 8669 8697 8725 8753 8780 8808 8836 8864 </table>
+		<table name="#ench2mpConsume"> 148 143 138 133 128 123 118 113 108 103 98 93 88 83 79 </table>
+		<table name="#ench7Duel"> 7905 8113 8321 8528 8736 8944 9151 9359 9567 9774 9982 10190 10397 10605 10813 </table>
+		<table name="#enchelementPower"> 3 6 10 13 16 20 23 26 30 33 36 40 43 46 50 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="baseCritRate" val="15" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-897" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill0343" />
+		<set name="magicLvl" val="76" />
+		<set name="mpConsume" val="153" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="7698" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="DEATH" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<enchant3 name="element" val="0" /> <!-- Fire -->
+		<enchant3 name="elementPower" val="#enchelementPower" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant4 name="element" val="1" /> <!-- Water -->
+		<enchant4 name="elementPower" val="#enchelementPower" />
+		<enchant4 name="magicLvl" val="#enchMagicLvl" />
+		<enchant5 name="element" val="2" /> <!-- Wind -->
+		<enchant5 name="elementPower" val="#enchelementPower" />
+		<enchant5 name="magicLvl" val="#enchMagicLvl" />
+		<enchant6 name="element" val="3" /> <!-- Earth -->
+		<enchant6 name="elementPower" val="#enchelementPower" />
+		<enchant6 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="pvpPower" val="#ench7Duel" />
+		<cond msgId="113" addName="1">
+			<using kind="BOW" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Lethal">
+				<param halfLethal="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="344" levels="1" name="Lethal Blow" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6" enchantGroup5="6" enchantGroup6="6" enchantGroup7="6">
+		<!-- Attacks the target's vital points with 5773 Power added to P. Atk. Requires a dagger. Over-hit and Half-kill are possible. -->
+		<table name="#ench1Power"> 6502 6535 6568 6601 6634 6667 6700 6733 6766 6799 6833 6866 6899 6932 6965 </table>
+		<table name="#ench2CritRate"> 21 21 21 21 21 21 21 22 22 22 22 22 22 22 23 </table>
+		<table name="#ench7Duel"> 5880 5986 6092 6198 6304 6410 6516 6622 6728 6834 6940 7046 7152 7258 7364 </table>
+		<table name="#enchelementPower"> 3 6 10 13 16 20 23 26 30 33 36 40 43 46 50 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="baseCritRate" val="20" />
+		<set name="blowChance" val="30" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-337" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1800" />
+		<set name="icon" val="icon.skill0344" />
+		<set name="magicLvl" val="76" />
+		<set name="mpConsume" val="77" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="5773" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="DEATH" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="baseCritRate" val="#ench2CritRate" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="element" val="0" /> <!-- Fire -->
+		<enchant3 name="elementPower" val="#enchelementPower" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant4 name="element" val="1" /> <!-- Water -->
+		<enchant4 name="elementPower" val="#enchelementPower" />
+		<enchant4 name="magicLvl" val="#enchMagicLvl" />
+		<enchant5 name="element" val="2" /> <!-- Wind -->
+		<enchant5 name="elementPower" val="#enchelementPower" />
+		<enchant5 name="magicLvl" val="#enchMagicLvl" />
+		<enchant6 name="element" val="3" /> <!-- Earth -->
+		<enchant6 name="elementPower" val="#enchelementPower" />
+		<enchant6 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="pvpPower" val="#ench7Duel" />
+		<cond msgId="113" addName="1">
+			<using kind="DAGGER,DUALDAGGER" />
+		</cond>
+		<for>
+			<effect name="FatalBlow" />
+			<effect name="Lethal">
+				<param halfLethal="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="345" levels="1" name="Sonic Rage">
+		<!-- Attacks the enemy with a devastating burst of energy. Requires a dualsword. Possible up to stage 8. Over-hit and critical hit are possible. -->
+		<set name="baseCritRate" val="10" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-340" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="1500" />
+		<set name="hpConsume" val="50" />
+		<set name="icon" val="icon.skill0345" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="5" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+		<selfEffects>
+			<effect name="FocusEnergy">
+				<param charge="8" />
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="346" levels="1" name="Raging Force">
+		<!-- Attacks the enemy with a devastating burst of wind energy. Requires a hand-to-hand weapon. Possible up to stage 8. Over-hit and critical hit are possible. -->
+		<set name="baseCritRate" val="10" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-340" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="1500" />
+		<set name="hpConsume" val="50" />
+		<set name="icon" val="icon.skill0346" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="5" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="113" addName="1">
+			<using kind="DUALFIST" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+		<selfEffects>
+			<effect name="FocusEnergy">
+				<param charge="8" />
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="347" levels="1" name="Earthquake" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+		<!-- Supplements the user's P. Atk. with 4848 Power in an Earth-shattering spear thrust. Requires a polearm. Over-hit and critical hit are possible. Ignores Shield Defense. Target may be canceled. -->
+		<table name="#ench1Power"> 5201 5228 5254 5281 5307 5334 5360 5387 5413 5440 5466 5693 5519 5546 5572 </table>
+		<table name="#ench2hpConsume"> 328 317 306 294 283 272 260 249 238 227 215 204 193 181 170 </table>
+		<table name="#ench2mpConsume"> 75 72 70 67 65 62 60 57 54 52 49 47 44 42 39 </table>
+		<table name="#ench3elementPower"> 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="affectLimit" val="6-12" />
+		<set name="affectRange" val="150" />
+		<set name="baseCritRate" val="20" />
+		<set name="effectPoint" val="-679" />
+		<set name="element" val="3" /> <!-- Earth -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1800" />
+		<set name="hpConsume" val="340" />
+		<set name="icon" val="icon.skill0347" />
+		<set name="ignoreShld" val="true" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="78" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="4848" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="AURA" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="hpConsume" val="#ench2hpConsume" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<enchant3 name="element" val="3" /> <!-- Earth -->
+		<enchant3 name="elementPower" val="#ench3elementPower" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="POLE" />
+		</cond>
+		<for>
+			<effect name="TargetCancel">
+				<param chance="60" />
+			</effect>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="348" levels="1" name="Spoil Crush">
+		<!-- Causes a change inside the monster while attacking the enemy and permits use of the Sweeper skill. Requires a sword or blunt weapon to be equipped. Over-hit and Critical are possible. -->
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="100" />
+		<set name="effectPoint" val="-337" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1700" />
+		<set name="icon" val="icon.skill0348" />
+		<set name="magicLvl" val="76" />
+		<set name="mpConsume" val="70" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="5" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="113" addName="1">
+			<using kind="SWORD,BLUNT" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Spoil" />
+		</for>
+	</skill>
+	<skill id="349" levels="1" name="Song of Renewal" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, decreases all party members' physical/magic skill MP consumption by 5% and re-use time by 20%. Additionally increases MP consumption when singing while song/dance is in effect. -->
+		<table name="#ench1AbnormalTimes"> 128 136 144 152 160 168 176 184 192 200 208 216 224 232 240 </table>
+		<table name="#ench2mpConsume"> 58 56 54 52 50 48 46 44 42 40 38 36 34 32 30 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SONG_OF_RENEWAL" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="666" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0349" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mReuse" val="0.8" />
+				<mul stat="pReuse" val="0.8" />
+				<mul stat="magicalMpConsumeRate" val="0.95" />
+				<mul stat="physicalMpConsumeRate" val="0.95" />
+				<mul stat="danceMpConsumeRate" val="0.95" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="350" levels="1" name="Physical Mirror">
+		<!-- For 5 minutes, reflects physical buffs/de-buffs with 30% probability and magic buffs/de-buffs with 10% probability. Requires a shield. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="REFLECT_ABNORMAL" />
+		<set name="effectPoint" val="669" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0350" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="150000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<using kind="SHIELD" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="reflectSkillPhysic" val="30">
+					<using kind="SHIELD" />
+				</add>
+				<add stat="reflectSkillMagic" val="10">
+					<using kind="SHIELD" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="351" levels="1" name="Magical Mirror">
+		<!-- For 5 minutes, reflects physical buffs/de-buffs with 10% probability and magic buffs/de-buffs with 30% probability. Requires a shield. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="REFLECT_ABNORMAL" />
+		<set name="effectPoint" val="669" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0351" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="150000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<using kind="SHIELD" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="reflectSkillPhysic" val="10">
+					<using kind="SHIELD" />
+				</add>
+				<add stat="reflectSkillMagic" val="30">
+					<using kind="SHIELD" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="352" levels="1" name="Shield Bash" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6" enchantGroup5="6">
+		<!-- Hits the enemy with user's shield, stunning them for 2 seconds. Requires a shield. Target cancel is possible. -->
+		<table name="#ench-Res"> 7 10 13 15 18 21 23 26 29 31 34 37 39 42 45 </table>
+		<table name="#ench1ActivateRates"> 81 82 82 83 84 84 85 86 86 87 87 88 89 89 90 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="2" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-666" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0352" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="18" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="SHOCK" />
+		<enchant1 name="activateRate" val="#ench1ActivateRates" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant4 name="magicLvl" val="#enchMagicLvl" />
+		<enchant5 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="SHIELD" />
+		</cond>
+		<for>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="Stun" />
+		</for>
+		<enchant2for>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="Stun">
+				<sub stat="fireRes" val="#ench-Res" />
+			</effect>
+		</enchant2for>
+		<enchant3for>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="Stun">
+				<sub stat="waterRes" val="#ench-Res" />
+			</effect>
+		</enchant3for>
+		<enchant4for>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="Stun">
+				<sub stat="windRes" val="#ench-Res" />
+			</effect>
+		</enchant4for>
+		<enchant5for>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="Stun">
+				<sub stat="earthRes" val="#ench-Res" />
+			</effect>
+		</enchant5for>
+	</skill>
+	<skill id="353" levels="1" name="Shield Slam" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+		<!-- Stuns the enemy with a shield, blocking the enemy's physical skills for 1 minute. Requires a shield. Target cancel is possible. -->
+		<table name="#ench-Res"> 7 10 13 15 18 21 23 26 29 31 34 37 39 42 45 </table>
+		<table name="#ench1ActivateRates"> 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="SILENCE_PHYSICAL" />
+		<set name="abnormalVisualEffect" val="SILENCE" />
+		<set name="activateRate" val="40" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-666" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0353" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="35" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="DERANGEMENT" />
+		<enchant1 name="activateRate" val="#ench1ActivateRates" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="SHIELD" />
+		</cond>
+		<for>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="PhysicalMute" />
+		</for>
+		<enchant2for>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="PhysicalMute">
+				<sub stat="holyRes" val="#ench-Res" />
+			</effect>
+		</enchant2for>
+		<enchant3for>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="PhysicalMute">
+				<sub stat="darkRes" val="#ench-Res" />
+			</effect>
+		</enchant3for>
+	</skill>
+	<skill id="354" levels="1" name="Hamstring Shot" enchantGroup1="6" enchantGroup2="6">
+		<!-- Supplements the user's P. Atk. with 1973 Power to decrease the enemy's Speed by 30% for 1 minute. Requires a bow. Over-hit and critical hit are possible. -->
+		<table name="#ench1Power"> 2168 2179 2190 2201 2212 2223 2234 2245 2256 2267 2278 2289 2300 2311 2322 </table>
+		<table name="#ench2ActivateRates"> 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="SPEED_DOWN" />
+		<set name="activateRate" val="40" />
+		<set name="baseCritRate" val="15" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-507" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill0354" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="78" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="power" val="1973" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="ONE" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="activateRate" val="#ench2ActivateRates" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="BOW" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Debuff">
+				<mul stat="runSpd" val="0.7" />
+			</effect>
+		</for>
+		<enchant2for>
+			<effect name="PhysicalAttack" />
+			<effect name="Debuff">
+				<mul stat="runSpd" val="0.7" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="355" levels="1" name="Focus Death" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, decreases user's Critical Rate by 30% and frontal Critical Damage by 30%. Increases the probability of deadly attack by 60% and rear Critical Damage by 90%. Requires a dagger. -->
+		<table name="#ench1blowRate"> 1.606 1.613 1.62 1.626 1.633 1.64 1.646 1.653 1.66 1.666 1.673 1.68 1.686 1.693 1.7 </table>
+		<table name="#ench2cAtk"> 1.91 1.91 1.91 1.92 1.92 1.92 1.92 1.93 1.93 1.93 1.93 1.94 1.94 1.94 1.95 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="FOCUS_DAGGER" />
+		<set name="effectPoint" val="669" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0355" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="DAGGER,DUALDAGGER" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="0.7" /> <!-- Decreases critical attack rate by 30% -->
+				<mul stat="blowRate" val="1.6" /> <!-- Increases blow land rate by 60% -->
+				<mul stat="critDmgPos" val="0.7"> <!-- Decreases frontal critical damage by 30% -->
+					<player front="true" />
+				</mul>
+				<mul stat="critDmgPos" val="1.9"> <!-- Increases rear critical damage by 90% -->
+					<player behind="true" />
+				</mul>
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="Buff">
+				<mul stat="critRate" val="0.7" />
+				<mul stat="blowRate" val="#ench1blowRate" />
+				<mul stat="critDmgPos" val="0.7">
+					<player front="true" />
+				</mul>
+				<mul stat="critDmgPos" val="1.9">
+					<player behind="true" />
+				</mul>
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="Buff">
+				<mul stat="critRate" val="0.7" />
+				<mul stat="blowRate" val="1.6" />
+				<mul stat="critDmgPos" val="0.7">
+					<player front="true" />
+				</mul>
+				<mul stat="critDmgPos" val="#ench2cAtk">
+					<player behind="true" />
+				</mul>
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="356" levels="1" name="Focus Chance" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, decreases frontal Critical Rate by 30%, side Critical Rate by 30% and rear Critical Rate by 60%. Requires a dagger. -->
+		<table name="#ench1rCrit"> 1.903 1.906 1.909 1.913 1.916 1.919 1.923 1.926 1.929 1.933 1.936 1.939 1.942 1.946 1.949 </table>
+		<table name="#ench2rCrit"> 1.303 1.306 1.31 1.313 1.316 1.32 1.323 1.326 1.33 1.333 1.336 1.34 1.343 1.346 1.35 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="FOCUS_DAGGER" />
+		<set name="effectPoint" val="669" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0356" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="DAGGER,DUALDAGGER" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="critRatePos" val="0.7"> <!-- Decreases frontal critical attack rate by 30% -->
+					<player front="true" />
+				</mul>
+				<mul stat="critRatePos" val="1.3"> <!-- Increase side critical attack rate by 30% -->
+					<and>
+						<player front="false" />
+						<player behind="false" />
+					</and>
+				</mul>
+				<mul stat="critRatePos" val="1.6"> <!-- Increase rear critical attack rate by 60% -->
+					<player behind="true" />
+				</mul>
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="Buff">
+				<mul stat="critRatePos" val="0.7"> <!-- Critical Chance from front -30% -->
+					<player front="true" />
+				</mul>
+				<mul stat="critRatePos" val="1.3"> <!-- Critical Chance from side +30% -->
+					<and>
+						<player front="false" />
+						<player behind="false" />
+					</and>
+				</mul>
+				<mul stat="critRatePos" val="#ench1rCrit"> <!-- Critical Chance from back +60% -->
+					<player behind="true" />
+				</mul>
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="Buff">
+				<mul stat="critRatePos" val="0.7"> <!-- Critical Chance from front -30% -->
+					<player front="true" />
+				</mul>
+				<mul stat="critRatePos" val="#ench2rCrit"> <!-- Critical Chance from side +30% -->
+					<and>
+						<player front="false" />
+						<player behind="false" />
+					</and>
+				</mul>
+				<mul stat="critRatePos" val="1.6"> <!-- Critical Chance from back +60% -->
+					<player behind="true" />
+				</mul>
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="357" levels="1" name="Focus Power" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, decreases frontal Critical Damage by 30%. Increases side Critical Damage by 30% and rear Critical Damage by 60%. Requires a dagger. -->
+		<table name="#ench1cAtk"> 1.61 1.62 1.62 1.63 1.64 1.64 1.65 1.65 1.66 1.67 1.67 1.68 1.69 1.69 1.7 </table>
+		<table name="#ench2cAtk"> 1.31 1.32 1.32 1.33 1.34 1.34 1.35 1.36 1.36 1.37 1.37 1.38 1.39 1.39 1.4 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="FOCUS_DAGGER" />
+		<set name="effectPoint" val="669" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0357" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="DAGGER,DUALDAGGER" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmgPos" val="0.7"> <!-- Decreases frontal critical attack damage by 30% -->
+					<player front="true" />
+				</mul>
+				<mul stat="critDmgPos" val="1.3"> <!-- Increases side critical attack damage by 30% -->
+					<and>
+						<player front="false" />
+						<player behind="false" />
+					</and>
+				</mul>
+				<mul stat="critDmgPos" val="1.6"> <!-- Increases rear critical attack damage by 60% -->
+					<player behind="true" />
+				</mul>
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="Buff">
+				<mul stat="critDmgPos" val="0.7"> <!-- Critical Damage from front -30% -->
+					<player front="true" />
+				</mul>
+				<mul stat="critDmgPos" val="1.3"> <!-- Critical Damage from side +30% -->
+					<and>
+						<player front="false" />
+						<player behind="false" />
+					</and>
+				</mul>
+				<mul stat="critDmgPos" val="#ench1cAtk"> <!-- Critical Damage from back + enchant % -->
+					<player behind="true" />
+				</mul>
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="Buff">
+				<mul stat="critDmgPos" val="0.7"> <!-- Critical Damage from front -30% -->
+					<player front="true" />
+				</mul>
+				<mul stat="critDmgPos" val="#ench2cAtk"> <!-- Critical Damage from side + enchant % -->
+					<and>
+						<player front="false" />
+						<player behind="false" />
+					</and>
+				</mul>
+				<mul stat="critDmgPos" val="1.6"> <!-- Critical Damage from back +60% -->
+					<player behind="true" />
+				</mul>
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="358" levels="1" name="Bluff" enchantGroup1="6">
+		<!-- Deceives the enemy into turning his back, losing his urge to attack and becoming stunned for 9 seconds. Requires a dagger. Target cancel is possible. -->
+		<table name="#ench1ActivateRates"> 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="40" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-1" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0358" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="35" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="DERANGEMENT" />
+		<enchant1 name="activateRate" val="#ench1ActivateRates" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="DAGGER,DUALDAGGER" />
+		</cond>
+		<for>
+			<effect name="Bluff">
+				<param chance="80" />
+			</effect>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="DeleteHateOfMe">
+				<param chance="80" />
+			</effect>
+			<effect name="Stun" />
+		</for>
+		<enchant1for>
+			<effect name="Bluff">
+				<param chance="80" />
+			</effect>
+			<effect name="TargetCancel">
+				<param chance="80" />
+			</effect>
+			<effect name="DeleteHateOfMe">
+				<param chance="80" />
+			</effect>
+			<effect name="Stun" />
+		</enchant1for>
+	</skill>
+	<skill id="359" levels="1" name="Eye of Hunter" enchantGroup1="5" enchantGroup2="5">
+		<!-- Increases P. Atk. toward insects, plants and animals by 30% for 10 minutes. -->
+		<table name="#ench1Traits"> 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 </table>
+		<table name="#ench2AbnormalTimes"> 640 680 720 760 800 840 880 920 960 1000 1040 1080 1120 1160 1200 </table>
+		<table name="#ench2Traits"> 31 31 31 32 32 32 33 33 33 34 34 34 34 35 35 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="DETECT_WEAKNESS" />
+		<set name="effectPoint" val="666" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0359" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="70" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="AttackTrait">
+				<param BUG_WEAKNESS="30" />
+				<param PLANT_WEAKNESS="30" />
+				<param ANIMAL_WEAKNESS="30" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="AttackTrait">
+				<param BUG_WEAKNESS="#ench1Traits" />
+				<param PLANT_WEAKNESS="#ench1Traits" />
+				<param ANIMAL_WEAKNESS="#ench1Traits" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="AttackTrait">
+				<param BUG_WEAKNESS="#ench2Traits" />
+				<param PLANT_WEAKNESS="#ench2Traits" />
+				<param ANIMAL_WEAKNESS="#ench2Traits" />
+			</effect>
+		</enchant2for>
+	</skill>
+	<skill id="360" levels="1" name="Eye of Slayer" enchantGroup1="5" enchantGroup2="5">
+		<!-- Increases P. Atk. toward monsters, magic creatures, Giants and Dragons by 30% for 10 minutes. -->
+		<table name="#ench1Traits"> 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 </table>
+		<table name="#ench2AbnormalTimes"> 640 680 720 760 800 840 880 920 960 1000 1040 1080 1120 1160 1200 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="DETECT_WEAKNESS" />
+		<set name="effectPoint" val="669" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0360" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="71" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="SELF" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<for>
+			<effect name="AttackTrait">
+				<param BEAST_WEAKNESS="30" />
+				<param CONSTRUCT_WEAKNESS="30" />
+				<param GIANT_WEAKNESS="30" />
+				<param DRAGON_WEAKNESS="30" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="AttackTrait">
+				<param BEAST_WEAKNESS="#ench1Traits" />
+				<param CONSTRUCT_WEAKNESS="#ench1Traits" />
+				<param GIANT_WEAKNESS="#ench1Traits" />
+				<param DRAGON_WEAKNESS="#ench1Traits" />
+			</effect>
+		</enchant1for>
+	</skill>
+	<skill id="361" levels="1" name="Shock Blast" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+		<!-- Supplement's user's P. Atk. with 2486 Power to create a powerful shock wave that stuns the enemy for 8 seconds and decreases their P. Def. by 30% and M. Def. by 30%. Requires a polearm. Over-hit and critical hit are possible. Ignores Shield Defense. Target cancel is possible. -->
+		<table name="#ench1Power"> 2731 2745 2759 2773 2787 2800 2814 2828 2842 2856 2870 2884 2898 2912 2926 </table>
+		<table name="#ench2hpConsume"> 491 476 461 446 430 415 400 385 369 354 339 324 308 293 278 </table>
+		<table name="#ench2mpConsume"> 51 49 48 46 45 43 41 40 38 37 35 33 32 30 29 </table>
+		<table name="#ench3ActivateRates"> 42 45 48 50 53 56 58 61 64 66 69 72 74 77 80 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="40" />
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="150" />
+		<set name="baseCritRate" val="20" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="500" />
+		<set name="effectPoint" val="-507" />
+		<set name="effectRange" val="1000" />
+		<set name="hitTime" val="2500" />
+		<set name="hpConsume" val="507" />
+		<set name="icon" val="icon.skill0361" />
+		<set name="ignoreShld" val="true" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="53" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="power" val="2486" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="AREA" />
+		<set name="trait" val="SHOCK" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="hpConsume" val="#ench2hpConsume" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<enchant3 name="activateRate" val="#ench3ActivateRates" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="POLE" />
+		</cond>
+		<for>
+			<effect name="TargetCancel">
+				<param chance="60" />
+			</effect>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun">
+				<mul stat="pDef" val="0.7" />
+				<mul stat="mDef" val="0.7" />
+			</effect>
+		</for>
+		<enchant3for>
+			<effect name="TargetCancel">
+				<param chance="60" />
+			</effect>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun">
+				<mul stat="pDef" val="0.7" />
+				<mul stat="mDef" val="0.7" />
+			</effect>
+		</enchant3for>
+	</skill>
+	<skill id="362" levels="1" name="Armor Crush" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+		<!-- Supplements the user's P. Atk. with 3077 Power to stun the enemy for 8 seconds and decrease their P. Def. by 30% and M. Def. by 30%. Requires a sword, blunt weapon, two-handed sword or two-handed blunt weapon. Over-hit and critical hit are possible. Ignores Shield Defense. -->
+		<table name="#ench1Power"> 3420 3476 3532 3588 3644 3700 3756 3812 3868 3924 3980 4036 4092 4148 4204 </table>
+		<table name="#ench2hpConsume"> 327 317 307 297 287 277 267 256 246 236 226 216 206 196 185 </table>
+		<table name="#ench2mpConsume"> 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 </table>
+		<table name="#ench3ActivateRates"> 42 45 48 50 53 56 58 61 64 66 69 72 74 77 80 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="40" />
+		<set name="baseCritRate" val="20" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="100" />
+		<set name="effectPoint" val="-507" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1900" />
+		<set name="hpConsume" val="338" />
+		<set name="icon" val="icon.skill0362" />
+		<set name="ignoreShld" val="true" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="35" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="power" val="3077" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="SHOCK" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="hpConsume" val="#ench2hpConsume" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<enchant3 name="activateRate" val="#ench3ActivateRates" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="BLUNT,SWORD" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun">
+				<mul stat="pDef" val="0.7" />
+				<mul stat="mDef" val="0.7" />
+			</effect>
+		</for>
+		<enchant3for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun">
+				<mul stat="pDef" val="0.7" />
+				<mul stat="mDef" val="0.7" />
+			</effect>
+		</enchant3for>
+	</skill>
+	<skill id="363" levels="1" name="Song of Meditation" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, increases all party members' MP Recovery Bonus by 20%, and decreases magic skill use MP consumption by 10%. Additionally increases MP consumption when singing while song/dance is in effect. -->
+		<table name="#ench1AbnormalTimes"> 128 136 144 152 160 168 176 184 192 200 208 216 224 232 240 </table>
+		<table name="#ench2mpConsume"> 58 56 54 52 50 48 46 44 42 40 38 36 34 32 30 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SONG_OF_MEDITATION" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="666" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0363" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regMp" val="1.2" />
+				<mul stat="magicalMpConsumeRate" val="0.9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="364" levels="1" name="Song of Champion" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, decreases all party members' MP consumption by 20% and reuse time by 10% for physical/sing/dance skill use. The MP consumption increases additionally when singing while sing/dance effect lasts. -->
+		<table name="#ench1AbnormalTimes"> 128 136 144 152 160 168 176 184 192 200 208 216 224 232 240 </table>
+		<table name="#ench2mpConsume"> 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SONG_OF_CHAMPION" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="669" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0364" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pReuse" val="0.9" />
+				<mul stat="physicalMpConsumeRate" val="0.8" />
+				<mul stat="dReuse" val="0.9" />
+				<mul stat="danceMpConsumeRate" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="365" levels="1" name="Siren's Dance" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, increases all party members' magic damage by 100%. Additionally increases MP consumption when dancing while song/dance is in effect. Requires a dualsword. -->
+		<table name="#ench1AbnormalTimes"> 128 136 144 152 160 168 176 184 192 200 208 216 224 232 240 </table>
+		<table name="#ench2mpConsume"> 58 56 54 52 50 48 46 44 42 40 38 36 34 32 30 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="DANCE_OF_SIREN" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="669" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0365" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="mCritRate" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="366" levels="1" name="Dance of Shadows" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, decreases all party members' Speed by 50% and prevents them from being pre-emptively attacked by monsters. Additionally increases MP consumption when dancing while song/dance is in effect. Requires a dualsword. -->
+		<table name="#ench1AbnormalTimes"> 128 136 144 152 160 168 176 184 192 200 208 216 224 232 240 </table>
+		<table name="#ench2mpConsume"> 58 56 54 52 50 48 46 44 42 40 38 36 34 32 30 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="DANCE_OF_SHADOW" />
+		<set name="abnormalVisualEffect" val="STEALTH" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="666" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0366" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpConsume" val="#ench2mpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="SilentMove">
+				<mul stat="runSpd" val="0.5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="367" levels="1" name="Dance of Medusa" enchantGroup1="5" enchantGroup2="5">
+		<!-- Dances to stir up the illusion of Medusa. Petrifies nearby enemies for 10 seconds. Requires a dualsword. -->
+		<table name="#ench1ActivateRates"> 42 45 48 50 53 56 58 61 64 66 69 72 74 77 80 </table>
+		<table name="#ench2AbnormalTimes"> 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 </table>
+		<table name="#ench2ActivateRates"> 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="TURN_STONE" />
+		<set name="abnormalVisualEffect" val="FLESH_STONE" />
+		<set name="activateRate" val="40" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="150" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-666" />
+		<set name="element" val="3" /> <!-- Earth -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0367" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="53" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="AURA" />
+		<enchant1 name="activateRate" val="#ench1ActivateRates" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
+		<enchant2 name="activateRate" val="#ench2ActivateRates" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="Petrification" />
+		</for>
+	</skill>
+	<skill id="368" levels="1" name="Vengeance" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+		<!-- Provokes nearby enemies to switch targets and attack through Power 7987. For 30 seconds, increases P. Def. by 5400, M. Def. by 4050, and Resistance to buff-canceling attacks by 80%, and becomes unable to move. Requires a shield. -->
+		<table name="#ench1EffectPoints"> -8452 -8768 -9085 -9401 -9718 -10034 -10351 -10667 -10983 -11300 -11616 -11933 -12249 -12566 -12882 </table>
+		<table name="#ench2decreasePenalty"> 0.1 0.12 0.13 0.15 0.16 0.17 0.19 0.2 0.21 0.23 0.24 0.26 0.27 0.28 0.3 </table>
+		<table name="#ench3Reuse"> 870000 840000 811000 781000 751000 722000 692000 662000 633000 603000 573000 544000 514000 484000 455000 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
+		<set name="effectPoint" val="-7985" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0368" />
+		<set name="magicLvl" val="77" />
+		<set name="mpConsume" val="35" />
+		<set name="operateType" val="A3" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="AURA" />
+		<enchant1 name="effectPoint" val="#ench1EffectPoints" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="reuseDelay" val="#ench3Reuse" />
+		<cond msgId="113" addName="1">
+			<using kind="SHIELD" />
+		</cond>
+		<for>
+			<effect name="TargetMeProbability">
+				<param chance="40" />
+			</effect>
+		</for>
+		<selfEffects>
+			<effect name="ImmobileBuff">
+				<add stat="pDef" val="5400" />
+				<add stat="mDef" val="4050" />
+				<sub stat="cancelVuln" val="80" />
+			</effect>
+		</selfEffects>
+		<enchant2for>
+			<effect name="TargetMeProbability">
+				<param chance="40" />
+			</effect>
+		</enchant2for>
+		<enchant2selfEffects>
+			<effect name="Buff">
+				<add stat="pDef" val="5400" />
+				<add stat="mDef" val="4050" />
+				<sub stat="cancelVuln" val="80" />
+				<mul stat="runSpd" val="#ench2decreasePenalty" />
+			</effect>
+		</enchant2selfEffects>
+	</skill>
+	<skill id="369" levels="1" name="Evade Shot" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6" enchantGroup5="6" enchantGroup6="6" enchantGroup7="6" enchantGroup8="6">
+		<!-- Attacks the enemy with 2020 Power added to P. Atk. and increases Evasion by 6. Requires a bow. Over-hit is possible. -->
+		<table name="#ench1Power"> 2168 2179 2190 2201 2212 2223 2234 2245 2256 2267 2278 2289 2300 2311 2322 </table>
+		<table name="#ench2rEvas"> 7 7 7 7 8 8 8 8 8 9 9 9 9 9 10 </table>
+		<table name="#ench3MpConsume"> 110 106 102 98 95 91 87 83 80 76 72 68 65 61 57 </table>
+		<table name="#enchDuel"> 2077 2134 2191 2248 2305 2362 2419 2476 2533 2590 2647 2704 2761 2818 2875 </table>
+		<table name="#enchelementPower"> 3 6 10 13 16 20 23 26 30 33 36 40 43 46 50 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="SPEED_UP_SPECIAL" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-337" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill0369" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="114" />
+		<set name="operateType" val="A3" />
+		<set name="overHit" val="true" />
+		<set name="power" val="2020" />
+		<set name="reuseDelay" val="75000" />
+		<set name="targetType" val="ONE" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant3 name="mpConsume" val="#ench3MpConsume" />
+		<enchant4 name="element" val="0" /> <!-- Fire -->
+		<enchant4 name="elementPower" val="#enchelementPower" />
+		<enchant4 name="magicLvl" val="#enchMagicLvl" />
+		<enchant5 name="element" val="1" /> <!-- Water -->
+		<enchant5 name="elementPower" val="#enchelementPower" />
+		<enchant5 name="magicLvl" val="#enchMagicLvl" />
+		<enchant6 name="element" val="2" /> <!-- Wind -->
+		<enchant6 name="elementPower" val="#enchelementPower" />
+		<enchant6 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="element" val="3" /> <!-- Earth -->
+		<enchant7 name="elementPower" val="#enchelementPower" />
+		<enchant7 name="magicLvl" val="#enchMagicLvl" />
+		<enchant8 name="magicLvl" val="#enchMagicLvl" />
+		<enchant8 name="pvpPower" val="#enchDuel" />
+		<cond msgId="113" addName="1">
+			<using kind="BOW" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+		<selfEffects>
+			<effect name="Buff">
+				<add stat="rEvas" val="6" />
+			</effect>
+		</selfEffects>
+		<enchant2for>
+			<effect name="PhysicalAttack" />
+		</enchant2for>
+		<enchant2selfEffects>
+			<effect name="Buff">
+				<add stat="rEvas" val="#ench2rEvas" />
+			</effect>
+		</enchant2selfEffects>
+	</skill>
+	<skill id="370" levels="3" name="Clan Body">
+		<!-- Increases clan members' Max HP by 3%. It only affects those who are of an Heir rank or higher. -->
+		<table name="#maxHp"> 1.03 1.05 1.06 </table>
+		<set name="icon" val="icon.skill0370" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="#maxHp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="371" levels="3" name="Clan Spirituality">
+		<!-- Increases clan members' Max CP by 6%. It only affects those who are of a Baron rank or higher. -->
+		<table name="#maxCp"> 1.06 1.1 1.12 </table>
+		<set name="icon" val="icon.skill0371" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxCp" val="#maxCp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="372" levels="3" name="Clan Soul">
+		<!-- Increases clan members' Max MP by 3%. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#maxMp"> 1.03 1.05 1.06 </table>
+		<set name="icon" val="icon.skill0372" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="#maxMp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="373" levels="3" name="Clan Regeneration">
+		<!-- Increases clan members' HP regeneration by 3%. It only affects those who are of an Heir rank or higher. -->
+		<table name="#regHp"> 1.03 1.05 1.06 </table>
+		<set name="icon" val="icon.skill0373" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regHp" val="#regHp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="374" levels="3" name="Clan Morale">
+		<!-- Increases clan members' CP regeneration by 6%. It only affects those who are of an Elder rank or higher. -->
+		<table name="#regCp"> 1.06 1.1 1.12 </table>
+		<set name="icon" val="icon.skill0374" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regCp" val="#regCp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="375" levels="3" name="Clan Clarity">
+		<!-- Increases clan members' MP regeneration by 3%. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#regMp"> 1.03 1.05 1.06 </table>
+		<set name="icon" val="icon.skill0375" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regMp" val="#regMp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="376" levels="3" name="Clan Might">
+		<!-- Increases clan members' P. Atk. by 3%. It only affects those who are of a Knight rank or higher. -->
+		<table name="#pAtk"> 1.03 1.05 1.06 </table>
+		<set name="icon" val="icon.skill0376" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="#pAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="377" levels="3" name="Clan Shield">
+		<!-- Increases clan members' P. Def. by 3%. It only affects those who are of a Knight rank or higher. -->
+		<table name="#pDef"> 1.03 1.05 1.06 </table>
+		<set name="icon" val="icon.skill0377" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="#pDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="378" levels="3" name="Clan Empower">
+		<!-- Increases clan members' M. Atk by 6%. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#mAtk"> 1.06 1.1 1.12 </table>
+		<set name="icon" val="icon.skill0378" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="#mAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="379" levels="3" name="Clan Magic Resistance">
+		<!-- Increases clan members' M. Def by 6%. It only affects those who are of an Heir rank or higher. -->
+		<table name="#mDef"> 1.06 1.1 1.12 </table>
+		<set name="icon" val="icon.skill0379" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mDef" val="#mDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="380" levels="3" name="Clan Guidance">
+		<!-- Increases clan members' Accuracy by 1. It only affects those who are of a Baron rank or higher. -->
+		<table name="#accCombat"> 1 2 3 </table>
+		<set name="icon" val="icon.skill0380" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="#accCombat" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="381" levels="3" name="Clan Agility">
+		<!-- Increases clan members' Evasion by 1. It only affects those who are of a Baron rank or higher. -->
+		<table name="#rEvas"> 1 2 3 </table>
+		<set name="icon" val="icon.skill0381" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="rEvas" val="#rEvas" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="382" levels="3" name="Clan Shield Defence">
+		<!-- Increases clan members' Shield Defense by 12%. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#rShld"> 1.12 1.2 1.24 </table>
+		<set name="icon" val="icon.skill0382" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="rShld" val="#rShld" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="383" levels="3" name="Clan Shield Block">
+		<!-- Increases clan members' Shield Defense by 24%. It only affects those who are of a Baron rank or higher. -->
+		<table name="#sDef"> 1.24 1.4 1.48 </table>
+		<set name="icon" val="icon.skill0383" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="sDef" val="#sDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="384" levels="3" name="Clan Cyclonic Resistance">
+		<!-- Increases clan members' Resistance to Water/Wind attacks by 3. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#res"> 3 5 6 </table>
+		<set name="icon" val="icon.skill0384" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="windRes" val="#res" />
+				<add stat="waterRes" val="#res" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="385" levels="3" name="Clan Magmatic Resistance">
+		<!-- Increases clan members' Resistance to Fire/Earth attacks by 3. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#res"> 3 5 6 </table>
+		<set name="icon" val="icon.skill0385" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="fireRes" val="#res" />
+				<add stat="earthRes" val="#res" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="386" levels="3" name="Clan Resist Shock">
+		<!-- Increases clan members' Resistance to Stun attacks by 12. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#trait_shock"> 12 20 24 </table>
+		<set name="icon" val="icon.skill0386" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SHOCK="#trait_shock" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="387" levels="3" name="Clan Resist Hold">
+		<!-- Increases clan members' Resistance to Hold attacks by 12. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#trait_hold"> 12 20 24 </table>
+		<set name="icon" val="icon.skill0387" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param HOLD="#trait_hold" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="388" levels="3" name="Clan Resist Sleep">
+		<!-- Increases clan members' Resistance to Sleep attacks by 12. It only affects those who are of a Viscount rank or higher. -->
+		<table name="#trait_sleep"> 12 20 24 </table>
+		<set name="icon" val="icon.skill0388" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SLEEP="#trait_sleep" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="389" levels="3" name="Clan Wind Walk">
+		<!-- Increases clan members' Speed by 3. It only affects those who are of a Count rank or higher. -->
+		<table name="#runSpd"> 3 5 6 </table>
+		<set name="icon" val="icon.skill0389" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="#runSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="390" levels="3" name="Clan Luck">
+		<!-- Decreases clan members' experience loss and the chance of other death penalties when killed by a monster or player. It only affects those who are of an Heir rank or higher. -->
+		<table name="#byPvp"> 0.7 0.5 0.4 </table>
+		<table name="#byMob"> 0.88 0.8 0.76 </table>
+		<set name="icon" val="icon.skill0390" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="reduceExpLostByPvp" val="#byPvp" />
+				<mul stat="reduceDeathPenaltyByPvp" val="#byPvp" />
+				<mul stat="reduceExpLostByMob" val="#byMob" />
+				<mul stat="reduceDeathPenaltyByMob" val="#byMob" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="391" levels="1" name="Clan Imperium">
+		<!-- Grants the privilege of Command Channel formation. It only effects Sage / Elder class and above. -->
+		<set name="icon" val="icon.skill0391" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="392" levels="1" name="none">
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="393" levels="1" name="none">
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="394" levels="1" name="none">
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="395" levels="1" name="Heroic Miracle">
+		<!-- For 30 seconds, increases P. Def. by 5400, M. Def. by 4050, Resistance to buff-canceling attacks by 80, and Speed by 5. Consumes 40 Soul Ore. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="HERO_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="676" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0395" />
+		<set name="itemConsumeCount" val="40" />
+		<set name="itemConsumeId" val="1785" /> <!-- Soul Ore -->
+		<set name="magicLvl" val="-1" />
+		<set name="mpConsume" val="72" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<sub stat="cancelVuln" val="80" />
+				<add stat="mDef" val="4050" />
+				<add stat="pDef" val="5400" />
+				<add stat="runSpd" val="5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="396" levels="1" name="Heroic Berserker">
+		<!-- For 2 minutes, increases the user's Accuracy by 8, P. Atk. by 500, M. Atk. by 500, Atk. Spd. by 100, Casting Spd. by 100, Speed by 20, Resistance to buff-canceling attacks by 80, and the effect of received HP recovery magic by 100%. Bestows complete Resistance to de-buff attacks. Decreases P. Def. by 25%, M. Def. by 25%, and Evasion by 8. Consumes 40 Soul Ore. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="HERO_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="676" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0396" />
+		<set name="itemConsumeCount" val="40" />
+		<set name="itemConsumeId" val="1785" /> <!-- Soul Ore -->
+		<set name="magicLvl" val="-1" />
+		<set name="mpConsume" val="72" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="8" />
+				<sub stat="cancelVuln" val="80" />
+				<set stat="debuffImmunity" val="1" />
+				<mul stat="healEffect" val="2" />
+				<add stat="mAtk" val="500" />
+				<add stat="mAtkSpd" val="100" />
+				<sub stat="mDef" val="25" />
+				<add stat="pAtk" val="500" />
+				<add stat="pAtkSpd" val="100" />
+				<mul stat="pDef" val="0.75" />
+				<sub stat="rEvas" val="8" />
+				<add stat="runSpd" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="397" levels="1" name="none">
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="398" levels="1" name="none">
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="399" levels="1" name="none">
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+</list>

@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="27400" level="51" type="L2Monster" name="Shilen's Evil Thoughts">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="5975" level="1" /> <!-- Dark Attack -->
+			<skill name="Skill02_ID" id="5976" level="1" /> <!-- Dark Storm -->
+			<param name="Skill01_Probablity" value="1000" />
+			<param name="Skill02_Probablity" value="1000" />
+		</parameters>
+		<race>ETC</race>
+		<sex>ETC</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1470.41596" hpRegen="6.5" mp="775.8" mpRegen="2.4" />
+			<attack physical="321.13207" magical="219.29157" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="204.85194" magical="149.90176" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="100" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="19" /> <!-- Others -->
+			<skill id="5975" level="1" /> <!-- Dark Attack -->
+			<skill id="5976" level="1" /> <!-- Dark Storm -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="13" />
+			<height normal="40" />
+		</collision>
+	</npc>
+	<npc id="27401" level="61" type="L2Monster" name="Shilen's Evil Thoughts">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="5975" level="1" /> <!-- Dark Attack -->
+			<skill name="Skill02_ID" id="5976" level="2" /> <!-- Dark Storm -->
+			<param name="Skill01_Probablity" value="1000" />
+			<param name="Skill02_Probablity" value="1000" />
+		</parameters>
+		<race>ETC</race>
+		<sex>ETC</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1985.55926" hpRegen="7.5" mp="1066.8" mpRegen="2.7" />
+			<attack physical="501.08068" magical="342.17315" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="252.49346" magical="184.76376" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="100" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="19" /> <!-- Others -->
+			<skill id="5975" level="1" /> <!-- Dark Attack -->
+			<skill id="5976" level="2" /> <!-- Dark Storm -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="13" />
+			<height normal="40" />
+		</collision>
+	</npc>
+	<npc id="27402" level="79" type="L2Monster" name="Shilen's Evil Thoughts">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="Skill01_Probablity" value="1000" />
+			<param name="Skill02_Probablity" value="1000" />
+			<skill name="Skill01_ID" id="5975" level="3" /> <!-- Dark Attack -->
+			<skill name="Skill02_ID" id="5976" level="3" /> <!-- Dark Storm -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="3127.82459333517" hpRegen="8.5" mp="1641.0" mpRegen="3" />
+			<attack physical="929.930814318487" magical="635.022195830619" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="337.07008" magical="246.65326" />
+			<attribute>
+				<attack type="DARK" value="200" />
+				<defence fire="170" water="170" wind="170" earth="170" holy="120" dark="200" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="5467" level="1" /> <!-- Dark Attacks -->
+			<skill id="5975" level="3" /> <!-- Dark Attack -->
+			<skill id="5976" level="3" /> <!-- Dark Storm -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="27.5" />
+		</collision>
+	</npc>
+	<npc id="27403" level="80" type="L2Npc" name="Trainee of Rest">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27404" level="80" type="L2Npc" name="Supplicant of Rest">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27405" level="80" type="L2Npc" name="Monastic Pilgrim">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27406" level="80" type="L2Npc" name="Monastic Crusader">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27407" level="80" type="L2Monster" name="Solina Lay Brother">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<equipment rhand="8212" /> <!--Monster Only (Solina Brother Mace)-->
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="4336" level="2" />	<!-- Dark Attack Weak Point -->
+			<skill id="4410" level="11" />	<!-- Average P. Atk. -->
+			<skill id="4411" level="16" />	<!-- Very Strong M. Atk. -->
+			<skill id="4412" level="11" />	<!-- Average P. Def. -->
+			<skill id="4413" level="11" />	<!-- Average M. Def. -->
+			<skill id="4414" level="2" />	<!-- Standard Type -->
+			<skill id="4415" level="5" />	<!-- Blunt Weapons -->
+			<skill id="4416" level="8" />	<!-- Angels -->
+			<skill id="4417" level="17" />	<!-- Angels -->
+			<skill id="4423" level="3" />	<!-- Sacred Attacks -->
+			<skill id="4563" level="9" />	<!-- NPC Solar Flare - Magic -->
+			<skill id="4613" level="1" />	<!-- NPC Clan Heal -->
+			<skill id="4789" level="9" />	<!-- NPC High Level -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="25" />
+		</collision>
+	</npc>
+	<npc id="27408" level="80" type="L2Npc" name="Savior Solina">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27409" level="80" type="L2Monster" name="Solina Knight Captain">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="25" />
+			<height normal="32" />
+		</collision>
+	</npc>
+	<npc id="27410" level="80" type="L2Monster" name="Solina Knights">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<equipment rhand="8211" lhand="8210" /> <!--Monster Only (Monk Warrior Shield)-->
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="25" />
+			<height normal="28" />
+		</collision>
+	</npc>
+	<npc id="27411" level="80" type="L2Npc" name="Divinity Manager">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27412" level="80" type="L2Monster" name="Divinity Supervisor">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<equipment rhand="8221" /> <!--Monster Only (Grail Apostle Spear)-->
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="25" />
+			<height normal="47" />
+		</collision>
+	</npc>
+	<npc id="27413" level="80" type="L2Monster" name="Divinity Fighter">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="25" />
+			<height normal="45" />
+		</collision>
+	</npc>
+	<npc id="27414" level="80" type="L2Monster" name="Divinity Magus">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6320" level="1" />	<!-- Summon Sacred Magic Force -->
+			<skill id="6321" level="1" />	<!-- Divine Flash -->
+			<skill id="6322" level="1" />	<!-- Divine Impact -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="45" />
+		</collision>
+	</npc>
+	<npc id="27415" level="80" type="L2Monster" name="Guide Solina">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<equipment rhand="8212" /> <!-- rhand: Monster Only (Solina Brother Mace) -->
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="5198" mp="1859.0" />
+			<attack physical="1952" magical="905" attackSpeed="253" range="40" />
+			<defence physical="577" magical="469" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="9" />
+			<height normal="23.4" />
+		</collision>
+	</npc>
+	<npc id="27416" level="80" type="L2Npc" name="Relic Manager Golem">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27417" level="80" type="L2Monster" name="Mutant Archer">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<equipment rhand="274" /> <!--Reinforced Bow-->
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6709" level="1" />	<!-- Multi Shot -->
+			<skill id="4088" level="1" />	<!-- Bleed -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="26" />
+		</collision>
+	</npc>
+	<npc id="27418" level="80" type="L2Monster" name="Mutant Warrior">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<equipment rhand="150" /> <!-- rhand: Elemental Sword -->
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6262" level="1" />	<!-- EMP Power -->
+			<skill id="6515" level="20" />	<!-- NPC dark attack -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="25" />
+		</collision>
+	</npc>
+	<npc id="27419" level="80" type="L2Npc" name="Divinity Watcher">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27420" level="80" type="L2Npc" name="Instructor Solina">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="27421" level="80" type="L2Monster" name="Creature of the Dusk">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="11" />
+			<height normal="28.5" />
+		</collision>
+	</npc>
+	<npc id="27422" level="79" type="L2Monster" name="Creature of the Dusk">
+		<!-- TODO: Must be confirmed -->
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4942" hpRegen="8.5" mp="1822.0" mpRegen="3" />
+			<attack physical="1859" magical="866" attackSpeed="253" range="40" />
+			<defence physical="566" magical="460" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="9" />
+			<height normal="23" />
+		</collision>
+	</npc>
+	<npc id="27423" level="80" type="L2Monster" name="Creature of the Dusk">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="10" />
+			<height normal="25" />
+		</collision>
+	</npc>
+	<npc id="27424" level="79" type="L2Monster" name="Creature of the Dusk">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<equipment rhand="304" /> <!-- rhand: Orcish Halberd -->
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4942" hpRegen="8.5" mp="1822.0" mpRegen="3" />
+			<attack physical="1859" magical="866" attackSpeed="253" range="40" />
+			<defence physical="566" magical="460" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="10" />
+			<height normal="28" />
+		</collision>
+	</npc>
+</list>

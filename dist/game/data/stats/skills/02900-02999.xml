@@ -1,0 +1,1904 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="2900" levels="1" name="Ancient Herb - Slayer">
+		<!-- Possessed by those spirits who existed during the beginning of the world, this herb allows you to strike down your enemies with the strength of a bull. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="SIGNAL_C" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player level="78" />
+		</cond>
+		<for>
+			<effect name="Buff" />
+		</for>
+	</skill>
+	<skill id="2901" levels="1" name="Ancient Herb - Immortal">
+		<!-- Possessed by those spirits who existed during the beginning of the world, this herb makes you temporarily impervious to your enemy's attacks. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player level="78" />
+		</cond>
+		<for>
+			<effect name="Invincible" />
+		</for>
+	</skill>
+	<skill id="2902" levels="1" name="Ancient Herb - Terminator">
+		<!-- Possessed by those spirits who existed during the beginning of the world, this herb allows you to cast as fast as the wind. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player level="78" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2903" levels="1" name="Ancient Herb - Guide">
+		<!-- Possessed by those spirits who existed during the beginning of the world, this herb allows you to move faster than any beast on the plains. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="SPEED_UP_SPECIAL" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player level="78" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="250" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2904" levels="1" name="Guardian Spirit's Divine Protection">
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PUBLIC_SLOT" />
+		<set name="effectPoint" val="100" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2905" levels="1" name="Growth Accelerator">
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="4000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14832" /> <!-- Growth Accelerator -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="113" addName="1">
+			<target npcId="18793,18794,18795,18796,18797,18798" />
+		</cond>
+	</skill>
+	<skill id="2906" levels="1" name="Incubation Accelerator">
+		<set name="effectPoint" val="100" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2907" levels="5" name="Battlefield Use Secret Medicine of Life">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="600000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player levelRange="61;75" />
+		</cond>
+		<for>
+			<effect name="Heal">
+				<param power="1900" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2908" levels="5" name="Battlefield Use Secret Medicine of Mind">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="600000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player levelRange="61;75" />
+		</cond>
+		<for>
+			<effect name="ManaHeal">
+				<param power="360" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2909" levels="5" name="Battlefield Use Secret Medicine of Will">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="600000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player levelRange="61;75" />
+		</cond>
+		<for>
+			<effect name="CpHeal">
+				<param power="360" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2910" levels="1" name="Skull Key of Pain">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14820" /> <!-- Skull Key of Suffering -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2911" levels="1" name="Skull Key of Erosion">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14821" /> <!-- Skull Key of Erosion -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2912" levels="1" name="Skull Key of the Heart">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14822" /> <!-- Skull Key of the Heart -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2913" levels="1" name="Soul Extraction">
+		<set name="effectPoint" val="-100" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="60000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2914" levels="3" name="Equipment Set 90 Day Pack">
+		<table name="#npcId"> 32702 32703 13284 </table>
+		<table name="#itemConsumeId"> 15210 15211 16853 </table>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="#itemConsumeId" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="#npcId" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2915" levels="1" name="Clear Five-Colored Crystal">
+		<set name="hitTime" val="20000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14835" /> <!-- Multi-colored Jewel -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Teleport">
+				<param x="89417" y="-44506" z="-2136" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2916" levels="1" name="Feed for Enriched Enhanced Pets">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="feed" val="11000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2917" levels="1" name="Big Staccato Silk Cocoon">
+		<table name="#extractableItems">
+			9575,1,2.77;10485,1,2.31;10577,1,3.2;14209,1,3.2;14208,1,3.2;14212,1,3.2;960,1,6.4;9625,1,3.2;9626,1,2.13;959,1,0.64;10373,1,1.54;10374,1,1.54;10375,1,1.54;10376,1,1.54;10377,1,1.54;10378,1,1.54;10379,1,1.54;10380,1,1.54;10381,1,1.54
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14834" /> <!-- Large Stakato Cocoon -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2918" levels="1" name="Small Staccato Silk Cocoon">
+		<table name="#extractableItems">
+			9575,1,2.36;10485,1,1.96;10577,1,2.72;14209,1,2.72;14208,1,2.72;14212,1,2.72;960,1,5.44;9625,1,2.72;9626,1,1.81;959,1,0.54;10373,1,1.31;10374,1,1.31;10375,1,1.31;10376,1,1.31;10377,1,1.31;10378,1,1.31;10379,1,1.31;10380,1,1.31;10381,1,1.31
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14833" /> <!-- Small Stakato Cocoon -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2919" levels="1" name="Ancient Parchment">
+		<table name="#extractableItems">
+			5942,1,40.0;5943,1,40.0;14836,1,4.0;14837,1,4.0;14838,1,4.0;14839,1,4.0;14840,1,4.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14841" /> <!-- Ancient Parchment -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2920" levels="1" name="Titan's Ancient Book">
+		<table name="#extractableItems">
+			5942,1,40.0;5943,1,40.0;14842,1,4.0;14843,1,4.0;14844,1,4.0;14845,1,4.0;14846,1,4.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14847" /> <!-- Titan Ancient Book -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2921" levels="1" name="Gludio Supply Box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13695" /> <!-- Gludio Supply Box - Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2922" levels="1" name="Dion supply box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13696" /> <!-- Dion Supply Box - Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2923" levels="1" name="Giran supply box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13697" /> <!-- Giran Supply Box - Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2924" levels="1" name="Oren supply box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13698" /> <!-- Oren Supply Box - Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2925" levels="1" name="Aden supply box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13699" /> <!-- Aden Supply Box - Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2926" levels="1" name="Innadril supply box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13700" /> <!-- Innadril Supply Box - Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2927" levels="1" name="Goddard supply box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13701" /> <!-- Goddard Supply Box: Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2928" levels="1" name="Rune supply box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13702" /> <!-- Rune Supply Box - Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2929" levels="1" name="Schuttgart supply box - magic pin">
+		<table name="#extractableItems">
+			13898,1,30.0;13899,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13703" /> <!-- Schuttgart Supply Box - Magic Pin - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2930" levels="1" name="Gludio supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13704" /> <!-- Gludio Supply Box - Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2931" levels="1" name="Dion supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13705" /> <!-- Dion Supply Box - Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2932" levels="1" name="Giran supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13706" /> <!-- Giran Supply Box - Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2933" levels="1" name="Oren supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13707" /> <!-- Oren Supply Box - Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2934" levels="1" name="Aden supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13708" /> <!-- Aden Supply Box - Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2935" levels="1" name="Innadril supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13709" /> <!-- Innadril Supply Box - Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2936" levels="1" name="Goddard supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13710" /> <!-- Goddard Supply Box: Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2937" levels="1" name="Rune supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13711" /> <!-- Rune Supply Box - Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2938" levels="1" name="Schuttgart supply box - magic pouch">
+		<table name="#extractableItems">
+			13918,1,30.0;13919,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13712" /> <!-- Schuttgart Supply Box - Magic Pouch - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2939" levels="1" name="Gludio supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13713" /> <!-- Gludio Supply Box - Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2940" levels="1" name="Dion supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13714" /> <!-- Dion Supply Box - Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2941" levels="1" name="Giran supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13715" /> <!-- Giran Supply Box - Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2942" levels="1" name="Oren supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13716" /> <!-- Oren Supply Box - Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2943" levels="1" name="Aden supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13717" /> <!-- Aden Supply Box - Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2944" levels="1" name="Innadril supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13718" /> <!-- Innadril Supply Box - Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2945" levels="1" name="Goddard supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13719" /> <!-- Goddard Supply Box: Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2946" levels="1" name="Rune supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13720" /> <!-- Rune Supply Box - Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2947" levels="1" name="Schuttgart supply box - belt">
+		<table name="#extractableItems">
+			13894,1,30.0;13895,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13721" /> <!-- Schuttgart Supply Box - Belt - Grade B, C -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2948" levels="1" name="Gludio Supply Box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14531" /> <!-- Gludio Supply Box - Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2949" levels="1" name="Dion supply box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14532" /> <!-- Dion Supply Box - Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2950" levels="1" name="Giran supply box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14533" /> <!-- Giran Supply Box - Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2951" levels="1" name="Oren supply box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14534" /> <!-- Oren Supply Box - Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2952" levels="1" name="Aden supply box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14535" /> <!-- Aden Supply Box - Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2953" levels="1" name="Innadril supply box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14536" /> <!-- Innadril Supply Box - Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2954" levels="1" name="Goddard supply box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14537" /> <!-- Goddard Supply Box: Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2955" levels="1" name="Rune supply box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14538" /> <!-- Rune Supply Box - Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2956" levels="1" name="Schuttgart supply box - magic pin">
+		<table name="#extractableItems">
+			13900,1,30.0;13901,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14539" /> <!-- Schuttgart Supply Box - Magic Pin - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2957" levels="1" name="Gludio supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14540" /> <!-- Gludio Supply Box - Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2958" levels="1" name="Dion supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14541" /> <!-- Dion Supply Box - Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2959" levels="1" name="Giran supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14542" /> <!-- Giran Supply Box - Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2960" levels="1" name="Oren supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14543" /> <!-- Oren Supply Box - Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2961" levels="1" name="Aden supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14544" /> <!-- Aden Supply Box - Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2962" levels="1" name="Innadril supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14545" /> <!-- Innadril Supply Box - Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2963" levels="1" name="Goddard supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14546" /> <!-- Goddard Supply Box: Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2964" levels="1" name="Rune supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14547" /> <!-- Rune Supply Box - Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2965" levels="1" name="Schuttgart supply box - magic pouch">
+		<table name="#extractableItems">
+			13920,1,30.0;13921,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14548" /> <!-- Schuttgart Supply Box - Magic Pouch - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2966" levels="1" name="Gludio supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14549" /> <!-- Gludio Supply Box - Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2967" levels="1" name="Dion supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14550" /> <!-- Dion Supply Box - Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2968" levels="1" name="Giran supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14551" /> <!-- Giran Supply Box - Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2969" levels="1" name="Oren supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14552" /> <!-- Oren Supply Box - Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2970" levels="1" name="Aden supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14553" /> <!-- Aden Supply Box - Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2971" levels="1" name="Innadril supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14554" /> <!-- Innadril Supply Box - Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2972" levels="1" name="Goddard supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14555" /> <!-- Goddard Supply Box: Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2973" levels="1" name="Rune supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14556" /> <!-- Rune Supply Box - Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2974" levels="1" name="Schuttgart supply box - belt">
+		<table name="#extractableItems">
+			13896,1,30.0;13897,1,15.0
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14557" /> <!-- Schuttgart Supply Box - Belt - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2975" levels="1" name="Gludio supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14884" /> <!-- Gludio Supply Box - Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2976" levels="1" name="Dion supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14885" /> <!-- Dion Supply Box - Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2977" levels="1" name="Giran supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14886" /> <!-- Giran Supply Box - Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2978" levels="1" name="Oren supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14887" /> <!-- Oren Supply Box - Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2979" levels="1" name="Aden supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14888" /> <!-- Aden Supply Box - Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2980" levels="1" name="Innadril supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14889" /> <!-- Innadril Supply Box - Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2981" levels="1" name="Goddard supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14890" /> <!-- Goddard Supply Box: Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2982" levels="1" name="Rune supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14891" /> <!-- Rune Supply Box - Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2983" levels="1" name="Schuttgart supply box - magic rune clip">
+		<table name="#extractableItems">
+			14902,1,21.0;14903,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14892" /> <!-- Schuttgart Supply Box - Magic Rune Clip - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2984" levels="1" name="Gludio supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14893" /> <!-- Gludio Supply Box - Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2985" levels="1" name="Dion supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14894" /> <!-- Dion Supply Box - Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2986" levels="1" name="Giran supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14895" /> <!-- Giran Supply Box - Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2987" levels="1" name="Oren supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14896" /> <!-- Oren Supply Box - Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2988" levels="1" name="Aden supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14897" /> <!-- Aden Supply Box - Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2989" levels="1" name="Innadril supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14898" /> <!-- Innadril Supply Box - Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2990" levels="1" name="Goddard supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14899" /> <!-- Goddard Supply Box: Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2991" levels="1" name="Rune supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14900" /> <!-- Rune Supply Box - Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2992" levels="1" name="Schuttgart supply box - magic ornament">
+		<table name="#extractableItems">
+			14904,1,21.0;14905,1,10.5
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14901" /> <!-- Schuttgart Supply Box - Magic Ornament - Grade S, A -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2993" levels="1" name="Ancient herb - Deceiver">
+		<!-- You incur the wrath of the spirits who existed in the chaos of the beginning of the world by taking the ancient herb without permission. -->
+		<set name="abnormalLvl" val="9" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2994" levels="1" name="Disguised Half - Aqua Elf">
+		<!-- Disguised as a half aqua elf in alluring dress. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="-1" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="125" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2995" levels="1" name="PC room private weapon strengthening order sheet - D grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2996" levels="1" name="PC room private weapon strengthening order sheet - C grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2997" levels="1" name="PC room private weapon strengthening order sheet - B grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2998" levels="1" name="PC room private weapon strengthening order sheet - A grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2999" levels="1" name="PC room private weapon strengthening order sheet - S grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+</list>

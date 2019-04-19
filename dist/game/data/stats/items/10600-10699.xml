@@ -1,0 +1,1850 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="10600" type="EtcItem" name="Battle Manual - Soul Barrier">
+		<!-- Spellbook needed to learn Soul Barrier. Used by Berserkers and Arbalesters. Required level: 58 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="6750" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10601" type="EtcItem" name="Battle Manual - Lightning Barrier">
+		<!-- Spellbook needed to learn Lightning Barrier. Used by Soul Hound. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10602" type="EtcItem" name="Battle Manual - Soul Strike">
+		<!-- Spellbook needed to learn Soul Strike. Used by Soul Hound. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="11600" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10603" type="EtcItem" name="Battle Manual - Betrayal Mark">
+		<!-- Spellbook needed to learn Betrayal Mark. Used by Trickster. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10604" type="EtcItem" name="Battle Manual - Rush Impact">
+		<!-- Spellbook needed to learn Rush Impact. Used by Doombringer. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10605" type="EtcItem" name="Battle Manual - Mass Disarm">
+		<!-- Spellbook needed to learn Mass Disarm. Used by Doombringer. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10606" type="Armor" name="Agathion Seal Bracelet - Rudolph">
+		<!-- The bracelet which can summon cute Rudolph Agathion. No exchange/drop/use of freight available -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="5537-1;3425-1;3267-1" /> <!-- Rudolph Cuteness Trick -->
+	</item>
+	<item id="10607" type="EtcItem" name="Agathion Seal Bracelet - Rudolph">
+		<!-- The bracelet which can summon cute Rudolph Agathion. No exchange/drop/use of freight available -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="10608" type="EtcItem" name="Forgotten Scroll - Chant of Combat">
+		<!-- Scroll to learn Chant of Combat. Warcryer uses it. Can be acquired by level 70. -->
+		<set name="icon" val="BranchSys2.Icon.br_spell_books_magic_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="9300" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2505-1" /> <!-- Chant of Combat -->
+	</item>
+	<item id="10609" type="EtcItem" name="Forgotten Scroll - Chant of Critical">
+		<!-- Scroll to learn Chant of Critical Attack. Warcryer uses it. Can be acquired by level 72. -->
+		<set name="icon" val="BranchSys2.Icon.br_spell_books_magic_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="9650" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2506-1" /> <!-- Chant of Critical -->
+	</item>
+	<item id="10610" type="EtcItem" name="Forgotten Scroll - Chant of Blood Awakening">
+		<!-- Scroll to learn Chant of Blood Awakening. Warcryer uses it. Can be acquired by level 74. -->
+		<set name="icon" val="BranchSys2.Icon.br_spell_books_magic_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2507-1" /> <!-- Chant of Blood Awakening -->
+	</item>
+	<item id="10611" type="EtcItem" name="Snow Fenrir Necklace">
+		<!-- The Necklace used to summon Snow Fenrir. It takes away some of the experience points the Pet Master earns. -->
+		<set name="icon" val="icon.etc_summon_wolf_r_01" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-2" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<cond>
+			<player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57" />
+		</cond>
+	</item>
+	<item id="10612" type="EtcItem" name="Certificate - Master Ability">
+		<!-- Certificate needed to learn a Master Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse. -->
+		<set name="icon" val="icon.etc_all_subjob_skillbook_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10613" type="Armor" name="Bird Nest (Event)">
+		<!-- Bird nest shaped hair accessory. Uses 2 hair accessory slots. Cannot be exchanged for an event item or dropped. -->
+		<set name="icon" val="icon.accessory_nest_hat_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="10614" type="Armor" name="White Wool Hat (Event)">
+		<!-- Fun hair accessory that looks like a white sheep. Uses 2 hair accessory slots. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_sheep_cap_white_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="10615" type="Armor" name="Black Wool Hat (Event)">
+		<!-- Fun hair accessory that looks like a black sheep. Uses 2 hair accessory slots. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_sheep_cap_black_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="10616" type="Armor" name="Straw Hat (Event)">
+		<!-- Straw Hat. Uses 2 hair accessory slots. Cannot be exchanged or dropped. This event item cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.accessory_straw_hat_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="10617" type="Armor" name="Ant Hat - Year 2008">
+		<!-- Fun hair accessory made with Monster Ant shape. Uses 2 hair accessory slots and exclusive for I-Card service, available until December 31, 2008(exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ant_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="10618" type="Armor" name="Ol Mahum Hat - Year 2008">
+		<!-- Monster Ol Mahum shaped hat. Uses 2 hair accessory slots and exclusive for I-Card service, available until December 31, 2008(exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ol_mahum_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="10619" type="Armor" name="Wolf Hat - Year 2008">
+		<!-- Monster wolf shaped hat. Uses 2 hair accessory slots and exclusive for I-Card service, available until December 31, 2008(exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_wolf_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="10620" type="Armor" name="Shadow Item - Ant Hat - Blessed Scroll of Escape">
+		<!-- Monster Ant shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ant_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3264-1" /> <!-- Blessed Escape -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="120" />
+	</item>
+	<item id="10621" type="Armor" name="Shadow Item - Ant Hat - Blessed Scroll of Resurrection">
+		<!-- Monster Ant shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ant_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3263-1" /> <!-- Blessed Resurrection -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="120" />
+	</item>
+	<item id="10622" type="Armor" name="Shadow Item - Ant Hat - Firework">
+		<!-- Monster Ant shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ant_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3266-1" /> <!-- Large Fireworks Ability -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="5" />
+	</item>
+	<item id="10623" type="Armor" name="Shadow Item - Ant Hat - Big Head">
+		<!-- Monster Ant shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ant_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3265-1" /> <!-- Mysterious Ability -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="10" />
+	</item>
+	<item id="10624" type="Armor" name="Shadow Item - Ol Mahum Hat - Blessed Scroll of Escape">
+		<!-- Monster Ol Mahum shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ol_mahum_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3264-1" /> <!-- Blessed Escape -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="120" />
+	</item>
+	<item id="10625" type="Armor" name="Shadow Item - Ol Mahum Hat - Blessed Scroll of Resurrection">
+		<!-- Monster Ol Mahum shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ol_mahum_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3263-1" /> <!-- Blessed Resurrection -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="120" />
+	</item>
+	<item id="10626" type="Armor" name="Shadow Item - Ol Mahum Hat - Firework">
+		<!-- Monster Ol Mahum shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ol_mahum_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3266-1" /> <!-- Large Fireworks Ability -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="5" />
+	</item>
+	<item id="10627" type="Armor" name="Shadow Item - Ol Mahum Hat - Big Head">
+		<!-- Monster Ol Mahum shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_ol_mahum_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3265-1" /> <!-- Mysterious Ability -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="10" />
+	</item>
+	<item id="10628" type="Armor" name="Shadow Item - Wolf Hat - Blessed Scroll of Escape">
+		<!-- Monster wolf shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_wolf_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3264-1" /> <!-- Blessed Escape -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="120" />
+	</item>
+	<item id="10629" type="Armor" name="Shadow Item - Wolf Hat - Blessed Scroll of Resurrection">
+		<!-- Monster wolf shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_wolf_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3263-1" /> <!-- Blessed Resurrection -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="120" />
+	</item>
+	<item id="10630" type="Armor" name="Shadow Item - Wolf Hat - Firework">
+		<!-- Monster wolf shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_wolf_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3266-1" /> <!-- Large Fireworks Ability -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="5" />
+	</item>
+	<item id="10631" type="Armor" name="Shadow Item - Wolf Hat - Big Head">
+		<!-- Monster wolf shaped hat. Uses 2 hair accessory slots and available to use active skill exclusive for I-Card service. (Exchange, drop unavailable) -->
+		<set name="icon" val="icon.accessory_wolf_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3265-1" /> <!-- Mysterious Ability -->
+		<set name="duration" val="1440" />
+		<set name="useSkillDisTime" val="10" />
+	</item>
+	<item id="10632" type="EtcItem" name="Wondrous Cubic">
+		<!-- Double-click to create a cube fragment that can be exchanged for a weapon/armor enchant scroll. Cannot be exchanged or dropped. (Can only be used once per day.) -->
+		<set name="icon" val="Branchsys2.icon.cube_event_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="reuse_delay" val="86400000" /><!-- TODO: Manage global (main class <-> subclasses) reuse for skills. -->
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2510-1" /> <!-- Wondrous Cubic -->
+	</item>
+	<item id="10633" type="EtcItem" name="Cube Fragment Armor - D">
+		<!-- Speak with a warehouse keeper to exchange this for a D-Grade Armor Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_a_piece_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10634" type="EtcItem" name="Cube Fragment Armor - C">
+		<!-- Speak with a warehouse keeper to exchange this for a C-Grade Armor Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_a_piece_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10635" type="EtcItem" name="Cube Fragment Armor - B">
+		<!-- Speak with a warehouse keeper to exchange this for a B-Grade Armor Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_a_piece_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10636" type="EtcItem" name="Cube Fragment Armor - A">
+		<!-- Speak with a warehouse keeper to exchange this for a A-Grade Armor Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_a_piece_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10637" type="EtcItem" name="Cube Fragment Armor - S">
+		<!-- Speak with a warehouse keeper to exchange this for a S-Grade Armor Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_a_piece_i04" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10638" type="EtcItem" name="Rough Black Cubic Piece">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. -->
+		<set name="icon" val="icon.event_cubic_piece_i04" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10639" type="EtcItem" name="Mouse Coin">
+		<!-- Currency used by Mutated Rats. Take it to a magic lab for a reward. -->
+		<set name="icon" val="icon.mouse_coin_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10640" type="EtcItem" name="Cloned Squash Seed">
+		<!-- Squish Your Squash Event - Double-click it and a Young Squash will appear. This item cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_gourd_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2508-1" /> <!-- Squash Seed -->
+	</item>
+	<item id="10641" type="EtcItem" name="Cloned Large Squash Seed">
+		<!-- Squish Your Squash Event - Double-click it and a Large Young Squash will appear. This item cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_gourd_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2509-1" /> <!-- Large Squash Seed -->
+	</item>
+	<item id="10642" type="EtcItem" name="Cube Fragment Weapon - D">
+		<!-- Speak with a warehouse keeper to exchange this for a D-Grade Weapon Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_w_piece_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10643" type="EtcItem" name="Cube Fragment Weapon - C">
+		<!-- Speak with a warehouse keeper to exchange this for a C-Grade Weapon Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_w_piece_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10644" type="EtcItem" name="Cube Fragment Weapon - B">
+		<!-- Speak with a warehouse keeper to exchange this for a B-Grade Weapon Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_w_piece_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10645" type="EtcItem" name="Cube Fragment Weapon - A">
+		<!-- Speak with a warehouse keeper to exchange this for a A-Grade Weapon Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_w_piece_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10646" type="EtcItem" name="Cube Fragment Weapon - S">
+		<!-- Speak with a warehouse keeper to exchange this for a S-Grade Weapon Enchant Scroll. -->
+		<set name="icon" val="Branchsys2.icon.event_cubic_w_piece_i04" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10647" type="EtcItem" name="Fine Black Cubic Piece">
+		<!-- You can confirm the use of this item by talking to the warehouse keeper. -->
+		<set name="icon" val="icon.event_cubic_piece_i04" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10648" type="EtcItem" name="inven_tol_i_ll">
+		<!-- Doesn't exist in client. -->
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10649" type="EtcItem" name="Feather of Blessing">
+		<!-- Dimensional item. You can resurrect right away at the spot where you get killed if you have the Feather of Blessing. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant. -->
+		<set name="icon" val="icon.blessed_feather_i00" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="allow_self_resurrection" val="true" />
+	</item>
+	<item id="10650" type="EtcItem" name="Adventurer's Scroll of Escape">
+		<!-- Magic scroll that moves you to the nearest village. Item for beginner adventurers that cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2531-1" /> <!-- Adventurer's Scroll of Escape -->
+	</item>
+	<item id="10651" type="EtcItem" name="Transformation Scroll: Teleporter (Event)">
+		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="21600" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10652" type="EtcItem" name="Teleporter's Tear (Event)">
+		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="18000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10653" type="EtcItem" name="Transformation Scroll: Guard (Event)">
+		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="21600" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10654" type="EtcItem" name="Guard Edict (Event)">
+		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="18000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10655" type="EtcItem" name="Herb of Vampiric Rage">
+		<set name="icon" val="BranchSys2.icon.etc_vampiric_rage_herb_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2512-1" /> <!-- Herb of Vampiric Rage -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="10656" type="EtcItem" name="Herb of Critical Attack - Power">
+		<set name="icon" val="BranchSys2.icon.etc_crt_force_herb_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2514-1" /> <!-- Herb of Critical Attack - Power -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="10657" type="EtcItem" name="Herb of Doubt">
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2513-1" /> <!-- Herb of Doubt -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="10658" type="Armor" name="Pet Accessory (Not In Use)">
+		<set name="icon" val="icon.etc_prefect_belt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="33" /> <!-- H5 Price -->
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ITEM_EQUIP_PET_GROUP" />
+		</cond>
+		<for>
+			<add order="0" stat="mDef" val="7" />
+		</for>
+	</item>
+	<item id="10659" type="Armor" name="Agathion Summon Bracelet - Monkey">
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="7000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="8254-1;3267-1;5951-1;5953-1" /> <!-- Release Seal on Agathion - Monkey -->
+	</item>
+	<item id="10660" type="Armor" name="Agathion Summon Bracelet - Griffin">
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="7000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="8255-1;3267-1;5952-1;5953-1" /> <!-- Release Seal on Agathion - Griffin -->
+	</item>
+	<item id="10661" type="EtcItem" name="Pet Summon Item - Warrior Use">
+		<set name="icon" val="icon.accessory_necklace_of_pet_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="10662" type="EtcItem" name="Pet Summon Item - Wizard Use">
+		<set name="icon" val="icon.accessory_necklace_of_pet_i01" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="10663" type="EtcItem" name="Pet Summon Item - Mixing Use">
+		<set name="icon" val="icon.accessory_necklace_of_pet_i02" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="10664" type="EtcItem" name="Pet Summon Item - Warrior Pet">
+		<set name="icon" val="icon.accessory_necklace_of_pet_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="10665" type="EtcItem" name="Pet Summon Item - Warrior Pet">
+		<set name="icon" val="icon.accessory_necklace_of_pet_i01" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="10666" type="EtcItem" name="Potion of Replenish Vitality">
+		<set name="icon" val="icon.etc_potion_red_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="80" />
+		<set name="price" val="40" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10667" type="Weapon" name="Sirra's Blade {PvP} - Haste">
+		<!-- <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. -->
+		<set name="icon" val="icon.weapon_sirr_blade_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1300" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3650-1;3552-1;3068-3" /> <!-- PvP Weapon - CP Drain -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10668" type="Weapon" name="Sirra's Blade {PvP} - Health">
+		<!-- <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. -->
+		<set name="icon" val="icon.weapon_sirr_blade_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1300" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3650-1;3552-1;3013-5" /> <!-- PvP Weapon - CP Drain -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10669" type="Weapon" name="Sirra's Blade {PvP} - Critical Poison">
+		<!-- <Soul Crystal Enhancement>. Has a 15% chance of poisoning the target during a critical attack. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. -->
+		<set name="icon" val="icon.weapon_sirr_blade_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1300" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="oncrit_skill" val="3061-3" />
+		<set name="item_skill" val="3650-1;3552-3" /> <!-- PvP Weapon - CP Drain -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10670" type="Weapon" name="Sword of Ipos {PvP} - Focus">
+		<!-- <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_sword_of_ipos_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3653-1;3552-1;3050-2" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10671" type="Weapon" name="Sword of Ipos {PvP} - Haste">
+		<!-- <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_sword_of_ipos_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3653-1;3552-1;3068-3" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10672" type="Weapon" name="Sword of Ipos {PvP} - Health">
+		<!-- <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_sword_of_ipos_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3653-1;3552-1;3013-5" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10673" type="Weapon" name="Barakiel's Axe {PvP} - Health">
+		<!-- <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. -->
+		<set name="icon" val="icon.weapon_barakiel_axe_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1550" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3650-1;3552-1;3013-5" /> <!-- PvP Weapon - CP Drain -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10674" type="Weapon" name="Barakiel's Axe {PvP} - Haste">
+		<!-- <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. -->
+		<set name="icon" val="icon.weapon_barakiel_axe_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1550" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3650-1;3552-1;3068-3" /> <!-- PvP Weapon - CP Drain -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10675" type="Weapon" name="Barakiel's Axe {PvP} - Focus">
+		<!-- <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. -->
+		<set name="icon" val="icon.weapon_barakiel_axe_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1550" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3650-1;3552-1;3050-2" /> <!-- PvP Weapon - CP Drain -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10676" type="Weapon" name="Behemoth's Tuning Fork {PvP} - Focus">
+		<!-- <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_tuning_fork_of_behemoth_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1890" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3653-1;3552-1;3050-2" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10677" type="Weapon" name="Behemoth's Tuning Fork {PvP} - Health">
+		<!-- <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_tuning_fork_of_behemoth_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1890" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3653-1;3552-1;3013-5" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10678" type="Weapon" name="Behemoth's Tuning Fork {PvP} - Anger">
+		<!-- <Soul Crystal Enhancement> . Decreases Max HP by 15% and P. Atk. increases by 32. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_tuning_fork_of_behemoth_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1890" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3653-1;3552-1;3057-3" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10679" type="Weapon" name="Naga Storm {PvP} - Focus">
+		<!-- <Soul Crystal Enhancement>. Increases Critical by 67. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defense during an attack. -->
+		<set name="icon" val="icon.weapon_naga_storm_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="930" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3651-1;3652-1;3552-1;3051-2" /> <!-- PvP Weapon - Cancel -->
+		<for>
+			<set stat="pAtk" val="220" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10680" type="Weapon" name="Naga Storm {PvP} - Critical Damage">
+		<!-- <Soul Crystal Enhancement>. Increases P. Atk. by 200 during a critical attack. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defense during an attack. -->
+		<set name="icon" val="icon.weapon_naga_storm_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="930" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3651-1;3652-1;3552-1;3066-2" /> <!-- PvP Weapon - Cancel -->
+		<for>
+			<set stat="pAtk" val="220" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10681" type="Weapon" name="Naga Storm {PvP} - Back Blow">
+		<!-- <Soul Crystal Enhancement>. Increases Critical by 37 when attacking a target from behind. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defense during an attack. -->
+		<set name="icon" val="icon.weapon_naga_storm_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="930" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3651-1;3652-1;3552-1;3063-1" /> <!-- PvP Weapon - Cancel -->
+		<for>
+			<set stat="pAtk" val="220" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10682" type="Weapon" name="Tiphon's Spear {PvP} - Critical Stun">
+		<!-- <Soul Crystal Enhancement>. Has a 25% chance of stunning a target during a critical attack. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_tiphon_spear_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="oncrit_skill" val="3070-3" />
+		<set name="item_skill" val="3653-1;3552-4" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10683" type="Weapon" name="Tiphon's Spear {PvP} - Towering Blow">
+		<!-- <Soul Crystal Enhancement>. Increases the attack range. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_tiphon_spear_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;80;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3653-1;3552-4" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<set val="80" stat="pAtkRange" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10684" type="Weapon" name="Tiphon's Spear {PvP} - Wild Blow">
+		<!-- <Soul Crystal Enhancement>. Broadens the angle of attack. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. -->
+		<set name="icon" val="icon.weapon_tiphon_spear_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;180" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3653-1;3552-4" /> <!-- PvP Weapon - Attack Chance -->
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10685" type="Weapon" name="Shyeed's Bow {PvP} - Cheap Shot">
+		<!-- <Soul Crystal Enhancement>. Has a 30% chance of decreasing MP Consumption to 1 during a normal attack. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. -->
+		<set name="icon" val="icon.weapon_shyid_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1640" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="5" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3655-1;3552-3" /> <!-- PvP Weapon - Rapid Fire -->
+		<set name="reduced_mp_consume" val="30,1" />
+		<for>
+			<set stat="pAtk" val="571" />
+			<set stat="mAtk" val="133" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="227" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10686" type="Weapon" name="Shyeed's Bow {PvP} - Focus">
+		<!-- <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. -->
+		<set name="icon" val="icon.weapon_shyid_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1640" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="5" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3655-1;3552-1;3050-2" /> <!-- PvP Weapon - Rapid Fire -->
+		<for>
+			<set stat="pAtk" val="571" />
+			<set stat="mAtk" val="133" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="227" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10687" type="Weapon" name="Shyeed's Bow {PvP} - Quick Recovery">
+		<!-- <Soul Crystal Enhancement>. Reduce re-use delay by 17%. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. -->
+		<set name="icon" val="icon.weapon_shyid_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1640" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="5" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="639" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3655-1;3552-3" /> <!-- PvP Weapon - Rapid Fire -->
+		<for>
+			<set stat="pAtk" val="571" />
+			<set stat="mAtk" val="133" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="227" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10688" type="Weapon" name="Sobekk's Hurricane {PvP} - Rsk. Haste">
+		<!-- <Soul Crystal Enhancement>. Increases Atk. Spd. by 11% when HP drops to 60% or lower. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defense during an attack. -->
+		<set name="icon" val="icon.weapon_sobekk_hurricane_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3651-1;3652-1;3552-1;3056-3" /> <!-- PvP Weapon - Cancel -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10689" type="Weapon" name="Sobekk's Hurricane {PvP} - Haste">
+		<!-- <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defense during an attack. -->
+		<set name="icon" val="icon.weapon_sobekk_hurricane_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="3651-1;3652-1;3552-1;3068-3" /> <!-- PvP Weapon - Cancel -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10690" type="Weapon" name="Sobekk's Hurricane {PvP} - Critical Drain">
+		<!-- <Soul Crystal Enhancement>. Absorbs 14 HP from target during a critical attack. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defense during an attack. -->
+		<set name="icon" val="icon.weapon_sobekk_hurricane_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="oncrit_skill" val="3039-7" />
+		<set name="item_skill" val="3651-1;3652-1;3552-3" /> <!-- PvP Weapon - Cancel -->
+		<for>
+			<set stat="pAtk" val="305" />
+			<set stat="mAtk" val="121" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10691" type="Weapon" name="Themis' Tongue {PvP} - Mana Up">
+		<!-- <Soul Crystal Enhancement>. Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_tongue_of_themis_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3654-1;3552-1;3014-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="201" />
+			<set stat="mAtk" val="162" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10692" type="Weapon" name="Themis' Tongue {PvP} - Mental Shield">
+		<!-- <Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_tongue_of_themis_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="onmagic_chance" val="50" />
+		<set name="onmagic_skill" val="1035-4" />
+		<set name="item_skill" val="3654-1;3552-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="201" />
+			<set stat="mAtk" val="162" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10693" type="Weapon" name="Themis' Tongue {PvP} - Magic Focus">
+		<!-- <Soul Crystal Enhancement>. Has a 20% chance of casting Focus when using a magic skill on the target. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_tongue_of_themis_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="onmagic_chance" val="20" />
+		<set name="onmagic_skill" val="1077-3" />
+		<set name="item_skill" val="3654-1;3552-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="201" />
+			<set stat="mAtk" val="162" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10694" type="Weapon" name="Cabrio's Hand {PvP} - Conversion">
+		<!-- <Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_hand_of_cabrio_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1510" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3654-1;3552-1;3048-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="201" />
+			<set stat="mAtk" val="162" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10695" type="Weapon" name="Cabrio's Hand {PvP} - Mana Up">
+		<!-- <Soul Crystal Enhancement>. Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_hand_of_cabrio_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1510" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3654-1;3552-1;3014-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="201" />
+			<set stat="mAtk" val="162" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10696" type="Weapon" name="Cabrio's Hand {PvP} - Magic Silence">
+		<!-- <Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_hand_of_cabrio_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1510" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="onmagic_chance" val="10" />
+		<set name="onmagic_skill" val="3074-2" />
+		<set name="item_skill" val="3654-1;3552-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="201" />
+			<set stat="mAtk" val="162" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10697" type="Weapon" name="Daimon Crystal {PvP} - Mana Up">
+		<!-- <Soul Crystal Enhancement>. Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_crystal_of_deamon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="880" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3654-1;3552-1;3014-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="245" />
+			<set stat="mAtk" val="177" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10698" type="Weapon" name="Daimon Crystal {PvP} - Acumen">
+		<!-- <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_crystal_of_deamon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="880" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3654-1;3552-1;3047-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="245" />
+			<set stat="mAtk" val="177" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10699" type="Weapon" name="Daimon Crystal {PvP} - Mental Shield">
+		<!-- <Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. -->
+		<set name="icon" val="icon.weapon_crystal_of_deamon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2157" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="880" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="onmagic_chance" val="50" />
+		<set name="onmagic_skill" val="1035-4" />
+		<set name="item_skill" val="3654-1;3552-3" /> <!-- PvP Weapon - Casting -->
+		<for>
+			<set stat="pAtk" val="245" />
+			<set stat="mAtk" val="177" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+</list>

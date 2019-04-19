@@ -1,0 +1,782 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="21200" levels="1" name="Age of the Three Kingdoms">
+		<!-- For 20 minutes, increases Speed by 33, Atk. Spd. by 33%, M. Atk. by 65%, Casting Spd. by 30%, physical P. Atk., and P. Def. by 15%. Reuse Delay 2 hour. Consumes 1 Proof of Friendship upon skill use. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20977" /> <!-- Proof of Friendship -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21201" levels="1" name="Haste">
+		<!-- Increases Atk. Spd. by 33% for 20 minutes. Reuse delay is 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys2.icon.br_dragonboat_cap_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21202" levels="1" name="Agathion Seal Cancel - Ball Trapping Gnocian">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1576" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21203" levels="1" name="Agathion Seal Cancel - Ball Trapping Orodriel">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1577" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21204" levels="1" name="Agathion Seal Cancel - Penalty Kick">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1578" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21205" levels="1" name="Agathion Seal Cancel - Ball Trapping Gnocian">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1579" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21206" levels="1" name="Agathion Seal Cancel - Ball Trapping Orodriel">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1580" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21207" levels="1" name="Agathion Seal Cancel - Penalty Kick">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1581" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21208" levels="1" name="Agathion Seal Cancel - Ball Trapping Gnocian">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1582" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21209" levels="1" name="Agathion Seal Cancel - Ball Trapping Orodriel">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1583" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21210" levels="1" name="Agathion Seal Cancel - Penalty Kick">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1584" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21211" levels="1" name="Blessing of Victory">
+		<!-- Increases Speed by 2%. -->
+		<set name="icon" val="BranchSys2.icon.br_worldcup_hair_i02" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21212" levels="1" name="Agathion Seal Cancel - Granny Tiger">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1585" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21213" levels="1" name="Agathion Seal Cancel - Flower Fairy Spirit">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1586" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21214" levels="1" name="Agathion Seal Cancel - Cheerleader Orodriel">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1587" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21215" levels="1" name="Agathion Seal Cancel - Cheerleader Lana">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1588" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21216" levels="1" name="Agathion Seal Cancel - Cheerleader Naonin">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1589" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21217" levels="1" name="Agathion Seal Cancel - Cheerleader Mortia">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1590" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21218" levels="1" name="Agathion Seal Cancel - Cheerleader Kaurin">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1591" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21219" levels="1" name="Agathion Seal Cancel - Cheerleader Meruril">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1592" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21220" levels="1" name="Agathion Seal Cancel - Handy">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1593" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21221" levels="1" name="Blessed Resurrection">
+		<!-- Allows the use of Blessed Resurrection. Reuse delay is 12 hours. -->
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="BranchSys2.icon.br_flag_cap_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21222" levels="1" name="Resist Elemental">
+		<!-- For 1 hour, increases Resistance to Fire/Water/Wind/Earth by 20. Reuse delay is 4 hours. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21223" levels="1" name="Ultimate Defense">
+		<!-- For 30 seconds, increases one's own P. Def. by 3636, M. Def. by 2727, and Resistance to buff canceling attacks by 80%, and becomes unable to move. Reuse delay is 1 hour. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21224" levels="1" name="Soul of an Adventurer of Immortality's Ability">
+		<!-- For 5 minutes, receives the soul's help to raise Max HP by 20%, Max MP by 20%, and Speed by 20%. Increases Resistance to de-buffs by 10%. Reuse delay is 1 hour. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21225" levels="1" name="Soul of a Strong Warrior's Ability">
+		<!-- For 5 minutes, increases Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20% with the soul's help. Bestows the ability to recover as HP 5% of the standard short-range physical damage inflicted on the enemy. Reuse delay is 1 hour. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21226" levels="1" name="Soul of a Wise Magician's Ability">
+		<!-- For 5 minutes, receives the soul's help to raise Casting Spd. by 20%, M. Atk. by 20%, and M. Def. by 20%. Decreases MP consumption for skill use by 5%. Reuse delay is 1 hour. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21227" levels="1" name="Ability of Prominent Adventure's Soul">
+		<!-- For 5 minutes, receives the soul's help to raise Max HP by 20%, Max MP by 20%, and Speed by 20%. Increases HP Recovery Bonus by 20% and MP Recovery Bonus by 20%. Reuse delay is 1 hour. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21228" levels="1" name="Soul of a Brave Warrior's Ability">
+		<!-- For 5 minutes, increases Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20% with the soul's help. Increases Critical Damage by 20% and critical rate by 20%. Reuse delay is 1 hour. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21229" levels="1" name="Blood Awakening">
+		<!-- Combines general attack damage absorption and Atk. Spd. increase for a more advanced blood awakening effect. For 1 hour, increases Atk. Spd. by 33% and bestows the ability to recover as HP 9% of the standard short-range physical damage inflicted on the enemy. Reuse delay is 4 hours. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21230" levels="1" name="Improved Magic">
+		<!-- Combines M. Atk. increase and M. Def. increase to have more advanced magic ability increase effect. For 1 hour, increases M. Atk. by 75% and M. Def. by 30%. Reuse delay is 4 hours. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21231" levels="1" name="Improved Critical Attack">
+		<!-- Combines critical rate increase and Critical Damage increase to have more advanced critical increase effect. For 1 hour, increases critical rate by 30% and Critical Damage by 35%. Reuse delay is 4 hours. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21232" levels="1" name="Shiny Lit Platform">
+		<!-- Steps onto the shiny lit platform. -->
+		<set name="abnormalTime" val="-1" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Transformation">
+				<param id="20004" />
+				<mul stat="runSpd" val="1.5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21233" levels="1" name="Release Seal on Agathion - Singer Dancer">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1594" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21234" levels="1" name="Release Seal on Agathion - Zaken Spirit Sword">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1595" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21235" levels="1" name="7th Anniversary T-shirt: Speed">
+		<!-- Increases Speed by 7. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21236" levels="1" name="7th Anniversary T-shirt: Blessed Escape Ability">
+		<!-- Allows the use of Blessed Escape every 20 hours. -->
+		<set name="hitTime" val="200" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="72000000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Escape">
+				<param escapeType="TOWN" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21237" levels="1" name="7th Anniversary T-shirt: Blessed Protection Ability">
+		<!-- Temporarily becomes invincible for 7 seconds. Can be used every 20 hours. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="7" />
+		<set name="abnormalType" val="INVINCIBILITY" />
+		<set name="hitTime" val="1000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="72000000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Invincible" />
+		</for>
+	</skill>
+	<skill id="21238" levels="1" name="Jet Bike">
+		<!-- Mounts a jet bike. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21239" levels="1" name="Release Seal on Agathion - Kau">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1596" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21240" levels="1" name="Release Seal on Agathion - Tow">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1597" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21241" levels="1" name="Magic Glasses">
+		<!-- Increases M. Def. by 70. -->
+		<set name="icon" val="BranchSys.icon.br_Eye_Glasses_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="mDef" val="70" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21242" levels="1" name="Zaken's Call">
+		<!-- Can move to near Zaken's Headquarters. Reuse delay 30 minutes. -->
+		<set name="blockedInOlympiad" val="true" />
+		<set name="hitTime" val="10000" />
+		<set name="icon" val="BranchSys2.Icon.br_zaken_cloak_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Teleport">
+				<param x="52201" y="218801" z="-3224" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21243" levels="1" name="Freya's Call">
+		<!-- Can move to near Freya's Headquarters. Reuse delay 30 minutes. -->
+		<set name="blockedInOlympiad" val="true" />
+		<set name="hitTime" val="10000" />
+		<set name="icon" val="BranchSys2.Icon.br_freya_cloak_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Teleport">
+				<param x="102605" y="-124399" z="-2784" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21244" levels="1" name="Frintezza's Call">
+		<!-- Can move to near Frintezza's Headquarters. Reuse delay 30 minutes. -->
+		<set name="blockedInOlympiad" val="true" />
+		<set name="hitTime" val="10000" />
+		<set name="icon" val="BranchSys2.Icon.br_frintessa_cloak_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Teleport">
+				<param x="181380" y="-80878" z="-2728" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21245" levels="1" name="Release Seal on Agathion - Rudolph">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1598" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21246" levels="1" name="Rudolph's Energy">
+		<!-- For 10 minute(s), Vitality is replenished when Exp. is acquired through hunting. Reuse time is 30 minutes. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21247" levels="1" name="Gift from Santa Claus">
+		<!-- Receives a gift from Santa Claus. It can be used only once a day, and the reuse time is reset every morning at 6:30 AM. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21248" levels="1" name="Release Seal on Agathion - Zinenze">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1599" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21249" levels="1" name="Release Seal on Agathion - Enze">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1600" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21250" levels="1" name="Academy Circlet">
+		<!-- Characters between levels 40 to 75, when worn this item decreases death EXP. Penalty by 50%. -->
+		<set name="icon" val="icon.accessory_academy_i00" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21251" levels="1" name="Shiny Party Hat - Greater Body">
+		<!-- Increases Max HP by 35% for 20 minutes. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21252" levels="1" name="Hellblade">
+		<!-- When attacking, has a chance of inflicting Critical Damage and bleed on the target. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="magicLvl" val="84" />
+		<set name="operateType" val="P" />
+		<for>
+			<effect name="TriggerSkillByAttack">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param isCritical="false" />
+				<param minDamage="1" chance="15" />
+				<param skillId="23319" skillLevel="1" /> <!-- Blood Seeker -->
+				<param targetType="ONE" />
+				<param allowWeapons="ALL" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21253" levels="1" name="Butcher Blades">
+		<!-- When attacking, has a chance of inflicting bleed on the target. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="magicLvl" val="84" />
+		<set name="operateType" val="P" />
+		<for>
+			<effect name="TriggerSkillByAttack">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param isCritical="false" />
+				<param minDamage="1" chance="15" />
+				<param skillId="23320" skillLevel="1" /> <!-- Greedy Throat -->
+				<param targetType="ONE" />
+				<param allowWeapons="ALL" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21254" levels="1" name="Claw of Destruction">
+		<!-- During a PvP attack, has a chance of inflicting fear on the target and causing them to flee. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="magicLvl" val="84" />
+		<set name="operateType" val="P" />
+		<for>
+			<effect name="TriggerSkillByAttack">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param isCritical="false" />
+				<param minDamage="1" chance="15" />
+				<param skillId="23321" skillLevel="1" /> <!-- Draconic Evolver -->
+				<param targetType="ONE" />
+				<param allowWeapons="ALL" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21255" levels="1" name="Blades of Delusion">
+		<!-- Has a chance of decreasing the target's P. Def. when attacking. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="magicLvl" val="84" />
+		<set name="operateType" val="P" />
+		<for>
+			<effect name="TriggerSkillByAttack">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param isCritical="false" />
+				<param minDamage="1" chance="15" />
+				<param skillId="23322" skillLevel="1" /> <!-- Demonic Desire -->
+				<param targetType="ONE" />
+				<param allowWeapons="ALL" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21256" levels="1" name="Blood Brother">
+		<!-- Has a chance of decreasing the target's P. Def. and inflicting shock. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i00" />
+		<set name="magicLvl" val="84" />
+		<set name="operateType" val="P" />
+		<for>
+			<effect name="TriggerSkillByAttack">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param isCritical="false" />
+				<param minDamage="1" chance="15" />
+				<param skillId="23323" skillLevel="1" /> <!-- Fury of Darkness -->
+				<param targetType="ONE" />
+				<param allowWeapons="ALL" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21257" levels="1" name="Mardil">
+		<!-- Has a chance of increasing Casting Spd. and wind attribute attack power when attacked. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i00" />
+		<set name="magicLvl" val="84" />
+		<set name="operateType" val="P" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="100" />
+				<param chance="30" />
+				<param skillId="23324" skillLevel="1" /> <!-- Jet Black Typhoon -->
+				<param targetType="SELF" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21258" levels="1" name="Rocking Horse Mount">
+		<!-- Mounts a rocking horse. -->
+		<set name="abnormalTime" val="-1" /> <!-- FIXME: value unconfirmed -->
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Transformation">
+				<param id="20007" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21259" levels="1" name="Release Seal on Agathion - Chorong">
+		<!-- Removes the Agathion's seal. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1604" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21260" levels="1" name="Notifier">
+		<!-- You can use to learn the number of received gifts and the number of remaining gifts. The gift provision time is reset every morning at 6:30. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21261" levels="1" name="Bad Bunny's Necklace">
+		<!-- Its effects are MP+250, HP+500, CP+1035, increased P. Atk., increased M. Atk., increase M. Crit Rate, and increased Crit Atk. power. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21262" levels="1" name="Bad Bunny's Earring">
+		<!-- Its effects are HP+250, Vampiric Rage effect, increased accuracy, decreased re-use time for magic skills, and decreased MP consumption for magic skills. When two identical earrings are equipped, only one effect is applied. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21263" levels="1" name="Bad Bunny's Ring">
+		<!-- Its effects are increased Atk. Spd., and increased Casting Spd. When two identical rings are equipped, only one effect is applied. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21264" levels="1" name="Summon Friend">
+		<!-- Summons your friend. The target to be summoned must be equipped with a Shining Couple Ring and be a party member. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21265" levels="1" name="Summon Friend">
+		<!-- Summons your friend. The target to be summoned must be equipped with a Mysterious Friend Summon Bracelet and be a party member. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="21266" levels="1" name="Release Seal on Agathion - Juju">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="1605" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21267" levels="1" name="Notifier">
+		<!-- Notifies the number of received gifts and remaining gifts when used. The gift supply time is initialized at 6:30 am every day. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+</list>

@@ -1,0 +1,1900 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="8200" levels="1" name="Light Draconic Leather Armor Set - PvP">
+		<!-- Increases Max MP/Atk. Spd./P. Atk./weight limit. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. DEX+1, STR+1, CON-2 -->
+		<set name="icon" val="icon.armor_t89_ul_i00" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.04" /> <!-- Attack Speed +4% -->
+				<mul stat="pAtk" val="1.04" /> <!-- P. Atk +4% -->
+				<add stat="maxMp" val="289" /> <!-- Maximum MP +289 -->
+				<add stat="weightPenalty" val="5759" /> <!-- Point at which a weight penalty is applied +5759 -->
+				<mul stat="pvpPhysDef" val="1.05" />
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8201" levels="1" name="Major Arcana Robe Set - PvP">
+		<!-- Decreases magic cancel rate, and increases Resistance to shock attacks, M. Atk., Speed and weight limit. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. WIT+1, INT+1, MEN-2 -->
+		<set name="icon" val="icon.armor_t90_ul_i00" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="DefenceTrait">
+				<param SHOCK="50" />
+				<sub stat="cancel" val="50" /> <!-- Casting Cancel Probability -50% -->
+				<mul stat="mAtk" val="1.17" /> <!-- M. Atk +17% -->
+				<add stat="runSpd" val="7" /> <!-- Movement Speed +7 -->
+				<add stat="weightPenalty" val="5759" /> <!-- Point at which a weight penalty is applied +5759 -->
+				<mul stat="pvpPhysDef" val="1.05" />
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8202" levels="1" name="Dynasty Breastplate - PvP">
+		<!-- Increases P. Def./Max HP/Resistance to Dark. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_u_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.046" /> <!-- P. Def +4.6% -->
+				<add stat="maxHp" val="418" /> <!-- MaxHP +418 -->
+				<add stat="darkRes" val="6" /> <!-- Darkness Resistance +6 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8203" levels="1" name="Dynasty Breastplate - PvP Shield Master">
+		<!-- Increases P. Def./Max HP/effectiveness of HP recovery magic/Resistance to shock. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_uk_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="DefenceTrait">
+				<param SHOCK="13" />
+				<mul stat="pDef" val="1.054" /> <!-- P. Def. +5.4% -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 effect -->
+				<mul stat="healEffect" val="1.03" /> <!-- Received Increased Heal +3% -->
+				<add stat="darkRes" val="8" /> <!-- Darkness resistance is increased +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8204" levels="1" name="Dynasty Breastplate - PvP Weapon Master">
+		<!-- Increases P. Atk./Max HP/critical rate/Resistance to Dark/Critical Damage. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_uw_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.054" /> <!-- P. Atk +5.4% -->
+				<add stat="maxHp" val="492" /> <!-- MaxHP +492 -->
+				<add stat="critRate" val="24.6" /> <!-- Critical Damage Chance +24.6 -->
+				<add stat="critDmgAdd" val="234" /> <!-- Critical Damage +234 -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8205" levels="1" name="Dynasty Breastplate - PvP Force Master">
+		<!-- Increases P. Atk./Max HP/Resistance to Dark, and decreases MP consumption. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_uf_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.054" /> <!-- P. Atk. +5.4% -->
+				<add stat="maxHp" val="492" /> <!-- HP +492 -->
+				<add stat="darkRes" val="8" /> <!-- Resistance to Darkness attacks +8 -->
+				<mul stat="physicalMpConsumeRate" val="0.95" /> <!-- MP consumption of the active skill is decreased -5% -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8206" levels="1" name="Dynasty Breastplate - PvP Bard">
+		<!-- Increases P. Def./Max HP/Resistance to Dark, and decreases MP consumption when using Song/Dance. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_uke_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.054" /> <!-- P. Def. +5.4% -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 effect -->
+				<mul stat="danceMpConsumeRate" val="0.95" /> <!-- MP consumption is decreased when song and dance skills are used -5% -->
+				<add stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8207" levels="1" name="Dynasty Leather Armor - PvP">
+		<!-- Increases Accuracy/evasion/Max HP/Resistance to Dark. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="rEvas" val="1.72" /> <!-- Evacion +1.72 -->
+				<add stat="accCombat" val="1.72" /> <!-- Accuracy +1.72 -->
+				<add stat="maxHp" val="418" /> <!-- MaxHP +418 -->
+				<add stat="darkRes" val="6" /> <!-- Darkness Resistance +6 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8208" levels="1" name="Dynasty Leather Armor - PvP Dagger Master">
+		<!-- Increases evasion/Max HP/Atk. Spd./Resistance to hold. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="DefenceTrait">
+				<param HOLD="13" />
+				<add stat="rEvas" val="4.3" /> <!-- Evasion +4.3 -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 Effect -->
+				<mul stat="pAtkSpd" val="1.0266" /> <!-- Atk. Spd. are increased +2.66% -->
+				<add stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8209" levels="1" name="Dynasty Leather Armor - PvP Bow Master">
+		<!-- Increases Accuracy/Max MP/Atk. Spd./MP Recovery Rate/Resistance to Dark. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="4.3" /> <!-- Accuracy +4.3 -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 Effect -->
+				<mul stat="pAtkSpd" val="1.0266" /> <!-- Atk. Spd. are increased +2.66% -->
+				<add stat="regMp" val="1.72" /> <!-- MP recovery are increased +1.72 -->
+				<add stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8210" levels="1" name="Dynasty Tunic - PvP">
+		<!-- Increases Casting Spd./Max MP/Resistance to Dark. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_u_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.12" /> <!-- Casting Spd. +12% -->
+				<add stat="maxMp" val="257" /> <!-- Max MP +257 -->
+				<add stat="darkRes" val="6" /> <!-- Darkness Resistance +6 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8211" levels="1" name="Dynasty Tunic - PvP Healer">
+		<!-- Increases Casting Spd./Max MP/Heal Power/Resistance to Dark, and decreases magic cancel rate against damage. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_uh_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<add stat="healEffect" val="20" /> <!-- Increase amount of heal +20 -->
+				<sub stat="cancel" val="15" /> <!-- Decrease magic cancel rate -15% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8212" levels="1" name="Dynasty Tunic - PvP Enchanter">
+		<!-- Increases Casting Spd./Max MP/Resistance to Dark, and decreases MP consumption/magic cancel rate against damage. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_ue_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<sub stat="cancel" val="15" /> <!-- Decrease magic cancel rate -15% -->
+				<mul stat="magicalMpConsumeRate" val="0.95" /> <!-- Decrease MP consumption -5% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8213" levels="1" name="Dynasty Tunic - PvP Summoner">
+		<!-- Increases Casting Spd./Max MP/P. Atk./P. Def./Resistance to Dark. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_us_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<mul stat="pDef" val="1.026" /> <!-- P. Def. +2.6% -->
+				<mul stat="pAtk" val="1.026" /> <!-- Increase P. Atk. +2.6% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8214" levels="1" name="Dynasty Tunic - PvP Wizard">
+		<!-- Increases Casting Spd./Max MP/M. Atk./Resistance to Dark. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_uw_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<mul stat="mAtk" val="1.054" /> <!-- Increase M. Atk +5.4% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8215" levels="1" name="Dynasty Leather Armor - PvP Force Master">
+		<!-- Increases P. Atk./Max HP/Resistance to Dark, and decreases MP consumption. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.054" /> <!-- P. Atk. +5.4% -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 Effect -->
+				<add stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
+				<mul stat="physicalMpConsumeRate" val="0.95" /> <!-- MP consumption of the active skill is decreased -5% -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8216" levels="1" name="Dynasty Leather Armor - PvP Weapon Master">
+		<!-- Increases P. Atk./Max HP/Critical Rate/Critical Damage/Resistance to Dark. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.054" /> <!-- P. Atk +5.4% -->
+				<add stat="maxHp" val="492" /> <!-- MaxHP +492 -->
+				<add stat="critRate" val="24.6" /> <!-- Critical Damage Chance +24.6 -->
+				<add stat="critDmgAdd" val="234" /> <!-- Critical Damage +234 -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8217" levels="1" name="Dynasty Leather Armor - PvP Enchanter">
+		<!-- Increases Casting Spd./Max MP/Resistance to Dark, and decreases MP consumption/magic cancel rate against damage. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t93_ue_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<sub stat="cancel" val="15" /> <!-- Decrease magic cancel rate -15% -->
+				<mul stat="magicalMpConsumeRate" val="0.95" /> <!-- decrease MP consumption -5% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8218" levels="1" name="Dynasty Leather Armor - PvP Summoner">
+		<!-- Increases P. Atk./P. Def./Max HP/Atk. Spd./Resistance to Dark. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.054" /> <!-- increase Atk. Spd. +5.4% -->
+				<mul stat="pAtk" val="1.0266" /> <!-- Increase P. Atk. +2.66% -->
+				<mul stat="pDef" val="1.0266" /> <!-- Increase P. Def. +2.66% -->
+				<add stat="maxHp" val="492" /> <!-- MaxHP +492 -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8219" levels="1" name="Dynasty Platinum Breastplate - PvP Shield Master">
+		<!-- Increases P. Def./Max HP/effectiveness of HP recovery magic/Resistance to shock. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_uk_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="DefenceTrait">
+				<param SHOCK="15" />
+				<mul stat="pDef" val="1.066" /> <!-- P. Def. +6.6% -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 -->
+				<mul stat="healEffect" val="1.04" /> <!-- Heal Capacity +4% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8220" levels="1" name="Dynasty Platinum Breastplate - PvP Weapon Master">
+		<!-- Increases P. Atk./Max HP/critical rate/Resistance to Dark/Critical Damage. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_uw_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.066" /> <!-- P. Atk. +6.6% -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 -->
+				<add stat="critRate" val="29.5" /> <!-- Critical Rate +29.5 Increase -->
+				<add stat="critDmgAdd" val="282" /> <!-- Critical Damage +282 -->
+				<add stat="darkRes" val="8" /> <!-- Darkness Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8221" levels="1" name="Dynasty Platinum Breastplate - PvP Bard">
+		<!-- Increases P. Def./Max HP/Resistance to Dark, and decreases MP consumption when using Song/Dance. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_uke_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.066" /> <!-- P. Def. +6.6% -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 -->
+				<mul stat="danceMpConsumeRate" val="0.94" /> <!-- MP Consumption -6% Decrease for Song and Dance Skills -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpPhysDef" val="1.05" />
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8222" levels="1" name="Dynasty Platinum Breastplate - PvP Force Master">
+		<!-- Increases P. Atk./Max HP/Resistance to Dark, and decreases MP consumption. Decreases damage received during PvP and has a chance to decrease all the attacker's speeds. -->
+		<set name="icon" val="icon.armor_t91_uf_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.066" /> <!-- P. Atk. +6.6% -->
+				<add stat="maxHp" val="492" /> <!-- Max. HP +492 -->
+				<add stat="darkRes" val="8" /> <!-- Resistance to Darkness attacks +8 -->
+				<mul stat="physicalMpConsumeRate" val="0.94" /> <!-- Decreases MP consumption by 6% for active skills -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5693" skillLevel="1" /> <!-- PvP Armor - Speed Down -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8223" levels="1" name="Dynasty Jewel Leather Armor - PvP Dagger Master">
+		<!-- Increases evasion/Max HP/Atk. Spd./Resistance to hold. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="DefenceTrait">
+				<param HOLD="15" />
+				<add stat="rEvas" val="5.3" /> <!-- Evasion +5.3 -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 -->
+				<mul stat="pAtkSpd" val="1.0324" /> <!-- Atk. Spd. +3.24% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8224" levels="1" name="Dynasty Jewel Leather Armor - PvP Bow Master">
+		<!-- Increases Accuracy/Max MP/Atk. Spd./MP Recovery Rate/Resistance to Dark. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="5.3" /> <!-- Accuracy +5.3 -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<mul stat="pAtkSpd" val="1.0324" /> <!-- Atk. Spd. +3.24% -->
+				<add stat="regMp" val="1.066" /> <!-- MP Recovery +6.6% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8225" levels="1" name="Dynasty Jewel Leather Armor - PvP Force Master">
+		<!-- Increases P. Atk./Max HP/Resistance to Dark, and decreases MP consumption. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.066" /> <!-- P. Atk. +6.6% -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="physicalMpConsumeRate" val="0.94" /> <!-- MP Consumption -6% -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8226" levels="1" name="Dynasty Jewel Leather Armor - PvP Weapon Master">
+		<!-- Increases P. Atk./Max HP/Critical Rate/Critical Damage/Resistance to Dark. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.066" /> <!-- Physical Attack Power +6.6% -->
+				<add stat="maxHp" val="492" /> <!-- Maximum HP +492 effect -->
+				<add stat="critRate" val="29.5" /> <!-- Critical Rate +29.5 Increase -->
+				<add stat="critDmgAdd" val="282" /> <!-- Critical Damage +282 -->
+				<add stat="darkRes" val="8" /> <!-- Darkness Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8227" levels="1" name="Dynasty Jewel Leather Armor - PvP Summoner">
+		<!-- Increases P. Atk./P. Def./Max HP/Atk. Spd./Resistance to Dark. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.066" /> <!-- Atk. Spd. +6.6% -->
+				<mul stat="pAtk" val="1.0266" /> <!-- P. Atk. +2.66% -->
+				<mul stat="pDef" val="1.0266" /> <!-- P. Def. +2.66% -->
+				<add stat="maxHp" val="492" /> <!-- Max HP +492 -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8228" levels="1" name="Dynasty Jewel Leather Armor - PvP Enchanter">
+		<!-- Increases Casting Spd./Max MP/Resistance to Dark, and decreases MP consumption/magic cancel rate against damage. Decreases damage received during PvP and has a chance to cancel the opponent's target when under attack. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<sub stat="cancel" val="15" /> <!-- Decrease magic cancel rate -15% -->
+				<mul stat="magicalMpConsumeRate" val="0.94" /> <!-- Decrease MP consumption -6% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
+				<param targetType="ONE" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8229" levels="1" name="Dynasty Silver Satin Tunic - PvP Healer">
+		<!-- Increases Casting Spd./Max MP/Heal Power/Resistance to Dark, and decreases magic cancel rate against damage. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_uh_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<add stat="healEffect" val="22" /> <!-- Heal Capacity +22 -->
+				<sub stat="cancel" val="15" /> <!-- Magic Cancel Rate -15 -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8230" levels="1" name="Dynasty Silver Satin Tunic - PvP Enchanter">
+		<!-- Increases Casting Spd./Max MP/Resistance to Dark, and decreases MP consumption/magic cancel rate against damage. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_ue_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<sub stat="cancel" val="15" /> <!-- Magic Cancel Rate -15 -->
+				<mul stat="magicalMpConsumeRate" val="0.94" /> <!-- MP Consumption -6% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8231" levels="1" name="Dynasty Silver Satin Tunic - PvP Summoner">
+		<!-- Increases Casting Spd./Max MP/P. Atk./P. Def./Resistance to Dark. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_us_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<mul stat="pDef" val="1.033" /> <!-- P. Def. +3.3% -->
+				<mul stat="pAtk" val="1.033" /> <!-- P. Atk. +3.3% -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8232" levels="1" name="Dynasty Silver Satin Tunic - PvP Wizard">
+		<!-- Increases Casting Spd./Max MP/M. Atk./Resistance to Dark. Decreases damage received during PvP, and has a chance to decrease the opponent's critical rate and Critical Damage when under attack. -->
+		<set name="icon" val="icon.armor_t93_uw_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+				<mul stat="mAtk" val="1.066" /> <!-- M. Atk. +6.6% -->
+				<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
+				<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+				<mul stat="pvpMagicalDef" val="1.05" />
+				<mul stat="pvpPhysSkillsDef" val="1.05" />
+				<mul stat="pvpPhysDef" val="1.05" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="2" />
+				<param skillId="5691" skillLevel="1" /> <!-- PvP Armor - Critical Down -->
+				<param targetType="SELF" />
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8233" levels="1" name="Zubei's Helmet">
+		<!-- Increases Evasion. -->
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="magicLvl" val="58" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="rEvas" val="0.88" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8234" levels="1" name="Zubei's Helmet">
+		<!-- Increases M. Atk. -->
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="magicLvl" val="58" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.0125" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8235" levels="1" name="Nightmare Helm">
+		<!-- Increases Resistance to sleep/hold attacks and magic resistance. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="magicLvl" val="67" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SLEEP="17.5" />
+				<param HOLD="17.5" />
+				<mul stat="mDef" val="1.0062" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8236" levels="1" name="Nightmare Helm">
+		<!-- Increases MP regeneration/M. Atk. And Resistance to sleep/hold attacks. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="magicLvl" val="67" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SLEEP="17.5" />
+				<param HOLD="17.5" />
+				<mul stat="regMp" val="1.0062" />
+				<mul stat="mAtk" val="1.0062" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8237" levels="1" name="Shalin Heal">
+		<!-- Recovers with the power of Talisman attached to the Sword of Fire and Water. -->
+		<set name="effectPoint" val="743" />
+		<set name="hitTime" val="5000" />
+		<set name="icon" val="icon.skill1401" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="73" />
+		<set name="mpConsume" val="61" />
+		<set name="mpInitialConsume" val="16" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="30000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Heal">
+				<param power="540" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8238" levels="1" name="Shalin Strike">
+		<!-- Inflicts a powerful physical water attack on the enemy with the power of Talisman attached to the Sword of Fire and Water. -->
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-650" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0003" />
+		<set name="magicLvl" val="73" />
+		<set name="mpConsume" val="74" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="1827" />
+		<set name="reuseDelay" val="20000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="8239" levels="1" name="Critical Up">
+		<!-- Increases Critical Rate and Atk. Spd. Improves chance of a critical hit from range attacks. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="SEED_OF_CRITICAL" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill5760" />
+		<set name="magicLvl" val="73" />
+		<set name="mpConsume" val="74" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="20000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.3" />
+				<mul stat="pAtkSpd" val="1.33" />
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param isCritical="true" />
+				<param minDamage="1" chance="99" />
+				<param skillId="5760" skillLevel="1" /> <!-- Critical Hit -->
+				<param targetType="SELF" />
+				<param allowWeapons="ALL" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8240" levels="3" name="Obliteration Storm">
+		<!-- Delivers a powerful range attack, shocking the target. Consumes all accumulated critical hits. Requires a Stage 3 critical hit. -->
+		<table name="#abnormalLvl"> 4 6 8 </table>
+		<table name="#power"> 9132 12784 16436 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="affectRange" val="300" />
+		<set name="basicProperty" val="CON" />
+		<set name="effectPoint" val="-1300" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.weapon_long_spear_i00" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="73" />
+		<set name="mpConsume" val="149" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="20000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="SHOCK" />
+		<cond msgId="113" addName="1">
+			<player checkAbnormal="SEED_OF_CRITICAL,#abnormalLvl" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+		<selfEffects>
+			<effect name="DispelBySlot">
+				<param dispel="SEED_OF_CRITICAL,9" />
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="8241" levels="1" name="Critical Up">
+		<!-- Temporarily increases Critical Damage rate. Effect 3. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="495" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill1077" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="73" />
+		<set name="mpConsume" val="38" />
+		<set name="mpInitialConsume" val="10" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8242" levels="1" name="Ice Ball">
+		<!-- Inflicts a powerful long-range water attack on the enemy. -->
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-574" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3100" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLvl" val="61" />
+		<set name="mpConsume" val="61" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="1230" />
+		<set name="reuseDelay" val="20000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="8243" levels="1" name="Chill Strike">
+		<!-- Inflicts a powerful short-range water attack on the enemy. -->
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-574" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="850" />
+		<set name="icon" val="icon.skill0105" />
+		<set name="magicLvl" val="61" />
+		<set name="mpConsume" val="61" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="1845" />
+		<set name="reuseDelay" val="120000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="8244" levels="1" name="Transform Gatekeeper">
+		<!-- Transforms target into a Gatekeeper. Allows Vitality to be restored when Exp. Points are acquired. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="7200" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="319" />
+				<sub stat="vitalityConsumeRate" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8245" levels="1" name="Summon Agathion - Love">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16049" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8246" levels="1" name="Transform Pumpkin Ghost">
+		<!-- Transform into a Pumpkin Ghost. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="108" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8247" levels="1" name="Mount Darkmane Pacer">
+		<!-- Mount a Darkmane Pacer. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="106" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8248" levels="1" name="Cancel Gatekeeper Transformation">
+		<!-- Cancels transformation. -->
+		<set name="effectPoint" val="10" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform2" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="99" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DispelBySlot">
+				<param dispel="TRANSFORM,319" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8249" levels="1" name="Cancel Critical Hit">
+		<set name="effectPoint" val="10" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="99" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DispelBySlot">
+				<param dispel="SEED_OF_CRITICAL,10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8250" levels="2" name="Summon Tigress">
+		<!-- Summons Tigress. -->
+		<table name="#npcIds"> 14916 14917 </table>
+		<set name="hitTime" val="15000" />
+		<set name="icon" val="icon.skill0283" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="63" />
+		<set name="magicLvl" val="63" />
+		<set name="mpConsume" val="117" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="20000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
+		<for>
+			<effect name="Summon">
+				<param npcId="#npcIds" />
+				<param lifeTime="1200" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8251" levels="1" name="Collection Agathion Release Seal">
+		<!-- Removes the seal on a Collection Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16061" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8252" levels="1" name="Test - Transform Mount1">
+		<!-- Mounts a test mount. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="NONE" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+	</skill>
+	<skill id="8253" levels="1" name="Test - Transform Mount2">
+		<!-- Mounts a test mount. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="NONE" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+	</skill>
+	<skill id="8254" levels="1" name="Release Seal on Agathion - Monkey">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16054" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8255" levels="1" name="Release Seal on Agathion - Griffin">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16055" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8256" levels="1" name="Release Seal on Agathion - Joy">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16056" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8257" levels="1" name="Release Seal on Agathion - Anger">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16058" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8258" levels="1" name="Release Seal on Agathion - Sorrow">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16057" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8259" levels="1" name="Release Seal on Agathion - Girl Teddy Boy">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16059" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8260" levels="1" name="Release Seal on Agathion - Girl Teddy Girl">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16060" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8261" levels="1" name="Steam Beatle Mount">
+		<!-- Mounts a Steam Beetle. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="110" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8262" levels="1" name="Tawny Maned Lion Mount">
+		<!-- Mounts a golden maned lion. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="109" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8263" levels="1" name="Transform Snow King">
+		<!-- Transforms user into a Snow Kung. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="114" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8264" levels="1" name="Transform Scarecrow Jack">
+		<!-- Transforms user into Scarecrow Jack. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="115" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8265" levels="1" name="Transform Tin Golem">
+		<!-- Transforms user into a Tin Golem. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="116" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8266" levels="1" name="Gludio Talisman">
+		<set name="icon" val="icon.skill08266" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8267" levels="1" name="Dion Talisman">
+		<set name="icon" val="icon.skill08267" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8268" levels="1" name="Giran Talisman">
+		<set name="icon" val="icon.skill08268" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8269" levels="1" name="Oren Talisman">
+		<set name="icon" val="icon.skill08269" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8270" levels="1" name="Aden Talisman">
+		<set name="icon" val="icon.skill08270" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8271" levels="1" name="Innadril Talisman">
+		<set name="icon" val="icon.skill08271" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8272" levels="1" name="Goddard Talisman">
+		<set name="icon" val="icon.skill08272" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8273" levels="1" name="Rune Talisman">
+		<set name="icon" val="icon.skill08273" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8274" levels="1" name="Schuttgart Talisman">
+		<set name="icon" val="icon.skill08274" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="8275" levels="1" name="Release Seal on Agathion - pvp">
+		<!-- Removes the seal of Agathion. -->
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonAgathion">
+				<param npcId="16062" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8276" levels="1" name="Shield Branding">
+		<!-- Stuns certain monsters within the Tumor of Death and the Seed of Infinity, causing them to become immobile or lose their target. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="80" />
+		<set name="affectLimit" val="5-15" />
+		<set name="basicProperty" val="CON" />
+		<set name="effectPoint" val="-100" />
+		<set name="fanRange" val="0,0,150,90" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="icon.skill0092" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<set name="trait" val="SHOCK" />
+	</skill>
+	<skill id="8277" levels="1" name="Transform Native">
+		<!-- Transforms into a Native. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="56" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="101" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8278" levels="1" name="Transform Guard of Dawn">
+		<!-- Transforms into a Guard of the Dawn. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="56" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="113" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8279" levels="1" name="Blessing of Fire">
+		<!-- Blessing of fire. fire is bestowed on physical attacks. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="HOLY_ATTACK" />
+		<set name="hitTime" val="100" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="25" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="8280" levels="1" name="Blessing of Earth">
+		<!-- Blessing of earth. Earth is bestowed on physical attacks. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="HOLY_ATTACK" />
+		<set name="hitTime" val="100" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="25" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="8281" levels="1" name="Inventory Slot Add">
+		<!-- Increases inventory size when wearing a belt. -->
+		<set name="icon" val="icon.skill8281" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="8282" levels="1" name="Cloak Slot Add">
+		<!-- Activates the cloak slot. -->
+		<set name="icon" val="icon.skill8282" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="8283" levels="1" name="Vesper Heavy Armor Set">
+		<!-- When equipped, increases P. Atk./P. Def. by 5.57%, Max HP by 531, and Resistance to sleep/hold attacks by 70%. STR+2, DEX-2 -->
+		<set name="icon" val="icon.armor_t94_u_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param HOLD="70" />
+				<param SLEEP="70" />
+				<mul stat="pAtk" val="1.0557" /> <!-- P. Atk. +5.57% -->
+				<mul stat="pDef" val="1.0557" /> <!-- P. Def. +5.57% -->
+				<add stat="maxHp" val="531" /> <!-- Max HP by 531 -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="8284" levels="1" name="Vesper Noble Heavy Armor Set">
+		<!-- When equipped, increases P. Atk./P. Def. by 5.57%, Max HP by 540, Resistance to Sleep/Hold attacks by 70%, Accuracy by 4, Speed by 5, and Resistance to magic damage by 1%. Cloak equip possible. STR+2, DEX-2 -->
+		<set name="icon" val="icon.armor_t94_u_i01" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param HOLD="70" />
+				<param SLEEP="70" />
+				<mul stat="pAtk" val="1.0557" /> <!-- P. Atk. +5.57% -->
+				<mul stat="pDef" val="1.0557" /> <!-- P. Def. +5.57% -->
+				<add stat="maxHp" val="540" /> <!-- Max HP 540 -->
+				<add stat="accCombat" val="4" /> <!-- Increases Accuracy by 4 -->
+				<add stat="runSpd" val="5" /> <!-- Increases Speed by 5 -->
+				<mul stat="magicSuccRes" val="1.01" /> <!-- Resistance to magic damage by 1% -->
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8285" levels="1" name="Vesper Light Armor Set">
+		<!-- When equipped, increases P. Atk. by 5.57%, Atk. Spd./MP Recovery by 5% and Max MP by 347. STR+1, CON-2, DEX+1 -->
+		<set name="icon" val="icon.armor_t95_u_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.0557" /> <!-- P. Atk. +5.57% -->
+				<mul stat="pAtkSpd" val="1.05" /> <!-- Atk. Spd. +5% -->
+				<mul stat="regMp" val="1.05" /> <!-- MP Recovery Rate by 5% -->
+				<add stat="maxMp" val="347" /> <!-- Max MP by 347 -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="8286" levels="1" name="Vesper Noble Light Armor Set">
+		<!-- When equipped, increases P. Atk. by 5.57%, Atk. Spd./MP Recovery by 5%, Max MP by 354, Evasion by 3, Critical Damage by 172, and Resistance to Paralysis by 50%. Can equip a cloak. STR+1, CON-2, DEX+1 -->
+		<set name="icon" val="icon.armor_t95_u_i01" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param PARALYZE="50" />
+				<mul stat="pAtk" val="1.0557" /> <!-- P. Atk. +5.57% -->
+				<mul stat="pAtkSpd" val="1.05" /> <!-- Atk. Spd. +5% -->
+				<mul stat="regMp" val="1.05" /> <!-- MP Recovery Rate by 5% -->
+				<add stat="maxMp" val="354" /> <!-- Max MP by 354 -->
+				<add stat="rEvas" val="3" /> <!-- Increases Evasion by 3 -->
+				<add stat="critDmgAdd" val="172" /> <!-- Increases Critical Damage by 172 -->
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8287" levels="1" name="Vesper Robe Set">
+		<!-- When equipped, increases M. Atk. by 8.47%, Casting Spd. by 15%, MP Recovery by 5%, and Resistance to stun attacks by 50%. Decreases damage canceled by magic to 30. INT+1, MEN-2, WIT+1 -->
+		<set name="icon" val="icon.armor_t96_u_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SHOCK="50" />
+				<mul stat="mAtk" val="1.0847" /> <!-- M. Atk. 8.47% -->
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Speed 15% -->
+				<mul stat="regMp" val="1.0557" /> <!-- MP Recovery Rate by 5.57% -->
+				<sub stat="cancel" val="30" /> <!-- decreases the damage to be cancelled by magic by 30 -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="8288" levels="1" name="Vesper Noble Robe Set">
+		<!-- When equipped, increases M. Atk. by 8.47%, Casting Spd. by 15%, MP Recovery by 5%, Resistance to stun by 50%, and Speed by 7. Decreases magic cancelling damage by 30 and MP consumption for magic skills by 3%. Can equip a cloak. INT+1, MEN-2, WIT+1 -->
+		<set name="icon" val="icon.armor_t96_u_i01" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SHOCK="50" />
+				<mul stat="mAtk" val="1.0847" /> <!-- M. Atk. 8.47% -->
+				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Speed 15% -->
+				<mul stat="regMp" val="1.0557" /> <!-- MP Recovery Rate by 5.57% -->
+				<sub stat="cancel" val="30" /> <!-- decreases the damage to be cancelled by magic by 30 -->
+				<add stat="runSpd" val="7" /> <!-- Increases Speed by 7 -->
+				<mul stat="magicalMpConsumeRate" val="0.97" /> <!-- Decreases MP consumption for magic skills by 3% -->
+			</effect>
+			<effect name="EnableCloak" />
+		</for>
+	</skill>
+	<skill id="8289" levels="3" name="Special Ability Focus">
+		<!-- Increases critical rate. Inflicts additional damage during PvP. -->
+		<table name="#magicLvl"> 84 85 86 </table>
+		<table name="#rCrit"> 128.7 137.1 137.1 </table>
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="critRate" val="#rCrit" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8290" levels="12" name="Add Belt Inventory Slot">
+		<!-- Increases inventory size when wearing a belt. -->
+		<table name="#inventoryLimit"> 3 6 9 12 15 18 21 24 27 30 33 36 </table>
+		<set name="icon" val="icon.skill0332" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="inventoryLimit" val="#inventoryLimit" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8291" levels="12" name="Add Belt Weight Gauge">
+		<!-- Increases weight gauge when wearing a belt. -->
+		<table name="#weightPenalty"> 1000 2000 3000 4000 5000 6000 7000 8000 9000 10000 11000 12000 </table>
+		<set name="icon" val="icon.skill0150" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="weightLimit" val="#weightPenalty" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8292" levels="1" name="Olympiad Warrior's Ring">
+		<!-- Increases Resistance to hold attacks by 30%, the hold attack bonus by 30%, Critical Damage by 15%, and Accuracy by 2. -->
+		<set name="icon" val="icon.accessory_tateossian_ring_i00" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="AttackTrait">
+				<param HOLD="30" />
+				<mul stat="critDmg" val="1.15" /> <!-- Increases critical attack power by 15% -->
+				<add stat="accCombat" val="2" /> <!-- Increases accuracy by 2 -->
+			</effect>
+			<effect name="DefenceTrait">
+				<param HOLD="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8293" levels="1" name="Olympiad Warrior's Earring">
+		<!-- Increases Resistance to shock/mind attack by 20% and shock/mind attack bonus by 20%. Recovers 4% of the damage to the enemy as your HP. Excludes damage caused by skills and long-range attack. -->
+		<set name="icon" val="icon.accessory_tateossian_earring_i00" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="AttackTrait">
+				<param SHOCK="20" />
+				<param DERANGEMENT="20" />
+				<add stat="absorbDam" val="4" /> <!-- Recovers 4% of the damage to the enemy as your HP -->
+			</effect>
+			<effect name="DefenceTrait">
+				<param SHOCK="20" />
+				<param DERANGEMENT="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8294" levels="1" name="Olympiad Warrior's Necklace">
+		<!-- Increases Resistance to paralysis/shock/sleep attacks by 15%, increases paralysis/shock/sleep attack bonus by 15%, decreases the skill's reuse time by 5%, and reflects 4% of the damage received back to the enemy. Excludes damage caused by skills and long-range attack. -->
+		<set name="icon" val="icon.accessory_tateossian_necklace_i00" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="AttackTrait">
+				<param PARALYZE="15" />
+				<param SHOCK="15" />
+				<param SLEEP="15" />
+				<mul stat="pReuse" val="0.95" /> <!-- Decreases the skill's reuse time by 5% -->
+				<mul stat="mReuse" val="0.95" /> <!-- Decreases the skill's reuse time by 5% -->
+				<add stat="reflectDam" val="4" /> <!-- Reflects 4% of the damage received back to the enemy -->
+			</effect>
+			<effect name="DefenceTrait">
+				<param PARALYZE="15" />
+				<param SHOCK="15" />
+				<param SLEEP="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8295" levels="1" name="Special Ability Focus">
+		<!-- Increases critical rate. Inflicts additional damage during PvP. -->
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="critRate" val="109.2" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8296" levels="1" name="Special Ability Focus">
+		<!-- Increases critical rate. Inflicts additional damage during PvP. -->
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLvl" val="83" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="critRate" val="109.2" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8297" levels="1" name="Special Ability Haste">
+		<!-- Increases Atk. Spd. Inflicts additional damage during PvP. -->
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.04" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8298" levels="1" name="Special Ability Focus">
+		<!-- Increases critical rate. Inflicts additional damage during PvP. -->
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="critRate" val="109.2" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="8299" levels="1" name="Arcana Sigil">
+		<set name="icon" val="icon.arcana_sigil_i01" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+</list>

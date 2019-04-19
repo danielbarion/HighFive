@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/skills.xsd">
+	<skill id="10000" levels="1" name="Mana Drug">
+		<set name="abnormalTime" val="15" />
+		<set name="displayId" val="2288" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="726" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="ManaHealOverTime" ticks="3">
+				<param power="1.5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="10001" levels="1" name="Mana Potion">
+		<set name="displayId" val="2288" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="728" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="500" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="ManaHeal">
+				<param power="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="10002" levels="1" name="Custom Trap skill">
+		<!-- Use this skill if you want to handle trap activation in scripts(example Seed of Destruction Spawn Traps) -->
+		<set name="targetType" val="AURA" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="operateType" val="P" />
+	</skill>
+</list>

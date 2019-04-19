@@ -1,0 +1,1212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="10000" type="EtcItem" name="Wind Potion">
+		<!-- Increases Resistance to wind attacks by 30 for 10 minutes. -->
+		<set name="icon" val="icon.etc_wind_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2337-1" /> <!-- Wind Resist Potion -->
+	</item>
+	<item id="10001" type="EtcItem" name="Dark Potion">
+		<!-- Increases Resistance to dark attacks by 30 for 10 minutes. -->
+		<set name="icon" val="icon.etc_unholy_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2340-1" /> <!-- Dark Resist Potion -->
+	</item>
+	<item id="10002" type="EtcItem" name="Holy Potion">
+		<!-- Increases Resistance to Holy by 30 for 10 minutes. -->
+		<set name="icon" val="icon.etc_holy_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2339-1" /> <!-- Holy Resist Potion -->
+	</item>
+	<item id="10003" type="Weapon" name="Fleuret">
+		<!-- Kamael Exclusive Weapon: Knight Sword Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_rapier_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="915" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1500" />
+		<set name="price" val="495500" />
+		<set name="change_weaponId" val="128" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="46" />
+			<set stat="mAtk" val="32" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10004" type="Weapon" name="Dynasty Dual Sword">
+		<!-- When enchanted, P. Atk. of a dualsword will increase more than that of a two-handed sword, blunt or fist weapon. When enchanted by 4 or more charges, Critical Rate will increase by 109, and MaxHP will increase by 10%. Enhances damage done to the target during PvP. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3597" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3411-1" />
+		<set name="item_skill" val="3552-1" /> <!-- Special Ability: PvP Damage -->
+		<for>
+			<set stat="pAtk" val="405" />
+			<set stat="mAtk" val="151" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10005" type="Weapon" name="Shadow Item: Fleuret">
+		<!-- A Shadow Item with the power of a Fleuret. It cannot be traded, dropped, crystallized, or given other functions. -->
+		<set name="icon" val="icon.weapon_rapier_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="90" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="46" />
+			<set stat="mAtk" val="32" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10006" type="Weapon" name="Shadow Item: Military Talwar">
+		<!-- A Shadow Item with the power of a Military Talwar. It cannot be traded, dropped, crystallized, or given other functions. -->
+		<set name="icon" val="icon.weapon_tulwar_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="693" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="90" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="55" />
+			<set stat="mAtk" val="32" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10007" type="Weapon" name="Shadow Item: Hand Crossbow">
+		<!-- A Shadow Item with the power of a Hand Crossbow. It cannot be traded, dropped, crystallized, or given other functions. -->
+		<set name="icon" val="icon.weapon_hunting_gun_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="693" />
+		<set name="soulshots" val="4" />
+		<set name="spiritshots" val="2" />
+		<set name="reuse_delay" val="400" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="90" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="64" />
+			<set stat="mAtk" val="32" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10008" type="Weapon" name="Shadow Item: Blinzlasher">
+		<!-- A Shadow Item with the power of a Blinzlasher. It cannot be traded, dropped, crystallized, or given other functions. -->
+		<set name="icon" val="icon.weapon_blink_slasher_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="467" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="120" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="126" />
+			<set stat="mAtk" val="76" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10009" type="Weapon" name="Shadow Item: Immortal Edge">
+		<!-- A Shadow Item with the power of an Immortal Edge. It cannot be traded, dropped, crystallized, or given other functions. -->
+		<set name="icon" val="icon.weapon_invincible_blade_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="660" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="120" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="151" />
+			<set stat="mAtk" val="76" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10010" type="Weapon" name="Shadow Item: Tathlum">
+		<!-- A Shadow Item with the power of a Tathlum. It cannot be traded, dropped, crystallized, or given other functions. -->
+		<set name="icon" val="icon.weapon_taslam_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="587" />
+		<set name="soulshots" val="5" />
+		<set name="spiritshots" val="3" />
+		<set name="reuse_delay" val="400" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="120" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="176" />
+			<set stat="mAtk" val="76" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10011" type="Weapon" name="Shadow Item - War Axe">
+		<!-- A Shadow Item with the power of a War Axe. It cannot be traded, dropped, crystallized, or given other functions. -->
+		<set name="icon" val="icon.weapon_war_axe_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="533" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="120" />
+		<for>
+			<set stat="pAtk" val="139" />
+			<set stat="mAtk" val="76" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10012" type="EtcItem" name="Scorpion Poison Stinger">
+		<!-- Poison stinger from a scorpion. A good item for bartering with caravans. -->
+		<set name="icon" val="icon.etc_claw_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="price" val="1000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10013" type="EtcItem" name="Race Stamp">
+		<!-- Mark to obtain Secret Garden Key. -->
+		<set name="icon" val="icon.etc_hs_agit_war_joining_certificate_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10014" type="EtcItem" name="Control Room Card">
+		<!-- Card to operate Control Equipment. -->
+		<set name="icon" val="icon.etc_hs_agit_war_joining_certificate_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="price" val="250" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10015" type="EtcItem" name="Prison Gate Key">
+		<set name="icon" val="icon.etc_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2362-1" /> <!-- Prison Gate Key -->
+	</item>
+	<item id="10016" type="EtcItem" name="Underground Warehouse Key">
+		<!-- Key to open Underground Warehouse. -->
+		<set name="icon" val="icon.etc_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2363-1" /> <!-- Underground Warehouse Key -->
+	</item>
+	<item id="10017" type="EtcItem" name="Coral Treasure Chest Key">
+		<!-- Key to open Coral Treasure Chest. -->
+		<set name="icon" val="icon.etc_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2400-1" /> <!-- Red Coral Treasure Chest Key -->
+	</item>
+	<item id="10018" type="Armor" name="Agathion Seal Bracelet - Fortress">
+		<!-- A bracelet that can summon Agathion. Wearable only by members of a clan that owns Fortress. This item cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="5000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="5458-1;3361-1;3267-1" /> <!-- Performing Agathion - Fortress -->
+		<set name="equip_condition" val="{{ec_fortress;1}}" />
+		<cond msgId="1518">
+			<player fort="-1" />
+		</cond>
+	</item>
+	<item id="10019" type="Armor" name="Ring Mail Breastplate">
+		<!-- Cannot be exchanged, dropped, crystallized, or enchanted. -->
+		<set name="icon" val="icon.armor_t12_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="151" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="8820" />
+		<set name="price" val="64210" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="77" />
+		</for>
+	</item>
+	<item id="10020" type="Armor" name="Iron Plate Gaiters">
+		<!-- Cannot be exchanged, dropped, crystallized, or enchanted. -->
+		<set name="icon" val="icon.armor_t12_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="94" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="3820" />
+		<set name="price" val="40100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="48" />
+		</for>
+	</item>
+	<item id="10021" type="Armor" name="Puma Skin Shirt">
+		<!-- Cannot be exchanged, dropped, crystallized, or enchanted. -->
+		<set name="icon" val="icon.armor_t09_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="113" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4700" />
+		<set name="price" val="48200" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<for>
+			<add order="0" stat="pDef" val="58" />
+		</for>
+	</item>
+	<item id="10022" type="Armor" name="Puma Skin Gaiters">
+		<!-- Cannot be exchanged, dropped, crystallized, or enchanted. -->
+		<set name="icon" val="icon.armor_t09_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1600" />
+		<set name="price" val="30100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<for>
+			<add order="0" stat="pDef" val="36" />
+		</for>
+	</item>
+	<item id="10023" type="Armor" name="Cursed Tunic">
+		<!-- Cannot be exchanged, dropped, crystallized, or enchanted. -->
+		<set name="icon" val="icon.armor_t14_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="113" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="2090" />
+		<set name="price" val="48200" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="39" />
+			<add stat="maxMp" val="106" />
+		</for>
+	</item>
+	<item id="10024" type="Armor" name="Cursed Stockings">
+		<!-- Cannot be exchanged, dropped, crystallized, or enchanted. -->
+		<set name="icon" val="icon.armor_t14_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="71" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="1020" />
+		<set name="price" val="30100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="24" />
+			<add stat="maxMp" val="66" />
+		</for>
+	</item>
+	<item id="10025" type="EtcItem" name="Battle Manual - Fallen Arrow">
+		<!-- Battle Manual needed to learn Fallen Arrow. Used by Kamael soldiers. Required level: 5 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="75" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10026" type="EtcItem" name="Battle Manual - Fallen Attack">
+		<!-- Battle Manual needed to learn Fallen Attack. Used by Kamael soldiers. Required level: 5 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="75" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10027" type="EtcItem" name="Battle Manual - Detect Trap">
+		<!-- Battle Manual needed to learn Detect Trap. Used by female Kamael soldiers. Required level: 15 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="550" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10028" type="EtcItem" name="Battle Manual - Defuse Trap">
+		<!-- Battle Manual needed to learn Defuse Trap. Used by female Kamael soldiers. Required level: 15 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="550" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10029" type="EtcItem" name="Battle Manual - Dark Strike">
+		<!-- Battle Manual needed to learn Dark Strike. Used by Troopers. Required level: 20 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10030" type="EtcItem" name="Battle Manual - Dark Smash">
+		<!-- Battle Manual needed to learn Dark Smash. Used by Berserkers. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2900" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10031" type="EtcItem" name="Battle Manual - Double Thrust">
+		<!-- Battle Manual needed to learn Double Thrust. Used by Troopers, and Warders. Required level: 20 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10032" type="EtcItem" name="Battle Manual - Abyssal Blaze">
+		<!-- Battle Manual needed to learn Abyssal Blaze. Used by Troopers, and Warders. Required level: 20 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10033" type="EtcItem" name="Battle Manual - Dark Explosion">
+		<!-- Battle Manual needed to learn Dark Explosion Used by Troopers and Warders. Required level: 24 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="1150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10034" type="EtcItem" name="Battle Manual - Shift Target">
+		<!-- Battle Manual needed to learn Shift Target. Used by Arbalesters. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3200" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10035" type="EtcItem" name="Battle Manual - Change Life Stone">
+		<!-- Battle Manual that teaches you about the Change Life Stone. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2600" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10036" type="EtcItem" name="Battle Manual - Spread Wing">
+		<!-- Battle Manual needed to learn Spread Wing. Used by Berserkers and Soul Breakers. Required level: 52 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="5000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10037" type="EtcItem" name="Battle Manual - Slashing Blade">
+		<!-- Battle Manual needed to learn Slashing Blade. Used by Berserkers. Required level: 46 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3850" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10038" type="EtcItem" name="Battle Manual - Crushing Pain">
+		<!-- Battle Manual needed to learn Crushing Pain. Used by Berserkers. Required level: 60 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="7000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10039" type="EtcItem" name="Battle Manual - Contagion">
+		<!-- Battle Manual needed to learn Contagion. Used by Berserkers. Required level: 64 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="7950" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10040" type="EtcItem" name="Battle Manual - Life to Soul">
+		<!-- Battle Manual needed to learn Life to Soul. Used by Berserkers, Soul Breakers, and Arbalesters. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3200" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10041" type="EtcItem" name="Battle Manual - Scorn">
+		<!-- Battle Manual needed to learn Scorn. Used by Berserkers. Required level: 43 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10042" type="EtcItem" name="Battle Manual - Triple Thrust">
+		<!-- Battle Manual needed to learn Triple Thrust. Used by Soul Breakers. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2900" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10043" type="EtcItem" name="Battle Manual - Shining Edge">
+		<!-- Battle Manual needed to learn Shining Edge. Used by Soul Breakers. Required level: 49 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="4400" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10044" type="EtcItem" name="Battle Manual - Checkmate">
+		<!-- Battle Manual needed to learn Checkmate. Used by Soul Breakers. Required level: 52 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="5400" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10045" type="EtcItem" name="Battle Manual - Soul of Pain">
+		<!-- Battle Manual needed to learn Soul of Pain. Used by Soul Breakers. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10046" type="EtcItem" name="Battle Manual - Dark Flame">
+		<!-- Battle Manual needed to learn Dark Flame. Used by Soul Breakers. Required level: 46 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="4000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10047" type="EtcItem" name="Battle Manual - Annihilation Circle">
+		<!-- Battle Manual needed to learn Annihilation Circle. Used by Soul Breakers. Required level: 58 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="6750" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10048" type="EtcItem" name="Battle Manual - Curse of Divinity">
+		<!-- Battle Manual needed to learn Curse of Divinity. Used by Soul Breakers. Required level: 66 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="8700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10049" type="EtcItem" name="Battle Manual - Steal Divinity">
+		<!-- Battle Manual needed to learn Steal Divinity. Used by Soul Breakers. Required level: 55 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="6000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10050" type="EtcItem" name="Battle Manual - Blink">
+		<!-- Battle Manual needed to learn Blink. Used by Soul Breakers. Required level: 60 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="7200" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10051" type="EtcItem" name="Battle Manual - Transfer Soul">
+		<!-- Battle Manual needed to learn Transfer Soul. Used by Soul Breakers. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="1150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10052" type="EtcItem" name="Battle Manual - Twin Shot">
+		<!-- Battle Manual needed to learn Twin Shot. Used by Arbalesters. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2900" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10053" type="EtcItem" name="Battle Manual - Rising Shot">
+		<!-- Battle Manual needed to learn Rising Shot. Used by Arbalesters. Required level: 46 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3850" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10054" type="EtcItem" name="Battle Manual - Deadly Roulette">
+		<!-- Battle Manual needed to learn Deadly Roulette. Used by Arbalesters. Required level: 66 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="8700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10055" type="EtcItem" name="Battle Manual - Temptation">
+		<!-- Battle Manual needed to learn Temptation. Used by Arbalesters. Required level: 49 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="5400" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10056" type="EtcItem" name="Battle Manual - Create Bio Potion">
+		<!-- Battle Manual needed to learn Create Bio Potion. Used by Warders. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="800" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10057" type="EtcItem" name="Battle Manual - Create Dark Seed">
+		<!-- Battle Manual needed to learn Create Dark Seed. Used by Arbalesters. Required level: 62 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="7700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10058" type="EtcItem" name="Battle Manual - Fire Trap">
+		<!-- Battle Manual needed to learn Fire Trap. Used by Warders. Required level: 28 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="1550" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10059" type="EtcItem" name="Battle Manual - Poison Trap">
+		<!-- Battle Manual needed to learn Poison Trap. Used by Arbalesters. Required level: 49 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="4800" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10060" type="EtcItem" name="Battle Manual - Slow Trap">
+		<!-- Battle Manual needed to learn Slow Trap. Used by Arbalesters. Required level: 52 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="5400" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10061" type="EtcItem" name="Battle Manual - Flash Trap">
+		<!-- Battle Manual needed to learn Flash Trap. Used by Arbalesters. Required level: 55 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="6000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10062" type="EtcItem" name="Battle Manual - Binding Trap">
+		<!-- Battle Manual needed to learn Binding Trap. Used by Arbalesters. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3200" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10063" type="EtcItem" name="Battle Manual - Quiver of Bolts - Grade A">
+		<!-- Battle Manual needed to learn Quiver of Bolts - Grade A. Used by Arbalesters. Required level: 60 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="8700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10064" type="EtcItem" name="Battle Manual - Quiver of Bolts - Grade S">
+		<!-- Battle Manual needed to learn Quiver of Bolts - Grade S. Used by Arbalesters. Required level: 74 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10065" type="EtcItem" name="Battle Manual - Cure Dark Seed">
+		<!-- Battle Manual needed to learn Cure Dark Seed. Used by Arbalesters. Required level: 64 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="8200" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10066" type="EtcItem" name="Battle Manual - Decoy">
+		<!-- Battle Manual needed to learn Decoy. Used by Arbalesters. Required level: 43 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10067" type="EtcItem" name="Battle Manual - Chain Lightning">
+		<!-- Battle Manual needed to learn Chain Lightning. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="10800" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10068" type="EtcItem" name="Battle Manual - Enuma Elish">
+		<!-- Battle Manual needed to learn Enuma Elish. Used by Doombringers. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10069" type="EtcItem" name="Battle Manual - Leopold">
+		<!-- Battle Manual needed to learn Leopold. Used by Soul Hounds. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10070" type="EtcItem" name="Battle Manual - Change Weapon">
+		<!-- Battle Manual needed to learn Change Weapon. Used by Troopers and Warders. Required level: 20 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="800" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10071" type="EtcItem" name="Battle Manual - Quiver of Bolts - Grade B">
+		<!-- Battle Manual needed to learn Quiver of Bolts - Grade B. Used by Arbalesters. Required level: 52 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="5400" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10072" type="EtcItem" name="Battle Manual - Increase Power">
+		<!-- Battle Manual needed to learn Increase Power. Used by male Kamael soldiers. Required level: 10 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="250" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10073" type="EtcItem" name="Battle Manual - Rapid Attack">
+		<!-- Battle Manual needed to learn Rapid Attack. Used by female Kamael soldiers. Required level: 10 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="250" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10074" type="EtcItem" name="Battle Manual - Furious Soul">
+		<!-- Battle Manual needed to learn Furious Soul. Used by Troopers. Required level: 24 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="1150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10075" type="EtcItem" name="Battle Manual - Sword Shield">
+		<!-- Battle Manual needed to learn Sword Shield. Used by Troopers. Required level: 36 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2600" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10076" type="EtcItem" name="Battle Manual - Disarm">
+		<!-- Battle Manual needed to learn Disarm. Used by Troopers. Required level: 36 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2600" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10077" type="EtcItem" name="Battle Manual - Fast Shot">
+		<!-- Battle Manual needed to learn Fast Shot. Used by Warders. Required level: 32 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2050" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10078" type="EtcItem" name="Battle Manual - Death Mark">
+		<!-- Battle Manual needed to learn Death Mark. Used by Troopers and Warders. Required level: 24 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="1150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10079" type="EtcItem" name="Battle Manual - Courage">
+		<!-- Battle Manual needed to learn Courage. Used by Troopers. Required level: 36 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2600" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10080" type="EtcItem" name="Battle Manual - Violent Temper">
+		<!-- Battle Manual needed to learn Violent Temper. Used by Berserkers. Required level: 49 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="4800" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10081" type="EtcItem" name="Battle Manual - Soul to Empower">
+		<!-- Battle Manual needed to learn Soul to Empower. Used by Soul Breakers. Required level: 43 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10082" type="EtcItem" name="Battle Manual - Darkness Protection">
+		<!-- Battle Manual needed to learn Darkness Protection. Used by Soul Breakers. Required level: 58 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="6750" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10083" type="EtcItem" name="Battle Manual - Dark Weapon">
+		<!-- Battle Manual needed to learn Dark Weapon. Used by Soul Breakers. Required level: 46 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="4250" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10084" type="EtcItem" name="Battle Manual - Pride of Kamael">
+		<!-- Battle Manual needed to learn Pride of Kamael. Used by Soul Breakers. Required level: 49 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="4800" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10085" type="EtcItem" name="Battle Manual - Surrender To Unholy">
+		<!-- Battle Manual needed to learn Surrender to Unholy. Used by Troopers and Warders. Required level: 28 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="1250" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10086" type="EtcItem" name="Battle Manual - Bleeding Shot">
+		<!-- Battle Manual needed to learn Bleeding Shot. Used by Arbalesters. Required level: 43 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3350" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10087" type="EtcItem" name="Battle Manual - Sharpshooting">
+		<!-- Battle Manual needed to learn Sharpshooting. Used by Arbalesters. Required level: 60 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="7200" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10088" type="EtcItem" name="Battle Manual - Real Target">
+		<!-- Battle Manual needed to learn Real Target. Used by Arbalesters. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3200" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10089" type="EtcItem" name="Battle Manual - Imbue Dark Seed">
+		<!-- Battle Manual needed to learn Imbue Dark Seed. Used by Arbalesters. Required level: 62 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="7700" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10090" type="EtcItem" name="Battle Manual - Prahnah">
+		<!-- Battle Manual needed to learn Prahnah. Used by Tricksters. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10091" type="EtcItem" name="Battle Manual - Final Form">
+		<!-- Battle Manual needed to learn Final Form. Used by Soul Hounds, Doombringers, and Tricksters. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10092" type="EtcItem" name="Battle Manual - Shadow Bind">
+		<!-- Battle Manual needed to learn Shadow Bind. Used by Soul Breakers. Required level: 52 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="5400" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10093" type="EtcItem" name="Battle Manual - Voice Bind">
+		<!-- Battle Manual needed to learn Voice Bind. Used by Soul Breakers. Required level: 58 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="6750" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10094" type="EtcItem" name="Battle Manual - Rush">
+		<!-- Battle Manual needed to learn Rush. Used by Troopers. Required level: 32 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2050" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10095" type="EtcItem" name="Battle Manual - Storm Assault">
+		<!-- Battle Manual needed to learn Storm Assault. Used by Berserkers. Required level: 49 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="4400" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10096" type="EtcItem" name="Battle Manual - Wing Assault">
+		<!-- Battle Manual needed to learn Wing Assault. -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i03" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10097" type="EtcItem" name="Battle Manual - Shoulder Charge">
+		<!-- Battle Manual needed to learn Shoulder Charge. Used by Berserkers. Required level: 40 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="2900" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10098" type="EtcItem" name="Battle Manual - Blade Rush">
+		<!-- Battle Manual needed to learn Blade Rush. Used by Berserkers. Required level: 55 -->
+		<set name="icon" val="icon.etc_kamael_skill_book_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="6000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10099" type="EtcItem" name="Spellbook - Count of Fire">
+		<!-- Spellbook needed to learn Count of Fire. Used by Archmages. -->
+		<set name="icon" val="icon.etc_spell_books_element_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

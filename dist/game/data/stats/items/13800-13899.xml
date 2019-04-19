@@ -1,0 +1,1405 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="13800" type="EtcItem" name="Transformation Scroll: Frog">
+		<!-- Frog transformation scroll that was given by Secret Agent Colin. Use the scroll to obtain the bead from the Frog King at Narsell Lake. -->
+		<set name="icon" val="icon.etc_q_frog_green_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2631-1" /> <!-- Scroll of Transformation - Frog -->
+	</item>
+	<item id="13801" type="EtcItem" name="Transformation Scroll: Young Child">
+		<!-- Frog transformation scroll that was given by Secret Agent Colin. Use the scroll to obtain candy from Grandma Tess at Narsell Lake. -->
+		<set name="icon" val="icon.weapon_apprentices_rod_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2632-1" /> <!-- Scroll of Transformation - Young Child -->
+	</item>
+	<item id="13802" type="Armor" name="Native's Hood">
+		<!-- Equip this hood, obtained from Secret Agent Colin, to alter your appearance, speak with Native Kuta at Narsell Lake and obtain the Native's Gloves. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="70" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="619-1" />
+		<set name="item_skill" val="8277-1" /> <!-- Transform Native -->
+		<for>
+			<add order="0" stat="pDef" val="33" />
+		</for>
+	</item>
+	<item id="13803" type="Armor" name="Native's Tunic">
+		<!-- Equip this tunic, obtained from Secret Agent Colin, to alter your appearance, speak with Native Kuta at Narsell Lake and obtain the Native's Gloves. -->
+		<set name="icon" val="icon.armor_t34_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4720" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="619-1" />
+		<set name="item_skill" val="8277-1" /> <!-- Transform Native -->
+		<for>
+			<add order="0" stat="pDef" val="53" />
+		</for>
+	</item>
+	<item id="13804" type="Armor" name="Native's Trousers">
+		<!-- Equip these trousers, obtained from Secret Agent Colin, to alter your appearance, speak with Native Kuta at Narsell Lake and obtain the Native's Gloves. -->
+		<set name="icon" val="icon.armor_t34_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1700" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="619-1" />
+		<set name="item_skill" val="8277-1" /> <!-- Transform Native -->
+		<for>
+			<add order="0" stat="pDef" val="29" />
+		</for>
+	</item>
+	<item id="13805" type="Armor" name="Guards of the Dawn Helmet">
+		<!-- Obtained from Secret Agent Colin, it allows you use the Guards' Transformation skill when equipped with the Guards of Dawn Tunic and Trousers. -->
+		<set name="icon" val="icon.armor_leather_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="70" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="619-1" />
+		<set name="item_skill" val="8278-1" /> <!-- Transform Guard of Down -->
+		<for>
+			<add order="0" stat="pDef" val="33" />
+		</for>
+	</item>
+	<item id="13806" type="Armor" name="Guards of the Dawn Tunic">
+		<!-- Obtained from Secret Agent Colin, it allows you use the Guards' Transformation skill when equipped with the Guards of Dawn Helmet and Trousers. -->
+		<set name="icon" val="icon.armor_t08_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4720" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="619-1" />
+		<set name="item_skill" val="8278-1" /> <!-- Transform Guard of Down -->
+		<for>
+			<add order="0" stat="pDef" val="53" />
+		</for>
+	</item>
+	<item id="13807" type="Armor" name="Guards of the Dawn Trousers">
+		<!-- Obtained from Secret Agent Colin, it allows you use the Guards' Transformation skill when equipped with the Guards of Dawn Tunic and Helmet. -->
+		<set name="icon" val="icon.armor_t08_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1700" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="619-1" />
+		<set name="item_skill" val="8278-1" /> <!-- Transform Guard of Down -->
+		<for>
+			<add order="0" stat="pDef" val="29" />
+		</for>
+	</item>
+	<item id="13808" type="EtcItem" name="Elmoreden Holy Water">
+		<!-- Used by Elmoreden Emperor Shunaiman's guards, it can open the door engulfed in the Flame of Lilim inside the Necropolis. -->
+		<set name="icon" val="icon.etc_holy_water_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2633-1" /> <!-- Elmore-Aden's Holy Water -->
+	</item>
+	<item id="13809" type="EtcItem" name="Court Magician's Magic Staff">
+		<!-- This magic staff can open the door to the Disciple's Necropolis using its powerful removal skill. -->
+		<set name="icon" val="icon.weapon_apprentices_rod_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2634-1" /> <!-- Court Magician's Blessing -->
+	</item>
+	<item id="13810" type="EtcItem" name="High Priest Orven's Letter">
+		<!-- Letter detailing Gracia's imminent crisis. Deliver it to Commander Keucereus in the Gracia region. -->
+		<set name="icon" val="icon.etc_letter_envelope_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13811" type="EtcItem" name="Keucereus' Introduction - Seed of Infinity">
+		<!-- Introduction received from Keucereus. If you go northwest from Keucereus Alliance Base, you can reach the Seed of Infinity. Deliver this mark to Officer Tepios there. -->
+		<set name="icon" val="icon.etc_letter_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13812" type="EtcItem" name="Keucereus' Introduction - Seed of Destruction">
+		<!-- Introduction received from Keucereus. Deliver it to Sergeant Allenos, located at the Seed of Destruction west of Keucereus Alliance Base. -->
+		<set name="icon" val="icon.etc_letter_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13813" type="EtcItem" name="Croop's Introduction">
+		<!-- Introduction received from Croop. Deliver it to Guard Hector at the north entrance to Oren Castle and learn about the whereabouts of Contractor Jacob. -->
+		<set name="icon" val="icon.etc_letter_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13814" type="EtcItem" name="Jacob's Necklace">
+		<!-- Necklace discovered at contractor Jacob's body. -->
+		<set name="icon" val="icon.accessary_necklace_of_protection_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13815" type="EtcItem" name="Croop's Letter Requesting a Memorial Service">
+		<!-- Deliver Croop's letter requesting a memorial service for Contractor Jacob to High Priest Hollint in Einhasad's Temple inside Oren Castle. -->
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13816" type="EtcItem" name="Deadman's Herb">
+		<!-- Deliver this herb, collected in Enchanted Valley, to Priest Cain near the Town of Oren. -->
+		<set name="icon" val="icon.etc_herb_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13817" type="EtcItem" name="Priest Cain's Investigation Report">
+		<!-- Deliver Priest Cain's report about the Seven Signs to Sir Gustav Athebaldt in the Town of Oren. -->
+		<set name="icon" val="icon.etc_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13818" type="EtcItem" name="Athebaldt's Introduction">
+		<!-- Introduction received from Sir Athebaldt. Bring it to Secret Agent Colin in the Southern entrance of the town of Aden. -->
+		<set name="icon" val="icon.etc_letter_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13819" type="EtcItem" name="Native's Glove">
+		<!-- A glove received from the Native Kuta. Bring it to the Secret Agent Colin of the town of Aden. -->
+		<set name="icon" val="icon.armor_short_leather_gloves_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13820" type="EtcItem" name="Frog King's Bead">
+		<!-- Bead obtained from the Frog King. Bring it to the Secret Agent Colin of the town of Aden. -->
+		<set name="icon" val="icon.etc_crystal_ball_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13821" type="EtcItem" name="Grandma Tess' Candy Pouch">
+		<!-- Candy pouch obtained from Grandma Tess. Bring it to the Secret Agent Colin of the town of Aden. -->
+		<set name="icon" val="icon.etc_pouch_brown_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13822" type="EtcItem" name="Guards of the Dawn Identity Card">
+		<!-- Identity card of the guards of the Dawn that was given by Lady Claudia. The qualification one needs to enter the Dawn Lord's temple. -->
+		<set name="icon" val="icon.etc_royal_membership_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13823" type="EtcItem" name="Emperor Shunaiman's Contract">
+		<!-- Details a secret contract between Emperor Shunaiman and the Merchant of Mammon regarding the Seven Signs. Deliver it to High Priest Rayment in the Town of Gludio. -->
+		<set name="icon" val="icon.etc_crest_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13824" type="EtcItem" name="Ancient Seal Stone of Mammon">
+		<!-- This apparently sealed a promise the Merchant of Mammon made to the Elmoreden Emperor Shunaiman. It seems to be hiding a mysterious power. -->
+		<set name="icon" val="icon.etc_water_rune_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13825" type="EtcItem" name="Grail of Einhasad">
+		<!-- Proof that all Necropolis and Catacombs have been sealed. Deliver it to Emperor Shunaiman (Elmoreden Era). -->
+		<set name="icon" val="icon.etc_holy_grail_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13826" type="EtcItem" name="Blood of the Emperor">
+		<!-- A vial of Emperor Shunaiman's blood, which is the key to activate the Necropolis sealing device. Activate the device! -->
+		<set name="icon" val="icon.etc_lesser_potion_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13827" type="EtcItem" name="Iason's Introduction">
+		<!-- This allows you meet Franz. Deliver it to High Priest Orven in the Town of Aden. -->
+		<set name="icon" val="icon.etc_letter_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13828" type="EtcItem" name="Prayer: Emperor's Key">
+		<!-- This prayer has been passed down from one high-ranking Priest of the Dawn to the next, stretching back to the Elmoreden Era. -->
+		<set name="icon" val="icon.etc_spell_books_element_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13829" type="EtcItem" name="Mysterious Hand-written Text">
+		<!-- This obscure text is hand-written in ancient ciphers. -->
+		<set name="icon" val="icon.weapon_apprentices_spellbook_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13830" type="EtcItem" name="Tomlan Kamos' Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Rohmer in the Temple of Einhasad in the Town of Gludio. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13831" type="EtcItem" name="Ol Ariosh's Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Rohmer in the Temple of Einhasad in the Town of Gludio. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13832" type="EtcItem" name="Crimson Hatu Otis' Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Mirien in the Temple of Einhasad in the Town of Dion. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13833" type="EtcItem" name="Seer Flouros' Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Mirien in the Temple of Einhasad in the Town of Dion. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13834" type="EtcItem" name="Blade Otis' Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Minevia in the Temple of Einhasad in the Town of Heine. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13835" type="EtcItem" name="Weird Bunei's Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Minevia in the Temple of Einhasad in the Town of Heine. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13836" type="EtcItem" name="Kaim Abigore's Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Rovia in the Temple of Einhasad in the Town of Oren. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13837" type="EtcItem" name="Knight Montagnar's Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Rovia in the Temple of Einhasad in the Town of Oren. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13838" type="EtcItem" name="Venomous Storace's Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Atraxia in the Temple of Einhasad in the Town of Schuttgart. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13839" type="EtcItem" name="Kel Bilette's Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Atraxia in the Temple of Einhasad in the Town of Schuttgart. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13840" type="EtcItem" name="White Allosce's Cellular Tissue">
+		<!-- Deliver this tissue sample to Magister Kayan in the Temple of Einhasad in the Town of Rune. -->
+		<set name="icon" val="icon.etc_bodypart_liver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13841" type="EtcItem" name="Dragonkin Charm">
+		<!-- Energy from the Dragonkin that infest the Seed of Destruction. Can be used at Special Product Broker Kirklan. -->
+		<set name="icon" val="icon.etc_feather_gold_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="13842" type="Weapon" name="Tiat Two-Handed Weapon">
+		<!-- Tiat's two-handed weapon. -->
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2180" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<set stat="pAtk" val="78" />
+			<set stat="mAtk" val="39" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13843" type="Weapon" name="Draconic Peltast Weapon">
+		<!-- Peltast's weapon. -->
+		<set name="icon" val="icon.weapon_doomed_dagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="743" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="300" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<for>
+			<set stat="pAtk" val="5" />
+			<set stat="mAtk" val="5" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13844" type="EtcItem" name="Star Stone Extraction Scroll">
+		<!-- A supplemental scroll created for adventurers who are inexperienced in collecting Star Stones. -->
+		<set name="icon" val="icon.scroll_of_verification_i06" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2630-1" /> <!-- Presentation - Collect Items -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="13845" type="Weapon" name="Attribute Master Yin's Sword">
+		<!-- Weapon provided by Attribute Master Yin for capturing the Reckless Sprites of Water. You can feel the powerful fire energy. The sprite's power contained in this weapon will be useful when capturing the reckless sprite. 10-minute-limited-time Item. Fire power +10. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.weapon_long_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="duration" val="10" />
+		<for>
+			<set stat="pAtk" val="140" />
+			<set stat="mAtk" val="120" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13846" type="EtcItem" name="Seal of Binding">
+		<!-- Obtained after activating the sealing device, it proves that the sealing device was properly sealed. Deliver it to Emperor Shunaiman. -->
+		<set name="icon" val="icon.etc_royal_seal_of_lord_i04" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13847" type="EtcItem" name="Piece of Doubt">
+		<!-- This piece of doubt seems to possess a wicked power. -->
+		<set name="icon" val="icon.etc_statue_of_einhasad_bronze_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13848" type="EtcItem" name="Headless Knight's Armor">
+		<!-- Obtain this ionized set of armor after defeating the Headless Knight who terrorized the natives. -->
+		<set name="icon" val="icon.armor_t62_u_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13849" type="EtcItem" name="Mandragora Root">
+		<!-- The signature product of the Town of Dion. -->
+		<set name="icon" val="icon.etc_ginseng_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="13850" type="EtcItem" name="Bloody Axe Black Epaulette">
+		<!-- Epaulette once worn by the Bloody Axe Aide. -->
+		<set name="icon" val="icon.etc_badge_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13851" type="EtcItem" name="Nebulite Orb">
+		<!-- Nebulite Orb requested by the Ivory Tower. -->
+		<set name="icon" val="icon.etc_crystal_ball_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13852" type="EtcItem" name="Inspector Medibal's Document">
+		<!-- Contains an account of Inspector Medibal's investigation of the Seed of Destruction. Deliver it to the wounded Guard Ell at Keucereus Alliance Base. -->
+		<set name="icon" val="icon.etc_roll_of_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13853" type="EtcItem" name="Destroyed Darkness Fragment Powder">
+		<!-- The destroyed darkness fragment powder, which bore out of the lifeforms of evil when they were destroyed. Collect them and take them to War Mage Artius at Keucereus Alliance Base. -->
+		<set name="icon" val="icon.etc_powder_black_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2615-1" /> <!-- Destroyed Darkness Fragment Powder -->
+	</item>
+	<item id="13854" type="EtcItem" name="Destroyed Light Fragment Powder">
+		<!-- Obtained by purging the destroyed Darkness Fragment Powder, deliver it to War Mage Artius. -->
+		<set name="icon" val="icon.etc_powder_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13855" type="EtcItem" name="Sacred Light Fragment">
+		<!-- Fragment piece that looks like it will break at any moment. A sacred light flows out from it. If you are prepared for it to break, the sacred power of this fragment piece may allow you to inflict damage on Witch Tiat of the Dragon of Darkness. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_piece_holy_light" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2839-1" /> <!-- Sacred Light Fragment -->
+	</item>
+	<item id="13856" type="EtcItem" name="Rider's Mark">
+		<!-- Obtained from Vulture Rider's and Elite Rider's. Deliver them to Dwarf Engineer Lekon at Keucereus Alliance Base as proof of your skill in flying. -->
+		<set name="icon" val="icon.etc_evil_necklace_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13857" type="EtcItem" name="Lekon's Certificate">
+		<!-- Issued by Dwarven Engineer Lekon. This certificate proves you have the ability to fly safely in Gracian airs. -->
+		<set name="icon" val="icon.etc_letter_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13858" type="EtcItem" name="Extracted Coarse Red Star Stone">
+		<!-- Coarse, Red Star Stone fragment. Higher quality Red Star Stone fragments can be extracted when you have more practice. -->
+		<set name="icon" val="icon.low_star_stone_piece_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13859" type="EtcItem" name="Extracted Coarse Blue Star Stone">
+		<!-- Coarse, Blue Star Stone fragment. Higher quality Blue Star Stone fragments can be extracted when you have more practice. -->
+		<set name="icon" val="icon.low_star_stone_piece_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13860" type="EtcItem" name="Extracted Coarse Green Star Stone">
+		<!-- Coarse, Green Star Stone fragment. Higher quality Green Star Stone fragments can be extracted when you have more practice. -->
+		<set name="icon" val="icon.low_star_stone_piece_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13861" type="EtcItem" name="Reckless Soul Piece - Water">
+		<!-- Materializes after the reckless Sprite of Water is destroyed. Take it to the Male Attribute Master. -->
+		<set name="icon" val="icon.etc_bead_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13862" type="EtcItem" name="Reckless Soul Piece - Air">
+		<!-- Materializes after the reckless Sprite of Air is destroyed. Take it to Attribute Master Yang. -->
+		<set name="icon" val="icon.etc_bead_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13863" type="EtcItem" name="Freed Soul Fragment">
+		<!-- Obtained through hunting in the Seed of Infinity. If you take them to Special Products Broker Kirklan you can exchange 5 of these items for a Freed Soul. -->
+		<set name="icon" val="icon.etc_debris_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13864" type="EtcItem" name="Seal of Tiat">
+		<!-- Obtained after defeating Tiat, it represents Tiat's authority and power. Take it to Special Products Broker Kirklan at Keucereus Alliance Base to exchange it for a special item. -->
+		<set name="icon" val="icon.tiat_seal_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13865" type="EtcItem" name="Dragonkin Charm Fragment">
+		<!-- Obtained through hunting in the Seed of Destruction. If you take them to Special Products Broker Kirklan you can exchange 5 of these items for a Dragonkin Charm. -->
+		<set name="icon" val="icon.etc_totem_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13866" type="EtcItem" name="Restless Soul">
+		<!-- Obtained in the Seed of Infinity. Take these Restless Souls to Special Products Broker Kirklan to exchange them for a reward. -->
+		<set name="icon" val="icon.soul_facet_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13867" type="EtcItem" name="Tiat Charm">
+		<!-- Breath of Tiat fragment that can be harvested by collecting in the Seed of Destruction region. If you bring it to the special products broker Kutran at the Kucereus clan outpost, you can exchange it for a useful item. -->
+		<set name="icon" val="icon.tiat_breath_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13868" type="EtcItem" name="Yehan Klodekus' Badge">
+		<!-- Badge of Yehan Klodekus, who degenerated into a Death Knight through M. Atk. of the Seed of Infinity. -->
+		<set name="icon" val="icon.etc_badge_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13869" type="EtcItem" name="Yehan Klanikus' Badge">
+		<!-- Badge of Yehan Klanikus, who degenerated into a Death Knight through M. Atk. of the Seed of Infinity. -->
+		<set name="icon" val="icon.etc_badge_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13870" type="EtcItem" name="Lich Crystal">
+		<!-- Crystal left behind after the death of Kohemenus, who degenerated into a Lich through M. Atk. of the Seed of Infinity. -->
+		<set name="icon" val="icon.etc_crystal_ball_green_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13871" type="EtcItem" name="Vulture's Golden Feather">
+		<!-- Take this large golden feather to Dwarven Engineer Lekon at Keucereus Alliance Base and receive a reward. -->
+		<set name="icon" val="icon.etc_feather_gold_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13872" type="EtcItem" name="Swallowed Skull">
+		<!-- Swallowed by the Rok that roams the Seed of Destruction's dungeon or one of its Variant Falcon or Dra Hawk minions. Collect the remains of those who were sacrificed and take them to Soldier Orbyu at Keucereus Alliance Base. -->
+		<set name="icon" val="icon.etc_skull_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13873" type="EtcItem" name="Swallowed Sternum">
+		<!-- Swallowed by the Rok that roams the Seed of Destruction's dungeon or one of its Variant Falcon or Dra Hawk minions. Collect the remains of those who were sacrificed and take them to Soldier Orbyu at Keucereus Alliance Base. -->
+		<set name="icon" val="icon.etc_rib_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13874" type="EtcItem" name="Swallowed Bones">
+		<!-- Swallowed by the Rok that roams the Seed of Destruction's dungeon or one of its Variant Falcon or Dra Hawk minions. Collect the remains of those who were sacrificed and take them to Soldier Orbyu at Keucereus Alliance Base. -->
+		<set name="icon" val="icon.etc_piece_bone_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13875" type="EtcItem" name="Deadman's Remains">
+		<!-- Obtained by hunting Floating Skulls and Floating Zombies. Take them to War Mage Artius. -->
+		<set name="icon" val="icon.etc_piece_bone_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13876" type="EtcItem" name="Banshee Queen's Eye">
+		<!-- Proof that you have captured the Banshee Queen. Take it to War Mage Artius. -->
+		<set name="icon" val="icon.etc_eyeball_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13877" type="EtcItem" name="Drake's Flesh">
+		<!-- Obtained by hunting Variant Drake Wing minions. Collect them and take them to injured Soldier Tenius at Keucereus Alliance Base. -->
+		<set name="icon" val="icon.etc_meat_of_monstereye_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13878" type="EtcItem" name="Rotten Blood">
+		<!-- Obtained from injured Soldier Tenius, this small vial contains spoiled blood that he claims contains the collected anger toward Keucereus. Its true origin is obscure. -->
+		<set name="icon" val="icon.etc_potion_scarlet_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="13879" type="EtcItem" name="Bait for Drakes">
+		<!-- Drake exclusive bait made by combining Drake flesh and a little bit of the rotten blood. If this Drake bait is used when Seed of Destruction is stabilized, one can call the Dead of Destruction, Dius. -->
+		<set name="icon" val="icon.drake_wing_lure_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="5822-1" /> <!-- Drake Bait -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_non_transform}}}" />
+	</item>
+	<item id="13880" type="EtcItem" name="Variant Drake Wing Horns">
+		<!-- Horn that sprouts out from the body of the Variant Drake. If you bring it to the injured soldier Tenis or soldier Plenos at Keucereus Alliance Base, you can receive a reward. -->
+		<set name="icon" val="icon.etc_horn_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="5822-1" /> <!-- Drake Bait -->
+	</item>
+	<item id="13881" type="Weapon" name="Attribute Master Yang's Sword">
+		<!-- Weapon provided by Attribute Master Yang for capturing the Reckless Sprites of Air. You can feel the powerful earth energy. The sprite's power contained in this weapon will be useful when capturing the reckless sprite. 10-minute-limited-time Item. Earth power +10. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.weapon_long_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="duration" val="10" />
+		<for>
+			<set stat="pAtk" val="140" />
+			<set stat="mAtk" val="120" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13882" type="Weapon" name="Dynasty Dual Daggers">
+		<!-- P. Atk. of Dual Daggers increase more than that of regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical by 109. Increases the damage inflicted during PvP. Can be equipped by Dagger Masters above level 81. -->
+		<set name="icon" val="icon.dual_dagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4219" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2150" />
+		<set name="price" val="87901000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="8295-1" />
+		<set name="item_skill" val="3552-1" /> <!-- Special Ability: PvP Damage -->
+		<cond msgId="1518">
+			<and>
+				<player level="81" />
+				<player categoryType="DAGGER_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<set stat="pAtk" val="304" />
+			<set stat="mAtk" val="157" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13883" type="Weapon" name="Icarus Dual Daggers">
+		<!-- P. Atk. of Dual Daggers increase more than that of regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical by 109. Increases the damage inflicted during PvP. Can be equipped by Dagger Masters above level 81. -->
+		<set name="icon" val="icon.dual_dagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="5845" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="price" val="121780000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="8296-1" />
+		<set name="item_skill" val="3552-1" /> <!-- Special Ability: PvP Damage -->
+		<cond msgId="1518">
+			<and>
+				<player level="81" />
+				<player categoryType="DAGGER_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<set stat="pAtk" val="332" />
+			<set stat="mAtk" val="169" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13884" type="Weapon" name="Vesper Dual Daggers">
+		<!-- P. Atk. of Dual Daggers increase more than that of regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical by 109. Increases the damage inflicted during PvP. Can be equipped by Dagger Masters above level 81. -->
+		<set name="icon" val="icon.dual_dagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="8233" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2050" />
+		<set name="price" val="171530000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="8298-1" />
+		<set name="item_skill" val="3552-1" /> <!-- Special Ability: PvP Damage -->
+		<cond msgId="1518">
+			<and>
+				<player level="81" />
+				<player categoryType="DAGGER_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<set stat="pAtk" val="360" />
+			<set stat="mAtk" val="181" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13885" type="Armor" name="Sealed Arcana Sigil">
+		<!-- Sealed Arcana Sigil. Seal can be removed by the blacksmith of Mammon. -->
+		<set name="icon" val="icon.arcana_sigil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="161" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="940" />
+		<set name="price" val="3355000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<add order="0" stat="pDef" val="13" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="13886" type="Armor" name="Sealed Dynasty Sigil">
+		<!-- Sealed Dynasty Sigil. Seal can be removed by the blacksmith of Mammon. -->
+		<set name="icon" val="icon.armor_dynasty_sigil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="307" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="930" />
+		<set name="price" val="6404000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<add order="0" stat="pDef" val="15" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="13887" type="Armor" name="Sealed Vesper Sigil">
+		<!-- Sealed Vesper Sigil. Seal can be removed by the blacksmith of Mammon and Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_verper_sigil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="588" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="920" />
+		<set name="price" val="12250000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<add order="0" stat="pDef" val="17" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="13888" type="Armor" name="Sealed Lord's Cloak">
+		<set name="icon" val="icon.feud_load_cloak_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="price" val="28671000" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="2" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="13889" type="Armor" name="Holy Spirit's Cloak - Kamael exclusive">
+		<!-- Cloak covered with energy of the Holy Spirit. Dark Attribute Defense +30. When the entire set of Vesper Noble or Dynasty set is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. Kamael exclusive cloak. Enchantment, attribute and augmenting are impossible. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="price" val="28671000" />
+		<cond msgId="2453">
+			<and>
+				<player races="KAMAEL" />
+				<player cloakStatus="true" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="20" />
+			<add stat="darkRes" val="30" />
+		</for>
+	</item>
+	<item id="13890" type="Armor" name="Holy Spirit's Cloak">
+		<!-- Cloak covered with energy of the Holy Spirit. Resistance to Dark +30. When an armor set above the Dynasty level is worn, the Sealed Cloak Slot will be open so that the cloak can be equipped. Enchantment, attribute and smelting are impossible. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="price" val="28671000" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="20" />
+			<add stat="darkRes" val="30" />
+		</for>
+	</item>
+	<item id="13891" type="Armor" name="Holy Spirit's Cloak - Light Armor exclusive">
+		<!-- Cloak covered with energy of the Holy Spirit. Dark Attribute Defense +30. When the entire set of Vesper Noble or Dynasty set is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. The cloak is exclusively for Dagger Master and Bow Master excluding Kamaels. Enchantment, attribute and augmenting are impossible. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="price" val="28671000" />
+		<cond msgId="2453">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="ROGUE_CLOACK" />
+				<player cloakStatus="true" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="20" />
+			<add stat="darkRes" val="30" />
+		</for>
+	</item>
+	<item id="13892" type="Armor" name="Holy Spirit's Cloak - Robe exclusive">
+		<!-- Cloak covered with energy of the Holy Spirit. Dark Attribute Defense +30. When the entire set of Vesper Noble or Dynasty set is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. The cloak is exclusively for Healer, Enchanter, Summoner and Wizard excluding Kamaels. Enchantment, attribute and augmenting are impossible. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="price" val="28671000" />
+		<cond msgId="2453">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="MAGE_CLOACK" />
+				<player cloakStatus="true" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="20" />
+			<add stat="darkRes" val="30" />
+		</for>
+	</item>
+	<item id="13893" type="EtcItem" name="Sealed Holy Spirit's Cloak">
+		<!-- Sealed Holy Spirit's Cloak. When the seal is cancelled, it'll have Dark Attribute Defense +30 effect. The seal can be cancelled through the weaver Olf Kanore and Olf Adams. It cannot be worn before the seal cancellation. Enchantment, attribute and augmenting are impossible. -->
+		<set name="icon" val="icon.sealed_vesper_cloack_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="price" val="28671000" />
+		<for>
+			<add order="0" stat="pDef" val="20" />
+		</for>
+	</item>
+	<item id="13894" type="Armor" name="Cloth Belt">
+		<!-- Functions can be added by using Grade C Magic Pin or Magic Pouch. -->
+		<set name="icon" val="icon.armor_belt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="18" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="500" />
+		<set name="price" val="45100" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="10" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="13895" type="Armor" name="Leather Belt">
+		<!-- Functions can be added by using Grade B Magic Pin or Magic Pouch. -->
+		<set name="icon" val="icon.armor_belt_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="22" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="480" />
+		<set name="price" val="165000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="11" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="13896" type="Armor" name="Iron Belt">
+		<!-- One can attach a function using A-Grade Magic Pin, Magic Pouch, Rune clip, and Magic ornament. -->
+		<set name="icon" val="icon.armor_belt_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="30" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="460" />
+		<set name="price" val="371300" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="12" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="13897" type="Armor" name="Mithril Belt">
+		<!-- One can attach a function using S-Grade Magic Pin, Magic Pouch, Rune clip, and Magic ornament. -->
+		<set name="icon" val="icon.armor_belt_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="92" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="440" />
+		<set name="price" val="1917000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="14" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="13898" type="EtcItem" name="Sealed Magic Pin (C-Grade)">
+		<!-- Can be attached to Sealed Magic Pin and Belt. And the seal can be cancelled through the weaver Olf Kanore and Olf Adams. -->
+		<set name="icon" val="icon.pin_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
+	</item>
+	<item id="13899" type="EtcItem" name="Sealed Magic Pin (B-Grade)">
+		<!-- Can be attached to Sealed Magic Pin and Belt. And the seal can be cancelled through the weaver Olf Kanore and Olf Adams. -->
+		<set name="icon" val="icon.pin_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
+	</item>
+</list>

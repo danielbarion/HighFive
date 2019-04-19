@@ -1,0 +1,1324 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="14800" type="Armor" name="Afro Perm Wig - Pink">
+		<!-- Lush Afro perm hair. Cannot undo equip -->
+		<set name="icon" val="icon.accessory_captain_cap_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14801" type="Armor" name="Gludio Guard Earring">
+		<!-- Ring given to the royal guard of Gludio territory. Stun Attack +15%, Bleed Defense +15%, Water Power Defense +10. CP +5%. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8348-2" /> <!-- Royal Guard Earring - Gludio -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="waterRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14802" type="Armor" name="Dion Guard Earring">
+		<!-- Ring given to the royal guard of Dion territory. Hold Attack +15%, Resistance to Poison +15%, Resistance to Holy +10. CP +5%. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8349-2" /> <!-- Royal Guard Earring - Dion -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="holyRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14803" type="Armor" name="Giran Guard Earring">
+		<!-- Ring given to the royal guard of Giran territory. Bleed Attack +15%, Paralysis Defense +15%, Wind Power Defense +10. CP +5%. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8350-2" /> <!-- Royal Guard Earring - Giran -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="windRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14804" type="Armor" name="Oren Guard Earring">
+		<!-- Necklace given to the royal guard of Oren territory. Paralysis attack +15%, hold defense +15%, darkness defense +10. CP +5%. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8351-2" /> <!-- Royal Guard Earring - Oren -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="darkRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14805" type="Armor" name="Aden Guard Earring">
+		<!-- Earring given to the royal guard of Aden territory. Mind Attack +15%, Stun Defense +15%, Earth Power Defense +10. CP +5% increase. Cannot be exchanged or dropped. Only one effect is applied when wearing two earrings with the same effect. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8352-2" /> <!-- Royal Guard Earring - Aden -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="earthRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14806" type="Armor" name="Innadril Guard Earring">
+		<!-- Earring given to the royal guard of Innadril territory. Sleep Attack +15%, Stun Defense +15%, Water Power Defense +10. CP +5%. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8353-2" /> <!-- Royal Guard Earring - Innadril -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="waterRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14807" type="Armor" name="Goddard Guard Earring">
+		<!-- Earring given to the royal guard of Goddard territory. Stun Attack +15%, Sleep Defense +15%, Fire Power Defense +10. CP +5%. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8354-2" /> <!-- Royal Guard Earring - Goddard -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="fireRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14808" type="Armor" name="Rune Guard Earring">
+		<!-- Earring given to the royal guard of Rune territory. Poison Attack +15%, Hold Defense +15%, Fire Power Defense +10. CP +5%. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8355-2" /> <!-- Royal Guard Earring - Rune -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="fireRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14809" type="Armor" name="Schuttgart Guard Earring">
+		<!-- Necklace given to the royal guard of Schuttgart territory. Hold Attack +15%, Fear Defense +15%, Wind Power Defense +10. CP +5%. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8356-2" /> <!-- Royal Guard Earring - Schuttgart -->
+		<for>
+			<add order="0" stat="mDef" val="79" />
+			<add stat="maxMp" val="35" />
+			<add stat="windRes" val="10" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="14810" type="Armor" name="Blue Talisman - Buff Cancel">
+		<!-- Cancels the buffs of nearby enemies upon use. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available -->
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8331-1" /> <!-- Blue Talisman of Buff Cancel -->
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+	</item>
+	<item id="14811" type="Armor" name="Blue Talisman - Buff Steal">
+		<!-- Steals the target's abnormal status upon use. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available -->
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8332-1" /> <!-- Blue Talisman of Buff Steal -->
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+	</item>
+	<item id="14812" type="Armor" name="Red Talisman - Territory Guard">
+		<!-- When used, Max CP is greatly increased and a certain amount of CP is greatly recovered. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available -->
+		<set name="icon" val="icon.etc_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8333-1" /> <!-- Red Talisman of Territory Guard -->
+		<set name="duration" val="66" />
+		<set name="useSkillDisTime" val="6" />
+	</item>
+	<item id="14813" type="Armor" name="Blue Talisman - Lord's Divine Protection">
+		<!-- Upon use, greatly decreases the damage received during PvP. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available -->
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8334-1" /> <!-- Blue Talisman of Lord's Divine Protection -->
+		<set name="duration" val="74" />
+		<set name="useSkillDisTime" val="15" />
+	</item>
+	<item id="14814" type="Armor" name="White Talisman - All Resistance">
+		<!-- Increases Resistance to all elements. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. -->
+		<set name="icon" val="icon.etc_talisman_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="8335-1" /> <!-- White Talisman of Attribute Resistance -->
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+	</item>
+	<item id="14815" type="EtcItem" name="Territory Health Recovery Potion">
+		<!-- Recovers HP when in use. Restricted to characters higher than level 61 and lower than level 75. Can only be used on the battlefield during a Territory War. -->
+		<set name="icon" val="icon.etc_super_hp_potion_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="5" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2907-5" /> <!-- Battlefield Use Secret Medicine of Life -->
+		<cond msgId="113" addName="1">
+			<player SiegeZone="126" />
+		</cond>
+	</item>
+	<item id="14816" type="EtcItem" name="Territory Mana Recovery Potion">
+		<!-- Recovers MP when in use. Restricted to characters higher than level 61 and lower than level 75. Can only be used on the battlefield during a Territory War. -->
+		<set name="icon" val="icon.etc_super_mp_potion_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="5" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2908-5" /> <!-- Battlefield Use Secret Medicine of Mind -->
+		<cond msgId="113" addName="1">
+			<player SiegeZone="126" />
+		</cond>
+	</item>
+	<item id="14817" type="EtcItem" name="Territory CP Recovery Potion">
+		<!-- Recovers CP when in use. Restricted to characters higher than level 61 and lower than level 75. Can only be used on the battlefield during a Territory War. -->
+		<set name="icon" val="icon.etc_super_cp_potion_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2909-5" /> <!-- Battlefield Use Secret Medicine of Will -->
+		<cond msgId="113" addName="1">
+			<player SiegeZone="126" />
+		</cond>
+	</item>
+	<item id="14818" type="EtcItem" name="Enriched Pet Food for Wolves">
+		<!-- Pet food for Great Wolves and Fenrirs. When your pet's hunger gauge drops below 55% they will be able to feed themselves automatically. -->
+		<set name="icon" val="icon.etc_pouch_red_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="price" val="9000" /> <!-- H5 Price -->
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="PetFood" />
+		<set name="item_skill" val="2916-1" /> <!-- Feed for Enriched Enhanced Pets -->
+		<set name="for_npc" val="true" />
+		<cond msgId="113" addName="1">
+			<player categoryType="GROWN_UP_WOLF_GROUP" />
+		</cond>
+	</item>
+	<item id="14819" type="EtcItem" name="Guardian's Dragon Bugle">
+		<!-- A bugle used to summon a Guardian's Strider. This pet uses some of the experience points earned by its master. -->
+		<set name="icon" val="icon.etc_bugle_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="14820" type="EtcItem" name="Skull Key of Suffering">
+		<!-- Key used to remove the time restriction on instance and allows you to enter the Hall of Suffering. Can only be used once a day outside the entrance to the Hall of Suffering. Cannot use multiple skull keys daily. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_skeleton_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2910-1" /> <!-- Skull Key of Pain -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14821" type="EtcItem" name="Skull Key of Erosion">
+		<!-- Key used to remove the time restriction on instance and allows you to enter the Hall of Erosion. Can only be used once a day outside the entrance to the Hall of Erosion. Cannot use multiple skull keys daily. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_skeleton_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2911-1" /> <!-- Skull Key of Erosion -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14822" type="EtcItem" name="Skull Key of the Heart">
+		<!-- Key used to lift the entrance limit to the Hall of Suffering. Can only be used once a day outside the instance. After use, the effect disappears when the instance is reset. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_skeleton_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2912-1" /> <!-- Skull Key of the Heart -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14823" type="EtcItem" name="Soul Extraction Device">
+		<!-- Device that can be used on a recently killed monster in the Seed of Infinity to collect additional Tears of a Freed Soul. Can be used only inside Seed of Infinity instant dungeons. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_lantern_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2913-1" /> <!-- Soul Extraction -->
+		<set name="for_npc" val="true" />
+		<cond msgId="113" addName="1">
+			<player instanceId="115,116,119,120,121,122" />
+		</cond>
+	</item>
+	<item id="14824" type="EtcItem" name="Ancient Herb - Slayer">
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2900-1" /> <!-- Ancient Herb - Slayer -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14825" type="EtcItem" name="Ancient Herb - Immortal">
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2901-1" /> <!-- Ancient Herb - Immortal -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14826" type="EtcItem" name="Ancient Herb - Terminator">
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2902-1" /> <!-- Ancient Herb - Terminator -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14827" type="EtcItem" name="Ancient Herb - Guide">
+		<set name="icon" val="icon.freed_soul_core_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2903-1" /> <!-- Ancient Herb - Guide -->
+		<set name="for_npc" val="true" />
+	</item>
+	<item id="14828" type="EtcItem" name="Deinonychus Mesozoic Stone">
+		<!-- Stone used to summon a Deinonychus. This pet can consume Food For Wolves to replenish hunger. It takes away some of the experience points the Pet Master earns. -->
+		<set name="icon" val="icon.etc_life_stone_of_begining_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="20" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="14829" type="EtcItem" name="Cave Exploration Text 1 Sheet">
+		<!-- Report of explorers that contains information about the cave's origins -->
+		<set name="icon" val="icon.etc_cave_page_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14830" type="EtcItem" name="Cave Exploration Text 2 Sheet">
+		<!-- Report of explorers that contains information about the cause of transformation of the ancient giants -->
+		<set name="icon" val="icon.etc_cave_page_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14831" type="EtcItem" name="Cave Exploration Text 3 Sheet">
+		<!-- Report of explorers that contains information about the secret of Hekaton Prime -->
+		<set name="icon" val="icon.etc_cave_page_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14832" type="EtcItem" name="Growth Accelerator">
+		<!-- Syringe containing Stakato secretion. When injected into a Bizarre Cocoon, this substance will stimulate the growth of a Cannibalistic Stakato Chief. -->
+		<set name="icon" val="icon.etc_medicine_of_growth_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2905-1" /> <!-- Growth Accelerator -->
+	</item>
+	<item id="14833" type="EtcItem" name="Small Stakato Cocoon">
+		<!-- Tightly wrapped item that resembles a cocoon. But it doesn't seem to contain a lifeform. Small size. -->
+		<set name="icon" val="icon.etc_dragon_egg_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2918-1" /> <!-- Small Staccato Silk Cocoon -->
+	</item>
+	<item id="14834" type="EtcItem" name="Large Stakato Cocoon">
+		<!-- Tightly wrapped item that resembles a cocoon. But it doesn't seem to contain a lifeform. Fairly heavy. -->
+		<set name="icon" val="icon.etc_dragon_egg_i01" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2917-1" /> <!-- Big Staccato Silk Cocoon -->
+	</item>
+	<item id="14835" type="EtcItem" name="Multi-colored Jewel">
+		<!-- Lump of ore containing mysterious power. Upon use, you are teleported to the Stakato nest entrance. -->
+		<set name="icon" val="icon.etc_crystal_cave_crystal_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2915-1" /> <!-- Clear Five-Colored Crystal -->
+	</item>
+	<item id="14836" type="EtcItem" name="Knowledge of the Giants Anthology, Chapter 1">
+		<!-- Portion of the knowledge anthology from the Titans era. Chapter 1 of 5. -->
+		<set name="icon" val="icon.etc_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14837" type="EtcItem" name="Knowledge of the Giants Anthology, Chapter 2">
+		<!-- Portion of the knowledge anthology from the Titans era. Chapter 2 of 5. -->
+		<set name="icon" val="icon.etc_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14838" type="EtcItem" name="Knowledge of the Giants Anthology, Chapter 3">
+		<!-- Portion of the knowledge anthology from the Titans era. Chapter 3 of 5. -->
+		<set name="icon" val="icon.etc_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14839" type="EtcItem" name="Knowledge of the Giants Anthology, Chapter 4">
+		<!-- Portion of the knowledge anthology from the Titans era. Chapter 4 of 5. -->
+		<set name="icon" val="icon.etc_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14840" type="EtcItem" name="Knowledge of the Giants Anthology, Chapter 5">
+		<!-- Portion of the knowledge anthology from the Titans era. Chapter 5 of 5. -->
+		<set name="icon" val="icon.etc_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14841" type="EtcItem" name="Ancient Parchment">
+		<!-- Parchment from the Titans era. Double click to see more information. -->
+		<set name="icon" val="icon.etc_roll_of_paper_black_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2919-1" /> <!-- Ancient Parchment -->
+	</item>
+	<item id="14842" type="EtcItem" name="Wisdom of the Giants Text, Chapter 1">
+		<!-- Book containing a collection of wisdom from the Titans era. Chapter 1 of 5. -->
+		<set name="icon" val="icon.etc_spell_books_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14843" type="EtcItem" name="Wisdom of the Giants Text, Chapter 2">
+		<!-- Book containing a collection of wisdom from the Titans era. Chapter 2 of 5. -->
+		<set name="icon" val="icon.etc_spell_books_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14844" type="EtcItem" name="Wisdom of the Giants Text, Chapter 3">
+		<!-- Book containing a collection of wisdom from the Titans era. Chapter 3 of 5. -->
+		<set name="icon" val="icon.etc_spell_books_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14845" type="EtcItem" name="Wisdom of the Giants Text, Chapter 4">
+		<!-- Book containing a collection of wisdom from the Titans era. Chapter 4 of 5. -->
+		<set name="icon" val="icon.etc_spell_books_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14846" type="EtcItem" name="Wisdom of the Giants Text, Chapter 5">
+		<!-- Book containing a collection of wisdom from the Titans era. Chapter 5 of 5. -->
+		<set name="icon" val="icon.etc_spell_books_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14847" type="EtcItem" name="Titan Ancient Book">
+		<!-- Book from the Titans era. Double click to see more information. -->
+		<set name="icon" val="icon.etc_spell_books_black_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2920-1" /> <!-- Titan's Ancient Book -->
+	</item>
+	<item id="14848" type="EtcItem" name="Protection Soul's Pendant">
+		<!-- Amulet with protection from the evil spirits of the altar. Soul cores are purged above and driven into the pendant to make it shine with a red glow. -->
+		<set name="icon" val="icon.ect_charm_of_protection_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14849" type="EtcItem" name="Kahman's Supply Box">
+		<!-- Supply box received from Mercenary Kahman as mission compensation. Double click to check more information. -->
+		<set name="icon" val="icon.etc_jewel_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="9625,1,1,100;9626,1,1,80" />
+	</item>
+	<item id="14850" type="EtcItem" name="Droph's Support Items">
+		<!-- Support items received from Dwarven Explorer Droph for defeating Hekaton Prime. Double click to check more information. -->
+		<set name="icon" val="icon.etc_jewel_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="5575,140000,240000,100" />
+	</item>
+	<item id="14851" type="EtcItem" name="Cave Exploration Text 1 Sheet">
+		<!-- Report of explorers that contains information about the cave's origins -->
+		<set name="icon" val="icon.etc_cave_page_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14852" type="EtcItem" name="Cave Exploration Text 2 Sheet">
+		<!-- Report of explorers that contains information about the cause of transformation of the ancient giants -->
+		<set name="icon" val="icon.etc_cave_page_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14853" type="EtcItem" name="Cave Exploration Text 3 Sheet">
+		<!-- Report of explorers that contains information about the secret of Hekaton Prime -->
+		<set name="icon" val="icon.etc_cave_page_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14854" type="EtcItem" name="Recipe - Spiteful Soul Energy">
+		<!-- Recipe for quests. Needed to make soul energy. Requires the Create Item skill level 2. -->
+		<set name="icon" val="icon.etc_recipe_white_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="recipe_id" val="936" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14855" type="EtcItem" name="Spiteful Soul Energy">
+		<!-- Energy form soul received from the spiteful soul Leader. Collect and bring them to Balthazar. -->
+		<set name="icon" val="icon.etc_crystal_ball_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14856" type="EtcItem" name="Spiteful Soul Vengeance">
+		<!-- Vindictive spirit received from the spiteful soul Leader. Cannot be formed into energy and is pretty much useless. -->
+		<set name="icon" val="icon.etc_bead_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14857" type="EtcItem" name="Shell of Monsters">
+		<!-- Hard shell obtained by defeating the monsters near the cave of the giants. Take it to Magister Hanellin. -->
+		<set name="icon" val="icon.etc_bark_gold_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14858" type="EtcItem" name="Scout's Note">
+		<!-- Note obtained from the scout's body. Deliver the note to Mercenary Captain Pierce. -->
+		<set name="icon" val="icon.etc_piece_of_report_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14859" type="EtcItem" name="Stakato Queen's Fang">
+		<!-- Fang obtained from defeating Stakato Queen Shyeed. Bring it to Mercenary Kahman. -->
+		<set name="icon" val="icon.etc_claw_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14860" type="EtcItem" name="Box Containing the Flame of the Holy Spirit">
+		<!-- Box protecting the flame of the Holy Spirit. Deliver it to Beacon Town Manager Torrant at the Den of Evil. -->
+		<set name="icon" val="icon.etc_jewel_box_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14861" type="EtcItem" name="Cursed Burial Items">
+		<!-- Item that gives physical power to souls with deep grudges. -->
+		<set name="icon" val="icon.etc_totem_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14862" type="EtcItem" name="Flauen's Letter">
+		<!-- Letter from Gatekeeper Flauen of Heine. If you bring it to Iason Heine, you can hear more information about the mission. -->
+		<set name="icon" val="icon.etc_letter_envelope_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14863" type="EtcItem" name="Letter to Helvetica">
+		<!-- Certificate containing Iason Heine's promise of support. Bring it to Dr. Helvetica at the Field of Silence Research Center located in the Field of Silence. -->
+		<set name="icon" val="icon.etc_letter_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14864" type="EtcItem" name="Letter to Athenia">
+		<!-- Certificate containing Iason Heine's promise of support. Bring it to the Priestess Athenia of the Ritual Site of Purge located in the Field of Silence. -->
+		<set name="icon" val="icon.etc_letter_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14865" type="EtcItem" name="Certificate of Support">
+		<!-- Certificate received from Dr. Helvetica of the Field of Silence Research Center. This certificate is necessary to receive an additional mission from him. -->
+		<set name="icon" val="icon.etc_letter_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14866" type="EtcItem" name="Certificate of Support">
+		<!-- This certificate shows your support for Priestess Athenia and her cause. This certificate is necessary to receive an additional mission from her. -->
+		<set name="icon" val="icon.etc_letter_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14867" type="EtcItem" name="Damaged Torch Fragment">
+		<!-- Broken piece left after the destruction of the Brazier of Purity built around the Ritual Site of Purge. Gather all and bring them to Dr. Helvetica in the Field of Silence Development Research Center. -->
+		<set name="icon" val="icon.etc_charcoal_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14868" type="EtcItem" name="Guardian Spirit Fragment">
+		<!-- Broken piece of Guardian Spirit acquired from destroying the Magic Force Guardian Spirit and Evil Spirit in the Magic Force near the Ritual Site of Purge. Gather all and bring them to Dr. Helvetica in the Field of Silence Development Research Center. -->
+		<set name="icon" val="icon.etc_crystal_ball_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14869" type="EtcItem" name="Destroyed machine piece">
+		<!-- This is a part you salvaged from one of the Landfill Machines you destroyed. Once you have collected 10 pieces, return to Athenia. -->
+		<set name="icon" val="icon.etc_plate_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14870" type="EtcItem" name="Enchanted Golem Shard">
+		<!-- Fragment obtained from the destruction of the Suppressors and Exterminators belonging to Dr. Helvetica. Collect 20 fragments, then return to Athenia in the Field of Whispers. -->
+		<set name="icon" val="icon.etc_plate_glay_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14871" type="EtcItem" name="Mucrokian Hide">
+		<!-- This hide was obtained by killing a Mucrokian. When you are ready, return to Katensa to trade your hides for a reward. -->
+		<set name="icon" val="icon.etc_leather_gray_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14872" type="EtcItem" name="Awakened Mucrokian Hide">
+		<!-- Proof of defeating an Awakened Mucrokian. Gather and bring them to Katensa of the Field of Silence Research Center. -->
+		<set name="icon" val="icon.etc_leather_brown_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14873" type="EtcItem" name="Mucrokian Hide">
+		<!-- This hide was obtained by killing a Mucrokian. When you are ready, return to Priestess Athenia to trade your hides for a reward. -->
+		<set name="icon" val="icon.etc_leather_gray_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14874" type="EtcItem" name="Fallen Mucrokian Hide">
+		<!-- This hide was obtained by defeating a Contaminated Mucrokian. When you are ready, return to Priestess Athenia to trade these hides for a reward. -->
+		<set name="icon" val="icon.etc_leather_brown_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14875" type="EtcItem" name="Mineral Fragment">
+		<!-- Mineral fragment obtained as proof of defeating the enemies in the Mithril Mines. Collect and bring them to representative Filaur of the Grey Column guild at the Dwarven Village Chief Hall. -->
+		<set name="icon" val="icon.etc_debris_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14876" type="EtcItem" name="Evidence of Migration">
+		<!-- Proof received from the Red Man Robbers that you have succeeded in convincing them. Collect and bring them to Grave Robber Leader Kanemika. -->
+		<set name="icon" val="icon.etc_paper_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14877" type="EtcItem" name="Replenished Power Bead">
+		<!-- Bead needed to replenish the energy of power in Lucien's altar. Take it to each of Lucien's altars and enhance the energy of power. -->
+		<set name="icon" val="icon.etc_crystal_ball_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14878" type="EtcItem" name="Discharged Power Bead">
+		<!-- Discharged power bead that has replenished Lucien's altar as a replenished power bead. Also proof that replenishment is complete. When all replenishments are complete, take this bead as proof of the mission's completion to the Priest of the Earth Daichir in Maphr's Temple in the Dwarven Village. -->
+		<set name="icon" val="icon.etc_bead_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14879" type="EtcItem" name="Stakato Fang">
+		<!-- Fangs obtained from Stakato carcasses. Once you have 25, take them to Bounty Hunter Kintaijin. -->
+		<set name="icon" val="icon.etc_claw_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14880" type="EtcItem" name="Dirty Bead">
+		<!-- Part of an artifact stolen by Billy Haari, these beads are obtained by defeating monsters inside the Stakato's Nest. Once you have 500, return to Kintaijin to receive your reward. -->
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14881" type="EtcItem" name="Soul Core Containing Evil Spirit">
+		<!-- Monster's soul core containing an evil spirit. Small jewel with evil energy appearing in dark purple. -->
+		<set name="icon" val="icon.etc_evil_soul_core_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14882" type="EtcItem" name="Ragna Orc's Amulet">
+		<!-- Doll used in shamanism to control the evil creatures by the Ragna Orcs. Collect and bring them to Beacon Town Manager Torrant at the Den of Evil. -->
+		<set name="icon" val="icon.etc_totem_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14883" type="EtcItem" name="Hisilrome's Heart">
+		<!-- Heart obtained after defeating Shilen's Priest Hisilrome. -->
+		<set name="icon" val="icon.etc_bodypart_heart_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="14884" type="EtcItem" name="Gludio Supply Box - Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Gludio. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2975-1" /> <!-- Gludio supply box - magic rune clip -->
+	</item>
+	<item id="14885" type="EtcItem" name="Dion Supply Box - Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Dion. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2976-1" /> <!-- Dion supply box - magic rune clip -->
+	</item>
+	<item id="14886" type="EtcItem" name="Giran Supply Box - Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Giran. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2977-1" /> <!-- Giran supply box - magic rune clip -->
+	</item>
+	<item id="14887" type="EtcItem" name="Oren Supply Box - Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Oren. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2978-1" /> <!-- Oren supply box - magic rune clip -->
+	</item>
+	<item id="14888" type="EtcItem" name="Aden Supply Box - Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Aden. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2979-1" /> <!-- Aden supply box - magic rune clip -->
+	</item>
+	<item id="14889" type="EtcItem" name="Innadril Supply Box - Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Innadril. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2980-1" /> <!-- Innadril supply box - magic rune clip -->
+	</item>
+	<item id="14890" type="EtcItem" name="Goddard Supply Box: Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Goddard. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2981-1" /> <!-- Goddard supply box - magic rune clip -->
+	</item>
+	<item id="14891" type="EtcItem" name="Rune Supply Box - Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Rune. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2982-1" /> <!-- Rune supply box - magic rune clip -->
+	</item>
+	<item id="14892" type="EtcItem" name="Schuttgart Supply Box - Magic Rune Clip - Grade S, A">
+		<!-- A box that has the symbol of Schuttgart. A high grade magic Rune clip that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2983-1" /> <!-- Schuttgart supply box - magic rune clip -->
+	</item>
+	<item id="14893" type="EtcItem" name="Gludio Supply Box - Magic Ornament - Grade S, A">
+		<!-- A box that has the symbol of Gludio. A high grade magic pouch that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2984-1" /> <!-- Gludio supply box - magic ornament -->
+	</item>
+	<item id="14894" type="EtcItem" name="Dion Supply Box - Magic Ornament - Grade S, A">
+		<!-- A box that has the symbol of Dion. A high grade magic pouch that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2985-1" /> <!-- Dion supply box - magic ornament -->
+	</item>
+	<item id="14895" type="EtcItem" name="Giran Supply Box - Magic Ornament - Grade S, A">
+		<!-- A box that has the symbol of Giran. A high grade magic pouch that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2986-1" /> <!-- Giran supply box - magic ornament -->
+	</item>
+	<item id="14896" type="EtcItem" name="Oren Supply Box - Magic Ornament - Grade S, A">
+		<!-- A box that has the symbol of Oren. A high grade magic pouch that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2987-1" /> <!-- Oren supply box - magic ornament -->
+	</item>
+	<item id="14897" type="EtcItem" name="Aden Supply Box - Magic Ornament - Grade S, A">
+		<!-- A box that has the symbol of Aden. A high grade magic pouch that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2988-1" /> <!-- Aden supply box - magic ornament -->
+	</item>
+	<item id="14898" type="EtcItem" name="Innadril Supply Box - Magic Ornament - Grade S, A">
+		<!-- A box that has the symbol of Innadril. A high grade magic pouch that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2989-1" /> <!-- Innadril supply box - magic ornament -->
+	</item>
+	<item id="14899" type="EtcItem" name="Goddard Supply Box: Magic Ornament - Grade S, A">
+		<!-- A box that has the symbol of Goddard. A high grade magic pouch that's attached to the belt can be acquired at a certain rate. -->
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2990-1" /> <!-- Goddard supply box - magic ornament -->
+	</item>
+</list>

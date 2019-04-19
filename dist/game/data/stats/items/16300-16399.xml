@@ -1,0 +1,1869 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="16300" type="Armor" name="Moirai Gloves">
+		<!-- Masterwork Item that increases M. Atk., Resistance to Paralysis, and Resistance to wind. -->
+		<set name="icon" val="icon.armor_t102_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8432-1" /> <!-- Moirai Gloves -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16301" type="Armor" name="Moirai Boots">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd., Resistance to Shock, and Resistance to earth. -->
+		<set name="icon" val="icon.armor_t100_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8422-1" /> <!-- Moirai Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16302" type="Armor" name="Moirai Leather Boots">
+		<!-- Masterwork Item that increases P. Atk., MP Recovery Bonus, Resistance to Hold, and Resistance to earth. -->
+		<set name="icon" val="icon.armor_t101_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8428-1" /> <!-- Moirai Leather Boots -->
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16303" type="Armor" name="Moirai Shoes">
+		<!-- Masterwork Item that increases M. Atk., Resistance to Paralysis, and Resistance to earth. -->
+		<set name="icon" val="icon.armor_t102_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8433-1" /> <!-- Moirai Shoes -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16304" type="Armor" name="Moirai Shield">
+		<!-- Masterwork Item that increases Resistance to Magic Damage. -->
+		<set name="icon" val="icon.weapon_tysandy_shield_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="424" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1190" />
+		<set name="price" val="8839000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8423-1" /> <!-- Moirai Shield -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="355" />
+			<enchant val="0" stat="sDef" />
+		</for>
+	</item>
+	<item id="16305" type="Armor" name="Moirai Sigil">
+		<!-- Masterwork Item that increases Resistance to Magic Damage. -->
+		<set name="icon" val="icon.weapon_tysandy_sigil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="424" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="920" />
+		<set name="price" val="8839000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8434-1" /> <!-- Moirai Sigil -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<add order="0" stat="pDef" val="16" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16306" type="Armor" name="Vesper Helmet">
+		<!-- Masterwork Item that increases P. Atk., P. Def., Max HP, Resistance to sleep, and Resistance to Hold. -->
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="840" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="17500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8435-1" /> <!-- Vesper Helmet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="101" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16307" type="Armor" name="Vesper Leather Helmet">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="840" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="17500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8441-1" /> <!-- Vesper Leather Helmet -->
+		<for>
+			<add order="0" stat="pDef" val="101" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16308" type="Armor" name="Vesper Circlet">
+		<!-- Masterwork Item that increases M. Atk., MP Regeneration, and Resistance to Shock, and decreases Magic Cancel Rate. -->
+		<set name="icon" val="icon.armor_circlet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="840" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="17500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8446-1" /> <!-- Vesper Circlet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="101" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16309" type="Armor" name="Vesper Breastplate">
+		<!-- Masterwork Item that increases P. Atk., P. Def., Max HP, and Resistance to Hold. -->
+		<set name="icon" val="icon.armor_t94_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2240" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="7520" />
+		<set name="price" val="46668000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8436-1" /> <!-- Vesper Cuirass -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="250" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16310" type="Armor" name="Vesper Leather Breastplate">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. -->
+		<set name="icon" val="icon.armor_t95_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1680" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="4140" />
+		<set name="price" val="35000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8442-1" /> <!-- Vesper Leather Hauberk -->
+		<for>
+			<add order="0" stat="pDef" val="187" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16311" type="Armor" name="Vesper Tunic">
+		<!-- Masterwork Item that increases M. Atk., Casting Spd., MP Regeneration, and Resistance to Stun, and decreases Magic Cancel Rate. -->
+		<set name="icon" val="icon.armor_t96_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1680" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="1750" />
+		<set name="price" val="35000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8447-1" /> <!-- Vesper Jacket -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="125" />
+			<add stat="maxMp" val="637" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16312" type="Armor" name="Vesper Gaiter">
+		<!-- Masterwork Item that increases P. Atk., P. Def., Max HP, Resistance to sleep, and Resistance to Hold. -->
+		<set name="icon" val="icon.armor_t94_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1400" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="3170" />
+		<set name="price" val="29168000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8437-1" /> <!-- Vesper Gaiter -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="156" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16313" type="Armor" name="Vesper Leather Legging">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. -->
+		<set name="icon" val="icon.armor_t95_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1050" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1320" />
+		<set name="price" val="21876000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8443-1" /> <!-- Vesper Leather Legging -->
+		<for>
+			<add order="0" stat="pDef" val="117" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16314" type="Armor" name="Vesper Stockings">
+		<!-- Masterwork Item that increases M. Atk., MP Regeneration, and Resistance to Stun, and decreases Magic Cancel Rate. -->
+		<set name="icon" val="icon.armor_t96_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1050" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="850" />
+		<set name="price" val="21876000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8448-1" /> <!-- Vesper Hose -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="78" />
+			<add stat="maxMp" val="415" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16315" type="Armor" name="Vesper Gauntlet">
+		<!-- Masterwork Item that increases P. Atk., P. Def., Max HP, Resistance to sleep, and Resistance to Hold. -->
+		<set name="icon" val="icon.armor_t94_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8438-1" /> <!-- Vesper Gauntlet -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16316" type="Armor" name="Vesper Leather Gloves">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. -->
+		<set name="icon" val="icon.armor_t95_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8444-1" /> <!-- Vesper Leather Gloves -->
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16317" type="Armor" name="Vesper Gloves">
+		<!-- Masterwork Item that increases M. Atk., MP Regeneration, and Resistance to Stun, and decreases Magic Cancel Rate. -->
+		<set name="icon" val="icon.armor_t96_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8449-1" /> <!-- Vesper Gloves -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16318" type="Armor" name="Vesper Boots">
+		<!-- Masterwork Item that increases P. Atk., P. Def., Max HP, Resistance to sleep, and Resistance to Hold. -->
+		<set name="icon" val="icon.armor_t94_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8439-1" /> <!-- Vesper Boots -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16319" type="Armor" name="Vesper Leather Boots">
+		<!-- Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. -->
+		<set name="icon" val="icon.armor_t95_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8445-1" /> <!-- Vesper Leather Boots -->
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16320" type="Armor" name="Vesper Shoes">
+		<!-- Masterwork Item that increases M. Atk., MP Regeneration, and Resistance to Stun, and decreases Magic Cancel Rate. -->
+		<set name="icon" val="icon.armor_t96_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8450-1" /> <!-- Vesper Shoes -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16321" type="Armor" name="Vesper Shield">
+		<!-- Masterwork Item that increases Resistance to Magic Damage. -->
+		<set name="icon" val="icon.weapon_vesper_verteidiger_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="588" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1130" />
+		<set name="price" val="12250000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8440-1" /> <!-- Vesper Verteidiger -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="371" />
+			<enchant val="0" stat="sDef" />
+		</for>
+	</item>
+	<item id="16322" type="Armor" name="Vesper Sigil">
+		<!-- Masterwork Item that increases Resistance to Magic Damage. -->
+		<set name="icon" val="icon.verper_sigil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="588" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="920" />
+		<set name="price" val="12250000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8451-1" /> <!-- Vesper Sigil -->
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<add order="0" stat="pDef" val="17" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16323" type="Armor" name="Sealed Moirai Helmet">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="606" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="12627000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="96" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16324" type="Armor" name="Sealed Moirai Leather Helmet">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_leather_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="606" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="12627000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="96" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16325" type="Armor" name="Sealed Moirai Circlet">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_circlet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="606" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="12627000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="96" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16326" type="Armor" name="Sealed Moirai Breastplate">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t94_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1616" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="7520" />
+		<set name="price" val="33673000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="225" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16327" type="Armor" name="Sealed Moirai Leather Breastplate">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t95_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="4140" />
+		<set name="price" val="25255000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="169" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16328" type="Armor" name="Sealed Moirai Tunic">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t96_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="1750" />
+		<set name="price" val="25255000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="112" />
+			<add stat="maxMp" val="614" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16329" type="Armor" name="Sealed Moirai Gaiter">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t94_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1010" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="3170" />
+		<set name="price" val="21046000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="141" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16330" type="Armor" name="Sealed Moirai Leather Legging">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t95_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="758" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1320" />
+		<set name="price" val="15784000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="105" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16331" type="Armor" name="Sealed Moirai Stockings">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t96_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="758" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="850" />
+		<set name="price" val="15784000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="70" />
+			<add stat="maxMp" val="392" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16332" type="Armor" name="Sealed Moirai Gauntlet">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t94_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16333" type="Armor" name="Sealed Moirai Leather Gloves">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t95_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16334" type="Armor" name="Sealed Moirai Gloves">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t96_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16335" type="Armor" name="Sealed Moirai Boots">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t94_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16336" type="Armor" name="Sealed Moirai Leather Boots">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t95_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16337" type="Armor" name="Sealed Moirai Shoes">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t96_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="404" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="8418000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="64" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16338" type="Armor" name="Sealed Moirai Shield">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.weapon_tysandy_shield_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="424" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="1190" />
+		<set name="price" val="8839000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="337" />
+			<enchant val="0" stat="sDef" />
+		</for>
+	</item>
+	<item id="16339" type="Armor" name="Sealed Moirai Sigil">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.weapon_tysandy_sigil_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="424" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="920" />
+		<set name="price" val="8839000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<add order="0" stat="pDef" val="16" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16340" type="Armor" name="Sealed Vesper Helmet">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="840" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="17500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="101" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16341" type="Armor" name="Sealed Vesper Leather Helmet">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_leather_helmet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="840" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="17500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="101" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16342" type="Armor" name="Sealed Vesper Circlet">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_circlet_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="840" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="price" val="17500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="101" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16343" type="Armor" name="Sealed Vesper Breastplate">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t94_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2240" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="7520" />
+		<set name="price" val="46668000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="250" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16344" type="Armor" name="Sealed Vesper Leather Leather Breastplate">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t95_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1680" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="4140" />
+		<set name="price" val="35000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="187" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16345" type="Armor" name="Sealed Vesper Tunic">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t96_u_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1680" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="1750" />
+		<set name="price" val="35000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="125" />
+			<add stat="maxMp" val="637" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16346" type="Armor" name="Sealed Vesper Gaiter">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t94_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1400" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="3170" />
+		<set name="price" val="29168000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="148" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16347" type="Armor" name="Sealed Vesper Leather Legging">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t95_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1050" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1320" />
+		<set name="price" val="21876000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="111" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16348" type="Armor" name="Sealed Vesper Stockings">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t96_l_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1050" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="850" />
+		<set name="price" val="21876000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="74" />
+			<add stat="maxMp" val="415" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16349" type="Armor" name="Sealed Vesper Gauntlet">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t94_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16350" type="Armor" name="Sealed Vesper Leather Gloves">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t95_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16351" type="Armor" name="Sealed Vesper Gloves">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t96_g_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16352" type="Armor" name="Sealed Vesper Boots">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t94_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16353" type="Armor" name="Sealed Vesper Leather Boots">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t95_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16354" type="Armor" name="Sealed Vesper Shoes">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_t96_b_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="560" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="price" val="11667000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="68" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16355" type="Armor" name="Sealed Vesper Shield">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.weapon_vesper_verteidiger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="588" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1130" />
+		<set name="price" val="12250000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<set stat="rShld" val="20" />
+			<set stat="sDef" val="352" />
+			<enchant val="0" stat="sDef" />
+		</for>
+	</item>
+	<item id="16356" type="Armor" name="Sealed Vesper Sigil">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. -->
+		<set name="icon" val="icon.armor_verper_sigil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="588" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="920" />
+		<set name="price" val="12250000" />
+		<set name="enchant_enabled" val="1" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<sub stat="rEvas" val="8" />
+			<add order="0" stat="pDef" val="17" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="16357" type="EtcItem" name="Sealed Vesper Ring of Chaos">
+		<!-- A rare Sealed Vesper Ring that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.vesper_ring_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="5142000" />
+		<for>
+			<add order="0" stat="mDef" val="55" />
+		</for>
+	</item>
+	<item id="16358" type="EtcItem" name="Sealed Vesper Earring of Chaos">
+		<!-- A rare Sealed Vesper Earring that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.vesper_earring_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="7713000" />
+		<for>
+			<add order="0" stat="mDef" val="83" />
+		</for>
+	</item>
+	<item id="16359" type="EtcItem" name="Sealed Vesper Necklace of Chaos">
+		<!-- A rare Sealed Vesper Necklace that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.vesper_necklace_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="10284000" />
+		<for>
+			<add order="0" stat="mDef" val="110" />
+		</for>
+	</item>
+	<item id="16360" type="EtcItem" name="Sealed Moirai Ring of Chaos">
+		<!-- A rare Sealed Moirai Ring that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.accessary_sealed_bluelycan_ring_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="3710000" />
+		<for>
+			<add order="0" stat="mDef" val="53" />
+		</for>
+	</item>
+	<item id="16361" type="EtcItem" name="Sealed Moirai Earring of Chaos">
+		<!-- A rare Sealed Moirai Earring that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.accessary_sealed_bluelycan_earring_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="5565000" />
+		<for>
+			<add order="0" stat="mDef" val="76" />
+		</for>
+	</item>
+	<item id="16362" type="EtcItem" name="Sealed Moirai Necklace of Chaos">
+		<!-- A rare Sealed Moirai Necklace that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.accessary_sealed_bluelycan_necklace_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="7420000" />
+		<for>
+			<add order="0" stat="mDef" val="101" />
+		</for>
+	</item>
+	<item id="16363" type="EtcItem" name="Vesper Ring of Chaos">
+		<!-- A rare Sealed Vesper Ring that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.vesper_ring_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="365" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="7596000" />
+		<for>
+			<add order="0" stat="mDef" val="62" />
+			<add stat="maxMp" val="25" />
+		</for>
+	</item>
+	<item id="16364" type="EtcItem" name="Vesper Earring of Chaos">
+		<!-- A rare Sealed Vesper Earring that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.vesper_earring_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="547" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="11394000" />
+		<for>
+			<add order="0" stat="mDef" val="94" />
+			<add stat="maxMp" val="37" />
+		</for>
+	</item>
+	<item id="16365" type="EtcItem" name="Vesper Necklace of Chaos">
+		<!-- A rare Sealed Vesper Necklace that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.vesper_necklace_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="729" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="15192000" />
+		<for>
+			<add order="0" stat="mDef" val="125" />
+			<add stat="maxMp" val="50" />
+		</for>
+	</item>
+	<item id="16366" type="EtcItem" name="Moirai Ring of Chaos">
+		<!-- A rare Sealed Moirai Ring that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.accessary_bluelycan_earring_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="263" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="5480000" />
+		<for>
+			<add order="0" stat="mDef" val="53" />
+			<add stat="maxMp" val="24" />
+		</for>
+	</item>
+	<item id="16367" type="EtcItem" name="Moirai Earring of Chaos">
+		<!-- A rare Sealed Moirai Earring that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.accessary_bluelycan_necklace_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="395" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="8221000" />
+		<for>
+			<add order="0" stat="mDef" val="86" />
+			<add stat="maxMp" val="36" />
+		</for>
+	</item>
+	<item id="16368" type="EtcItem" name="Moirai Necklace of Chaos">
+		<!-- A rare Sealed Moirai Necklace that requires a thorough varnishing. It can be varnished by the Blacksmith of Mammon. -->
+		<set name="icon" val="icon.accessary_bluelycan_ring_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="526" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="10961000" />
+		<for>
+			<add order="0" stat="mDef" val="115" />
+			<add stat="maxMp" val="48" />
+		</for>
+	</item>
+	<item id="16369" type="Armor" name="Sealed Vesper Ring">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is broken, Resistance to Shock is increased. -->
+		<set name="icon" val="icon.vesper_ring_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="247" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="5142000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="mDef" val="55" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16370" type="Armor" name="Sealed Vesper Earring">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is broken, MP +37, and Resistance to sleep and hold are increased. -->
+		<set name="icon" val="icon.vesper_earring_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="370" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="7713000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="mDef" val="83" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16371" type="Armor" name="Sealed Vesper Necklace">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is broken, MP +50 and Max MP +33. -->
+		<set name="icon" val="icon.vesper_necklace_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="494" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="10284000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="mDef" val="110" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16372" type="Armor" name="Sealed Moirai Ring">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is broken, MP increases 24 and Max MP +16. -->
+		<set name="icon" val="icon.accessary_sealed_bluelycan_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="178" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="3710000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="mDef" val="53" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16373" type="Armor" name="Sealed Moirai Earring">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is broken, MP +36 and Resistance to bleed is increased. -->
+		<set name="icon" val="icon.accessary_sealed_bluelycan_earring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="267" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="5565000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="mDef" val="76" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16374" type="Armor" name="Sealed Moirai Necklace">
+		<!-- Sealed Masterwork Item. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is broken, MP +48 and Resistance to poison is increased. -->
+		<set name="icon" val="icon.accessary_sealed_bluelycan_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="356" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="7420000" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<add order="0" stat="mDef" val="101" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16375" type="Armor" name="Vesper Ring">
+		<!-- Masterwork Item that increases MP +25 and Resistance to Shock. -->
+		<set name="icon" val="icon.vesper_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="365" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="7596000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8457-1" /> <!-- Vesper Ring -->
+		<for>
+			<add order="0" stat="mDef" val="62" />
+			<add stat="maxMp" val="25" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16376" type="Armor" name="Vesper Earring">
+		<!-- Masterwork Item that increases MP +37, Resistance to sleep, and Resistance to Hold. -->
+		<set name="icon" val="icon.vesper_earring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="547" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="11394000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8455-1" /> <!-- Vesper Earring -->
+		<for>
+			<add order="0" stat="mDef" val="94" />
+			<add stat="maxMp" val="37" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16377" type="Armor" name="Vesper Necklace">
+		<!-- Masterwork Item that increases MP +50 and Max MP. -->
+		<set name="icon" val="icon.vesper_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="729" />
+		<set name="crystal_type" val="S84" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="15192000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8456-1" /> <!-- Vesper Necklace -->
+		<for>
+			<add order="0" stat="mDef" val="125" />
+			<add stat="maxMp" val="50" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16378" type="Armor" name="Moirai Ring">
+		<!-- Masterwork Item that increases MP +24 and Max MP. -->
+		<set name="icon" val="icon.accessary_bluelycan_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="263" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="5480000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8454-1" /> <!-- Moirai Ring -->
+		<for>
+			<add order="0" stat="mDef" val="61" />
+			<add stat="maxMp" val="24" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16379" type="Armor" name="Moirai Earring">
+		<!-- Masterwork Item that increases MP +36 and Resistance to bleed. -->
+		<set name="icon" val="icon.accessary_bluelycan_earring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="395" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="8221000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8452-1" /> <!-- Moirai Earring -->
+		<for>
+			<add order="0" stat="mDef" val="86" />
+			<add stat="maxMp" val="36" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16380" type="Armor" name="Moirai Necklace">
+		<!-- Masterwork Item that increases MP +48 and Resistance to poison. -->
+		<set name="icon" val="icon.accessary_bluelycan_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="526" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="10961000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="8453-1" /> <!-- Moirai Necklace -->
+		<for>
+			<add order="0" stat="mDef" val="115" />
+			<add stat="maxMp" val="48" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="16381" type="EtcItem" name="Training Order Paper">
+		<!-- The Sel Mahum Training Officer's Training Order Papers. Take it back to Guard Stan of Oren Village. -->
+		<set name="icon" val="icon.roll_of_paper_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="16382" type="EtcItem" name="Shoes String of Sel Mahum">
+		<!-- A clumsy Sel Mahum's shoelace. Take it back to Guard Stan of Oren Village. -->
+		<set name="icon" val="icon.etc_braided_hemp_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="16383" type="EtcItem" name="Christmas Cake Pack">
+		<!-- Christmas Cake Pack. Contains a Christmas Cake box. Cannot be exchanged, dropped, sold, or mailed. Cannot be stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16391,1,1,100" />
+	</item>
+	<item id="16384" type="EtcItem" name="Special Christmas Cake Pack">
+		<!-- Special Christmas Cake Pack. Contains a Special Christmas box. Cannot be exchanged, dropped, sold, or mailed. Cannot be stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16392,1,1,100" />
+	</item>
+	<item id="16385" type="EtcItem" name="Teddy Boy Gift Box Pack">
+		<!-- Teddy Boy Gift Box Pack. Contains a Teddy Boy Gift box. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16395,1,1,100" />
+	</item>
+	<item id="16386" type="EtcItem" name="Teddy Girl Gift Box Pack">
+		<!-- Teddy Girl Gift Box Pack. Contains a Teddy Girl Gift box. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16396,1,1,100" />
+	</item>
+	<item id="16387" type="EtcItem" name="Christmas Cake Pack (event)">
+		<!-- Christmas Cake Pack. Contains a Christmas Cake box. Cannot be exchanged, dropped, sold, or mailed. Cannot be stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16393,1,1,100" />
+	</item>
+	<item id="16388" type="EtcItem" name="Special Christmas Cake Pack (event)">
+		<!-- Special Christmas Cake Pack. Contains a Special Christmas box. Cannot be exchanged, dropped, sold, or mailed. Cannot be stored in a private store. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16394,1,1,100" />
+	</item>
+	<item id="16389" type="EtcItem" name="Teddy Boy Gift Box Pack (event)">
+		<!-- Teddy Boy Gift Box Pack. Contains a Teddy Boy Gift box. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16397,1,1,100" />
+	</item>
+	<item id="16390" type="EtcItem" name="Teddy Girl Gift Box Pack (event)">
+		<!-- Teddy Girl Gift Box Pack. Contains a Teddy Girl Gift box. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16398,1,1,100" />
+	</item>
+	<item id="16391" type="EtcItem" name="Christmas Cake Box">
+		<!-- Christmas Cake Box. Contains 1 Christmas Cake and 1 White Christmas Wish Candle. Can be exchanged. Cannot be dropped, destroyed, sold, or registered on Private Store. -->
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16403,1,1,100;16404,1,1,100" />
+	</item>
+	<item id="16392" type="EtcItem" name="Special Christmas Cake Box">
+		<!-- Special Christmas Cake Box. Contains 5 Christmas Cake boxes and 1 Santa's Stocking (bonus). Can be exchanged. Cannot be dropped, destroyed, sold, or registered on Private Store. -->
+		<set name="icon" val="icon.four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16391,5,5,100;16407,1,1,100" />
+	</item>
+	<item id="16393" type="EtcItem" name="Christmas Cake Box (event)">
+		<!-- Christmas Cake Box. Contains 1 Christmas Cake and 1 White Christmas Wish Candle. Can be exchanged. Cannot be dropped, destroyed, sold, or registered on Private Store. -->
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16405,1,1,100;16406,1,1,100" />
+	</item>
+	<item id="16394" type="EtcItem" name="Special Christmas Cake Box (event)">
+		<!-- Special Christmas Cake Box. Contains 5 Christmas Cake boxes and 1 Santa's Stocking (bonus). Can be exchanged. Cannot be dropped, destroyed, sold, or registered on Private Store. -->
+		<set name="icon" val="icon.four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16393,5,5,100;16407,1,1,100" />
+	</item>
+	<item id="16395" type="EtcItem" name="Teddy Boy Gift Box">
+		<!-- Teddy Boy Gift Box. Contains 1 Teddy Boy Summon Bracelet and 3 White Christmas Wish Candles. Can be exchanged. Cannot be dropped, destroyed, sold, or registered on Private Store. -->
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16399,1,1,100;16404,3,3,100" />
+	</item>
+	<item id="16396" type="EtcItem" name="Teddy Girl Gift Box">
+		<!-- Teddy Girl Gift Box. Contains 1 Teddy Girl Summon Bracelet and 3 White Christmas Wish Candles. Can be exchanged. Cannot be dropped, destroyed, sold, or registered on Private Store. -->
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16400,1,1,100;16404,3,3,100" />
+	</item>
+	<item id="16397" type="EtcItem" name="Teddy Boy Gift Box (event)">
+		<!-- Teddy Boy Gift Box. Contains 1 Teddy Boy Summon Bracelet and 3 White Christmas Wish Candles. Can be exchanged. Cannot be dropped, destroyed, sold, or registered on Private Store. -->
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16401,1,1,100;16406,3,3,100" />
+	</item>
+	<item id="16398" type="EtcItem" name="Teddy Girl Gift Box (event)">
+		<!-- Teddy Girl Gift Box. Contains 1 Teddy Girl Summon Bracelet and 3 White Christmas Wish Candles. Can be exchanged. Cannot be dropped, destroyed, sold, or registered on Private Store. -->
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="16402,1,1,100;16406,3,3,100" />
+	</item>
+	<item id="16399" type="Armor" name="Teddy Boy Summon Bracelet - Permanent Use">
+		<!-- Teddy Boy Summon Bracelet. Can summon a Teddy Boy Agathion. Increases the Weight Limit by 3000 when equipped. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="8458-1;8259-1;3267-1;5958-1" /> <!-- Bracelet Weight Gauge Add -->
+	</item>
+</list>

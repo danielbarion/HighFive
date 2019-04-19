@@ -1,0 +1,2581 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="18900" level="84" type="L2FeedableBeast" name="Full Grown Grendel">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="my_type" value="4" />
+			<param name="my_grade" value="4" />
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6556" level="17" /> <!-- NPC water attack -->
+			<skill name="Buff" id="4028" level="2" /> <!-- NPC Might -->
+			<skill name="DeBuff" id="4592" level="10" /> <!-- Decrease P. Def. -->
+		</parameters>
+		<race>ANIMAL</race>
+		<sex>MALE</sex>
+		<acquire exp="83903" sp="7596" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4028" level="2" /> <!-- NPC Might -->
+			<skill id="4071" level="3" /> <!-- Resist Bow/Crossbow Weapons -->
+			<skill id="4116" level="5" /> <!-- Resist M. Atk. -->
+			<skill id="4379" level="5" /> <!-- Resist Spear Weapons -->
+			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
+			<skill id="4411" level="15" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="16" /> <!-- Very Strong P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="4" /> <!-- Animals -->
+			<skill id="4592" level="10" /> <!-- Decrease P. Def. -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+			<skill id="5620" level="7" /> <!-- Short-Range Physical Attack Weakness -->
+			<skill id="6556" level="17" /> <!-- NPC water attack -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>3</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="23.1" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="15.96" /> <!-- Greater Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2.94" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="4.4" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="5.72" /> <!-- Greater Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="0.88" /> <!-- Superior Herb of Mana -->
+				<item id="8606" min="1" max="1" chance="5" /> <!-- Herb of Power -->
+				<item id="8608" min="1" max="1" chance="5" /> <!-- Herb of Alacrity -->
+				<item id="8610" min="1" max="1" chance="5" /> <!-- Herb of Critical Attack - Probability -->
+				<item id="10655" min="1" max="1" chance="5" /> <!-- Herb of Vampiric Rage -->
+				<item id="10656" min="1" max="1" chance="5" /> <!-- Herb of Critical Attack - Power -->
+				<item id="8607" min="1" max="1" chance="5" /> <!-- Herb of Magic -->
+				<item id="8609" min="1" max="1" chance="5" /> <!-- Herb of Casting Spd. -->
+				<item id="8612" min="1" max="1" chance="0.33" /> <!-- Herb of the Warrior -->
+				<item id="8613" min="1" max="1" chance="0.33" /> <!-- Herb of the Mystic -->
+				<item id="8614" min="1" max="1" chance="0.34" /> <!-- Herb of Recovery -->
+				<item id="8611" min="1" max="1" chance="10.34" /> <!-- Herb of Speed -->
+				<item id="10657" min="1" max="1" chance="0.33" /> <!-- Herb of Doubt -->
+				<item id="13028" min="1" max="1" chance="0.33" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="34" />
+			<height normal="32.5" />
+		</collision>
+	</npc>
+	<npc id="18901" level="83" type="L2Npc" name="Kookaburra" title="Golden">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6556" level="16" /> <!-- NPC water attack -->
+			<skill name="Buff" id="4074" level="1" /> <!-- NPC Haste -->
+			<skill name="Skill_Display" id="6234" level="1" /> <!-- Presentation - Adena Firework -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="3835.59060587002" hpRegen="8.5" mp="1777.4" mpRegen="3" />
+			<attack physical="1099.42361669366" magical="750.763809564873" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="353.86144" magical="258.94045" />
+			<attribute>
+				<attack type="WATER" value="150" />
+				<defence fire="90" water="170" wind="130" earth="130" holy="130" dark="130" default="140" />
+			</attribute>
+			<speed>
+				<walk ground="13" />
+				<run ground="110" />
+			</speed>
+			<hitTime>500</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4074" level="1" /> <!-- NPC Haste -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="14" /> <!-- Strong P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+			<skill id="6234" level="1" /> <!-- Presentation - Adena Firework -->
+			<skill id="6556" level="16" /> <!-- NPC water attack -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="12" />
+			<height normal="21" />
+		</collision>
+	</npc>
+	<npc id="18902" level="83" type="L2Npc" name="Cougar" title="Golden">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6556" level="16" /> <!-- NPC water attack -->
+			<skill name="Buff" id="4074" level="1" /> <!-- NPC Haste -->
+			<skill name="Skill_Display" id="6234" level="1" /> <!-- Presentation - Adena Firework -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="3835.59060587002" hpRegen="8.5" mp="1777.4" mpRegen="3" />
+			<attack physical="1099.42361669366" magical="750.763809564873" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="353.86144" magical="258.94045" />
+			<attribute>
+				<attack type="WATER" value="150" />
+				<defence fire="90" water="170" wind="130" earth="130" holy="130" dark="130" default="140" />
+			</attribute>
+			<speed>
+				<walk ground="28" />
+				<run ground="110" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4074" level="1" /> <!-- NPC Haste -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="14" /> <!-- Strong P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+			<skill id="6234" level="1" /> <!-- Presentation - Adena Firework -->
+			<skill id="6556" level="16" /> <!-- NPC water attack -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="13" />
+			<height normal="21" />
+		</collision>
+	</npc>
+	<npc id="18903" level="84" type="L2Npc" name="Buffalo" title="Golden">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6556" level="17" /> <!-- NPC water attack -->
+			<skill name="Buff" id="4028" level="2" /> <!-- NPC Might -->
+			<skill name="Skill_Display" id="6234" level="1" /> <!-- Presentation - Adena Firework -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="110" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4028" level="2" /> <!-- NPC Might -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="15" /> <!-- Strong P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+			<skill id="6234" level="1" /> <!-- Presentation - Adena Firework -->
+			<skill id="6556" level="17" /> <!-- NPC water attack -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="16" />
+			<height normal="22" />
+		</collision>
+	</npc>
+	<npc id="18904" level="84" type="L2Npc" name="Grendel" title="Golden">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6556" level="17" /> <!-- NPC water attack -->
+			<skill name="Buff" id="4028" level="2" /> <!-- NPC Might -->
+			<skill name="Skill_Display" id="6234" level="1" /> <!-- Presentation - Adena Firework -->
+		</parameters>
+		<race>ANIMAL</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4028" level="2" /> <!-- NPC Might -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="15" /> <!-- Strong P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="4" /> <!-- Animals -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+			<skill id="6234" level="1" /> <!-- Presentation - Adena Firework -->
+			<skill id="6556" level="17" /> <!-- NPC water attack -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="12" />
+			<height normal="17" />
+		</collision>
+	</npc>
+	<npc id="18905" level="84" type="L2Npc" name="Farm Ravager" title="Crazed">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6559" level="17" /> <!-- NPC water attack -->
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="243976" sp="2243" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<skillList>
+			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
+			<skill id="4411" level="15" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+			<skill id="6559" level="17" /> <!-- NPC water attack -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>3</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="29" />
+			<height normal="37" />
+		</collision>
+	</npc>
+	<npc id="18906" level="84" type="L2Monster" name="Farm Bandit">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6559" level="16" /> <!-- NPC water attack -->
+			<!-- <skill name="SelfBuff" id="4028" level="3" /> --> <!-- NPC Might -->
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="17661" sp="1884" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4028" level="3" /> <!-- NPC Might -->
+			<skill id="4071" level="3" /> <!-- Resist Bow/Crossbow Weapons -->
+			<skill id="4116" level="5" /> <!-- Resist M. Atk. -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+			<skill id="5620" level="2" /> <!-- Short-Range Physical Attack Weakness -->
+			<skill id="6559" level="16" /> <!-- NPC water attack -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<dropLists>
+			<drop>
+				<item id="57" min="686" max="1402" chance="70" /> <!-- Adena -->
+				<item id="15703" min="1" max="1" chance="0.000275763798356056" /> <!-- Sealed Moirai Gauntlet -->
+				<item id="15704" min="1" max="1" chance="0.000275763798356056" /> <!-- Sealed Moirai Leather Gloves -->
+				<item id="15705" min="1" max="1" chance="0.000275763798356056" /> <!-- Sealed Moirai Gloves -->
+				<item id="15706" min="1" max="1" chance="0.000275763798356056" /> <!-- Sealed Moirai Boots -->
+				<item id="15707" min="1" max="1" chance="0.000275763798356056" /> <!-- Sealed Moirai Leather Boots -->
+				<item id="15708" min="1" max="1" chance="0.000275763798356056" /> <!-- Sealed Moirai Shoes -->
+				<item id="15654" min="1" max="1" chance="0.103707152981758" /> <!-- Sealed Moirai Gauntlet Piece -->
+				<item id="15655" min="1" max="1" chance="0.103707152981758" /> <!-- Sealed Moirai Leather Gloves Piece -->
+				<item id="15656" min="1" max="1" chance="0.103707152981758" /> <!-- Sealed Moirai Gloves Piece -->
+				<item id="15657" min="1" max="1" chance="0.103707152981758" /> <!-- Sealed Moirai Boots Piece -->
+				<item id="15658" min="1" max="1" chance="0.103707152981758" /> <!-- Sealed Moirai Leather Boots Piece -->
+				<item id="15659" min="1" max="1" chance="0.103709648581743" /> <!-- Sealed Moirai Shoes Piece -->
+				<item id="1879" min="1" max="1" chance="2.90165039293766" /> <!-- Cokes -->
+				<item id="1885" min="1" max="1" chance="1.45082279121876" /> <!-- High-Grade Suede -->
+				<item id="9628" min="1" max="1" chance="0.136546046614647" /> <!-- Leonard -->
+				<item id="9630" min="1" max="1" chance="0.0916304067611694" /> <!-- Orichalcum -->
+				<item id="9629" min="1" max="1" chance="0.0756932197809219" /> <!-- Adamantine -->
+				<item id="10483" min="1" max="1" chance="0.120902300143242" /> <!-- Life Stone - Level 82 -->
+				<item id="10484" min="1" max="1" chance="0.0302243724107742" /> <!-- Mid-Grade Life Stone - Level 82 -->
+				<item id="10485" min="1" max="1" chance="0.00303061509132385" /> <!-- High-Grade Life Stone - Level 82 -->
+				<item id="8600" min="1" max="1" chance="23.1" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="15.96" /> <!-- Greater Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2.94" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="4.4" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="5.72" /> <!-- Greater Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="0.88" /> <!-- Superior Herb of Mana -->
+				<item id="8606" min="1" max="1" chance="5" /> <!-- Herb of Power -->
+				<item id="8608" min="1" max="1" chance="5" /> <!-- Herb of Alacrity -->
+				<item id="8610" min="1" max="1" chance="5" /> <!-- Herb of Critical Attack - Probability -->
+				<item id="10655" min="1" max="1" chance="5" /> <!-- Herb of Vampiric Rage -->
+				<item id="10656" min="1" max="1" chance="5" /> <!-- Herb of Critical Attack - Power -->
+				<item id="8607" min="1" max="1" chance="5" /> <!-- Herb of Magic -->
+				<item id="8609" min="1" max="1" chance="5" /> <!-- Herb of Casting Spd. -->
+				<item id="8612" min="1" max="1" chance="0.33" /> <!-- Herb of the Warrior -->
+				<item id="8613" min="1" max="1" chance="0.33" /> <!-- Herb of the Mystic -->
+				<item id="8614" min="1" max="1" chance="0.34" /> <!-- Herb of Recovery -->
+				<item id="8611" min="1" max="1" chance="10.34" /> <!-- Herb of Speed -->
+				<item id="10657" min="1" max="1" chance="0.33" /> <!-- Herb of Doubt -->
+				<item id="13028" min="1" max="1" chance="0.33" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="15654" min="1" max="1" chance="0.5826" /> <!-- Sealed Moirai Gauntlet Piece -->
+				<item id="15655" min="1" max="1" chance="0.5826" /> <!-- Sealed Moirai Leather Gloves Piece -->
+				<item id="15656" min="1" max="1" chance="0.5826" /> <!-- Sealed Moirai Gloves Piece -->
+				<item id="15657" min="1" max="1" chance="0.5826" /> <!-- Sealed Moirai Boots Piece -->
+				<item id="15658" min="1" max="1" chance="0.5826" /> <!-- Sealed Moirai Leather Boots Piece -->
+				<item id="15659" min="1" max="1" chance="0.5826" /> <!-- Sealed Moirai Shoes Piece -->
+				<item id="9630" min="1" max="1" chance="0.3434" /> <!-- Orichalcum -->
+				<item id="15784" min="1" max="1" chance="0.0775" /> <!-- Recipe - Sealed Moirai Gauntlet (60%) -->
+				<item id="15785" min="1" max="1" chance="0.0775" /> <!-- Recipe - Sealed Moirai Leather Gloves (60%) -->
+				<item id="15786" min="1" max="1" chance="0.0775" /> <!-- Recipe - Sealed Moirai Gloves (60%) -->
+				<item id="15787" min="1" max="1" chance="0.0775" /> <!-- Recipe - Sealed Moirai Boots (60%) -->
+				<item id="15788" min="1" max="1" chance="0.0775" /> <!-- Recipe - Sealed Moirai Leather Boots (60%) -->
+				<item id="15789" min="1" max="1" chance="0.0775" /> <!-- Recipe - Sealed Moirai Shoes (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="29" />
+			<height normal="37" />
+		</collision>
+	</npc>
+	<npc id="18907" level="84" type="L2Monster" name="Beast Devourer">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6566" level="17" /> <!-- NPC water shot -->
+			<!-- <skill name="SelfBuff" id="4074" level="2" /> --> <!-- NPC Haste -->
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="18651" sp="1990" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="150" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4071" level="3" /> <!-- Resist Bow/Crossbow Weapons -->
+			<skill id="4074" level="2" /> <!-- NPC Haste -->
+			<skill id="4116" level="5" /> <!-- Resist M. Atk. -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+			<skill id="5620" level="2" /> <!-- Short-Range Physical Attack Weakness -->
+			<skill id="6566" level="17" /> <!-- NPC water shot -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<dropLists>
+			<drop>
+				<item id="57" min="725" max="1481" chance="70" /> <!-- Adena -->
+				<item id="15694" min="1" max="1" chance="0.000233027195453644" /> <!-- Sealed Moirai Helmet -->
+				<item id="15695" min="1" max="1" chance="0.000233027195453644" /> <!-- Sealed Moirai Leather Helmet -->
+				<item id="15696" min="1" max="1" chance="0.000233027195453644" /> <!-- Sealed Moirai Circlet -->
+				<item id="15710" min="1" max="1" chance="0.00033339039349556" /> <!-- Sealed Moirai Shield -->
+				<item id="15709" min="1" max="1" chance="0.00033339039349556" /> <!-- Sealed Moirai Sigil -->
+				<item id="15645" min="1" max="1" chance="0.0873840446951389" /> <!-- Sealed Moirai Helmet Piece -->
+				<item id="15646" min="1" max="1" chance="0.0873840446951389" /> <!-- Sealed Moirai Leather Helmet Piece -->
+				<item id="15647" min="1" max="1" chance="0.0873840446951389" /> <!-- Sealed Moirai Circlet Piece -->
+				<item id="15693" min="1" max="1" chance="0.156640996143937" /> <!-- Sealed Moirai Shield Piece -->
+				<item id="15692" min="1" max="1" chance="0.156640996143937" /> <!-- Sealed Moirai Sigil Piece -->
+				<item id="1879" min="1" max="1" chance="3.06499429668331" /> <!-- Cokes -->
+				<item id="1885" min="1" max="1" chance="1.53249460769176" /> <!-- High-Grade Suede -->
+				<item id="9628" min="1" max="1" chance="0.144232694306374" /> <!-- Leonard -->
+				<item id="9630" min="1" max="1" chance="0.0967885982437134" /> <!-- Orichalcum -->
+				<item id="9629" min="1" max="1" chance="0.0799542520666122" /> <!-- Adamantine -->
+				<item id="10483" min="1" max="1" chance="0.127708307415962" /> <!-- Life Stone - Level 82 -->
+				<item id="10484" min="1" max="1" chance="0.0319258065290451" /> <!-- Mid-Grade Life Stone - Level 82 -->
+				<item id="10485" min="1" max="1" chance="0.00320121886253357" /> <!-- High-Grade Life Stone - Level 82 -->
+				<item id="8600" min="1" max="1" chance="23.1" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="15.96" /> <!-- Greater Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2.94" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="4.4" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="5.72" /> <!-- Greater Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="0.88" /> <!-- Superior Herb of Mana -->
+				<item id="8606" min="1" max="1" chance="5" /> <!-- Herb of Power -->
+				<item id="8608" min="1" max="1" chance="5" /> <!-- Herb of Alacrity -->
+				<item id="8610" min="1" max="1" chance="5" /> <!-- Herb of Critical Attack - Probability -->
+				<item id="10655" min="1" max="1" chance="5" /> <!-- Herb of Vampiric Rage -->
+				<item id="10656" min="1" max="1" chance="5" /> <!-- Herb of Critical Attack - Power -->
+				<item id="8607" min="1" max="1" chance="5" /> <!-- Herb of Magic -->
+				<item id="8609" min="1" max="1" chance="5" /> <!-- Herb of Casting Spd. -->
+				<item id="8612" min="1" max="1" chance="0.33" /> <!-- Herb of the Warrior -->
+				<item id="8613" min="1" max="1" chance="0.33" /> <!-- Herb of the Mystic -->
+				<item id="8614" min="1" max="1" chance="0.34" /> <!-- Herb of Recovery -->
+				<item id="8611" min="1" max="1" chance="10.34" /> <!-- Herb of Speed -->
+				<item id="10657" min="1" max="1" chance="0.33" /> <!-- Herb of Doubt -->
+				<item id="13028" min="1" max="1" chance="0.33" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="15645" min="1" max="1" chance="0.5317" /> <!-- Sealed Moirai Helmet Piece -->
+				<item id="15646" min="1" max="1" chance="0.5317" /> <!-- Sealed Moirai Leather Helmet Piece -->
+				<item id="15647" min="1" max="1" chance="0.5317" /> <!-- Sealed Moirai Circlet Piece -->
+				<item id="15693" min="1" max="1" chance="0.9532" /> <!-- Sealed Moirai Shield Piece -->
+				<item id="15692" min="1" max="1" chance="0.9532" /> <!-- Sealed Moirai Sigil Piece -->
+				<item id="15775" min="1" max="1" chance="0.071" /> <!-- Recipe - Sealed Moirai Helmet (60%) -->
+				<item id="15776" min="1" max="1" chance="0.071" /> <!-- Recipe - Sealed Moirai Leather Helmet(60%) -->
+				<item id="15777" min="1" max="1" chance="0.071" /> <!-- Recipe - Sealed Moirai Circlet (60%) -->
+				<item id="15791" min="1" max="1" chance="0.1014" /> <!-- Recipe - Sealed Moirai Shield (60%) -->
+				<item id="15790" min="1" max="1" chance="0.1014" /> <!-- Recipe - Sealed Moirai Sigil (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="27" />
+			<height normal="31" />
+		</collision>
+	</npc>
+	<npc id="18908" level="83" type="L2Monster" name="Sel Mahum Chef">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6330" level="1" /> <!-- Salmon Porridge Attack -->
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="17547" sp="1759" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="3835.59060587002" hpRegen="8.5" mp="1777.4" mpRegen="3" />
+			<attack physical="1099.42361669366" magical="750.763809564873" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="353.86144" magical="258.94045" />
+			<attribute>
+				<attack type="FIRE" value="150" />
+				<defence fire="170" water="90" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4071" level="5" /> <!-- Resist Bow/Crossbow Weapons -->
+			<skill id="4116" level="9" /> <!-- Resist M. Atk. -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="6" /> <!-- Very Weak P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="6" /> <!-- Very Weak P. Def. -->
+			<skill id="4413" level="15" /> <!-- Strong M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4458" level="1" /> <!-- Spear Weapon Weak Point -->
+			<skill id="5462" level="1" /> <!-- Fire Attacks -->
+			<skill id="5620" level="9" /> <!-- Short-Range Physical Attack Weakness -->
+			<skill id="5663" level="5" /> <!-- Resistance to Ancient Sword -->
+			<skill id="6330" level="1" /> <!-- Salmon Porridge Attack -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false">
+			<clanList>
+				<clan>XEL_PRIVATE</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="15492" min="1" max="2" chance="25" /> <!-- Sel Mahum Salmon Porridge -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="35" />
+			<height normal="32.5" />
+		</collision>
+	</npc>
+	<npc id="18909" level="83" type="L2Monster" name="Solina Knights">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="PhysicalSpecial" id="6311" level="1" /> <!-- Solina Thrust -->
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="8211" lhand="8210" /> <!-- rhand: Monster Only (Monk Warrior Sword) lhand: Monster Only (Monk Warrior Shield) -->
+		<acquire exp="29809" sp="3060" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="3835.59060587002" hpRegen="8.5" mp="1777.4" mpRegen="3" />
+			<attack physical="1099.42361669366" magical="750.763809564873" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="353.86144" magical="258.94045" />
+			<attribute>
+				<attack type="HOLY" value="170" />
+				<defence fire="200" water="200" wind="200" earth="150" holy="160" dark="40" default="120" />
+			</attribute>
+			<speed>
+				<walk ground="53" />
+				<run ground="150" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Weak Point against Bow/Crossbow Weapons -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Short-Range Physical Attack Weakness -->
+			<skill id="6311" level="1" /> <!-- Solina Thrust -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>N_SOLINA</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="1170" max="2361" chance="70" /> <!-- Adena -->
+				<item id="14109" min="1" max="1" chance="0.00033632520031929" /> <!-- Sealed Vesper Gauntlet -->
+				<item id="14113" min="1" max="1" chance="0.00033632520031929" /> <!-- Sealed Vesper Leather Gloves -->
+				<item id="14116" min="1" max="1" chance="0.00033632520031929" /> <!-- Sealed Vesper Gloves -->
+				<item id="14110" min="1" max="1" chance="0.00033632520031929" /> <!-- Sealed Vesper Boots -->
+				<item id="14114" min="1" max="1" chance="0.00033632520031929" /> <!-- Sealed Vesper Leather Boots -->
+				<item id="14117" min="1" max="1" chance="0.00033632520031929" /> <!-- Sealed Vesper Shoes -->
+				<item id="15667" min="1" max="1" chance="0.150347309642732" /> <!-- Sealed Vesper Gauntlet Piece -->
+				<item id="15671" min="1" max="1" chance="0.150347309642732" /> <!-- Sealed Vesper Leather Gloves Piece -->
+				<item id="15674" min="1" max="1" chance="0.150347309642732" /> <!-- Sealed Vesper Gloves Piece -->
+				<item id="15668" min="1" max="1" chance="0.150347309642732" /> <!-- Sealed Vesper Boots Piece -->
+				<item id="15672" min="1" max="1" chance="0.150347309642732" /> <!-- Sealed Vesper Leather Boots Piece -->
+				<item id="15675" min="1" max="1" chance="0.15034550144273" /> <!-- Sealed Vesper Shoes Piece -->
+				<item id="1879" min="1" max="1" chance="2.80267674458456" /> <!-- Cokes -->
+				<item id="1885" min="1" max="1" chance="1.40134073874235" /> <!-- High-Grade Suede -->
+				<item id="9628" min="1" max="1" chance="0.131891728275776" /> <!-- Leonard -->
+				<item id="9630" min="1" max="1" chance="0.088505232667923" /> <!-- Orichalcum -->
+				<item id="9629" min="1" max="1" chance="0.0731138414039612" /> <!-- Adamantine -->
+				<item id="9573" min="1" max="1" chance="0.116779578120232" /> <!-- Life Stone - Level 80 -->
+				<item id="9574" min="1" max="1" chance="0.0291925280799866" /> <!-- Mid-Grade Life Stone - Level 80 -->
+				<item id="9575" min="1" max="1" chance="0.00292019938802719" /> <!-- High-Grade Life Stone - Level 80 -->
+				<item id="15801" min="1" max="1" chance="0.0144116809344292" /> <!-- Recipe - Sealed Vesper Gauntlet (60%) -->
+				<item id="15802" min="1" max="1" chance="0.0144116809344292" /> <!-- Recipe - Sealed Vesper Leather Gloves (60%) -->
+				<item id="15803" min="1" max="1" chance="0.0144116809344292" /> <!-- Recipe - Sealed Vesper Gloves (60%) -->
+				<item id="15804" min="1" max="1" chance="0.0144116809344292" /> <!-- Recipe - Sealed Vesper Boots (60%) -->
+				<item id="15805" min="1" max="1" chance="0.0144116809344292" /> <!-- Recipe - Sealed Vesper Leather Boots (60%) -->
+				<item id="15806" min="1" max="1" chance="0.0144211467347145" /> <!-- Recipe - Sealed Vesper Shoes (60%) -->
+			</drop>
+			<spoil>
+				<item id="15667" min="1" max="1" chance="0.8451" /> <!-- Sealed Vesper Gauntlet Piece -->
+				<item id="15671" min="1" max="1" chance="0.8451" /> <!-- Sealed Vesper Leather Gloves Piece -->
+				<item id="15674" min="1" max="1" chance="0.8451" /> <!-- Sealed Vesper Gloves Piece -->
+				<item id="15668" min="1" max="1" chance="0.8451" /> <!-- Sealed Vesper Boots Piece -->
+				<item id="15672" min="1" max="1" chance="0.8451" /> <!-- Sealed Vesper Leather Boots Piece -->
+				<item id="15675" min="1" max="1" chance="0.8451" /> <!-- Sealed Vesper Shoes Piece -->
+				<item id="9630" min="1" max="1" chance="0.5805" /> <!-- Orichalcum -->
+				<item id="15801" min="1" max="1" chance="0.0945" /> <!-- Recipe - Sealed Vesper Gauntlet (60%) -->
+				<item id="15802" min="1" max="1" chance="0.0945" /> <!-- Recipe - Sealed Vesper Leather Gloves (60%) -->
+				<item id="15803" min="1" max="1" chance="0.0945" /> <!-- Recipe - Sealed Vesper Gloves (60%) -->
+				<item id="15804" min="1" max="1" chance="0.0945" /> <!-- Recipe - Sealed Vesper Boots (60%) -->
+				<item id="15805" min="1" max="1" chance="0.0945" /> <!-- Recipe - Sealed Vesper Leather Boots (60%) -->
+				<item id="15806" min="1" max="1" chance="0.0945" /> <!-- Recipe - Sealed Vesper Shoes (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="12" />
+			<height normal="28.4" />
+		</collision>
+	</npc>
+	<npc id="18910" level="83" type="L2Monster" name="Solina Knight Captain">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="PhysicalSpecial" id="6312" level="1" /> <!-- Launch Sacred Sword Energy -->
+			<skill name="Buff" id="6313" level="1" /> <!-- Solina Bless -->
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="44216" sp="4545" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="3835.59060587002" hpRegen="8.5" mp="1777.4" mpRegen="3" />
+			<attack physical="1099.42361669366" magical="750.763809564873" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="353.86144" magical="258.94045" />
+			<attribute>
+				<attack type="HOLY" value="170" />
+				<defence fire="200" water="200" wind="200" earth="150" holy="160" dark="40" default="120" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="66" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Weak Point against Bow/Crossbow Weapons -->
+			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Short-Range Physical Attack Weakness -->
+			<skill id="6312" level="1" /> <!-- Launch Sacred Sword Energy -->
+			<skill id="6313" level="1" /> <!-- Solina Bless -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>3</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>N_SOLINA</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="1730" max="3492" chance="70" /> <!-- Adena -->
+				<item id="14109" min="1" max="1" chance="0.000497401210784912" /> <!-- Sealed Vesper Gauntlet -->
+				<item id="14113" min="1" max="1" chance="0.000497401210784912" /> <!-- Sealed Vesper Leather Gloves -->
+				<item id="14116" min="1" max="1" chance="0.000497401210784912" /> <!-- Sealed Vesper Gloves -->
+				<item id="14110" min="1" max="1" chance="0.000497401210784912" /> <!-- Sealed Vesper Boots -->
+				<item id="14114" min="1" max="1" chance="0.000497401210784912" /> <!-- Sealed Vesper Leather Boots -->
+				<item id="14117" min="1" max="1" chance="0.000497401210784912" /> <!-- Sealed Vesper Shoes -->
+				<item id="15667" min="1" max="1" chance="0.222353049321175" /> <!-- Sealed Vesper Gauntlet Piece -->
+				<item id="15671" min="1" max="1" chance="0.222353049321175" /> <!-- Sealed Vesper Leather Gloves Piece -->
+				<item id="15674" min="1" max="1" chance="0.222353049321175" /> <!-- Sealed Vesper Gloves Piece -->
+				<item id="15668" min="1" max="1" chance="0.222353049321175" /> <!-- Sealed Vesper Boots Piece -->
+				<item id="15672" min="1" max="1" chance="0.222353049321175" /> <!-- Sealed Vesper Leather Boots Piece -->
+				<item id="15675" min="1" max="1" chance="0.222350375121117" /> <!-- Sealed Vesper Shoes Piece -->
+				<item id="1895" min="1" max="1" chance="14.2118625389385" /> <!-- Metallic Fiber -->
+				<item id="4040" min="1" max="1" chance="0.994824030755997" /> <!-- Mold Lubricant -->
+				<item id="4042" min="1" max="1" chance="0.829023047996521" /> <!-- Enria -->
+				<item id="4043" min="1" max="1" chance="1.65804609599304" /> <!-- Asofe -->
+				<item id="10483" min="1" max="1" chance="0.345420225265503" /> <!-- Life Stone - Level 82 -->
+				<item id="10484" min="1" max="1" chance="0.0863550563163757" /> <!-- Mid-Grade Life Stone - Level 82 -->
+				<item id="10485" min="1" max="1" chance="0.00866814719009399" /> <!-- High-Grade Life Stone - Level 82 -->
+			</drop>
+			<spoil>
+				<item id="15667" min="1" max="1" chance="1.3541" /> <!-- Sealed Vesper Gauntlet Piece -->
+				<item id="15671" min="1" max="1" chance="1.3541" /> <!-- Sealed Vesper Leather Gloves Piece -->
+				<item id="15674" min="1" max="1" chance="1.3541" /> <!-- Sealed Vesper Gloves Piece -->
+				<item id="15668" min="1" max="1" chance="1.3541" /> <!-- Sealed Vesper Boots Piece -->
+				<item id="15672" min="1" max="1" chance="1.3541" /> <!-- Sealed Vesper Leather Boots Piece -->
+				<item id="15675" min="1" max="1" chance="1.3541" /> <!-- Sealed Vesper Shoes Piece -->
+				<item id="15801" min="1" max="1" chance="0.1515" /> <!-- Recipe - Sealed Vesper Gauntlet (60%) -->
+				<item id="15802" min="1" max="1" chance="0.1515" /> <!-- Recipe - Sealed Vesper Leather Gloves (60%) -->
+				<item id="15803" min="1" max="1" chance="0.1515" /> <!-- Recipe - Sealed Vesper Gloves (60%) -->
+				<item id="15804" min="1" max="1" chance="0.1515" /> <!-- Recipe - Sealed Vesper Boots (60%) -->
+				<item id="15805" min="1" max="1" chance="0.1515" /> <!-- Recipe - Sealed Vesper Leather Boots (60%) -->
+				<item id="15806" min="1" max="1" chance="0.1515" /> <!-- Recipe - Sealed Vesper Shoes (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="31.5" />
+		</collision>
+	</npc>
+	<npc id="18911" level="84" type="L2Monster" name="Abbey Treasure Chest">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<dropLists>
+			<drop>
+				<item id="730" min="1" max="1" chance="60" /> <!-- Scroll: Enchant Armor (A-Grade) -->
+				<item id="960" min="1" max="1" chance="40" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="17" />
+			<height normal="13" />
+		</collision>
+	</npc>
+	<npc id="18912" level="1" type="L2Monster" name="Scarecrow">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="CORPSE" aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="27" />
+			<height normal="37.5" />
+		</collision>
+	</npc>
+	<npc id="18913" level="1" type="L2Npc" name="Furnace">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="18" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18914" level="1" type="L2Npc" name="Furnace">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="18" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18915" level="1" type="L2Npc" name="Divine Furnace">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status talkable="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="18" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18916" level="1" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18917" level="72" type="L2Monster" name="Pavel Safety Device">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="Privates01_sil" value="22801" /> <!-- Cruel Pincer Golem -->
+			<param name="Privates01_ai" value="golem_cannon1_p" />
+			<param name="Privates02_sil" value="22804" /> <!-- Horrifying Jackhammer Golem -->
+			<param name="Privates02_ai" value="golem_prop1_p" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2540.15331" hpRegen="8.5" mp="1410.0" mpRegen="3" />
+			<attack physical="731.52506" magical="499.53679" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="305.35947" magical="223.44881" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="250" />
+				<run ground="250" />
+			</speed>
+			<hitTime>640</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="8" /> <!-- HP Increase (1/4x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>0.25</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<dropLists>
+			<drop>
+				<item id="57" min="361" max="738" chance="70" /> <!-- Adena -->
+				<item id="9546" min="1" max="1" chance="0.176783696722865" /> <!-- Fire Stone -->
+				<item id="9547" min="1" max="1" chance="0.176783696722865" /> <!-- Water Stone -->
+				<item id="9548" min="1" max="1" chance="0.176783696722865" /> <!-- Earth Stone -->
+				<item id="9549" min="1" max="1" chance="0.176783696722865" /> <!-- Wind Stone -->
+				<item id="9550" min="1" max="1" chance="0.176783696722865" /> <!-- Dark Stone -->
+				<item id="9551" min="1" max="1" chance="0.176781575322747" /> <!-- Holy Stone -->
+				<item id="8600" min="1" max="1" chance="23.1" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="15.96" /> <!-- Greater Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2.94" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="4.4" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="5.72" /> <!-- Greater Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="0.88" /> <!-- Superior Herb of Mana -->
+				<item id="8606" min="1" max="1" chance="5" /> <!-- Herb of Power -->
+				<item id="8608" min="1" max="1" chance="5" /> <!-- Herb of Alacrity -->
+				<item id="8610" min="1" max="1" chance="5" /> <!-- Herb of Critical Attack - Probability -->
+				<item id="10655" min="1" max="1" chance="5" /> <!-- Herb of Vampiric Rage -->
+				<item id="10656" min="1" max="1" chance="5" /> <!-- Herb of Critical Attack - Power -->
+				<item id="8607" min="1" max="1" chance="5" /> <!-- Herb of Magic -->
+				<item id="8609" min="1" max="1" chance="5" /> <!-- Herb of Casting Spd. -->
+				<item id="8612" min="1" max="1" chance="0.33" /> <!-- Herb of the Warrior -->
+				<item id="8613" min="1" max="1" chance="0.33" /> <!-- Herb of the Mystic -->
+				<item id="8614" min="1" max="1" chance="0.34" /> <!-- Herb of Recovery -->
+				<item id="8611" min="1" max="1" chance="10.34" /> <!-- Herb of Speed -->
+				<item id="10657" min="1" max="1" chance="0.33" /> <!-- Herb of Doubt -->
+				<item id="13028" min="1" max="1" chance="0.33" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="12" />
+			<height normal="22.5" />
+		</collision>
+	</npc>
+	<npc id="18918" level="85" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4234.06312688557" hpRegen="8.5" mp="1846.8" mpRegen="3" />
+			<attack physical="1188.87259499001" magical="811.84586495282" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="361.78814" magical="264.74086" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18919" level="85" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4234.06312688557" hpRegen="8.5" mp="1846.8" mpRegen="3" />
+			<attack physical="1188.87259499001" magical="811.84586495282" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="361.78814" magical="264.74086" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" noSleepMode="true" canBeSown="true" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18920" level="84" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="150" />
+				<defence fire="90" water="170" wind="130" earth="130" holy="130" dark="130" default="140" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18921" level="84" type="L2Npc" name="Square Base">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="150" />
+				<defence fire="90" water="170" wind="130" earth="130" holy="130" dark="130" default="140" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="23" />
+			<height normal="37" />
+		</collision>
+	</npc>
+	<npc id="18922" level="84" type="L2Npc" name="Door Golem" title="Final">
+		<!-- Confirmed CT2.5 -->
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="150" />
+				<defence fire="90" water="170" wind="130" earth="130" holy="130" dark="130" default="140" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="80" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="8" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="18923" level="84" type="L2Npc" name="Door Golem" title="Final">
+		<!-- Confirmed CT2.5 -->
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="80" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="8" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="18924" level="84" type="L2Npc" name="Door Golem">
+		<!-- Confirmed CT2.5 -->
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="80" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="3" /> <!-- Beasts -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="8" />
+			<height normal="15" />
+		</collision>
+	</npc>
+	<npc id="18925" level="84" type="L2Npc" name="Trap">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>ETC</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="WATER" value="170" />
+				<defence fire="100" water="180" wind="140" earth="140" holy="140" dark="140" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="30" />
+			<height normal="13" />
+		</collision>
+	</npc>
+	<npc id="18926" level="85" type="L2QuestGuard" name="Mercenary Archer" title="Jinia Guild">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="4032" level="9" /> <!-- NPC Strike -->
+		</parameters>
+		<race>ELF</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4234.06312688557" hpRegen="8.5" mp="1846.8" mpRegen="3" />
+			<attack physical="1188.87259499001" magical="811.84586495282" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="361.78814" magical="264.74086" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<status attackable="false" talkable="false" undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="9" /> <!-- NPC Strike -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="8" /> <!-- Weak P. Atk. -->
+			<skill id="4411" level="7" /> <!-- Weak M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="9" /> <!-- Bows -->
+			<skill id="4416" level="15" /> <!-- Elves -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="23.5" />
+		</collision>
+	</npc>
+	<npc id="18927" level="84" type="L2Npc" name="Fire">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6331" level="1" /> <!-- Camp Fire Tired -->
+			<skill name="Skill02_ID" id="6332" level="1" /> <!-- Camp Fire Full -->
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" talkable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="29" />
+			<height normal="30.5" />
+		</collision>
+	</npc>
+	<npc id="18928" level="85" type="L2TerrainObject" name="Annihilation Furnace">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4234.06312688557" hpRegen="8.5" mp="1846.8" mpRegen="3" />
+			<attack physical="1188.87259499001" magical="811.84586495282" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="361.78814" magical="264.74086" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="63" />
+			<height normal="33.5" />
+		</collision>
+	</npc>
+	<npc id="18929" level="84" type="L2Monster" name="Ward of the Grail">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6326" level="1" /> <!-- Martyr's Happiness -->
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<attack type="HOLY" value="220" />
+				<defence fire="180" water="180" wind="180" earth="180" holy="220" dark="170" default="180" />
+			</attribute>
+			<speed>
+				<walk ground="25" />
+				<run ground="140" />
+			</speed>
+			<hitTime>100</hitTime>
+		</stats>
+		<status attackable="false" targetable="false" canBeSown="true" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="5" /> <!-- Blunt Weapons -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="6326" level="1" /> <!-- Martyr's Happiness -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="13" />
+			<height normal="22" />
+		</collision>
+	</npc>
+	<npc id="18930" level="1" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18931" level="1" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18932" level="1" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<hitTime>460</hitTime>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18933" level="1" type="L2Npc" name="Fire Feed">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" talkable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="29" />
+			<height normal="30.5" />
+		</collision>
+	</npc>
+	<npc id="18934" level="84" type="L2Npc" name="Abbey Treasure Chest">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<dropLists>
+			<drop>
+				<item id="960" min="1" max="1" chance="100" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="17" />
+			<height normal="13" />
+		</collision>
+	</npc>
+	<npc id="18935" level="85" type="L2Npc" name="Divine Sword Protection">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4234.06312688557" hpRegen="8.5" mp="1846.8" mpRegen="3" />
+			<attack physical="1188.87259499001" magical="811.84586495282" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="361.78814" magical="264.74086" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18936" level="1" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status attackable="false" targetable="false" showName="false" canBeSown="true" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18937" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18938" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18939" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18940" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18941" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18942" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18943" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18944" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18945" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18946" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18947" level="80" type="L2Npc" name="Target Dummy">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18948" level="80" type="L2Npc" name="Etis van Etina" title="Head of the Embryo">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18949" level="80" type="L2Monster" name="Etis van Etina" title="Head of the Embryo">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6599" level="12" />	<!-- NPC earth attack -->
+			<skill id="6705" level="1" />	<!-- Stun -->
+			<skill id="6262" level="1" />	<!-- EMP Power -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="28" />
+		</collision>
+	</npc>
+	<npc id="18950" level="80" type="L2Monster" name="Etis van Etina's Phantom">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18951" level="80" type="L2Monster" name="Etis van Etina's Phantom">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18952" level="80" type="L2Monster" name="Solina's Guardian">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6494" level="28" />	<!-- NPC holy attack -->
+			<skill id="6705" level="1" />	<!-- Stun -->
+			<skill id="6710" level="1" />	<!-- Etis Haste -->
+			<skill id="6711" level="1" />	<!-- Etis Power Up -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18953" level="80" type="L2Monster" name="Solina's Guardian">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6494" level="28" />	<!-- NPC holy attack -->
+			<skill id="6705" level="1" />	<!-- Stun -->
+			<skill id="6710" level="1" />	<!-- Etis Haste -->
+			<skill id="6711" level="1" />	<!-- Etis Power Up -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18954" level="80" type="L2Monster" name="Solina's Guardian">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6494" level="28" />	<!-- NPC holy attack -->
+			<skill id="6705" level="1" />	<!-- Stun -->
+			<skill id="6710" level="1" />	<!-- Etis Haste -->
+			<skill id="6711" level="1" />	<!-- Etis Power Up -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18955" level="80" type="L2Monster" name="Solina's Guardian">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6494" level="28" />	<!-- NPC holy attack -->
+			<skill id="6705" level="1" />	<!-- Stun -->
+			<skill id="6710" level="1" />	<!-- Etis Haste -->
+			<skill id="6711" level="1" />	<!-- Etis Power Up -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18956" level="80" type="L2Monster" name="Guardian of the Tomb">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6709" level="1" />	<!-- Multi Shot -->
+			<skill id="5024" level="1" />	<!-- Decrease Atk. Spd. -->
+			<skill id="4153" level="1" />	<!-- Decrease Speed -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="42" />
+		</collision>
+	</npc>
+	<npc id="18957" level="80" type="L2Monster" name="Guardian of the Tomb">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6709" level="1" />	<!-- Multi Shot -->
+			<skill id="5024" level="1" />	<!-- Decrease Atk. Spd. -->
+			<skill id="4153" level="1" />	<!-- Decrease Speed -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="42" />
+		</collision>
+	</npc>
+	<npc id="18958" level="80" type="L2Monster" name="Guardian of the Tomb">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6709" level="1" />	<!-- Multi Shot -->
+			<skill id="5024" level="1" />	<!-- Decrease Atk. Spd. -->
+			<skill id="4153" level="1" />	<!-- Decrease Speed -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="42" />
+		</collision>
+	</npc>
+	<npc id="18959" level="80" type="L2Monster" name="Guardian of the Tomb">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>SSQ</clan>
+			</clanList>
+		</ai>
+		<skillList>
+			<skill id="6709" level="1" />	<!-- Multi Shot -->
+			<skill id="5024" level="1" />	<!-- Decrease Atk. Spd. -->
+			<skill id="4153" level="1" />	<!-- Decrease Speed -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="42" />
+		</collision>
+	</npc>
+	<npc id="18960" level="80" type="L2Npc" name="Drake Lord">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18961" level="80" type="L2Npc" name="Behemoth Leader">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18962" level="80" type="L2Npc" name="Dragon Beast">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18963" level="80" type="L2Npc">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18964" level="80" type="L2Npc" name="Antharas's Symbol">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<skillList>
+			<skill id="4071" level="5" /> <!-- Resist Bow/Crossbow Weapons -->
+			<skill id="4412" level="12" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="5620" level="10" /> <!-- Short-Range Physical Attack Weakness -->
+			<skill id="6742" level="1" /> <!-- Presentation - Behemoth Object Channeling -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18965" level="80" type="L2Npc" name="Antharas's Symbol">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Weak Point against Bow/Crossbow Weapons -->
+			<skill id="4412" level="12" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="5601" level="10" /> <!-- Short-Range Physical Attack Resistance -->
+			<skill id="6742" level="1" /> <!-- Presentation - Behemoth Object Channeling -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18966" level="80" type="L2Npc" name="Antharas's Symbol">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<skillList>
+			<skill id="4412" level="18" /> <!-- Extremely Strong P. Def. -->
+			<skill id="4413" level="3" /> <!-- Extremely Weak M. Def. -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4456" level="5" /> <!-- Mental Attack Weak Point -->
+			<skill id="6742" level="1" /> <!-- Presentation - Behemoth Object Channeling -->
+		</skillList>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18967" level="80" type="L2Npc">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18968" level="80" type="L2Npc">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18969" level="80" type="L2Npc" name="Magma Drake Mother">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18970" level="80" type="L2Npc" name="Magma Drake Hatchling">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="18971" level="80" type="L2Npc" name="Gem Dragon Hatchling">
+		<!-- TODO: Must be confirmed -->
+		<sex>MALE</sex>
+		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
+			<vitals hp="2444" mp="2444.0" />
+			<attack physical="500" magical="500" attackSpeed="278" range="40" />
+			<defence physical="500" magical="500" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<collision>
+			<radius normal="25" />
+			<height normal="35" />
+		</collision>
+	</npc>
+</list>

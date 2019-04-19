@@ -1,0 +1,1804 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="22100" levels="1" name="Soul Scent">
+		<!-- When using a monster's corpse, comforts the monster's soul to borrow the monster's power temporarily. For 2 minutes, increases Max HP by 40%, Max MP by 40%, Max CP by 40%, physical P. Def. by 30%, M. Def. by 30%, Speed by 20, and M. Atk. by 45%. Decreases MP consumption during skill use by 10%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="BR_EVENT_BUF6" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="BranchSys.icon.br_ghost_incense_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20603" /> <!-- Soul Scent (Event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A3" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="CORPSE_MOB" />
+		<for>
+			<effect name="ConsumeBody" />
+		</for>
+		<selfEffects>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.4" />
+				<mul stat="maxMp" val="1.4" />
+				<mul stat="maxCp" val="1.4" />
+				<mul stat="pDef" val="1.3" />
+				<mul stat="mDef" val="1.3" />
+				<add stat="runSpd" val="20" />
+				<mul stat="mAtk" val="1.45" />
+				<mul stat="magicalMpConsumeRate" val="0.9" />
+				<mul stat="physicalMpConsumeRate" val="0.9" />
+				<mul stat="danceMpConsumeRate" val="0.9" />
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="22101" levels="1" name="Fortune of Love Box">
+		<table name="#extractableItems">
+			20590,1,40;9207,1,60
+		</table>
+		<set name="blockedInOlympiad" val="true" />
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20629" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22102" levels="1" name="Soul Magic Box">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="coolTime" val="1000" />
+		<set name="hitTime" val="2700" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Restoration">
+				<param itemId="20623" itemCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22103" levels="1" name="Blessed Scroll of Escape (Event)">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="hitTime" val="200" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20583" /> <!-- Blessed Scroll of Escape (event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Escape">
+				<param escapeType="TOWN" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22104" levels="1" name="Blessed Scroll of Resurrection (Event)">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="1" />
+		<set name="effectRange" val="600" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20584" /> <!-- Blessed Scroll of Resurrection (event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="PC_BODY" />
+		<cond>
+			<player canResurrect="true" />
+		</cond>
+		<for>
+			<effect name="Resurrection">
+				<param power="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22105" levels="1" name="Uldie Summon Scroll (Event)">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20707" /> <!-- Wooldy Summon Scroll (Event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="12000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player active_skill_id="21120" />
+		</cond>
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="20" />
+				<param randomOffset="40" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22106" levels="1" name="Belldandy Summon Scroll (Event)">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20708" /> <!-- Verdandi Summon Scroll (Event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="12000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player active_skill_id="21120" />
+		</cond>
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="21" />
+				<param randomOffset="40" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22107" levels="1" name="Skooldie Summon Scroll (Event)">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20709" /> <!-- Skooldy Summon Scroll (Event) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="12000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player active_skill_id="21120" />
+		</cond>
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="19" />
+				<param randomOffset="40" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22108" levels="1" name="Halloween Toy Box">
+		<table name="#extractableItems">
+			20712,1,20;20713,1,20;20714,1,20;20715,1,20;20716,1,20
+		</table>
+		<set name="blockedInOlympiad" val="true" />
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20710" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22109" levels="1" name="Shiny Halloween Toy Box">
+		<table name="#extractableItems">
+			20718,1,20;20719,1,20;20720,1,20;20721,1,20;20722,1,20
+		</table>
+		<set name="blockedInOlympiad" val="true" />
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20717" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22110" levels="1" name="Lucky Sky Lantern Summon">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20728" /> <!-- Lucky Sky Lantern Summon Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="22" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22111" levels="1" name="Ambient Sky Lantern Summon">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20729" /> <!-- Ambience Sky Lantern Summon Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="23" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22112" levels="1" name="Sway Sky Lantern Summon">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20730" /> <!-- Sway Sky Lantern Summon Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="24" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22113" levels="1" name="Comfort Sky Lantern Summon">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20731" /> <!-- Comfort Sky Lantern Summon Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="25" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22114" levels="1" name="Morph Scroll Box">
+		<table name="#extractableItems">
+			20364,1,33;20365,1,33;20366,1,34
+		</table>
+		<set name="blockedInOlympiad" val="true" />
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20739" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22115" levels="1" name="Santa's Weapon Exchange Ticket Box">
+		<table name="#extractableItems">
+			20755,1,99.99949;20757,1,0.00051
+		</table>
+		<set name="blockedInOlympiad" val="true" />
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20758" /> <!-- Santa's Weapon Exchange Coupon Box -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22116" levels="1" name="Summon Flames Box">
+		<set name="icon" val="BranchSys.icon.br_fire_box_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20788" /> <!-- Flame Box -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="29" npcCount="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22117" levels="1" name="Flames Box Firework">
+		<set name="icon" val="icon.skill0788" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22118" levels="1" name="Warmth of Kotatz">
+		<!-- The Warmth of Kotatz can be felt. HP regeneration is increased by 40%. CP regeneration is increased by 30%. MP regeneration is increased by 20%. -->
+		<set name="abnormalLvl" val="99" />
+		<set name="abnormalTime" val="25" />
+		<set name="abnormalType" val="HP_REGEN_UP" />
+		<set name="affectRange" val="200" />
+		<set name="icon" val="BranchSys.icon.br_kotatsu_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regCp" val="1.3" />
+				<mul stat="regHp" val="1.4" />
+				<mul stat="regMp" val="1.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22119" levels="1" name="Love for All Seasons">
+		<!-- For 1 hour, increases M. Atk. by 75% and the occurrence rate of damage that is caused by magic damage by 2. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_a_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20876" /> <!-- Love for All Seasons - Empower, Wild Magic -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.75" />
+				<add stat="mCritRate" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22120" levels="1" name="Happy New Year">
+		<!-- For 1 hour, increases Critical attack power by 35%, Critical attack rate by 30, and accuracy by 4. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_b_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20877" /> <!-- Happy New Year - Death Whisper, Focus, Guidance -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmg" val="1.35" />
+				<mul stat="critRate" val="1.3" />
+				<add stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22121" levels="1" name="Female Aniruddha">
+		<!-- For 1 hour, increases P. Def. by 15, M. Def. by 30%, and Shield defense rate by 15. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_c_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20878" /> <!-- Female Aniruddha - Shield, Magic Barrier, Blessed Shield -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mDef" val="1.3" />
+				<mul stat="pDef" val="1.15" />
+				<add stat="sDef" val="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22122" levels="1" name="Kung Hei Fat Choy">
+		<!-- Decreases a party member's P. Def. by 8%, M. Def. by 16%, and evasion by 4, and increases P. Atk. by 15%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 1 hour. Recovers 9% of the standard short-range physical damage inflicted on the enemy as HP. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_d_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20879" /> <!-- Kung Hei Fat Choy - Might, Berserker Spirit, Vampiric Rage -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.16" />
+				<mul stat="mDef" val="0.84" />
+				<mul stat="pAtk" val="1.15" />
+				<mul stat="pAtk" val="1.08" />
+				<mul stat="pAtkSpd" val="1.08" />
+				<mul stat="pDef" val="0.92" />
+				<sub stat="rEvas" val="4" />
+				<add stat="runSpd" val="8" />
+				<add stat="absorbDam" val="9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22123" levels="1" name="Chinese Feast">
+		<!-- For 1 hour, decreases physical skill MP consumption by 20%, magic skill's MP consumption by 10%, and song/dance skill's MP consumption by 20%. Increases Casting Spd. by 30% and Max MP by 35%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_e_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20880" /> <!-- Chinese Feast - Clarity, Acumen, Blessed Soul -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="danceMpConsumeRate" val="0.8" />
+				<mul stat="magicalMpConsumeRate" val="0.8" />
+				<mul stat="mAtkSpd" val="1.3" />
+				<mul stat="maxHp" val="1.35" />
+				<mul stat="physicalMpConsumeRate" val="0.9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22124" levels="1" name="Hwa Gei Bu Gwi">
+		<!-- Increases Atk. Spd. by 33% and the weight penalty interval by 9000 for 1 hour. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_f_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20881" /> <!-- Hwa Gei Bu Gwi - Decrease Weight, Haste -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="weightPenalty" val="9000" />
+				<add stat="pAtkSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22125" levels="1" name="Fire Stamp">
+		<!-- For 1 hour, increases Speed by 33, evasion rate by 4, and Max HP by 35%. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_g_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20882" /> <!-- Fire Stamp - Wind Walk, Agility Blessed Body -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.35" />
+				<add stat="rEvas" val="4" />
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22126" levels="1" name="Baby Food Skill">
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="500" />
+		<set name="icon" val="BranchSys.br_baby_food_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20769" /> <!-- Rudolph Baby Food -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="1538" />
+		</cond>
+	</skill>
+	<skill id="22127" levels="1" name="Summon Warm Kotatz">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_kotatsu_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20868" /> <!-- Kotatz -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="600000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="127" npcCount="1" despawnDelay="7200" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22128" levels="3" name="Rudolph's Joy">
+		<!-- For 5 minutes, raises Atk. Spd. by 10% and magic Casting Spd. by 10%. -->
+		<table name="#abnormalLvls"> 1 2 3 </table>
+		<table name="#AtkSpd"> 1.1 1.15 1.2 </table>
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="BR_EVENT_BUF2" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.skill1256" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="#AtkSpd" />
+				<mul stat="mAtkSpd" val="#AtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22129" levels="1" name="Red Dimensional Stone">
+		<!-- Pailaka Initialization -->
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20896" /> <!-- Red Dimensional Stone -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="resetQuest" val="128;129;144" />
+		<set name="reuseDelay" val="18000000" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="22130" levels="1" name="Food of Doubt's Effect">
+		<!-- Food of Doubt's effect. Vitality is recovered for 20 minutes when acquiring Exp. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="VP_UP" />
+		<set name="abnormalVisualEffect" val="VP_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.br_rudolf_food_unknown_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22131" levels="1" name="Red Firework Flames">
+		<!-- For 10 minutes, increases water attribute defense by 30 and STR by 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF10" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_firecracker_red_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20870" /> <!-- Red Firework -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="STR" val="1" />
+				<add stat="waterRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22132" levels="1" name="Gold Firework Flames">
+		<!-- For 10 minutes, increases Holy attribute defense by 30 and CON by 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF10" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_firecracker_gold_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20871" /> <!-- Gold Firework -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="CON" val="1" />
+				<add stat="holyRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22133" levels="1" name="Blue Firework Flames">
+		<!-- For 10 minutes, increases fire attribute defense by 30 and DEX by 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF10" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_firecracker_blue_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20872" /> <!-- Blue Firework -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="DEX" val="1" />
+				<add stat="fireRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22134" levels="1" name="Pink Firework Flames">
+		<!-- For 10 minutes, increases earth attribute defense by 30 and MEN by 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF10" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_firecracker_pink_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20873" /> <!-- Pink Firework -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="MEN" val="1" />
+				<add stat="earthRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22135" levels="1" name="White Firework Flames">
+		<!-- For 10 minutes, increases wind attribute defense by 30 and WIT by 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF10" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_firecracker_white_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20874" /> <!-- White Firework -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="WIT" val="1" />
+				<add stat="windRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22136" levels="1" name="Silver Firework Flames">
+		<!-- For 10 minutes, increases Resistance to Dark by 30 and INT by 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF10" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_firecracker_silver_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20875" /> <!-- Silver Firework -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="INT" val="1" />
+				<add stat="darkRes" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22137" levels="1" name="Star Food">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp">
+				<param value="20000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22138" levels="1" name="Mango Dessert">
+		<set name="icon" val="BranchSys.icon.br_thai_desert_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20899" /> <!-- Mango Dessert -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp">
+				<param value="20000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22139" levels="1" name="Branding Wind Walk">
+		<!-- Increases Speed by 33 for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_g_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22140" levels="1" name="Hwa Gei Bu Gwi Haste">
+		<!-- Increases Atk. Spd. by 33% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_f_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22141" levels="1" name="Branding Agility">
+		<!-- Increases evasion rate by 4 for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="AVOID_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_g_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22142" levels="1" name="Female Aniruddha's Shield">
+		<!-- Increases P. Def. by 15% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PD_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_c_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22143" levels="1" name="Happy New Year Death Whisper">
+		<!-- Increases Critical attack power by 35% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_b_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22144" levels="1" name="Happy New Year Guidance">
+		<!-- Increases accuracy by 4 for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="HIT_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_b_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22145" levels="1" name="Love for All Seasons Empower">
+		<!-- Increases M. Atk. by 75% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MA_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_a_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22146" levels="1" name="Chinese Feast Greater Acumen">
+		<!-- Increases Casting Spd. by 30% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_e_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22147" levels="1" name="Kung Hei Fat Choy Vampiric Rage">
+		<!-- For 1 hour, 9% of the standard short-range physical damage inflicted on the enemy is recovered as HP. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_d_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22148" levels="1" name="Branding Blessed Body">
+		<!-- Increases Max HP by 35% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAX_HP_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_g_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22149" levels="1" name="Kung Hei Fat Choy Berserker Spirit">
+		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="BERSERKER" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_d_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.16" />
+				<mul stat="mDef" val="0.84" />
+				<mul stat="pAtk" val="1.08" />
+				<mul stat="pAtkSpd" val="1.08" />
+				<mul stat="pDef" val="0.92" />
+				<sub stat="rEvas" val="4" />
+				<add stat="runSpd" val="8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22150" levels="1" name="Female Aniruddha's Magic Barrier">
+		<!-- Increases magic resistance by 30% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MD_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_c_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mDef" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22151" levels="1" name="Chinese Feast Blessed Soul">
+		<!-- Increases Max MP by 35% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAX_MP_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_e_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22152" levels="1" name="Chinese Feast Clarity">
+		<!-- For 1 hour, decreases physical skill MP consumption by 20%, magic skill's MP consumption by 10%, and song/dance skill's MP consumption by 20%. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CHEAP_MAGIC" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_e_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="danceMpConsumeRate" val="0.8" />
+				<mul stat="magicalMpConsumeRate" val="0.9" />
+				<mul stat="physicalMpConsumeRate" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22153" levels="1" name="Love for All Seasons Wild Magic">
+		<!-- For 1 hour, increases by 2 the occurrence rate of damage that is caused by magic damage. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAGIC_CRITICAL_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_a_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="mCritRate" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22154" levels="1" name="Happy New Year Focus">
+		<!-- Increases Critical attack rate by 30% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_b_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22155" levels="1" name="Female Aniruddha's Blessed Shield">
+		<!-- Increases Shield defense rate by 15 for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="SHIELD_PROB_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_c_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="rShld" val="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22156" levels="1" name="Hwa Gei Bu Gwi Decrease Weight">
+		<!-- Increases the weight penalty interval by 9000 for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="DECREASE_WEIGHT_PENALTY" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_f_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="weightPenalty" val="9000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22157" levels="1" name="Kung Hei Fat Choy Might">
+		<!-- Increases P. Atk. by 15% for 1 hour. -->
+		<set name="abnormalLvl" val="26" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_d_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22158" levels="10" name="Rose Petal">
+		<!-- Increases HP/MP Regeneration by 20% for 5 minutes. When the herb effect reaches level 10, the rose spirit consumes a red rose herb effect and replenishes some Vitality. -->
+		<table name="#abnormalLvls"> 1 2 3 4 5 6 7 8 9 10 </table>
+		<table name="#icons"> BranchSys2.icon.Br_herb_rose_red_i00 BranchSys2.icon.Br_herb_rose_red_i01 BranchSys2.icon.Br_herb_rose_red_i02 BranchSys2.icon.Br_herb_rose_red_i03 BranchSys2.icon.Br_herb_rose_red_i04 BranchSys2.icon.Br_herb_rose_red_i05 BranchSys2.icon.Br_herb_rose_red_i06 BranchSys2.icon.Br_herb_rose_red_i07 BranchSys2.icon.Br_herb_rose_red_i08 BranchSys2.icon.Br_herb_rose_red_i09 </table>
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="#icons" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A4" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regHp" val="1.2" />
+				<mul stat="regMp" val="1.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22159" levels="1" name="Vesper Super Power">
+		<!-- For 10 minutes, increase physical P. Atk. by 15%, magic M. Atk. by 20%, and Speed by 10. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="abnormalVisualEffect" val="BR_VESPER1" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.15" />
+				<mul stat="mAtk" val="1.15" />
+				<add stat="runSpd" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22160" levels="1" name="Vesper Critical Power">
+		<!-- For 10 minutes, increase physical Critical Attack Rate by 15, magic Critical Rate by 2, and Speed by 10. Recovers 5% of the standard short-range physical damage inflicted on the enemy as HP. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="abnormalVisualEffect" val="BR_VESPER2" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="critRate" val="15" />
+				<add stat="mCritRate" val="2" />
+				<add stat="runSpd" val="10" />
+				<add stat="absorbDam" val="5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22161" levels="1" name="Invincible Vesper">
+		<!-- For 10 minutes, increases Atk. Spd. by 20%, Casting Spd. by 20%, and Speed by 20. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="abnormalVisualEffect" val="BR_VESPER3" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<add stat="runSpd" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22162" levels="1" name="Mt. Fuji Herb">
+		<!-- For 10 minutes, Vitality is recovered when acquiring Exp. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="VP_UP" />
+		<set name="abnormalVisualEffect" val="VP_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="BranchSys2.icon.br_fuji_herb_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<sub stat="vitalityConsumeRate" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22163" levels="1" name="Hawk Herb">
+		<!-- For 10 minutes, increases physical Atk. Spd. by 15% and physical critical attack rate by 10%. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="BranchSys2.icon.br_hawk_herb_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.15" />
+				<mul stat="critRate" val="1.1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22164" levels="1" name="Eggplant Herb">
+		<!-- For 10 minutes, increases magic Atk. Spd. by 10% and magic critical rate by 2. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="BranchSys2.icon.br_eggplant_herb_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.1" />
+				<add stat="mCritRate" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22165" levels="1" name="Energy Replenish">
+		<!-- Replenishes a Soul Avatar's energy by 5000. -->
+		<set name="icon" val="icon.skill0788" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20954" /> <!-- Small Placid -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22166" levels="1" name="Energy Replenish">
+		<!-- Replenishes a Soul Avatar's energy by 10000. -->
+		<set name="icon" val="icon.skill0788" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20955" /> <!-- Medium Placid -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22167" levels="1" name="April Fools' Day Vesper Weapon Gift">
+		<!-- Acquires one of the 14 types of Vesper weapons. -->
+		<table name="#extractableItems">
+			13457,1,13.32;13458,1,6.66;13459,1,6.66;13460,1,6.66;13461,1,6.66;13462,1,6.66;13463,1,6.66;13464,1,6.66;13466,1,6.66;13467,1,6.66;13468,1,6.66;13469,1,6.66;13470,1,6.66;13465,1,6.66
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20958" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22168" levels="1" name="Thirst Quencher">
+		<!-- Replenishes an Agathion's energy by 1000. -->
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20992" /> <!-- Thirst of Victory Quenching Drink -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22169" levels="1" name="Soccer Ball of Cheers Release">
+		<table name="#extractableItems">
+			6575,2,45;6573,1,30;6571,1,15;6569,1,9.4;6577,1,0.6
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20993" /> <!-- Soccer Ball of Cheers -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22170" levels="1" name="Hardin's Protection">
+		<!-- Maximizes P. Def. for 10 seconds. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalVisualEffect" val="ULTIMATE_DEFENCE" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21030" /> <!-- Hardin's Divine Protection -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22171" levels="1" name="Hardin's Blessing">
+		<!-- Maximizes M. Def. for 10 seconds. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalVisualEffect" val="ULTIMATE_DEFENCE" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21031" /> <!-- Hardin's Blessing -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22172" levels="1" name="Sylphide's Wings">
+		<!-- Increases your Speed by 300 for 15 seconds. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="SPEED_UP_SPECIAL" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21032" /> <!-- Silpeed's Wing -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22173" levels="1" name="Sylphide's Blessing">
+		<!-- Increases the user's Speed and those of friendly nearby targets by 300 for 15 seconds. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="SPEED_UP_SPECIAL" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21033" /> <!-- Silpeed's Blessing -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22174" levels="1" name="Yibein's Recovery Scroll">
+		<!-- Recovers the HP of the user and friendly nearby targets by 500. -->
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="800" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21034" /> <!-- Evain's Recovery Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22175" levels="1" name="Rune of Life">
+		<!-- When HP falls below 30%, it is restored by 500. -->
+		<set name="icon" val="icon.skill0001" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player hp="30" />
+		</cond>
+		<for>
+			<effect name="CallSkill">
+				<param skillId="23214" skillLevel="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22176" levels="1" name="Rune of Spirit">
+		<!-- When MP falls below 10%, it is restored by 500. -->
+		<set name="icon" val="icon.skill0001" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player mp="10" />
+		</cond>
+		<for>
+			<effect name="CallSkill">
+				<param skillId="23215" skillLevel="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22177" levels="1" name="Warrior's Breath">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21037" /> <!-- Warrior's Breath -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22178" levels="1" name="Hero's Potion">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21038" /> <!-- Potion of a Hero -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="60000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Heal">
+				<param power="500" />
+			</effect>
+			<effect name="ManaHeal">
+				<param power="200" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22179" levels="1" name="Fortuna of Chaos">
+		<table name="#extractableItems">
+			8618,3,13.999;8619,1,26;8620,3,17;8621,1,0.011;14700,25,4;14701,12,4;21038,6,5;9627,1,5;6622,3,19;21030,4,1.5;21031,4,1.5;21032,8,1;21033,8,1;21037,5,1
+		</table>
+		<set name="blockedInOlympiad" val="true" />
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21041" /> <!-- Fortuna of Chaos -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22180" levels="1" name="Wondrous Cubic - 1 time use">
+		<table name="#extractableItems">
+			10633,1,35;10642,1,25;10634,1,20;10643,1,10;10635,1,4;10644,1,3;10636,1,1.2;10645,1,0.8;10637,1,0.6;10646,1,0.4
+		</table>
+		<!-- set name="reuseDelay" val="86400000" / -->
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21106" />
+		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="22181" levels="1" name="Refined Cubic - 1 time use">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22182" levels="1" name="Birthday Joy">
+		<!-- Birthday gift received once a year. Increases your Vitality whenever you gain experience. This buff is active for 12 hours and is not lost upon death. However, it will disappear if you change to a subclass. -->
+		<set name="canBeDispeled" val="false" />
+		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
+		<set name="reuseDelay" val="3600000" />
+		<set name="stayAfterDeath" val="true" />
+		<set name="stayOnSubclassChange" val="false" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<sub stat="vitalityConsumeRate" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22183" levels="1" name="Dragon Master Lee Transformation Scroll">
+		<!-- Transformed into Dragon Master Lee. -->
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Transformation">
+				<param id="20005" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22184" levels="1" name="Dragon Master Karin Transformation Scroll">
+		<!-- Transformed into Dragon Master Karin. -->
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Transformation">
+				<param id="20006" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22185" levels="1" name="Shiny Lighting">
+		<!-- Lighting shines brightly above the character's head. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22186" levels="1" name="Echo Crystal - Theme of Celebration">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22187" levels="1" name="Honeymoon Ticket - Joy of Energy">
+		<!-- State in which the Vitality Stage is maintained. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22188" levels="1" name="Summon Big Wedding Cake">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22189" levels="1" name="Flower Shower">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="22190" levels="1" name="Transformation Scroll - Blue Block Checker">
+		<!-- Transformed into a Treasure Hunter. Look for Event Treasure Chests on Fantasy Isle. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Transformation">
+				<param id="127" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22191" levels="1" name="Transformation Scroll - Onyx Beast Event">
+		<!-- Transformed into an Onyx Beast. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21172" /> <!-- Transformation Scroll: Onyx Beast - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22192" levels="1" name="Transformation Scroll - Death Blader Event">
+		<!-- Transformed into a Death Blader. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21173" /> <!-- Transformation Scroll: Death Blader - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22193" levels="1" name="Transformation Scroll - Grail Apostle Event">
+		<!-- Transformed into a Grail Apostle. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21174" /> <!-- Transformation Scroll: Grail Apostle - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="202" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22194" levels="1" name="Transformation Scroll - Unicorn Event">
+		<!-- Transformed into a Unicorn. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21175" /> <!-- Transformation Scroll: Unicorn - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="205" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22195" levels="1" name="Transformation Scroll - Lilim Knight Event">
+		<!-- Transformed into a Lilim Knight. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21176" /> <!-- Transformation Scroll: Lilim Knight - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="208" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22196" levels="1" name="Transformation Scroll - Golem Guardian Event">
+		<!-- Transformed into a Golem Guardian. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21177" /> <!-- Transformation Scroll: Golem Guardian - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="211" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22197" levels="1" name="Transformation Scroll - Inferno Drake Event">
+		<!-- Transformed into an Inferno Drake. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21178" /> <!-- Transformation Scroll: Inferno Drake - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="214" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22198" levels="1" name="Transformation Scroll - Dragon Bomber Event">
+		<!-- Transformed into a Dragon Bomber. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21179" /> <!-- Transformation Scroll: Dragon Bomber - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="217" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22199" levels="1" name="Transformation Scroll - Heretic Event">
+		<!-- Transformed into a Heretic. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21180" /> <!-- Transformation Scroll: Heretic - Event -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="3" />
+			</effect>
+		</for>
+	</skill>
+</list>

@@ -1,0 +1,2893 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="2700" levels="1" name="Giran Dwarf Mercenary">
+		<!-- Transforms into a Dwarf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13597" /> <!-- Transformation Scroll: Giran Dwarf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="14" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2701" levels="1" name="Giran Kamael Mercenary">
+		<!-- Transforms into a Kamael mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13598" /> <!-- Transformation Scroll: Giran Kamael Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2702" levels="1" name="Giran Knight Mercenary">
+		<!-- Transforms into a Knight Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13599" /> <!-- Transformation Scroll: Giran Knight Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="16" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2703" levels="1" name="Giran Archer Mercenary">
+		<!-- Transforms into an Archer Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13600" /> <!-- Transformation Scroll: Giran Archer Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="17" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2704" levels="1" name="Giran Wizard Mercenary">
+		<!-- Transforms into a Wizard Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13601" /> <!-- Transformation Scroll: Giran Wizard Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2705" levels="1" name="Giran Kamael Captain Mercenary">
+		<!-- Transforms into a Kamael guard captain. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13602" /> <!-- Transformation Scroll: Giran Kamael Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="19" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2706" levels="1" name="Giran Knight Captain Mercenary">
+		<!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13603" /> <!-- Transformation Scroll: Giran Knight Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2707" levels="1" name="Giran Commander Mercenary">
+		<!-- Transforms into a Commander Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13604" /> <!-- Transformation Scroll: Giran Commander Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="21" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2708" levels="1" name="Oren Human Mercenary">
+		<!-- Transforms into a human mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13605" /> <!-- Transformation Scroll: Oren Human Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2709" levels="1" name="Oren Elf Mercenary">
+		<!-- Transforms into an Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13606" /> <!-- Transformation Scroll: Oren Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="11" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2710" levels="1" name="Oren Dark Elf Mercenary">
+		<!-- Transforms into a Dark Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13607" /> <!-- Transformation Scroll: Oren Dark Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2711" levels="1" name="Oren Orc Mercenary">
+		<!-- Transforms into an Orc mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13608" /> <!-- Transformation Scroll: Oren Orc Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="13" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2712" levels="1" name="Oren Dwarf Mercenary">
+		<!-- Transforms into a Dwarf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13609" /> <!-- Transformation Scroll: Oren Dwarf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="14" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2713" levels="1" name="Oren Kamael Mercenary">
+		<!-- Transforms into a Kamael mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13610" /> <!-- Transformation Scroll: Oren Kamael Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2714" levels="1" name="Oren Knight Mercenary">
+		<!-- Transforms into a Knight Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13611" /> <!-- Transformation Scroll: Oren Knight Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="16" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2715" levels="1" name="Oren Archer Mercenary">
+		<!-- Transforms into an Archer Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13612" /> <!-- Transformation Scroll: Oren Archer Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="17" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2716" levels="1" name="Oren Wizard Mercenary">
+		<!-- Transforms into a Wizard Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13613" /> <!-- Transformation Scroll: Oren Wizard Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2717" levels="1" name="Oren Kamael Captain Mercenary">
+		<!-- Transforms into a Kamael guard captain. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13614" /> <!-- Transformation Scroll: Oren Kamael Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="19" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2718" levels="1" name="Oren Knight Captain Mercenary">
+		<!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13615" /> <!-- Transformation Scroll: Oren Knight Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2719" levels="1" name="Oren Commander Mercenary">
+		<!-- Transforms into a Commander Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13616" /> <!-- Transformation Scroll: Oren Commander Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="84" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="21" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2720" levels="1" name="Aden Human Mercenary">
+		<!-- Transforms into a human mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13617" /> <!-- Transformation Scroll: Aden Human Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2721" levels="1" name="Aden Elf Mercenary">
+		<!-- Transforms into an Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13618" /> <!-- Transformation Scroll: Aden Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="11" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2722" levels="1" name="Aden Dark Elf Mercenary">
+		<!-- Transforms into a Dark Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13619" /> <!-- Transformation Scroll: Aden Dark Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2723" levels="1" name="Aden Orc Mercenary">
+		<!-- Transforms into an Orc mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13620" /> <!-- Transformation Scroll: Aden Orc Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="13" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2724" levels="1" name="Aden Dwarf Mercenary">
+		<!-- Transforms into a Dwarf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13621" /> <!-- Transformation Scroll: Aden Dwarf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="14" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2725" levels="1" name="Aden Kamael Mercenary">
+		<!-- Transforms into a Kamael mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13622" /> <!-- Transformation Scroll: Aden Kamael Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2726" levels="1" name="Aden Knight Mercenary">
+		<!-- Transforms into a Knight Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13623" /> <!-- Transformation Scroll: Aden Knight Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="16" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2727" levels="1" name="Aden Archer Mercenary">
+		<!-- Transforms into an Archer Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13624" /> <!-- Transformation Scroll: Aden Archer Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="17" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2728" levels="1" name="Aden Wizard Mercenary">
+		<!-- Transforms into a Wizard Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13625" /> <!-- Transformation Scroll: Aden Wizard Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2729" levels="1" name="Aden Kamael Captain Mercenary">
+		<!-- Transforms into a Kamael guard captain. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13626" /> <!-- Transformation Scroll: Aden Kamael Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="19" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2730" levels="1" name="Aden Knight Captain Mercenary">
+		<!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13627" /> <!-- Transformation Scroll: Aden Knight Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2731" levels="1" name="Aden Commander Mercenary">
+		<!-- Transforms into a Commander Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13628" /> <!-- Transformation Scroll: Aden Commander Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="85" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="21" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2732" levels="1" name="Innadril Human Mercenary">
+		<!-- Transforms into a human mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13629" /> <!-- Transformation Scroll: Innadril Human Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2733" levels="1" name="Innadril Elf Mercenary">
+		<!-- Transforms into an Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13630" /> <!-- Transformation Scroll: Innadril Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="11" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2734" levels="1" name="Innadril Dark Elf Mercenary">
+		<!-- Transforms into a Dark Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13631" /> <!-- Transformation Scroll: Innadril Dark Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2735" levels="1" name="Innadril Orc Mercenary">
+		<!-- Transforms into an Orc mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13632" /> <!-- Transformation Scroll: Innadril Orc Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="13" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2736" levels="1" name="Innadril Dwarf Mercenary">
+		<!-- Transforms into a Dwarf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13633" /> <!-- Transformation Scroll: Innadril Dwarf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="14" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2737" levels="1" name="Innadril Kamael Mercenary">
+		<!-- Transforms into a Kamael mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13634" /> <!-- Transformation Scroll: Innadril Kamael Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2738" levels="1" name="Innadril Knight Mercenary">
+		<!-- Transforms into a Knight Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13635" /> <!-- Transformation Scroll: Innadril Knight Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="16" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2739" levels="1" name="Innadril Archer Mercenary">
+		<!-- Transforms into an Archer Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13636" /> <!-- Transformation Scroll: Innadril Archer Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="17" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2740" levels="1" name="Innadril Wizard Mercenary">
+		<!-- Transforms into a Wizard Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13637" /> <!-- Transformation Scroll: Innadril Wizard Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2741" levels="1" name="Innadril Kamael Captain Mercenary">
+		<!-- Transforms into a Kamael guard captain. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13638" /> <!-- Transformation Scroll: Innadril Kamael Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="19" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2742" levels="1" name="Innadril Knight Captain Mercenary">
+		<!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13639" /> <!-- Transformation Scroll: Innadril Knight Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2743" levels="1" name="Innadril Commander Mercenary">
+		<!-- Transforms into a Commander Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13640" /> <!-- Transformation Scroll: Innadril Commander Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="86" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="21" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2744" levels="1" name="Goddard Human Mercenary">
+		<!-- Transforms into a human mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13641" /> <!-- Transformation Scroll: Goddard Human Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2745" levels="1" name="Goddard Elf Mercenary">
+		<!-- Transforms into an Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13642" /> <!-- Transformation Scroll: Goddard Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="11" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2746" levels="1" name="Goddard Dark Elf Mercenary">
+		<!-- Transforms into a Dark Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13643" /> <!-- Transformation Scroll: Goddard Dark Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2747" levels="1" name="Goddard Orc Mercenary">
+		<!-- Transforms into an Orc mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13644" /> <!-- Transformation Scroll: Goddard Orc Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="13" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2748" levels="1" name="Goddard Dwarf Mercenary">
+		<!-- Transforms into a Dwarf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13645" /> <!-- Transformation Scroll: Goddard Dwarf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="14" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2749" levels="1" name="Goddard Kamael Mercenary">
+		<!-- Transforms into a Kamael mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13646" /> <!-- Transformation Scroll: Goddard Kamael Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2750" levels="1" name="Goddard Knight Mercenary">
+		<!-- Transforms into a Knight Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13647" /> <!-- Transformation Scroll: Goddard Knight Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="16" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2751" levels="1" name="Goddard Archer Mercenary">
+		<!-- Transforms into an Archer Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13648" /> <!-- Transformation Scroll: Goddard Archer Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="17" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2752" levels="1" name="Goddard Wizard Mercenary">
+		<!-- Transforms into a Wizard Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13649" /> <!-- Transformation Scroll: Goddard Wizard Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2753" levels="1" name="Goddard Kamael Captain Mercenary">
+		<!-- Transforms into a Kamael guard captain. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13650" /> <!-- Transformation Scroll: Goddard Kamael Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="19" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2754" levels="1" name="Goddard Knight Captain Mercenary">
+		<!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13651" /> <!-- Transformation Scroll: Goddard Knight Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2755" levels="1" name="Goddard Commander Mercenary">
+		<!-- Transforms into a Commander Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13652" /> <!-- Transformation Scroll: Goddard Commander Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="87" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="21" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2756" levels="1" name="Rune Human Mercenary">
+		<!-- Transforms into a human mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13653" /> <!-- Transformation Scroll: Rune Human Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2757" levels="1" name="Rune Elf Mercenary">
+		<!-- Transforms into an Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13654" /> <!-- Transformation Scroll: Rune Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="11" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2758" levels="1" name="Rune Dark Elf Mercenary">
+		<!-- Transforms into a Dark Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13655" /> <!-- Transformation Scroll: Rune Dark Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2759" levels="1" name="Rune Orc Mercenary">
+		<!-- Transforms into an Orc mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13656" /> <!-- Transformation Scroll: Rune Orc Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="13" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2760" levels="1" name="Rune Dwarf Mercenary">
+		<!-- Transforms into a Dwarf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13657" /> <!-- Transformation Scroll: Rune Dwarf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="14" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2761" levels="1" name="Rune Kamael Mercenary">
+		<!-- Transforms into a Kamael mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13658" /> <!-- Transformation Scroll: Rune Kamael Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2762" levels="1" name="Rune Knight Mercenary">
+		<!-- Transforms into a Knight Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13659" /> <!-- Transformation Scroll: Rune Knight Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="16" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2763" levels="1" name="Rune Archer Mercenary">
+		<!-- Transforms into an Archer Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13660" /> <!-- Transformation Scroll: Rune Archer Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="17" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2764" levels="1" name="Rune Wizard Mercenary">
+		<!-- Transforms into a Wizard Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13661" /> <!-- Transformation Scroll: Rune Wizard Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2765" levels="1" name="Rune Kamael Captain Mercenary">
+		<!-- Transforms into a Kamael guard captain. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13662" /> <!-- Transformation Scroll: Rune Kamael Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="19" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2766" levels="1" name="Rune Knight Captain Mercenary">
+		<!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13663" /> <!-- Transformation Scroll: Rune Knight Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2767" levels="1" name="Rune Commander Mercenary">
+		<!-- Transforms into a Commander Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13664" /> <!-- Transformation Scroll: Rune Commander Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="88" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="21" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2768" levels="1" name="Schuttgart Human Mercenary">
+		<!-- Transforms into a human mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13665" /> <!-- Transformation Scroll: Schuttgart Human Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2769" levels="1" name="Schuttgart Elf Mercenary">
+		<!-- Transforms into an Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13666" /> <!-- Transformation Scroll: Schuttgart Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="11" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2770" levels="1" name="Schuttgart Dark Elf Mercenary">
+		<!-- Transforms into a Dark Elf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13667" /> <!-- Transformation Scroll: Schuttgart Dark Elf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2771" levels="1" name="Schuttgart Orc Mercenary">
+		<!-- Transforms into an Orc mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13668" /> <!-- Transformation Scroll: Schuttgart Orc Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="13" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2772" levels="1" name="Schuttgart Dwarf Mercenary">
+		<!-- Transforms into a Dwarf mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13669" /> <!-- Transformation Scroll: Schuttgart Dwarf Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="14" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2773" levels="1" name="Schuttgart Kamael Mercenary">
+		<!-- Transforms into a Kamael mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13670" /> <!-- Transformation Scroll: Schuttgart Kamael Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2774" levels="1" name="Schuttgart Knight Mercenary">
+		<!-- Transforms into a Knight Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13671" /> <!-- Transformation Scroll: Schuttgart Knight Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="16" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2775" levels="1" name="Schuttgart Archer Mercenary">
+		<!-- Transforms into an Archer Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13672" /> <!-- Transformation Scroll: Schuttgart Archer Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="17" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2776" levels="1" name="Schuttgart Wizard Mercenary">
+		<!-- Transforms into a Wizard Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13673" /> <!-- Transformation Scroll: Schuttgart Wizard Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2777" levels="1" name="Schuttgart Kamael Captain Mercenary">
+		<!-- Transforms into a Kamael guard captain. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13674" /> <!-- Transformation Scroll: Schuttgart Kamael Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="19" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2778" levels="1" name="Schuttgart Knight Captain Mercenary">
+		<!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13675" /> <!-- Transformation Scroll: Schuttgart Knight Captain Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2779" levels="1" name="Schuttgart Commander Mercenary">
+		<!-- Transforms into a Commander Mercenary. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13676" /> <!-- Transformation Scroll: Schuttgart Commander Mercenary -->
+		<set name="magicLvl" val="-2" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<cond msgId="2955">
+			<and>
+				<player siegeZone="147" />
+				<player siegeSide="89" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="21" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2780" levels="1" name="Magician's Will">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14219" /> <!-- Forgotten Scroll - Magician's Will -->
+		<set name="learnSkillId" val="945" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="945" />
+				</not>
+				<player class_id_restriction="94, 95, 96, 97, 98, 103, 104, 105, 110, 111, 112, 115, 116" />
+				<player level="81" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="945" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2781" levels="1" name="Silent Mind">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14220" /> <!-- Forgotten Scroll - Silent Mind -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="946" />
+				</not>
+				<player class_id_restriction="92, 102, 109" />
+				<player level="81" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="946" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2782" levels="1" name="Turn Stone">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14221" /> <!-- Forgotten Scroll - Turn Stone -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="1540" />
+				</not>
+				<player class_id_restriction="97, 98, 105, 112, 115, 116" />
+				<player level="81" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="1540" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2783" levels="1" name="Lucky Strike">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14222" /> <!-- This Forgotten Scroll can be used by Fortune Seekers level 83 and above to learn Lucky Strike. -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="947" />
+				</not>
+				<player class_id_restriction="117" />
+				<player level="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="947" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2784" levels="1" name="Eye for Eye">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14223" /> <!-- This Forgotten Scroll can be used by Doombringers level 83 and above to learn Eye for Eye. -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="948" />
+				</not>
+				<player class_id_restriction="131" />
+				<player level="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="948" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2785" levels="1" name="Curse of Desparion">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14224" /> <!-- Forgotten Scroll - Curse of Desparion -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="1541" />
+				</not>
+				<player class_id_restriction="95" />
+				<player level="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="1541" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2786" levels="1" name="Counter Critical">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14225" /> <!-- Forgotten Scroll - Counter Critical -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="1542" />
+				</not>
+				<player class_id_restriction="98" />
+				<player level="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="1542" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2787" levels="1" name="Onslaught of Pa'agrio">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14226" /> <!-- Forgotten Scroll - Onslaught of Pa'agrio -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="949" />
+				</not>
+				<player class_id_restriction="115" />
+				<player level="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="949" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2788" levels="1" name="Great Fury">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="14227" /> <!-- Forgotten Scroll - Great Fury -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="1543" />
+				</not>
+				<player class_id_restriction="116" />
+				<player level="83" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="1543" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2789" levels="1" name="Final Flying Form">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13552" /> <!-- Spellbook - Flying Final Form -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="840" />
+				</not>
+				<player class_id_restriction="131, 132, 133, 134, 136" />
+				<player level="75" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="840" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2790" levels="1" name="Aura Bird - Falcon">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13553" /> <!-- Spellbook - Aurabird Falcon -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="841" />
+				</not>
+				<player level="75" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="841" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2791" levels="1" name="Aura Bird - Owl">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13554" /> <!-- Spellbook - Aurabird Owl -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="842" />
+				</not>
+				<player level="75" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="842" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2792" levels="2" name="Stone of Stamina">
+		<table name="#amount"> 700 20000 </table> <!-- FIXME: wrong values! -->
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2793" levels="2" name="Stone of Mana">
+		<table name="#amount"> 500 20000 </table> <!-- FIXME: wrong values! -->
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="ManaHeal">
+				<param power="#amount" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2794" levels="2" name="Stone of Recovery">
+		<table name="#hpHeal"> 15 25 </table>
+		<table name="#mpHeal"> 11 18 </table>
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="HealPercent">
+				<param power="#hpHeal" />
+			</effect>
+			<effect name="ManaHealPercent">
+				<param power="#mpHeal" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2795" levels="1" name="Stone of Destruction">
+		<!-- P. Atk. is temporarily increased. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.stone_1_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2796" levels="1" name="Stone of Invincibility">
+		<!-- P. Def. is temporarily increased. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="PD_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.stone_2_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2797" levels="1" name="Stone of Great Speed">
+		<!-- Atk. Spd. and Casting Spd. are increased. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.stone_3_i00" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.33" />
+				<mul stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2798" levels="1" name="Stone of Speed">
+		<!-- Speed is temporarily increased. Effect 2. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.stone_8_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2799" levels="1" name="Stone of Concentration">
+		<!-- Critical attack rate is temporarily increased. Effect 2. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.stone_7_i00" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmg" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+</list>

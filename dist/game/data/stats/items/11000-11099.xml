@@ -1,0 +1,3097 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="11000" type="Weapon" name="Kaim Vanul's Bones - Earth - Conversion">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. -->
+		<set name="icon" val="icon.weapon_bone_of_kaim_vanul_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1570" />
+		<set name="price" val="10091400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3891-1;3048-1" /> <!-- Blunt Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="155" />
+			<set stat="mAtk" val="132" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11001" type="Weapon" name="Colichemarde - Earth">
+		<!-- Masterwork Item that increases Max HP. Kamael Exclusive Weapon: Damascus Sword . Bestows one of the following functions: Focus, Critical Damage, or Haste . When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_colichemarde_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1350" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="10959" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3831-1" /> <!-- Rapier of Boost HP -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="176" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11002" type="Weapon" name="Colichemarde - Earth - Focus">
+		<!-- Masterwork Item that increases Max HP. Kamael Exclusive Weapon: Damascus Sword Conversion. <Soul Crystal Enhancement>. Increases Critical by 64. . When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_colichemarde_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1350" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="10960" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3831-1;3010-6" /> <!-- Rapier of Boost HP -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="176" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11003" type="Weapon" name="Colichemarde - Earth - Critical Damage">
+		<!-- Masterwork Item that increases Max HP. Kamael Exclusive Weapon: Damascus Sword Conversion. <Soul Crystal Enhancement>. Increases P. Atk. by 262 on a critical attack. . When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_colichemarde_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1350" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="10961" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3831-1;3023-6" /> <!-- Rapier of Boost HP -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="176" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11004" type="Weapon" name="Colichemarde - Earth - Haste">
+		<!-- Masterwork Item that increases Max HP. Kamael Exclusive Weapon: Damascus Sword Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. . When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_colichemarde_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1350" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="10962" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3831-1;3036-6" /> <!-- Rapier of Boost HP -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="176" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11005" type="Weapon" name="Wizard's Tear - Cleverness">
+		<!-- Masterwork Item that increases MP recovery power. Bestows one of the following functions: Acumen, M. Atk., or Conversion. -->
+		<set name="icon" val="icon.weapon_tears_of_wizard_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1350" />
+		<set name="price" val="10091400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3853-1" /> <!-- Sword of Mana Regeneration -->
+		<for>
+			<set stat="pAtk" val="155" />
+			<set stat="mAtk" val="132" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11006" type="Weapon" name="Wizard's Tear - Cleverness - Acumen">
+		<!-- Masterwork Item that increases MP recovery power. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. -->
+		<set name="icon" val="icon.weapon_tears_of_wizard_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1350" />
+		<set name="price" val="10091400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3853-1;3047-1" /> <!-- Sword of Mana Regeneration -->
+		<for>
+			<set stat="pAtk" val="155" />
+			<set stat="mAtk" val="132" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11007" type="Weapon" name="Wizard's Tear - Cleverness - M. Atk.">
+		<!-- Masterwork Item that increases MP recovery power. <Soul Crystal Enhancement>. Increases MP consumption by 15% and M. Atk. by 139 when using magic. -->
+		<set name="icon" val="icon.weapon_tears_of_wizard_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1350" />
+		<set name="price" val="10091400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3853-1;3077-6" /> <!-- Sword of Mana Regeneration -->
+		<for>
+			<set stat="pAtk" val="155" />
+			<set stat="mAtk" val="132" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11008" type="Weapon" name="Wizard's Tear - Cleverness - Conversion">
+		<!-- Masterwork Item that increases MP recovery power. <Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. -->
+		<set name="icon" val="icon.weapon_tears_of_wizard_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1350" />
+		<set name="price" val="10091400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3853-1;3048-1" /> <!-- Sword of Mana Regeneration -->
+		<for>
+			<set stat="pAtk" val="155" />
+			<set stat="mAtk" val="132" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11009" type="Weapon" name="Bow of Peril - Earth">
+		<!-- Masterwork Item that increases Max HP. Bestows one of the following functions: Guidance, Quick Recovery, or Cheap Shot. -->
+		<set name="icon" val="icon.weapon_hazard_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="11013" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="4" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="item_skill" val="3867-1" /> <!-- Bow of Boost HP -->
+		<for>
+			<set stat="pAtk" val="400" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="293" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11010" type="Weapon" name="Bow of Peril - Earth - Guidance">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Accuracy by 3. -->
+		<set name="icon" val="icon.weapon_hazard_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="11014" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="4" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="item_skill" val="3867-1;3008-6" /> <!-- Bow of Boost HP -->
+		<for>
+			<set stat="pAtk" val="400" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="293" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11011" type="Weapon" name="Bow of Peril - Earth - Quick Recovery">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Decreases re-use delay by 13%. -->
+		<set name="icon" val="icon.weapon_hazard_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="11015" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="4" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="1310" />
+		<set name="item_skill" val="3867-1" /> <!-- Bow of Boost HP -->
+		<for>
+			<set stat="pAtk" val="400" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="293" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11012" type="Weapon" name="Bow of Peril - Earth - Cheap Shot">
+		<!-- Masterwork Item that increases maximum HP. <Soul Crystal Enhancement>. Has a 42% chance of decreasing MP consumption by 1 on a general attack. -->
+		<set name="icon" val="icon.weapon_hazard_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="11016" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="4" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="item_skill" val="3867-1" /> <!-- Bow of Boost HP -->
+		<set name="reduced_mp_consume" val="42,2" />
+		<for>
+			<set stat="pAtk" val="400" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="293" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11013" type="Weapon" name="Hell Hound - Earth">
+		<!-- Masterwork Item that increases Max HP. Kamael-exclusive weapon: Bow of Peril Conversion. Bestows Guidance, Quick Recovery or Cheap Shot. -->
+		<set name="icon" val="icon.weapon_hell_hound_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="11009" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="400" />
+		<set name="item_skill" val="3872-1" /> <!-- Crossbow of Boost HP -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="245" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11014" type="Weapon" name="Hell Hound - Earth - Guidance">
+		<!-- Masterwork Item that increases Max HP. Kamael-exclusive weapon: Bow of Peril Conversion. <Soul Crystal Enhancement>. Accuracy +3. -->
+		<set name="icon" val="icon.weapon_hell_hound_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="11010" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="400" />
+		<set name="item_skill" val="3872-1;3008-6" /> <!-- Crossbow of Boost HP -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="245" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11015" type="Weapon" name="Hell Hound - Earth - Quick Recovery">
+		<!-- Masterwork Item that increases Max HP. Kamael-exclusive weapon: Bow of Peril Conversion. <Soul Crystal Enhancement>. Re-use delay decreases by 13%. -->
+		<set name="icon" val="icon.weapon_hell_hound_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="11011" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="400" />
+		<set name="item_skill" val="3872-1" /> <!-- Crossbow of Boost HP -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="245" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11016" type="Weapon" name="Hell Hound - Earth - Cheap Shot">
+		<!-- Masterwork Item that increases Max HP. Kamael-exclusive weapon: Bow of Peril Conversion. <Soul Crystal Enhancement>. When using a skill, MP consumption decreases by 12%. -->
+		<set name="icon" val="icon.weapon_hell_hound_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1346" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="10091400" />
+		<set name="change_weaponId" val="11012" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="400" />
+		<set name="item_skill" val="3872-1;3360-1" /> <!-- Crossbow of Boost HP -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="245" />
+			<set stat="mAtk" val="99" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11017" type="Weapon" name="Dasparion's Staff - Hail">
+		<!-- Masterwork Item that increases M. Atk. Bestows one of the following functions: Mana Up, Conversion, or Acumen. -->
+		<set name="icon" val="icon.weapon_dasparions_staff_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="920" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3899-2" /> <!-- Staff of Empower -->
+		<for>
+			<set stat="pAtk" val="207" />
+			<set stat="mAtk" val="157" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11018" type="Weapon" name="Dasparion's Staff - Hail - Mana Up">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dasparions_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="920" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3899-2;3014-2" /> <!-- Staff of Empower -->
+		<for>
+			<set stat="pAtk" val="207" />
+			<set stat="mAtk" val="157" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11019" type="Weapon" name="Dasparion's Staff - Hail - Conversion">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dasparions_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="920" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3899-2;3048-2" /> <!-- Staff of Empower -->
+		<for>
+			<set stat="pAtk" val="207" />
+			<set stat="mAtk" val="157" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11020" type="Weapon" name="Dasparion's Staff - Hail - Acumen">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dasparions_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="920" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3899-2;3047-2" /> <!-- Staff of Empower -->
+		<for>
+			<set stat="pAtk" val="207" />
+			<set stat="mAtk" val="157" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11021" type="Weapon" name="Doomchanter - Concentration">
+		<!-- Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Carnage Bow Conversion. Bestows one of the following functions: Light, Crt. Bleed, or, Mana Up. -->
+		<set name="icon" val="icon.weapon_doom_singer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11053" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="400" />
+		<set name="item_skill" val="3868-2" /> <!-- Crossbow of Guidance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="270" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11022" type="Weapon" name="Doomchanter - Concentration - Light">
+		<!-- Masterwork Item that increases Accruacy. Kamael Exclusive Weapon: Carnage Bow Conversion. <Soul Crystal Enhancement>. Weight gauge increase by 20%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_doom_singer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11054" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="400" />
+		<set name="item_skill" val="3868-2;3552-1;3498-1" /> <!-- Crossbow of Guidance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="270" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11023" type="Weapon" name="Doomchanter - Concentration - Critical Bleed">
+		<!-- Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Carnage Bow Conversion. <Soul Crystal Enhancement>. Has a 35% chance of inflicting Bleed on the target during a general critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_doom_singer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11055" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="400" />
+		<set name="oncrit_chance" val="35" />
+		<set name="oncrit_skill" val="3053-1" />
+		<set name="item_skill" val="3868-2;3552-1" /> <!-- Crossbow of Guidance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="270" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11024" type="Weapon" name="Doomchanter - Concentration - Mana Up">
+		<!-- Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Carnage Bow Conversion. . <Soul Crystal Enhancement> . Increases Max MP by 30%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_doom_singer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11056" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="400" />
+		<set name="item_skill" val="3868-2;3014-2" /> <!-- Crossbow of Guidance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="270" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="303" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11025" type="Weapon" name="White Lightning - Destruction">
+		<!-- Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Tallum Blade Conversion . Bestows one of the following functions: Crt. Poison, Haste, or Anger . When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_lightning_blaze_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11058" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3830-2" /> <!-- Rapier of Might -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="193" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11026" type="Weapon" name="White Lightning - Destruction - Critical Poison">
+		<!-- Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Tallum Blade Conversion. <Soul Crystal Enhancement>. Poisons the target with a 10% chance during a general critical attack. Increases damage inflicted during PvP. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. -->
+		<set name="icon" val="icon.weapon_lightning_blaze_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11059" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="oncrit_chance" val="10" />
+		<set name="oncrit_skill" val="3061-1" />
+		<set name="item_skill" val="3830-2;3552-1" /> <!-- Rapier of Might -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="193" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11027" type="Weapon" name="White Lightning - Destruction - Haste">
+		<!-- Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Tallum Blade Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_lightning_blaze_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11060" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3830-2;3068-2" /> <!-- Rapier of Might -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="193" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11028" type="Weapon" name="White Lightning - Destruction - Anger">
+		<!-- Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Tallum Blade Conversion . <Soul Crystal Enhancement>. Decreases Max HP by 15% and increases P. Atk. by 31. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_lightning_blaze_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11061" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3830-2;3057-1" /> <!-- Rapier of Might -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="193" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11029" type="Weapon" name="Meteor Shower - Earth">
+		<!-- Masterwork Item that increases Max HP. Bestows one of the following functions: Focus, Crt. Bleed, or Rsk. Haste. -->
+		<set name="icon" val="icon.weapon_meteor_shower_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1600" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3884-2" /> <!-- Blunt Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11030" type="Weapon" name="Meteor Shower - Earth - Focus">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_meteor_shower_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1600" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3884-2;3050-1" /> <!-- Blunt Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11031" type="Weapon" name="Meteor Shower - Earth - Critical Bleed">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Inflicts Bleed on the target with a 42% rate of chance during a general critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_meteor_shower_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1600" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="42" />
+		<set name="oncrit_skill" val="3052-1" />
+		<set name="item_skill" val="3884-2;3552-1" /> <!-- Blunt Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11032" type="Weapon" name="Meteor Shower - Earth - Rsk. Haste">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Atk. Spd. by 11% when HP drops to 60% or lower. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_meteor_shower_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1600" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3884-2;3056-2" /> <!-- Blunt Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11033" type="Weapon" name="Blood Tornado - Destruction">
+		<!-- Masterwork Item that increases P. Atk. Bestows one of the following functions: Haste, Focus, or Anger. -->
+		<set name="icon" val="icon.weapon_blood_tornado_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1370" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3879-2" /> <!-- Fist Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11034" type="Weapon" name="Blood Tornado - Destruction - Haste">
+		<!-- Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_blood_tornado_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1370" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3879-2;3068-2" /> <!-- Fist Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11035" type="Weapon" name="Blood Tornado - Destruction - Focus">
+		<!-- Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_blood_tornado_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1370" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3879-2;3050-1" /> <!-- Fist Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11036" type="Weapon" name="Blood Tornado - Destruction - Anger">
+		<!-- Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Decreases Max HP by 15% and increases P. Atk. by 38. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_blood_tornado_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1370" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3879-2;3058-1" /> <!-- Fist Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11037" type="Weapon" name="Bloody Orchid - Confusion">
+		<!-- Masterwork Item that increases Evasion. Bestows one of the following functions: Focus, Back Blow, or Crt. Bleed. -->
+		<set name="icon" val="icon.weapon_bloody_orchid_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="960" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3858-2" /> <!-- Dagger of Avoid -->
+		<for>
+			<set stat="pAtk" val="186" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11038" type="Weapon" name="Bloody Orchid - Confusion - Focus">
+		<!-- Masterwork Item that increases Evasion. <Soul Crystal Enhancement>. Increases Critical by 67. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_bloody_orchid_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="960" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3858-2;3051-1" /> <!-- Dagger of Avoid -->
+		<for>
+			<set stat="pAtk" val="186" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11039" type="Weapon" name="Bloody Orchid - Confusion - Back Blow">
+		<!-- Masterwork Item that increases Evasion. <Soul Crystal Enhancement>. Increases Critical Rate by 37% when attacking the target from behind. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_bloody_orchid_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="960" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3858-2;3063-1" /> <!-- Dagger of Avoid -->
+		<for>
+			<set stat="pAtk" val="186" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11040" type="Weapon" name="Bloody Orchid - Confusion - Critical Bleed">
+		<!-- Masterwork Item that increases Evasion. <Soul Crystal Enhancement>. Inflicts Bleed on the target with a 12% rate of chance during a general critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_bloody_orchid_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="960" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="12" />
+		<set name="oncrit_skill" val="3054-1" />
+		<set name="item_skill" val="3858-2;3552-1" /> <!-- Dagger of Avoid -->
+		<for>
+			<set stat="pAtk" val="186" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="433" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11041" type="Weapon" name="Elemental Sword - Hail">
+		<!-- Masterwork Item that increases M. Atk. Bestows one of the following functions: M. Atk., Magic Paralyze or Empower. -->
+		<set name="icon" val="icon.weapon_elemental_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="830" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3854-1" /> <!-- Sword of Empower -->
+		<for>
+			<set stat="pAtk" val="170" />
+			<set stat="mAtk" val="143" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11042" type="Weapon" name="Elemental Sword - Hail - M. Atk.">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases MP consumption by 15% and M. Atk. by 153 when using magic. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_elemental_sword_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="830" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3854-1;3073-1" /> <!-- Sword of Empower -->
+		<for>
+			<set stat="pAtk" val="170" />
+			<set stat="mAtk" val="143" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11043" type="Weapon" name="Elemental Sword - Hail - Magic Paralyze">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Has a 5% chance of casting Paralysis when using a magic skill on the target. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_elemental_sword_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="830" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="onmagic_chance" val="5" />
+		<set name="onmagic_skill" val="3075-1" />
+		<set name="item_skill" val="3854-1;3552-1" /> <!-- Sword of Empower -->
+		<for>
+			<set stat="pAtk" val="170" />
+			<set stat="mAtk" val="143" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11044" type="Weapon" name="Elemental Sword - Hail - Empower">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases M. Atk. by 30%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_elemental_sword_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="830" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3854-1;3072-1" /> <!-- Sword of Empower -->
+		<for>
+			<set stat="pAtk" val="170" />
+			<set stat="mAtk" val="143" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11045" type="Weapon" name="Spiritual Eye - Hail">
+		<!-- Masterwork Item that increases M. Atk. Bestows one of the following functions: Mana Up, Magic Poison, or Acumen. -->
+		<set name="icon" val="icon.weapon_eye_of_soul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1550" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3889-2" /> <!-- Blunt Weapon of Empower -->
+		<for>
+			<set stat="pAtk" val="170" />
+			<set stat="mAtk" val="143" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11046" type="Weapon" name="Spiritual Eye - Hail - Mana Up">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_eye_of_soul_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1550" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3889-2;3014-2" /> <!-- Blunt Weapon of Empower -->
+		<for>
+			<set stat="pAtk" val="170" />
+			<set stat="mAtk" val="143" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11047" type="Weapon" name="Spiritual Eye - Hail - Magic Poison">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Has a 8% chance of casting Curse Poison when using a magic skill on the target. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_eye_of_soul_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1550" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="onmagic_chance" val="8" />
+		<set name="onmagic_skill" val="1168-6" />
+		<set name="item_skill" val="3889-2;3552-1" /> <!-- Blunt Weapon of Empower -->
+		<for>
+			<set stat="pAtk" val="170" />
+			<set stat="mAtk" val="143" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11048" type="Weapon" name="Spiritual Eye - Hail - Acumen">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_eye_of_soul_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1550" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3889-2;3047-2" /> <!-- Blunt Weapon of Empower -->
+		<for>
+			<set stat="pAtk" val="170" />
+			<set stat="mAtk" val="143" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11049" type="Weapon" name="Infernal Master - Concentration">
+		<!-- Masterwork Item that increases Accuracy. Bestows one of the following functions: Haste, Critical Damage, or Focus. -->
+		<set name="icon" val="icon.weapon_inferno_master_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11066" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3841-1" /> <!-- Two-handed Sword of Guidance -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11050" type="Weapon" name="Infernal Master - Concentration - Haste">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_inferno_master_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11067" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3841-1;3068-2" /> <!-- Two-handed Sword of Guidance -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11051" type="Weapon" name="Infernal Master - Concentration - Critical Damage">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases P. Atk. by 297 on a critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_inferno_master_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11068" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3841-1;3067-1" /> <!-- Two-handed Sword of Guidance -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11052" type="Weapon" name="Infernal Master - Concentration - Focus">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_inferno_master_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11069" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3841-1;3050-1" /> <!-- Two-handed Sword of Guidance -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11053" type="Weapon" name="Carnage Bow - Concentration">
+		<!-- Masterwork Item that increases Accuracy. Bestows one of the following functions: Light, Crt. Bleed, or Mana Up. -->
+		<set name="icon" val="icon.weapon_carnium_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11021" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="4" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="item_skill" val="3863-2" /> <!-- Bow of Guidance -->
+		<for>
+			<set stat="pAtk" val="440" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="293" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11054" type="Weapon" name="Carnage Bow - Concentration - Light">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_carnium_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11022" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="4" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="item_skill" val="3552-1;3498-1;3863-2" /> <!-- Special Ability: PvP Damage -->
+		<for>
+			<set stat="pAtk" val="440" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="293" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11055" type="Weapon" name="Carnage Bow - Concentration - Critical Bleed">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Inflicts Bleed on the target with a 35% rate of chance during a general critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_carnium_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11023" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="4" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="oncrit_chance" val="35" />
+		<set name="oncrit_skill" val="3053-1" />
+		<set name="item_skill" val="3863-2;3552-1" /> <!-- Bow of Guidance -->
+		<for>
+			<set stat="pAtk" val="440" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="293" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11056" type="Weapon" name="Carnage Bow - Concentration - Mana Up">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_carnium_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11024" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="4" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="item_skill" val="3863-2;3014-2" /> <!-- Bow of Guidance -->
+		<for>
+			<set stat="pAtk" val="440" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="293" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11057" type="Weapon" name="Keshanberk*Keshanberk - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword more significantly than that of a one-handed or fist weapon. When enchanted to 4 or more, Atk. Spd. will increase by 8%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2080" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3045-17" />
+		<set name="item_skill" val="3835-2" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11058" type="Weapon" name="Tallum Blade - Destruction">
+		<!-- Masterwork Item that increases P. Atk. Bestows one of the following functions: Crt. Poison, Haste, or Anger. -->
+		<set name="icon" val="icon.weapon_tallum_blade_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11025" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3825-2" /> <!-- Sword of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11059" type="Weapon" name="Tallum Blade - Destruction - Critical Poison">
+		<!-- Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Inflicts Poison on the target with a 10% rate of chance during a general critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_tallum_blade_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11026" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="10" />
+		<set name="oncrit_skill" val="3061-1" />
+		<set name="item_skill" val="3825-2;3552-1" /> <!-- Sword of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11060" type="Weapon" name="Tallum Blade - Destruction - Haste">
+		<!-- Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_tallum_blade_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11027" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3825-2;3068-2" /> <!-- Sword of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11061" type="Weapon" name="Tallum Blade - Destruction - Anger">
+		<!-- Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Decreases Max HP by 15% and increases P. Atk. by 31. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_tallum_blade_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11028" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3825-2;3057-1" /> <!-- Sword of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11062" type="Weapon" name="Destroyer Hammer - Lightning">
+		<!-- Masterwork Item that increases Critical Rate. Bestows one of the following functions: Health, Haste, or Critical Drain. -->
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1910" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3895-2" /> <!-- Two-handed Blunt Weapon of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11063" type="Weapon" name="Destroyer Hammer - Lightning - Health">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1910" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3895-2;3013-3" /> <!-- Two-handed Blunt Weapon of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11064" type="Weapon" name="Destroyer Hammer - Lightning - Haste">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1910" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3895-2;3068-2" /> <!-- Two-handed Blunt Weapon of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11065" type="Weapon" name="Destroyer Hammer - Lightning - Critical Drain">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Absorbs 18 HP from a target on a critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1910" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="24" />
+		<set name="oncrit_skill" val="3059-1" />
+		<set name="item_skill" val="3895-2;3552-1" /> <!-- Two-handed Blunt Weapon of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="259" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11066" type="Weapon" name="Divine Pain - Concentration">
+		<!-- Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Inferno Master Conversion. Bestows one of the following functions: Haste, Crit. Critical Damage or Focus. -->
+		<set name="icon" val="icon.weapon_pain_of_godness_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11049" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3847-1" /> <!-- Ancient Sword of Guidance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="231" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11067" type="Weapon" name="Divine Pain - Concentration - Haste">
+		<!-- Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Inferno Master Conversion . <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_pain_of_godness_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11050" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3847-1;3068-2" /> <!-- Ancient Sword of Guidance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="231" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11068" type="Weapon" name="Divine Pain - Concentration - Critical Damage">
+		<!-- Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Inferno Master Conversion. <Soul Crystal Enhancement>. Increases P. Atk. by 297 on a critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_pain_of_godness_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11051" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3847-1;3067-1" /> <!-- Ancient Sword of Guidance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="231" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11069" type="Weapon" name="Divine Pain - Concentration - Focus">
+		<!-- Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Inferno Master Conversion. . <Soul Crystal Enhancement> . Increases Critical Attack by 61. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_pain_of_godness_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="change_weaponId" val="11052" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3847-1;3050-1" /> <!-- Ancient Sword of Guidance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="231" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11070" type="Weapon" name="Halberd - Lightning">
+		<!-- Masterwork Item that increases Critical Rate. Bestows one of the following functions: Haste, Critical Stun, or Wide Blow. -->
+		<set name="icon" val="icon.weapon_halbard_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3874-1;3599-1" /> <!-- Polearm of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11071" type="Weapon" name="Halberd - Lightning - Haste">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_halbard_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3874-1;3601-7" /> <!-- Polearm of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11072" type="Weapon" name="Halberd - Lightning - Critical Stun">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Has a 25% chance of stunning a target during a critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_halbard_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="25" />
+		<set name="oncrit_skill" val="3070-1" />
+		<set name="item_skill" val="3874-1;3552-2" /> <!-- Polearm of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11073" type="Weapon" name="Halberd - Lightning - Wide Blow">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Attack angle widens. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_halbard_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;180" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1128" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3874-1;3552-2" /> <!-- Polearm of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="107" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11074" type="Weapon" name="Keshanberk*Damascus - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Max HP by 25%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1485" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2080" />
+		<set name="price" val="18567400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3013-3" />
+		<set name="item_skill" val="3835-2" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="275" />
+			<set stat="mAtk" val="112" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11075" type="Weapon" name="Lacerator - Thunder">
+		<!-- Masterwork Item that increases Critical Damage. Kamael Exclusive Weapon: Dark Legion Conversion . Bestows one of the following functions: Critical Damage, Health, or Rsk. Focus . When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_greed_stinger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11080" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3832-1" /> <!-- Rapier of Critical Damage -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="210" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11076" type="Weapon" name="Lacerator - Thunder - Critical Damage">
+		<!-- Masterwork Item that increases Critical Damage. Kamael Exclusive Weapon: Dark Legion Conversion . <Soul Crystal Enhancement>. Increases P. Atk. by 326 on a critical attack. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_greed_stinger_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11081" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3832-1;3067-2" /> <!-- Rapier of Critical Damage -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="210" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11077" type="Weapon" name="Lacerator - Thunder - Health">
+		<!-- Masterwork Item that increases Critical Damage. Kamael Exclusive Weapon: Dark Legion Conversion . <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_greed_stinger_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11082" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3832-1;3013-3" /> <!-- Rapier of Critical Damage -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="210" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11078" type="Weapon" name="Lacerator - Thunder - Rsk. Focus">
+		<!-- Masterwork Item that increases Critical Damage. Kamael Exclusive Weapon: Dark Legion Conversion . <Soul Crystal Enhancement>. Increases Critical by 130 when HP is 60% or below. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. -->
+		<set name="icon" val="icon.weapon_greed_stinger_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="40" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11083" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3426-1" />
+		<set name="item_skill" val="3832-1;3071-2" /> <!-- Rapier of Critical Damage -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="210" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="10" />
+			<add stat="accCombat" val="-1.5" />
+			<set stat="pAtkSpd" val="406" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11079" type="Weapon" name="Damascus*Damascus - Thunder">
+		<!-- Masterwork Item that increases Critical Damage. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Accuracy by 6. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2080" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3046-20" />
+		<set name="item_skill" val="3837-1" /> <!-- Dual-Blade Weapon of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11080" type="Weapon" name="Dark Legion's Edge - Thunder">
+		<!-- Masterwork Item that increases Critical Damage. Bestows one of the following functions: Critical Damage, Health, or Rsk. Focus. -->
+		<set name="icon" val="icon.weapon_dark_legions_edge_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11075" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3827-1" /> <!-- Sword of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="232" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11081" type="Weapon" name="Dark Legion's Edge - Thunder - Critical Damage">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases P. Atk. by 326 on a critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dark_legions_edge_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11076" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3827-1;3067-2" /> <!-- Sword of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="232" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11082" type="Weapon" name="Dark Legion's Edge - Thunder - Health">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dark_legions_edge_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11077" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3827-1;3013-3" /> <!-- Sword of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="232" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11083" type="Weapon" name="Dark Legion's Edge - Thunder - Rsk. Focus">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases Critical by 130 when HP is 60% or below. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dark_legions_edge_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11078" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3827-1;3071-2" /> <!-- Sword of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="232" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11084" type="Weapon" name="Undertaker - Evil Spirit">
+		<!-- Masterwork Item that absorbs HP when attacking. Kamael Exclusive Weapon: Dragon Slayer Conversion. Bestows one of the following functions: Health, Crt. Bleed, or, Critical Drain. -->
+		<set name="icon" val="icon.weapon_death_bringer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11096" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3848-1" /> <!-- Ancient Sword of Vampiric Rage -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11085" type="Weapon" name="Undertaker - Evil Spirit - Health">
+		<!-- Masterwork Item that absorbs HP when attacking. Kamael Exclusive Weapon: Dragon Slayer Conversion. . <Soul Crystal Enhancement> . Increases Max HP by 25%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_death_bringer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11097" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3848-1;3013-3" /> <!-- Ancient Sword of Vampiric Rage -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11086" type="Weapon" name="Undertaker - Evil Spirit - Critical Bleed">
+		<!-- Masterwork Item that absorbs HP when attacking. Kamael Exclusive Weapon: Dragon Slayer Conversion. <Soul Crystal Enhancement>. Inflicts Bleed on the target with a 24% chance during general critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_death_bringer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11098" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="24" />
+		<set name="oncrit_skill" val="3055-2" />
+		<set name="item_skill" val="3848-1;3552-1" /> <!-- Ancient Sword of Vampiric Rage -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11087" type="Weapon" name="Undertaker - Evil Spirit - Critical Drain">
+		<!-- Masterwork Item that absorbs HP when attacking. Kamael Exclusive Weapon: Dragon Slayer Conversion. . <Soul Crystal Enhancement> . Absorbs 11 HP from a target on a critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_death_bringer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11099" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="24" />
+		<set name="oncrit_skill" val="3060-2" />
+		<set name="item_skill" val="3848-1;3552-1" /> <!-- Ancient Sword of Vampiric Rage -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="251" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11088" type="Weapon" name="Doom Crusher - Thunder">
+		<!-- Masterwork Item that increases Critical Damage. Bestows one of the following functions: Health, Anger, or Rsk. Haste. -->
+		<set name="icon" val="icon.weapon_doom_crusher_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3894-1" /> <!-- Two-handed Blunt Weapon of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11089" type="Weapon" name="Doom Crusher - Thunder - Health">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_doom_crusher_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3894-1;3013-3" /> <!-- Two-handed Blunt Weapon of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11090" type="Weapon" name="Doom Crusher - Thunder - Anger">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Decreases Max HP by 15% and increases P. Atk. by 32. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_doom_crusher_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3894-1;3057-2" /> <!-- Two-handed Blunt Weapon of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11091" type="Weapon" name="Doom Crusher - Thunder - Rsk. Haste">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases Atk. Spd. by 11% when HP drops to 60% or lower. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_doom_crusher_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3894-1;3056-2" /> <!-- Two-handed Blunt Weapon of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11092" type="Weapon" name="Dragon Grinder - Earth">
+		<!-- Masterwork Item that increases Max HP. Bestows one of the following functions: Evasion, Guidance, or Health. -->
+		<set name="icon" val="icon.weapon_dragon_grinder_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1350" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3881-1" /> <!-- Fist Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11093" type="Weapon" name="Dragon Grinder - Earth - Rsk. Evasion">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Evasion by 6 when HP drops to 60% or lower. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dragon_grinder_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1350" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3881-1;3069-1" /> <!-- Fist Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11094" type="Weapon" name="Dragon Grinder - Earth - Guidance">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Accuracy by 5. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dragon_grinder_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1350" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3881-1;3065-1" /> <!-- Fist Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11095" type="Weapon" name="Dragon Grinder - Earth - Health">
+		<!-- Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dragon_grinder_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1350" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3881-1;3013-3" /> <!-- Fist Weapon of Boost HP -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11096" type="Weapon" name="Dragon Slayer - Evil Spirit">
+		<!-- Masterwork Item that absorbs HP when attacking. Bestows one of the following functions: Health, Crt. Bleed, or Critical Drain. -->
+		<set name="icon" val="icon.weapon_dragon_slayer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11084" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3842-1" /> <!-- Two-handed Sword of Vampiric Rage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11097" type="Weapon" name="Dragon Slayer - Evil Spirit - Health">
+		<!-- Masterwork Item that absorbs HP when attacking. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dragon_slayer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11085" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3842-1;3013-3" /> <!-- Two-handed Sword of Vampiric Rage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11098" type="Weapon" name="Dragon Slayer - Evil Spirit - Critical Bleed">
+		<!-- Masterwork Item that absorbs HP when attacking. <Soul Crystal Enhancement>. Inflicts Bleed on the target with a 24% rate of chance during a general critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dragon_slayer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11086" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="24" />
+		<set name="oncrit_skill" val="3055-2" />
+		<set name="item_skill" val="3842-1;3552-1" /> <!-- Two-handed Sword of Vampiric Rage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="11099" type="Weapon" name="Dragon Slayer - Evil Spirit - Critical Drain">
+		<!-- Masterwork Item that absorbs HP when attacking. <Soul Crystal Enhancement>. Absorbs 11 HP from a target on a critical attack. Increases damage inflicted during PvP. -->
+		<set name="icon" val="icon.weapon_dragon_slayer_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1659" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="change_weaponId" val="11087" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="24" />
+		<set name="oncrit_skill" val="3060-2" />
+		<set name="item_skill" val="3842-1;3552-1" /> <!-- Two-handed Sword of Vampiric Rage -->
+		<for>
+			<set stat="pAtk" val="282" />
+			<set stat="mAtk" val="114" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+</list>

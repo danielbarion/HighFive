@@ -1,0 +1,2646 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="700" levels="1" name="Divine Healer Group Heal">
+		<!-- Restores HP of a party member by 400 power and causes 27 HP recovery every second for 15 seconds. -->
+		<set name="abnormalLvl" val="5" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="activateRate" val="0" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="661" />
+		<set name="hitTime" val="7000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="252" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="PARTY" />
+		<for>
+			<effect name="HealOverTime" ticks="1">
+				<param power="27" />
+			</effect>
+			<effect name="Heal">
+				<param power="400" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="701" levels="1" name="Divine Healer Resurrection">
+		<!-- Resurrects a corpse. Restores the experience value about 70 percent additionally. -->
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="661" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="252" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="PC_BODY" />
+		<cond>
+			<player canResurrect="true" />
+		</cond>
+		<for>
+			<effect name="Resurrection">
+				<param power="70" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="702" levels="1" name="Divine Healer Cleanse">
+		<!-- Cancel all the debuffs of the target. -->
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="676" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="59" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="DispelByCategory">
+				<param slot="debuff" rate="100" max="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="703" levels="1" name="Sacrifice Healer">
+		<!-- Regenerate party member's HP and MP by sacrificing yourself. Usable only when MP is under 10 percent. -->
+		<set name="affectRange" val="300" />
+		<set name="effectPoint" val="676" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="PARTY" />
+		<cond msgId="113" addName="1">
+			<player mp="10" />
+		</cond>
+		<for>
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
+			<effect name="ManaHealPercent">
+				<param power="100" />
+			</effect>
+		</for>
+		<selfEffects>
+			<effect name="CallSkill">
+				<param skillId="5602" skillLevel="1" />
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="704" levels="1" name="Divine Enchanter Water Spirit">
+		<!-- For 2 minutes, receives help from a great spirit to increase the chance of prominent damage occurring through the target's magic damage by 2, MP Recovery Bonus by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buffs by 10%. Decreases Speed by 20% and MP consumption for skill use by 5%. Consumes 10 Spirit Ore. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="669" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="10" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="73" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="PARTY_MEMBER" />
+		<for>
+			<effect name="Buff">
+				<add stat="mCritRate" val="2" />
+				<mul stat="regMp" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="runSpd" val="0.8" />
+				<mul stat="magicalMpConsumeRate" val="0.95" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="705" levels="1" name="Divine Enchanter Fire Spirit">
+		<!-- For 2 minutes, receives help from a great spirit to increase the target's Max MP by 20%, HP Recovery Bonus by 20%, the chance of prominent damage occurring through magic damage by 2, Critical Damages by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buffs by 10%. Decreases Speed by 20%. Consumes 10 Spirit Ore. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="669" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="10" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="73" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="PARTY_MEMBER" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="1.2" />
+				<mul stat="regHp" val="1.2" />
+				<add stat="mCritRate" val="2" />
+				<mul stat="critDmg" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<add stat="accCombat" val="4" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="706" levels="1" name="Divine Enchanter Wind Spirit">
+		<!-- For 2 minutes, receives help from a great spirit to increase the target's Max HP by 20%, Critical Rate by 20%, rate of Prominent Damage through magic damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buff by 10%. Decreases Speed by 20%. Bestows the ability to recover as HP 5% of the standard melee damage inflicted on the enemy. Consumes 10 Spirit Ore. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="669" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="10" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="73" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="PARTY_MEMBER" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.2" />
+				<mul stat="critRate" val="1.2" />
+				<mul stat="mCritPower" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="runSpd" val="0.8" />
+				<add stat="absorbDam" val="5" /> <!-- absorb 5% HP from damage inflicted on enemies -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="707" levels="1" name="Divine Enchanter Hero Spirit">
+		<!-- For 2 minutes, receives help from a great spirit to increase the target's Max MP by 20%, the chance of prominent damage occurring through magic damage by 2, Critical Damages by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buffs by 10%. Decreases Speed by 20%. Consumes 10 Spirit Ore. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="669" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="10" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="73" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="PARTY_MEMBER" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.2" />
+				<add stat="mCritRate" val="2" />
+				<mul stat="critDmg" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<sub stat="debuffVuln" val="10" />
+				<add stat="accCombat" val="4" />
+				<mul stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="708" levels="1" name="Divine Enchanter Mass Binding">
+		<!-- Instantly apply Hold to surrounding enemies. Additional Hold is not available while effects last. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalVisualEffect" val="ROOT" />
+		<set name="activateRate" val="40" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-676" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="109" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="HOLD" />
+		<for>
+			<effect name="Root" />
+			<effect name="DefenceTrait">
+				<param HOLD="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="709" levels="1" name="Sacrifice Enchanter">
+		<!-- Increase all the party member's abilities by sacrificing yourself. Usable only when MP is under 10 percent. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="TRANSFORM_SCRIFICE" />
+		<set name="affectRange" val="300" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="PARTY" />
+		<cond msgId="113" addName="1">
+			<player mp="10" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="10" />
+				<add stat="accCombat" val="2" />
+				<mul stat="pDef" val="1.1" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pAtkSpd" val="1.1" />
+				<mul stat="critRate" val="1.1" />
+				<mul stat="critDmg" val="1.1" />
+				<mul stat="mDef" val="1.1" />
+				<mul stat="mAtk" val="1.1" />
+				<mul stat="mAtkSpd" val="1.1" />
+			</effect>
+		</for>
+		<selfEffects>
+			<effect name="CallSkill">
+				<param skillId="5602" skillLevel="1" />
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="710" levels="1" name="Divine Summoner Summon Divine Beast">
+		<!-- Summons the divine beast. Consumes 2 Crystals: A grade - when summoning, and consumes additional 1 Crystal - A grade per hour. -->
+		<set name="hitTime" val="15000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="2" />
+		<set name="itemConsumeId" val="1461" /> <!-- Crystal (A-Grade) -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="117" />
+		<set name="mpInitialConsume" val="28" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
+		<for>
+			<effect name="Summon">
+				<param npcId="14870" />
+				<param consumeItemId="1461" consumeItemCount="1" />
+				<param lifeTime="3600" />
+				<param expMultiplier="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="711" levels="1" name="Divine Summoner Transfer Pain">
+		<!-- Transfers some of the player's damage to the summoner. Consumes MP continuously. -->
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="magicLvl" val="80" />
+		<set name="mpInitialConsume" val="72" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="MpConsumePerLevel" ticks="5">
+				<param power="0.4" />
+				<add stat="transDam" val="50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="712" levels="1" name="Divine Summoner Final Servitor">
+		<!-- Temporarily causes the summoner to be possessed with the spirit of an ancient hero. Consumes 20 Spirit Ore. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="669" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="20" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="57" />
+		<set name="mpInitialConsume" val="15" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="60000" />
+		<set name="targetType" val="SERVITOR" />
+		<for>
+			<effect name="MaxHp">
+				<param power="20" />
+				<param type="PER" />
+				<param heal="true" />
+				<mul stat="critRate" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="critDmg" val="1.2" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="runSpd" val="0.8" />
+				<add stat="accCombat" val="4" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<sub stat="debuffVuln" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="713" levels="1" name="Divine Summoner Servitor Hill">
+		<!-- Restores the servitor's HP by 991 power. -->
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="1" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="127" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="SERVITOR" />
+		<for>
+			<effect name="Heal">
+				<param power="991" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="714" levels="1" name="Sacrifice Summoner">
+		<!-- Increase the party member's critical abilities by sacrificing yourself. Usable only when MP is under 10 percent. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="TRANSFORM_SCRIFICE" />
+		<set name="affectRange" val="300" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="PARTY" />
+		<cond msgId="113" addName="1">
+			<player mp="10" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.2" />
+				<mul stat="critDmg" val="1.2" />
+			</effect>
+		</for>
+		<selfEffects>
+			<effect name="CallSkill">
+				<param skillId="5602" skillLevel="1" />
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="715" levels="4" name="Zaken Energy Drain">
+		<!-- Exhausts enemy's HP/MP and absorbs some of HP. -->
+		<table name="#effectPoints"> -307 -323 -335 -342 </table>
+		<table name="#magicLvl"> 65 70 75 80 </table>
+		<table name="#mpConsume"> 60 65 69 72 </table>
+		<table name="#power"> 121 133 145 160 </table>
+		<set name="affectRange" val="100" />
+		<set name="castRange" val="600" />
+		<set name="coolTime" val="2000" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1100" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="HpDrain">
+				<param power="0.4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="716" levels="4" name="Zaken Hold">
+		<!-- Instantly apply Hold to the enemy. Additional Hold is not available while effects last. -->
+		<table name="#effectPoints"> -307 -323 -335 -342 </table>
+		<table name="#magicLvl"> 65 70 75 80 </table>
+		<table name="#mpConsume"> 60 65 69 72 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalVisualEffect" val="ROOT" />
+		<set name="activateRate" val="95" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="800" />
+		<set name="coolTime" val="2000" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1300" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="HOLD" />
+		<for>
+			<effect name="Root" />
+		</for>
+	</skill>
+	<skill id="717" levels="4" name="Zaken Concentrated Attack">
+		<!-- Focuses on one specific place and attacks. Over-hit is possible. Power 2751. -->
+		<table name="#effectPoints"> -307 -323 -335 -342 </table>
+		<table name="#magicLvl"> 65 70 75 80 </table>
+		<table name="#mpConsume"> 60 65 69 72 </table>
+		<table name="#power"> 2751 3252 3752 4224 </table>
+		<set name="castRange" val="50" />
+		<set name="coolTime" val="900" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="150" />
+		<set name="hitTime" val="2100" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="718" levels="4" name="Zaken Dancing Sword">
+		<!-- Uses Dancing Swords to attack all at once. Over-hit is possible. Power 1651. -->
+		<table name="#effectPoints"> -307 -323 -335 -342 </table>
+		<table name="#magicLvl"> 65 70 75 80 </table>
+		<table name="#mpConsume"> 60 65 69 72 </table>
+		<table name="#power"> 1651 1951 2251 2534 </table>
+		<set name="affectRange" val="100" />
+		<set name="coolTime" val="1500" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="719" levels="1" name="Zaken Vampiric Rage">
+		<!-- Absorbs some HP from damage inflicted on enemies. Excludes damage from skills or ranged attacks. Effect 4. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="604" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="65" />
+		<set name="mpConsume" val="48" />
+		<set name="mpInitialConsume" val="12" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="720" levels="2" name="Anakim Holy Light Burst">
+		<!-- Strong pound attack. Over-hit is possible. Power 3189. -->
+		<table name="#effectPoints"> -335 -342 </table>
+		<table name="#magicLvl"> 75 80 </table>
+		<table name="#mpConsume"> 69 72 </table>
+		<table name="#power"> 3189 3590 </table>
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="721" levels="2" name="Anakim Energy Attack">
+		<!-- Concentrates energy and Fires it. Power 186. -->
+		<table name="#effectPoints"> -335 -342 </table>
+		<table name="#magicLvl"> 75 80 </table>
+		<table name="#mpConsume"> 69 72 </table>
+		<table name="#power"> 186 197 </table>
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="700" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1200" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="722" levels="2" name="Anakim Holy Beam">
+		<!-- Launch beam. Power 186. -->
+		<table name="#effectPoints"> -335 -342 </table>
+		<table name="#magicLvl"> 75 80 </table>
+		<table name="#mpConsume"> 69 72 </table>
+		<table name="#power"> 186 197 </table>
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="700" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1200" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="723" levels="1" name="Anakim Sunshine">
+		<!-- Recover the party member's HP immediately. Power 1340. -->
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="789" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="75" />
+		<set name="mpConsume" val="20" />
+		<set name="mpInitialConsume" val="5" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<for>
+			<effect name="Heal">
+				<param power="1340" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="724" levels="1" name="Anakim Clans">
+		<!-- Cancel all of your debuffs. -->
+		<set name="effectPoint" val="659" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="75" />
+		<set name="mpConsume" val="20" />
+		<set name="mpInitialConsume" val="5" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DispelByCategory">
+				<param slot="debuff" rate="100" max="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="725" levels="2" name="Venom Power Smash">
+		<!-- Unleashes a powerful strike. Over-hit is possible. Power 2626. -->
+		<table name="#magicLvl"> 75 80 </table>
+		<table name="#power"> 2626 2957 </table>
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-342" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="830" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="88" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="726" levels="2" name="Venom Sonic Storm">
+		<!-- Attack the surrounding area by detonating the sword energy. Power 2626. -->
+		<table name="#magicLvl"> 75 80 </table>
+		<table name="#power"> 1576 1774 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="effectPoint" val="-342" />
+		<set name="effectRange" val="1000" />
+		<set name="hitTime" val="1900" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="88" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="727" levels="1" name="Venom Disillusion">
+		<!-- Temporarily increases P. Atk. Effect 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="effectPoint" val="138" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="75" />
+		<set name="mpConsume" val="28" />
+		<set name="mpInitialConsume" val="7" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.08" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="728" levels="1" name="Gordon Beast Attack">
+		<!-- Inflicts a beast attack. Over-hit is possible. Power 2957. -->
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-342" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="830" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="88" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="2957" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="729" levels="1" name="Gordon Sword Stab">
+		<!-- Attacks the enemies in front of the player. Over-hit is possible. Power 2957. -->
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="effectPoint" val="-342" />
+		<set name="effectRange" val="1000" />
+		<set name="hitTime" val="1900" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="88" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="1774" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="730" levels="1" name="Gordon Press">
+		<!-- Instantly decrease Spd./Atk. Spd./Casting Spd. of surrounding enemies. Effect 3. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ATTACK_TIME_UP" />
+		<set name="activateRate" val="60" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-1" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="87" />
+		<set name="mpInitialConsume" val="22" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="runSpd" val="0.77" />
+				<mul stat="pAtkSpd" val="0.77" />
+				<mul stat="mAtkSpd" val="0.77" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="731" levels="1" name="Ranku Dark Explosion">
+		<!-- Attack by detonating the devil's energy. Power 162. -->
+		<set name="affectRange" val="300" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3300" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="112" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="162" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="732" levels="1" name="Ranku Stun Attack">
+		<!-- Causes damage and shock simultaneously. Puts the enemy into shock momentarily. Over-hit is possible. Power 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="-342" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="19" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="power" val="1479" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="733" levels="1" name="Kechi Double Cutter">
+		<!-- Attacks by crossing a sword. Over-hit is possible. Power 2957. -->
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-342" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="830" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="88" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="2957" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="734" levels="1" name="Kechi Air Blade">
+		<!-- Strikes a distant enemy by using sword energy. Critical hit is possible. Over-hit is possible. Power 1812. -->
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-342" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="1900" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="56" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="1812" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="735" levels="1" name="Devil Spinning Weapon">
+		<!-- Attack surrounding enemies by swinging the weapon. Power 162. -->
+		<set name="affectRange" val="200" />
+		<set name="effectPoint" val="-342" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3300" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="87" />
+		<set name="mpInitialConsume" val="22" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="162" />
+		<set name="reuseDelay" val="11000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="736" levels="1" name="Devil Seed">
+		<!-- Instant decreases HP. Serious damage will be caused by the fully grown seed if not canceled. -->
+		<set name="abnormalLvl" val="9" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="DARK_SEED" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="100" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-342" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3300" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="82" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="BLEED" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="351" />
+			</effect>
+		</for>
+		<endEffects>
+			<effect name="CallSkill">
+				<param skillId="5248" skillLevel="9" />
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="737" levels="1" name="Devil Ultimate Defense">
+		<!-- Instantly and drastically increases Resistance to P. Def./M. Def. weakening and buff cancelling attacks. The player cannot move while the effect lasts. Effect 2. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="10" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="ImmobileBuff">
+				<add stat="pDef" val="1800" />
+				<add stat="mDef" val="1350" />
+				<sub stat="cancelVuln" val="80" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="738" levels="3" name="Heretic Heal">
+		<!-- Recover the target's HP immediately. Power 892. -->
+		<table name="#amount"> 892 926 956 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="575" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="5000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="48" />
+		<set name="mpInitialConsume" val="12" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="739" levels="3" name="Heretic Battle Heal">
+		<!-- Quickly restores the target's HP by 743 power. -->
+		<table name="#amount"> 743 772 796 </table>
+		<table name="#effectPoints"> 595 617 637 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 136 142 146 </table>
+		<table name="#mpInitialConsume"> 34 36 37 </table>
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="740" levels="3" name="Heretic Resurrection">
+		<!-- Resurrects a corpse. Regenerate additional 50 percent of the experience value. -->
+		<table name="#effectPoints"> 595 617 637 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 182 189 195 </table>
+		<table name="#mpInitialConsume"> 46 48 49 </table>
+		<table name="#power"> 50 55 60 </table>
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="PC_BODY" />
+		<cond>
+			<player canResurrect="true" />
+		</cond>
+		<for>
+			<effect name="Resurrection">
+				<param power="#power" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="741" levels="3" name="Heretic Heal Side Effect">
+		<!-- Cause side effects of the heal. Instantly make the enemy addicted. Effect 8. -->
+		<table name="#effectPoints"> -323 -331 -337 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 52 54 56 </table>
+		<table name="#mpInitialConsume"> 13 14 14 </table>
+		<set name="abnormalLvl" val="8" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="70" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="POISON" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="52" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="742" levels="3" name="Vale Master Bursting Flame">
+		<!-- Attack the enemy by unleashing dark flames. Power 112. -->
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 68 70 73 </table>
+		<table name="#mpInitialConsume"> 17 18 19 </table>
+		<table name="#power"> 112 117 122 </table>
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-92" />
+		<set name="effectRange" val="1100" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="743" levels="3" name="Vale Master Dark Explosion">
+		<!-- Detonate the soul to attack surrounding enemies. Power 56. -->
+		<table name="#effectPoints"> -323 -331 -337 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 68 70 73 </table>
+		<table name="#mpInitialConsume"> 17 18 19 </table>
+		<table name="#power"> 56 59 61 </table>
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="500" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1000" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1800" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="744" levels="3" name="Vale Master Dark Flare">
+		<!-- Attack a large number of enemies by creating huge explosion. Power 112. -->
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 68 70 73 </table>
+		<table name="#mpInitialConsume"> 17 18 19 </table>
+		<table name="#power"> 112 117 122 </table>
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="150" />
+		<set name="effectPoint" val="-275" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1800" />
+		<set name="hitTime" val="1800" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="745" levels="3" name="Vale Master Dark Cure">
+		<!-- Cancel all the debuffs of the target. -->
+		<table name="#effectPoints"> 635 650 662 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 21 22 23 </table>
+		<table name="#mpInitialConsume"> 6 6 6 </table>
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_etc" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="DispelByCategory">
+				<param slot="debuff" rate="100" max="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="746" levels="3" name="Saber Tooth Tiger Bite">
+		<!-- Bites ferociously. Over-hit is possible. Power 1789. -->
+		<table name="#effectPoints"> -648 -660 -671 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#power"> 1789 1955 2117 </table>
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="830" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="88" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="747" levels="3" name="Saber Tooth Tiger Fear">
+		<!-- Inflicts damage on surrounding enemies and causes them to flee. Over-hit is possible. Power 895. -->
+		<table name="#dmg"> 895 978 1059 </table>
+		<table name="#effectPoints"> -323 -331 -337 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 150 156 160 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalVisualEffect" val="TURN_FLEE" />
+		<set name="activateRate" val="60" />
+		<set name="affectLimit" val="6-12" />
+		<set name="affectRange" val="150" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#dmg" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="DERANGEMENT" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Fear" />
+		</for>
+	</skill>
+	<skill id="748" levels="1" name="Saber Tooth Tiger Sprint">
+		<!-- Temporarily increases your Spd. Effect 2. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="effectPoint" val="495" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="70" />
+		<set name="mpConsume" val="19" />
+		<set name="mpInitialConsume" val="5" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="749" levels="3" name="Oel Mahum Stun Attack">
+		<!-- Cause damage and shock together at the same time. Make the enemies shocked momentarily. Over-hit is possible. Power 895. -->
+		<table name="#dmg"> 895 978 1059 </table>
+		<table name="#effectPoints"> -323 -331 -337 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 68 71 73 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#dmg" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="750" levels="1" name="Oel Mahum Ultimate Defense">
+		<!-- Instantly and drastically increases Resistance to P. Def./M. Def., buff cancel attacks. The player cannot move while the effect lasts. Effect 2. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="magicLvl" val="70" />
+		<set name="mpConsume" val="10" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="ImmobileBuff">
+				<add stat="pDef" val="1800" />
+				<add stat="mDef" val="1350" />
+				<sub stat="cancelVuln" val="80" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="751" levels="3" name="Oel Mahum Arm Flourish">
+		<!-- Flourish weapons to attack surrounding enemy. Over-hit is possible. Power 1073. -->
+		<table name="#dmg"> 1073 1173 1271 </table>
+		<table name="#effectPoints"> -323 -331 -337 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 71 74 77 </table>
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="80" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="400" />
+		<set name="fanRange" val="0,0,80,150" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#dmg" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="752" levels="3" name="Doll Blader Sting">
+		<!-- Causes injury by deadly attacks. Instantly causes the enemies to bleed. Over-hit is possible. Power 1193. Effect 3. -->
+		<table name="#effectPoints"> -323 -331 -337 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 71 74 77 </table>
+		<table name="#power"> 1193 1303 1412 </table>
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="20" />
+		<set name="abnormalType" val="BLEEDING" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="50" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill_transform_debuff" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="BLEED" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="134" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="753" levels="3" name="Doll Blader Throwing Knife">
+		<!-- Throw a dagger to attack enemy in the distance. Over-hit is possible. Power 4769. -->
+		<table name="#effectPoints"> -323 -331 -337 </table>
+		<table name="#magicLvl"> 70 73 76 </table>
+		<table name="#mpConsume"> 142 148 153 </table>
+		<table name="#power"> 4769 5211 5645 </table>
+		<set name="castRange" val="700" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1200" />
+		<set name="hitTime" val="3200" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="754" levels="1" name="Doll Blader Clairvoyance">
+		<!-- Temporarily increase the probability of Critical Damage. Effect 3. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="635" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill_transform_buff" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="70" />
+		<set name="mpConsume" val="52" />
+		<set name="mpInitialConsume" val="13" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="755" levels="1" name="Protection of Rune">
+		<!-- M. Def. is increased by 15%, and when damage is incurred, additional M. Def. and Resistance to attributes are increased instantly depending on the probability. -->
+		<set name="icon" val="icon.skill0755" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mDef" val="1.15" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="300" />
+				<param chance="20" />
+				<param skillId="5556" skillLevel="1" /> <!-- Protection Power -->
+				<param targetType="SELF" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="756" levels="1" name="Protection of Elemental">
+		<!-- Resistance to elemental attributes is increased by 20, and when damage is incurred, M. Def. and Resistance to elemental attributes are additionally increased instantly depending on the probability. -->
+		<set name="icon" val="icon.skill0756" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="fireRes" val="20" />
+				<add stat="waterRes" val="20" />
+				<add stat="windRes" val="20" />
+				<add stat="earthRes" val="20" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="100" />
+				<param chance="20" />
+				<param skillId="5556" skillLevel="1" /> <!-- Protection Power -->
+				<param targetType="SELF" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="757" levels="1" name="Protection of Alignment">
+		<!-- Resistance to tendency attributes is increased by 20, and when damage is incurred, M. Def. and Resistance to elemental attributes are additionally increased instantly depending on the probability. -->
+		<set name="icon" val="icon.skill0757" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="holyRes" val="20" />
+				<add stat="darkRes" val="20" />
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="100" />
+				<param chance="20" />
+				<param skillId="5556" skillLevel="1" /> <!-- Protection Power -->
+				<param targetType="SELF" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="758" levels="1" name="Fighter's Will">
+		<!-- When using a short-range weapon, increases P. Atk. by 100 and Atk. Spd. by 10%. When attacking, has a chance to increases physical skills' Power and Critical Rate. -->
+		<set name="icon" val="icon.skill0758" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<for>
+			<effect name="Buff">
+				<add stat="pAtk" val="100">
+					<using kind="SWORD,BLUNT,DUAL,DUALFIST,DAGGER,DUALDAGGER,POLE,ANCIENTSWORD,RAPIER" />
+				</add>
+				<mul stat="pAtkSpd" val="1.1">
+					<using kind="SWORD,BLUNT,DUAL,DUALFIST,DAGGER,DUALDAGGER,POLE,ANCIENTSWORD,RAPIER" />
+				</mul>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param isCritical="false" />
+				<param minDamage="1" chance="3" />
+				<param skillId="5559" skillLevel="1" /> <!-- Physical Pose -->
+				<param targetType="SELF" />
+				<param allowWeapons="SWORD,BLUNT,DUAL,DUALFIST,DAGGER,DUALDAGGER,POLE,ANCIENTSWORD,RAPIER" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="759" levels="1" name="Archer's Will">
+		<!-- When a bow/crossbow is used, Accuracy increases by 8 and range increases by 50. When attacking, the physical skill's power and Critical Rate are increased at a fixed rate. -->
+		<set name="icon" val="icon.skill0759" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="8">
+					<using kind="CROSSBOW,BOW" />
+				</add>
+				<add stat="pAtkRange" val="50">
+					<using kind="CROSSBOW,BOW" />
+				</add>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param isCritical="false" />
+				<param minDamage="1" chance="3" />
+				<param skillId="5559" skillLevel="1" /> <!-- Physical Pose -->
+				<param targetType="SELF" />
+				<param allowWeapons="CROSSBOW,BOW" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="760" levels="1" name="Anti Magic Armor">
+		<!-- Increases M. Def. by 5000 for 30 seconds. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalVisualEffect" val="ULTIMATE_DEFENCE" />
+		<set name="effectPoint" val="679" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0760" />
+		<set name="magicLvl" val="81" />
+		<set name="mpConsume" val="21" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="mDef" val="5000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="761" levels="1" name="Seed of Revenge">
+		<!-- One sows a seed of wrath himself. There is a chance that the Seed of Wrath will grow when being attacked. P. Atk. increases with growth. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="SEED_OF_KNIGHT" />
+		<set name="effectPoint" val="679" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0761" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="29" />
+		<set name="mpInitialConsume" val="8" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="1" />
+				<param chance="8" />
+				<param skillId="5561" skillLevel="1" /> <!-- Seed of Revenge -->
+				<param targetType="SELF" />
+				<add stat="pAtk" val="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="762" levels="1" name="Insane Crusher">
+		<!-- Unleashes a powerful strike with 8409 Power added to P. Atk. and Dark Curse to surrounding enemies when rage reaches its peak. Cancels at least one of the enemy's buffs, and drastically decreases Max CP, Resistance to de-buff attacks, and effectiveness of receiving HP recovery. Requires a sword or blunt weapon. Ignores shield defense. Critical and Over-hit are possible. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="TOUCH_OF_DEATH" />
+		<set name="activateRate" val="70" />
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="300" />
+		<set name="baseCritRate" val="50" />
+		<set name="basicProperty" val="CON" />
+		<set name="coolTime" val="700" />
+		<set name="effectPoint" val="-1357" />
+		<set name="hitTime" val="1300" />
+		<set name="icon" val="icon.skill0762" />
+		<set name="ignoreShld" val="true" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="power" val="8409" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="DEATH" />
+		<cond msgId="113" addName="1">
+			<and>
+				<using kind="SWORD,BLUNT" />
+				<player active_effect_id_lvl="5561,3" />
+			</and>
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Debuff">
+				<mul stat="maxCp" val="0.1" />
+				<add stat="debuffVuln" val="30" />
+				<mul stat="healEffect" val="0.7" />
+			</effect>
+			<effect name="DispelByCategory">
+				<param slot="buff" rate="25" max="5" />
+			</effect>
+			<effect name="CpDamPercent">
+				<param power="90" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="763" levels="1" name="Hell Scream">
+		<!-- Roars with the voice of hell. For 8 seconds, decreases the nearby enemies' P. Def. by 30%, M. Def. by 30%, Speed by 30%. Inflicts fear and causes them to flee. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="8" />
+		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalVisualEffect" val="TURN_FLEE" />
+		<set name="activateRate" val="90" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-6781" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0763" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="87" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="75000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="DERANGEMENT" />
+		<for>
+			<effect name="Fear">
+				<mul stat="mDef" val="0.7" />
+				<mul stat="pDef" val="0.7" />
+				<mul stat="runSpd" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="764" levels="1" name="Song of Wind Storm" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 2 minutes, increases a party member's Resistance to bows by 10 and Resistance to crossbows by 5. Increases the additional MP consumption when singing while sing/dance effect lasts. -->
+		<table name="#ench1AbnormalTimes"> 128 136 144 152 160 168 176 184 192 200 208 216 224 232 240 </table>
+		<table name="#ench1EffectPoints"> 666 669 673 676 679 681 684 687 689 692 694 696 698 700 702 </table>
+		<table name="#ench2EffectPoints"> 704 706 707 709 710 711 713 714 715 1 1 1 1 1 1 </table>
+		<table name="#ench2MpConsume"> 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="SONG_OF_WINDSTORM" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="662" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0764" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="76" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="effectPoint" val="#ench1EffectPoints" />
+		<enchant2 name="effectPoint" val="#ench2EffectPoints" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BOW="10" />
+				<param CROSSBOW="5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="765" levels="1" name="Dance of Blade Storm" enchantGroup1="5" enchantGroup2="5">
+		<!-- For 15 seconds, increases a party member's Resistance to bows by 45 and Resistance to crossbows by 25. Decreases M. Atk. by 99%. Additionally increases MP consumption when singing while song/dance is in effect. Requires a dualsword. -->
+		<table name="#ench1AbnormalTimes"> 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 </table>
+		<table name="#ench1EffectPoints"> 666 669 673 676 679 681 684 687 689 692 694 696 698 700 702 </table>
+		<table name="#ench2EffectPoints"> 704 706 707 709 710 711 713 714 715 1 1 1 1 1 1 </table>
+		<table name="#ench2MpConsume"> 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="DANCE_OF_BLADESTORM" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="662" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill0765" />
+		<set name="isMagic" val="3" /> <!-- Dance Skill -->
+		<set name="magicLvl" val="76" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="150000" />
+		<set name="targetType" val="PARTY" />
+		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
+		<enchant1 name="effectPoint" val="#ench1EffectPoints" />
+		<enchant2 name="effectPoint" val="#ench2EffectPoints" />
+		<enchant2 name="mpConsume" val="#ench2MpConsume" />
+		<cond msgId="113" addName="1">
+			<using kind="DUAL" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="0.01" />
+			</effect>
+			<effect name="DefenceTrait">
+				<param BOW="45" />
+				<param CROSSBOW="25" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="766" levels="1" name="Sixth Sense">
+		<!-- When stamina is at its limit, sensation reaches its peak to increase Evasion by 15 when HP is below 30%. -->
+		<set name="icon" val="icon.skill0766" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="rEvas" val="15">
+					<player hp="30" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="767" levels="1" name="Expose Weak Point">
+		<!-- Gives flesh and takes a bone. Decreases the enemy's P. Def. by temporarily exposing his weakness when receiving the enemy's attack. Increases the critical hit rate of general attacks. -->
+		<set name="icon" val="icon.skill0767" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="1" />
+				<param chance="5" />
+				<param skillId="5565" skillLevel="1" /> <!-- Expose Weak Point -->
+				<param targetType="ONE" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="768" levels="1" name="Exciting Adventure">
+		<!-- Feels extreme excitement during a melee. For 30 seconds, increases Speed by 20, Evasion by 15, vital point attack rate by 30%, physical skill Evasion Rate by 40%, and Resistance to buff canceling attacks by 90. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="AVOID_UP_SPECIAL" />
+		<set name="abnormalVisualEffect" val="ULTIMATE_DEFENCE" />
+		<set name="effectPoint" val="679" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0768" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="20" />
+				<add stat="rEvas" val="15" />
+				<mul stat="blowRate" val="1.3" />
+				<sub stat="cancelVuln" val="90" />
+				<add stat="pSkillEvas" val="40" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="769" levels="1" name="Wind Riding">
+		<!-- Storms the battlefield riding the Wind. For 30 seconds, increases Speed by 50, Evasion by 20, vital point attack rate by 20%, physical skill Evasion Rate by 75%, and Resistance to buff canceling attacks by 80. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="AVOID_UP_SPECIAL" />
+		<set name="abnormalVisualEffect" val="ULTIMATE_DEFENCE" />
+		<set name="effectPoint" val="679" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0769" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="50" />
+				<add stat="rEvas" val="20" />
+				<mul stat="blowRate" val="1.2" />
+				<sub stat="cancelVuln" val="80" />
+				<add stat="pSkillEvas" val="75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="770" levels="1" name="Ghost Walking">
+		<!-- Infiltrates the battlefield like a ghost. For 30 seconds, increases Speed by 33, Evasion by 15, vital point attack rate by 40%, physical skill Evasion Rate by 60%, and Resistance to buff canceling attacks by 90. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="AVOID_UP_SPECIAL" />
+		<set name="abnormalVisualEffect" val="ULTIMATE_DEFENCE" />
+		<set name="effectPoint" val="679" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0770" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="36" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+				<add stat="rEvas" val="15" />
+				<mul stat="blowRate" val="1.4" />
+				<sub stat="cancelVuln" val="90" />
+				<add stat="pSkillEvas" val="60" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="771" levels="1" name="Flame Hawk">
+		<!-- Shoots an arrow filled with the energy of the phoenix to attack the enemies with 8049 Power added to P. Atk. For 10 seconds, inflicts 300 fire damage every second. Requires a bow. Over-hit and Critical are possible. -->
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="900" />
+		<set name="baseCritRate" val="15" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="1000" />
+		<set name="effectPoint" val="-686" />
+		<set name="effectRange" val="1400" />
+		<set name="fanRange" val="0,0,900,40" />
+		<set name="hitTime" val="3500" />
+		<set name="icon" val="icon.skill0771" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="160" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="8049" />
+		<set name="reuseDelay" val="75000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<cond msgId="113" addName="1">
+			<using kind="BOW" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="CallSkill">
+				<param skillId="23298" skillLevel="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="772" levels="1" name="Arrow Rain">
+		<!-- Causes arrows to rain down from the sky to attack near the enemy with 7043 Power added to P. Atk. For 10 seconds, inflicts 300 wind damage every second. Requires a bow. Over-hit and Critical are possible. -->
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="200" />
+		<set name="baseCritRate" val="15" />
+		<set name="castRange" val="600" />
+		<set name="coolTime" val="1000" />
+		<set name="effectPoint" val="-686" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill0772" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="160" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="7043" />
+		<set name="reuseDelay" val="75000" />
+		<set name="targetType" val="AREA" />
+		<cond msgId="113" addName="1">
+			<using kind="BOW" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="CallSkill">
+				<param skillId="23299" skillLevel="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="773" levels="1" name="Ghost Piercing">
+		<!-- Shoots an arrow mixed with the energy of a ghost to attack the enemies in front with 8452 Power added to P. Atk. For 10 seconds, inflicts 300 dark damage every second. Requires a bow. Over-hit and Critical are possible. -->
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="900" />
+		<set name="baseCritRate" val="15" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="1000" />
+		<set name="effectPoint" val="-686" />
+		<set name="effectRange" val="1400" />
+		<set name="fanRange" val="0,0,900,100" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill0773" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="160" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="8452" />
+		<set name="reuseDelay" val="75000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<cond msgId="113" addName="1">
+			<using kind="BOW" />
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="CallSkill">
+				<param skillId="23300" skillLevel="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="774" levels="1" name="Dread Pool">
+		<!-- Fear spreads around the area. Decreases nearby enemies's Speed by 33%, P. Def. by 33%, and Evasion by 10. Inflicts fear and causes them to flee for 8 seconds. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="8" />
+		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalVisualEffect" val="TURN_FLEE" />
+		<set name="activateRate" val="80" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-655" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0774" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="81" />
+		<set name="mpConsume" val="87" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="75000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="DERANGEMENT" />
+		<for>
+			<effect name="Fear">
+				<mul stat="runSpd" val="0.67" />
+				<mul stat="pDef" val="0.67" />
+				<sub stat="rEvas" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="775" levels="1" name="Weapon Blockade">
+		<!-- Cancels the opponent's weapon with a dazzling movement for 5 seconds. Need to recharge 2nd stage of Sword Energy. Requires a dualsword. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="5" />
+		<set name="abnormalType" val="DISARM" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="70" />
+		<set name="basicProperty" val="STR" />
+		<set name="castRange" val="40" />
+		<set name="chargeConsume" val="2" />
+		<set name="effectPoint" val="-679" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill0775" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="81" />
+		<set name="mpConsume" val="58" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="113" addName="1">
+			<and>
+				<using kind="DUAL" />
+				<player Charges="2" /> <!-- Need to recharge 2nd stage of Sword Energy. -->
+			</and>
+		</cond>
+		<for>
+			<effect name="Disarm">
+				<mul stat="pAtk" val="0.6" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="776" levels="1" name="Force of Destruction">
+		<!-- Attacks the enemy with 4500 Power added to P. Atk. and penetrates the target with destructive energy. Chi Energy Stage 2 Recharge needed. Requires a hand-to-hand combat weapon. Over-hit and Critical are possible. -->
+		<set name="abnormalLvl" val="10" />
+		<set name="abnormalTime" val="20" />
+		<set name="abnormalType" val="FORCE_OF_DESTRUCTION" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="80" />
+		<set name="baseCritRate" val="20" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="chargeConsume" val="2" />
+		<set name="effectPoint" val="-679" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill0776" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="37" />
+		<set name="operateType" val="A2" />
+		<set name="overHit" val="true" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="113" addName="1">
+			<and>
+				<using kind="DUALFIST" />
+				<player Charges="2" /> <!-- Chi Energy Stage 2 Recharge needed. -->
+			</and>
+		</cond>
+		<for>
+			<effect name="EnergyAttack">
+				<param power="4500" />
+				<param criticalChance="20" />
+			</effect>
+			<effect name="DamOverTime" ticks="1">
+				<param power="80" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="777" levels="1" name="Demolition Impact">
+		<!-- Unleashes a shock of destruction to attack nearby enemies with 7475 Power added to P. Atk. Requires a two-handed sword/ blunt weapon. Over-hit and Critical are possible. -->
+		<set name="affectRange" val="500" />
+		<set name="baseCritRate" val="15" />
+		<set name="castRange" val="150" />
+		<set name="effectPoint" val="-686" />
+		<set name="effectRange" val="650" />
+		<set name="fanRange" val="0,0,500,60" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill0777" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="160" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="7475" />
+		<set name="reuseDelay" val="75000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<cond msgId="113" addName="1">
+			<and>
+				<using kind="SWORD,BLUNT" />
+				<using slot="lrhand" />
+			</and>
+		</cond>
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="778" levels="1" name="Golem Armor">
+		<!-- Transforms into a Golem with increased battle abilities. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0778" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="mpConsume" val="44" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="259" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="779" levels="1" name="Summon Smart Cubic">
+		<!-- Summons Smart Cubic. Cancels all the bad abnormal conditions which were cast on the master, and uses useful skills additionally. Consumes 38 Spirit Ore when summoning. -->
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill0779" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="38" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="59" />
+		<set name="mpInitialConsume" val="14" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonCubic">
+				<param cubicId="10" cubicDelay="10" cubicDuration="900" cubicMaxCount="50" cubicSkillChance="30" cubicPower="2106" />
+				<param cubicSkill1Chance="33" cubicSkill2Chance="33" cubicSkill3Chance="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="780" levels="1" name="Summon Smart Cubic">
+		<!-- Summons Smart Cubic. Cancels all the bad abnormal conditions which were cast on the master, and uses useful skills additionally. Consumes 38 Spirit Ore when summoning. -->
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill0779" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="38" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="59" />
+		<set name="mpInitialConsume" val="14" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonCubic">
+				<param cubicId="11" cubicDelay="10" cubicDuration="900" cubicMaxCount="50" cubicSkillChance="30" cubicPower="2106" />
+				<param cubicSkill1Chance="33" cubicSkill2Chance="33" cubicSkill3Chance="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="781" levels="1" name="Summon Smart Cubic">
+		<!-- Summons Smart Cubic. Cancels all the bad abnormal conditions which were cast on the master, and uses useful skills additionally. Consumes 38 Spirit Ore when summoning. -->
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill0779" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="38" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="59" />
+		<set name="mpInitialConsume" val="14" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonCubic">
+				<param cubicId="12" cubicDelay="10" cubicDuration="900" cubicMaxCount="50" cubicSkillChance="30" cubicPower="2106" />
+				<param cubicSkill1Chance="33" cubicSkill2Chance="33" cubicSkill3Chance="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="782" levels="1" name="Summon Smart Cubic">
+		<!-- Summons Smart Cubic. Cancels all the bad abnormal conditions which were cast on the master, and uses useful skills additionally. Consumes 38 Spirit Ore when summoning. -->
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill0779" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="38" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="59" />
+		<set name="mpInitialConsume" val="14" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonCubic">
+				<param cubicId="13" cubicDelay="10" cubicDuration="900" cubicMaxCount="50" cubicSkillChance="30" cubicPower="2106" />
+				<param cubicSkill1Chance="33" cubicSkill2Chance="33" cubicSkill3Chance="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="783" levels="1" name="Summon Smart Cubic">
+		<!-- Summons Smart Cubic. Cancels all the bad abnormal conditions which were cast on the master, and uses useful skills additionally. Consumes 38 Spirit Ore when summoning. -->
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill0779" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="38" />
+		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="59" />
+		<set name="mpInitialConsume" val="14" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonCubic">
+				<param cubicId="14" cubicDelay="10" cubicDuration="900" cubicMaxCount="50" cubicSkillChance="30" cubicPower="2106" />
+				<param cubicSkill1Chance="33" cubicSkill2Chance="33" cubicSkill3Chance="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="784" levels="1" name="Spirit of Phoenix">
+		<!-- Share Phoenix's spirit and yours. There is a chance that the Spirit of Phoenix will expand when being attacked. Additional effects appear as it expands. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="SEED_OF_KNIGHT" />
+		<set name="effectPoint" val="138" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0784" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="29" />
+		<set name="mpInitialConsume" val="8" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="1" />
+				<param chance="20" />
+				<param skillId="5562" skillLevel="1" /> <!-- Spirit of Phoenix -->
+				<param targetType="SELF" />
+				<add stat="pDef" val="200" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="785" levels="1" name="Flame Icon">
+		<!-- Receives the will of the phoenix to drastically increase the fighting ability of party members. For 1 minute, increases Resistance to de-buff attacks by 40%, P. Def. by 50%, M. Def. by 50%, Atk. Spd. by 30%, Accuracy by 6, Speed by 30, and Resistance to buff canceling attacks by 40%. Decreases the effectiveness of received recovery magic by 80% . When a sword is equipped, increases Critical Rate by 100. When a blunt is equipped, increases Critical Damage by 100%. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="POSSESSION_SPECIAL" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="835" />
+		<set name="hitTime" val="1800" />
+		<set name="hpConsume" val="1253" />
+		<set name="icon" val="icon.skill0785" />
+		<set name="magicLvl" val="83" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="150000" />
+		<set name="targetType" val="PARTY" />
+		<cond msgId="113" addName="1">
+			<player active_effect_id_lvl="5562,3" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<sub stat="debuffVuln" val="40" />
+				<mul stat="pDef" val="1.5" />
+				<mul stat="mDef" val="1.5" />
+				<add stat="accCombat" val="6" />
+				<add stat="runSpd" val="30" />
+				<mul stat="pAtkSpd" val="1.3" />
+				<add stat="critRate" val="100">
+					<using kind="SWORD" />
+				</add>
+				<mul stat="critDmg" val="2">
+					<using kind="BLUNT" />
+				</mul>
+				<sub stat="cancelVuln" val="40" />
+				<mul stat="healEffect" val="0.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="786" levels="1" name="Eva's Will">
+		<!-- Show Will of Eva through yourself. There is a chance that the Will of Eva will expand when being attacked. Additional effects appear with growth. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="SEED_OF_KNIGHT" />
+		<set name="effectPoint" val="138" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0786" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="29" />
+		<set name="mpInitialConsume" val="8" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="1" />
+				<param chance="20" />
+				<param skillId="5563" skillLevel="1" /> <!-- Eva's Will -->
+				<param targetType="SELF" />
+				<add stat="mDef" val="200" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="787" levels="1" name="Touch of Eva">
+		<!-- Restores HP of party members by 50%. For 1 minute, increases Resistance to buff cancel attacks by 100% and the power of received HP recovery magic by 30%. Restores 50 HP every second. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="TOUCH_OF_LIFE" />
+		<set name="affectRange" val="1000" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="835" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1800" />
+		<set name="hpConsume" val="1253" />
+		<set name="icon" val="icon.skill0787" />
+		<set name="magicLvl" val="83" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="150000" />
+		<set name="targetType" val="PARTY" />
+		<cond msgId="113" addName="1">
+			<player active_effect_id_lvl="5563,3" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<sub stat="cancelVuln" val="100" />
+				<sub stat="debuffVuln" val="30" />
+				<mul stat="healEffect" val="1.3" />
+			</effect>
+			<effect name="HealOverTime" ticks="5">
+				<param power="50" />
+			</effect>
+			<effect name="HealPercent">
+				<param power="50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="788" levels="1" name="Pain of Shilen">
+		<!-- Shilen's pain becomes your own. Shilen's suffering wracks your body, having a chance to increase when you are being attacked. Additional effects appear with each increase. When level 3 is achieved, you can then use the Spirit of Shilen. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="SEED_OF_KNIGHT" />
+		<set name="effectPoint" val="138" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0788" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="29" />
+		<set name="mpInitialConsume" val="8" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="1" />
+				<param chance="20" />
+				<param skillId="5564" skillLevel="1" /> <!-- Pain of Shillien -->
+				<param targetType="SELF" />
+				<mul stat="critDmg" val="1.1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="789" levels="1" name="Spirit of Shilen">
+		<!-- Receives the will of Shilen to drastically increase the fighting ability of party members. For 1 minute, increases P. Atk. by 30%, Speed by 30, Atk. Spd. by 30%, Critical Rate when a sword is equipped by 100, and Critical Damage when a blunt weapon is equipped by 100%. Recovers as HP 40% of standard melee damage inflicted on the enemy. Decreases the power of received HP recovery magic by 80%. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="POSSESSION_SPECIAL" />
+		<set name="affectRange" val="1000" />
+		<set name="effectPoint" val="835" />
+		<set name="hitTime" val="1800" />
+		<set name="hpConsume" val="1253" />
+		<set name="icon" val="icon.skill0789" />
+		<set name="magicLvl" val="83" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="150000" />
+		<set name="targetType" val="PARTY" />
+		<cond msgId="113" addName="1">
+			<player active_effect_id_lvl="5564,3" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.3" />
+				<mul stat="mAtk" val="1.3" />
+				<add stat="runSpd" val="30" />
+				<mul stat="pAtkSpd" val="1.3" />
+				<add stat="critRate" val="100">
+					<using kind="SWORD" />
+				</add>
+				<mul stat="critDmg" val="2">
+					<using kind="BLUNT" />
+				</mul>
+				<add stat="absorbDam" val="40" /> <!-- Recovers as HP 40% of general close rate physical damage inflicted on the enemy -->
+				<mul stat="healEffect" val="0.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="790" levels="1" name="Wild Shot">
+		<!-- Fires bolt at random to attack enemies in front with 7475 Power added to P. Atk. Requires a crossbow. Over-hit and Critical are possible. Increases Power upon the consumption of up to 5 souls. -->
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="900" />
+		<set name="baseCritRate" val="15" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="1000" />
+		<set name="effectPoint" val="-1" />
+		<set name="effectRange" val="1400" />
+		<set name="fanRange" val="0,0,900,40" />
+		<set name="hitTime" val="3500" />
+		<set name="icon" val="icon.skill0790" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="120" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="7475" />
+		<set name="reuseDelay" val="75000" />
+		<set name="soulMaxConsumeCount" val="5" />
+		<set name="targetType" val="FRONT_AREA" />
+		<cond msgId="113" addName="1">
+			<using kind="CROSSBOW" />
+		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" />
+		</for>
+	</skill>
+	<skill id="791" levels="1" name="Lightning Shock">
+		<!-- Sends an electric current to attack nearby enemies with 69 Power added to M. Atk. Makes the enemy's body rigid for 5 seconds, then paralyzed for 5 seconds. Increases Power upon the consumption of up to 5 souls. -->
+		<set name="abnormalTime" val="5" />
+		<set name="activateRate" val="50" />
+		<set name="affectLimit" val="6-12" />
+		<set name="affectRange" val="150" />
+		<set name="basicProperty" val="MEN" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="-1" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill0791" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="83" />
+		<set name="mpConsume" val="52" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="69" />
+		<set name="reuseDelay" val="5000" />
+		<set name="soulMaxConsumeCount" val="5" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalSoulAttack" />
+			<effect name="Debuff">
+				<mul stat="pAtkSpd" val="0.5" />
+				<mul stat="runSpd" val="0.5" />
+				<mul stat="mAtkSpd" val="0.5" />
+			</effect>
+		</for>
+		<endEffects>
+			<effect name="CallSkill">
+				<param skillId="6092" skillLevel="1" />
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="792" levels="1" name="Betrayal Mark">
+		<!-- Stamps the Mark of Betrayal on the enemy. When attacking the enemy that has the mark, inflicts damage to the enemy's party with a fixed rate. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="BETRAYAL_MARK" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="70" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-1" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill0792" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="29" />
+		<set name="mpInitialConsume" val="8" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="11000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
+				<param minDamage="1" />
+				<param chance="10" />
+				<param skillId="5600" skillLevel="1" /> <!-- Betrayal Mark -->
+				<param targetType="PARTY" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="793" levels="1" name="Rush Impact" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6" enchantGroup5="6" enchantGroup6="6" enchantGroup7="6" enchantGroup8="6">
+		<!-- Rushes forward to attack the enemies in front with 4040 Power added to P. Atk. and inflicts Shock for 9 seconds. Requires an Ancient Sword weapon to be equipped. Increases Power upon the consumption of up to 5 souls. -->
+		<table name="#ench1Power"> 4071 4102 4133 4164 4195 4226 4257 4289 4320 4351 4382 4413 4444 4475 4507 </table>
+		<table name="#ench2Cost"> 80 78 76 74 72 70 68 66 64 62 59 57 55 53 51 </table>
+		<table name="#ench3ActivateRates"> 61 62 64 65 66 68 69 70 72 73 74 76 77 78 80 </table>
+		<table name="#ench8Duel"> 4104 4168 4232 4297 4361 4425 4490 4554 4618 4683 4747 4811 4875 4940 5004 </table>
+		<table name="#enchElementAttack"> 4 7 10 14 17 20 24 27 30 34 37 40 43 47 50 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="60" />
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="600" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="600" />
+		<set name="coolTime" val="200" />
+		<set name="effectPoint" val="-669" />
+		<set name="effectRange" val="800" />
+		<set name="fanRange" val="0,0,600,60" />
+		<set name="flyType" val="CHARGE" />
+		<set name="hitTime" val="800" />
+		<set name="icon" val="icon.skill0793" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="78" />
+		<set name="mpInitialConsume" val="83" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="DA2" />
+		<set name="power" val="4040" />
+		<set name="soulMaxConsumeCount" val="5" />
+		<set name="targetType" val="FRONT_AREA" />
+		<set name="trait" val="SHOCK" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant1 name="power" val="#ench1Power" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="mpInitialConsume" val="#ench2Cost" />
+		<enchant3 name="activateRate" val="#ench3ActivateRates" />
+		<enchant3 name="magicLvl" val="#enchMagicLvl" />
+		<enchant4 name="element" val="0" /> <!-- Fire -->
+		<enchant4 name="elementPower" val="#enchElementAttack" />
+		<enchant4 name="magicLvl" val="#enchMagicLvl" />
+		<enchant5 name="element" val="1" /> <!-- Water -->
+		<enchant5 name="elementPower" val="#enchElementAttack" />
+		<enchant5 name="magicLvl" val="#enchMagicLvl" />
+		<enchant6 name="element" val="2" /> <!-- Wind -->
+		<enchant6 name="elementPower" val="#enchElementAttack" />
+		<enchant6 name="magicLvl" val="#enchMagicLvl" />
+		<enchant7 name="element" val="3" /> <!-- Earth -->
+		<enchant7 name="elementPower" val="#enchElementAttack" />
+		<enchant7 name="magicLvl" val="#enchMagicLvl" />
+		<enchant8 name="magicLvl" val="#enchMagicLvl" />
+		<enchant8 name="pvpPower" val="#ench8Duel" />
+		<cond msgId="113" addName="1">
+			<and>
+				<using kind="ANCIENTSWORD" />
+				<target mindistance="200" />
+			</and>
+		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" />
+			<effect name="Stun" />
+		</for>
+		<enchant3for>
+			<effect name="PhysicalSoulAttack" />
+			<effect name="Stun" />
+		</enchant3for>
+	</skill>
+	<skill id="794" levels="1" name="Mass Disarm" enchantGroup1="6" enchantGroup2="6">
+		<!-- Disarms nearby enemies for 5 seconds. -->
+		<table name="#ench1ActivateRates"> 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 </table>
+		<table name="#ench2Reuse"> 145000 140000 135000 130000 125000 120000 115000 110000 105000 100000 95000 90000 85000 80000 75000 </table>
+		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="5" />
+		<set name="abnormalType" val="DISARM" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="70" />
+		<set name="affectLimit" val="6-12" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="STR" />
+		<set name="effectPoint" val="-673" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill0794" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="79" />
+		<set name="mpConsume" val="58" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="150000" />
+		<set name="targetType" val="AURA" />
+		<enchant1 name="activateRate" val="#ench1ActivateRates" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="magicLvl" val="#enchMagicLvl" />
+		<enchant2 name="reuseDelay" val="#ench2Reuse" />
+		<for>
+			<effect name="Disarm">
+				<mul stat="pAtk" val="0.6" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="795" levels="1" name="Divine Knight Brandish">
+		<!-- Attacks the enemies in front by flourishing an ax. Over-hit is possible. Power 2322. -->
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="fanRange" val="0,0,200,180" />
+		<set name="hitTime" val="830" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="88" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="2322" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="796" levels="1" name="Divine Knight Explosion Attack">
+		<!-- Detonates the floor by striking it hard. Power 1900. -->
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="100" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="830" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="88" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="1900" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="797" levels="1" name="Divine Rogue Piercing Attack">
+		<!-- Attacks all enemies, even the enemies behind you, with a strong thrust. Over-hit is possible. Power 2111. -->
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="250" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="fanRange" val="0,0,250,60" />
+		<set name="hitTime" val="830" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="88" />
+		<set name="operateType" val="A1" />
+		<set name="overHit" val="true" />
+		<set name="power" val="2111" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="798" levels="1" name="Divine Warrior Assault Attack">
+		<!-- Poisons the enemy with an unexpected poison attack. Power 1689. Effect 3. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="20" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="50" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="720" />
+		<set name="effectPoint" val="-340" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1080" />
+		<set name="icon" val="icon.skill_transform_s_attack" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="88" />
+		<set name="nextActionAttack" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="1689" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="POISON" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="69" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="799" levels="3" name="Master Ability - Defense">
+		<!-- Increases P. Def.. -->
+		<table name="#pDefHeavy"> 59.5 119 178.5 </table>
+		<table name="#pDefLight"> 44.625 89.25 133.875 </table>
+		<table name="#pDefMagic"> 29.75 59.5 89.25 </table>
+		<set name="excludedFromCheck" val="true" />
+		<set name="icon" val="icon.skill0142" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="pDef" val="#pDefHeavy">
+					<using kind="HEAVY" />
+				</add>
+				<add stat="pDef" val="#pDefLight">
+					<using kind="LIGHT" />
+				</add>
+				<add stat="pDef" val="#pDefMagic">
+					<using kind="MAGIC" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+</list>

@@ -1,0 +1,2321 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="10800" type="Armor" name="Draconic Leather Armor {PvP}">
+		<!-- Full body armor. -->
+		<set name="icon" val="icon.armor_t89_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="748" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4950" />
+		<set name="price" val="15577000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<for>
+			<add order="0" stat="pDef" val="249" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10801" type="Armor" name="Major Arcana Robe {PvP}">
+		<!-- Full body armor. -->
+		<set name="icon" val="icon.armor_t90_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="748" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="2300" />
+		<set name="price" val="15577000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="166" />
+			<add stat="maxMp" val="866" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10802" type="Armor" name="Dynasty Breastplate {PvP}">
+		<set name="icon" val="icon.armor_t91_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1171" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="24398000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10803" type="Armor" name="Dynasty Breastplate {PvP} - Shield Master">
+		<!-- Phoenix Knight, Hell Knight, Eva's Templar and Shillien Templar can wear it. -->
+		<set name="icon" val="icon.armor_t91_uk_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1171" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="24398000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="SHIELD_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10804" type="Armor" name="Dynasty Breastplate {PvP} - Weapon Master">
+		<!-- Dreadnought, Titan, Fortune Seeker and Maestro can wear it. -->
+		<set name="icon" val="icon.armor_t91_uw_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1171" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="24398000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="WEAPON_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10805" type="Armor" name="Dynasty Breastplate {PvP} - Force Master">
+		<!-- Duelist and Grand Khavatari can wear it. -->
+		<set name="icon" val="icon.armor_t91_uf_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1171" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="24398000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="FORCE_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10806" type="Armor" name="Dynasty Breastplate {PvP} - Bard">
+		<!-- Sword Muse and Spectral Dancer can wear it. -->
+		<set name="icon" val="icon.armor_t91_uke_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1171" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="24398000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="BARD" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10807" type="Armor" name="Dynasty Leather Armor {PvP}">
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10808" type="Armor" name="Dynasty Leather Armor {PvP} - Dagger Master">
+		<!-- Can be equipped by Adventurers, Wind Riders, Ghost Hunters, and Fortune Seekers. -->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="DAGGER_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10809" type="Armor" name="Dynasty Leather Armor {PvP} - Bow Master">
+		<!-- Sagittarius, Moonlight Sentinel, Ghost Sentinel and Trickster can wear it. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="BOW_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10810" type="Armor" name="Dynasty Tunic {PvP}">
+		<set name="icon" val="icon.armor_t93_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10811" type="Armor" name="Dynasty Tunic {PvP} - Healer">
+		<!-- Cardinals, Eva's Saints and Shillien Saints can wear it. -->
+		<set name="icon" val="icon.armor_t93_uh_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="HEAL_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10812" type="Armor" name="Dynasty Tunic {PvP} - Enchanter">
+		<!-- Hierophants, Dominators and Doom Cryers can wear it. -->
+		<set name="icon" val="icon.armor_t93_ue_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="BUFF_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10813" type="Armor" name="Dynasty Tunic {PvP} - Summoner">
+		<!-- Arcana Lord, Elemental Master and Spectral Master can wear it. -->
+		<set name="icon" val="icon.armor_t93_us_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="SUMMON_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10814" type="Armor" name="Dynasty Tunic {PvP} - Wizard">
+		<!-- Archmage, Mystic Muse, Storm Screamer and Soul Taker can wear it. -->
+		<set name="icon" val="icon.armor_t93_uw_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="WIZARD_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10815" type="Armor" name="Dynasty Leather Armor {PvP} - Force Master">
+		<!-- Duelist and Grand Khavatari can wear it. -->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="FORCE_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10816" type="Armor" name="Dynasty Leather Armor {PvP} - Weapon Master">
+		<!-- Dreadnought, Titan, Fortune Seeker, Maestro, Doombringer and Soul Hound can wear it. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="WEAPON_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10817" type="Armor" name="Dynasty Leather Armor {PvP} - Enchanter">
+		<!-- Hierophant, Dominator, Doom Cryer and Judicator can wear it. -->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="BUFF_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10818" type="Armor" name="Dynasty Leather Armor {PvP} - Summoner">
+		<!-- Arcana Lord, Elemental Master and Spectral Master can wear it. -->
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="878" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="18298000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="SUMMON_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10819" type="Armor" name="Dynasty Platinum Breastplate {PvP}">
+		<set name="icon" val="icon.armor_t91_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1616" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="33673000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10820" type="Armor" name="Dynasty Platinum Breastplate {PvP} - Shield Master">
+		<!-- Phoenix Knight, Hell Knight, Eva's Templar and Shillien Templar can wear it. -->
+		<set name="icon" val="icon.armor_t91_uk_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1616" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="33673000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="SHIELD_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10821" type="Armor" name="Dynasty Platinum Breastplate {PvP} - Weapon Master">
+		<!-- Dreadnought, Titan, Fortune Seeker and Maestro can wear it. -->
+		<set name="icon" val="icon.armor_t91_uw_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1616" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="33673000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="WEAPON_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10822" type="Armor" name="Dynasty Platinum Breastplate {PvP} - Force Master">
+		<!-- Duelist and Grand Khavatari can wear it. -->
+		<set name="icon" val="icon.armor_t91_uf_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1616" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="33673000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="FORCE_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10823" type="Armor" name="Dynasty Platinum Breastplate {PvP} - Bard">
+		<!-- Sword Muse and Spectral Dancer can wear it. -->
+		<set name="icon" val="icon.armor_t91_uke_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1616" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="7570" />
+		<set name="price" val="33673000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="BARD" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="226" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10824" type="Armor" name="Dynasty Jewel Leather Armor {PvP}">
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10825" type="Armor" name="Dynasty Jewel Leather Armor {PvP} - Dagger Master">
+		<!-- Can be equipped by Adventurers, Wind Riders, Ghost Hunters, and Fortune Seekers. -->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="DAGGER_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10826" type="Armor" name="Dynasty Jewel Leather Armor {PvP} - Bow Master">
+		<!-- Sagittarius, Moonlight Sentinel, Ghost Sentinel and Trickster can wear it. -->
+		<set name="icon" val="icon.armor_t92_ub_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="BOW_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10827" type="Armor" name="Dynasty Silver Satin Tunic {PvP}">
+		<set name="icon" val="icon.armor_t93_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10828" type="Armor" name="Dynasty Silver Satin Tunic {PvP} - Healer">
+		<!-- Cardinals, Eva's Saints and Shillien Saints can wear it. -->
+		<set name="icon" val="icon.armor_t93_uh_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="HEAL_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10829" type="Armor" name="Dynasty Silver Satin Tunic {PvP} - Enchanter">
+		<!-- Hierophants, Dominators and Doom Cryers can wear it. -->
+		<set name="icon" val="icon.armor_t93_ue_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="BUFF_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10830" type="Armor" name="Dynasty Silver Satin Tunic {PvP} - Summoner">
+		<!-- Arcana Lord, Elemental Master and Spectral Master can wear it. -->
+		<set name="icon" val="icon.armor_t93_us_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="SUMMON_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10831" type="Armor" name="Dynasty Silver Satin Tunic {PvP} - Wizard">
+		<!-- Archmage, Mystic Muse, Storm Screamer and Soul Taker can wear it. -->
+		<set name="icon" val="icon.armor_t93_uw_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1780" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="WIZARD_MASTER" />
+			</and>
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="113" />
+			<add stat="maxMp" val="592" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10832" type="Armor" name="Dynasty Jewel Leather Armor {PvP} - Force Master">
+		<!-- Duelist and Grand Khavatari can wear it. -->
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="FORCE_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10833" type="Armor" name="Dynasty Jewel Leather Armor {PvP} - Weapon Master">
+		<!-- Dreadnought, Titan, Fortune Seeker, Maestro, Doombringer and Soul Hound can wear it. -->
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="WEAPON_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10834" type="Armor" name="Dynasty Jewel Leather Armor {PvP} - Enchanter">
+		<!-- Hierophant, Dominator, Doom Cryer and Judicator can wear it. -->
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="BUFF_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10835" type="Armor" name="Dynasty Jewel Leather Armor {PvP} - Summoner">
+		<!-- Arcana Lord, Elemental Master and Spectral Master can wear it. -->
+		<set name="icon" val="icon.armor_t92_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1212" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="4180" />
+		<set name="price" val="25255000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player categoryType="SUMMON_MASTER" />
+		</cond>
+		<for>
+			<add order="0" stat="pDef" val="170" />
+			<enchant stat="pDef" val="0" />
+		</for>
+	</item>
+	<item id="10836" type="EtcItem" name="Pathfinder Supplies (Level 2)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i02" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2533-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10837" type="EtcItem" name="Pathfinder Supplies (Level 4)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i02" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2535-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10838" type="EtcItem" name="Pathfinder Supplies (Level 5)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i02" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2536-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10839" type="EtcItem" name="Pathfinder Supplies (Level 6)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i02" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2537-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10840" type="EtcItem" name="Pathfinder Supplies (Level 7)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2538-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10841" type="EtcItem" name="Pathfinder Supplies (Level 8)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2539-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10842" type="EtcItem" name="Pathfinder Supplies (Level 11)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2542-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10843" type="EtcItem" name="Pathfinder Supplies (Level 12)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2543-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10844" type="EtcItem" name="Pathfinder Supplies (Level 13)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2544-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10845" type="EtcItem" name="Pathfinder Supplies (Level 14)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2545-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10846" type="EtcItem" name="Pathfinder Supplies (Level 15)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2546-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10847" type="EtcItem" name="Pathfinder Supplies (Level 18)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2549-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10848" type="EtcItem" name="Pathfinder Supplies (Level 19)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2550-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10849" type="EtcItem" name="Pathfinder Supplies (Level 20)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2551-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10850" type="EtcItem" name="Pathfinder Supplies (Level 21)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i05" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2552-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10851" type="EtcItem" name="Pathfinder Supplies (Level 22)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i05" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2553-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10852" type="EtcItem" name="Pathfinder Supplies (Level 25)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i05" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2556-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10853" type="EtcItem" name="Pathfinder Supplies (Level 26)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i05" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2557-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10854" type="EtcItem" name="Pathfinder Supplies (Level 27)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i05" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2558-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10855" type="EtcItem" name="Pathfinder Supplies (Level 28)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2559-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10856" type="EtcItem" name="Pathfinder Supplies (Level 29)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2560-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10857" type="EtcItem" name="Pathfinder Supplies (Level 32)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2563-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10858" type="EtcItem" name="Pathfinder Supplies (Level 33)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2564-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10859" type="EtcItem" name="Pathfinder Supplies (Level 34)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2565-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10860" type="EtcItem" name="Pathfinder Supplies (Level 35)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i07" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2566-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10861" type="EtcItem" name="Pathfinder Supplies (Level 36)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i07" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2567-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10862" type="EtcItem" name="Pathfinder Supplies (Level 38)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i07" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2569-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10863" type="EtcItem" name="Pathfinder Supplies (Level 39)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i07" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2570-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10864" type="EtcItem" name="Pathfinder Supplies (Level 40)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i07" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2571-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10865" type="EtcItem" name="Pathfinder Supplies (Level 41)">
+		<!-- Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_treasure_box_i07" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2571-1" /> <!-- Pathfinder Supplies -->
+	</item>
+	<item id="10866" type="EtcItem" name="Energy Ore">
+		<!-- An energy ore that is found in the eastern region's mining area. It is used as an experimental ingredient in Inventor Maru's energy conversion device. -->
+		<set name="icon" val="icon.etc_crystal_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10867" type="EtcItem" name="Bloody Cloth Fragment">
+		<!-- A piece of cloth soaked with Mark's blood. It is needed to determine the type of poison. -->
+		<set name="icon" val="icon.etc_piece_of_cloth_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10868" type="EtcItem" name="Helvetia's Antidote">
+		<!-- Antidote purchased from Helvetia. Give it to Mark. -->
+		<set name="icon" val="icon.etc_potion_yellow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10869" type="EtcItem" name="Contaminated Kasha Spider Venom">
+		<!-- Kasha Spider venom that has been contaminated by Kasha, the evil spirit of decay and death. Collect them and bring them to Trader Kunai. -->
+		<set name="icon" val="icon.etc_potion_yellow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10870" type="Weapon" name="Great Sword - Lightning">
+		<!-- Masterwork Item that increases Critical Rate. Bestows one of the following functions: Health, Critical Damage, or Focus. -->
+		<set name="icon" val="icon.weapon_great_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1930" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10882" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3845-1" /> <!-- Two-handed Sword of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10871" type="Weapon" name="Great Sword - Lightning - Health">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Max HP by 25%. -->
+		<set name="icon" val="icon.weapon_great_sword_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1930" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10883" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3845-1;3013-1" /> <!-- Two-handed Sword of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10872" type="Weapon" name="Great Sword - Lightning - Critical Damage">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases P. Atk. by 247 on a critical attack. -->
+		<set name="icon" val="icon.weapon_great_sword_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1930" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10884" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3845-1;3023-5" /> <!-- Two-handed Sword of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10873" type="Weapon" name="Great Sword - Lightning - Focus">
+		<!-- Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Critical by 68. -->
+		<set name="icon" val="icon.weapon_great_sword_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1930" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10885" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3845-1;3010-5" /> <!-- Two-handed Sword of Critical Chance -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10874" type="Weapon" name="Great Axe - Thunder">
+		<!-- Masterwork Item that increases Critical Damage. Bestows one of the following functions: Anger, Critical Stun, or Light. -->
+		<set name="icon" val="icon.weapon_great_axe_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1940" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3873-1;3599-1" /> <!-- Polearm of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="175" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10875" type="Weapon" name="Great Axe - Thunder - Anger">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Decreases Max HP by 15%, and increases P. Atk. by 28. -->
+		<set name="icon" val="icon.weapon_great_axe_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1940" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3873-1;3600-5" /> <!-- Polearm of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="175" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10876" type="Weapon" name="Great Axe - Thunder - Critical Stun">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Has a 27% chance of casting Stun on a critical attack. -->
+		<set name="icon" val="icon.weapon_great_axe_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1940" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_chance" val="27" />
+		<set name="oncrit_skill" val="3016-5" />
+		<set name="item_skill" val="3873-1;3599-1" /> <!-- Polearm of Critical Damage -->
+		<for>
+			<set stat="pAtk" val="175" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10877" type="Weapon" name="Great Axe - Thunder - Light">
+		<!-- Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases weight gauge by 20%. -->
+		<set name="icon" val="icon.weapon_great_axe_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1940" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3599-1;3498-1;3873-1" /> <!-- Polearm Multi-attack -->
+		<for>
+			<set stat="pAtk" val="175" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10878" type="Weapon" name="Sword of Limit*Sword of Limit - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Attack by 127. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2140" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3042-11" />
+		<set name="item_skill" val="3835-1" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10879" type="Weapon" name="Sword of Limit*Sword of Delusion - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Max HP by 25%. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2140" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3013-1" />
+		<set name="item_skill" val="3835-1" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10880" type="Weapon" name="Sword of Limit*Sword of Nightmare - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Attack by 54. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2130" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3044-11" />
+		<set name="item_skill" val="3835-1" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10881" type="Weapon" name="Sword of Limit*Tsurugi - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Atk. Spd. by 5%. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2120" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3045-11" />
+		<set name="item_skill" val="3835-1" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10882" type="Weapon" name="Innominate Victory - Lightning">
+		<!-- Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Great Sword. Bestows one of the following functions: Health, Crit. Damage or Focus. -->
+		<set name="icon" val="icon.weapon_nameless_victory_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1930" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10870" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3851-1" /> <!-- Ancient Sword of Critical Chance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="190" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10883" type="Weapon" name="Innominate Victory - Lightning - Health">
+		<!-- Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Great Sword Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. -->
+		<set name="icon" val="icon.weapon_nameless_victory_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1930" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10871" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3851-1;3013-1" /> <!-- Ancient Sword of Critical Chance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="190" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10884" type="Weapon" name="Innominate Victory - Lightning - Critical Damage">
+		<!-- Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Great Sword Conversion. <Soul Crystal Enhancement>. Increases P. Atk. by 247 on a critical attack. -->
+		<set name="icon" val="icon.weapon_nameless_victory_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1930" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10872" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3851-1;3023-5" /> <!-- Ancient Sword of Critical Chance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="190" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10885" type="Weapon" name="Innominate Victory - Lightning - Focus">
+		<!-- Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Great Sword Conversion. <Soul Crystal Enhancement>. Increases Critical by 68. -->
+		<set name="icon" val="icon.weapon_nameless_victory_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="15" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1930" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10873" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3851-1;3010-5" /> <!-- Ancient Sword of Critical Chance -->
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<for>
+			<set stat="pAtk" val="190" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<add stat="accCombat" val="2" />
+			<set stat="pAtkSpd" val="350" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10886" type="Weapon" name="Dark Elven Long Bow - Concentration">
+		<!-- Masterwork Item that increases Accuracy. Bestows one of the following functions: Evasion, Crt.Bleed, Miser. -->
+		<set name="icon" val="icon.weapon_dark_elven_long_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1720" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10934" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="3" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="820" />
+		<set name="item_skill" val="3863-1" /> <!-- Bow of Guidance -->
+		<for>
+			<set stat="pAtk" val="397" />
+			<set stat="mAtk" val="100" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="227" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10887" type="Weapon" name="Dark Elven Long Bow - Concentration - Evasion">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases Evasion by 2. -->
+		<set name="icon" val="icon.weapon_dark_elven_long_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1720" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10935" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="3" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="820" />
+		<set name="item_skill" val="3863-1;3009-5" /> <!-- Bow of Guidance -->
+		<for>
+			<set stat="pAtk" val="397" />
+			<set stat="mAtk" val="100" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="227" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10888" type="Weapon" name="Dark Elven Long Bow - Concentration - Critical Bleed">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Inflicts Bleed on the target with a 41% rate of chance during a general critical attack. -->
+		<set name="icon" val="icon.weapon_dark_elven_long_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1720" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10936" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="3" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="820" />
+		<set name="oncrit_chance" val="41" />
+		<set name="oncrit_skill" val="3021-5" />
+		<set name="item_skill" val="3863-1" /> <!-- Bow of Guidance -->
+		<for>
+			<set stat="pAtk" val="397" />
+			<set stat="mAtk" val="100" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="227" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10889" type="Weapon" name="Dark Elven Long Bow - Concentration - Miser">
+		<!-- Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Has a 19% chance of reducing the number of soulshots consumed to 2. -->
+		<set name="icon" val="icon.weapon_dark_elven_long_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1720" />
+		<set name="price" val="6680500" />
+		<set name="change_weaponId" val="10937" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="3" />
+		<set name="enchant_enabled" val="1" />
+		<set name="reuse_delay" val="820" />
+		<set name="item_skill" val="3863-1" /> <!-- Bow of Guidance -->
+		<set name="reduced_soulshot" val="19,2" />
+		<for>
+			<set stat="pAtk" val="397" />
+			<set stat="mAtk" val="100" />
+			<set stat="critRate" val="12" />
+			<add stat="accCombat" val="-3.75" />
+			<set stat="pAtkSpd" val="227" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10890" type="Weapon" name="Sword of Delusion*Sword of Delusion - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Accuracy by 4. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2150" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3046-11" />
+		<set name="item_skill" val="3835-1" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10891" type="Weapon" name="Sword of Delusion*Sword of Nightmare - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Attack by 127. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2130" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3042-11" />
+		<set name="item_skill" val="3835-1" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10892" type="Weapon" name="Sword of Delusion*Tsurugi - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Max HP by 25%. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2140" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3013-1" />
+		<set name="item_skill" val="3835-1" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10893" type="Weapon" name="Sword of Valhalla - Nature">
+		<!-- Masterwork Item that increases Max MP. Bestows one of the following functions: Acumen, Magic Weakness, or Magic Regeneration. -->
+		<set name="icon" val="icon.weapon_sword_of_valhalla_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="900" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3852-1" /> <!-- Sword of Mana Boost -->
+		<for>
+			<set stat="pAtk" val="140" />
+			<set stat="mAtk" val="122" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10894" type="Weapon" name="Sword of Valhalla - Nature - Acumen">
+		<!-- Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. -->
+		<set name="icon" val="icon.weapon_sword_of_valhalla_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="900" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3852-1;3047-1" /> <!-- Sword of Mana Boost -->
+		<for>
+			<set stat="pAtk" val="140" />
+			<set stat="mAtk" val="122" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10895" type="Weapon" name="Sword of Valhalla - Nature - Magic Weakness">
+		<!-- Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Has a 7% chance of casting Curse Weakness when using a magic skill on the target. -->
+		<set name="icon" val="icon.weapon_sword_of_valhalla_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="900" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="onmagic_chance" val="7" />
+		<set name="onmagic_skill" val="1164-11" />
+		<set name="item_skill" val="3852-1" /> <!-- Sword of Mana Boost -->
+		<for>
+			<set stat="pAtk" val="140" />
+			<set stat="mAtk" val="122" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10896" type="Weapon" name="Sword of Valhalla - Nature - Magic Regeneration">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Has a 30% chance of casting Regeneration when using a magic skill on the target. -->
+		<set name="icon" val="icon.weapon_sword_of_valhalla_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="900" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="onmagic_chance" val="30" />
+		<set name="onmagic_skill" val="1044-3" />
+		<set name="item_skill" val="3852-1" /> <!-- Sword of Mana Boost -->
+		<for>
+			<set stat="pAtk" val="140" />
+			<set stat="mAtk" val="122" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10897" type="Weapon" name="Stormbringer*Samurai Long Sword - Destruction">
+		<!-- Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Accuracy by 4. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2150" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="enchant4_skill" val="3046-11" />
+		<set name="item_skill" val="3835-1" /> <!-- Dual-Blade Weapon of Might -->
+		<for>
+			<set stat="pAtk" val="213" />
+			<set stat="mAtk" val="91" />
+			<set stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10898" type="Weapon" name="Spell Breaker - Hail">
+		<!-- Masterwork Item that increases M. Atk. Bestows one of the following functions: Acumen, Mental Shield, or Magic Hold. -->
+		<set name="icon" val="icon.weapon_spell_breaker_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1620" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3889-1" /> <!-- Blunt Weapon of Empower -->
+		<for>
+			<set stat="pAtk" val="140" />
+			<set stat="mAtk" val="122" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+	<item id="10899" type="Weapon" name="Spell Breaker - Hail - Acumen">
+		<!-- Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. -->
+		<set name="icon" val="icon.weapon_spell_breaker_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="891" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1620" />
+		<set name="price" val="6680500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="item_skill" val="3889-1;3047-1" /> <!-- Blunt Weapon of Empower -->
+		<for>
+			<set stat="pAtk" val="140" />
+			<set stat="mAtk" val="122" />
+			<set stat="critRate" val="4" />
+			<add stat="accCombat" val="4.75" />
+			<set stat="pAtkSpd" val="379" />
+			<enchant val="0" stat="pAtk" />
+			<enchant val="0" stat="mAtk" />
+		</for>
+	</item>
+</list>

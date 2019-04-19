@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence minOccurs="1" maxOccurs="1">
+				<xs:element name="category" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element name="commands" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence minOccurs="1" maxOccurs="1">
+										<xs:element name="cmd" minOccurs="1" maxOccurs="unbounded" type="xs:nonNegativeInteger" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="keys" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence minOccurs="1" maxOccurs="1">
+										<xs:element name="key" minOccurs="1" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="cmd" type="xs:positiveInteger" use="required" />
+												<xs:attribute name="key" type="xs:positiveInteger" use="required" />
+												<xs:attribute name="toggleKey1" type="xs:nonNegativeInteger" />
+												<xs:attribute name="toggleKey2" type="xs:nonNegativeInteger" />
+												<xs:attribute name="showType" type="xs:positiveInteger" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:nonNegativeInteger" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

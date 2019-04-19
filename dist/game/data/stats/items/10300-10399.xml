@@ -1,0 +1,1228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="10300" type="EtcItem" name="Transformation Sealbook - Kechi">
+		<!-- Documents the method for transforming into Kechi -->
+		<set name="icon" val="BranchSys2.icon.etc_sb_transform_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10301" type="EtcItem" name="Transformation Sealbook: Demon Prince">
+		<!-- Documents the method for transforming into Demon Prince. -->
+		<set name="icon" val="BranchSys2.icon.etc_sb_transform_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10302" type="EtcItem" name="Transformation Sealbook: Heretic">
+		<!-- Documents the method for transforming into Heretic. -->
+		<set name="icon" val="BranchSys2.icon.etc_sb_transform_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10303" type="EtcItem" name="Transformation Sealbook: Veil Master">
+		<!-- Documents the method for transforming into Veil Master. -->
+		<set name="icon" val="BranchSys2.icon.etc_sb_transform_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10304" type="EtcItem" name="Transformation Sealbook: Saber Tooth Tiger">
+		<!-- Documents the method for transforming into Saber Tooth Tiger. -->
+		<set name="icon" val="BranchSys2.icon.etc_sb_transform_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10305" type="EtcItem" name="Transformation Sealbook: Oel Mahum">
+		<!-- Documents the method for transforming into an Ol Mahum. -->
+		<set name="icon" val="BranchSys2.icon.etc_sb_transform_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10306" type="EtcItem" name="Transformation Sealbook: Doll Blader">
+		<!-- Documents the method for transforming into Doll Blader. -->
+		<set name="icon" val="BranchSys2.icon.etc_sb_transform_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10307" type="EtcItem" name="Great Snow Wolf Necklace">
+		<!-- Necklace used to summon a Great Snow Wolf. It takes away some of the experience points the Pet Master earns. -->
+		<set name="icon" val="icon.etc_summon_wolf_r_01" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-2" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<cond>
+			<player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57" />
+		</cond>
+	</item>
+	<item id="10308" type="EtcItem" name="Red Dragon Bugle of Wind">
+		<!-- Trumpet used to summon the Strider of the Red Wind. This takes some of experience which is acquired by the pet master. -->
+		<set name="icon" val="icon.etc_bugle_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-2" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<cond>
+			<player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57" />
+		</cond>
+	</item>
+	<item id="10309" type="EtcItem" name="Red Dragon Bugle of Star">
+		<!-- Trumpet used to summon the Strider of the Red Star. This takes some of experience which is acquired by the pet master. -->
+		<set name="icon" val="icon.etc_bugle_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-2" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<cond>
+			<player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57" />
+		</cond>
+	</item>
+	<item id="10310" type="EtcItem" name="Red Dragon Bugle of Twilight">
+		<!-- Trumpet used to summon the Strider of the Red Dusk. This takes some of experience which is acquired by the pet master. -->
+		<set name="icon" val="icon.etc_bugle_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-2" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<cond>
+			<player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57" />
+		</cond>
+	</item>
+	<item id="10311" type="EtcItem" name="Improved Buffalo Panpipe">
+		<!-- Necklace used to summon an Improved Baby Buffalo. It takes away some of the experience points the Pet Master earns. -->
+		<set name="icon" val="icon.etc_buffalo_panpipe_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="10312" type="EtcItem" name="Improved Cougar Chime">
+		<!-- Necklace used to summon an Improved Baby Cougar. It takes away some of the experience points the Pet Master earns. -->
+		<set name="icon" val="icon.etc_cougar_chime_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="10313" type="EtcItem" name="Improved Kookaburra Ocarina">
+		<!-- Necklace used to summon an Improved Baby Kookaburra. It takes away some of the experience points the Pet Master earns. -->
+		<set name="icon" val="icon.etc_kukaburo_ocarina_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="20" />
+		<set name="price" val="2000" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="item_skill" val="2046-1" /> <!-- Wolf's Necklace -->
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+	</item>
+	<item id="10314" type="Armor" name="Ring of Beleth">
+		<!-- MP +38, HP +105, increase M.Def. by 12%, increase Resistance to abnormal mental state by 10, increase abnormal mental state attack chance by 10, increase MP recharge power by 0.23, and increase Resistance to Dark attacks by 30. -->
+		<set name="icon" val="icon.accessary_dynasty_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="152" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="2400000" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3649-1" /> <!-- Beleth's Ring -->
+		<for>
+			<add order="0" stat="mDef" val="48" />
+			<add stat="maxMp" val="21" />
+			<enchant stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="10315" type="Armor" name="Shadow Item - Purple Viking Circlet">
+		<!-- Uses 2 hair accessory slots. This item cannot be exchanged or dropped. Lasts for 500 minutes. -->
+		<set name="icon" val="icon.accessory_viking_circlet_violet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="500" />
+	</item>
+	<item id="10316" type="Armor" name="Agathion Seal Bracelet - Little Angel - Firework">
+		<!-- Bracelet that summons a cute little angel Agathion. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3423-1;5535-1;5538-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10317" type="Armor" name="Agathion Seal Bracelet - Little Angel - Big Head">
+		<!-- Bracelet that summons a cute little angel Agathion. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3423-1;5535-1;5539-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10318" type="Armor" name="Agathion Seal Bracelet - Little Angel - Blessed Escape">
+		<!-- Bracelet that summons a cute little angel Agathion. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3423-1;5535-1;5540-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10319" type="Armor" name="Agathion Seal Bracelet - Little Angel - Resurrection">
+		<!-- Bracelet that summons a cute little angel Agathion. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3423-1;5535-1;5541-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10320" type="Armor" name="Agathion Seal Bracelet - Little Angel">
+		<!-- Bracelet that summons a cute little angel Agathion. Cannot be exchanged or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3423-1;5535-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10321" type="Armor" name="Shadow Item - Golden Viking Circlet">
+		<!-- Uses 2 hair accessory slots. This item cannot be exchanged or dropped. Lasts for 500 minutes. -->
+		<set name="icon" val="icon.accessory_viking_circlet_gold_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="500" />
+	</item>
+	<item id="10322" type="Armor" name="Agathion Seal Bracelet - Little Devil - Firework">
+		<!-- Bracelet that summons the cute little devil Agathion. Cannot be traded or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3424-1;5536-1;5542-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10323" type="Armor" name="Agathion Seal Bracelet - Little Devil - Big Head">
+		<!-- Bracelet that summons the cute little devil Agathion. Cannot be traded or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3424-1;5536-1;5543-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10324" type="Armor" name="Agathion Seal Bracelet - Little Devil - Blessed Escape">
+		<!-- Bracelet that summons the cute little devil Agathion. Cannot be traded or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3424-1;5536-1;5544-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10325" type="Armor" name="Agathion Seal Bracelet - Little Devil - Resurrection">
+		<!-- Bracelet that summons the cute little devil Agathion. Cannot be traded or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3424-1;5536-1;5545-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10326" type="Armor" name="Agathion Seal Bracelet - Little Devil">
+		<!-- Bracelet that summons a cute Little Devil Agathion. Cannot be traded or dropped. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="unequip_skill" val="3267-1" />
+		<set name="item_skill" val="3267-1;3424-1;5536-1" /> <!-- Dismiss Agathion -->
+	</item>
+	<item id="10327" type="EtcItem" name="Evil Weapon">
+		<!-- Weapon that can only be obtained from the evil spirits created at the Monster Foundry -->
+		<set name="icon" val="icon.etc_sting_b_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10328" type="EtcItem" name="Stolen Cargo">
+		<!-- Cargo stolen from Warehouse Keeper Sonin of Florin Village. Return it to Sonin. -->
+		<set name="icon" val="icon.etc_wine_barrel_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10329" type="EtcItem" name="Hate Crystal">
+		<!-- An important item that Grocer Pano of Florin Village is seeking. Give it to Pano. -->
+		<set name="icon" val="icon.etc_stone_gray_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10330" type="EtcItem" name="Old Treasure Map">
+		<!-- An important item that Captain Alex of Florin Village is seeking. Give it to Alex. -->
+		<set name="icon" val="icon.etc_map_yellow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10331" type="EtcItem" name="Sonin's Credentials">
+		<!-- Give it to Priest Shegfield of Dion Village along with Pano's and Alex's Credentials. -->
+		<set name="icon" val="icon.etc_piece_of_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10332" type="EtcItem" name="Pano's Credentials">
+		<!-- Give it to Priest Shegfield of Dion Village along with Sonin's and Alex's Credentials. -->
+		<set name="icon" val="icon.etc_piece_of_paper_gray_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10333" type="EtcItem" name="Alex's Credentials">
+		<!-- Give it to Priest Shegfield of Dion Village along with Pano's and Sonin's Credentials. -->
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10334" type="EtcItem" name="Badge - Temple Executor">
+		<!-- Give it to High Priest Sylvain along with the Temple of Einhasad's "Temple Executor" proof of identity and the "Badge - Temple Missionary." -->
+		<set name="icon" val="icon.etc_jewel_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10335" type="EtcItem" name="Giants' Experimental Tool Fragment">
+		<!-- Relic of the Giants found on the monsters and apostates in the Cruma Marshlands. Bring it to Spellbook Seller Rouke. -->
+		<set name="icon" val="icon.etc_mechanic_box_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10336" type="EtcItem" name="Giants' Experimental Tool">
+		<!-- Experimental tool created by the Giants. Use it to lure the apostates in the Cruma Marshlands. -->
+		<set name="icon" val="icon.etc_instrument_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10337" type="EtcItem" name="Giants' Technology Report">
+		<!-- Proof of the traitor's defeat in the Cruma Marshlands. Bring it to Spellbook Seller Rouke. -->
+		<set name="icon" val="icon.etc_spell_books_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10338" type="EtcItem" name="Rouke's Report">
+		<!-- Rouke's Report. Deliver it to Priest Glyvka. -->
+		<set name="icon" val="icon.etc_letter_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10339" type="EtcItem" name="Badge - Temple Missionary">
+		<!-- Give it to High Priest Sylvain along with the Temple of Einhasad's "Temple Missionary" proof of identity and the "Badge - Temple Executor." -->
+		<set name="icon" val="icon.etc_jewel_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10340" type="EtcItem" name="Report Fragment">
+		<!-- A piece of the Investigation Report carried by the missing Temple investigator. Bring it to High Priest Sylvain. -->
+		<set name="icon" val="icon.etc_letter_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10341" type="EtcItem" name="Temple Manifesto">
+		<!-- Temple's manifesto describing the only "righteousness" -->
+		<set name="icon" val="icon.etc_letter_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10342" type="EtcItem" name="Relics of the Dark Elf Trainee">
+		<!-- Relics of a Dark Elf trainee who was killed during live training. Give it to Dark Elf Angus. -->
+		<set name="icon" val="icon.etc_oil_pot_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10343" type="EtcItem" name="Angus' Recommendation">
+		<!-- Token for helping Angus. Show it to Priestess Pupina. -->
+		<set name="icon" val="icon.etc_paper_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10344" type="EtcItem" name="Pupina's Recommendation">
+		<!-- Proof of versatility and the right to contact the preachers. Show it to Preacher Sla. -->
+		<set name="icon" val="icon.etc_paper_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10345" type="EtcItem" name="Records Chest Key Fragment">
+		<!-- Key fragment that is held by the Tasaba Lizardmen. If you bring it to Warehouse Keeper Mia, she can turn it into a Records Chest Key. -->
+		<set name="icon" val="icon.etc_old_key_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10346" type="EtcItem" name="Records Chest">
+		<!-- Records chest held by the Tasaba Lizardmen. Bring it to Warehouse Keeper Mia to inspect the contents. -->
+		<set name="icon" val="icon.etc_squares_wood_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10347" type="EtcItem" name="Dark Crystal">
+		<!-- Ingredient needed to create the Dark Oxide. Bring it to Magister Xenovia. -->
+		<set name="icon" val="icon.etc_debris_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10348" type="EtcItem" name="Dark Oxide">
+		<!-- Substance on which Magister Xenovia is experimenting. -->
+		<set name="icon" val="icon.etc_dragons_blood_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10349" type="EtcItem" name="Cryptogram of the Goddess Sword">
+		<!-- Secret document about the Sword of Sthelotte that the Goddess of Lake Eva gave to Rionelle, bring it to Kluck. -->
+		<set name="icon" val="icon.etc_plan_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10350" type="EtcItem" name="Predecessor's Report">
+		<!-- Investigate report of the intelligence agency that records the death of Shadow Fox. Bring it to Warehouse Chief Natools. -->
+		<set name="icon" val="icon.etc_letter_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10351" type="EtcItem" name="Cryptogram of the Angel Search">
+		<!-- Clue regarding the angel's location that was discovered by Shadow Fox's intelligence agency. Encoded as a Cryptogram. Decipher it through High Priest Raymond in the Town of Gludio. -->
+		<set name="icon" val="icon.etc_piece_of_paper_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10352" type="EtcItem" name="Prophecy Fragment">
+		<!-- Prophecy - Path of the God. When all the prophecy fragments are collected, they reveal the Fallen Angel's location. -->
+		<set name="icon" val="icon.etc_piece_of_report_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10353" type="EtcItem" name="Fallen Angel Blood">
+		<!-- Proof of the eradication of the angel that was labeled a Fallen Angel by the Temple. Deliver it to High Priest Raymond in the Town of Gludio. -->
+		<set name="icon" val="icon.etc_reagent_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10354" type="EtcItem" name="Sealed Prophecy - Path of the God">
+		<!-- Sealed prophecy that foretells the location of the angel. Bring it to Grand Master Tobias in Gludio Castle. -->
+		<set name="icon" val="icon.etc_spellbook_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10355" type="EtcItem" name="Prophecy - Path of the God">
+		<!-- Prophecy that foretells the location of the angel. Ask Elder Casian of the Wastelands to decipher it. -->
+		<set name="icon" val="icon.etc_spellbook_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10356" type="EtcItem" name="Empty Sound Crystal">
+		<!-- A sound crystal for saving the angel's message. There is nothing recorded on it yet. -->
+		<set name="icon" val="icon.etc_crystal_green_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10357" type="EtcItem" name="Angel Medicine">
+		<!-- Medicine that Casian made for the injured angel. Administer it to the Fallen Angel. -->
+		<set name="icon" val="icon.etc_lesser_potion_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10358" type="EtcItem" name="Angel's Message">
+		<!-- A sound crystal for saving the angel's message. Bring it to Grand Master Tobias in Gludio Castle. -->
+		<set name="icon" val="icon.etc_crystal_green_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10359" type="EtcItem" name="Metallograph">
+		<!-- Metal device obtained in Cruma Tower. It appears to be a recording device from the time of Giants. -->
+		<set name="icon" val="icon.etc_ancient_tablet_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10360" type="EtcItem" name="Broken Metal Pieces">
+		<!-- Metallograph shard obtained in Cruma Tower -->
+		<set name="icon" val="icon.etc_broken_tablet_fragment_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10361" type="EtcItem" name="Nikola's Map">
+		<!-- Map that shows the location Nikola searched in Cruma Tower. -->
+		<set name="icon" val="icon.etc_painting_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10362" type="EtcItem" name="Loraine's Certificate">
+		<!-- Voucher that proves you received the Metallograph that Loraine obtained in Cruma Tower. Hold onto it and return to her later. -->
+		<set name="icon" val="icon.etc_paper_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10363" type="EtcItem" name="Metallograph">
+		<!-- Metallograph obtained in Cruma Tower. Appears to be a recording device of the giants. -->
+		<set name="icon" val="icon.etc_ancient_tablet_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10364" type="EtcItem" name="Broken Metal Pieces">
+		<!-- Metallograph shard obtained in Cruma Tower -->
+		<set name="icon" val="icon.etc_broken_tablet_fragment_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10365" type="EtcItem" name="Nikola's Map">
+		<!-- Map that shows the location that Nikola searched in Cruma Tower. -->
+		<set name="icon" val="icon.etc_painting_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10366" type="EtcItem" name="Metallograph - Research Report">
+		<!-- Metallograph obtained in Cruma Tower. It is confirmed as a recording device that was used in the Cruma Tower laboratory. -->
+		<set name="icon" val="icon.etc_ancient_tablet_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10367" type="EtcItem" name="Leto Lizardman Accessory">
+		<!-- Accessory held by the Leto Lizardmen. Blueprint Seller Luka in the Town of Oren likes it. -->
+		<set name="icon" val="icon.etc_chain_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10368" type="EtcItem" name="Metallograph">
+		<!-- Metallograph obtained in Cruma Tower. Appears to be a recording device of the giants. -->
+		<set name="icon" val="icon.etc_ancient_tablet_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10369" type="EtcItem" name="Broken Metal Pieces">
+		<!-- Metallograph shard obtained in Cruma Tower -->
+		<set name="icon" val="icon.etc_broken_tablet_fragment_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10370" type="EtcItem" name="Metallograph - Decipher Pattern">
+		<!-- Luka summarized the contents which have been decoded from the metal plate. Take this back to Lorain. -->
+		<set name="icon" val="icon.etc_ssq_scroll_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10371" type="EtcItem" name="Repaired Metallograph">
+		<!-- Dorothy repaired the metallograph shard obtained in Cruma Tower. -->
+		<set name="icon" val="icon.etc_broken_tablet_fragment_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10372" type="EtcItem" name="Red Stone">
+		<!-- Item that Matras instructed to bring back as proof of the defeated agitators. He doesn't tell you its purpose. -->
+		<set name="icon" val="icon.etc_bead_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="10373" type="EtcItem" name="Recipe - Icarus Sawsword (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Sawsword. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="900" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10374" type="EtcItem" name="Recipe - Icarus Disperser (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Disperser. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="901" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10375" type="EtcItem" name="Recipe - Icarus Spirit (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Spirit. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="902" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10376" type="EtcItem" name="Recipe - Icarus Heavy Arms (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Heavy Arms. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="903" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10377" type="EtcItem" name="Recipe - Icarus Trident (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Trident. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="904" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10378" type="EtcItem" name="Recipe - Icarus Hammer (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Hammer. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="905" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10379" type="EtcItem" name="Recipe - Icarus Hand (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Hand. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="906" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10380" type="EtcItem" name="Recipe - Icarus Hall (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Hall. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="907" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10381" type="EtcItem" name="Recipe - Icarus Spitter (60%)">
+		<!-- For Dwarves only. The recipe for the Icarus Spitter. Requires Create Item Skill - Level 9. 60% success rate. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="908" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10382" type="EtcItem" name="Recipe - Icarus Stinger (60%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Spitter. Requires Create Item - Skill Level 9. The success rate is 60%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10383" type="EtcItem" name="Recipe - Icarus Wingblade (60%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Wingblade. Requires Create Item - Skill Level 9. The success rate is 60%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10384" type="EtcItem" name="Recipe - Icarus Shooter (60%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Spitter. Requires Create Item - Skill Level 9. The success rate is 60%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10385" type="EtcItem" name="Recipe - Icarus Sawsword (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Sawsword. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10386" type="EtcItem" name="Recipe - Icarus Disperser (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Disperser. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10387" type="EtcItem" name="Recipe - Icarus Spirit (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Spirit. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10388" type="EtcItem" name="Recipe - Icarus Heavy Arms (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Heavy Arms. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10389" type="EtcItem" name="Recipe - Icarus Trident (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Trident. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10390" type="EtcItem" name="Recipe - Icarus Hammer (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Hammer. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10391" type="EtcItem" name="Recipe - Icarus Hand (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Hand. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10392" type="EtcItem" name="Recipe - Icarus Hall (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Hall. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10393" type="EtcItem" name="Recipe - Icarus Spitter (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Spitter. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10394" type="EtcItem" name="Recipe - Icarus Stinger (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Spitter. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10395" type="EtcItem" name="Recipe - Icarus Wingblade (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Wingblade. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10396" type="EtcItem" name="Recipe - Icarus Shooter (100%)">
+		<!-- Exclusive to Dwarves. Recipe to make Icarus Spitter. Requires Create Item - Skill Level 9. The success rate is 100%. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="2068800" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="10397" type="EtcItem" name="Icarus Sawsword Piece">
+		<!-- An essential ingredient that a Dwarf needs to make Icarus Sawsword. It can be sold to public stores. -->
+		<set name="icon" val="icon.etc_sword_body_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="60" />
+		<set name="price" val="311000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10398" type="EtcItem" name="Icarus Disperser Piece">
+		<!-- An essential ingredient that a Dwarf needs to make Icarus Disperser. It can be sold to public stores. -->
+		<set name="icon" val="icon.etc_sword_body_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="60" />
+		<set name="price" val="311000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="10399" type="EtcItem" name="Icarus Spirit Piece">
+		<!-- An essential ingredient that a Dwarf needs to make Icarus Spirit. It can be sold to public stores. -->
+		<set name="icon" val="icon.etc_sword_body_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="60" />
+		<set name="price" val="311000" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

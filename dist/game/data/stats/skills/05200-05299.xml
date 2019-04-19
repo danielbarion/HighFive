@@ -1,0 +1,2110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="5200" levels="8" name="Pet Recharge">
+		<!-- Regenerates MP. -->
+		<table name="#amount"> 120 124 128 138 144 149 153 155 </table>
+		<table name="#effectPoints"> 604 617 630 659 676 689 700 709 </table>
+		<table name="#magicLvl"> 65 67 69 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 96 99 102 110 116 120 122 124 </table>
+		<table name="#mpInitialConsume"> 24 25 26 28 29 30 31 31 </table>
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill1013" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="12000" />
+		<set name="targetType" val="OWNER_PET" />
+		<for>
+			<effect name="ManaHealByLevel">
+				<param power="#amount" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5201" levels="6" name="Pet Concentration">
+		<!-- Temporarily lowers the probability of magic being canceled due to damage taken. Effect 1. -->
+		<table name="#abnormalLvls"> 1 2 3 4 5 6 </table>
+		<table name="#cancel"> 18 25 36 42 48 53 </table>
+		<table name="#effectPoints"> 204 285 418 495 566 624 </table>
+		<table name="#magicLvl"> 20 30 44 52 60 68 </table>
+		<table name="#mpConsume"> 16 21 31 38 44 51 </table>
+		<table name="#mpInitialConsume"> 4 6 8 10 11 13 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="CANCEL_PROB_DOWN" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill1078" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="OWNER_PET" />
+		<for>
+			<effect name="Buff">
+				<sub stat="cancel" val="#cancel" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5202" levels="12" name="Stun">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 7 10 14 19 25 31 36 38 40 42 42 43 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="150" />
+		<set name="basicProperty" val="CON" />
+		<set name="coolTime" val="500" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="4000" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="5203" levels="12" name="Fear">
+		<!-- Temporarily becomes overcome with fear and flees mindlessly. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 7 10 14 19 25 31 36 38 40 42 42 43 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalVisualEffect" val="TURN_FLEE" />
+		<set name="activateRate" val="50" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="150" />
+		<set name="basicProperty" val="MEN" />
+		<set name="coolTime" val="500" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill1092" />
+		<set name="isDebuff" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="DERANGEMENT" />
+		<for>
+			<effect name="Fear" />
+		</for>
+	</skill>
+	<skill id="5204" levels="1" name="Production-First Gigantic Pig Combination">
+		<set name="hitTime" val="5800" />
+		<set name="magicLvl" val="76" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="5205" levels="1" name="Boss Regeneration">
+		<set name="magicLvl" val="99" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5206" levels="1" name="Decrease Speed">
+		<!-- Curse of mutated animals: Movement speed is decreased momentarily. Effect 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="SPEED_DOWN" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill1160" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="95" />
+		<set name="mpConsume" val="62" />
+		<set name="mpInitialConsume" val="16" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="runSpd" val="0.85" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5207" levels="1" name="Decrease Atk. Spd.">
+		<!-- Curse of mutated animals: Attack speed is decreased momentarily. Effect 1. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="ATTACK_TIME_UP" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill4038" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="95" />
+		<set name="mpConsume" val="62" />
+		<set name="mpInitialConsume" val="16" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="pAtkSpd" val="0.85" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5208" levels="1" name="Event Wind walk">
+		<!-- Temporarily increases Speed. Effect 2. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1204" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5209" levels="1" name="Event Shield">
+		<!-- Temporarily increases P. Def. Effect 3. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="PD_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1040" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5210" levels="1" name="Event Bless the body">
+		<!-- Temporarily increases maximum HP. Effect 6. -->
+		<set name="abnormalLvl" val="7" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAX_HP_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1045" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5211" levels="1" name="Event Vampiric rage">
+		<!-- Uses damage inflicted upon the enemy to temporarily restore HP. Excludes damage inflicted by skill or remote attack. Effect 4. -->
+		<set name="abnormalLvl" val="5" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1268" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="5212" levels="1" name="Event Regeneration">
+		<!-- HP recovery bonus is increased for a fixed time. Effect 3. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="HP_REGEN_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1044" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="regHp" val="1.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5213" levels="1" name="Event Haste">
+		<!-- Temporarily increases Atk. Spd. Effect 1. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1086" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5214" levels="1" name="Event Bless the soul">
+		<!-- Temporarily increases maximum MP. Effect 6. -->
+		<set name="abnormalLvl" val="7" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MAX_MP_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5215" levels="1" name="Event Acumen">
+		<!-- Temporarily increases Casting Spd. Effect 3. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1085" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5216" levels="1" name="Event Concentration">
+		<!-- Temporarily decreases the probability of magic being canceled due to damage taken. Effect 1. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CANCEL_PROB_DOWN" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1078" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<sub stat="cancel" val="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5217" levels="1" name="Event Empower">
+		<!-- Temporarily increases M. Atk. Effect 1. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MA_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1059" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.55" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5218" levels="1" name="Production: Event Teleport">
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="76" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="ONE" />
+	</skill>
+	<skill id="5219" levels="1" name="Stun of giant mutated animal">
+		<!-- Curse of giant mutated animal: Stuns and paralyzes target. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="600" />
+		<set name="coolTime" val="2000" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="6000" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="95" />
+		<set name="mpConsume" val="43" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AREA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="5220" levels="1" name="Fear of giant mutated animal">
+		<!-- Curse of giant mutated animal: Creates fear, making target run away uncontrollably. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalVisualEffect" val="TURN_FLEE" />
+		<set name="activateRate" val="50" />
+		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="coolTime" val="2000" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="6000" />
+		<set name="isDebuff" val="true" />
+		<set name="magicLvl" val="95" />
+		<set name="mpConsume" val="43" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AREA" />
+		<set name="trait" val="DERANGEMENT" />
+		<for>
+			<effect name="Fear" />
+		</for>
+	</skill>
+	<skill id="5221" levels="1" name="Balor - Physical Close Range Weak Point">
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BLUNT="-70" />
+				<param DAGGER="-70" />
+				<param SWORD="-70" />
+				<param DUALFIST="-70" />
+				<param DUAL="-70" />
+				<param POLE="-70" />
+				<param DUALDAGGER="-70" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5222" levels="1" name="Balor - Physical Long Range Weak Point">
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BOW="-70" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5223" levels="1" name="Balor - Magic Weak Point">
+		<set name="abnormalVisualEffect" val="NONE" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="T" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mDef" val="0.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5224" levels="1" name="Berserk">
+		<!-- Increases P. Atk. and P. Def. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="BERSERKER" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="3000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="75" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.5" />
+				<mul stat="pDef" val="1.5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5225" levels="1" name="Invincible">
+		<!-- Invincible against general attack and skill, buff/de-buff. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalVisualEffect" val="INVINCIBILITY" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="3500" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="60" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Invincible" />
+		</for>
+	</skill>
+	<skill id="5226" levels="1" name="Imprison">
+		<!-- Transfers to prison. -->
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="60" />
+		<set name="mpInitialConsume" val="15" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="ONE" />
+	</skill>
+	<skill id="5227" levels="1" name="Ground Strike">
+		<!-- Powerful attack on surrounding area. -->
+		<set name="affectRange" val="200" />
+		<set name="baseCritRate" val="20" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="2500" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="187" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="5800" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5228" levels="1" name="Jump Attack">
+		<!-- Powerful attack on surrounding area. -->
+		<set name="affectRange" val="200" />
+		<set name="baseCritRate" val="20" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="2500" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="373" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="11786" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5229" levels="1" name="Strong Punch">
+		<!-- Stunned by a Heavy Punch Attack. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="80" />
+		<set name="baseCritRate" val="20" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="flyRadius" val="300" />
+		<set name="flyType" val="THROW_UP" />
+		<set name="hitTime" val="2800" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="75" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="4640" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+			<effect name="ThrowUp" />
+		</for>
+	</skill>
+	<skill id="5230" levels="1" name="Stun">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="affectRange" val="300" />
+		<set name="basicProperty" val="CON" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="5000" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="195" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="2784" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="5231" levels="1" name="Stun">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="affectRange" val="300" />
+		<set name="basicProperty" val="CON" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="390" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="5704" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="5232" levels="1" name="Stun">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="affectRange" val="300" />
+		<set name="basicProperty" val="CON" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="779" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="11407" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="5233" levels="1" name="Weight Spin Attack - Weak">
+		<!-- Powerful attack on surrounding area. -->
+		<set name="affectRange" val="300" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="5000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="149" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="4563" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5234" levels="1" name="Weight Spin Attack - Mid">
+		<!-- Powerful attack on surrounding area. -->
+		<set name="affectRange" val="300" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="3000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="260" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="7685" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5235" levels="1" name="Weight Spin Attack - Strong">
+		<!-- Powerful attack on surrounding area. -->
+		<set name="affectRange" val="300" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="445" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="13688" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5236" levels="1" name="Speed Up">
+		<!-- Increases speed. Effect 2. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="25" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5237" levels="1" name="Speed Down">
+		<!-- Decreases speed. Effect 2. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="1200" />
+		<set name="abnormalType" val="SPEED_DOWN" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="25" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5238" levels="1" name="Freezing">
+		<!-- Instantly freezes and immobilizes. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="FREEZING" />
+		<set name="activateRate" val="80" />
+		<set name="affectRange" val="600" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="fanRange" val="0,0,600,60" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill1174" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="-1" />
+		<set name="mpConsume" val="89" />
+		<set name="mpInitialConsume" val="23" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="298" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+			<effect name="Paralyze" />
+		</for>
+	</skill>
+	<skill id="5239" levels="5" name="Event Timer">
+		<!-- Battle cannot be continued when the corresponding effect disappears. Corresponding effects will disappear even if you ride a vehicle. -->
+		<table name="#abnormalTime"> 300 600 900 1200 1800 </table>
+		<table name="#Time"> 300 600 900 1200 1800 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="#abnormalTime" />
+		<set name="abnormalType" val="TIME_CHECK" />
+		<set name="canBeDispeled" val="false" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill5239" />
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="stayAfterDeath" val="true" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff" />
+		</for>
+	</skill>
+	<skill id="5240" levels="1" name="Stun">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="activateRate" val="80" />
+		<set name="affectRange" val="600" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="fanRange" val="0,0,600,60" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="84" />
+		<set name="mpConsume" val="221" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="6723" />
+		<set name="targetType" val="FRONT_AREA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="5241" levels="1" name="Stun">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="activateRate" val="80" />
+		<set name="affectRange" val="300" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="84" />
+		<set name="mpConsume" val="368" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="11205" />
+		<set name="targetType" val="AREA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="5242" levels="1" name="Sickness">
+		<!-- Temporary illness that makes you queasy and blurs your vision. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="MAX_BREATH_UP" />
+		<set name="abnormalVisualEffect" val="SHAKE" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill5242" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff" />
+		</for>
+	</skill>
+	<skill id="5243" levels="1" name="Blind">
+		<!-- Temporarily cannot see. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="MAX_BREATH_UP" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill5243" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+	</skill>
+	<skill id="5244" levels="1" name="Physical Up">
+		<!-- Increases P. Atk. and P. Def. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="5" />
+		<set name="abnormalType" val="PA_PD_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.15" />
+			</effect>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5245" levels="1" name="Magical Up">
+		<!-- Increases magic power and magic resistance. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="5" />
+		<set name="abnormalType" val="MA_MD_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="icon.skill1059" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.15" />
+			</effect>
+			<effect name="Buff">
+				<mul stat="mDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5246" levels="12" name="Boss Dark Explosion">
+		<table name="#magicLvl"> 14 24 34 44 54 64 74 79 84 89 94 99 </table>
+		<table name="#mpConsume"> 23 32 44 58 74 89 102 107 112 114 116 118 </table>
+		<table name="#power"> 21 31 43 58 75 92 108 115 121 125 129 132 </table>
+		<set name="affectRange" val="300" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3300" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="5247" levels="12" name="Seed of Darkness">
+		<!-- Instantly decreases HP. Critical Damage will be inflicted by the full grown seed if it is not removed. -->
+		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
+		<table name="#calledSkillLevel"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
+		<table name="#dot"> 60 91 131 177 225 270 305 305 334 334 360 360 </table>
+		<table name="#magicLvl"> 14 24 34 44 54 64 74 79 84 89 94 99 </table>
+		<table name="#mpConsume"> 16 23 32 42 53 65 75 79 82 84 85 87 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="DARK_SEED" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="100" />
+		<set name="affectRange" val="300" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="900" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="3300" />
+		<set name="icon" val="icon.skill0523" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AREA" />
+		<set name="trait" val="BLEED" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dot" />
+			</effect>
+		</for>
+		<endEffects>
+			<effect name="CallSkill">
+				<param skillId="5248" skillLevel="#calledSkillLevel" />
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="5248" levels="12" name="Seed Explosion">
+		<table name="#magicLvl"> 14 24 34 44 54 64 74 79 84 89 94 99 </table>
+		<table name="#power"> 81 121 171 231 298 367 431 458 481 500 513 526 </table>
+		<set name="affectRange" val="300" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3300" />
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="5249" levels="12" name="Boss Dark Circle">
+		<table name="#magicLvl"> 14 24 34 44 54 64 74 79 84 89 94 99 </table>
+		<table name="#mpConsume"> 14 23 32 42 54 66 78 83 87 90 92 93 </table>
+		<table name="#mpInitialConsume"> 4 6 8 11 14 17 20 21 22 23 23 24 </table>
+		<table name="#power"> 21 31 43 58 75 92 108 115 121 125 129 132 </table>
+		<set name="affectRange" val="200" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3300" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="5250" levels="1" name="Stun">
+		<!-- Target temporarily gets thrown into a state of shock and immobilized. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="5" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="80" />
+		<set name="affectRange" val="300" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="87" />
+		<set name="mpConsume" val="76" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AREA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="5251" levels="12" name="Poison">
+		<!-- A toxin that gradually reduces HP. Effect 2. -->
+		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
+		<table name="#calledSkillLevel"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
+		<table name="#dot"> 32 47 63 82 100 115 126 126 132 132 132 135 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 24 39 54 73 94 116 136 144 152 157 161 163 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="70" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="1800" />
+		<set name="icon" val="icon.skill4035" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="POISON" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dot" />
+			</effect>
+		</for>
+		<endEffects>
+			<effect name="CallSkill">
+				<param skillId="5252" skillLevel="#calledSkillLevel" />
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="5252" levels="12" name="Paralysis">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PARALYZE" />
+		<set name="abnormalVisualEffect" val="PARALYZE" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill1170" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="100" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="PARALYZE" />
+		<for>
+			<effect name="Paralyze" />
+		</for>
+	</skill>
+	<skill id="5253" levels="12" name="Bleed">
+		<!-- HP decreasing caused by bleeding. Effect 2. -->
+		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
+		<table name="#calledSkillLevel"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
+		<table name="#dot"> 35 50 68 87 107 123 134 134 139 139 142 142 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="BLEEDING" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="100" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill0096" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="BLEED" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dot" />
+			</effect>
+		</for>
+		<endEffects>
+			<effect name="CallSkill">
+				<param skillId="5252" skillLevel="#calledSkillLevel" />
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="5254" levels="12" name="Invasion of Spirit">
+		<!-- Decreases MP. Effect 2. -->
+		<table name="#abnormalLvls"> 2 2 2 2 2 3 4 5 6 7 8 8 </table>
+		<table name="#calledSkillLevel"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
+		<table name="#dot"> 4 6 8 11 14 17 20 21 22 23 23 23 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 17 29 39 53 67 83 97 103 108 112 115 116 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="DOT_MP" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="90" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="750" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1250" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill1102" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dot" />
+			</effect>
+		</for>
+		<endEffects>
+			<effect name="CallSkill">
+				<param skillId="5255" skillLevel="#calledSkillLevel" />
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="5255" levels="12" name="Mana Burn">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#power"> 26 39 56 78 102 128 153 164 174 182 189 194 </table>
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="4000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttackMp" />
+		</for>
+	</skill>
+	<skill id="5256" levels="1" name="Announcement of Death">
+		<!-- Announcement of Death. Dead after 30 seconds. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="DEATH_CLACK" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="600" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="1000" />
+		<set name="icon" val="icon.skill5239" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="95" />
+		<set name="mpConsume" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<endEffects>
+			<effect name="CallSkill">
+				<param skillId="5257" skillLevel="1" />
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="5257" levels="2" name="Death">
+		<table name="#lethalStrikeRate"> 99 5 </table>
+		<set name="effectPoint" val="1" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Lethal">
+				<param fullLethal="#lethalStrikeRate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5258" levels="12" name="Mana Burn">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 10 16 21 28 36 44 52 55 58 60 61 62 </table>
+		<table name="#mpInitialConsume"> 3 4 6 7 9 11 13 14 15 15 16 16 </table>
+		<table name="#power"> 26 39 56 78 102 128 153 164 174 182 189 194 </table>
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttackMp" />
+		</for>
+	</skill>
+	<skill id="5259" levels="12" name="Fear">
+		<!-- Temporarily becomes overcome with fear and flees mindlessly. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 10 16 21 28 36 44 52 55 58 60 61 62 </table>
+		<table name="#mpInitialConsume"> 3 4 6 7 9 11 13 14 15 15 16 16 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalVisualEffect" val="TURN_FLEE" />
+		<set name="activateRate" val="40" />
+		<set name="affectRange" val="150" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-1" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill1092" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="DERANGEMENT" />
+		<for>
+			<effect name="Fear" />
+		</for>
+	</skill>
+	<skill id="5260" levels="12" name="Disarm">
+		<!-- Equipment Cancel Condition. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="5" />
+		<set name="abnormalType" val="DISARM" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="activateRate" val="70" />
+		<set name="basicProperty" val="STR" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill0485" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Disarm" />
+		</for>
+	</skill>
+	<skill id="5261" levels="1" name="Zombie">
+		<!-- Condition causing target to transform into zombie. Condition to decrease physical ability. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="7" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isDebuff" val="true" />
+		<set name="magicLvl" val="60" />
+		<set name="mpConsume" val="44" />
+		<set name="mpInitialConsume" val="11" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Transformation">
+				<param id="303" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5262" levels="12" name="NPC - Rise Shot">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
+		<table name="#power"> 31 70 146 278 481 758 1084 1251 1408 1521 1658 1728 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="coolTime" val="800" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="hitTime" val="3200" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="25000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5263" levels="12" name="NPC _ Chain Lightning">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 14 23 32 42 54 66 78 83 87 90 92 93 </table>
+		<table name="#mpInitialConsume"> 4 6 8 11 14 17 20 21 22 23 23 24 </table>
+		<table name="#power"> 21 31 43 58 75 92 108 115 121 125 129 132 </table>
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="500" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="hitTime" val="5000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="20000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="5264" levels="12" name="Death Mark">
+		<!-- Marked with the brand of darkness. Effect 1. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 14 23 32 42 54 66 78 83 87 90 92 93 </table>
+		<table name="#mpInitialConsume"> 4 6 8 11 14 17 20 21 22 23 23 24 </table>
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="DEATH_MARK" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="70" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="3000" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="9000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff" />
+		</for>
+	</skill>
+	<skill id="5265" levels="12" name="NPC - Soul Emission">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 14 23 32 42 54 66 78 83 87 90 92 93 </table>
+		<table name="#mpInitialConsume"> 4 6 8 11 14 17 20 21 22 23 23 24 </table>
+		<table name="#power"> 21 31 43 58 75 92 108 115 121 125 129 132 </table>
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="fanRange" val="0,0,200,180" />
+		<set name="hitTime" val="2500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="5266" levels="12" name="Magical Backfire">
+		<!-- Increased MP consumption. Effect 1. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 14 23 32 42 54 66 78 83 87 90 92 93 </table>
+		<table name="#mpInitialConsume"> 4 6 8 11 14 17 20 21 22 23 23 24 </table>
+		<table name="#val"> 1 1.5 1.5 7 7 7 7 7 7 7 7 7 </table>
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="MP_COST_UP" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill1396" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="magicalMpConsumeRate" val="#val" />
+				<mul stat="physicalMpConsumeRate" val="#val" />
+				<mul stat="danceMpConsumeRate" val="#val" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5267" levels="21" name="Trap Explosion">
+		<table name="#magicLvl"> 28 36 43 49 55 60 64 68 72 74 76 77 78 79 80 81 82 83 84 85 86 </table>
+		<table name="#power"> 35 46 57 66 77 85 92 99 105 107 111 112 114 115 116 117 119 120 121 122 123 </table>
+		<set name="castRange" val="600" />
+		<set name="affectRange" val="200" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="element" val="0" /> <!-- Fire -->
+		<set name="elementPower" val="20" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="5268" levels="17" name="Poison">
+		<!-- A toxin that gradually reduces HP. -->
+		<table name="#dmg"> 18 22 26 26 26 28 55 55 55 55 57 57 57 57 57 57 57 </table>
+		<table name="#magicLvl"> 49 55 60 64 68 72 76 77 78 79 80 81 82 83 84 85 86 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="80" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill0515" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="POISON" />
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dmg" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5269" levels="17" name="Slow Trap">
+		<!-- Decreases Atk. Spd. and Casting Spd. Effect 3. -->
+		<table name="#magicLvl"> 52 58 62 66 70 74 76 77 78 79 80 81 82 83 84 85 86 </table>
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ALL_SPEED_DOWN" />
+		<set name="activateRate" val="80" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill0516" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="runSpd" val="0.7" />
+				<mul stat="pAtkSpd" val="0.77" />
+				<mul stat="mAtkSpd" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5270" levels="16" name="Flash Trap">
+		<!-- Receives instant impact and stunned after losing the target. -->
+		<table name="#magicLvl"> 55 60 64 68 72 76 77 78 79 80 81 82 83 84 85 86 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="80" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="CON" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill0517" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="Stun" />
+			<effect name="TargetCancel">
+				<param chance="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5271" levels="19" name="Hold">
+		<!-- Temporarily immobilized. -->
+		<table name="#magicLvl"> 40 46 52 58 62 66 70 74 76 77 78 79 80 81 82 83 84 85 86 </table>
+		<table name="#traits"> NONE HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD HOLD </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalVisualEffect" val="ROOT" />
+		<set name="activateRate" val="80" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="icon" val="icon.skill0518" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="#traits" />
+		<for>
+			<effect name="Root" />
+			<effect name="DefenceTrait">
+				<param HOLD="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5272" levels="17" name="Decoy Provocation">
+		<table name="#effectPoints"> -4080 -4950 -5657 -6104 -6349 -6542 -6582 -6620 -6656 -6690 -6722 -6752 -6781 -6809 -6836 -6862 -6887 </table>
+		<table name="#magicLvl"> 43 52 60 66 70 74 76 77 78 79 80 81 82 83 84 85 86 </table>
+		<set name="affectRange" val="200" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="hitTime" val="1200" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="TargetMeProbability">
+				<param chance="80" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5273" levels="9" name="NPC(party) - Physical Single Close Range Attack">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<table name="#power"> 13066 18040 18486 18623 18745 18844 18909 18909 18909 </table>
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="830" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5274" levels="9" name="NPC(party) - Physical Single Long Range Attack">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 151 156 160 164 167 168 169 171 173 </table>
+		<table name="#power"> 34842 48105 49294 49660 49987 50251 50423 50423 50423 </table>
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="4500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5275" levels="9" name="NPC(party) - Physical Range Close Range Attack">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<table name="#power"> 13066 18040 18486 18623 18745 18844 18909 18909 18909 </table>
+		<set name="affectRange" val="150" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5276" levels="9" name="NPC(party) - Physical Range Long Range Attack">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 227 234 240 246 250 252 254 256 259 </table>
+		<table name="#power"> 8711 12027 12324 12415 12497 12563 12606 12606 12606 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="hitTime" val="3200" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5277" levels="9" name="NPC(party) - Physical Single Close Range Attack - Fire">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<table name="#power"> 13066 18040 18486 18623 18745 18844 18909 18909 18909 </table>
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="element" val="0" /> <!-- Fire -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="830" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5278" levels="9" name="NPC(party) - Physical Single Long Range Attack - Fire">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 151 156 160 164 167 168 169 171 173 </table>
+		<table name="#power"> 34842 48105 49294 49660 49987 50251 50423 50423 50423 </table>
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="0" /> <!-- Fire -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="4500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5279" levels="9" name="NPC(party) - Physical Range Close Range Attack - Fire">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<set name="affectRange" val="150" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="0" /> <!-- Fire -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="13066" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5280" levels="9" name="NPC(party) - Physical Range Long Range Attack - Fire">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 227 234 240 246 250 252 254 256 259 </table>
+		<table name="#power"> 8711 12027 12324 12415 12497 12563 12606 12606 12606 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="element" val="0" /> <!-- Fire -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3200" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5281" levels="9" name="NPC(party) - Physical Single Close Range Attack - Water">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<table name="#power"> 13066 18040 18486 18623 18745 18844 18909 18909 18909 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="830" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5282" levels="9" name="NPC(party) - Physical Single Long Range Attack - Water">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 151 156 160 164 167 168 169 171 173 </table>
+		<table name="#power"> 34842 48105 49294 49660 49987 50251 50423 50423 50423 </table>
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="4500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5283" levels="9" name="NPC(party) - Physical Range Close Range Attack - Water">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<set name="affectRange" val="150" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="13066" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5284" levels="9" name="NPC(party) - Physical Range Long Range Attack - Water">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 227 234 240 246 250 252 254 256 259 </table>
+		<table name="#power"> 8711 12027 12324 12415 12497 12563 12606 12606 12606 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3200" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5285" levels="9" name="NPC(party) - Physical Single Close Range Attack - Wind">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<table name="#power"> 13066 18040 18486 18623 18745 18844 18909 18909 18909 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="element" val="2" /> <!-- Wind -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="830" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5286" levels="9" name="NPC(party) - Physical Single Long Range Attack - Wind">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 151 156 160 164 167 168 169 171 173 </table>
+		<table name="#power"> 34842 48105 49294 49660 49987 50251 50423 50423 50423 </table>
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="2" /> <!-- Wind -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="4500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5287" levels="9" name="NPC(party) - Physical Range Close Range Attack - Wind">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<set name="affectRange" val="150" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="2" /> <!-- Wind -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="13066" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5288" levels="9" name="NPC(party) - Physical Range Long Range Attack - Wind">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 227 234 240 246 250 252 254 256 259 </table>
+		<table name="#power"> 8711 12027 12324 12415 12497 12563 12606 12606 12606 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="element" val="2" /> <!-- Wind -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3200" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5289" levels="9" name="NPC(party) - Physical Single Close Range Attack - Earth">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<table name="#power"> 13066 18040 18486 18623 18745 18844 18909 18909 18909 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="element" val="3" /> <!-- Earth -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="830" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5290" levels="9" name="NPC(party) - Physical Single Long Range Attack - Earth">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 151 156 160 164 167 168 169 171 173 </table>
+		<table name="#power"> 34842 48105 49294 49660 49987 50251 50423 50423 50423 </table>
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="3" /> <!-- Earth -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="4500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5291" levels="9" name="NPC(party) - Physical Range Close Range Attack - Earth">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<set name="affectRange" val="150" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="3" /> <!-- Earth -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="13066" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5292" levels="9" name="NPC(party) - Physical Range Long Range Attack - Earth">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 227 234 240 246 250 252 254 256 259 </table>
+		<table name="#power"> 8711 12027 12324 12415 12497 12563 12606 12606 12606 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="element" val="3" /> <!-- Earth -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3200" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5293" levels="9" name="NPC(party) - Physical Single Close Range Attack - Holy">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<table name="#power"> 13066 18040 18486 18623 18745 18844 18909 18909 18909 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="830" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5294" levels="9" name="NPC(party) - Physical Single Long Range Attack - Holy">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 151 156 160 164 167 168 169 171 173 </table>
+		<table name="#power"> 34842 48105 49294 49660 49987 50251 50423 50423 50423 </table>
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="4500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5295" levels="9" name="NPC(party) - Physical Range Close Range Attack - Holy">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<set name="affectRange" val="150" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="13066" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5296" levels="9" name="NPC(party) - Physical Range Long Range Attack - Holy">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 227 234 240 246 250 252 254 256 259 </table>
+		<table name="#power"> 8711 12027 12324 12415 12497 12563 12606 12606 12606 </table>
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="500" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3200" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5297" levels="9" name="NPC(party) - Physical Single Close Range Attack - Dark">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<table name="#power"> 13066 18040 18486 18623 18745 18844 18909 18909 18909 </table>
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="660" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="830" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5298" levels="9" name="NPC(party) - Physical Single Long Range Attack - Dark">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 151 156 160 164 167 168 169 171 173 </table>
+		<table name="#power"> 34842 48105 49294 49660 49987 50251 50423 50423 50423 </table>
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="4500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="5299" levels="9" name="NPC(party) - Physical Range Close Range Attack - Dark">
+		<table name="#magicLvl"> 75 78 81 84 87 90 93 96 99 </table>
+		<table name="#mpConsume"> 76 78 80 82 84 84 85 86 87 </table>
+		<set name="affectRange" val="150" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="13066" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+</list>

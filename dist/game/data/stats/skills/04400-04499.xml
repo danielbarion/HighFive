@@ -1,0 +1,1715 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="4400" levels="3" name="Acumen">
+		<!-- Temporarily increases Casting Spd. Effect 1. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#mAtkSpd"> 1.15 1.23 1.3 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1085" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="#mAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4401" levels="3" name="Empower">
+		<!-- Temporarily increases M. Atk. Effect 1. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#mAtk"> 1.55 1.65 1.75 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="MA_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1059" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="#mAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4402" levels="2" name="Haste">
+		<!-- Temporarily increases Atk. Spd. Effect 1. -->
+		<table name="#abnormalLvls"> 2 3 </table>
+		<table name="#pAtkSpd"> 1.15 1.33 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1086" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="#pAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4403" levels="3" name="Guidance">
+		<!-- Temporarily increases Accuracy. Effect 1. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#accCombat"> 2 3 4 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="HIT_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1240" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="#accCombat" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4404" levels="3" name="Focus">
+		<!-- Temporarily increases the probability of critical attack. Effect 1. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#rCrit"> 1.2 1.25 1.3 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1077" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="#rCrit" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4405" levels="3" name="Death Whisper">
+		<!-- Temporarily increases critical attack power. Effect 1. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#cAtk"> 1.25 1.3 1.35 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1242" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmg" val="#cAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4406" levels="3" name="Agility">
+		<!-- Temporarily increases evasion. Effect 1. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#rEvas"> 2 3 4 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="AVOID_UP" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1087" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="rEvas" val="#rEvas" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4407" levels="2" name="Monster Type">
+		<table name="#icons"> icon.skill0000 icon.skill4407 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="4408" levels="20" name="HP Modifiers">
+		<table name="#icons"> icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill4381 icon.skill4311 icon.skill4303 icon.skill4304 icon.skill4305 icon.skill4306 icon.skill4307 icon.skill4308 icon.skill4309 icon.skill4310 icon.skill4408_x10 icon.skill4408_x11 icon.skill4408_x12 </table>
+		<table name="#maxhp"> 1 1.1 1.21 1.33 1.46 1.61 1.77 0.25 0.5 2 3 4 5 6 7 8 9 10 11 12 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxHp" val="#maxhp" />
+				<mul stat="regHp" val="#maxhp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4409" levels="20" name="MP Modifiers">
+		<table name="#icons"> icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill4381 icon.skill4311 icon.skill4303 icon.skill4304 icon.skill4305 icon.skill4306 icon.skill4307 icon.skill4308 icon.skill4309 icon.skill4310 icon.skill4409_x10 icon.skill4409_x11 icon.skill4409_x12 </table>
+		<table name="#maxmp"> 1 1.1 1.21 1.33 1.46 1.61 1.77 0.25 0.5 2 3 4 5 6 7 8 9 10 11 12 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="maxMp" val="#maxmp" />
+				<mul stat="regMp" val="#maxmp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4410" levels="22" name="P. Atk. Modifiers">
+		<table name="#icons"> icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0000 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill0141 icon.skill4410_max </table>
+		<table name="#pAtk"> 0.39 0.43 0.47 0.52 0.57 0.63 0.69 0.76 0.83 0.91 1 1.1 1.21 1.33 1.46 1.61 1.77 1.94 2.14 2.35 2.59 10 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="#pAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4411" levels="22" name="M. Atk. Modifiers">
+		<table name="#icons"> icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill0000 icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_normal icon.skill4411_max </table>
+		<table name="#mAtk"> 0.15 0.18 0.22 0.27 0.32 0.39 0.47 0.57 0.69 0.83 1 1.21 1.46 1.77 2.14 2.59 3.13 3.79 4.59 5.55 6.72 100 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="#mAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4412" levels="22" name="P. Def. Modifiers">
+		<table name="#icons"> icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0000 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill0142 icon.skill4412_new </table>
+		<table name="#pDef"> 0.39 0.43 0.47 0.52 0.57 0.63 0.69 0.76 0.83 0.91 1 1.1 1.21 1.33 1.46 1.61 1.77 1.94 2.14 2.35 2.59 10 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="#pDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4413" levels="22" name="M. Def. Modifiers">
+		<table name="#icons"> icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill0000 icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_normal icon.skill4413_max </table>
+		<table name="#mDef"> 0.39 0.43 0.47 0.52 0.57 0.63 0.69 0.76 0.83 0.91 1 1.1 1.21 1.33 1.46 1.61 1.77 1.94 2.14 2.35 2.59 10 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mDef" val="#mDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4414" levels="3" name="Armor Type">
+		<!-- Strong P. Def. and weak Evasion. -->
+		<table name="#evasion"> -10 0 10 </table>
+		<table name="#icons"> icon.skill4312 icon.skill0000 icon.skill4313 </table>
+		<table name="#pdef"> 1.15 1 0.85 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="rEvas" val="#evasion" />
+				<mul stat="pDef" val="#pdef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4415" levels="26" name="Weapon Type">
+		<table name="#pAtk"> 1 1.38 1 1.38 1 1.38 0.87 1.21 2.22 2.5 1 1.38 1.16 1.62 1.16 1.62 1.16 1.62 1.16 1.62 1.08 1.62 0.93 1.62 1.38 1.62 </table>
+		<table name="#pAtkSpd"> 1 0.71 1 0.71 1 0.71 1.14 0.82 0.89 0.64 1 0.71 0.85 0.61 0.85 0.61 0.85 0.61 0.85 0.61 0.92 0.61 1.07 0.61 0.62 0.61 </table>
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="#pAtk" />
+				<mul stat="pAtkSpd" val="#pAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4416" levels="25" name="Races">
+		<!-- Called out of their graves by black magic, a curse or the power of an evil mind, most of these creatures lack intelligence and can perform only simple actions. However, some high-ranking undead possess great knowledge and sophistication even when compared to ordinary humanoids. -->
+		<table name="#icons"> icon.skill4290 icon.skill4291 icon.skill4292 icon.skill4293 icon.skill4294 icon.skill4295 icon.skill4296 icon.skill4297 icon.skill4298 icon.skill4299 icon.skill4300 icon.skill4301 icon.skill4302 icon.skill4416_human icon.skill4416_elf icon.skill4416_darkelf icon.skill4416_orc icon.skill4416_dwarf icon.skill4416_etc icon.skill4416_none icon.skill4416_siegeweapon icon.skill4416_castleguard icon.skill4416_mercenary icon.skill4416_none icon.skill4296 </table>
+		<table name="#pDefAnimals"> 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefBeasts"> 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefBlunts"> 0 0 0 0 0 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefBows"> 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefBugs"> 0 0 0 0 0 0 0 0 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefDragons"> 0 0 0 0 0 0 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefDuals"> 0 0 0 0 0 0 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefGiants"> 0 0 0 0 0 0 0 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefMagicCreatures"> 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefPlants"> 0 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefShocks"> 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<table name="#pDefSwords"> 0 0 0 0 0 0 0 0 0 -15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait"> <!-- TODO: Verify me! -->
+				<param CONSTRUCT_WEAKNESS="#pDefMagicCreatures" />
+				<param BEAST_WEAKNESS="#pDefBeasts" />
+				<param ANIMAL_WEAKNESS="#pDefAnimals" />
+				<param BOW="#pDefBows" />
+				<param PLANT_WEAKNESS="#pDefPlants" />
+				<param BLUNT="#pDefBlunts" />
+				<param DRAGON_WEAKNESS="#pDefDragons" />
+				<param SWORD="#pDefSwords" />
+				<param DUAL="#pDefDuals" />
+				<param GIANT_WEAKNESS="#pDefGiants" />
+				<param SHOCK="#pDefShocks" />
+				<param BUG_WEAKNESS="#pDefBugs" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4417" levels="38" name="Race Types">
+		<!-- Animals -->
+		<table name="#icons"> icon.skill4293 icon.skill4292 icon.skill4292 icon.skill4292 icon.skill4292 icon.skill4301 icon.skill4301 icon.skill4301 icon.skill4291 icon.skill4291 icon.skill4291 icon.skill4298 icon.skill4298 icon.skill4298 icon.skill4297 icon.skill4297 icon.skill4297 icon.skill4299 icon.skill4296 icon.skill4296 icon.skill4296 icon.skill4296 icon.skill4296 icon.skill4302 icon.skill4300 icon.skill4295 icon.skill4295 icon.skill4295 icon.skill4295 icon.skill4295 icon.skill4295 icon.skill4295 icon.skill4294 icon.skill4290 icon.skill4290 icon.skill4290 icon.skill4290 icon.skill4290 </table>
+		<table name="#pDefBleed"> 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 </table>
+		<table name="#pDefBlunts"> 0 0 0 0 0 0 0 0 0 -15 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 </table>
+		<table name="#pDefBows"> 0 0 -15 -15 -15 0 0 -15 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 </table>
+		<table name="#pDefDagger"> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 </table>
+		<table name="#pDefDualDagger"> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 </table>
+		<table name="#pDefHold"> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 </table>
+		<table name="#pDefPoison"> 0 0 0 0 0 0 15 15 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 </table>
+		<table name="#pDefSleep"> 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 </table>
+		<set name="icon" val="#icons" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait"> <!-- TODO: Verify me! -->
+				<param BOW="#pDefBows" />
+				<param POISON="#pDefPoison" />
+				<param BLUNT="#pDefBlunts" />
+				<param BLEED="#pDefBleed" />
+				<param SLEEP="#pDefSleep" />
+				<param DAGGER="#pDefDagger" />
+				<param DUALDAGGER="#pDefDualDagger" />
+				<param HOLD="#pDefHold" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4418" levels="5" name="Fire Attacks">
+		<!-- Unleashes an attack fortified with fire energy. Resistant to fire attacks. -->
+		<table name="#vuln"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.etc_fire_crystal_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="firePower" val="10" />
+				<add stat="fireRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4419" levels="5" name="Water Attacks">
+		<!-- Unleashes an attack fortified with water energy. Resistant to water attacks. -->
+		<table name="#vuln"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.etc_water_crystal_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="waterPower" val="10" />
+				<add stat="waterRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4420" levels="5" name="Wind Attacks">
+		<!-- Unleashes an attack fortified with wind energy. Resistant to wind attacks. -->
+		<table name="#vuln"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.etc_wind_crystal_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="windPower" val="10" />
+				<add stat="windRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4421" levels="5" name="Earth Attacks">
+		<!-- Unleashes an attack fortified with earth energy. Resistant to earth attacks. -->
+		<table name="#vuln"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.etc_earth_crystal_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="earthPower" val="10" />
+				<add stat="earthRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4422" levels="5" name="Dark Attacks">
+		<!-- Unleashes an attack fortified with dark energy. Resistant to dark attacks. -->
+		<table name="#vuln"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.etc_unholy_crystal_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="darkPower" val="10" />
+				<add stat="darkRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4423" levels="5" name="Sacred Attacks">
+		<!-- Unleashes an attack fortified with sacred energy. Resistant to sacred attacks. -->
+		<table name="#vuln"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.etc_holy_crystal_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="holyPower" val="10" />
+				<add stat="holyRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4424" levels="5" name="Resist Hand-to-hand Weapons">
+		<!-- Resistant to hand-to-hand combat weapons. -->
+		<table name="#trait_dualfist"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.skill4424" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DUALFIST="#trait_dualfist" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4425" levels="5" name="Resist Blunt Weapons">
+		<!-- Resistant to Blunt Weapons. -->
+		<table name="#trait_blunt"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.skill4425" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BLUNT="#trait_blunt" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4426" levels="5" name="Resist Dual-Sword Weapons">
+		<!-- Resistant to Dual-Sword Weapons. -->
+		<table name="#trait_dual"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.skill4426" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DUAL="#trait_dual" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4427" levels="5" name="Resist Swords">
+		<!-- Resistant to Sword Weapons. -->
+		<table name="#trait_sword"> 10 20 30 40 50 </table>
+		<set name="icon" val="icon.skill4427" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SWORD="#trait_sword" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4428" levels="5" name="Resist Two-handed Weapons">
+		<!-- Resistant to Two-Handed Weapons. -->
+		<set name="icon" val="icon.skill4428" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="4429" levels="5" name="Greater Resist Fire Attacks">
+		<!-- Very resistant to fire attacks. -->
+		<table name="#vuln"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4429" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="fireRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4430" levels="5" name="Greater Resist Water Attacks">
+		<!-- Very resistant to water attacks. -->
+		<table name="#vuln"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4430" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="waterRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4431" levels="5" name="Greater Resist Wind Attacks">
+		<!-- Very resistant to wind attacks. -->
+		<table name="#vuln"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4431" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="windRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4432" levels="5" name="Greater Resist Earth Attacks">
+		<!-- Very resistant to earth attacks. -->
+		<table name="#vuln"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4432" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="earthRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4433" levels="5" name="Greater Resist Sacred Attacks">
+		<!-- Very resistant to sacred attacks. -->
+		<table name="#vuln"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4433" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="holyRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4434" levels="5" name="Greater Resist Dark Attacks">
+		<!-- Very resistant to dark attacks. -->
+		<table name="#vuln"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4434" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add stat="darkRes" val="#vuln" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4435" levels="5" name="Greater Resist Stun">
+		<!-- Very resistant to stun attacks. -->
+		<table name="#trait_shock"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4435" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SHOCK="#trait_shock" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4436" levels="5" name="Greater Resist Poison">
+		<!-- Very resistant to poison attacks. -->
+		<table name="#trait_poison"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4436" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param POISON="#trait_poison" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4437" levels="5" name="Greater Resist Bleeding">
+		<!-- Very resistant to bleed attacks. -->
+		<table name="#trait_bleed"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4437" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BLEED="#trait_bleed" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4438" levels="5" name="Greater Resist Sleep">
+		<!-- Very resistant to sleep attacks. -->
+		<table name="#trait_sleep"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4286" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SLEEP="#trait_sleep" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4439" levels="5" name="Greater Resist Hold">
+		<!-- Very resistant to hold attacks. -->
+		<table name="#trait_hold"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4288" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param HOLD="#trait_hold" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4440" levels="5" name="Greater Resist Paralysis">
+		<!-- Very resistant to paralysis attacks. -->
+		<table name="#trait_paralyze"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4440" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param PARALYZE="#trait_paralyze" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4441" levels="5" name="Greater Resist Mental Derangement">
+		<!-- Very resistant to mental attacks. -->
+		<table name="#trait_derangement"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4441" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DERANGEMENT="#trait_derangement" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4442" levels="5" name="Greater Resist Hand-to-hand Weapons">
+		<!-- Very resistant to Hand-to-Hand Weapon attacks. -->
+		<table name="#trait_dualfist"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4442" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DUALFIST="#trait_dualfist" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4443" levels="5" name="Greater Resist Blunt Weapons">
+		<!-- Very resistant to Blunt Weapon attacks. -->
+		<table name="#trait_blunt"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4443" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BLUNT="#trait_blunt" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4444" levels="5" name="Higher Resist Bow/Crossbow Weapons">
+		<!-- Highly resistant to Bow/Crossbow attacks. -->
+		<table name="#traits"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4444" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BOW="#traits" />
+				<param CROSSBOW="#traits" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4445" levels="5" name="Greater Resist Spear Weapons">
+		<!-- Very resistant to Spear Weapon attacks. -->
+		<table name="#trait_pole"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4445" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param POLE="#trait_pole" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4446" levels="5" name="Greater Resist Dual-Sword Weapons">
+		<!-- Very resistant to Dual-Sword Weapon attacks. -->
+		<table name="#trait_dual"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4446" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DUAL="#trait_dual" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4447" levels="5" name="Greater Resist Swords">
+		<!-- Very resistant to Sword attacks. -->
+		<table name="#trait_sword"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4447" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SWORD="#trait_sword" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4448" levels="5" name="Higher resist Daggers/Rapier Weapon">
+		<!-- Highly resistant to Dagger/Rapier attacks. -->
+		<table name="#traits"> 60 70 80 90 100 </table>
+		<set name="icon" val="icon.skill4448" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DAGGER="#traits" />
+				<param RAPIER="#traits" />
+				<param DUALDAGGER="#traits" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4449" levels="5" name="Greater Resist Two-handed Weapons">
+		<!-- Very resistant to Two-Handed Weapon attacks. -->
+		<set name="icon" val="icon.skill4449" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="4450" levels="5" name="Stun Attack Weak Point">
+		<!-- Vulnerable to stun attacks. -->
+		<table name="#trait_shock"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4450" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SHOCK="#trait_shock" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4451" levels="5" name="Poison Attack Weak Point">
+		<!-- Vulnerable to poison attacks. -->
+		<table name="#trait_poison"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4451" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param POISON="#trait_poison" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4452" levels="5" name="Bleed Attack Weak Point">
+		<!-- Vulnerable to bleed attacks. -->
+		<table name="#trait_bleed"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4452" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BLEED="#trait_bleed" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4453" levels="5" name="Sleep Attack Weak Point">
+		<!-- Vulnerable to sleep attacks. -->
+		<table name="#trait_sleep"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4453" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SLEEP="#trait_sleep" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4454" levels="5" name="Hold Attack Weak Point">
+		<!-- Vulnerable to hold attacks. -->
+		<table name="#trait_hold"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4454" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param HOLD="#trait_hold" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4455" levels="5" name="Paralysis Attack Weak Point">
+		<!-- Vulnerable to paralysis attacks. -->
+		<table name="#trait_paralyze"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4455" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param PARALYZE="#trait_paralyze" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4456" levels="5" name="Mental Attack Weak Point">
+		<!-- Vulnerable to mental attacks. -->
+		<table name="#trait_derangement"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4456" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DERANGEMENT="#trait_derangement" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4457" levels="5" name="Hand-to-hand Weapon Weak Point">
+		<!-- Vulnerable to hand-to-hand combat weapons. -->
+		<table name="#trait_dualfist"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4457" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DUALFIST="#trait_dualfist" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4458" levels="5" name="Spear Weapon Weak Point">
+		<!-- Vulnerable to Pole Arm Weapons. -->
+		<table name="#trait_pole"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4458" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param POLE="#trait_pole" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4459" levels="5" name="Dual-Sword Weapon Weak Point">
+		<!-- Vulnerable to Dual-Sword Weapons. -->
+		<table name="#trait_dual"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4459" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DUAL="#trait_dual" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4460" levels="5" name="Sword Weak Point">
+		<!-- Vulnerable to Sword Weapons. -->
+		<table name="#trait_sword"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4460" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param SWORD="#trait_sword" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4461" levels="5" name="Dagger Weak Point">
+		<!-- Weak against Dagger/Rapier attacks. -->
+		<table name="#traits"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4461" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DAGGER="#traits" />
+				<param RAPIER="#traits" />
+				<param DUALDAGGER="#traits" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4462" levels="5" name="Two-handed Weapon Weak Point">
+		<!-- Vulnerable to Two-Handed Weapons. -->
+		<table name="#traits"> -11 -25 -43 -67 -100 </table>
+		<set name="icon" val="icon.skill4462" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DefenceTrait">
+				<param DAGGER="#traits" />
+				<param RAPIER="#traits" />
+				<param DUALDAGGER="#traits" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4463" levels="3" name="Surrender To Water">
+		<!-- Instantly decreases Resistance to water attacks and increases Resistance to fire attacks. Effect 2. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#fire"> 7 12 15 </table>
+		<table name="#magicLvl"> 20 40 70 </table>
+		<table name="#mpConsume"> 16 28 52 </table>
+		<table name="#mpInitialConsume"> 4 7 13 </table>
+		<table name="#water"> 15 25 30 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ARMOR_WATER" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill4280_new" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<add stat="fireRes" val="#fire" />
+				<sub stat="waterRes" val="#water" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4464" levels="3" name="Surrender To Wind">
+		<!-- Instantly decreases Resistance to wind attacks and increases Resistance to earth attacks. Effect 2. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#earth"> 7 12 15 </table>
+		<table name="#magicLvl"> 20 40 70 </table>
+		<table name="#mpConsume"> 16 28 52 </table>
+		<table name="#mpInitialConsume"> 4 7 13 </table>
+		<table name="#wind"> 15 25 30 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ARMOR_WIND" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill4281_new" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<add stat="earthRes" val="#earth" />
+				<sub stat="windRes" val="#wind" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4465" levels="3" name="Surrender To Earth">
+		<!-- Instantly decreases Resistance to earth attacks and increases Resistance to wind attacks. Effect 2. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#earth"> 15 25 30 </table>
+		<table name="#magicLvl"> 20 40 70 </table>
+		<table name="#mpConsume"> 16 28 52 </table>
+		<table name="#mpInitialConsume"> 4 7 13 </table>
+		<table name="#wind"> 7 12 15 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ARMOR_EARTH" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill4282_new" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<add stat="windRes" val="#wind" />
+				<sub stat="earthRes" val="#earth" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4466" levels="3" name="Surrender To Darkness">
+		<!-- Instantly decreases Resistance to Dark and increases Resistance to Holy. Effect 2. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#dark"> 15 25 30 </table>
+		<table name="#holy"> 7 12 15 </table>
+		<table name="#magicLvl"> 20 40 70 </table>
+		<table name="#mpConsume"> 16 28 52 </table>
+		<table name="#mpInitialConsume"> 4 7 13 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ARMOR_UNHOLY" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill4336_new" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<add stat="holyRes" val="#holy" />
+				<sub stat="darkRes" val="#dark" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4467" levels="3" name="Surrender To Light">
+		<!-- Instantly decreases Resistance to Holy and increases Resistance to Dark. Effect 2. -->
+		<table name="#abnormalLvls"> 2 3 4 </table>
+		<table name="#dark"> 7 12 15 </table>
+		<table name="#holy"> 15 25 30 </table>
+		<table name="#magicLvl"> 20 40 70 </table>
+		<table name="#mpConsume"> 16 28 52 </table>
+		<table name="#mpInitialConsume"> 4 7 13 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ARMOR_HOLY" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill4275_new" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<add stat="darkRes" val="#dark" />
+				<sub stat="holyRes" val="#holy" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4468" levels="2" name="Area Buff - Wind Walk">
+		<table name="#abnormalLvls"> 1 2 </table>
+		<table name="#magicLvl"> 30 70 </table>
+		<table name="#speed"> 20 33 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="5" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="#speed" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4469" levels="1" name="Potion Drinking">
+		<set name="magicLvl" val="35" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="4470" levels="1" name="NPC Spoils">
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1800" />
+		<set name="magicLvl" val="35" />
+		<set name="mpConsume" val="12" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="ONE" />
+	</skill>
+	<skill id="4471" levels="12" name="NPC Anger">
+		<!-- Increases NPC's P. Atk. and P. Def. Effect 1. -->
+		<table name="#abnormalLvls"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 10 16 21 28 36 44 52 55 58 60 61 62 </table>
+		<table name="#mpInitialConsume"> 3 4 6 7 9 11 13 14 15 15 16 16 </table>
+		<table name="#pAtkDef"> 1.15 1.3 1.45 1.6 1.9 2.2 2.5 2.8 3.1 3.4 3.7 4 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="PA_PD_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1800" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="#pAtkDef" />
+				<mul stat="pDef" val="#pAtkDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4472" levels="12" name="NPC Strike Golem">
+		<!-- For powerful Golems that are 1.5x stronger -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
+		<table name="#power"> 46 105 219 417 722 1136 1626 1876 2112 2320 2487 2617 </table>
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="2500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="4473" levels="12" name="Stun">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 25 40 56 76 99 121 142 151 159 165 168 170 </table>
+		<table name="#power"> 46 105 219 417 722 1136 1626 1876 2112 2320 2487 2617 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="50" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="700" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1200" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill0101" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="17000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="4474" levels="5" name="Area Heal - Per">
+		<table name="#amount"> 20 40 60 80 100 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 </table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HealPercent">
+				<param power="#amount" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4475" levels="1" name="Perfect Resist Bleeding">
+		<!-- Bleed attacks don't work on target. -->
+		<set name="abnormalLvl" val="10" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="BLEEDING" />
+		<set name="activateRate" val="0" />
+		<set name="castRange" val="700" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="1200" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="55" />
+		<set name="mpConsume" val="50" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="DefenceTrait">
+				<param BLEED="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4476" levels="5" name="Silent Move">
+		<!-- Blocks monsters' first strike. -->
+		<table name="#abnormalTime"> 60 120 300 600 1200 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 </table>
+		<table name="#mpConsume"> 10 16 21 28 36 </table>
+		<table name="#mpInitialConsume"> 3 4 6 7 9 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="#abnormalTime" />
+		<set name="abnormalType" val="STEALTH" />
+		<set name="activateRate" val="0" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill0221" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="SilentMove" />
+		</for>
+	</skill>
+	<skill id="4477" levels="12" name="NPC Frost Wall">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 14 23 32 42 54 66 78 83 87 90 92 93 </table>
+		<table name="#mpInitialConsume"> 4 6 8 11 14 17 20 21 22 23 23 24 </table>
+		<table name="#power"> 18 26 38 52 68 85 102 110 116 122 126 129 </table>
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="fanRange" val="0,0,200,180" />
+		<set name="hitTime" val="5000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="4478" levels="1" name="Ice Fairy Aqua Splash">
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="700" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1200" />
+		<set name="element" val="1" /> <!-- Water -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3300" />
+		<set name="magicLvl" val="64" />
+		<set name="mpConsume" val="23" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="183" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="4479" levels="1" name="Ice Fairy Resist Cold">
+		<!-- Increases Resistance to cold attacks. Effect 4. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="ARMOR_WATER" />
+		<set name="castRange" val="700" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="1200" />
+		<set name="hitTime" val="4000" />
+		<set name="icon" val="icon.skill1182" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="64" />
+		<set name="mpConsume" val="31" />
+		<set name="mpInitialConsume" val="8" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="100" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="waterRes" val="50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4480" levels="1" name="Ice Fairy Curse Gloom">
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="MD_DOWN" />
+		<set name="castRange" val="1000" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="1500" />
+		<set name="hitTime" val="1200" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="64" />
+		<set name="mpConsume" val="93" />
+		<set name="mpInitialConsume" val="24" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="mDef" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4481" levels="1" name="Ice Fairy Hex">
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="1800" />
+		<set name="abnormalType" val="PD_DOWN" />
+		<set name="castRange" val="1000" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="1500" />
+		<set name="hitTime" val="1200" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="64" />
+		<set name="mpConsume" val="93" />
+		<set name="mpInitialConsume" val="24" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="pDef" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4482" levels="1" name="Ice Fairy Silence">
+		<set name="abnormalLvl" val="99" />
+		<set name="abnormalTime" val="600" />
+		<set name="abnormalType" val="SILENCE_ALL" />
+		<set name="abnormalVisualEffect" val="SILENCE" />
+		<set name="castRange" val="1000" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="1500" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="icon.skill1064" />
+		<set name="isDebuff" val="true" />
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Mute" />
+			<effect name="PhysicalMute" />
+		</for>
+	</skill>
+	<skill id="4483" levels="12" name="Hold">
+		<!-- Temporarily holds and immobilizes target. -->
+		<table name="#isMagic"> 0 1 1 1 1 1 1 1 1 1 1 1 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 19 31 42 56 62 88 104 110 116 120 122 124 </table>
+		<table name="#mpInitialConsume"> 5 8 11 14 18 22 26 28 29 30 31 31 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalVisualEffect" val="ROOT" />
+		<set name="activateRate" val="40" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="3300" />
+		<set name="icon" val="icon.skill4047" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="#isMagic" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="HOLD" />
+		<for>
+			<effect name="Root" />
+		</for>
+	</skill>
+	<skill id="4484" levels="1" name="Eating Follower Heal">
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="100" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HealPercent">
+				<param power="50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4485" levels="1" name="Eating Follower">
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="3000" />
+		<set name="magicLvl" val="75" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="ONE" />
+	</skill>
+	<skill id="4486" levels="12" name="Decrease P. Def">
+		<!-- Temporarily reduces P. Def. Effect 1. -->
+		<table name="#abnormalLvls"> 1 2 2 3 3 3 3 3 3 3 3 3 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 19 31 42 56 72 88 104 110 116 120 122 124 </table>
+		<table name="#mpInitialConsume"> 5 8 11 14 18 22 26 28 29 30 31 31 </table>
+		<table name="#pdef"> 0.83 0.8 0.8 0.77 0.77 0.77 0.77 0.77 0.77 0.77 0.77 0.77 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PD_DOWN" />
+		<set name="activateRate" val="40" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="1200" />
+		<set name="icon" val="icon.skill0122" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="pDef" val="#pdef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4487" levels="12" name="Decrease M. Def.">
+		<!-- Instantly reduces M. Def. Effect 1. -->
+		<table name="#abnormalLvls"> 1 2 2 3 3 3 3 3 3 3 3 3 </table>
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mdef"> 0.83 0.8 0.8 0.77 0.77 0.77 0.77 0.77 0.77 0.77 0.77 0.77 </table>
+		<table name="#mpConsume"> 19 31 42 56 72 88 104 110 116 120 122 124 </table>
+		<table name="#mpInitialConsume"> 5 8 11 14 18 22 26 28 29 30 31 31 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="MD_DOWN" />
+		<set name="activateRate" val="40" />
+		<set name="affectRange" val="200" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="1200" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="mDef" val="#mdef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4488" levels="12" name="Hold">
+		<!-- Temporarily holds and immobilizes target. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 19 30 42 57 74 91 106 114 119 124 126 128 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalVisualEffect" val="ROOT" />
+		<set name="activateRate" val="40" />
+		<set name="affectRange" val="150" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="icon" val="icon.skill4047" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Root" />
+		</for>
+	</skill>
+	<skill id="4489" levels="12" name="NPC Death MP Bomb">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 19 30 42 57 74 91 106 114 119 124 126 128 </table>
+		<table name="#power"> 52 78 112 155 203 255 305 328 348 364 377 387 </table>
+		<set name="affectRange" val="150" />
+		<set name="effectPoint" val="-100" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttackMp" />
+		</for>
+	</skill>
+	<skill id="4490" levels="12" name="NPC Holy Wall">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 14 23 32 42 54 66 78 83 87 90 92 93 </table>
+		<table name="#mpInitialConsume"> 4 6 8 11 14 17 20 21 22 23 23 24 </table>
+		<table name="#power"> 18 26 38 52 68 85 102 110 116 122 126 129 </table>
+		<set name="affectRange" val="200" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="4" /> <!-- Holy -->
+		<set name="elementPower" val="20" />
+		<set name="fanRange" val="0,0,200,180" />
+		<set name="hitTime" val="5000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="15000" />
+		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="4491" levels="12" name="Holy Weapon">
+		<!-- Makes sacred attacks. -->
+		<table name="#mpConsume"> 37 60 84 114 148 182 212 227 238 247 252 255 </table>
+		<table name="#power"> 31 70 146 278 481 758 1084 1251 1408 1547 1658 1745 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="120" />
+		<set name="abnormalType" val="HOLY_ATTACK" />
+		<set name="activateRate" val="40" />
+		<set name="affectRange" val="150" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="500" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1000" />
+		<set name="hitTime" val="3200" />
+		<set name="icon" val="icon.skill1043" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="-1" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="25000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Buff">
+				<add stat="holyPower" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4492" levels="12" name="Enlarging Head Curse">
+		<!-- Temporarily enlarges the head. -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
+		<table name="#power"> 46 105 219 417 722 1136 1626 1876 2112 2320 2487 2617 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="BIG_HEAD" />
+		<set name="abnormalVisualEffect" val="BIG_HEAD" />
+		<set name="activateRate" val="80" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="200" />
+		<set name="hitTime" val="1000" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="4493" levels="12" name="NPC Debuff Shield Slow">
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 10 16 21 28 36 44 52 55 58 60 61 62 </table>
+		<table name="#mpInitialConsume"> 3 4 6 7 9 11 13 14 15 15 16 16 </table>
+		<table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="DEBUFF_SHIELD" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="TriggerSkillByDamage">
+				<param attackerType="L2Playable" minAttackerLevel="1" maxAttackerLevel="100" />
+				<param minDamage="1" />
+				<param chance="50" />
+				<param skillId="5022" skillLevel="#triggeredLevel" /> <!-- Decrease Speed -->
+				<param targetType="ONE" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="4494" levels="2" name="Raid Boss">
+		<!-- If the person who made the greatest contribution is 3 or more levels higher than the raid monster, then the item/adena rewards will decrease. If the difference is 9 or more levels, the monster will drop nothing at all. -->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="4495" levels="12" name="BOSS Power Shot">
+		<table name="#magicLvl"> 14 24 34 44 54 64 74 79 84 89 94 99 </table>
+		<table name="#mpConsume"> 32 45 63 83 106 129 150 158 164 168 170 173 </table>
+		<table name="#power"> 352 949 2607 6828 17184 33213 51007 59177 67888 77001 86359 95790 </table>
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="4500" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="4496" levels="12" name="Stun">
+		<!-- You are stunned and temporarily prohibited from movement. -->
+		<table name="#magicLvl"> 14 24 34 44 54 64 74 79 84 89 94 99 </table>
+		<table name="#mpConsume"> 32 45 63 83 106 129 150 158 164 168 170 173 </table>
+		<table name="#power"> 176 475 1304 3414 8592 16607 25504 29589 33944 38501 43180 47895 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="STUN" />
+		<set name="abnormalVisualEffect" val="STUN" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="hitTime" val="4500" />
+		<set name="icon" val="icon.skill0101" />
+		<set name="isDebuff" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="#power" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="PhysicalAttack" />
+			<effect name="Stun" />
+		</for>
+	</skill>
+	<skill id="4497" levels="1" name="Treasure Chest - Level 21">
+		<!-- A locked chest that could contain treasure or a nasty surprise. -->
+		<set name="icon" val="icon.skill0042" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="4498" levels="1" name="Treasure Chest - Level 22">
+		<!-- A locked chest that could contain treasure or a nasty surprise. -->
+		<set name="icon" val="icon.skill0042" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="4499" levels="1" name="Treasure Chest - Level 25">
+		<!-- A locked chest that could contain treasure or a nasty surprise. -->
+		<set name="icon" val="icon.skill0042" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+</list>

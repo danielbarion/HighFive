@@ -1,0 +1,747 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="tableType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="name" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="setType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="name" use="optional">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="abnormalInstant" />
+							<xs:enumeration value="abnormalLvl" />
+							<xs:enumeration value="abnormalTime" />
+							<xs:enumeration value="abnormalType" />
+							<xs:enumeration value="abnormalVisualEffect" />
+							<xs:enumeration value="activateRate" />
+							<xs:enumeration value="affectLimit" />
+							<xs:enumeration value="affectRange" />
+							<xs:enumeration value="afterEffectId" />
+							<xs:enumeration value="attribute" />
+							<xs:enumeration value="attributePower" />
+							<xs:enumeration value="baseCritRate" />
+							<xs:enumeration value="basicProperty" />
+							<xs:enumeration value="blockedInOlympiad" />
+							<xs:enumeration value="blowChance" />
+							<xs:enumeration value="canBeDispeled" />
+							<xs:enumeration value="capsuled_items_skill" />
+							<xs:enumeration value="castRange" />
+							<xs:enumeration value="channelingSkillId" />
+							<xs:enumeration value="channelingTickInterval" />
+							<xs:enumeration value="chargeConsume" />
+							<xs:enumeration value="coolTime" />
+							<xs:enumeration value="despawnDelay" />
+							<xs:enumeration value="displayId" />
+							<xs:enumeration value="dmgDirectlyToHp" />
+							<xs:enumeration value="effectPoint" />
+							<xs:enumeration value="effectRange" />
+							<xs:enumeration value="element" />
+							<xs:enumeration value="elementPower" />
+							<xs:enumeration value="excludedFromCheck" />
+							<xs:enumeration value="fanRange" />
+							<xs:enumeration value="feed" />
+							<xs:enumeration value="flyCourse" />
+							<xs:enumeration value="flyRadius" />
+							<xs:enumeration value="flyType" />
+							<xs:enumeration value="halfKillRate" />
+							<xs:enumeration value="hitTime" />
+							<xs:enumeration value="hpConsume" />
+							<xs:enumeration value="icon" />
+							<xs:enumeration value="ignoreShld" />
+							<xs:enumeration value="inheritElementals" />
+							<xs:enumeration value="inheritPercent" />
+							<xs:enumeration value="isDebuff" />
+							<xs:enumeration value="isMagic" />
+							<xs:enumeration value="isOutpost" />
+							<xs:enumeration value="isPvPOnly" />
+							<xs:enumeration value="isRecoveryHerb" />
+							<xs:enumeration value="isSuicideAttack" />
+							<xs:enumeration value="isTriggeredSkill" />
+							<xs:enumeration value="itemConsumeCount" />
+							<xs:enumeration value="itemConsumeId" />
+							<xs:enumeration value="itemConsumeSteps" />
+							<xs:enumeration value="learnSkillId" />
+							<xs:enumeration value="lethalStrikeRate" />
+							<xs:enumeration value="lvlBonusRate" />
+							<xs:enumeration value="magicLvl" />
+							<xs:enumeration value="minPledgeClass" />
+							<xs:enumeration value="mpConsume" />
+							<xs:enumeration value="mpInitialConsume" />
+							<xs:enumeration value="mpPerChanneling" />
+							<xs:enumeration value="nextActionAttack" />
+							<xs:enumeration value="operateType" />
+							<xs:enumeration value="overHit" />
+							<xs:enumeration value="power" />
+							<xs:enumeration value="pvpPower" />
+							<xs:enumeration value="removedOnAnyActionExceptMove" />
+							<xs:enumeration value="removedOnDamage" />
+							<xs:enumeration value="resetQuest" />
+							<xs:enumeration value="reuseDelay" />
+							<xs:enumeration value="simultaneousCast" />
+							<xs:enumeration value="soulMaxConsumeCount" />
+							<xs:enumeration value="staticReuse" />
+							<xs:enumeration value="stayAfterDeath" />
+							<xs:enumeration value="stayOnSubclassChange" />
+							<xs:enumeration value="targetType" />
+							<xs:enumeration value="trait" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute type="xs:string" name="val" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="enchantType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="name" use="optional" />
+				<xs:attribute type="xs:string" name="val" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="usingType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="kind" use="optional" />
+				<xs:attribute type="xs:string" name="slot" use="optional" />
+				<xs:attribute type="xs:string" name="weaponChange" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="playerType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="Charges" use="optional" />
+				<xs:attribute type="xs:string" name="canSummon" use="optional" />
+				<xs:attribute type="xs:string" name="canResurrect" use="optional" />
+				<xs:attribute type="xs:string" name="canSweep" use="optional" />
+				<xs:attribute type="xs:string" name="canSummonSiegeGolem" use="optional" />
+				<xs:attribute type="xs:byte" name="invSize" use="optional" />
+				<xs:attribute type="xs:byte" name="weight" use="optional" />
+				<xs:attribute type="xs:byte" name="hp" use="optional" />
+				<xs:attribute type="xs:byte" name="cp" use="optional" />
+				<xs:attribute type="xs:byte" name="mp" use="optional" />
+				<xs:attribute type="xs:byte" name="souls" use="optional" />
+				<xs:attribute type="xs:string" name="canTransform" use="optional" />
+				<xs:attribute type="xs:string" name="canUntransform" use="optional" />
+				<xs:attribute type="xs:byte" name="transformationId" use="optional" />
+				<xs:attribute type="xs:string" name="canCreateBase" use="optional" />
+				<xs:attribute type="xs:string" name="canCreateOutpost" use="optional" />
+				<xs:attribute type="xs:string" name="canTakeCastle" use="optional" />
+				<xs:attribute type="xs:string" name="canTakeFort" use="optional" />
+				<xs:attribute type="xs:byte" name="canRefuelAirship" use="optional" />
+				<xs:attribute type="xs:string" name="canEscape" use="optional" />
+				<xs:attribute type="xs:string" name="active_effect_id_lvl" use="optional" />
+				<xs:attribute type="xs:string" name="active_skill_id" use="optional" />
+				<xs:attribute type="xs:string" name="active_skill_id_lvl" use="optional" />
+				<xs:attribute type="xs:string" name="checkAbnormal" use="optional" />
+				<xs:attribute type="xs:byte" name="SiegeZone" use="optional" />
+				<xs:attribute type="xs:string" name="callPc" use="optional" />
+				<xs:attribute type="xs:byte" name="clanHall" use="optional" />
+				<xs:attribute type="xs:byte" name="sex" use="optional" />
+				<xs:attribute type="xs:string" name="npcIdRadius" use="optional" />
+				<xs:attribute type="xs:string" name="landingZone" use="optional" />
+				<xs:attribute type="xs:string" name="insideZoneId" use="optional" />
+				<xs:attribute type="xs:string" name="chaotic" use="optional" />
+				<xs:attribute type="xs:string" name="resting" use="optional" />
+				<xs:attribute type="xs:string" name="standing" use="optional" />
+				<xs:attribute type="xs:string" name="moving" use="optional" />
+				<xs:attribute type="xs:string" name="running" use="optional" />
+				<xs:attribute type="xs:string" name="flying" use="optional" />
+				<xs:attribute type="xs:string" name="front" use="optional" />
+				<xs:attribute type="xs:string" name="behind" use="optional" />
+				<xs:attribute type="xs:string" name="levelRange" use="optional" />
+				<xs:attribute type="xs:byte" name="instanceId" use="optional" />
+				<xs:attribute type="xs:string" name="flyMounted" use="optional" />
+				<xs:attribute type="xs:string" name="active_effect_id" use="optional" />
+				<xs:attribute type="xs:string" name="agathionId" use="optional" />
+				<xs:attribute type="xs:byte" name="fort" use="optional" />
+				<xs:attribute type="xs:byte" name="level" use="optional" />
+				<xs:attribute type="xs:string" name="class_id_restriction" use="optional" />
+				<xs:attribute type="xs:short" name="siegeZone" use="optional" />
+				<xs:attribute type="xs:byte" name="siegeSide" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="targetType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:short" name="mindistance" use="optional" />
+				<xs:attribute type="xs:byte" name="abnormal" use="optional" />
+				<xs:attribute type="xs:short" name="active_effect_id" use="optional" />
+				<xs:attribute type="xs:short" name="active_skill_id" use="optional" />
+				<xs:attribute type="xs:string" name="class_id_restriction" use="optional" />
+				<xs:attribute type="xs:string" name="myPartyExceptMe" use="optional" />
+				<xs:attribute type="xs:string" name="race" use="optional" />
+				<xs:attribute type="xs:string" name="npcId" use="optional" />
+				<xs:attribute type="xs:string" name="npcType" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="notType">
+		<xs:sequence>
+			<xs:element name="using" minOccurs="0" type="usingType" />
+			<xs:element name="player" minOccurs="0" type="playerType" />
+			<xs:element name="target" minOccurs="0" type="targetType" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="gameType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="night" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="andType">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element name="using" type="usingType" />
+			<xs:element name="player" type="playerType" />
+			<xs:element name="target" type="targetType" />
+			<xs:element name="not" type="notType" />
+			<xs:element name="game" type="gameType" />
+			<xs:element name="or" minOccurs="0" type="andType" />
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="condType">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element name="using" type="usingType" />
+			<xs:element name="and" type="andType" />
+			<xs:element name="not" type="notType" />
+			<xs:element name="player" type="playerType" />
+			<xs:element name="target" type="targetType" />
+		</xs:choice>
+		<xs:attribute type="xs:short" name="msgId" use="optional" />
+		<xs:attribute type="xs:byte" name="addName" use="optional" />
+		<xs:attribute type="xs:string" name="msg" use="optional" />
+	</xs:complexType>
+	<xs:simpleType name="operation">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="DIFF" />
+			<xs:enumeration value="PER" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="paramType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="block" use="optional">
+					<xs:simpleType>
+						<xs:restriction base="xs:token">
+							<xs:enumeration value="HP" />
+							<xs:enumeration value="MP" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute type="xs:string" name="pAtk" use="optional" />
+				<xs:attribute type="xs:string" name="mAtk" use="optional" />
+				<xs:attribute type="xs:string" name="pDef" use="optional" />
+				<xs:attribute type="xs:string" name="mDef" use="optional" />
+				<xs:attribute type="xs:string" name="maxHp" use="optional" />
+				<xs:attribute type="xs:string" name="maxMp" use="optional" />
+				<xs:attribute type="xs:string" name="critRate" use="optional" />
+				<xs:attribute type="xs:string" name="pAtkSpd" use="optional" />
+				<xs:attribute type="xs:string" name="mAtkSpd" use="optional" />
+				<xs:attribute type="xs:string" name="chance" use="optional" />
+				<xs:attribute type="xs:string" name="power" use="optional" />
+				<xs:attribute type="operation" name="type" use="optional" />
+				<xs:attribute type="xs:boolean" name="heal" use="optional" />
+				<xs:attribute type="xs:byte" name="criticalChance" use="optional" />
+				<xs:attribute type="xs:string" name="charge" use="optional" />
+				<xs:attribute type="xs:byte" name="cubicId" use="optional" />
+				<xs:attribute type="xs:byte" name="cubicDelay" use="optional" />
+				<xs:attribute type="xs:short" name="cubicDuration" use="optional" />
+				<xs:attribute type="xs:short" name="cubicMaxCount" use="optional" />
+				<xs:attribute type="xs:byte" name="cubicSkillChance" use="optional" />
+				<xs:attribute type="xs:string" name="cubicPower" use="optional" />
+				<xs:attribute type="xs:string" name="npcId" use="optional" />
+				<xs:attribute type="xs:string" name="consumeItemId" use="optional" />
+				<xs:attribute type="xs:string" name="consumeItemCount" use="optional" />
+				<xs:attribute type="xs:string" name="lifeTime" use="optional" />
+				<xs:attribute type="xs:string" name="dispel" use="optional" />
+				<xs:attribute type="xs:string" name="expMultiplier" use="optional" />
+				<xs:attribute type="xs:string" name="halfLethal" use="optional" />
+				<xs:attribute type="xs:byte" name="cubicSkill1Chance" use="optional" />
+				<xs:attribute type="xs:byte" name="cubicSkill2Chance" use="optional" />
+				<xs:attribute type="xs:byte" name="cubicSkill3Chance" use="optional" />
+				<xs:attribute type="xs:string" name="BUG_WEAKNESS" use="optional" />
+				<xs:attribute type="xs:string" name="BEAST_WEAKNESS" use="optional" />
+				<xs:attribute type="xs:string" name="ANIMAL_WEAKNESS" use="optional" />
+				<xs:attribute type="xs:string" name="DRAGON_WEAKNESS" use="optional" />
+				<xs:attribute type="xs:string" name="PLANT_WEAKNESS" use="optional" />
+				<xs:attribute type="xs:string" name="ROOT_PHYSICALLY" use="optional" />
+				<xs:attribute type="xs:string" name="HOLD" use="optional" />
+				<xs:attribute type="xs:string" name="BOW" use="optional" />
+				<xs:attribute type="xs:string" name="CROSSBOW" use="optional" />
+				<xs:attribute type="xs:string" name="SLEEP" use="optional" />
+				<xs:attribute type="xs:string" name="POISON" use="optional" />
+				<xs:attribute type="xs:string" name="cubicCount" use="optional" />
+				<xs:attribute type="xs:string" name="SHOCK" use="optional" />
+				<xs:attribute type="xs:string" name="ignoreShieldDefence" use="optional" />
+				<xs:attribute type="xs:string" name="POLE" use="optional" />
+				<xs:attribute type="xs:string" name="PARALYZE" use="optional" />
+				<xs:attribute type="xs:string" name="isAdvanced" use="optional" />
+				<xs:attribute type="xs:string" name="DERANGEMENT" use="optional" />
+				<xs:attribute type="xs:string" name="BLEED" use="optional" />
+				<xs:attribute type="xs:string" name="slot" use="optional" />
+				<xs:attribute type="xs:string" name="rate" use="optional" />
+				<xs:attribute type="xs:string" name="max" use="optional" />
+				<xs:attribute type="xs:string" name="CONSTRUCT_WEAKNESS" use="optional" />
+				<xs:attribute type="xs:string" name="GIANT_WEAKNESS" use="optional" />
+				<xs:attribute type="xs:string" name="SWORD" use="optional" />
+				<xs:attribute type="xs:string" name="BLUNT" use="optional" />
+				<xs:attribute type="xs:string" name="DAGGER" use="optional" />
+				<xs:attribute type="xs:string" name="DUAL" use="optional" />
+				<xs:attribute type="xs:string" name="DUALFIST" use="optional" />
+				<xs:attribute type="xs:string" name="ANCIENTSWORD" use="optional" />
+				<xs:attribute type="xs:string" name="RAPIER" use="optional" />
+				<xs:attribute type="xs:string" name="DUALDAGGER" use="optional" />
+				<xs:attribute type="xs:string" name="fullLethal" use="optional" />
+				<xs:attribute type="xs:string" name="attackerType" use="optional" />
+				<xs:attribute type="xs:byte" name="minAttackerLevel" use="optional" />
+				<xs:attribute type="xs:byte" name="maxAttackerLevel" use="optional" />
+				<xs:attribute type="xs:boolean" name="isCritical" use="optional" />
+				<xs:attribute type="xs:string" name="minDamage" use="optional" />
+				<xs:attribute type="xs:short" name="castSkillId" use="optional" />
+				<xs:attribute type="xs:byte" name="blockedActions" use="optional" />
+				<xs:attribute type="xs:string" name="skillId" use="optional" />
+				<xs:attribute type="xs:string" name="skillLevel" use="optional" />
+				<xs:attribute type="xs:string" name="allowWeapons" use="optional" />
+				<xs:attribute type="xs:string" name="targetType" use="optional" />
+				<xs:attribute type="xs:byte" name="npcCount" use="optional" />
+				<xs:attribute type="xs:string" name="expNeeded" use="optional" />
+				<xs:attribute type="xs:string" name="itemId" use="optional" />
+				<xs:attribute type="xs:string" name="itemCount" use="optional" />
+				<xs:attribute type="xs:short" name="id" use="optional" />
+				<xs:attribute type="xs:short" name="amount" use="optional" />
+				<xs:attribute type="xs:int" name="despawnDelay" use="optional" />
+				<xs:attribute type="xs:string" name="isSummonSpawn" use="optional" />
+				<xs:attribute type="xs:string" name="escapeType" use="optional" />
+				<xs:attribute type="xs:string" name="slots" use="optional" />
+				<xs:attribute type="xs:string" name="value" use="optional" />
+				<xs:attribute type="xs:string" name="sp" use="optional" />
+				<xs:attribute type="xs:string" name="x" use="optional" />
+				<xs:attribute type="xs:string" name="y" use="optional" />
+				<xs:attribute type="xs:string" name="z" use="optional" />
+				<xs:attribute type="xs:string" name="grade" use="optional" />
+				<xs:attribute type="xs:byte" name="VALAKAS" use="optional" />
+				<xs:attribute type="xs:string" name="isItem" use="optional" />
+				<xs:attribute type="xs:byte" name="skillLvl" use="optional" />
+				<xs:attribute type="xs:byte" name="GUST" use="optional" />
+				<xs:attribute type="xs:byte" name="BOSS" use="optional" />
+				<xs:attribute type="xs:byte" name="PHYSICAL_BLOCKADE" use="optional" />
+				<xs:attribute type="xs:string" name="canKill" use="optional" />
+				<xs:attribute type="xs:string" name="TURN_STONE" use="optional" />
+				<xs:attribute type="xs:byte" name="FIST" use="optional" />
+				<xs:attribute type="xs:byte" name="randomOffset" use="optional" />
+				<xs:attribute type="xs:short" name="skillId1" use="optional" />
+				<xs:attribute type="xs:short" name="skillId2" use="optional" />
+				<xs:attribute type="xs:short" name="skillId3" use="optional" />
+				<xs:attribute type="xs:string" name="time" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="statType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="mAtk" />
+			<xs:enumeration value="mDef" />
+			<xs:enumeration value="pAtk" />
+			<xs:enumeration value="pDef" />
+			<xs:enumeration value="sDef" />
+			<xs:enumeration value="mAtk" />
+			<xs:enumeration value="pAtkAngle" />
+			<xs:enumeration value="pAtkRange" />
+			<xs:enumeration value="cancel" />
+			<xs:enumeration value="pAtkSpd" />
+			<xs:enumeration value="critRate" />
+			<xs:enumeration value="critRatePos" />
+			<xs:enumeration value="critDmg" />
+			<xs:enumeration value="critDmgPos" />
+			<xs:enumeration value="critDmgAdd" />
+			<xs:enumeration value="rShld" />
+			<xs:enumeration value="rEvas" />
+			<xs:enumeration value="runSpd" />
+			<xs:enumeration value="reflectDam" />
+			<xs:enumeration value="defCritRate" />
+			<xs:enumeration value="cancelVuln" />
+			<xs:enumeration value="maxHp" />
+			<xs:enumeration value="pSkillEvas" />
+			<xs:enumeration value="regMp" />
+			<xs:enumeration value="regHp" />
+			<xs:enumeration value="mReuse" />
+			<xs:enumeration value="mAtkSpd" />
+			<xs:enumeration value="defCritDamage" />
+			<xs:enumeration value="absorbDamMana" />
+			<xs:enumeration value="manaCharge" />
+			<xs:enumeration value="damageZoneVuln" />
+			<xs:enumeration value="healEffect" />
+			<xs:enumeration value="weightLimit" />
+			<xs:enumeration value="transDam" />
+			<xs:enumeration value="physicalMpConsumeRate" />
+			<xs:enumeration value="blowRate" />
+			<xs:enumeration value="reduceExpLostByPvp" />
+			<xs:enumeration value="reduceExpLostByMob" />
+			<xs:enumeration value="reduceExpLostByRaid" />
+			<xs:enumeration value="reduceDeathPenaltyByPvp" />
+			<xs:enumeration value="reduceDeathPenaltyByMob" />
+			<xs:enumeration value="reduceDeathPenaltyByRaid" />
+			<xs:enumeration value="breath" />
+			<xs:enumeration value="pvpMagicalDmg" />
+			<xs:enumeration value="transDamToPlayer" />
+			<xs:enumeration value="vengeancePdam" />
+			<xs:enumeration value="physicalSkillPower" />
+			<xs:enumeration value="vengeanceMdam" />
+			<xs:enumeration value="maxSouls" />
+			<xs:enumeration value="bowMpConsumeRate" />
+			<xs:enumeration value="fishingExpertise" />
+			<xs:enumeration value="mCritPower" />
+			<xs:enumeration value="maxRecoverableCp" />
+			<xs:enumeration value="maxRecoverableHp" />
+			<xs:enumeration value="whLimit" />
+			<xs:enumeration value="freightLimit" />
+			<xs:enumeration value="dwarfRecipeLimit" />
+			<xs:enumeration value="commonRecipeLimit" />
+			<xs:enumeration value="fall" />
+			<xs:enumeration value="STR" />
+			<xs:enumeration value="INT" />
+			<xs:enumeration value="CON" />
+			<xs:enumeration value="MEN" />
+			<xs:enumeration value="WIT" />
+			<xs:enumeration value="DEX" />
+			<xs:enumeration value="waterPower" />
+			<xs:enumeration value="windPower" />
+			<xs:enumeration value="firePower" />
+			<xs:enumeration value="bonusSp" />
+			<xs:enumeration value="defCritRateAdd" />
+			<xs:enumeration value="bonusExp" />
+			<xs:enumeration value="pvePhysDmg" />
+			<xs:enumeration value="pvePhysSkillsDmg" />
+			<xs:enumeration value="pveBowDmg" />
+			<xs:enumeration value="pveBowSkillsDmg" />
+			<xs:enumeration value="pveMagicalDmg" />
+			<xs:enumeration value="magicalMpConsumeRate" />
+			<xs:enumeration value="danceMpConsumeRate" />
+			<xs:enumeration value="mCritRate" />
+			<xs:enumeration value="maxRecoverableMp" />
+			<xs:enumeration value="manaShield" />
+			<xs:enumeration value="pvpMagicalDef" />
+			<xs:enumeration value="pvpPhysSkillsDef" />
+			<xs:enumeration value="pvpPhysDef" />
+			<xs:enumeration value="absorbDam" />
+			<xs:enumeration value="shieldDefAngle" />
+			<xs:enumeration value="reflectSkillMagic" />
+			<xs:enumeration value="reflectSkillPhysic" />
+			<xs:enumeration value="skillCritical" />
+			<xs:enumeration value="skillCriticalProbability" />
+			<xs:enumeration value="privateBuyLimit" />
+			<xs:enumeration value="privateSellLimit" />
+			<xs:enumeration value="inventoryLimit" />
+			<xs:enumeration value="pReuse" />
+			<xs:enumeration value="dReuse" />
+			<xs:enumeration value="debuffImmunity" />
+			<xs:enumeration value="vitalityConsumeRate" />
+			<xs:enumeration value="weightPenalty" />
+			<xs:enumeration value="darkPower" />
+			<xs:enumeration value="defCritDamageAdd" />
+			<xs:enumeration value="debuffVuln" />
+			<xs:enumeration value="atkCountMax" />
+			<xs:enumeration value="regCp" />
+			<xs:enumeration value="maxCp" />
+			<xs:enumeration value="pvpPhysDmg" />
+			<xs:enumeration value="pvpPhysSkillsDmg" />
+			<xs:enumeration value="earthPower" />
+			<xs:enumeration value="movementVuln" />
+			<xs:enumeration value="accCombat" />
+			<xs:enumeration value="darkRes" />
+			<xs:enumeration value="earthRes" />
+			<xs:enumeration value="fireRes" />
+			<xs:enumeration value="holyPower" />
+			<xs:enumeration value="holyRes" />
+			<xs:enumeration value="maxMp" />
+			<xs:enumeration value="waterRes" />
+			<xs:enumeration value="windRes" />
+			<xs:enumeration value="magicSuccRes" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="addType" mixed="true">
+		<xs:all>
+			<xs:element name="using" minOccurs="0" type="usingType" />
+			<xs:element name="and" minOccurs="0" type="andType" />
+			<xs:element name="not" minOccurs="0" type="notType" />
+			<xs:element name="player" minOccurs="0" type="playerType" />
+			<xs:element name="game" minOccurs="0" type="gameType" />
+		</xs:all>
+		<xs:attribute name="order" type="xs:byte" use="optional" />
+		<xs:attribute name="stat" use="required" type="statType" />
+		<xs:attribute name="val" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:complexType name="shareType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="order" type="xs:byte" use="optional" />
+				<xs:attribute name="stat" type="statType" />
+				<xs:attribute type="xs:float" name="val" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="effectType" mixed="true">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element name="param" type="paramType" />
+			<xs:element name="add" type="addType" />
+			<xs:element name="mul" type="addType" />
+			<xs:element name="sub" type="addType" />
+			<xs:element name="set" type="addType" />
+			<xs:element name="share" type="shareType" />
+		</xs:choice>
+		<xs:attribute name="name" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="#effectname1" /> <!-- Frintezza's Songs -->
+					<xs:enumeration value="AddHate" />
+					<xs:enumeration value="AttackTrait" />
+					<xs:enumeration value="Backstab" />
+					<xs:enumeration value="Betray" />
+					<xs:enumeration value="Blink" />
+					<xs:enumeration value="BlockAction" />
+					<xs:enumeration value="BlockChat" />
+					<xs:enumeration value="BlockParty" />
+					<xs:enumeration value="BlockBuffSlot" />
+					<xs:enumeration value="BlockResurrection" />
+					<xs:enumeration value="Bluff" />
+					<xs:enumeration value="Buff" />
+					<xs:enumeration value="CallParty" />
+					<xs:enumeration value="CallPc" />
+					<xs:enumeration value="CallSkill" />
+					<xs:enumeration value="ChameleonRest" />
+					<xs:enumeration value="ChangeFace" />
+					<xs:enumeration value="ChangeFishingMastery" />
+					<xs:enumeration value="ChangeHairColor" />
+					<xs:enumeration value="ChangeHairStyle" />
+					<xs:enumeration value="ClanGate" />
+					<xs:enumeration value="Confuse" />
+					<xs:enumeration value="ConsumeBody" />
+					<xs:enumeration value="ConvertItem" />
+					<xs:enumeration value="CpDamPercent" />
+					<xs:enumeration value="CpHeal" />
+					<xs:enumeration value="CpHealOverTime" />
+					<xs:enumeration value="CpHealPercent" />
+					<xs:enumeration value="CrystalGradeModify" />
+					<xs:enumeration value="CubicMastery" />
+					<xs:enumeration value="DamOverTime" />
+					<xs:enumeration value="DamOverTimePercent" />
+					<xs:enumeration value="DeathLink" />
+					<xs:enumeration value="Debuff" />
+					<xs:enumeration value="DefenceTrait" />
+					<xs:enumeration value="DeleteHate" />
+					<xs:enumeration value="DeleteHateOfMe" />
+					<xs:enumeration value="DetectHiddenObjects" />
+					<xs:enumeration value="Detection" />
+					<xs:enumeration value="Disarm" />
+					<xs:enumeration value="DispelAll" />
+					<xs:enumeration value="DispelByCategory" />
+					<xs:enumeration value="DispelBySlot" />
+					<xs:enumeration value="DispelBySlotProbability" />
+					<xs:enumeration value="EnableCloak" />
+					<xs:enumeration value="EnemyCharge" />
+					<xs:enumeration value="EnergyAttack" />
+					<xs:enumeration value="EnlargeAbnormalSlot" />
+					<xs:enumeration value="Escape" />
+					<xs:enumeration value="FakeDeath" />
+					<xs:enumeration value="FatalBlow" />
+					<xs:enumeration value="Fear" />
+					<xs:enumeration value="Fishing" />
+					<xs:enumeration value="Flag" />
+					<xs:enumeration value="FocusEnergy" />
+					<xs:enumeration value="FocusMaxEnergy" />
+					<xs:enumeration value="FocusSouls" />
+					<xs:enumeration value="GetAgro" />
+					<xs:enumeration value="GiveRecommendation" />
+					<xs:enumeration value="GiveSp" />
+					<xs:enumeration value="Grow" />
+					<xs:enumeration value="Harvesting" />
+					<xs:enumeration value="HeadquarterCreate" />
+					<xs:enumeration value="Heal" />
+					<xs:enumeration value="HealOverTime" />
+					<xs:enumeration value="HealPercent" />
+					<xs:enumeration value="Hide" />
+					<xs:enumeration value="HpByLevel" />
+					<xs:enumeration value="HpDrain" />
+					<xs:enumeration value="ImmobileBuff" />
+					<xs:enumeration value="ImmobilePetBuff" />
+					<xs:enumeration value="Invincible" />
+					<xs:enumeration value="Lethal" />
+					<xs:enumeration value="Lucky" />
+					<xs:enumeration value="MagicalAttack" />
+					<xs:enumeration value="MagicalAttackByAbnormal" />
+					<xs:enumeration value="MagicalAttackMp" />
+					<xs:enumeration value="MagicalSoulAttack" />
+					<xs:enumeration value="ManaDamOverTime" />
+					<xs:enumeration value="ManaHeal" />
+					<xs:enumeration value="ManaHealByLevel" />
+					<xs:enumeration value="ManaHealOverTime" />
+					<xs:enumeration value="ManaHealPercent" />
+					<xs:enumeration value="MaxCp" />
+					<xs:enumeration value="MaxHp" />
+					<xs:enumeration value="MpConsumePerLevel" />
+					<xs:enumeration value="Mute" />
+					<xs:enumeration value="NevitsHourglass" />
+					<xs:enumeration value="NoblesseBless" />
+					<xs:enumeration value="OpenChest" />
+					<xs:enumeration value="Unsummon" />
+					<xs:enumeration value="OpenCommonRecipeBook" />
+					<xs:enumeration value="OpenDoor" />
+					<xs:enumeration value="OpenDwarfRecipeBook" />
+					<xs:enumeration value="OutpostCreate" />
+					<xs:enumeration value="OutpostDestroy" />
+					<xs:enumeration value="Paralyze" />
+					<xs:enumeration value="Passive" />
+					<xs:enumeration value="Petrification" />
+					<xs:enumeration value="PhysicalAttack" />
+					<xs:enumeration value="PhysicalAttackHpLink" />
+					<xs:enumeration value="PhysicalAttackMute" />
+					<xs:enumeration value="PhysicalMute" />
+					<xs:enumeration value="PhysicalSoulAttack" />
+					<xs:enumeration value="Pumping" />
+					<xs:enumeration value="ProtectionBlessing" />
+					<xs:enumeration value="RandomizeHate" />
+					<xs:enumeration value="RebalanceHP" />
+					<xs:enumeration value="Recovery" />
+					<xs:enumeration value="Reeling" />
+					<xs:enumeration value="RefuelAirship" />
+					<xs:enumeration value="Relax" />
+					<xs:enumeration value="ResistSkill" />
+					<xs:enumeration value="Restoration" />
+					<xs:enumeration value="RestorationRandom" />
+					<xs:enumeration value="Resurrection" />
+					<xs:enumeration value="ResurrectionSpecial" />
+					<xs:enumeration value="Root" />
+					<xs:enumeration value="RunAway" />
+					<xs:enumeration value="ServitorShare" />
+					<xs:enumeration value="SetSkill" />
+					<xs:enumeration value="SilentMove" />
+					<xs:enumeration value="SkillTurning" />
+					<xs:enumeration value="Sleep" />
+					<xs:enumeration value="SoulBlow" />
+					<xs:enumeration value="SoulEating" />
+					<xs:enumeration value="Sow" />
+					<xs:enumeration value="Spoil" />
+					<xs:enumeration value="StaticDamage" />
+					<xs:enumeration value="StealAbnormal" />
+					<xs:enumeration value="Stun" />
+					<xs:enumeration value="Summon" />
+					<xs:enumeration value="SummonAgathion" />
+					<xs:enumeration value="SummonCubic" />
+					<xs:enumeration value="SummonNpc" />
+					<xs:enumeration value="SummonPet" />
+					<xs:enumeration value="SummonTrap" />
+					<xs:enumeration value="Sweeper" />
+					<xs:enumeration value="TakeCastle" />
+					<xs:enumeration value="TakeFort" />
+					<xs:enumeration value="TakeFortStart" />
+					<xs:enumeration value="TakeTerritoryFlag" />
+					<xs:enumeration value="TalismanSlot" />
+					<xs:enumeration value="TargetCancel" />
+					<xs:enumeration value="TargetMe" />
+					<xs:enumeration value="TargetMeProbability" />
+					<xs:enumeration value="Teleport" />
+					<xs:enumeration value="TeleportToTarget" />
+					<xs:enumeration value="ThrowUp" />
+					<xs:enumeration value="TransferDamage" />
+					<xs:enumeration value="TransferHate" />
+					<xs:enumeration value="Transformation" />
+					<xs:enumeration value="TrapDetect" />
+					<xs:enumeration value="TrapRemove" />
+					<xs:enumeration value="TriggerSkillByAttack" />
+					<xs:enumeration value="TriggerSkillByAvoid" />
+					<xs:enumeration value="TriggerSkillByDamage" />
+					<xs:enumeration value="TriggerSkillBySkill" />
+					<xs:enumeration value="UnsummonAgathion" />
+					<xs:enumeration value="VitalityPointUp" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute type="xs:string" name="ticks" use="optional" />
+		<xs:attribute type="xs:string" name="abnormalTime" use="optional" />
+		<xs:attribute type="xs:string" name="activationChance" use="optional" />
+		<xs:attribute type="xs:string" name="chanceType" use="optional" />
+		<xs:attribute type="xs:string" name="triggeredId" use="optional" />
+		<xs:attribute type="xs:string" name="triggeredLevel" use="optional" />
+		<xs:attribute type="xs:string" name="activationMinDamage" use="optional" />
+		<xs:attribute type="xs:short" name="activationSkills" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="forType" mixed="true">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element name="add" type="addType" />
+			<xs:element name="mul" type="addType" />
+			<xs:element name="sub" type="addType" />
+			<xs:element name="basemul" type="addType" />
+			<xs:element name="set" type="addType" />
+			<xs:element name="effect" type="effectType" />
+		</xs:choice>
+		<xs:attribute type="xs:string" name="name" use="optional" />
+		<xs:attribute type="xs:byte" name="val" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="effectsType">
+		<xs:sequence>
+			<xs:element name="effect" type="effectType" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="skillType">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element name="table" type="tableType" />
+			<xs:element name="set" type="setType" />
+			<xs:element name="enchant1" type="enchantType" />
+			<xs:element name="enchant2" type="enchantType" />
+			<xs:element name="enchant3" type="enchantType" />
+			<xs:element name="enchant4" type="enchantType" />
+			<xs:element name="enchant5" type="enchantType" />
+			<xs:element name="enchant6" type="enchantType" />
+			<xs:element name="enchant7" type="enchantType" />
+			<xs:element name="enchant8" type="enchantType" />
+			<xs:element name="cond" type="condType" />
+			<xs:element name="for" type="forType" />
+			<xs:element name="enchant1for" type="forType" />
+			<xs:element name="enchant2for" type="forType" />
+			<xs:element name="enchant2pvpEffects" type="effectsType" />
+			<xs:element name="enchant2pveEffects" type="effectsType" />
+			<xs:element name="enchant7for" type="forType" />
+			<xs:element name="enchant7pvpEffects" type="effectsType" />
+			<xs:element name="enchant7pveEffects" type="effectsType" />
+			<xs:element name="enchant3for" type="forType" />
+			<xs:element name="enchant4for" type="forType" />
+			<xs:element name="enchant5for" type="forType" />
+			<xs:element name="enchant6for" type="forType" />
+			<xs:element name="endEffects" type="effectsType" />
+			<xs:element name="selfEffects" type="effectsType" />
+			<xs:element name="enchant2selfEffects" type="effectsType" />
+			<xs:element name="effect" type="effectType" />
+			<xs:element name="enchant1cond" type="condType" />
+			<xs:element name="enchant4selfEffects" type="effectsType" />
+			<xs:element name="pvpEffects" type="effectsType" />
+			<xs:element name="pveEffects" type="effectsType" />
+			<xs:element name="channelingEffects" type="effectsType" />
+			<xs:element name="startEffects" type="effectsType" />
+		</xs:choice>
+		<xs:attribute type="xs:int" name="id" use="optional" />
+		<xs:attribute type="xs:byte" name="levels" use="optional" />
+		<xs:attribute type="xs:string" name="name" use="optional" />
+		<xs:attribute type="xs:byte" name="enchantGroup1" use="optional" />
+		<xs:attribute type="xs:byte" name="enchantGroup2" use="optional" />
+		<xs:attribute type="xs:byte" name="enchantGroup3" use="optional" />
+		<xs:attribute type="xs:byte" name="enchantGroup4" use="optional" />
+		<xs:attribute type="xs:byte" name="enchantGroup5" use="optional" />
+		<xs:attribute type="xs:byte" name="enchantGroup6" use="optional" />
+		<xs:attribute type="xs:byte" name="enchantGroup7" use="optional" />
+		<xs:attribute type="xs:byte" name="enchantGroup8" use="optional" />
+	</xs:complexType>
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="skill" type="skillType" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

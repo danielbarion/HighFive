@@ -1,0 +1,1701 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="2500" levels="1" name="Beast Soulshot Compressed Pack">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Restoration">
+				<param itemId="6645" itemCount="500" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2501" levels="1" name="Beast Spiritshot Compressed Pack">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Restoration">
+				<param itemId="6646" itemCount="500" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2502" levels="1" name="Blessed Beast Spiritshot Compressed Pack">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Restoration">
+				<param itemId="6647" itemCount="500" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2504" levels="1" name="Old Agathion">
+		<table name="#extractableItems">
+			6471,20,5094,40,9814,3,9816,4,9817,4,9815,2,57,6000000,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10408" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2505" levels="1" name="Chant of Combat">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10608" /> <!-- Forgotten Scroll - Chant of Combat -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="1517" />
+				</not>
+				<player class_id_restriction="52, 116" />
+				<player level="70" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="1517" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2506" levels="1" name="Chant of Critical Attack">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10609" /> <!-- Forgotten Scroll - Chant of Critical -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="1518" />
+				</not>
+				<player class_id_restriction="52, 116" />
+				<player level="72" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="1518" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2507" levels="1" name="Chant of Blood Awakening">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10610" /> <!-- Forgotten Scroll - Chant of Blood Awakening -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="1519" />
+				</not>
+				<player class_id_restriction="52, 116" />
+				<player level="74" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="1519" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2508" levels="1" name="Squash Seed">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10640" /> <!-- Cloned Squash Seed -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="12774" npcCount="1" despawnDelay="180000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2509" levels="1" name="Large Squash Seed">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10641" /> <!-- Cloned Large Squash Seed -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc">
+				<param npcId="12777" npcCount="1" despawnDelay="180000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2510" levels="1" name="Wondrous Cubic">
+		<table name="#extractableItems">
+			10633,1,35;10642,1,16;21096,1,2;21101,1,1;10634,1,16;10643,1,10;21097,1,2;21102,1,1;10635,1,11;10644,1,7;21098,1,1.5;21103,1,0.5;21106,1,10636,1,3.5;10645,1,2.1;21099,1,1;21104,1,0.4;21106,1,10637,1,1.5;10646,1,0.9;21100,1,0.3;21105,1,0.299;21593,1,0.001
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="-1" /> <!-- TODO: Daily Reuse Reset ? -->
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="90" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2511" levels="1" name="Scroll of Transformation - Gatekeeper">
+		<!-- Transformed into a gatekeeper. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3600" />
+		<set name="abnormalType" val="TRANSFORM" />
+		<set name="effectPoint" val="1" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player canTransform="true" />
+		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="107" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2512" levels="1" name="Herb of Vampiric Rage">
+		<!-- Allows you to temporarily drain the enemy's HP and add it to your own. Cannot be used with skill-based or long-range attacks. Effect 4. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="BranchSys2.icon.etc_vampiric_rage_herb_i01" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="40" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+			</effect>
+		</for>
+	</skill>
+	<skill id="2513" levels="1" name="Herb of Doubt">
+		<!-- Head is enlarged. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="BIG_HEAD" />
+		<set name="abnormalVisualEffect" val="BIG_HEAD" />
+		<set name="activateRate" val="0" />
+		<set name="icon" val="icon.skill2513" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<set name="trait" val="ETC" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player flyMounted="false" />
+				<not>
+					<player transformationId="103" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="regHp" val="2" />
+				<mul stat="regMp" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2514" levels="1" name="Herb of Critical Attack - Power">
+		<!-- Critical attack power is temporarily increased. Effect 3. -->
+		<set name="abnormalInstant" val="true" />
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="icon" val="BranchSys2.icon.etc_crt_force_herb_i01" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="48" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmg" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2515" levels="1" name="Lucky Clover - D-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2516" levels="1" name="Lucky Clover - C-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2517" levels="1" name="Lucky Clover - B-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2518" levels="1" name="Lucky Clover - A-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2519" levels="1" name="Lucky Clover - S-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2520" levels="1" name="Lucky Clover - D-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2521" levels="1" name="Lucky Clover - C-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2522" levels="1" name="Lucky Clover - B-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2523" levels="1" name="Lucky Clover - A-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2524" levels="1" name="Lucky Clover - S-Grade">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2525" levels="1" name="Scroll to move to Kamael Village">
+		<set name="hitTime" val="10000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12753" /> <!-- Kamael Village Teleportation Scroll -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Teleport">
+				<param x="-120050" y="44500" z="360" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2526" levels="1" name="Evasion Counter">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12768" /> <!-- Forgotten Scroll - Evasion Counter -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="818" />
+				</not>
+				<player class_id_restriction="36, 108" />
+				<player level="74" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="818" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2527" levels="1" name="Evasion Chance">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12769" /> <!-- Forgotten Scroll - Evasion Chance -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="819" />
+				</not>
+				<player class_id_restriction="23, 101" />
+				<player level="74" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="819" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2528" levels="1" name="Evasion Haste">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12770" /> <!-- Forgotten Scroll - Evasion Haste -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="820" />
+				</not>
+				<player class_id_restriction="8, 93" />
+				<player level="74" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="820" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2529" levels="1" name="Shadow Step">
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12771" /> <!-- Forgotten Scroll - Shadow Step -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<not>
+					<player active_skill_id="821" />
+				</not>
+				<player class_id_restriction="8, 93, 23, 101, 36, 108" />
+				<player level="72" />
+			</and>
+		</cond>
+		<for>
+			<effect name="SetSkill">
+				<param skillId="821" skillLvl="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2530" levels="1" name="Recovery Item for Battlefield Use">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12819" /> <!-- Recovery Spellbook for Combat Use -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DispelBySlot">
+				<param dispel="DEATH_PENALTY,-1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2531" levels="1" name="Adventurer's Scroll of Escape">
+		<set name="hitTime" val="20000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10650" /> <!-- Adventurer's Scroll of Escape -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Escape">
+				<param escapeType="TOWN" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2532" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,4,1463,50,2510,50,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12824" /> <!-- Pathfinder Supplies (Level 1) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2533" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,4,1463,100,2510,100,956,1,8623,3,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10836" /> <!-- Pathfinder Supplies (Level 2) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2534" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,4,1463,100,2510,100,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12825" /> <!-- Pathfinder Supplies (Level 3) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2535" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,2,1463,150,2510,150,956,1,8623,3,8629,2,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10837" /> <!-- Pathfinder Supplies (Level 4) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2536" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,5,1463,210,2510,210,956,1,8623,3,8629,3,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10838" /> <!-- Pathfinder Supplies (Level 5) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2537" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,7,1463,300,2510,300,956,1,955,1,8623,7,8629,7,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10839" /> <!-- Pathfinder Supplies (Level 6) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2538" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,5,1463,140,2510,140,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10840" /> <!-- Pathfinder Supplies (Level 7) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2539" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,7,1463,250,2510,250,956,1,8623,5,8629,4,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10841" /> <!-- Pathfinder Supplies (Level 8) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2540" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,6,1463,200,2510,200,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12826" /> <!-- Pathfinder Supplies (Level 9) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2541" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,11,1463,500,2510,500,956,1,955,1,8623,10,8629,10,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12827" /> <!-- Pathfinder Supplies (Level 10) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2542" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,7,1463,400,2510,400,956,1,8623,6,8629,6,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10842" /> <!-- Pathfinder Supplies (Level 11) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2543" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,9,1463,400,2510,400,956,1,8623,9,8629,8,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10843" /> <!-- Pathfinder Supplies (Level 12) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2544" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1463,500,2510,500,956,2,955,1,8623,15,8629,15,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10844" /> <!-- Pathfinder Supplies (Level 13) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2545" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,7,1464,150,2511,150,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10845" /> <!-- Pathfinder Supplies (Level 14) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2546" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,5,1464,120,2511,120,952,1,8624,5,8630,4,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10846" /> <!-- Pathfinder Supplies (Level 15) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2547" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,11,1464,150,2511,150,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12828" /> <!-- Pathfinder Supplies (Level 16) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2548" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,7,1464,300,2511,300,952,1,951,1,8624,7,8630,7,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12829" /> <!-- Pathfinder Supplies (Level 17) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2549" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,6,1464,200,2511,200,8624,7,8630,6,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10847" /> <!-- Pathfinder Supplies (Level 18) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2550" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1464,250,2511,250,952,1,8624,8,8630,7,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10848" /> <!-- Pathfinder Supplies (Level 19) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2551" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1464,350,2511,350,952,2,951,1,8624,10,8630,10,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10849" /> <!-- Pathfinder Supplies (Level 20) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2552" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,6,1465,100,2512,100,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10850" /> <!-- Pathfinder Supplies (Level 21) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2553" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1465,200,2512,200,8625,7,8631,7,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10851" /> <!-- Pathfinder Supplies (Level 22) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2554" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,8,1465,120,2512,120,8625,7,8631,7,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12830" /> <!-- Pathfinder Supplies (Level 23) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2555" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,15,1464,300,2511,300,952,2,951,1,8624,15,8630,14,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12831" /> <!-- Pathfinder Supplies (Level 24) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2556" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,4,1465,200,2512,200,948,1,8625,5,8631,5,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10852" /> <!-- Pathfinder Supplies (Level 25) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2557" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1465,250,2512,250,948,1,8625,6,8631,6,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10853" /> <!-- Pathfinder Supplies (Level 26) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2558" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,15,1465,380,2512,380,948,2,8625,12,8631,12,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10854" /> <!-- Pathfinder Supplies (Level 27) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2559" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,5,1466,120,2513,120,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10855" /> <!-- Pathfinder Supplies (Level 28) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2560" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1466,250,2513,250,8626,9,8632,9,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10856" /> <!-- Pathfinder Supplies (Level 29) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2561" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,5,1466,150,2513,150,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12832" /> <!-- Pathfinder Supplies (Level 30) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2562" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,4,1465,100,2512,100,947,1,8625,3,8631,3,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12833" /> <!-- Pathfinder Supplies (Level 31) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2563" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1466,300,2513,300,8626,10,8632,10,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10857" /> <!-- Pathfinder Supplies (Level 32) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2564" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,3,1466,140,2513,140,730,1,8626,5,8632,5,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10858" /> <!-- Pathfinder Supplies (Level 33) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2565" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,6,1466,250,2513,250,730,2,8626,6,8632,6,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10859" /> <!-- Pathfinder Supplies (Level 34) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2566" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,9,1467,130,2514,130,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10860" /> <!-- Pathfinder Supplies (Level 35) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2567" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1467,350,2514,350,8627,12,8633,11,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10861" /> <!-- Pathfinder Supplies (Level 36) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2568" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,10,1466,350,2513,350,730,2,8626,10,8632,10,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="12834" /> <!-- Pathfinder Supplies (Level 37) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2569" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,12,1467,360,2514,360,8627,12,8633,12,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10862" /> <!-- Pathfinder Supplies (Level 38) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2570" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,6,1467,140,2514,140,960,1,8627,4,8633,3,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10863" /> <!-- Pathfinder Supplies (Level 39) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2571" levels="1" name="Pathfinder Supplies">
+		<table name="#extractableItems">
+			1539,15,1467,360,2514,360,960,1,8627,11,8633,11,100
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="10864" /> <!-- Pathfinder Supplies (Level 40) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2572" levels="1" name="Pathfinder's Reward">
+		<table name="#extractableItems">
+			947,1,3.2
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13003" /> <!-- Pathfinder's Reward (C-Grade) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2573" levels="1" name="Pathfinder's Reward">
+		<table name="#extractableItems">
+			729,1,1.6111
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13004" /> <!-- Pathfinder's Reward (C-Grade) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2574" levels="1" name="Pathfinder's Reward">
+		<table name="#extractableItems">
+			959,1,1.14
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13005" /> <!-- Pathfinder's Reward (B-Grade) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2575" levels="1" name="Pathfinder's Reward">
+		<table name="#extractableItems">
+			9546,1,19.8;9548,1,19.8;9550,1,19.8;959,1,1.98;9442,1,0.1;9443,1,0.1;9444,1,0.1;9445,1,0.1;9446,1,0.1;9447,1,0.1;9448,1,0.1;9449,1,0.1;9450,1,0.1;10252,1,0.1;10253,1,0.1;9532,1,1;9537,1,1;9542,1,1
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13006" /> <!-- Pathfinder's Reward (A-Grade) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2576" levels="1" name="Pathfinder's Reward">
+		<table name="#extractableItems">
+			9546,1,26.4;9548,1,26.4;9550,1,26.4;959,1,3.84;10215,1,0.13;10216,1,0.13;10217,1,0.13;10218,1,0.13;10219,1,0.13;10220,1,0.13;10221,1,0.13;10222,1,0.13;10223,1,0.13
+		</table>
+		<set name="capsuled_items_skill" val="#extractableItems" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13007" /> <!-- Pathfinder's Reward (S-Grade) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="129">
+			<and>
+				<player invSize="10" />
+				<player weight="80" />
+			</and>
+		</cond>
+		<for>
+			<effect name="RestorationRandom" />
+		</for>
+	</skill>
+	<skill id="2577" levels="1" name="Instant Defense">
+		<!-- Becomes invincible momentarily. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="3" />
+		<set name="abnormalType" val="INVINCIBILITY" />
+		<set name="icon" val="icon.skill1418" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Invincible" />
+		</for>
+	</skill>
+	<skill id="2578" levels="1" name="Cure Poison Paralyze">
+		<!-- Cures Poison Paralyze. -->
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DispelBySlot">
+				<param dispel="POISON,9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2579" levels="1" name="Cure Death Clock">
+		<!-- Cures the Incense of Death. -->
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="DispelBySlot">
+				<param dispel="DEATH_CLACK,1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2580" levels="1" name="Vitality Replenishing Herb">
+		<!-- Restores Vitality points as you gain Exp. by hunting. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="VP_UP" />
+		<set name="abnormalVisualEffect" val="VP_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="100" />
+		<set name="icon" val="icon.skilltransform4" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<for>
+			<effect name="Buff">
+				<sub stat="vitalityConsumeRate" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2581" levels="1" name="not_used">
+		<set name="effectPoint" val="1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2582" levels="1" name="not_used">
+		<set name="effectPoint" val="1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2583" levels="1" name="not_used">
+		<set name="effectPoint" val="1" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2584" levels="1" name="Item - Special Sound Crystal">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2585" levels="1" name="Item - Special Sound Crystal">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2586" levels="2" name="Energy Replenishing Potion">
+		<table name="#value"> 10000 20000 </table>
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp">
+				<param value="#value" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2587" levels="1" name="Increase number of teleport slots.">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13015" /> <!-- My Teleport Spellbook -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2588" levels="1" name="My Teleport">
+		<set name="hitTime" val="20000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2589" levels="1" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss)">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13010" /> <!-- Extra Entrance Pass - Kamaloka (Hall of the Abyss) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2590" levels="1" name="Extra Entrance Pass - Near Kamaloka">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13011" /> <!-- Extra Entrance Pass - Near Kamaloka -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2591" levels="1" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss)">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13012" /> <!-- Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="2592" levels="1" name="Quick Healing Potion">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="HealPercent">
+				<param power="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2593" levels="1" name="Bow/Crossbow Attack Resistance Potion">
+		<!-- Temporarily increases your tolerance to bow/crossbow attacks. Effect 4. -->
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="180" />
+		<set name="abnormalType" val="PD_UP_BOW" />
+		<set name="effectPoint" val="40" />
+		<set name="icon" val="icon.etc_potion_red_i00" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<player flyMounted="false" />
+		</cond>
+		<for>
+			<effect name="DefenceTrait">
+				<param BOW="40" />
+				<param CROSSBOW="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2594" levels="1" name="Pailaka Scroll of Escape">
+		<set name="hitTime" val="20000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13129" /> <!-- Scroll of Escape: Pailaka -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Escape">
+				<param escapeType="TOWN" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2595" levels="1" name="Gran Kain's Blessed Scroll of Escape">
+		<set name="hitTime" val="200" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13258" /> <!-- Gran Kain's Blessed Scroll of Escape -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player canEscape="true" />
+				<not>
+					<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
+				</not>
+			</and>
+		</cond>
+		<for>
+			<effect name="Escape">
+				<param escapeType="TOWN" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2596" levels="1" name="Gran Kain's Blessed Scroll of Resurrection">
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="1" />
+		<set name="effectRange" val="600" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13259" /> <!-- Gran Kain's Blessed Scroll of Resurrection -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="PC_BODY" />
+		<cond>
+			<player canResurrect="true" />
+		</cond>
+		<for>
+			<effect name="Resurrection">
+				<param power="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2597" levels="1" name="Gran Kain's Echo Crystal - Theme of Journey">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2598" levels="1" name="Gran Kain's Echo Crystal - Theme of Battle">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="2599" levels="1" name="Gran Kain's Echo Crystal - Theme of Love">
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+	</skill>
+</list>

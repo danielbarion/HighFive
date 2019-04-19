@@ -1,0 +1,1407 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="6800" levels="1" name="Presentation - Yellow Portal Ray">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6801" levels="1" name="Presentation - Yellow-Green Portal Ray">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6802" levels="1" name="Presentation - SSQ2 General Purpose 6">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="icon" val="icon.skill0922" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6803" levels="1" name="Arena Haste">
+		<!-- Increases Atk. Spd. by 33% for 5 minutes. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="495" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6804" levels="1" name="Arena Wind Walk">
+		<!-- Increases Speed by 33 for 5 minutes. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="SPEED_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="285" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1204" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6805" levels="1" name="Arena Empower">
+		<!-- Increases M. Atk. by 75% for 5 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="MA_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="495" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1059" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6806" levels="1" name="Arena Acumen">
+		<!-- Increases Casting Spd. by 30% for 5 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="457" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1085" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6807" levels="1" name="Arena Concentration">
+		<!-- Decreases magic cancel damage by 53 for 5 minutes. -->
+		<set name="abnormalLvl" val="6" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="CANCEL_PROB_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="624" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1078" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<sub stat="cancel" val="53" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6808" levels="1" name="Arena Might">
+		<!-- Increases P. Atk. by 15% for 5 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="379" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6809" levels="1" name="Arena Guidance">
+		<!-- Increases accuracy by 4 for 5 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="HIT_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="532" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<add stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6810" levels="1" name="Arena Focus">
+		<!-- Increases critical attack rate by 30% for 5 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="495" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6811" levels="1" name="Arena Death Whisper">
+		<!-- Increases critical attack effect by 35% for 5 minutes. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="532" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1242" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critDmg" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6812" levels="1" name="Arena Berserker Spirit">
+		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 5 minutes. -->
+		<set name="abnormalLvl" val="2" />
+		<set name="abnormalTime" val="300" />
+		<set name="abnormalType" val="BERSERKER" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="495" />
+		<set name="effectRange" val="900" />
+		<set name="icon" val="icon.skill1062" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Buff">
+				<mul stat="mAtk" val="1.16" />
+				<mul stat="pAtk" val="1.08" />
+				<mul stat="mDef" val="0.84" />
+				<mul stat="pDef" val="0.92" />
+				<mul stat="mAtkSpd" val="1.08" />
+				<mul stat="pAtkSpd" val="1.08" />
+				<add stat="runSpd" val="8" />
+				<sub stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6813" levels="8" name="Focus Sonic">
+		<table name="#magicLvl"> 40 43 49 55 60 66 70 79 </table>
+		<table name="#maxCharges"> 1 2 3 4 5 6 7 8 </table>
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="324">
+			<not>
+				<player Charges="#maxCharges" />
+			</not>
+		</cond>
+		<for>
+			<effect name="FocusEnergy">
+				<param charge="#maxCharges" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6814" levels="8" name="Focus Force">
+		<table name="#magicLvl"> 24 32 40 52 60 66 72 79 </table>
+		<table name="#maxCharges"> 1 2 3 4 5 6 7 8 </table>
+		<set name="isTriggeredSkill" val="true" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="10000" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="324">
+			<not>
+				<player Charges="#maxCharges" />
+			</not>
+		</cond>
+		<for>
+			<effect name="FocusEnergy">
+				<param charge="#maxCharges" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6815" levels="16" name="Deadly Poison">
+		<!-- Poison seeps deeper and for 10 seconds, 330 HP is decreased every second. If not treated, the poison will worsen. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6816" levels="16" name="Deadly Bleed">
+		<!-- Bleed becomes deeper and for 10 seconds, 330 HP is decreased every second. If not treated, the bleed will worsen. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6817" levels="1" name="Arena HP Recovery">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="562" />
+		<set name="effectRange" val="900" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6818" levels="1" name="Powerful Rage">
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="20" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="75" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="8000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pAtkSpd" val="1.3" />
+				<mul stat="critRate" val="1.3" />
+				<mul stat="critDmg" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6819" levels="1" name="Banshee's Curse">
+		<!-- For 15 seconds, Atk. Spd. is decreased by 20%. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6820" levels="1" name="P. Def. Enhance">
+		<set name="abnormalLvl" val="4" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="PD_UP" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="1800" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="30" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="6000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pDef" val="1.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6821" levels="1" name="P. Def. Decrease">
+		<!-- For 4 seconds, P. Def. decreases by 23%. -->
+		<set name="abnormalTime" val="15" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill0122" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6822" levels="1" name="P. Def. Decrease">
+		<!-- For 4 seconds, P. Def. decreases by 40%. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6823" levels="1" name="Reflect Attack">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6824" levels="1" name="Piercing Storm">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="-100" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6825" levels="2" name="Bleed">
+		<!-- For 8 seconds, inflicts bleed and decreases 100 HP every second. -->
+		<set name="abnormalTime" val="10" />
+		<set name="activateRate" val="100" />
+		<set name="basicProperty" val="CON" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill0096" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6826" levels="1" name="Critical Strike">
+		<set name="effectPoint" val="-100" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6827" levels="1" name="Petrify">
+		<!-- Inflicted with petrification, the body is rigid like stone for 30 seconds. -->
+		<set name="abnormalTime" val="30" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill4111" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6828" levels="1" name="Dust Storm">
+		<!-- For 30 seconds, Atk. Spd. is decreased by 50% and Casting Spd. is decreased by 50%. -->
+		<set name="abnormalTime" val="30" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill1386" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6829" levels="1" name="Vampiric Attack">
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill1234" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6830" levels="1" name="Bleed">
+		<!-- For 5 seconds, inflicts bleed and decreases 100 HP every second. Decreases the effect of recovery magic by 600. -->
+		<set name="abnormalTime" val="5" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="CON" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill0096" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6831" levels="1" name="Blood Burst">
+		<set name="effectPoint" val="-100" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6832" levels="1" name="Summon Parasite Leech">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6833" levels="1" name="Power Strike">
+		<set name="effectPoint" val="-100" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6834" levels="1" name="Range Magic Attack">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="-100" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6835" levels="1" name="Summon Skeleton">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6836" levels="1" name="Silence">
+		<!-- Magic skills are blocked. -->
+		<set name="abnormalTime" val="20" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill1064" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6837" levels="1" name="Range Magic Attack">
+		<set name="effectPoint" val="-100" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6838" levels="1" name="Self-destruction">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6839" levels="2" name="Power Attack">
+		<set name="effectPoint" val="-100" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6840" levels="1" name="Paralysis">
+		<!-- Temporarily inflicted with paralysis and cannot move. -->
+		<set name="abnormalTime" val="20" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="effectPoint" val="-100" />
+		<set name="icon" val="icon.skill1170" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6841" levels="1" name="Summon Subordinate">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6842" levels="2" name="Enhance">
+		<!-- Increases P. Atk. by 12% and Atk. Spd. by 15%. -->
+		<table name="#abnormalLvls"> 2 3 </table>
+		<table name="#pAtk"> 1.12 1 </table>
+		<table name="#pAtkSpd"> 1.15 1.4 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="affectRange" val="600" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill1086" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="75" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="CLAN" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="#pAtk" />
+				<mul stat="pAtkSpd" val="#pAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6843" levels="1" name="Enhance">
+		<!-- Atk. Spd. is increased by 33%. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6844" levels="1" name="Power Strike">
+		<set name="affectLimit" val="5-15" />
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="300" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="500" />
+		<set name="element" val="0" /> <!-- Fire -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3000" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6845" levels="1" name="Power Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2500" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="3000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6846" levels="1" name="Vampiric Claw">
+		<set name="castRange" val="800" />
+		<set name="effectRange" val="1300" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="123" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="300" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6847" levels="1" name="Self Heal">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6848" levels="1" name="Summoner Appearance">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6849" levels="1" name="Summoner Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="100" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="3000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6850" levels="1" name="Self-destruction">
+		<set name="affectRange" val="200" />
+		<set name="effectPoint" val="-100" />
+		<set name="hitTime" val="3000" />
+		<set name="magicLvl" val="81" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="3000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6851" levels="1" name="Power Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="3000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6852" levels="1" name="Magic Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="4000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="100" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="6853" levels="1" name="Sleep">
+		<!-- Inflicts sleep for 6 seconds. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="6" />
+		<set name="abnormalType" val="SLEEP" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill1069" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="removedOnDamage" val="true" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Sleep" />
+		</for>
+	</skill>
+	<skill id="6854" levels="1" name="Hold">
+		<!-- Temporarily inflicted with hold and unable to move. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="20" />
+		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill4047" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="73" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Root" />
+		</for>
+	</skill>
+	<skill id="6855" levels="1" name="Magic Strike">
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1100" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="4000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="150" />
+		<set name="reuseDelay" val="1000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="6856" levels="1" name="Heal">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6857" levels="1" name="Power Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="80" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2500" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6858" levels="1" name="Summon">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6859" levels="1" name="Power Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="80" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2500" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6860" levels="1" name="Power Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="80" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6861" levels="1" name="Enhance">
+		<!-- Increases P. Atk. by 20% and Atk. Spd. by 30%. -->
+		<set name="abnormalLvl" val="3" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="PA_UP" />
+		<set name="affectRange" val="600" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="100" />
+		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill1086" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="75" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="30000" />
+		<set name="targetType" val="CLAN" />
+		<for>
+			<effect name="Buff">
+				<mul stat="pAtk" val="1.2" />
+				<mul stat="pAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6862" levels="1" name="Poison">
+		<!-- For 6 seconds, inflicts poison and decreases 100 HP every second. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="6" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="70" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="100" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0129" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="POISON" />
+		<for>
+			<effect name="DamOverTime" ticks="1">
+				<param power="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6863" levels="1" name="Poison">
+		<!-- For 10 seconds, inflicts poison and decreases 120 HP every second. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="10" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="70" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="150" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="650" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill0129" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="POISON" />
+		<for>
+			<effect name="DamOverTime" ticks="1">
+				<param power="120" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6864" levels="1" name="Summon">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6865" levels="1" name="Poison">
+		<!-- For 8 seconds, inflicts bleed and decreases 100 HP every second. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="8" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="castRange" val="100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2500" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="POISON" />
+		<for>
+			<effect name="DamOverTime" ticks="1">
+				<param power="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6866" levels="1" name="Vampiric Claw">
+		<set name="castRange" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1300" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="200" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6867" levels="1" name="Magic Strike">
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="150" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="6868" levels="1" name="Summon">
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6869" levels="1" name="Detonate">
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="isSuicideAttack" val="true" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="300" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="6870" levels="1" name="Vampiric Claw">
+		<set name="castRange" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1300" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="123" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="100" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6871" levels="1" name="Range Magic Attack">
+		<set name="affectRange" val="150" />
+		<set name="castRange" val="800" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="1400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="122" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="100" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="6872" levels="1" name="Self-destruction">
+		<set name="affectRange" val="200" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="5000" />
+		<set name="isSuicideAttack" val="true" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="300" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="6873" levels="2" name="Hex">
+		<!-- P. Def. is decreased by 23%. -->
+		<table name="#abnormalLvls"> 3 4 </table>
+		<table name="#pDef"> 0.77 0.67 </table>
+		<set name="abnormalLvl" val="#abnormalLvls" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="PD_DOWN" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="150" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="650" />
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill0122" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="2000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff">
+				<mul stat="pDef" val="#pDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6874" levels="1" name="Range Magic Attack">
+		<set name="affectRange" val="300" />
+		<set name="effectPoint" val="-100" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2500" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="150" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" />
+		</for>
+	</skill>
+	<skill id="6875" levels="2" name="Poison">
+		<!-- For 8 seconds, inflicts bleed and decreases 120 HP every second. -->
+		<table name="#dmg"> 120 140 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="8" />
+		<set name="abnormalType" val="POISON" />
+		<set name="abnormalVisualEffect" val="DOT_POISON" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="CON" />
+		<set name="castRange" val="300" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="600" />
+		<set name="hitTime" val="2500" />
+		<set name="icon" val="icon.skill0129" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="DamOverTime" ticks="1">
+				<param power="#dmg" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6876" levels="1" name="Power Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="80" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6877" levels="1" name="Power Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="80" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6878" levels="1" name="Paralysis">
+		<!-- Temporarily inflicted with paralysis and cannot move. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="PARALYZE" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="80" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="6000" />
+		<set name="icon" val="icon.skill1170" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="78" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="PARALYZE" />
+		<for>
+			<effect name="Paralyze" />
+		</for>
+	</skill>
+	<skill id="6879" levels="1" name="Vampiric Claw">
+		<set name="castRange" val="300" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="600" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="3000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="100" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6880" levels="1" name="Silence">
+		<!-- Magic skills are blocked. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="SILENCE" />
+		<set name="activateRate" val="80" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="300" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="600" />
+		<set name="hitTime" val="3000" />
+		<set name="icon" val="icon.skill1064" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="4000" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="DERANGEMENT" />
+		<for>
+			<effect name="Mute" />
+		</for>
+	</skill>
+	<skill id="6881" levels="1" name="Critical Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="40" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="element" val="5" /> <!-- Dark -->
+		<set name="elementPower" val="20" />
+		<set name="hitTime" val="2500" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="89" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6882" levels="1" name="Petrify">
+		<!-- Inflicted with petrification, the body is rigid like stone temporarily. -->
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="TURN_STONE" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2500" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A2" />
+		<set name="reuseDelay" val="5000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Petrification" />
+		</for>
+	</skill>
+	<skill id="6883" levels="1" name="Energy Abundance Effect">
+		<!-- For 5 minutes you receive Vitality Stage 4 bonus effects. After 5 minutes bonus returns to your current Vitality Stage. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6884" levels="1" name="Morale Boost">
+		<set name="abnormalTime" val="60" />
+		<set name="activateRate" val="80" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="effectPoint" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6885" levels="3" name="Morale Boost">
+		<!-- The persistence of the brave who fight together in Dragon Valley receive Resistance to Paralysis/Bleed/Poison/Stun +50, Critical Rate +10%, and Critical Damage +10%. -->
+		<table name="#abnormalLvl"> 2 3 4 </table>
+		<table name="#critDmg"> 1.1 1.15 1.2 </table>
+		<table name="#pmAtk"> 1 1.15 1.15 </table>
+		<table name="#pmAtkSpd"> 1 1 1.15 </table>
+		<table name="#critRate"> 1.1 1.3 1.5 </table>
+		<table name="#traits"> 50 80 90 </table>
+		<set name="abnormalLvl" val="#abnormalLvl" />
+		<set name="abnormalTime" val="60" />
+		<set name="abnormalType" val="DRAGON_BUFF" />
+		<set name="affectRange" val="1000" />
+		<set name="blockedInOlympiad" val="true" />
+		<set name="castRange" val="1500" />
+		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="1800" />
+		<set name="icon" val="icon.skill6885" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="magicLvl" val="-1" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="PARTY" />
+		<for>
+			<effect name="Buff">
+				<mul stat="critRate" val="#critRate" />
+				<mul stat="critDmg" val="#critDmg" />
+				<mul stat="pAtk" val="#pmAtk" />
+				<mul stat="mAtk" val="#pmAtk" />
+				<mul stat="mAtkSpd" val="#pmAtkSpd" />
+				<mul stat="pAtkSpd" val="#pmAtkSpd" />
+			</effect>
+			<effect name="DefenceTrait">
+				<param PARALYZE="#traits" />
+				<param BLEED="#traits" />
+				<param POISON="#traits" />
+				<param SHOCK="#traits" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6886" levels="1" name="Complete Recovery">
+		<set name="hitTime" val="2500" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="100" />
+		<set name="reuseDelay" val="900000" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6887" levels="1" name="Fatal Strike">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="100" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="3000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6888" levels="1" name="Fatal Shot">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="2000" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="2200" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6889" levels="1" name="Range Attack">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6890" levels="1" name="Bleed">
+		<!-- For 10 seconds, inflicts bleed and decreases 100 HP every second. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6891" levels="1" name="Power Attack">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="200" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6892" levels="1" name="Power Shot">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="2000" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="2200" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6893" levels="1" name="Power Attack">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="200" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6894" levels="1" name="Power Shot">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="2000" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="2200" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6895" levels="1" name="Power Attack">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="200" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6896" levels="1" name="Power Shot">
+		<set name="baseCritRate" val="20" />
+		<set name="castRange" val="2000" />
+		<set name="effectPoint" val="-100" />
+		<set name="effectRange" val="2200" />
+		<set name="hitTime" val="1000" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="80" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" />
+		</for>
+	</skill>
+	<skill id="6897" levels="12" name="Shock">
+		<!-- Temporarily in shock and unable to move. -->
+		<set name="operateType" val="P" />
+		<set name="targetType" val="NONE" />
+	</skill>
+	<skill id="6898" levels="1" name="84 level Raid Boss">
+		<!-- It was one of the dragons that was born out of the blood that was thrown up by Antharas. After swallowing the Ancient Drake and absorbing its power, it quickly arose as a Commander that rules over the monsters nearby. It has good hearing but its vision is very poor, so it waits in a quiet, dark place, listening to the enemy's heartbeat, before swooping in for an attack. -->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+	<skill id="6899" levels="1" name="84 level Raid Boss">
+		<!-- It was one of the dragons that was born out of the blood that was thrown up by Antharas. It swallowed up its brethren and gained a greater power. Antharas, whose heart was filled with innate cruelty and madness of a Dust Rider, appointed him as the Valley's Eradicator and commanded him to build the Tower of Corpses. -->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+	</skill>
+</list>

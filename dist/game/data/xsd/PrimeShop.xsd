@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence maxOccurs="1" minOccurs="1">
+				<xs:element name="product" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="id" type="xs:positiveInteger" use="required" />
+						<xs:attribute name="category" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:positiveInteger">
+									<xs:minInclusive value="1" />
+									<xs:maxInclusive value="8" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="points" type="xs:positiveInteger" use="required" />
+						<xs:attribute name="item" type="xs:positiveInteger" use="required" />
+						<xs:attribute name="count" type="xs:positiveInteger" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
