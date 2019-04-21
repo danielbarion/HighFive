@@ -118,7 +118,7 @@ public abstract class L2Playable extends L2Character
 		// Stop movement
 		stopMove(null);
 		
-		// Stop HP/MP/CP Regeneration task
+		// Stop HP/MP/CP Regeneration tasks
 		getStatus().stopHpMpRegeneration();
 		
 		boolean deleteBuffs = true;

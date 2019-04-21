@@ -124,7 +124,7 @@ public final class L2WorldRegion
 				if (o.isAttackable())
 				{
 					c++;
-					// Start HP/MP/CP regeneration task.
+					// Start HP/MP/CP regeneration tasks.
 					((L2Attackable) o).getStatus().startHpMpRegeneration();
 				}
 				else if (o instanceof L2Npc)

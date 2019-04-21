@@ -1196,7 +1196,7 @@ public class L2Npc extends L2Character
 	 * <li>Create a DecayTask to remove the corpse of the L2NpcInstance after 7 seconds</li>
 	 * <li>Set target to null and cancel Attack or Cast</li>
 	 * <li>Stop movement</li>
-	 * <li>Stop HP/MP/CP Regeneration task</li>
+	 * <li>Stop HP/MP/CP Regeneration tasks</li>
 	 * <li>Stop all active skills effects in progress on the L2Character</li>
 	 * <li>Send the Server->Client packet StatusUpdate with current HP and MP to all other L2PcInstance to inform</li>
 	 * <li>Notify L2Character AI</li>
@@ -1333,9 +1333,9 @@ public class L2Npc extends L2Character
 	 * Remove the L2NpcInstance from the world and update its spawn object (for a complete removal use the deleteMe method).<br>
 	 * <B><U>Actions</U>:</B>
 	 * <ul>
-	 * <li>Remove the L2NpcInstance from the world when the decay task is launched</li>
+	 * <li>Remove the L2NpcInstance from the world when the decay tasks is launched</li>
 	 * <li>Decrease its spawn counter</li>
-	 * <li>Manage Siege task (killFlag, killCT)</li>
+	 * <li>Manage Siege tasks (killFlag, killCT)</li>
 	 * </ul>
 	 * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T REMOVE the object from _allObjects of L2World </B></FONT><BR>
 	 * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T SEND Server->Client packets to players</B></FONT>
@@ -1349,7 +1349,7 @@ public class L2Npc extends L2Character
 		}
 		setDecayed(true);
 		
-		// Remove the L2NpcInstance from the world when the decay task is launched
+		// Remove the L2NpcInstance from the world when the decay tasks is launched
 		super.onDecay();
 		
 		// Decrease its spawn counter
@@ -1850,7 +1850,7 @@ public class L2Npc extends L2Character
 			
 			item.dropMe(this, newX, newY, newZ);
 			
-			// Add drop to auto destroy item task.
+			// Add drop to auto destroy item tasks.
 			if (!Config.LIST_PROTECTED_ITEMS.contains(itemId))
 			{
 				if (((Config.AUTODESTROY_ITEM_AFTER > 0) && !item.getItem().hasExImmediateEffect()) || ((Config.HERB_AUTO_DESTROY_TIME > 0) && item.getItem().hasExImmediateEffect()))

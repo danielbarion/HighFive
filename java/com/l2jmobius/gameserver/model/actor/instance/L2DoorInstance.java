@@ -470,7 +470,7 @@ public class L2DoorInstance extends L2Character
 	
 	public final void closeMe()
 	{
-		// remove close task
+		// remove close tasks
 		final Future<?> oldTask = _autoCloseTask;
 		if (oldTask != null)
 		{

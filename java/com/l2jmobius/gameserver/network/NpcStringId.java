@@ -14270,13 +14270,13 @@ public final class NpcStringId
 	@ClientString(id = 1800327, message = "The difficult situations will turn to hope with unforeseen help.")
 	public static NpcStringId THE_DIFFICULT_SITUATIONS_WILL_TURN_TO_HOPE_WITH_UNFORESEEN_HELP;
 	
-	@ClientString(id = 1800328, message = "A great task will result in success.")
+	@ClientString(id = 1800328, message = "A great tasks will result in success.")
 	public static NpcStringId A_GREAT_TASK_WILL_RESULT_IN_SUCCESS;
 	
 	@ClientString(id = 1800329, message = "You may encounter a precious person who will lift your loneliness and discord.")
 	public static NpcStringId YOU_MAY_ENCOUNTER_A_PRECIOUS_PERSON_WHO_WILL_LIFT_YOUR_LONELINESS_AND_DISCORD;
 	
-	@ClientString(id = 1800330, message = "People around you will encourage your every task in the future.")
+	@ClientString(id = 1800330, message = "People around you will encourage your every tasks in the future.")
 	public static NpcStringId PEOPLE_AROUND_YOU_WILL_ENCOURAGE_YOUR_EVERY_TASK_IN_THE_FUTURE;
 	
 	@ClientString(id = 1800331, message = "Everything will be smoothly managed.")
@@ -14294,7 +14294,7 @@ public final class NpcStringId
 	@ClientString(id = 1800335, message = "When it comes to work, lifestyle and relationships you'll be better off to go by the text rather than tricks.")
 	public static NpcStringId WHEN_IT_COMES_TO_WORK_LIFESTYLE_AND_RELATIONSHIPS_YOU_LL_BE_BETTER_OFF_TO_GO_BY_THE_TEXT_RATHER_THAN_TRICKS;
 	
-	@ClientString(id = 1800336, message = "Your task will receive substantial support since the surroundings will fully develop.")
+	@ClientString(id = 1800336, message = "Your tasks will receive substantial support since the surroundings will fully develop.")
 	public static NpcStringId YOUR_TASK_WILL_RECEIVE_SUBSTANTIAL_SUPPORT_SINCE_THE_SURROUNDINGS_WILL_FULLY_DEVELOP;
 	
 	@ClientString(id = 1800337, message = "Your star of fortune indicate a success with mental and material assistance.")
@@ -14498,7 +14498,7 @@ public final class NpcStringId
 	@ClientString(id = 1800403, message = "Your achievement unfairly may go somewhere else.")
 	public static NpcStringId YOUR_ACHIEVEMENT_UNFAIRLY_MAY_GO_SOMEWHERE_ELSE;
 	
-	@ClientString(id = 1800404, message = "Do not start a task that's not clear to you.")
+	@ClientString(id = 1800404, message = "Do not start a tasks that's not clear to you.")
 	public static NpcStringId DO_NOT_START_A_TASK_THAT_S_NOT_CLEAR_TO_YOU;
 	
 	@ClientString(id = 1800405, message = "You will need to be prepared for all events.")
@@ -14600,7 +14600,7 @@ public final class NpcStringId
 	@ClientString(id = 1800437, message = "Be brave and ambitious as no bird can fly into the sky by staying in their nest.")
 	public static NpcStringId BE_BRAVE_AND_AMBITIOUS_AS_NO_BIRD_CAN_FLY_INTO_THE_SKY_BY_STAYING_IN_THEIR_NEST;
 	
-	@ClientString(id = 1800438, message = "It's a good idea not to start an unclear task and always look for someone you can trust and rely upon.")
+	@ClientString(id = 1800438, message = "It's a good idea not to start an unclear tasks and always look for someone you can trust and rely upon.")
 	public static NpcStringId IT_S_A_GOOD_IDEA_NOT_TO_START_AN_UNCLEAR_TASK_AND_ALWAYS_LOOK_FOR_SOMEONE_YOU_CAN_TRUST_AND_RELY_UPON;
 	
 	@ClientString(id = 1800439, message = "Hunting won't be successful as the falcon lacks its claws.")
@@ -14609,7 +14609,7 @@ public final class NpcStringId
 	@ClientString(id = 1800440, message = "A prepared plan won't move smoothly.")
 	public static NpcStringId A_PREPARED_PLAN_WON_T_MOVE_SMOOTHLY;
 	
-	@ClientString(id = 1800441, message = "An easy task may fail if one is consumed by greed and overconfidence.")
+	@ClientString(id = 1800441, message = "An easy tasks may fail if one is consumed by greed and overconfidence.")
 	public static NpcStringId AN_EASY_TASK_MAY_FAIL_IF_ONE_IS_CONSUMED_BY_GREED_AND_OVERCONFIDENCE;
 	
 	@ClientString(id = 1800442, message = "Impatience may lie ahead as the situation is unfavorable.")
@@ -14717,7 +14717,7 @@ public final class NpcStringId
 	@ClientString(id = 1800476, message = "Be warned as unexpected luck may be wasted with your reckless comments.")
 	public static NpcStringId BE_WARNED_AS_UNEXPECTED_LUCK_MAY_BE_WASTED_WITH_YOUR_RECKLESS_COMMENTS;
 	
-	@ClientString(id = 1800477, message = "Overconfidence will convince you to carry a task above your reach and there will be consequences.")
+	@ClientString(id = 1800477, message = "Overconfidence will convince you to carry a tasks above your reach and there will be consequences.")
 	public static NpcStringId OVERCONFIDENCE_WILL_CONVINCE_YOU_TO_CARRY_A_TASK_ABOVE_YOUR_REACH_AND_THERE_WILL_BE_CONSEQUENCES;
 	
 	@ClientString(id = 1800478, message = "Momentarily delay an important decision.")
@@ -14834,7 +14834,7 @@ public final class NpcStringId
 	@ClientString(id = 1800515, message = "Look for someone with a similar style. It will open up for the good.")
 	public static NpcStringId LOOK_FOR_SOMEONE_WITH_A_SIMILAR_STYLE_IT_WILL_OPEN_UP_FOR_THE_GOOD;
 	
-	@ClientString(id = 1800516, message = "An offer may soon be made to collaborate a task but delaying it will be a good idea.")
+	@ClientString(id = 1800516, message = "An offer may soon be made to collaborate a tasks but delaying it will be a good idea.")
 	public static NpcStringId AN_OFFER_MAY_SOON_BE_MADE_TO_COLLABORATE_A_TASK_BUT_DELAYING_IT_WILL_BE_A_GOOD_IDEA;
 	
 	@ClientString(id = 1800517, message = "Partnership is out of luck, avoid someone who rushes you to start a collaboration.")

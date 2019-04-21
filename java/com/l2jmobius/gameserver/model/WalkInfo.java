@@ -130,7 +130,7 @@ public class WalkInfo
 	}
 	
 	/**
-	 * @return {@code true} if walking task is blocked, {@code false} otherwise,
+	 * @return {@code true} if walking tasks is blocked, {@code false} otherwise,
 	 */
 	public boolean isBlocked()
 	{
@@ -146,7 +146,7 @@ public class WalkInfo
 	}
 	
 	/**
-	 * @return {@code true} if walking task is suspended, {@code false} otherwise,
+	 * @return {@code true} if walking tasks is suspended, {@code false} otherwise,
 	 */
 	public boolean isSuspended()
 	{
@@ -162,7 +162,7 @@ public class WalkInfo
 	}
 	
 	/**
-	 * @return {@code true} if walking task shall be stopped by attack, {@code false} otherwise,
+	 * @return {@code true} if walking tasks shall be stopped by attack, {@code false} otherwise,
 	 */
 	public boolean isStoppedByAttack()
 	{
@@ -178,7 +178,7 @@ public class WalkInfo
 	}
 	
 	/**
-	 * @return the id of the current node in this walking task.
+	 * @return the id of the current node in this walking tasks.
 	 */
 	public int getCurrentNodeId()
 	{
@@ -202,7 +202,7 @@ public class WalkInfo
 	}
 	
 	/**
-	 * @return walking check task.
+	 * @return walking check tasks.
 	 */
 	public ScheduledFuture<?> getWalkCheckTask()
 	{
@@ -210,7 +210,7 @@ public class WalkInfo
 	}
 	
 	/**
-	 * @param val walking check task.
+	 * @param val walking check tasks.
 	 */
 	public void setWalkCheckTask(ScheduledFuture<?> val)
 	{

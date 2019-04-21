@@ -92,7 +92,7 @@ public final class Formulas
 	private static final byte MELEE_ATTACK_RANGE = 40;
 	
 	/**
-	 * Return the period between 2 regeneration task (3s for L2Character, 5 min for L2DoorInstance).
+	 * Return the period between 2 regeneration tasks (3s for L2Character, 5 min for L2DoorInstance).
 	 * @param cha
 	 * @return
 	 */

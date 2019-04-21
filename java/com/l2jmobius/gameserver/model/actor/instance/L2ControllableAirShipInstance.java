@@ -329,7 +329,7 @@ public class L2ControllableAirShipInstance extends L2AirShipInstance
 		{
 			if (isSpawned() && isEmpty() && !isInDock())
 			{
-				// deleteMe() can't be called from CheckTask because task should not cancel itself
+				// deleteMe() can't be called from CheckTask because tasks should not cancel itself
 				ThreadPool.execute(new DecayTask());
 			}
 		}

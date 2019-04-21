@@ -87,7 +87,7 @@ public final class ThreadPool
 			threadPool.prestartAllCoreThreads();
 		}
 		
-		// Launch purge task.
+		// Launch purge tasks.
 		scheduleAtFixedRate(() ->
 		{
 			purge();
@@ -112,9 +112,9 @@ public final class ThreadPool
 	
 	/**
 	 * Schedules a one-shot action that becomes enabled after a delay. The pool is chosen based on pools activity.
-	 * @param r : the task to execute.
+	 * @param r : the tasks to execute.
 	 * @param delay : the time from now to delay execution.
-	 * @return a ScheduledFuture representing pending completion of the task and whose get() method will return null upon completion.
+	 * @return a ScheduledFuture representing pending completion of the tasks and whose get() method will return null upon completion.
 	 */
 	public static ScheduledFuture<?> schedule(Runnable r, long delay)
 	{
@@ -130,10 +130,10 @@ public final class ThreadPool
 	
 	/**
 	 * Schedules a periodic action that becomes enabled after a delay. The pool is chosen based on pools activity.
-	 * @param r : the task to execute.
+	 * @param r : the tasks to execute.
 	 * @param delay : the time from now to delay execution.
 	 * @param period : the period between successive executions.
-	 * @return a ScheduledFuture representing pending completion of the task and whose get() method will throw an exception upon cancellation.
+	 * @return a ScheduledFuture representing pending completion of the tasks and whose get() method will throw an exception upon cancellation.
 	 */
 	public static ScheduledFuture<?> scheduleAtFixedRate(Runnable r, long delay, long period)
 	{
@@ -148,8 +148,8 @@ public final class ThreadPool
 	}
 	
 	/**
-	 * Executes the given task sometime in the future.
-	 * @param r : the task to execute.
+	 * Executes the given tasks sometime in the future.
+	 * @param r : the tasks to execute.
 	 */
 	public static void execute(Runnable r)
 	{

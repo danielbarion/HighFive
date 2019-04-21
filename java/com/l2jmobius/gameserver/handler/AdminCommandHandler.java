@@ -110,7 +110,7 @@ public class AdminCommandHandler implements IHandler<IAdminCommandHandler, Strin
 		}
 		else
 		{
-			// Admin Commands must run through a long running task, otherwise a command that takes too much time will freeze the server, this way you'll feel only a minor spike.
+			// Admin Commands must run through a long running tasks, otherwise a command that takes too much time will freeze the server, this way you'll feel only a minor spike.
 			ThreadPool.execute(() ->
 			{
 				final long begin = System.currentTimeMillis();

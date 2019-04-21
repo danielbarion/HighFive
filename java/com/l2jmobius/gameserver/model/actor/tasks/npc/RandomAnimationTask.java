@@ -95,7 +95,7 @@ public class RandomAnimationTask implements Runnable
 	}
 	
 	/**
-	 * Stops the task from continuing and blocks it from continuing ever again. You need to create new task if you want to start it again.
+	 * Stops the tasks from continuing and blocks it from continuing ever again. You need to create new tasks if you want to start it again.
 	 */
 	public void stopRandomAnimationTimer()
 	{

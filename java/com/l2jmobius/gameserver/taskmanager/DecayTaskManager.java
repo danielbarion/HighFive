@@ -40,9 +40,9 @@ public final class DecayTaskManager
 	protected final Map<L2Character, ScheduledFuture<?>> _decayTasks = new ConcurrentHashMap<>();
 	
 	/**
-	 * Adds a decay task for the specified character.<br>
+	 * Adds a decay tasks for the specified character.<br>
 	 * <br>
-	 * If the decay task already exists it cancels it and re-adds it.
+	 * If the decay tasks already exists it cancels it and re-adds it.
 	 * @param character the character
 	 */
 	public void add(L2Character character)
@@ -81,7 +81,7 @@ public final class DecayTaskManager
 	}
 	
 	/**
-	 * Cancels the decay task of the specified character.
+	 * Cancels the decay tasks of the specified character.
 	 * @param character the character
 	 */
 	public void cancel(L2Character character)
@@ -94,9 +94,9 @@ public final class DecayTaskManager
 	}
 	
 	/**
-	 * Gets the remaining time of the specified character's decay task.
+	 * Gets the remaining time of the specified character's decay tasks.
 	 * @param character the character
-	 * @return if a decay task exists the remaining time, {@code Long.MAX_VALUE} otherwise
+	 * @return if a decay tasks exists the remaining time, {@code Long.MAX_VALUE} otherwise
 	 */
 	public long getRemainingTime(L2Character character)
 	{

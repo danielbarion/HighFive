@@ -204,7 +204,7 @@ public final class TaskManager
 		{
 			while (rset.next())
 			{
-				final Task task = _tasks.get(rset.getString("task").trim().toLowerCase().hashCode());
+				final Task task = _tasks.get(rset.getString("tasks").trim().toLowerCase().hashCode());
 				if (task == null)
 				{
 					continue;
@@ -303,7 +303,7 @@ public final class TaskManager
 				}
 				catch (Exception e)
 				{
-					LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Bad parameter on task " + task.getId() + ": " + e.getMessage(), e);
+					LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Bad parameter on tasks " + task.getId() + ": " + e.getMessage(), e);
 					return false;
 				}
 				
@@ -355,7 +355,7 @@ public final class TaskManager
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.WARNING, TaskManager.class.getSimpleName() + ": Cannot add the unique task: " + e.getMessage(), e);
+			LOGGER.log(Level.WARNING, TaskManager.class.getSimpleName() + ": Cannot add the unique tasks: " + e.getMessage(), e);
 		}
 		return false;
 	}
@@ -381,7 +381,7 @@ public final class TaskManager
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.WARNING, TaskManager.class.getSimpleName() + ": Cannot add the task:  " + e.getMessage(), e);
+			LOGGER.log(Level.WARNING, TaskManager.class.getSimpleName() + ": Cannot add the tasks:  " + e.getMessage(), e);
 		}
 		return false;
 	}

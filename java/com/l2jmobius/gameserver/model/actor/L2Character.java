@@ -484,7 +484,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	}
 	
 	/**
-	 * Remove the L2Character from the world when the decay task is launched.<br>
+	 * Remove the L2Character from the world when the decay tasks is launched.<br>
 	 * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T REMOVE the object from _allObjects of L2World </B></FONT><BR>
 	 * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T SEND Server->Client packets to players</B></FONT>
 	 */
@@ -1114,7 +1114,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	 * <li>If hit isn't missed, calculate if hit is critical</li>
 	 * <li>If hit isn't missed, calculate physical damages</li>
 	 * <li>If the L2Character is a L2PcInstance, Send a Server->Client packet SetupGauge</li>
-	 * <li>Create a new hit task with Medium priority</li>
+	 * <li>Create a new hit tasks with Medium priority</li>
 	 * <li>Calculate and set the disable delay of the bow in function of the Attack Speed</li>
 	 * <li>Add this hit to the Server-Client packet Attack</li>
 	 * </ul>
@@ -1161,7 +1161,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 			sendPacket(new SetupGauge(getObjectId(), SetupGauge.RED, sAtk + reuse));
 		}
 		
-		// Create a new hit task with Medium priority
+		// Create a new hit tasks with Medium priority
 		ThreadPool.schedule(new HitTask(this, target, damage1, crit1, miss1, attack.hasSoulshot(), shld1), sAtk);
 		
 		// Calculate and set the disable delay of the bow in function of the Attack Speed
@@ -1184,7 +1184,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	 * <li>If hit isn't missed, calculate if hit is critical</li>
 	 * <li>If hit isn't missed, calculate physical damages</li>
 	 * <li>If the L2Character is a L2PcInstance, Send a Server->Client packet SetupGauge</li>
-	 * <li>Create a new hit task with Medium priority</li>
+	 * <li>Create a new hit tasks with Medium priority</li>
 	 * <li>Calculate and set the disable delay of the crossbow in function of the Attack Speed</li>
 	 * <li>Add this hit to the Server-Client packet Attack</li>
 	 * @param attack Server->Client packet Attack in which the hit will be added
@@ -1231,7 +1231,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 			sendPacket(sg);
 		}
 		
-		// Create a new hit task with Medium priority
+		// Create a new hit tasks with Medium priority
 		ThreadPool.schedule(new HitTask(this, target, damage1, crit1, miss1, attack.hasSoulshot(), shld1), sAtk);
 		
 		// Calculate and set the disable delay of the bow in function of the Attack Speed
@@ -1301,10 +1301,10 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 			damage2 /= 2;
 		}
 		
-		// Create a new hit task with Medium priority for hit 1
+		// Create a new hit tasks with Medium priority for hit 1
 		ThreadPool.schedule(new HitTask(this, target, damage1, crit1, miss1, attack.hasSoulshot(), shld1), sAtk / 2);
 		
-		// Create a new hit task with Medium priority for hit 2 with a higher delay
+		// Create a new hit tasks with Medium priority for hit 2 with a higher delay
 		ThreadPool.schedule(new HitTask(this, target, damage2, crit2, miss2, attack.hasSoulshot(), shld2), sAtk);
 		
 		// Add those hits to the Server-Client packet Attack
@@ -1404,7 +1404,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	 * <li>If hit isn't missed, calculate if shield defense is efficient</li>
 	 * <li>If hit isn't missed, calculate if hit is critical</li>
 	 * <li>If hit isn't missed, calculate physical damages</li>
-	 * <li>Create a new hit task with Medium priority</li>
+	 * <li>Create a new hit tasks with Medium priority</li>
 	 * <li>Add this hit to the Server-Client packet Attack</li>
 	 * </ul>
 	 * @param attack Server->Client packet Attack in which the hit will be added
@@ -1444,7 +1444,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 			}
 		}
 		
-		// Create a new hit task with Medium priority
+		// Create a new hit tasks with Medium priority
 		ThreadPool.schedule(new HitTask(this, target, damage1, crit1, miss1, attack.hasSoulshot(), shld1), sAtk);
 		
 		// Add this hit to the Server-Client packet Attack
@@ -1455,16 +1455,16 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	}
 	
 	/**
-	 * Manage the casting task (casting and interrupt time, re-use delay...) and display the casting bar and animation on client.<br>
+	 * Manage the casting tasks (casting and interrupt time, re-use delay...) and display the casting bar and animation on client.<br>
 	 * <B><U>Actions</U>:</B>
 	 * <ul>
 	 * <li>Verify the possibility of the the cast : skill is a spell, caster isn't muted...</li>
 	 * <li>Get the list of all targets (ex : area effects) and define the L2Charcater targeted (its stats will be used in calculation)</li>
 	 * <li>Calculate the casting time (base + modifier of MAtkSpd), interrupt time and re-use delay</li>
 	 * <li>Send a Server->Client packet MagicSkillUser (to display casting animation), a packet SetupGauge (to display casting bar) and a system message</li>
-	 * <li>Disable all skills during the casting time (create a task EnableAllSkills)</li>
-	 * <li>Disable the skill during the re-use delay (create a task EnableSkill)</li>
-	 * <li>Create a task MagicUseTask (that will call method onMagicUseTimer) to launch the Magic Skill at the end of the casting time</li>
+	 * <li>Disable all skills during the casting time (create a tasks EnableAllSkills)</li>
+	 * <li>Disable the skill during the re-use delay (create a tasks EnableSkill)</li>
+	 * <li>Create a tasks MagicUseTask (that will call method onMagicUseTimer) to launch the Magic Skill at the end of the casting time</li>
 	 * </ul>
 	 * @param skill The L2Skill to use
 	 */
@@ -1777,7 +1777,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 			sendPacket(su);
 		}
 		
-		// Disable the skill during the re-use delay and create a task EnableSkill with Medium priority to enable it at the end of the re-use delay
+		// Disable the skill during the re-use delay and create a tasks EnableSkill with Medium priority to enable it at the end of the re-use delay
 		if (reuseDelay > 10)
 		{
 			if (skillMastery)
@@ -1901,7 +1901,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 					_skillCast2 = null;
 				}
 				
-				// Create a task MagicUseTask to launch the MagicSkill at the end of the casting time (skillTime)
+				// Create a tasks MagicUseTask to launch the MagicSkill at the end of the casting time (skillTime)
 				// For client animation reasons (party buffs especially) 400 ms before!
 				_skillCast2 = ThreadPool.schedule(mut, skillTime - 400);
 			}
@@ -1914,7 +1914,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 					_skillCast = null;
 				}
 				
-				// Create a task MagicUseTask to launch the MagicSkill at the end of the casting time (skillTime)
+				// Create a tasks MagicUseTask to launch the MagicSkill at the end of the casting time (skillTime)
 				// For client animation reasons (party buffs especially) 400 ms before!
 				_skillCast = ThreadPool.schedule(mut, skillTime - 400);
 			}
@@ -2359,7 +2359,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	 * <ul>
 	 * <li>Set target to null and cancel Attack or Cast</li>
 	 * <li>Stop movement</li>
-	 * <li>Stop HP/MP/CP Regeneration task</li>
+	 * <li>Stop HP/MP/CP Regeneration tasks</li>
 	 * <li>Stop all active skills effects in progress on the L2Character</li>
 	 * <li>Send the Server->Client packet StatusUpdate with current HP and MP to all other L2PcInstance to inform</li>
 	 * <li>Notify L2Character AI</li>
@@ -2394,7 +2394,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		// Stop movement
 		stopMove(null);
 		
-		// Stop HP/MP/CP Regeneration task
+		// Stop HP/MP/CP Regeneration tasks
 		_status.stopHpMpRegeneration();
 		
 		stopAllEffectsExceptThoseThatLastThroughDeath();
@@ -2791,7 +2791,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		return _isRunning;
 	}
 	
-	private final void setIsRunning(boolean value)
+	public final void setIsRunning(boolean value)
 	{
 		if (_isRunning == value)
 		{
@@ -3825,7 +3825,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		if (_isCastingNow || _isCastingSimultaneouslyNow)
 		{
 			Future<?> future = _skillCast;
-			// cancels the skill hit scheduled task
+			// cancels the skill hit scheduled tasks
 			if (future != null)
 			{
 				future.cancel(true);
@@ -4141,7 +4141,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	 * <li>Create and Init a MoveData object</li>
 	 * <li>Set the L2Character _move object to MoveData object</li>
 	 * <li>Add the L2Character to movingObjects of the GameTimeController</li>
-	 * <li>Create a task to notify the AI that L2Character arrives at a check point of the movement</li>
+	 * <li>Create a tasks to notify the AI that L2Character arrives at a check point of the movement</li>
 	 * </ul>
 	 * <FONT COLOR=#FF0000><B><U>Caution</U>: This method DOESN'T send Server->Client packet MoveToPawn/CharMoveToLocation.</B></FONT><br>
 	 * <B><U>Example of use</U>:</B>
@@ -4386,7 +4386,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		// The GameTimeController manage objects movement
 		GameTimeController.getInstance().registerMovingObject(this);
 		
-		// Create a task to notify the AI that L2Character arrives at a check point of the movement
+		// Create a tasks to notify the AI that L2Character arrives at a check point of the movement
 		if ((ticksToMove * GameTimeController.MILLIS_IN_TICK) > 3000)
 		{
 			ThreadPool.schedule(new NotifyAITask(this, CtrlEvent.EVT_ARRIVED_REVALIDATE), 2000);
@@ -4468,7 +4468,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		// The GameTimeController manage objects movement
 		GameTimeController.getInstance().registerMovingObject(this);
 		
-		// Create a task to notify the AI that L2Character arrives at a check point of the movement
+		// Create a tasks to notify the AI that L2Character arrives at a check point of the movement
 		if ((ticksToMove * GameTimeController.MILLIS_IN_TICK) > 3000)
 		{
 			ThreadPool.schedule(new NotifyAITask(this, CtrlEvent.EVT_ARRIVED_REVALIDATE), 2000);
@@ -5196,7 +5196,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	}
 	
 	/**
-	 * Manage the magic skill launching task (MP, HP, Item consumation...) and display the magic skill animation on client.<br>
+	 * Manage the magic skill launching tasks (MP, HP, Item consumation...) and display the magic skill animation on client.<br>
 	 * <B><U>Actions</U>:</B>
 	 * <ul>
 	 * <li>Send a Server->Client packet MagicSkillLaunched (to display magic skill animation) to all L2PcInstance of L2Charcater _knownPlayers</li>

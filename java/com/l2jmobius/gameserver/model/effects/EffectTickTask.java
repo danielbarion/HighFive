@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import com.l2jmobius.gameserver.model.skills.BuffInfo;
 
 /**
- * Effect tick task.
+ * Effect tick tasks.
  * @author Zoey76
  */
 public class EffectTickTask implements Runnable

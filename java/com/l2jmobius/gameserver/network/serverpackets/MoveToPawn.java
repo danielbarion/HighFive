@@ -17,6 +17,7 @@
 package com.l2jmobius.gameserver.network.serverpackets;
 
 import com.l2jmobius.commons.network.PacketWriter;
+import com.l2jmobius.gameserver.model.L2Object;
 import com.l2jmobius.gameserver.model.actor.L2Character;
 import com.l2jmobius.gameserver.network.OutgoingPackets;
 
@@ -32,7 +33,7 @@ public class MoveToPawn implements IClientOutgoingPacket
 	private final int _ty;
 	private final int _tz;
 	
-	public MoveToPawn(L2Character cha, L2Character target, int distance)
+	public MoveToPawn(L2Object cha, L2Object target, int distance)
 	{
 		_charObjId = cha.getObjectId();
 		_targetId = target.getObjectId();

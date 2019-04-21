@@ -335,7 +335,7 @@ public class HallOfSufferingAttack extends AbstractNpcAI
 		// Stop movement
 		boss.stopMove(null);
 		
-		// Stop HP/MP/CP Regeneration task
+		// Stop HP/MP/CP Regeneration tasks
 		boss.getStatus().stopHpMpRegeneration();
 		
 		boss.stopAllEffectsExceptThoseThatLastThroughDeath();

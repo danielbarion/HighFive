@@ -23,7 +23,7 @@ import com.l2jmobius.gameserver.model.skills.Skill;
  */
 public class SkillUseHolder extends SkillHolder
 {
-	private final boolean _ctrlPressed;
+	private boolean _ctrlPressed;
 	private final boolean _shiftPressed;
 	
 	public SkillUseHolder(Skill skill, boolean ctrlPressed, boolean shiftPressed)
@@ -42,4 +42,9 @@ public class SkillUseHolder extends SkillHolder
 	{
 		return _shiftPressed;
 	}
+
+	public void setCtrlPressed(boolean newValue) {
+		_ctrlPressed = newValue;
+	}
+
 }

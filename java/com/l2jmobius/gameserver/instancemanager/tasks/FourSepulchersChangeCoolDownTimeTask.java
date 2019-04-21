@@ -23,7 +23,7 @@ import com.l2jmobius.commons.concurrent.ThreadPool;
 import com.l2jmobius.gameserver.instancemanager.FourSepulchersManager;
 
 /**
- * Four Sepulchers change cool down time task.
+ * Four Sepulchers change cool down time tasks.
  * @author xban1x
  */
 public final class FourSepulchersChangeCoolDownTimeTask implements Runnable

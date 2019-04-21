@@ -171,7 +171,7 @@ public class DimensionalRift
 		if (reasonTP)
 		{
 			final long jumpTime = calcTimeToNextJump();
-			teleporterTimer.schedule(teleporterTimerTask, jumpTime); // Teleporter task, 8-10 minutes
+			teleporterTimer.schedule(teleporterTimerTask, jumpTime); // Teleporter tasks, 8-10 minutes
 			
 			earthQuakeTask = ThreadPool.schedule(() ->
 			{

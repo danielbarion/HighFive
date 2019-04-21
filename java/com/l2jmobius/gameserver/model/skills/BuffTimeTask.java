@@ -19,7 +19,7 @@ package com.l2jmobius.gameserver.model.skills;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Effect time task finish the effect when the abnormal time is reached.
+ * Effect time tasks finish the effect when the abnormal time is reached.
  * @author Zoey76
  */
 public class BuffTimeTask implements Runnable

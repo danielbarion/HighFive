@@ -24,7 +24,7 @@ import com.l2jmobius.commons.concurrent.ThreadPool;
 import com.l2jmobius.gameserver.instancemanager.FourSepulchersManager;
 
 /**
- * Four Sepulchers change warm up time task.
+ * Four Sepulchers change warm up time tasks.
  * @author xban1x
  */
 public final class FourSepulchersChangeWarmUpTimeTask implements Runnable

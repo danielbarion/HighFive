@@ -29,7 +29,7 @@ public interface IItemHandler
 	Logger LOGGER = Logger.getLogger(IItemHandler.class.getName());
 	
 	/**
-	 * Launch task associated to the item.
+	 * Launch tasks associated to the item.
 	 * @param playable the non-NPC character using the item
 	 * @param item L2ItemInstance designating the item to use
 	 * @param forceUse ctrl hold on item use

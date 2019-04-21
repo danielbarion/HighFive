@@ -19,7 +19,7 @@ package com.l2jmobius.gameserver.model.actor.tasks.cubics;
 import com.l2jmobius.gameserver.model.actor.instance.L2CubicInstance;
 
 /**
- * Cubic disappear task.
+ * Cubic disappear tasks.
  * @author Zoey76
  */
 public final class CubicDisappear implements Runnable

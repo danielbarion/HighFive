@@ -119,7 +119,7 @@ public class PunishmentTask implements Runnable
 	}
 	
 	/**
-	 * @return {@code true} if current punishment task is stored in database, {@code false} otherwise.
+	 * @return {@code true} if current punishment tasks is stored in database, {@code false} otherwise.
 	 */
 	public boolean isStored()
 	{
@@ -127,7 +127,7 @@ public class PunishmentTask implements Runnable
 	}
 	
 	/**
-	 * @return {@code true} if current punishment task has expired, {@code false} otherwise.
+	 * @return {@code true} if current punishment tasks has expired, {@code false} otherwise.
 	 */
 	public final boolean isExpired()
 	{
@@ -135,7 +135,7 @@ public class PunishmentTask implements Runnable
 	}
 	
 	/**
-	 * Activates the punishment task.
+	 * Activates the punishment tasks.
 	 */
 	private void startPunishment()
 	{
@@ -152,7 +152,7 @@ public class PunishmentTask implements Runnable
 	}
 	
 	/**
-	 * Stops the punishment task.
+	 * Stops the punishment tasks.
 	 */
 	public final void stopPunishment()
 	{
@@ -161,7 +161,7 @@ public class PunishmentTask implements Runnable
 	}
 	
 	/**
-	 * Aborts the scheduled task.
+	 * Aborts the scheduled tasks.
 	 */
 	private void abortTask()
 	{
@@ -204,7 +204,7 @@ public class PunishmentTask implements Runnable
 			}
 			catch (SQLException e)
 			{
-				LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Couldn't store punishment task for: " + _affect + " " + _key, e);
+				LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Couldn't store punishment tasks for: " + _affect + " " + _key, e);
 			}
 		}
 		
@@ -231,7 +231,7 @@ public class PunishmentTask implements Runnable
 			}
 			catch (SQLException e)
 			{
-				LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Couldn't update punishment task for: " + _affect + " " + _key + " id: " + _id, e);
+				LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Couldn't update punishment tasks for: " + _affect + " " + _key + " id: " + _id, e);
 			}
 		}
 		
@@ -243,7 +243,7 @@ public class PunishmentTask implements Runnable
 	}
 	
 	/**
-	 * Runs when punishment task ends in order to stop and remove it.
+	 * Runs when punishment tasks ends in order to stop and remove it.
 	 */
 	@Override
 	public final void run()

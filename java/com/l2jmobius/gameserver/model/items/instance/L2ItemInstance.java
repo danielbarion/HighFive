@@ -1260,8 +1260,8 @@ public final class L2ItemInstance extends L2Object
 	}
 	
 	/**
-	 * Decreases the mana of this shadow item, sends a inventory update schedules a new consumption task if non is running optionally one could force a new task
-	 * @param resetConsumingMana if true forces a new consumption task if item is equipped
+	 * Decreases the mana of this shadow item, sends a inventory update schedules a new consumption tasks if non is running optionally one could force a new tasks
+	 * @param resetConsumingMana if true forces a new consumption tasks if item is equipped
 	 */
 	public void decreaseMana(boolean resetConsumingMana)
 	{
@@ -1269,8 +1269,8 @@ public final class L2ItemInstance extends L2Object
 	}
 	
 	/**
-	 * Decreases the mana of this shadow item, sends a inventory update schedules a new consumption task if non is running optionally one could force a new task
-	 * @param resetConsumingMana if forces a new consumption task if item is equipped
+	 * Decreases the mana of this shadow item, sends a inventory update schedules a new consumption tasks if non is running optionally one could force a new tasks
+	 * @param resetConsumingMana if forces a new consumption tasks if item is equipped
 	 * @param count how much mana decrease
 	 */
 	public void decreaseMana(boolean resetConsumingMana, int count)

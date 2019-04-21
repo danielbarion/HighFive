@@ -173,7 +173,7 @@ public final class Instance
 	}
 	
 	/**
-	 * Set the instance duration task
+	 * Set the instance duration tasks
 	 * @param duration in milliseconds
 	 */
 	public void setDuration(int duration)
@@ -889,7 +889,7 @@ public final class Instance
 			sm.addInt(_ejectTime / 60 / 1000);
 			player.sendPacket(sm);
 			
-			// Start eject task
+			// Start eject tasks
 			_ejectDeadTasks.put(player.getObjectId(), ThreadPool.schedule(() ->
 			{
 				if (player.isDead() && (player.getInstanceId() == _id))

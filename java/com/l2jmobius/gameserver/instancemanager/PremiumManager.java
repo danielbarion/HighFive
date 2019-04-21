@@ -155,7 +155,7 @@ public class PremiumManager
 	{
 		long addTime = timeUnit.toMillis(timeValue);
 		long now = System.currentTimeMillis();
-		// new premium task at least from now
+		// new premium tasks at least from now
 		long oldPremiumExpiration = Math.max(now, getPremiumExpiration(accountName));
 		long newPremiumExpiration = oldPremiumExpiration + addTime;
 		

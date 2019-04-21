@@ -233,7 +233,7 @@ public class AutoSpawnHandler
 			// Try to remove from the list of registered spawns if it exists.
 			_registeredSpawns.remove(spawnInst.getId());
 			
-			// Cancel the currently associated running scheduled task.
+			// Cancel the currently associated running scheduled tasks.
 			_runningSpawns.remove(spawnInst._objectId).cancel(false);
 		}
 		catch (Exception e)
@@ -294,7 +294,7 @@ public class AutoSpawnHandler
 	}
 	
 	/**
-	 * Sets the active state of all auto spawn instances to that specified, and cancels the scheduled spawn task if necessary.
+	 * Sets the active state of all auto spawn instances to that specified, and cancels the scheduled spawn tasks if necessary.
 	 * @param isActive
 	 */
 	public void setAllActive(boolean isActive)
@@ -387,7 +387,7 @@ public class AutoSpawnHandler
 	
 	/**
 	 * AutoSpawner class<br>
-	 * This handles the main spawn task for an auto spawn instance, and initializes a despawner if required.
+	 * This handles the main spawn tasks for an auto spawn instance, and initializes a despawner if required.
 	 * @author Tempy
 	 */
 	private class AutoSpawner implements Runnable
@@ -404,10 +404,10 @@ public class AutoSpawnHandler
 		{
 			try
 			{
-				// Retrieve the required spawn instance for this spawn task.
+				// Retrieve the required spawn instance for this spawn tasks.
 				final AutoSpawnInstance spawnInst = _registeredSpawns.get(_objectId);
 				
-				// If the spawn is not scheduled to be active, cancel the spawn task.
+				// If the spawn is not scheduled to be active, cancel the spawn tasks.
 				if (!spawnInst.isSpawnActive())
 				{
 					return;
@@ -415,7 +415,7 @@ public class AutoSpawnHandler
 				
 				final Location[] locationList = spawnInst.getLocationList();
 				
-				// If there are no set co-ordinates, cancel the spawn task.
+				// If there are no set co-ordinates, cancel the spawn tasks.
 				if (locationList.length == 0)
 				{
 					LOGGER.info("AutoSpawnHandler: No location co-ords specified for spawn instance (Object ID = " + _objectId + ").");
@@ -499,7 +499,7 @@ public class AutoSpawnHandler
 					}
 				}
 				
-				// If there is no despawn time, do not create a despawn task.
+				// If there is no despawn time, do not create a despawn tasks.
 				if (spawnInst.getDespawnDelay() > 0)
 				{
 					ThreadPool.schedule(new AutoDespawner(_objectId), spawnInst.getDespawnDelay() - 1000);

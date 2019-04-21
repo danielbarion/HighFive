@@ -240,7 +240,7 @@ public class Duel
 			}
 			catch (Exception e)
 			{
-				LOGGER.log(Level.SEVERE, "There has been a problem while runing a duel task!", e);
+				LOGGER.log(Level.SEVERE, "There has been a problem while runing a duel tasks!", e);
 			}
 		}
 	}
@@ -308,7 +308,7 @@ public class Duel
 			}
 			catch (Exception e)
 			{
-				LOGGER.log(Level.SEVERE, "There has been a problem while runing a duel end task!", e);
+				LOGGER.log(Level.SEVERE, "There has been a problem while runing a duel end tasks!", e);
 			}
 		}
 	}
@@ -479,7 +479,7 @@ public class Duel
 		broadcastToTeam1(B04_S01);
 		broadcastToTeam2(B04_S01);
 		
-		// start duelling task
+		// start duelling tasks
 		ThreadPool.schedule(new ScheduleDuelTask(this), 1000);
 	}
 	

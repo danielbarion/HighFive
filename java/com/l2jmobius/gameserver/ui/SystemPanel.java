@@ -104,7 +104,7 @@ public class SystemPanel extends JPanel
 		{
 		}
 		
-		// Initial update task.
+		// Initial update tasks.
 		new Timer().schedule(new TimerTask()
 		{
 			@Override
@@ -114,7 +114,7 @@ public class SystemPanel extends JPanel
 			}
 		}, 4500);
 		
-		// Repeating elapsed time task.
+		// Repeating elapsed time tasks.
 		new Timer().scheduleAtFixedRate(new TimerTask()
 		{
 			@Override

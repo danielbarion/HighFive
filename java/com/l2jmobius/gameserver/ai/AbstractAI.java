@@ -798,7 +798,7 @@ public abstract class AbstractAI implements Ctrl
 		_castTarget = null;
 		_attackTarget = null;
 		
-		// Cancel the follow task if necessary
+		// Cancel the follow tasks if necessary
 		stopFollow();
 	}
 	

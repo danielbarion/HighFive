@@ -503,7 +503,7 @@ public final class SystemMessageId
 	@ClientString(id = 152, message = "You have invited the wrong target.")
 	public static SystemMessageId YOU_HAVE_INVITED_THE_WRONG_TARGET;
 	
-	@ClientString(id = 153, message = "$c1 is on another task. Please try again later.")
+	@ClientString(id = 153, message = "$c1 is on another tasks. Please try again later.")
 	public static SystemMessageId C1_IS_ON_ANOTHER_TASK_PLEASE_TRY_AGAIN_LATER;
 	
 	@ClientString(id = 154, message = "Only the leader can give out invitations.")
@@ -4085,7 +4085,7 @@ public final class SystemMessageId
 	@ClientString(id = 1346, message = "You are currently entering a chat message.")
 	public static SystemMessageId YOU_ARE_CURRENTLY_ENTERING_A_CHAT_MESSAGE;
 	
-	@ClientString(id = 1347, message = "The Lineage II messenger could not carry out the task you requested.")
+	@ClientString(id = 1347, message = "The Lineage II messenger could not carry out the tasks you requested.")
 	public static SystemMessageId THE_LINEAGE_II_MESSENGER_COULD_NOT_CARRY_OUT_THE_TASK_YOU_REQUESTED;
 	
 	@ClientString(id = 1348, message = "$s1 has entered the chat room.")
@@ -6608,7 +6608,7 @@ public final class SystemMessageId
 	@ClientString(id = 2187, message = "The target is located where you cannot charge.")
 	public static SystemMessageId THE_TARGET_IS_LOCATED_WHERE_YOU_CANNOT_CHARGE;
 	
-	@ClientString(id = 2188, message = "Another enchantment is in progress. Please complete the previous task, then try again")
+	@ClientString(id = 2188, message = "Another enchantment is in progress. Please complete the previous tasks, then try again")
 	public static SystemMessageId ANOTHER_ENCHANTMENT_IS_IN_PROGRESS_PLEASE_COMPLETE_THE_PREVIOUS_TASK_THEN_TRY_AGAIN;
 	
 	@ClientString(id = 2189, message = "Current Location : $s1, $s2, $s3 (Near Kamael Village)")
@@ -7160,16 +7160,16 @@ public final class SystemMessageId
 	@ClientString(id = 2371, message = "$c1 was reported as a BOT.")
 	public static SystemMessageId C1_WAS_REPORTED_AS_A_BOT;
 	
-	@ClientString(id = 2372, message = "There is not much time remaining until the hunting helper pet leaves.")
+	@ClientString(id = 2372, message = "There is not much time remaining until the hunting helpers pet leaves.")
 	public static SystemMessageId THERE_IS_NOT_MUCH_TIME_REMAINING_UNTIL_THE_HUNTING_HELPER_PET_LEAVES;
 	
-	@ClientString(id = 2373, message = "The hunting helper pet is now leaving.")
+	@ClientString(id = 2373, message = "The hunting helpers pet is now leaving.")
 	public static SystemMessageId THE_HUNTING_HELPER_PET_IS_NOW_LEAVING;
 	
 	@ClientString(id = 2374, message = "End match!")
 	public static SystemMessageId END_MATCH;
 	
-	@ClientString(id = 2375, message = "The hunting helper pet cannot be returned because there is not much time remaining until it leaves.")
+	@ClientString(id = 2375, message = "The hunting helpers pet cannot be returned because there is not much time remaining until it leaves.")
 	public static SystemMessageId THE_HUNTING_HELPER_PET_CANNOT_BE_RETURNED_BECAUSE_THERE_IS_NOT_MUCH_TIME_REMAINING_UNTIL_IT_LEAVES;
 	
 	@ClientString(id = 2376, message = "You cannot receive a Dimensional Item during an exchange.")
@@ -9068,7 +9068,7 @@ public final class SystemMessageId
 	@ClientString(id = 3160, message = "+$s1$s2's $s3 attribute was removed, so resistance to $s4 was decreased.")
 	public static SystemMessageId S1_S2_S_S3_ATTRIBUTE_WAS_REMOVED_SO_RESISTANCE_TO_S4_WAS_DECREASED;
 	
-	@ClientString(id = 3161, message = "Attribute enchant and attribute cancel cannot take place at the same time. Please complete the current task and try again.")
+	@ClientString(id = 3161, message = "Attribute enchant and attribute cancel cannot take place at the same time. Please complete the current tasks and try again.")
 	public static SystemMessageId ATTRIBUTE_ENCHANT_AND_ATTRIBUTE_CANCEL_CANNOT_TAKE_PLACE_AT_THE_SAME_TIME_PLEASE_COMPLETE_THE_CURRENT_TASK_AND_TRY_AGAIN;
 	
 	@ClientString(id = 3162, message = "The skill cannot be used because the opponent is in a different instant zone.")

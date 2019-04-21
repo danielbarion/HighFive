@@ -27,7 +27,7 @@ import com.l2jmobius.gameserver.network.SystemMessageId;
 import com.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
- * Message deletion task.
+ * Message deletion tasks.
  * @author xban1x
  */
 public final class MessageDeletionTask implements Runnable

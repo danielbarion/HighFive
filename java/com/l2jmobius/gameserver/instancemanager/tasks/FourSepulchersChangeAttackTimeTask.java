@@ -24,7 +24,7 @@ import com.l2jmobius.commons.concurrent.ThreadPool;
 import com.l2jmobius.gameserver.instancemanager.FourSepulchersManager;
 
 /**
- * Four Sepulchers change attack time task.
+ * Four Sepulchers change attack time tasks.
  * @author xban1x
  */
 public final class FourSepulchersChangeAttackTimeTask implements Runnable
@@ -51,7 +51,7 @@ public final class FourSepulchersChangeAttackTimeTask implements Runnable
 		}
 		
 		long interval = 0;
-		// say task
+		// say tasks
 		if (manager.isFirstTimeRun())
 		{
 			for (double min = Calendar.getInstance().get(Calendar.MINUTE); min < manager.getCycleMin(); min++)
@@ -73,7 +73,7 @@ public final class FourSepulchersChangeAttackTimeTask implements Runnable
 		// searching time when attack time will be ended:
 		// counting difference between time when attack time ends and
 		// current time
-		// and then launching change time task
+		// and then launching change time tasks
 		if (manager.isFirstTimeRun())
 		{
 			interval = manager.getAttackTimeEnd() - Calendar.getInstance().getTimeInMillis();

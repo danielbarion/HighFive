@@ -266,7 +266,7 @@ public class Quest extends AbstractScript implements IIdentifiable
 	 * @param npc the npc associated with this timer (can be null)
 	 * @param player the player associated with this timer (can be null)
 	 * @param repeating indicates whether the timer is repeatable or one-time.<br>
-	 *            If {@code true}, the task is repeated every {@code time} milliseconds until explicitly stopped.
+	 *            If {@code true}, the tasks is repeated every {@code time} milliseconds until explicitly stopped.
 	 */
 	public void startQuestTimer(String name, long time, L2Npc npc, L2PcInstance player, boolean repeating)
 	{

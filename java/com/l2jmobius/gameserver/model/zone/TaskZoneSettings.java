@@ -19,7 +19,7 @@ package com.l2jmobius.gameserver.model.zone;
 import java.util.concurrent.Future;
 
 /**
- * Basic task zone settings implementation.
+ * Basic tasks zone settings implementation.
  * @author UnAfraid
  */
 public class TaskZoneSettings extends AbstractZoneSettings
@@ -27,8 +27,8 @@ public class TaskZoneSettings extends AbstractZoneSettings
 	private Future<?> _task;
 	
 	/**
-	 * Gets the task.
-	 * @return the task
+	 * Gets the tasks.
+	 * @return the tasks
 	 */
 	public Future<?> getTask()
 	{
@@ -36,8 +36,8 @@ public class TaskZoneSettings extends AbstractZoneSettings
 	}
 	
 	/**
-	 * Sets the task.
-	 * @param task the new task
+	 * Sets the tasks.
+	 * @param task the new tasks
 	 */
 	public void setTask(Future<?> task)
 	{

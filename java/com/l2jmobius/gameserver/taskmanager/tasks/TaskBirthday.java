@@ -32,7 +32,7 @@ import com.l2jmobius.gameserver.taskmanager.TaskManager.ExecutedTask;
 import com.l2jmobius.gameserver.taskmanager.TaskTypes;
 
 /**
- * Birthday Gift task.
+ * Birthday Gift tasks.
  * @author Zoey76
  */
 public class TaskBirthday extends Task

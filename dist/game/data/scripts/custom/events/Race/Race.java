@@ -195,7 +195,7 @@ public final class Race extends Event
 		_isactive = false;
 		_isRaceStarted = false;
 		
-		// Cancel task if any
+		// Cancel tasks if any
 		if (_eventTask != null)
 		{
 			_eventTask.cancel(true);

@@ -68,7 +68,7 @@ public final class LoginServer
 		Server.serverMode = Server.MODE_LOGINSERVER;
 
         final PropertiesParser serverSettings = new PropertiesParser(LOGIN_CONFIG_FILE);
-        final Boolean LOGIN_IN_GUI_INTERFACE = serverSettings.getBoolean("GameServerInGuiInterface", true);
+        final Boolean LOGIN_IN_GUI_INTERFACE = serverSettings.getBoolean("LoginServerInGuiInterface", true);
 		
 		// GUI
 		if (LOGIN_IN_GUI_INTERFACE && !GraphicsEnvironment.isHeadless())

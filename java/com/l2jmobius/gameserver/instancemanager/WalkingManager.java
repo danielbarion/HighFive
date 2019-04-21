@@ -239,7 +239,7 @@ public final class WalkingManager implements IGameXmlReader
 	{
 		if (_routes.containsKey(routeName) && (npc != null) && !npc.isDead()) // check, if these route and NPC present
 		{
-			if (!_activeRoutes.containsKey(npc.getObjectId())) // new walk task
+			if (!_activeRoutes.containsKey(npc.getObjectId())) // new walk tasks
 			{
 				// only if not already moved / not engaged in battle... should not happens if called on spawn
 				if ((npc.getAI().getIntention() == CtrlIntention.AI_INTENTION_ACTIVE) || (npc.getAI().getIntention() == CtrlIntention.AI_INTENTION_IDLE))
@@ -269,7 +269,7 @@ public final class WalkingManager implements IGameXmlReader
 						npc.setWalking();
 					}
 					npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, node);
-					walk.setWalkCheckTask(ThreadPool.scheduleAtFixedRate(new StartMovingTask(npc, routeName), 60000, 60000)); // start walk check task, for resuming walk after fight
+					walk.setWalkCheckTask(ThreadPool.scheduleAtFixedRate(new StartMovingTask(npc, routeName), 60000, 60000)); // start walk check tasks, for resuming walk after fight
 					
 					_activeRoutes.put(npc.getObjectId(), walk); // register route
 				}
@@ -287,7 +287,7 @@ public final class WalkingManager implements IGameXmlReader
 					return;
 				}
 				
-				// Prevent call simultaneously from scheduled task and onArrived() or temporarily stop walking for resuming in future
+				// Prevent call simultaneously from scheduled tasks and onArrived() or temporarily stop walking for resuming in future
 				if (walk.isBlocked() || walk.isSuspended())
 				{
 					return;
@@ -400,7 +400,7 @@ public final class WalkingManager implements IGameXmlReader
 		}
 		
 		walk.calculateNextNode(npc);
-		walk.setBlocked(true); // prevents to be ran from walk check task, if there is delay in this node.
+		walk.setBlocked(true); // prevents to be ran from walk check tasks, if there is delay in this node.
 		
 		if (node.getNpcString() != null)
 		{

@@ -77,7 +77,7 @@ public class L2Spawn extends Location implements IIdentifiable, INamable
 	private boolean _randomWalk = false; // Is random walk
 	private int _spawnTemplateId = 0;
 	
-	/** The task launching the function doSpawn() */
+	/** The tasks launching the function doSpawn() */
 	class SpawnTask implements Runnable
 	{
 		public SpawnTask()

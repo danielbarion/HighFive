@@ -1203,7 +1203,7 @@ public final class CharEffectList
 					// If it is an herb, set as not in use the lesser buff.
 					// Effect will be present in the effect list.
 					// Effects stats are removed and onActionTime() is not called.
-					// But finish task continues to run, and ticks as well.
+					// But finish tasks continues to run, and ticks as well.
 					if (skill.isAbnormalInstant())
 					{
 						if (stackedInfo.getSkill().isAbnormalInstant())

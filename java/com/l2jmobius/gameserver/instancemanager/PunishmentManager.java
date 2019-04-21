@@ -46,7 +46,7 @@ public final class PunishmentManager
 	
 	private void load()
 	{
-		// Initiate task holders.
+		// Initiate tasks holders.
 		for (PunishmentAffect affect : PunishmentAffect.values())
 		{
 			_tasks.put(affect, new PunishmentHolder());
@@ -69,7 +69,7 @@ public final class PunishmentManager
 				final long expirationTime = rset.getLong("expiration");
 				if ((type != null) && (affect != null))
 				{
-					if ((expirationTime > 0) && (System.currentTimeMillis() > expirationTime)) // expired task.
+					if ((expirationTime > 0) && (System.currentTimeMillis() > expirationTime)) // expired tasks.
 					{
 						expired++;
 					}

@@ -23,7 +23,7 @@ import com.l2jmobius.commons.concurrent.ThreadPool;
 import com.l2jmobius.gameserver.instancemanager.FourSepulchersManager;
 
 /**
- * Four Sepulchers manager say task.
+ * Four Sepulchers manager say tasks.
  * @author xban1x
  */
 public final class FourSepulchersManagerSayTask implements Runnable

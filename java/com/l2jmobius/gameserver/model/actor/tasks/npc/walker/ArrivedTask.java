@@ -21,7 +21,7 @@ import com.l2jmobius.gameserver.model.WalkInfo;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
 
 /**
- * Walker arrive task.
+ * Walker arrive tasks.
  * @author GKR
  */
 public class ArrivedTask implements Runnable

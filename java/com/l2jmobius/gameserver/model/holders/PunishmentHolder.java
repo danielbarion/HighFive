@@ -30,7 +30,7 @@ public final class PunishmentHolder
 	private final Map<String, Map<PunishmentType, PunishmentTask>> _holder = new ConcurrentHashMap<>();
 	
 	/**
-	 * Stores the punishment task in the Map.
+	 * Stores the punishment tasks in the Map.
 	 * @param task
 	 */
 	public void addPunishment(PunishmentTask task)
@@ -42,7 +42,7 @@ public final class PunishmentHolder
 	}
 	
 	/**
-	 * Removes previously stopped task from the Map.
+	 * Removes previously stopped tasks from the Map.
 	 * @param task
 	 */
 	public void stopPunishment(PunishmentTask task)

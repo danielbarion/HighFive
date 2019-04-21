@@ -48,7 +48,7 @@ public class L2FortSiegeGuardAI extends L2CharacterAI implements Runnable
 {
 	private static final int MAX_ATTACK_TIMEOUT = 300; // int ticks, i.e. 30 seconds
 	
-	/** The L2Attackable AI task executed every 1s (call onEvtThink method) */
+	/** The L2Attackable AI tasks executed every 1s (call onEvtThink method) */
 	private Future<?> _aiTask;
 	
 	/** For attack AI, analysis of mob and its targets */
@@ -193,7 +193,7 @@ public class L2FortSiegeGuardAI extends L2CharacterAI implements Runnable
 				// Set the Intention of this L2AttackableAI to AI_INTENTION_IDLE
 				super.changeIntention(AI_INTENTION_IDLE, null, null);
 				
-				// Stop AI task and detach AI from NPC
+				// Stop AI tasks and detach AI from NPC
 				if (_aiTask != null)
 				{
 					_aiTask.cancel(true);
@@ -210,7 +210,7 @@ public class L2FortSiegeGuardAI extends L2CharacterAI implements Runnable
 		// Set the Intention of this L2AttackableAI to intention
 		super.changeIntention(intention, arg0, arg1);
 		
-		// If not idle - create an AI task (schedule onEvtThink repeatedly)
+		// If not idle - create an AI tasks (schedule onEvtThink repeatedly)
 		if (_aiTask == null)
 		{
 			_aiTask = ThreadPool.scheduleAtFixedRate(this, 1000, 1000);

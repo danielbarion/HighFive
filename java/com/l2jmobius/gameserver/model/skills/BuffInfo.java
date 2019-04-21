@@ -99,9 +99,9 @@ public final class BuffInfo
 	}
 	
 	/**
-	 * Adds an effect task to this buff info.<br>
-	 * @param effect the effect that owns the task
-	 * @param effectTaskInfo the task info
+	 * Adds an effect tasks to this buff info.<br>
+	 * @param effect the effect that owns the tasks
+	 * @param effectTaskInfo the tasks info
 	 */
 	private void addTask(AbstractEffect effect, EffectTaskInfo effectTaskInfo)
 	{
@@ -109,9 +109,9 @@ public final class BuffInfo
 	}
 	
 	/**
-	 * Gets the task for the given effect.
+	 * Gets the tasks for the given effect.
 	 * @param effect the effect
-	 * @return the task
+	 * @return the tasks
 	 */
 	private EffectTaskInfo getEffectTask(AbstractEffect effect)
 	{
@@ -227,7 +227,7 @@ public final class BuffInfo
 	public void stopAllEffects(boolean removed)
 	{
 		setRemoved(removed);
-		// Cancels the task that will end this buff info
+		// Cancels the tasks that will end this buff info
 		if ((_scheduledFutureTimeTask != null) && !_scheduledFutureTimeTask.isCancelled())
 		{
 			_scheduledFutureTimeTask.cancel(true);
@@ -250,7 +250,7 @@ public final class BuffInfo
 			_effected.sendPacket(sm);
 		}
 		
-		// Creates a task that will stop all the effects.
+		// Creates a tasks that will stop all the effects.
 		if (_abnormalTime > 0)
 		{
 			_scheduledFutureTimeTask = ThreadPool.scheduleAtFixedRate(new BuffTimeTask(this), 0, 1000);
@@ -267,10 +267,10 @@ public final class BuffInfo
 			// Call on start.
 			effect.onStart(this);
 			
-			// If it's a continuous effect, if has ticks schedule a task with period, otherwise schedule a simple task to end it.
+			// If it's a continuous effect, if has ticks schedule a tasks with period, otherwise schedule a simple tasks to end it.
 			if (effect.getTicks() > 0)
 			{
-				// The task for the effect ticks.
+				// The tasks for the effect ticks.
 				final EffectTickTask effectTask = new EffectTickTask(this, effect);
 				addTask(effect, new EffectTaskInfo(effectTask, ThreadPool.scheduleAtFixedRate(effectTask, effect.getTicks() * Config.EFFECT_TICK_RATIO, effect.getTicks() * Config.EFFECT_TICK_RATIO)));
 			}
@@ -290,7 +290,7 @@ public final class BuffInfo
 	
 	/**
 	 * Called on each tick.<br>
-	 * Verify if the effect should end and the effect task should be cancelled.
+	 * Verify if the effect should end and the effect tasks should be cancelled.
 	 * @param effect the effect that is ticking
 	 * @param tickCount the tick count
 	 */
@@ -317,7 +317,7 @@ public final class BuffInfo
 	
 	public void finishEffects()
 	{
-		// Cancels the ticking task.
+		// Cancels the ticking tasks.
 		for (EffectTaskInfo effectTask : _tasks.values())
 		{
 			effectTask.getScheduledFuture().cancel(true); // Don't allow to finish current run.

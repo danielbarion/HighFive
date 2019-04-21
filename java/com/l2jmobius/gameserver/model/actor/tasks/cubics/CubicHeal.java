@@ -25,7 +25,7 @@ import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 
 /**
- * Cubic heal task.
+ * Cubic heal tasks.
  * @author Zoey76
  */
 public class CubicHeal implements Runnable

@@ -33,7 +33,7 @@ public class TvTEventTeleporter implements Runnable
 	private boolean _adminRemove = false;
 	
 	/**
-	 * Initialize the teleporter and start the delayed task.
+	 * Initialize the teleporter and start the delayed tasks.
 	 * @param playerInstance
 	 * @param coordinates
 	 * @param fastSchedule
@@ -49,7 +49,7 @@ public class TvTEventTeleporter implements Runnable
 	}
 	
 	/**
-	 * The task method to teleport the player<br>
+	 * The tasks method to teleport the player<br>
 	 * 1. Unsummon pet if there is one<br>
 	 * 2. Remove all effects<br>
 	 * 3. Revive and full heal the player<br>

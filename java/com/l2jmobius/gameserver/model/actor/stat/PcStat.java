@@ -506,7 +506,7 @@ public class PcStat extends PlayableStat
 		{
 			_oldMaxCp = val;
 			
-			// Launch a regen task if the new Max CP is higher than the old one
+			// Launch a regen tasks if the new Max CP is higher than the old one
 			if (getActiveChar().getStatus().getCurrentCp() != val)
 			{
 				getActiveChar().getStatus().setCurrentCp(getActiveChar().getStatus().getCurrentCp()); // trigger start of regeneration
@@ -524,7 +524,7 @@ public class PcStat extends PlayableStat
 		{
 			_oldMaxHp = val;
 			
-			// Launch a regen task if the new Max HP is higher than the old one
+			// Launch a regen tasks if the new Max HP is higher than the old one
 			if (getActiveChar().getStatus().getCurrentHp() != val)
 			{
 				getActiveChar().getStatus().setCurrentHp(getActiveChar().getStatus().getCurrentHp()); // trigger start of regeneration
@@ -544,7 +544,7 @@ public class PcStat extends PlayableStat
 		{
 			_oldMaxMp = val;
 			
-			// Launch a regen task if the new Max MP is higher than the old one
+			// Launch a regen tasks if the new Max MP is higher than the old one
 			if (getActiveChar().getStatus().getCurrentMp() != val)
 			{
 				getActiveChar().getStatus().setCurrentMp(getActiveChar().getStatus().getCurrentMp()); // trigger start of regeneration

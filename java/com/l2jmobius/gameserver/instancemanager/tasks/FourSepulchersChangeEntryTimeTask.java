@@ -24,7 +24,7 @@ import com.l2jmobius.commons.concurrent.ThreadPool;
 import com.l2jmobius.gameserver.instancemanager.FourSepulchersManager;
 
 /**
- * Four Sepulchers change entry time task.
+ * Four Sepulchers change entry time tasks.
  * @author xban1x
  */
 public final class FourSepulchersChangeEntryTimeTask implements Runnable

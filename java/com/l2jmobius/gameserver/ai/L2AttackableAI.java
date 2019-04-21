@@ -73,7 +73,7 @@ public class L2AttackableAI extends L2CharacterAI
 	// private static final Logger LOGGER = Logger.getLogger(L2AttackableAI.class.getName());
 	
 	/**
-	 * Fear task.
+	 * Fear tasks.
 	 * @author Zoey76
 	 */
 	public static class FearTask implements Runnable
@@ -106,7 +106,7 @@ public class L2AttackableAI extends L2CharacterAI
 	private static final int RANDOM_WALK_RATE = 30; // confirmed
 	// private static final int MAX_DRIFT_RANGE = 300;
 	private static final int MAX_ATTACK_TIMEOUT = 1200; // int ticks, i.e. 2min
-	/** The L2Attackable AI task executed every 1s (call onEvtThink method). */
+	/** The L2Attackable AI tasks executed every 1s (call onEvtThink method). */
 	private Future<?> _aiTask;
 	/** The delay after which the attacked is stopped. */
 	private int _attackTimeout;
@@ -317,7 +317,7 @@ public class L2AttackableAI extends L2CharacterAI
 	
 	public void startAITask()
 	{
-		// If not idle - create an AI task (schedule onEvtThink repeatedly)
+		// If not idle - create an AI tasks (schedule onEvtThink repeatedly)
 		if (_aiTask == null)
 		{
 			_aiTask = ThreadPool.scheduleAtFixedRate(this::onEvtThink, 1000, 1000);
@@ -367,7 +367,7 @@ public class L2AttackableAI extends L2CharacterAI
 				// Set the Intention of this L2AttackableAI to AI_INTENTION_IDLE
 				super.changeIntention(AI_INTENTION_IDLE, null, null);
 				
-				// Stop AI task and detach AI from NPC
+				// Stop AI tasks and detach AI from NPC
 				stopAITask();
 				
 				// Cancel the AI
@@ -380,7 +380,7 @@ public class L2AttackableAI extends L2CharacterAI
 		// Set the Intention of this L2AttackableAI to intention
 		super.changeIntention(intention, arg0, arg1);
 		
-		// If not idle - create an AI task (schedule onEvtThink repeatedly)
+		// If not idle - create an AI tasks (schedule onEvtThink repeatedly)
 		startAITask();
 	}
 	

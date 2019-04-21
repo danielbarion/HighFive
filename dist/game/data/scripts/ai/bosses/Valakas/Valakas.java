@@ -166,7 +166,7 @@ public final class Valakas extends AbstractNpcAI
 			// Start timers.
 			if (status == FIGHTING)
 			{
-				// stores current time for inactivity task.
+				// stores current time for inactivity tasks.
 				_timeTracker = System.currentTimeMillis();
 				
 				startQuestTimer("regen_task", 60000, valakas, null, true);
@@ -218,10 +218,10 @@ public final class Valakas extends AbstractNpcAI
 				startQuestTimer("spawn_9", 23530, npc, null); // 6700 - end of cinematic
 				startQuestTimer("spawn_10", 26000, npc, null); // 2500 - AI + unlock
 			}
-			// Regeneration && inactivity task
+			// Regeneration && inactivity tasks
 			else if (event.equalsIgnoreCase("regen_task"))
 			{
-				// Inactivity task - 15min
+				// Inactivity tasks - 15min
 				if ((GrandBossManager.getInstance().getBossStatus(VALAKAS) == FIGHTING) && ((_timeTracker + 900000) < System.currentTimeMillis()))
 				{
 					npc.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);

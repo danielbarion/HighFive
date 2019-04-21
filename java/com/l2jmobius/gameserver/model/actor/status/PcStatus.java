@@ -355,7 +355,7 @@ public class PcStatus extends PlayableStatus
 				_currentCp = maxCp;
 				_flagsRegenActive &= ~REGEN_FLAG_CP;
 				
-				// Stop the HP/MP/CP Regeneration task
+				// Stop the HP/MP/CP Regeneration tasks
 				if (_flagsRegenActive == 0)
 				{
 					stopHpMpRegeneration();
@@ -367,7 +367,7 @@ public class PcStatus extends PlayableStatus
 				_currentCp = newCp;
 				_flagsRegenActive |= REGEN_FLAG_CP;
 				
-				// Start the HP/MP/CP Regeneration task with Medium priority
+				// Start the HP/MP/CP Regeneration tasks with Medium priority
 				startHpMpRegeneration();
 			}
 		}

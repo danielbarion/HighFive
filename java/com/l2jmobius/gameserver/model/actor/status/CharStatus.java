@@ -179,11 +179,11 @@ public class CharStatus
 	}
 	
 	/**
-	 * Start the HP/MP/CP Regeneration task.<br>
+	 * Start the HP/MP/CP Regeneration tasks.<br>
 	 * <B><U>Actions</U>:</B>
 	 * <ul>
-	 * <li>Calculate the regen task period</li>
-	 * <li>Launch the HP/MP/CP Regeneration task with Medium priority</li>
+	 * <li>Calculate the regen tasks period</li>
+	 * <li>Launch the HP/MP/CP Regeneration tasks with Medium priority</li>
 	 * </ul>
 	 */
 	public final synchronized void startHpMpRegeneration()
@@ -193,24 +193,24 @@ public class CharStatus
 			// Get the Regeneration period
 			final int period = Formulas.getRegeneratePeriod(_activeChar);
 			
-			// Create the HP/MP/CP Regeneration task
+			// Create the HP/MP/CP Regeneration tasks
 			_regTask = ThreadPool.scheduleAtFixedRate(this::doRegeneration, period, period);
 		}
 	}
 	
 	/**
-	 * Stop the HP/MP/CP Regeneration task.<br>
+	 * Stop the HP/MP/CP Regeneration tasks.<br>
 	 * <B><U>Actions</U>:</B>
 	 * <ul>
 	 * <li>Set the RegenActive flag to False</li>
-	 * <li>Stop the HP/MP/CP Regeneration task</li>
+	 * <li>Stop the HP/MP/CP Regeneration tasks</li>
 	 * </ul>
 	 */
 	public final synchronized void stopHpMpRegeneration()
 	{
 		if (_regTask != null)
 		{
-			// Stop the HP/MP/CP Regeneration task
+			// Stop the HP/MP/CP Regeneration tasks
 			_regTask.cancel(false);
 			_regTask = null;
 			
@@ -265,7 +265,7 @@ public class CharStatus
 				_currentHp = maxHp;
 				_flagsRegenActive &= ~REGEN_FLAG_HP;
 				
-				// Stop the HP/MP/CP Regeneration task
+				// Stop the HP/MP/CP Regeneration tasks
 				if (_flagsRegenActive == 0)
 				{
 					stopHpMpRegeneration();
@@ -277,7 +277,7 @@ public class CharStatus
 				_currentHp = newHp;
 				_flagsRegenActive |= REGEN_FLAG_HP;
 				
-				// Start the HP/MP/CP Regeneration task with Medium priority
+				// Start the HP/MP/CP Regeneration tasks with Medium priority
 				startHpMpRegeneration();
 			}
 		}
@@ -336,7 +336,7 @@ public class CharStatus
 				_currentMp = maxMp;
 				_flagsRegenActive &= ~REGEN_FLAG_MP;
 				
-				// Stop the HP/MP/CP Regeneration task
+				// Stop the HP/MP/CP Regeneration tasks
 				if (_flagsRegenActive == 0)
 				{
 					stopHpMpRegeneration();
@@ -348,7 +348,7 @@ public class CharStatus
 				_currentMp = newMp;
 				_flagsRegenActive |= REGEN_FLAG_MP;
 				
-				// Start the HP/MP/CP Regeneration task with Medium priority
+				// Start the HP/MP/CP Regeneration tasks with Medium priority
 				startHpMpRegeneration();
 			}
 		}

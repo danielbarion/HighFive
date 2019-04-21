@@ -170,7 +170,7 @@ public class DrChaos extends AbstractNpcAI
 			_lastAttackVsGolem = System.currentTimeMillis();
 			startQuestTimer("golem_despawn", 60000, npc, null, true);
 		}
-		// Check every sec if someone is in range, if found, launch one task to decrease the timer.
+		// Check every sec if someone is in range, if found, launch one tasks to decrease the timer.
 		else if (event.equalsIgnoreCase("paranoia_activity"))
 		{
 			if (GrandBossManager.getInstance().getBossStatus(CHAOS_GOLEM) == NORMAL)

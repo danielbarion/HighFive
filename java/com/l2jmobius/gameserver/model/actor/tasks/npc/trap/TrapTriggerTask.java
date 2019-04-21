@@ -20,7 +20,7 @@ import com.l2jmobius.commons.concurrent.ThreadPool;
 import com.l2jmobius.gameserver.model.actor.instance.L2TrapInstance;
 
 /**
- * Trap trigger task.
+ * Trap trigger tasks.
  * @author Zoey76
  */
 public class TrapTriggerTask implements Runnable

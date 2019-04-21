@@ -239,7 +239,7 @@ public final class RequestPreviewItem implements IClientIncomingPacket
 		if (!itemList.isEmpty())
 		{
 			activeChar.sendPacket(new ShopPreviewInfo(itemList));
-			// Schedule task
+			// Schedule tasks
 			ThreadPool.schedule(new RemoveWearItemsTask(activeChar), Config.WEAR_DELAY * 1000);
 		}
 	}

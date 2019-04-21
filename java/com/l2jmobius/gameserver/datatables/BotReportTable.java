@@ -430,7 +430,7 @@ public final class BotReportTable
 		catch (Exception e)
 		{
 			ThreadPool.schedule(new ResetPointTask(), 24 * 3600 * 1000);
-			LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Could not properly schedule bot report points reset task. Scheduled in 24 hours.", e);
+			LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Could not properly schedule bot report points reset tasks. Scheduled in 24 hours.", e);
 		}
 	}
 	

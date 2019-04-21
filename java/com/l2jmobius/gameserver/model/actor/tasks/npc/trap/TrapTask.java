@@ -24,7 +24,7 @@ import com.l2jmobius.gameserver.model.actor.instance.L2TrapInstance;
 import com.l2jmobius.gameserver.network.serverpackets.SocialAction;
 
 /**
- * Trap task.
+ * Trap tasks.
  * @author Zoey76
  */
 public class TrapTask implements Runnable

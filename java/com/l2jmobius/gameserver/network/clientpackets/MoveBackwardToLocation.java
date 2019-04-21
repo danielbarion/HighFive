@@ -32,6 +32,7 @@ import com.l2jmobius.gameserver.network.SystemMessageId;
 import com.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import com.l2jmobius.gameserver.network.serverpackets.StopMove;
 import com.l2jmobius.gameserver.util.Util;
+import com.vert.fakeplayer.FakePlayer;
 
 public class MoveBackwardToLocation implements IClientIncomingPacket
 {
@@ -142,6 +143,13 @@ public class MoveBackwardToLocation implements IClientIncomingPacket
 			}
 			activeChar.sendPacket(ActionFailed.STATIC_PACKET);
 			activeChar.teleToLocation(new Location(_targetX, _targetY, _targetZ));
+			return;
+		}
+
+		if(activeChar.isControllingFakePlayer()) {
+			FakePlayer fakePlayer = activeChar.getPlayerUnderControl();
+			activeChar.sendPacket(ActionFailed.STATIC_PACKET);
+			fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(_targetX, _targetY, _targetZ));
 			return;
 		}
 		

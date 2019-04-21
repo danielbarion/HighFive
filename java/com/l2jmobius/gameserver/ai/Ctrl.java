@@ -24,7 +24,7 @@ import com.l2jmobius.gameserver.model.actor.L2Character;
  * For example, if we've sent 'StartAutoAttack' message, we need to send 'StopAutoAttack' message before any other action.<br>
  * Or if we've sent 'MoveToPawn', we need to send 'StopMove' when the movement of a character is canceled (by Root spell or any other reason).<br>
  * Thus, we need to know the state of client, i.e. which messages we've sent and how the client will show the scene.<br>
- * Close to this task is the task of AI.<br>
+ * Close to this tasks is the tasks of AI.<br>
  * If a player's character is attacking a mob, his ATTACK may be interrupted by an event, that temporary disable attacking.<br>
  * But when the possibility to ATTACK will be enabled, the character must continue the ATTACK.<br>
  * For mobs it may be more complex, since we want them to decide when to use magic, or when to follow the player for physical combat, or when to escape, to help another mob, etc.<br>

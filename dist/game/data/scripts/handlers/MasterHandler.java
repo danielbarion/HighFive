@@ -135,6 +135,7 @@ import handlers.admincommandhandlers.AdminUnblockIp;
 import handlers.admincommandhandlers.AdminVitality;
 import handlers.admincommandhandlers.AdminZone;
 import handlers.admincommandhandlers.AdminZones;
+import com.vert.fakeplayer.commands.AdminFakePlayersVert;
 import handlers.bypasshandlers.Augment;
 import handlers.bypasshandlers.Buy;
 import handlers.bypasshandlers.BuyShadowItem;
@@ -435,6 +436,7 @@ public class MasterHandler
 			AdminUnblockIp.class,
 			AdminVitality.class,
 			AdminZone.class,
+			AdminFakePlayersVert.class
 		},
 		{
 			// Bypass Handlers

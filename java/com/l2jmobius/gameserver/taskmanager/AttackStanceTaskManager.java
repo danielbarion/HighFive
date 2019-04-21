@@ -29,7 +29,7 @@ import com.l2jmobius.gameserver.model.actor.instance.L2CubicInstance;
 import com.l2jmobius.gameserver.network.serverpackets.AutoAttackStop;
 
 /**
- * Attack stance task manager.
+ * Attack stance tasks manager.
  * @author Luca Baldi, Zoey76
  */
 public class AttackStanceTaskManager
@@ -41,7 +41,7 @@ public class AttackStanceTaskManager
 	public static final long COMBAT_TIME = 15_000;
 	
 	/**
-	 * Instantiates a new attack stance task manager.
+	 * Instantiates a new attack stance tasks manager.
 	 */
 	protected AttackStanceTaskManager()
 	{
@@ -49,7 +49,7 @@ public class AttackStanceTaskManager
 	}
 	
 	/**
-	 * Adds the attack stance task.
+	 * Adds the attack stance tasks.
 	 * @param actor the actor
 	 */
 	public void addAttackStanceTask(L2Character actor)
@@ -72,7 +72,7 @@ public class AttackStanceTaskManager
 	}
 	
 	/**
-	 * Removes the attack stance task.
+	 * Removes the attack stance tasks.
 	 * @param actor the actor
 	 */
 	public void removeAttackStanceTask(L2Character actor)
@@ -88,9 +88,9 @@ public class AttackStanceTaskManager
 	}
 	
 	/**
-	 * Checks for attack stance task.<br>
+	 * Checks for attack stance tasks.<br>
 	 * @param actor the actor
-	 * @return {@code true} if the character has an attack stance task, {@code false} otherwise
+	 * @return {@code true} if the character has an attack stance tasks, {@code false} otherwise
 	 */
 	public boolean hasAttackStanceTask(L2Character actor)
 	{

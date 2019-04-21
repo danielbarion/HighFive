@@ -30,7 +30,7 @@ import com.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import com.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 
 /**
- * Cubic action task.
+ * Cubic action tasks.
  * @author Zoey76
  */
 public final class CubicAction implements Runnable

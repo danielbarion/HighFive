@@ -323,12 +323,13 @@ import com.l2jmobius.gameserver.util.Broadcast;
 import com.l2jmobius.gameserver.util.EnumIntBitmask;
 import com.l2jmobius.gameserver.util.FloodProtectors;
 import com.l2jmobius.gameserver.util.Util;
+import com.vert.fakeplayer.FakePlayer;
 
 /**
  * This class represents all player characters in the world.<br>
  * There is always a client-thread connected to this (except if a player-store is activated upon logout).
  */
-public final class L2PcInstance extends L2Playable
+public class L2PcInstance extends L2Playable
 {
 	// Character Skill SQL String Definitions:
 	private static final String RESTORE_SKILLS_FOR_CHAR = "SELECT skill_id,skill_level FROM character_skills WHERE charId=? AND class_index=?";
@@ -457,7 +458,7 @@ public final class L2PcInstance extends L2Playable
 	private int _fame;
 	private ScheduledFuture<?> _fameTask;
 	
-	/** Vitality recovery task */
+	/** Vitality recovery tasks */
 	private ScheduledFuture<?> _vitalityTask;
 	
 	private volatile ScheduledFuture<?> _teleportWatchdog;
@@ -541,15 +542,15 @@ public final class L2PcInstance extends L2Playable
 	private int _recomHave; // how much I was recommended by others
 	/** The number of recommendation that the L2PcInstance can give */
 	private int _recomLeft; // how many recommendations I can give to others
-	/** Recommendation Bonus task **/
+	/** Recommendation Bonus tasks **/
 	private ScheduledFuture<?> _nevitHourglassTask;
-	/** Recommendation task **/
+	/** Recommendation tasks **/
 	private ScheduledFuture<?> _recoGiveTask;
 	/** Recommendation Two Hours bonus **/
 	protected boolean _recoTwoHoursGiven = false;
 	
 	private final PcInventory _inventory = new PcInventory(this);
-	private final PcFreight _freight = new PcFreight(this);
+	public final PcFreight _freight = new PcFreight(this);
 	private PcWarehouse _warehouse;
 	private PcRefund _refund;
 	
@@ -820,6 +821,9 @@ public final class L2PcInstance extends L2Playable
 	private volatile int _actionMask;
 	
 	private Future<?> _autoSaveTask = null;
+
+	/** Fake Player */
+    private FakePlayer _fakePlayerUnderControl = null;
 	
 	/**
 	 * Creates a player.
@@ -828,7 +832,7 @@ public final class L2PcInstance extends L2Playable
 	 * @param accountName the account name
 	 * @param app the player appearance
 	 */
-	private L2PcInstance(int objectId, L2PcTemplate template, String accountName, PcAppearance app)
+	public L2PcInstance(int objectId, L2PcTemplate template, String accountName, PcAppearance app)
 	{
 		super(objectId, template);
 		setInstanceType(InstanceType.L2PcInstance);
@@ -863,7 +867,7 @@ public final class L2PcInstance extends L2Playable
 	{
 		this(IdFactory.getInstance().getNextId(), template, accountName, app);
 	}
-	
+
 	public void setPvpFlagLasts(long time)
 	{
 		_pvpFlagLasts = time;
@@ -977,7 +981,7 @@ public final class L2PcInstance extends L2Playable
 		// Add the player in the characters table of the database
 		return player.createDb() ? player : null;
 	}
-	
+
 	public String getAccountName()
 	{
 		return _client == null ? _accountName : _client.getAccountName();
@@ -2149,7 +2153,7 @@ public final class L2PcInstance extends L2Playable
 				sm.addItemName(item);
 				sendPacket(sm);
 				
-				// Consume mana - will start a task if required; returns if item is not a shadow item
+				// Consume mana - will start a tasks if required; returns if item is not a shadow item
 				item.decreaseMana(false);
 				
 				if ((item.getItem().getBodyPart() & L2Item.SLOT_MULTI_ALLWEAPON) != 0)
@@ -2812,7 +2816,7 @@ public final class L2PcInstance extends L2Playable
 		setIsSitting(true);
 		getAI().setIntention(CtrlIntention.AI_INTENTION_REST);
 		broadcastPacket(new ChangeWaitType(this, ChangeWaitType.WT_SITTING));
-		// Schedule a sit down task to wait for the animation to finish
+		// Schedule a sit down tasks to wait for the animation to finish
 		ThreadPool.schedule(new SitDownTask(this), 2500);
 		setIsParalyzed(true);
 	}
@@ -2834,7 +2838,7 @@ public final class L2PcInstance extends L2Playable
 			}
 			
 			broadcastPacket(new ChangeWaitType(this, ChangeWaitType.WT_STANDING));
-			// Schedule a stand up task to wait for the animation to finish
+			// Schedule a stand up tasks to wait for the animation to finish
 			ThreadPool.schedule(new StandUpTask(this), 2500);
 		}
 	}
@@ -5629,9 +5633,9 @@ public final class L2PcInstance extends L2Playable
 	}
 	
 	/**
-	 * Stop the HP/MP/CP Regeneration task. <B><U> Actions</U> :</B>
+	 * Stop the HP/MP/CP Regeneration tasks. <B><U> Actions</U> :</B>
 	 * <li>Set the RegenActive flag to False</li>
-	 * <li>Stop the HP/MP/CP Regeneration task</li>
+	 * <li>Stop the HP/MP/CP Regeneration tasks</li>
 	 */
 	public void stopAllTimers()
 	{
@@ -6522,7 +6526,7 @@ public final class L2PcInstance extends L2Playable
 	}
 	
 	/**
-	 * Manage the Leave Party task of the L2PcInstance.
+	 * Manage the Leave Party tasks of the L2PcInstance.
 	 */
 	public void leaveParty()
 	{
@@ -9275,7 +9279,7 @@ public final class L2PcInstance extends L2Playable
 	}
 	
 	/**
-	 * Disable the Inventory and create a new task to enable it after 1.5s.
+	 * Disable the Inventory and create a new tasks to enable it after 1.5s.
 	 * @param val
 	 */
 	public void setInventoryBlockingStatus(boolean val)
@@ -9727,7 +9731,11 @@ public final class L2PcInstance extends L2Playable
 	{
 		return _observerMode;
 	}
-	
+
+	public boolean isInObserverMode() {
+		return _observerMode;
+	}
+
 	public int getTeleMode()
 	{
 		return _telemode;
@@ -11232,12 +11240,12 @@ public final class L2PcInstance extends L2Playable
 	}
 	
 	/**
-	 * Manage the delete task of a L2PcInstance (Leave Party, Unsummon pet, Save its inventory in the database, Remove it from the world...).<br>
+	 * Manage the delete tasks of a L2PcInstance (Leave Party, Unsummon pet, Save its inventory in the database, Remove it from the world...).<br>
 	 * <B><U>Actions</U>:</B>
 	 * <ul>
 	 * <li>If the L2PcInstance is in observer mode, set its position to its position before entering in observer mode</li>
 	 * <li>Set the online Flag to True or False and update the characters table of the database with online status and lastAccess</li>
-	 * <li>Stop the HP/MP/CP Regeneration task</li>
+	 * <li>Stop the HP/MP/CP Regeneration tasks</li>
 	 * <li>Cancel Crafting, Attack or Cast</li>
 	 * <li>Remove the L2PcInstance from the world</li>
 	 * <li>Stop Party and Unsummon Pet</li>
@@ -11360,7 +11368,7 @@ public final class L2PcInstance extends L2Playable
 			LOGGER.log(Level.SEVERE, "deleteMe()", e);
 		}
 		
-		// Recommendations must be saved before task (timer) is canceled
+		// Recommendations must be saved before tasks (timer) is canceled
 		try
 		{
 			storeRecommendations(false);
@@ -11369,7 +11377,7 @@ public final class L2PcInstance extends L2Playable
 		{
 			LOGGER.log(Level.SEVERE, "deleteMe()", e);
 		}
-		// Stop the HP/MP/CP Regeneration task (scheduled tasks)
+		// Stop the HP/MP/CP Regeneration tasks (scheduled tasks)
 		try
 		{
 			stopAllTimers();
@@ -12870,7 +12878,7 @@ public final class L2PcInstance extends L2Playable
 			return;
 		}
 		
-		// Charge clear task should be reset every time a charge is increased.
+		// Charge clear tasks should be reset every time a charge is increased.
 		restartChargeTask();
 		
 		if (_charges.addAndGet(count) >= max)
@@ -12895,7 +12903,7 @@ public final class L2PcInstance extends L2Playable
 			return false;
 		}
 		
-		// Charge clear task should be reset every time a charge is decreased and stopped when charges become 0.
+		// Charge clear tasks should be reset every time a charge is decreased and stopped when charges become 0.
 		if (_charges.addAndGet(-count) == 0)
 		{
 			stopChargeTask();
@@ -13406,7 +13414,7 @@ public final class L2PcInstance extends L2Playable
 		}
 	}
 	
-	private void notifyFriends()
+	public void notifyFriends()
 	{
 		final FriendStatusPacket pkt = new FriendStatusPacket(getObjectId());
 		for (int id : _friendList)
@@ -14057,10 +14065,10 @@ public final class L2PcInstance extends L2Playable
 	
 	public void checkRecoBonusTask()
 	{
-		// Create bonus task
+		// Create bonus tasks
 		startNevitHourglassTask();
 		
-		// Create task to give new recommendations
+		// Create tasks to give new recommendations
 		_recoGiveTask = ThreadPool.scheduleAtFixedRate(new RecoGiveTask(this), 7200000, 3600000);
 		
 		// Store new data
@@ -14076,7 +14084,7 @@ public final class L2PcInstance extends L2Playable
 			
 			if (taskTime > 0)
 			{
-				// If player have some timeleft, start bonus task
+				// If player have some timeleft, start bonus tasks
 				_nevitHourglassTask = ThreadPool.schedule(new RecoBonusTaskEnd(this), taskTime);
 			}
 			sendPacket(new ExVoteSystemInfo(this));
@@ -14616,5 +14624,29 @@ public final class L2PcInstance extends L2Playable
 		final AccountVariables vars = getAccountVariables();
 		vars.set(GAME_POINTS_VAR, Math.max(points, 0));
 		vars.storeMe();
+	}
+
+    /**
+     * Check if player is under control
+     * @return {@code false} if  player is not under control, {@code true} otherwise.
+     */
+	public boolean isControllingFakePlayer() {
+    	return _fakePlayerUnderControl != null;
+    }
+
+    /**
+     * Get player underControl value
+     * @return
+     */
+	public FakePlayer getPlayerUnderControl() {
+        return _fakePlayerUnderControl;
+    }
+
+    /**
+     * Set player underControl
+     * @param fakePlayer
+     */
+	public void setPlayerUnderControl(FakePlayer fakePlayer) {
+		_fakePlayerUnderControl = fakePlayer;
 	}
 }

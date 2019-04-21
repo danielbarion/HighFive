@@ -224,7 +224,7 @@ public class L2PetInstance extends L2Summon
 			}
 			catch (Exception e)
 			{
-				LOGGER_PET.log(Level.SEVERE, "Pet [ObjectId: " + getObjectId() + "] a feed task error has occurred", e);
+				LOGGER_PET.log(Level.SEVERE, "Pet [ObjectId: " + getObjectId() + "] a feed tasks error has occurred", e);
 			}
 		}
 		
@@ -1096,7 +1096,7 @@ public class L2PetInstance extends L2Summon
 	
 	public synchronized void startFeed()
 	{
-		// stop feeding task if its active
+		// stop feeding tasks if its active
 		
 		stopFeed();
 		if (!isDead() && (getOwner().getSummon() == this))
