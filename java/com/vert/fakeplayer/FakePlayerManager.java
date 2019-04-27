@@ -27,14 +27,14 @@ public enum FakePlayerManager {
 
     public FakePlayer spawnPlayer(int x, int y, int z) {
         FakePlayer activeChar = FakeHelpers.createRandomFakePlayer();
-        L2World.getInstance().addObject(activeChar);
-        handlePlayerClanOnSpawn(activeChar);
+//        L2World.getInstance().addObject(activeChar);
 
         if (Config.PLAYER_SPAWN_PROTECTION > 0)
             activeChar.setSpawnProtection(true);
 
         activeChar.spawnMe(x, y, z);
         activeChar.onPlayerEnter();
+        handlePlayerClanOnSpawn(activeChar);
 
 //        if (!activeChar.isGM() && (!activeChar.isInSiege() || activeChar.getSiegeState() < 2) && activeChar.isInsideZone(ZoneId.SIEGE)) {
 //            activeChar.teleToLocation(L2TeleportLocation.TOWN);

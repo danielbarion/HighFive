@@ -204,7 +204,7 @@ public final class TaskManager
 		{
 			while (rset.next())
 			{
-				final Task task = _tasks.get(rset.getString("tasks").trim().toLowerCase().hashCode());
+				final Task task = _tasks.get(rset.getString("task").trim().toLowerCase().hashCode());
 				if (task == null)
 				{
 					continue;
