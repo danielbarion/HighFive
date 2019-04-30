@@ -3,6 +3,7 @@ package com.vert.fakeplayer.ai;
 import com.l2jmobius.commons.util.Rnd;
 import com.l2jmobius.gameserver.ai.CtrlIntention;
 import com.l2jmobius.gameserver.datatables.SpawnTable;
+import com.l2jmobius.gameserver.enums.InstanceType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
 import com.l2jmobius.gameserver.model.L2Object;
 import com.l2jmobius.gameserver.model.L2World;
@@ -10,6 +11,7 @@ import com.l2jmobius.gameserver.model.Location;
 import com.l2jmobius.gameserver.model.actor.L2Character;
 import com.l2jmobius.gameserver.model.actor.L2Decoy;
 import com.l2jmobius.gameserver.model.actor.instance.L2DoorInstance;
+import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
 import com.l2jmobius.gameserver.model.effects.L2EffectType;
@@ -107,23 +109,23 @@ public abstract class FakePlayerAI {
         _fakePlayer.revalidateZone(true);
     }
 
-    protected void tryTargetRandomCreatureByTypeInRadius(Class<? extends L2Decoy> creatureClass, int radius)
+    protected void tryTargetRandomCreatureByTypeInRadius(Class<? extends L2Object> creatureClass, int radius)
     {
-//        if(_fakePlayer.getTarget() == null) {
-//            List<L2Decoy> targets = _fakePlayer.getWorldRegion().getVisibleObjects().stream().filter(x->!x.isDead()).collect(Collectors.toList());
-//            if(!targets.isEmpty()) {
-//                L2Decoy target = targets.get(Rnd.get(0, targets.size() -1 ));
-//                _fakePlayer.setTarget(target);
-//            }
-//        }else {
-//            if(((L2Decoy)_fakePlayer.getTarget()).isDead())
-//                _fakePlayer.setTarget(null);
-//        }
+        if(_fakePlayer.getTarget() == null) {
+            List<L2Object> targets = _fakePlayer.getWorldRegion().getVisibleObjects().values().stream().filter(x-> x.getInstanceType().isType(InstanceType.L2MonsterInstance) || x.getInstanceType().isType(InstanceType.L2Decoy)).collect(Collectors.toList());
+            if(!targets.isEmpty()) {
+                L2Object target = targets.get(Rnd.get(0, targets.size() -1 ));
+                _fakePlayer.setTarget(target);
+            }
+        }else {
+            if(_fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2MonsterInstance) && ((L2MonsterInstance)_fakePlayer.getTarget()).isDead() || _fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2Decoy) && ((L2Decoy)_fakePlayer.getTarget()).isDead()) {
+                _fakePlayer.setTarget(null);
+            }
+        }
     }
 
     public void castSpell(Skill skill) {
         if(!_fakePlayer.isCastingNow()) {
-
             if (skill.getTargetType() == L2TargetType.GROUND)
             {
                 if (maybeMoveToPosition((_fakePlayer).getCurrentSkillWorldPosition(), skill.getCastRange()))
@@ -155,12 +157,13 @@ public abstract class FakePlayerAI {
                 }
             }
 
-            if (skill.getHitTime() > 50 && !skill.isSimultaneousCast())
+            if (skill.getHitTime() > 50 && !skill.isSimultaneousCast()) {
                 clientStopMoving(null);
+            }
 
             _fakePlayer.doCast(skill);
         }else {
-            _fakePlayer.forceAutoAttack((L2Decoy) _fakePlayer.getTarget());
+            _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
         }
     }
 
@@ -329,8 +332,9 @@ public abstract class FakePlayerAI {
 
     protected boolean maybeMoveToPawn(L2Character target, int offset) {
 
-        if (target == null || offset < 0)
+        if (target == null || offset < 0) {
             return false;
+        }
 
         offset += _fakePlayer.getCollisionRadius();
 //        if (target instanceof L2Decoy)

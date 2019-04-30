@@ -428,37 +428,32 @@ public class FakePlayer extends L2PcInstance {
         return true;
     }
 
-    public void forceAutoAttack(L2Decoy creature) {
-        if(this.getTarget() == null)
-            return;
-
-        if (isInsidePeaceZone(this, this.getTarget()))
-        {
+    public void forceAutoAttack(L2Object creature) {
+        if(this.getTarget() == null) {
             return;
         }
 
-        if (isInOlympiadMode() && getTarget() != null && getTarget() instanceof L2Playable)
-        {
+        if (isInsidePeaceZone(this, this.getTarget())) {
+            return;
+        }
+
+        if (isInOlympiadMode() && getTarget() != null && getTarget() instanceof L2Playable) {
             L2PcInstance target = getTarget().getActingPlayer();
-            if (target == null || (target.isInOlympiadMode() && (!isOlympiadStart() || getOlympiadGameId() != target.getOlympiadGameId())))
-            {
+            if (target == null || (target.isInOlympiadMode() && (!isOlympiadStart() || getOlympiadGameId() != target.getOlympiadGameId()))) {
                 return;
             }
         }
 
-        if (getTarget() != null && !getTarget().isAttackable() && !getAccessLevel().allowPeaceAttack())
-        {
+        if (getTarget() != null && !getTarget().isAttackable() && !getAccessLevel().allowPeaceAttack()) {
             return;
         }
 
-        if (isConfused())
-        {
+        if (isConfused()) {
             return;
         }
 
         // GeoData Los Check or dz > 1000
-        if (!GeoEngine.getInstance().canSeeTarget(this,this.getTarget()))
-        {
+        if (!GeoEngine.getInstance().canSeeTarget(this,this.getTarget())) {
             return;
         }
 

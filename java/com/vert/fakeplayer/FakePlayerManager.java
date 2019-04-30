@@ -27,10 +27,10 @@ public enum FakePlayerManager {
 
     public FakePlayer spawnPlayer(int x, int y, int z) {
         FakePlayer activeChar = FakeHelpers.createRandomFakePlayer();
-//        L2World.getInstance().addObject(activeChar);
 
-        if (Config.PLAYER_SPAWN_PROTECTION > 0)
+        if (Config.PLAYER_SPAWN_PROTECTION > 0) {
             activeChar.setSpawnProtection(true);
+        }
 
         activeChar.spawnMe(x, y, z);
         activeChar.onPlayerEnter();

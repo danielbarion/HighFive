@@ -251,20 +251,20 @@ public class FakeHelpers {
         // classes.add(ClassId.SHILLIEN_SAINT);
 
         classes.add(ClassId.SAGITTARIUS);
-        classes.add(ClassId.ARCHMAGE);
-        classes.add(ClassId.SOULTAKER);
-        classes.add(ClassId.MYSTIC_MUSE);
-        classes.add(ClassId.STORM_SCREAMER);
-        classes.add(ClassId.MOONLIGHT_SENTINEL);
-        classes.add(ClassId.GHOST_SENTINEL);
-        classes.add(ClassId.ADVENTURER);
-        classes.add(ClassId.WIND_RIDER);
-        classes.add(ClassId.DOMINATOR);
-        classes.add(ClassId.TITAN);
-        classes.add(ClassId.CARDINAL);
-        classes.add(ClassId.DUELIST);
-        classes.add(ClassId.GRAND_KHAVATARI);
-        classes.add(ClassId.DREADNOUGHT);
+//        classes.add(ClassId.ARCHMAGE);
+//        classes.add(ClassId.SOULTAKER);
+//        classes.add(ClassId.MYSTIC_MUSE);
+//        classes.add(ClassId.STORM_SCREAMER);
+//        classes.add(ClassId.MOONLIGHT_SENTINEL);
+//        classes.add(ClassId.GHOST_SENTINEL);
+//        classes.add(ClassId.ADVENTURER);
+//        classes.add(ClassId.WIND_RIDER);
+//        classes.add(ClassId.DOMINATOR);
+//        classes.add(ClassId.TITAN);
+//        classes.add(ClassId.CARDINAL);
+//        classes.add(ClassId.DUELIST);
+//        classes.add(ClassId.GRAND_KHAVATARI);
+//        classes.add(ClassId.DREADNOUGHT);
 
         return classes;
     }

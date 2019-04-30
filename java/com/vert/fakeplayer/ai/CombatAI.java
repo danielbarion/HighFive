@@ -4,6 +4,7 @@ import com.l2jmobius.commons.util.Rnd;
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
 import com.l2jmobius.gameserver.model.actor.L2Decoy;
+import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.zone.ZoneId;
 
@@ -14,6 +15,7 @@ import com.vert.fakeplayer.models.OffensiveSpell;
 import com.vert.fakeplayer.models.SupportSpell;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,21 +28,23 @@ public abstract class CombatAI extends FakePlayerAI {
     }
 
     protected void tryAttackingUsingMageOffensiveSkill() {
-        if(_fakePlayer.getTarget() != null)
-        {
+        if(_fakePlayer.getTarget() != null) {
             BotSkill botSkill = getRandomAvaiableMageSpellForTarget();
-            if(botSkill == null)
+            if(botSkill == null) {
                 return;
+            }
 
             Skill skill = _fakePlayer.getKnownSkill(botSkill.getSkillId());
-            if(skill != null)
+
+            if(skill != null) {
                 castSpell(skill);
+            }
         }
     }
 
     protected void tryAttackingUsingFighterOffensiveSkill()	{
-        if(_fakePlayer.getTarget() != null && _fakePlayer.getTarget() instanceof L2Decoy) {
-            _fakePlayer.forceAutoAttack((L2Decoy) _fakePlayer.getTarget());
+        if(_fakePlayer.getTarget() != null && (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance)) {
+            _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
             if(Rnd.nextDouble() < changeOfUsingSkill()) {
                 if(getOffensiveSpells() != null && !getOffensiveSpells().isEmpty()) {
                     Skill skill = getRandomAvaiableFighterSpellForTarget();
@@ -160,27 +164,32 @@ public abstract class CombatAI extends FakePlayerAI {
     }
 
     protected Skill getRandomAvaiableFighterSpellForTarget() {
-        List<OffensiveSpell> spellsOrdered = getOffensiveSpells().stream().sorted((o1, o2)-> Integer.compare(o1.getPriority(), o2.getPriority())).collect(Collectors.toList());
+        List<OffensiveSpell> spellsOrdered = getOffensiveSpells().stream().sorted(Comparator.comparingInt(BotSkill::getPriority)).collect(Collectors.toList());
         int skillIndex = 0;
         int skillListSize = spellsOrdered.size();
 
         Skill skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
 
-        _fakePlayer.getCurrentSkill().setCtrlPressed(!_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE));
-        while(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
-            if((skillIndex < 0) || (skillIndex >= skillListSize)) {
+        if (skill != null) {
+            _fakePlayer.setCurrentSkill(skill, !_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE), false);
+
+            while(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
+                if((skillIndex < 0) || (skillIndex >= skillListSize)) {
+                    return null;
+                }
+                skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
+                skillIndex++;
+            }
+
+            if(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
+                _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
                 return null;
             }
-            skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
-            skillIndex++;
-        }
 
-        if(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
-            _fakePlayer.forceAutoAttack((L2Decoy) _fakePlayer.getTarget());
-            return null;
+            return skill;
+        } else {
+            return getRandomAvaiableFighterSpellForTarget();
         }
-
-        return skill;
     }
 
     protected void selfSupportBuffs() {

@@ -19,8 +19,7 @@ public class FallbackAI extends CombatAI {
     }
 
     @Override
-    public void thinkAndAct()
-    {
+    public void thinkAndAct() {
 
     }
 
