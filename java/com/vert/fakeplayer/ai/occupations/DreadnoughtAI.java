@@ -40,7 +40,7 @@ public class DreadnoughtAI extends CombatAI implements IConsumableSpender {
     }
 
     @Override
-    protected double changeOfUsingSkill() {
+    protected double chanceOfUsingSkill() {
         return 0.33;
     }
 

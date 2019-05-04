@@ -7,8 +7,8 @@ public abstract class BotSkill {
     protected int _skillId;
     protected SpellUsageCondition _condition;
     protected int _conditionValue;
-    protected int _priority;
     protected int _delay;
+    protected int _priority;
 
     public BotSkill(int skillId, SpellUsageCondition condition, int conditionValue, int delay, int priority) {
         _skillId = skillId;

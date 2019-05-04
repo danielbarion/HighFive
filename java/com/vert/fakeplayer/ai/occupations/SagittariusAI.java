@@ -8,6 +8,7 @@ import com.vert.fakeplayer.ai.interfaces.IConsumableSpender;
 import com.vert.fakeplayer.helpers.FakeHelpers;
 import com.vert.fakeplayer.models.HealingSpell;
 import com.vert.fakeplayer.models.OffensiveSpell;
+import com.vert.fakeplayer.models.SpellUsageCondition;
 import com.vert.fakeplayer.models.SupportSpell;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class SagittariusAI extends CombatAI implements IConsumableSpender {
     {
         super(character);
     }
+    private int offensiveSpellPriority = 0;
 
     @Override
     public void thinkAndAct()
@@ -38,7 +40,7 @@ public class SagittariusAI extends CombatAI implements IConsumableSpender {
     }
 
     @Override
-    protected double changeOfUsingSkill() {
+    protected double chanceOfUsingSkill() {
         return 0.15;
     }
 
@@ -53,27 +55,16 @@ public class SagittariusAI extends CombatAI implements IConsumableSpender {
     {
         List<OffensiveSpell> _offensiveSpells = new ArrayList<>();
 
-//        _offensiveSpells.add(new OffensiveSpell(101, 1)); // Stun
-//        _offensiveSpells.add(new OffensiveSpell(343, 1)); // Lethal Shot
-//        _offensiveSpells.add(new OffensiveSpell(19, 1));  // Double Shot
-//        _offensiveSpells.add(new OffensiveSpell(987, 1));  // Multiple Shot
-//        _offensiveSpells.add(new OffensiveSpell(990, 1));  // Death Shot
-//        _offensiveSpells.add(new OffensiveSpell(771, 1));  // Flame Hawk
-//        _offensiveSpells.add(new OffensiveSpell(924, 1));  // Seven Arrow
-
         this._fakePlayer.getSkills().values().stream().forEach(skill -> {
             if (classSkillsId(skill)) {
-                System.out.println("\n" + skill.getName());
-                System.out.println("isPhysical: " + skill.isPhysical());
-                System.out.println("isActive: " + skill.isActive());
-                System.out.println("isAOE: " + skill.isAOE());
-                System.out.println("isPvPOnly: " + skill.isPvPOnly());
-                System.out.println("Delay: " + skill.getReuseDelay());
-
                 // TODO: priority need to be more precise instead current size + 1
-                _offensiveSpells.add(new OffensiveSpell(skill.getId(), skill.getReuseDelay(), _offensiveSpells.size() + 1));
+                _offensiveSpells.add(new OffensiveSpell(skill.getId(), SpellUsageCondition.NONE, 0, skill.getReuseDelay(), offensiveSpellPriority));
+
+                offensiveSpellPriority += 1;
             }
         });
+
+        offensiveSpellPriority = 0;
 
         return _offensiveSpells;
     }

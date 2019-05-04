@@ -14,7 +14,6 @@ import com.vert.fakeplayer.models.HealingSpell;
 import com.vert.fakeplayer.models.OffensiveSpell;
 import com.vert.fakeplayer.models.SupportSpell;
 
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -23,6 +22,8 @@ import java.util.stream.Collectors;
  * @author vert
  */
 public abstract class CombatAI extends FakePlayerAI {
+    int skillIndex = 0;
+
     public CombatAI(FakePlayer character) {
         super(character);
     }
@@ -45,7 +46,7 @@ public abstract class CombatAI extends FakePlayerAI {
     protected void tryAttackingUsingFighterOffensiveSkill()	{
         if(_fakePlayer.getTarget() != null && (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance)) {
             _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
-            if(Rnd.nextDouble() < changeOfUsingSkill()) {
+            if(Rnd.nextDouble() < chanceOfUsingSkill()) {
                 if(getOffensiveSpells() != null && !getOffensiveSpells().isEmpty()) {
                     Skill skill = getRandomAvaiableFighterSpellForTarget();
                     if(skill != null) {
@@ -125,7 +126,8 @@ public abstract class CombatAI extends FakePlayerAI {
 
     protected BotSkill getRandomAvaiableMageSpellForTarget() {
 
-        List<OffensiveSpell> spellsOrdered = getOffensiveSpells().stream().sorted((o1, o2)-> Integer.compare(o1.getPriority(), o2.getPriority())).collect(Collectors.toList());
+        List<OffensiveSpell> spellsOrdered = getOffensiveSpells().stream().sorted(Comparator.comparingInt(BotSkill::getPriority)).collect(Collectors.toList());
+
         int skillListSize = spellsOrdered.size();
 
         BotSkill skill = waitAndPickAvailablePrioritisedSpell(spellsOrdered, skillListSize);
@@ -134,7 +136,6 @@ public abstract class CombatAI extends FakePlayerAI {
     }
 
     private BotSkill waitAndPickAvailablePrioritisedSpell(List<? extends BotSkill> spellsOrdered, int skillListSize) {
-        int skillIndex = 0;
         BotSkill botSkill = spellsOrdered.get(skillIndex);
 //        _fakePlayer.getCurrentSkill().setCtrlPressed(!_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE));
         Skill skill = _fakePlayer.getKnownSkill(botSkill.getSkillId());
@@ -165,12 +166,14 @@ public abstract class CombatAI extends FakePlayerAI {
 
     protected Skill getRandomAvaiableFighterSpellForTarget() {
         List<OffensiveSpell> spellsOrdered = getOffensiveSpells().stream().sorted(Comparator.comparingInt(BotSkill::getPriority)).collect(Collectors.toList());
-        int skillIndex = 0;
+
         int skillListSize = spellsOrdered.size();
 
         Skill skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
 
-        if (skill != null) {
+        boolean hasReuseHashCode = _fakePlayer.hasSkillReuse(skill.getReuseHashCode());
+
+        if (skill != null && !hasReuseHashCode) {
             _fakePlayer.setCurrentSkill(skill, !_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE), false);
 
             while(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
@@ -188,6 +191,12 @@ public abstract class CombatAI extends FakePlayerAI {
 
             return skill;
         } else {
+            if (skillIndex == skillListSize) {
+                skillIndex = 0;
+            } else {
+                skillIndex ++;
+            }
+
             return getRandomAvaiableFighterSpellForTarget();
         }
     }
@@ -230,7 +239,7 @@ public abstract class CombatAI extends FakePlayerAI {
         return _fakePlayer.getMaxCp() - _fakePlayer.getCurrentCp();
     }
 
-    protected double changeOfUsingSkill() {
+    protected double chanceOfUsingSkill() {
         return 1.0;
     }
 

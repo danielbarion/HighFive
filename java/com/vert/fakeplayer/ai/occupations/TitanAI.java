@@ -36,7 +36,7 @@ public class TitanAI extends CombatAI {
     }
 
     @Override
-    protected double changeOfUsingSkill() {
+    protected double chanceOfUsingSkill() {
         return 0.10;
     }
 

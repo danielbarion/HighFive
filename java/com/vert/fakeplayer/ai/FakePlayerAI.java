@@ -15,6 +15,7 @@ import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
 import com.l2jmobius.gameserver.model.effects.L2EffectType;
+import com.l2jmobius.gameserver.model.skills.BuffInfo;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.skills.targets.L2TargetType;
 import com.l2jmobius.gameserver.network.serverpackets.*;
@@ -50,8 +51,8 @@ public abstract class FakePlayerAI {
     }
 
     protected void applyDefaultBuffs() {
-//        for(int[] buff : getBuffs()){
-//            try {
+        for(int[] buff : getBuffs()){
+            try {
 //                Map<Integer, L2EffectType> activeEffects = Arrays.stream(_fakePlayer.getEffectList().getEffects())
 //                        .filter(x-> x.getEffectType() == L2EffectType.BUFF)
 //                        .collect(Collectors.toMap(x-> x.getSkill().getId(), x -> x));
@@ -63,10 +64,10 @@ public abstract class FakePlayerAI {
 //                        SkillTable.getInstance().getInfo(buff[0], buff[1]).getEffects(_fakePlayer, _fakePlayer);
 //                    }
 //                }
-//            }catch(Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
+            }catch(Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     protected void handleDeath() {
@@ -136,21 +137,21 @@ public abstract class FakePlayerAI {
             }
             else
             {
-//                if (checkTargetLost(_fakePlayer.getTarget()))
-//                {
-//                    if (skill.isOffensive() && _fakePlayer.getTarget() != null)
-//                        _fakePlayer.setTarget(null);
-//
-//                    _fakePlayer.setIsCastingNow(false);
-//                    return;
-//                }
-//
-//                if (_fakePlayer.getTarget() != null)
-//                {
-//                    if(maybeMoveToPawn(_fakePlayer.getTarget(), skill.getCastRange())) {
-//                        return;
-//                    }
-//                }
+                if (checkTargetLost(_fakePlayer.getTarget()))
+                {
+                    if (!skill.isPassive() && _fakePlayer.getTarget() != null)
+                        _fakePlayer.setTarget(null);
+
+                    _fakePlayer.setIsCastingNow(false);
+                    return;
+                }
+
+                if (_fakePlayer.getTarget() != null)
+                {
+                    if(maybeMoveToPawn(_fakePlayer.getLockedTarget(), skill.getCastRange())) {
+                        return;
+                    }
+                }
 
                 if (_fakePlayer.isSkillDisabled(skill)) {
                     return;
@@ -205,18 +206,8 @@ public abstract class FakePlayerAI {
         }
     }
 
-    protected boolean checkTargetLost(L2PcInstance target)
+    protected boolean checkTargetLost(L2Object target)
     {
-        if (target instanceof L2PcInstance)
-        {
-            final L2PcInstance victim = target;
-            if (victim.isFakeDeath())
-            {
-                victim.stopFakeDeath(true);
-                return false;
-            }
-        }
-
         if (target == null)
         {
             _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
@@ -337,38 +328,37 @@ public abstract class FakePlayerAI {
         }
 
         offset += _fakePlayer.getCollisionRadius();
-//        if (target instanceof L2Decoy)
-//            offset += ((L2Decoy) target).getCollisionRadius();
 
-//        if (!_fakePlayer.isInsideRadius(target, offset, false, false))
-//        {
-//            if (_fakePlayer.isMovementDisabled())
-//            {
-//                if (_fakePlayer.getAI().getIntention() == CtrlIntention.AI_INTENTION_ATTACK)
-//                    _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
-//                return true;
-//            }
-//
-//            if (target instanceof L2Decoy && !(target instanceof L2DoorInstance))
-//            {
-//                if (((L2Decoy) target).isMoving())
-//                    offset -= 30;
-//
-//                if (offset < 5)
-//                    offset = 5;
-//            }
-//
-//            moveToPawn(target, offset);
-//
-//            return true;
-//        }
+        if (!_fakePlayer.isInsideRadius3D(target.getX(), target.getY(), target.getZ(), offset))
+        {
+            if (_fakePlayer.isMovementDisabled())
+            {
+                if (_fakePlayer.getAI().getIntention() == CtrlIntention.AI_INTENTION_ATTACK)
+                    _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
+                return true;
+            }
+
+            if ((target instanceof L2Decoy || target instanceof L2MonsterInstance) && !(target instanceof L2DoorInstance))
+            {
+                if (target.isMoving()) {
+                    offset -= 30;
+                }
+
+                if (offset < 5) {
+                    offset = 5;
+                }
+            }
+
+            moveToPawn(target, offset);
+
+            return true;
+        }
 
         if(!GeoEngine.getInstance().canSeeTarget(_fakePlayer, _fakePlayer.getTarget())){
             _fakePlayer.setIsCastingNow(false);
             moveToPawn(target, 50);
             return true;
         }
-
 
         return false;
     }

@@ -34,7 +34,7 @@ public class GrandKhavatariAI extends CombatAI {
     }
 
     @Override
-    protected double changeOfUsingSkill() {
+    protected double chanceOfUsingSkill() {
         return 0.5;
     }
 

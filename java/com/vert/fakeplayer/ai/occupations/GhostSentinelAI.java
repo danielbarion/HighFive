@@ -37,7 +37,7 @@ public class GhostSentinelAI extends CombatAI implements IConsumableSpender {
     }
 
     @Override
-    protected double changeOfUsingSkill() {
+    protected double chanceOfUsingSkill() {
         return 0.15;
     }
 
