@@ -2,6 +2,7 @@ package com.vert.fakeplayer.ai;
 
 import com.l2jmobius.commons.util.Rnd;
 import com.l2jmobius.gameserver.ai.CtrlIntention;
+import com.l2jmobius.gameserver.data.xml.impl.SkillData;
 import com.l2jmobius.gameserver.datatables.SpawnTable;
 import com.l2jmobius.gameserver.enums.InstanceType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
@@ -53,6 +54,8 @@ public abstract class FakePlayerAI {
     protected void applyDefaultBuffs() {
         for(int[] buff : getBuffs()){
             try {
+//                Map<Integer, L2EffectType> activeEffects = _fakePlayer.getEffectList().getEffects().stream();
+
 //                Map<Integer, L2EffectType> activeEffects = Arrays.stream(_fakePlayer.getEffectList().getEffects())
 //                        .filter(x-> x.getEffectType() == L2EffectType.BUFF)
 //                        .collect(Collectors.toMap(x-> x.getSkill().getId(), x -> x));
@@ -64,7 +67,17 @@ public abstract class FakePlayerAI {
 //                        SkillTable.getInstance().getInfo(buff[0], buff[1]).getEffects(_fakePlayer, _fakePlayer);
 //                    }
 //                }
-            }catch(Exception e) {
+
+                List <BuffInfo> activeEffects = _fakePlayer.getEffectList().getEffects();
+
+                Skill skill = SkillData.getInstance().getSkill(buff[0], buff[1]);
+                _fakePlayer.getEffectList().add(new BuffInfo(_fakePlayer, _fakePlayer, skill));
+
+                if (_fakePlayer.getEffectList().getEffects().size() > 0) {
+                    _fakePlayer.getEffectList().getEffects().stream().forEach(effect -> effect.setInUse(true));
+                }
+
+            } catch(Exception e) {
                 e.printStackTrace();
             }
         }
