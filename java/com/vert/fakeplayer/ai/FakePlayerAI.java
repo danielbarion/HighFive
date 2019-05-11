@@ -15,13 +15,16 @@ import com.l2jmobius.gameserver.model.actor.instance.L2DoorInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
+import com.l2jmobius.gameserver.model.effects.AbstractEffect;
 import com.l2jmobius.gameserver.model.effects.L2EffectType;
 import com.l2jmobius.gameserver.model.skills.BuffInfo;
+import com.l2jmobius.gameserver.model.skills.EffectScope;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.skills.targets.L2TargetType;
 import com.l2jmobius.gameserver.network.serverpackets.*;
 import com.vert.fakeplayer.FakePlayer;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -54,8 +57,6 @@ public abstract class FakePlayerAI {
     protected void applyDefaultBuffs() {
         for(int[] buff : getBuffs()){
             try {
-//                Map<Integer, L2EffectType> activeEffects = _fakePlayer.getEffectList().getEffects().stream();
-
 //                Map<Integer, L2EffectType> activeEffects = Arrays.stream(_fakePlayer.getEffectList().getEffects())
 //                        .filter(x-> x.getEffectType() == L2EffectType.BUFF)
 //                        .collect(Collectors.toMap(x-> x.getSkill().getId(), x -> x));
@@ -68,14 +69,49 @@ public abstract class FakePlayerAI {
 //                    }
 //                }
 
-                List <BuffInfo> activeEffects = _fakePlayer.getEffectList().getEffects();
+//                List <BuffInfo> activeEffects = _fakePlayer.getEffectList().getEffects();
 
-                Skill skill = SkillData.getInstance().getSkill(buff[0], buff[1]);
-                _fakePlayer.getEffectList().add(new BuffInfo(_fakePlayer, _fakePlayer, skill));
+//
+//                Skill skill = SkillData.getInstance().getSkill(buff[0], buff[1]);
+//                skill.applyEffects(_fakePlayer, _fakePlayer);
+//
+//                BuffInfo newBuff = new BuffInfo(_fakePlayer, _fakePlayer, skill);
+//
 
-                if (_fakePlayer.getEffectList().getEffects().size() > 0) {
-                    _fakePlayer.getEffectList().getEffects().stream().forEach(effect -> effect.setInUse(true));
+                List <BuffInfo> buffs = _fakePlayer.getEffectList().getEffects();
+                ArrayList <Integer> buffsIds = new ArrayList<>();
+
+                buffs.forEach(item -> buffsIds.add(item.getSkill().getId()));
+
+                boolean canAddBuff = !buffsIds.contains(buff[0]);
+
+                if (canAddBuff) {
+                    System.out.println("Buff ID: " + buff[0] + " | Added");
+
+                    Skill skill2 = SkillData.getInstance().getSkill(buff[0], buff[1]);
+
+                    final BuffInfo info2 = new BuffInfo(_fakePlayer, _fakePlayer, skill2);
+
+                    skill2.applyEffectScope(EffectScope.SELF, info2, false, true);
+                    _fakePlayer.getEffectList().add(info2);
+
+                    skill2.applyEffects(_fakePlayer, _fakePlayer);
                 }
+
+//                buffsIds.forEach(buffId -> {
+//                    if (buffId != buff[0]) {
+//                        Skill skill2 = SkillData.getInstance().getSkill(buff[0], buff[1]);
+//
+//                        final BuffInfo info2 = new BuffInfo(_fakePlayer, _fakePlayer, skill2);
+//
+//                        skill2.applyEffectScope(EffectScope.SELF, info2, false, true);
+//                        _fakePlayer.getEffectList().add(info2);
+//
+//                        skill2.applyEffects(_fakePlayer, _fakePlayer);
+//
+////                _fakePlayer.getEffectList().add(newBuff);
+//                    }
+//                });
 
             } catch(Exception e) {
                 e.printStackTrace();
