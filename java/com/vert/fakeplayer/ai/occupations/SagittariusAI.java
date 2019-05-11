@@ -88,6 +88,7 @@ public class SagittariusAI extends CombatAI implements IConsumableSpender {
         return _selfSupportSpells;
     }
 
+    // Todo: update another occupations with this method
     protected boolean classSkillsId(Skill skill) {
         ArrayList<Integer> mappedSkills = new ArrayList<>();
 

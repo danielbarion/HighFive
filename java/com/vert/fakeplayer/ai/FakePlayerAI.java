@@ -6,6 +6,11 @@ import com.l2jmobius.gameserver.data.xml.impl.SkillData;
 import com.l2jmobius.gameserver.datatables.SpawnTable;
 import com.l2jmobius.gameserver.enums.InstanceType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
+import com.l2jmobius.gameserver.instancemanager.InstanceManager;
+import com.l2jmobius.gameserver.instancemanager.MapRegionManager;
+import com.l2jmobius.gameserver.instancemanager.TownManager;
+import com.l2jmobius.gameserver.instancemanager.ZoneManager;
+import com.l2jmobius.gameserver.model.L2MapRegion;
 import com.l2jmobius.gameserver.model.L2Object;
 import com.l2jmobius.gameserver.model.L2World;
 import com.l2jmobius.gameserver.model.Location;
@@ -17,10 +22,12 @@ import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
 import com.l2jmobius.gameserver.model.effects.AbstractEffect;
 import com.l2jmobius.gameserver.model.effects.L2EffectType;
+import com.l2jmobius.gameserver.model.instancezone.Instance;
 import com.l2jmobius.gameserver.model.skills.BuffInfo;
 import com.l2jmobius.gameserver.model.skills.EffectScope;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.skills.targets.L2TargetType;
+import com.l2jmobius.gameserver.model.zone.type.L2RespawnZone;
 import com.l2jmobius.gameserver.network.serverpackets.*;
 import com.vert.fakeplayer.FakePlayer;
 
@@ -29,6 +36,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import static com.l2jmobius.gameserver.model.TeleportWhereType.TOWN;
 
 /**
  * @author vert
@@ -60,22 +69,24 @@ public abstract class FakePlayerAI {
                 List <BuffInfo> buffs = _fakePlayer.getEffectList().getEffects();
                 ArrayList <Integer> buffsIds = new ArrayList<>();
 
-                //Todo: improve - check for skill level (buff[1]) too
-                buffs.forEach(item -> buffsIds.add(item.getSkill().getId()));
+                if (!_fakePlayer.isDead()) {
+                    //Todo: improve - check for skill level (buff[1]) too
+                    buffs.forEach(item -> buffsIds.add(item.getSkill().getId()));
 
-                boolean canAddBuff = !buffsIds.contains(buff[0]);
+                    boolean canAddBuff = !buffsIds.contains(buff[0]);
 
-                if (canAddBuff) {
-                    System.out.println("Buff ID: " + buff[0] + " | Added");
+                    if (canAddBuff) {
+                        System.out.println("Buff ID: " + buff[0] + " | Added");
 
-                    Skill skill2 = SkillData.getInstance().getSkill(buff[0], buff[1]);
+                        Skill skill2 = SkillData.getInstance().getSkill(buff[0], buff[1]);
 
-                    final BuffInfo info2 = new BuffInfo(_fakePlayer, _fakePlayer, skill2);
+                        final BuffInfo info2 = new BuffInfo(_fakePlayer, _fakePlayer, skill2);
 
-                    skill2.applyEffectScope(EffectScope.SELF, info2, false, true);
-                    _fakePlayer.getEffectList().add(info2);
+                        skill2.applyEffectScope(EffectScope.SELF, info2, false, true);
+                        _fakePlayer.getEffectList().add(info2);
 
-                    skill2.applyEffects(_fakePlayer, _fakePlayer);
+                        skill2.applyEffects(_fakePlayer, _fakePlayer);
+                    }
                 }
             } catch(Exception e) {
                 e.printStackTrace();
@@ -193,12 +204,13 @@ public abstract class FakePlayerAI {
     }
 
     protected void toVillageOnDeath() {
-//        Location location = MapRegionData.getInstance().getLocationToTeleport(_fakePlayer, TeleportType.TOWN);
-//
-//        if (_fakePlayer.isDead())
-//            _fakePlayer.doRevive();
-//
-//        _fakePlayer.getFakeAi().teleportToLocation(location.getX(), location.getY(), location.getZ(), 20);
+        Location location = MapRegionManager.getInstance().getTeleToLocation(_fakePlayer, TOWN);
+
+        if (_fakePlayer.isDead()) {
+            _fakePlayer.doRevive();
+        }
+
+        _fakePlayer.getFakeAi().teleportToLocation(location.getX(), location.getY(), location.getZ(), 20);
     }
 
     protected void clientStopMoving(Location loc)
