@@ -57,30 +57,10 @@ public abstract class FakePlayerAI {
     protected void applyDefaultBuffs() {
         for(int[] buff : getBuffs()){
             try {
-//                Map<Integer, L2EffectType> activeEffects = Arrays.stream(_fakePlayer.getEffectList().getEffects())
-//                        .filter(x-> x.getEffectType() == L2EffectType.BUFF)
-//                        .collect(Collectors.toMap(x-> x.getSkill().getId(), x -> x));
-//
-//                if(!activeEffects.containsKey(buff[0]))
-//                    SkillTable.getInstance().getInfo(buff[0], buff[1]).getEffects(_fakePlayer, _fakePlayer);
-//                else {
-//                    if((activeEffects.get(buff[0]).getPeriod() - activeEffects.get(buff[0]).getTime()) <= 20) {
-//                        SkillTable.getInstance().getInfo(buff[0], buff[1]).getEffects(_fakePlayer, _fakePlayer);
-//                    }
-//                }
-
-//                List <BuffInfo> activeEffects = _fakePlayer.getEffectList().getEffects();
-
-//
-//                Skill skill = SkillData.getInstance().getSkill(buff[0], buff[1]);
-//                skill.applyEffects(_fakePlayer, _fakePlayer);
-//
-//                BuffInfo newBuff = new BuffInfo(_fakePlayer, _fakePlayer, skill);
-//
-
                 List <BuffInfo> buffs = _fakePlayer.getEffectList().getEffects();
                 ArrayList <Integer> buffsIds = new ArrayList<>();
 
+                //Todo: improve - check for skill level (buff[1]) too
                 buffs.forEach(item -> buffsIds.add(item.getSkill().getId()));
 
                 boolean canAddBuff = !buffsIds.contains(buff[0]);
@@ -97,22 +77,6 @@ public abstract class FakePlayerAI {
 
                     skill2.applyEffects(_fakePlayer, _fakePlayer);
                 }
-
-//                buffsIds.forEach(buffId -> {
-//                    if (buffId != buff[0]) {
-//                        Skill skill2 = SkillData.getInstance().getSkill(buff[0], buff[1]);
-//
-//                        final BuffInfo info2 = new BuffInfo(_fakePlayer, _fakePlayer, skill2);
-//
-//                        skill2.applyEffectScope(EffectScope.SELF, info2, false, true);
-//                        _fakePlayer.getEffectList().add(info2);
-//
-//                        skill2.applyEffects(_fakePlayer, _fakePlayer);
-//
-////                _fakePlayer.getEffectList().add(newBuff);
-//                    }
-//                });
-
             } catch(Exception e) {
                 e.printStackTrace();
             }
