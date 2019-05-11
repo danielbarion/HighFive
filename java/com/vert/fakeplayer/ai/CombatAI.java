@@ -165,40 +165,44 @@ public abstract class CombatAI extends FakePlayerAI {
     }
 
     protected Skill getRandomAvaiableFighterSpellForTarget() {
-        List<OffensiveSpell> spellsOrdered = getOffensiveSpells().stream().sorted(Comparator.comparingInt(BotSkill::getPriority)).collect(Collectors.toList());
+        if (!_fakePlayer.isDead()) {
+            List<OffensiveSpell> spellsOrdered = getOffensiveSpells().stream().sorted(Comparator.comparingInt(BotSkill::getPriority)).collect(Collectors.toList());
 
-        int skillListSize = spellsOrdered.size();
+            int skillListSize = spellsOrdered.size();
 
-        Skill skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
+            Skill skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
 
-        boolean hasReuseHashCode = _fakePlayer.hasSkillReuse(skill.getReuseHashCode());
+            boolean hasReuseHashCode = _fakePlayer.hasSkillReuse(skill.getReuseHashCode());
 
-        if (skill != null && !hasReuseHashCode) {
-            _fakePlayer.setCurrentSkill(skill, !_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE), false);
+            if (skill != null && !hasReuseHashCode) {
+                _fakePlayer.setCurrentSkill(skill, !_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE), false);
 
-            while(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
-                if((skillIndex < 0) || (skillIndex >= skillListSize)) {
+                while(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
+                    if((skillIndex < 0) || (skillIndex >= skillListSize)) {
+                        return null;
+                    }
+                    skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
+                    skillIndex++;
+                }
+
+                if(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
+                    _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
                     return null;
                 }
-                skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
-                skillIndex++;
-            }
 
-            if(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
-                _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
-                return null;
-            }
-
-            return skill;
-        } else {
-            if (skillIndex == skillListSize) {
-                skillIndex = 0;
+                return skill;
             } else {
-                skillIndex ++;
-            }
+                if (skillIndex == skillListSize) {
+                    skillIndex = 0;
+                } else {
+                    skillIndex ++;
+                }
 
-            return getRandomAvaiableFighterSpellForTarget();
+                return getRandomAvaiableFighterSpellForTarget();
+            }
         }
+
+        return null;
     }
 
     protected void selfSupportBuffs() {

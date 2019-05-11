@@ -76,8 +76,6 @@ public abstract class FakePlayerAI {
                     boolean canAddBuff = !buffsIds.contains(buff[0]);
 
                     if (canAddBuff) {
-                        System.out.println("Buff ID: " + buff[0] + " | Added");
-
                         Skill skill2 = SkillData.getInstance().getSkill(buff[0], buff[1]);
 
                         final BuffInfo info2 = new BuffInfo(_fakePlayer, _fakePlayer, skill2);
