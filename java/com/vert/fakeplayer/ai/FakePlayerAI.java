@@ -76,14 +76,14 @@ public abstract class FakePlayerAI {
                     boolean canAddBuff = !buffsIds.contains(buff[0]);
 
                     if (canAddBuff) {
-                        Skill skill2 = SkillData.getInstance().getSkill(buff[0], buff[1]);
+                        Skill skill = SkillData.getInstance().getSkill(buff[0], buff[1]);
 
-                        final BuffInfo info2 = new BuffInfo(_fakePlayer, _fakePlayer, skill2);
+                        final BuffInfo info = new BuffInfo(_fakePlayer, _fakePlayer, skill);
 
-                        skill2.applyEffectScope(EffectScope.SELF, info2, false, true);
-                        _fakePlayer.getEffectList().add(info2);
+                        skill.applyEffectScope(EffectScope.SELF, info, false, true);
+                        _fakePlayer.getEffectList().add(info);
 
-                        skill2.applyEffects(_fakePlayer, _fakePlayer);
+                        skill.applyEffects(_fakePlayer, _fakePlayer);
                     }
                 }
             } catch(Exception e) {
