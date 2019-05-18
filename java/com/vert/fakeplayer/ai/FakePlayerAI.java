@@ -10,10 +10,7 @@ import com.l2jmobius.gameserver.instancemanager.InstanceManager;
 import com.l2jmobius.gameserver.instancemanager.MapRegionManager;
 import com.l2jmobius.gameserver.instancemanager.TownManager;
 import com.l2jmobius.gameserver.instancemanager.ZoneManager;
-import com.l2jmobius.gameserver.model.L2MapRegion;
-import com.l2jmobius.gameserver.model.L2Object;
-import com.l2jmobius.gameserver.model.L2World;
-import com.l2jmobius.gameserver.model.Location;
+import com.l2jmobius.gameserver.model.*;
 import com.l2jmobius.gameserver.model.actor.L2Character;
 import com.l2jmobius.gameserver.model.actor.L2Decoy;
 import com.l2jmobius.gameserver.model.actor.instance.L2DoorInstance;
@@ -31,10 +28,7 @@ import com.l2jmobius.gameserver.model.zone.type.L2RespawnZone;
 import com.l2jmobius.gameserver.network.serverpackets.*;
 import com.vert.fakeplayer.FakePlayer;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static com.l2jmobius.gameserver.model.TeleportWhereType.TOWN;
@@ -135,10 +129,32 @@ public abstract class FakePlayerAI {
     protected void tryTargetRandomCreatureByTypeInRadius(Class<? extends L2Object> creatureClass, int radius)
     {
         if(_fakePlayer.getTarget() == null) {
+            L2WorldRegion[] wordRegions =  _fakePlayer.getWorldRegion().getSurroundingRegions();
             List<L2Object> targets = _fakePlayer.getWorldRegion().getVisibleObjects().values().stream().filter(x-> x.getInstanceType().isType(InstanceType.L2MonsterInstance) || x.getInstanceType().isType(InstanceType.L2Decoy)).collect(Collectors.toList());
+
+            if (targets.isEmpty()) {
+                Arrays.stream(wordRegions).forEach(region -> {
+                    if (region.getVisibleObjects().size() > 0) {
+                        Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();
+                        Collection<L2Object> visibleObjectsValues = visibleObjects.values();
+                        Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x-> x.getInstanceType().isType(InstanceType.L2MonsterInstance) || x.getInstanceType().isType(InstanceType.L2Decoy)).collect(Collectors.toList());
+
+                        if (!filteredObjects.isEmpty()) {
+                            filteredObjects.stream().forEach(targetInstance -> {
+                                targets.add(targetInstance);
+                            });
+                        }
+                    }
+                });
+            }
+
             if(!targets.isEmpty()) {
                 L2Object target = targets.get(Rnd.get(0, targets.size() -1 ));
-                _fakePlayer.setTarget(target);
+                if (target.canBeAttacked()) {
+                    _fakePlayer.setTarget(target);
+                } else {
+                    _fakePlayer.setTarget(null);
+                }
             }
         }else {
             if(_fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2MonsterInstance) && ((L2MonsterInstance)_fakePlayer.getTarget()).isDead() || _fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2Decoy) && ((L2Decoy)_fakePlayer.getTarget()).isDead()) {

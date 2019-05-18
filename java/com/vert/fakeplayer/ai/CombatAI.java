@@ -137,8 +137,9 @@ public abstract class CombatAI extends FakePlayerAI {
 
     private BotSkill waitAndPickAvailablePrioritisedSpell(List<? extends BotSkill> spellsOrdered, int skillListSize) {
         BotSkill botSkill = spellsOrdered.get(skillIndex);
-//        _fakePlayer.getCurrentSkill().setCtrlPressed(!_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE));
         Skill skill = _fakePlayer.getKnownSkill(botSkill.getSkillId());
+
+        _fakePlayer.getCurrentSkill().setCtrlPressed(!_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE));
 
         if (skill.getCastRange() > 0)
         {
