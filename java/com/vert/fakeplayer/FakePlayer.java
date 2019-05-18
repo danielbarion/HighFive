@@ -14,6 +14,7 @@ import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
 import com.l2jmobius.gameserver.model.olympiad.OlympiadManager;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.skills.targets.L2TargetType;
+import com.l2jmobius.gameserver.model.zone.ZoneId;
 import com.l2jmobius.gameserver.network.SystemMessageId;
 import com.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import com.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListUpdate;
@@ -434,6 +435,10 @@ public class FakePlayer extends L2PcInstance {
         }
 
         if (isInsidePeaceZone(this, this.getTarget())) {
+            return;
+        }
+
+        if (this.isInsideZone(ZoneId.PEACE)) {
             return;
         }
 
