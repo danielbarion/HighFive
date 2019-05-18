@@ -1,9 +1,11 @@
 package com.vert.fakeplayer;
 
 import com.l2jmobius.Config;
+import com.l2jmobius.gameserver.instancemanager.ZoneManager;
 import com.l2jmobius.gameserver.model.L2Clan;
 import com.l2jmobius.gameserver.model.L2World;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jmobius.gameserver.model.zone.ZoneId;
 import com.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListUpdate;
 import com.vert.fakeplayer.helpers.FakeHelpers;
 
@@ -37,7 +39,7 @@ public enum FakePlayerManager {
         handlePlayerClanOnSpawn(activeChar);
 
 //        if (!activeChar.isGM() && (!activeChar.isInSiege() || activeChar.getSiegeState() < 2) && activeChar.isInsideZone(ZoneId.SIEGE)) {
-//            activeChar.teleToLocation(L2TeleportLocation.TOWN);
+//            activeChar.teleToLocation(TeleportLocation.TOWN);
 //        }
 
         activeChar.heal();

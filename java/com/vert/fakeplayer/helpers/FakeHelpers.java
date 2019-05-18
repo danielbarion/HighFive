@@ -96,13 +96,17 @@ public class FakeHelpers {
 
         player.setName(playerName);
         player.setAccessLevel(0);
+
+        // Add player into database table
 //        PlayerInfoTable.getInstance().addPlayer(objectId, accountName, playerName, player.getAccessLevel().getLevel());
         player.setBaseClass(player.getClassId());
-        setLevel(player, 81);
+        setLevel(player, 78);
         player.rewardSkills();
 
         giveArmorsByClass(player);
-        giveWeaponsByClass(player,true);
+//        Weapon random enchanted from +7 between +20
+//        giveWeaponsByClass(player,true);
+        giveWeaponsByClass(player,false);
         player.heal();
 
         return player;
@@ -124,7 +128,7 @@ public class FakeHelpers {
             case SHILLIEN_SAINT:
             case DOMINATOR:
             case DOOMCRYER:
-                itemIds = Arrays.asList(2407, 512, 5767, 5779, 858, 858, 889, 889, 920);
+                itemIds = getMageArmorByGrade(player);
                 break;
             case DUELIST:
             case DREADNOUGHT:
@@ -146,7 +150,7 @@ public class FakeHelpers {
             case GHOST_SENTINEL:
             case FORTUNE_SEEKER:
             case GRAND_KHAVATARI:
-                itemIds = Arrays.asList(6379, 6380, 6381, 6382, 858, 858, 889, 889, 920);
+                itemIds = getLightArmorByGrade(player);
                 break;
             default:
                 break;
@@ -160,6 +164,243 @@ public class FakeHelpers {
             player.getInventory().reloadEquippedItems();
             player.broadcastCharInfo();
         }
+    }
+
+    public static List<Integer> getMageArmorByGrade(FakePlayer player) {
+        List<Integer> itemsIds = new ArrayList<>();
+
+        switch (getPlayerGrade(player)) {
+            case "S84":
+                // Todo: Need add S84 sets and suffle a random number to select who give to player
+                /**
+                 * 15611 = Moirai Tunic;
+                 * 15614 = Moirai Stockings;
+                 * 15608 = Moirai Circlet;
+                 * 15617 = Moirai Gloves;
+                 * 15620 = Moirai Shoes;
+                 * 15723 = Moirai Ring;
+                 * 15724 = Moirai Earring;
+                 * 15725 = Moirai Necklace;
+                 */
+                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                break;
+            case "S80":
+                // Todo: Need add dinasty too and suffle a random number to select who give to player
+                /**
+                 * 15611 = Moirai Tunic;
+                 * 15614 = Moirai Stockings;
+                 * 15608 = Moirai Circlet;
+                 * 15617 = Moirai Gloves;
+                 * 15620 = Moirai Shoes;
+                 * 15723 = Moirai Ring;
+                 * 15724 = Moirai Earring;
+                 * 15725 = Moirai Necklace;
+                 */
+                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                break;
+            case "S":
+                /**
+                 * 6383 = Major Arcana Robe;
+                 * 6384 = Major Arcana Helmet;
+                 * 6385 = Major Arcana Gloves;
+                 * 6386 = Major Arcana Boots;
+                 * 858 = Tateossian Earring;
+                 * 889 = Tateossian Ring;
+                 * 920 = Tateossian Necklace;
+                 */
+                itemsIds = Arrays.asList(6383, 6384, 6385, 6386, 858, 858, 889, 889, 920);
+                break;
+            case "A":
+                /**
+                 * 2407 = Dark Crystal Robe;
+                 * 512 = Dark Crystal Helmet;
+                 * 5767 = Dark Crystal Gloves;
+                 * 5779 = Dark Crystal Boots;
+                 * 862 = Majestic Earring;
+                 * 893 = Majestic Ring;
+                 * 924 = Majestic Necklace;
+                 */
+                itemsIds = Arrays.asList(2407, 512, 5767, 5779, 862, 862, 893, 893, 924);
+                break;
+            case "B":
+                /**
+                 * 2406 = Avadon Robe;
+                 * 2415 = Avadon Ciclet;
+                 * 5716 = Avadon Gloves (Robe);
+                 * 5732 = Avadon Boots (Robe);
+                 * 14345 = Earring Of Black Ore;
+                 * 14346 = Ring Of Black Ore;
+                 * 14347 = Necklace Of Black Ore;
+                 */
+                itemsIds = Arrays.asList(2406, 2415, 5716, 5732, 14345, 14345, 14346, 14346, 14347);
+                break;
+            case "C":
+                /**
+                 * 439 = Karmian Tunic;
+                 * 471 = Karmian Stocking;
+                 * 2454 = Karmian Gloves;
+                 * 2430 = Karmian Boots;
+                 * 2414 = Full Plate Helmet;
+                 * 888 = Blessed Ring;
+                 * 857 = Blessed Earring;
+                 * 919 = Blessed Necklace;
+                 */
+                itemsIds = Arrays.asList(439, 471, 2454, 2430, 2414, 888, 888, 857, 857, 919);
+                break;
+            case "D":
+                /**
+                 * 437 = Mithril Tunic;
+                 * 470 = Mithril Stocking;
+                 * 2450 = Mithril Gloves;
+                 * 2424 = Manticore Skin Boots;
+                 * 2411 = Brigandine Helmet;
+                 * 881 = Elven Ring;
+                 * 850 = Elven Earring;
+                 * 913 = Elven Necklace;
+                 */
+                itemsIds = Arrays.asList(437, 470, 2450, 2424, 2411, 881, 881, 850, 850, 913);
+                break;
+            case "no-grade":
+                /**
+                 * 1101 = Tunic of Devotion;
+                 * 1104 = Stocking of Devotion;
+                 * 44 = Leather Helmet;
+                 */
+                itemsIds = Arrays.asList(1101, 1104, 44);
+                break;
+        }
+
+        return itemsIds;
+    }
+
+    public static List<Integer> getLightArmorByGrade(FakePlayer player) {
+        List<Integer> itemsIds = new ArrayList<>();
+
+        switch (getPlayerGrade(player)) {
+            case "S84":
+                // Todo: Need add S84 sets and suffle a random number to select who give to player
+                /**
+                 * 15611 = Moirai Tunic;
+                 * 15614 = Moirai Stockings;
+                 * 15608 = Moirai Circlet;
+                 * 15617 = Moirai Gloves;
+                 * 15620 = Moirai Shoes;
+                 * 15723 = Moirai Ring;
+                 * 15724 = Moirai Earring;
+                 * 15725 = Moirai Necklace;
+                 */
+                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                break;
+            case "S80":
+                // Todo: Need add dinasty too and suffle a random number to select who give to player
+                /**
+                 * 15611 = Moirai Tunic;
+                 * 15614 = Moirai Stockings;
+                 * 15608 = Moirai Circlet;
+                 * 15617 = Moirai Gloves;
+                 * 15620 = Moirai Shoes;
+                 * 15723 = Moirai Ring;
+                 * 15724 = Moirai Earring;
+                 * 15725 = Moirai Necklace;
+                 */
+                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                break;
+            case "S":
+                /**
+                 * 6379 = Draconic Leather Armor;
+                 * 6382 = Draconic Helmet;
+                 * 6380 = Draconic Gloves;
+                 * 6381 = Draconic Boots;
+                 * 858 = Tateossian Earring;
+                 * 889 = Tateossian Ring;
+                 * 920 = Tateossian Necklace;
+                 */
+                itemsIds = Arrays.asList(6379, 6380, 6381, 6382, 858, 858, 889, 889, 920);
+                break;
+            case "A":
+                /**
+                 * 2407 = Dark Crystal Robe;
+                 * 512 = Dark Crystal Helmet;
+                 * 5767 = Dark Crystal Gloves;
+                 * 5779 = Dark Crystal Boots;
+                 * 862 = Majestic Earring;
+                 * 893 = Majestic Ring;
+                 * 924 = Majestic Necklace;
+                 */
+                itemsIds = Arrays.asList(2407, 512, 5767, 5779, 862, 862, 893, 893, 924);
+                break;
+            case "B":
+                /**
+                 * 2406 = Avadon Robe;
+                 * 2415 = Avadon Ciclet;
+                 * 5716 = Avadon Gloves (Robe);
+                 * 5732 = Avadon Boots (Robe);
+                 * 14345 = Earring Of Black Ore;
+                 * 14346 = Ring Of Black Ore;
+                 * 14347 = Necklace Of Black Ore;
+                 */
+                itemsIds = Arrays.asList(2406, 2415, 5716, 5732, 14345, 14345, 14346, 14346, 14347);
+                break;
+            case "C":
+                /**
+                 * 439 = Karmian Tunic;
+                 * 471 = Karmian Stocking;
+                 * 2454 = Karmian Gloves;
+                 * 2430 = Karmian Boots;
+                 * 2414 = Full Plate Helmet;
+                 * 888 = Blessed Ring;
+                 * 857 = Blessed Earring;
+                 * 919 = Blessed Necklace;
+                 */
+                itemsIds = Arrays.asList(439, 471, 2454, 2430, 2414, 888, 888, 857, 857, 919);
+                break;
+            case "D":
+                /**
+                 * 437 = Mithril Tunic;
+                 * 470 = Mithril Stocking;
+                 * 2450 = Mithril Gloves;
+                 * 2424 = Manticore Skin Boots;
+                 * 2411 = Brigandine Helmet;
+                 * 881 = Elven Ring;
+                 * 850 = Elven Earring;
+                 * 913 = Elven Necklace;
+                 */
+                itemsIds = Arrays.asList(437, 470, 2450, 2424, 2411, 881, 881, 850, 850, 913);
+                break;
+            case "no-grade":
+                /**
+                 * 1101 = Tunic of Devotion;
+                 * 1104 = Stocking of Devotion;
+                 * 44 = Leather Helmet;
+                 */
+                itemsIds = Arrays.asList(1101, 1104, 44);
+                break;
+        }
+
+        return itemsIds;
+    }
+
+    public static String getPlayerGrade(FakePlayer player) {
+        String grade = "no-grade";
+        Integer playerLevel = player.getLevel();
+
+        if (playerLevel >= 84) {
+            grade = "S84";
+        } else if (playerLevel >= 80) {
+            grade = "S80";
+        } else if (playerLevel >= 76) {
+            grade = "S";
+        } else if (playerLevel >= 61) {
+            grade = "A";
+        } else if (playerLevel >= 52) {
+            grade = "B";
+        } else if (playerLevel >= 40) {
+            grade = "C";
+        } else if (playerLevel >= 20) {
+            grade = "D";
+        }
+
+        return grade;
     }
 
     public static void giveWeaponsByClass(FakePlayer player, boolean randomlyEnchant) {
@@ -220,8 +461,9 @@ public class FakeHelpers {
         for (int id : itemIds) {
             player.getInventory().addItem("Weapon", id, 1, player, null);
             L2ItemInstance item = player.getInventory().getItemByItemId(id);
-            if(randomlyEnchant)
+            if(randomlyEnchant) {
                 item.setEnchantLevel(Rnd.get(7, 20));
+            }
             player.getInventory().equipItemAndRecord(item);
             player.getInventory().reloadEquippedItems();
         }
