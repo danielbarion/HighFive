@@ -168,13 +168,14 @@ public abstract class CombatAI extends FakePlayerAI {
     protected Skill getRandomAvaiableFighterSpellForTarget() {
         if (!_fakePlayer.isDead()) {
             List<OffensiveSpell> spellsOrdered = getOffensiveSpells().stream().sorted(Comparator.comparingInt(BotSkill::getPriority)).collect(Collectors.toList());
-            Skill skill = null;
 
             int skillListSize = spellsOrdered.size();
 
-            if (skillListSize > 0) {
-                skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
+            if ((skillIndex - 1) == skillListSize) {
+                skillIndex = 0;
             }
+
+            Skill skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
 
             boolean hasReuseHashCode = _fakePlayer.hasSkillReuse(skill.getReuseHashCode());
 
