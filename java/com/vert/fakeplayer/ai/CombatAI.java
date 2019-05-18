@@ -171,7 +171,7 @@ public abstract class CombatAI extends FakePlayerAI {
 
             int skillListSize = spellsOrdered.size();
 
-            if ((skillIndex - 1) == skillListSize) {
+            if (skillIndex == skillListSize) {
                 skillIndex = 0;
             }
 
