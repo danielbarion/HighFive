@@ -24,6 +24,7 @@ import com.l2jmobius.gameserver.model.skills.BuffInfo;
 import com.l2jmobius.gameserver.model.skills.EffectScope;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.skills.targets.L2TargetType;
+import com.l2jmobius.gameserver.model.zone.ZoneId;
 import com.l2jmobius.gameserver.model.zone.type.L2RespawnZone;
 import com.l2jmobius.gameserver.network.serverpackets.*;
 import com.vert.fakeplayer.FakePlayer;
@@ -132,7 +133,7 @@ public abstract class FakePlayerAI {
             L2WorldRegion[] wordRegions =  _fakePlayer.getWorldRegion().getSurroundingRegions();
             List<L2Object> targets = _fakePlayer.getWorldRegion().getVisibleObjects().values().stream().filter(x-> x.getInstanceType().isType(InstanceType.L2MonsterInstance) || x.getInstanceType().isType(InstanceType.L2Decoy)).collect(Collectors.toList());
 
-            if (targets.isEmpty()) {
+            if (targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
                 Arrays.stream(wordRegions).forEach(region -> {
                     if (region.getVisibleObjects().size() > 0) {
                         Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();

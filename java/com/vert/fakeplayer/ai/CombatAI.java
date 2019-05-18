@@ -46,11 +46,13 @@ public abstract class CombatAI extends FakePlayerAI {
     protected void tryAttackingUsingFighterOffensiveSkill()	{
         if(_fakePlayer.getTarget() != null && (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance)) {
             _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
-            if(Rnd.nextDouble() < chanceOfUsingSkill()) {
-                if(getOffensiveSpells() != null && !getOffensiveSpells().isEmpty()) {
-                    Skill skill = getRandomAvaiableFighterSpellForTarget();
-                    if(skill != null) {
-                        castSpell(skill);
+            if (_fakePlayer.getTarget() != null && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
+                if(Rnd.nextDouble() < chanceOfUsingSkill()) {
+                    if(getOffensiveSpells() != null && !getOffensiveSpells().isEmpty()) {
+                        Skill skill = getRandomAvaiableFighterSpellForTarget();
+                        if(skill != null) {
+                            castSpell(skill);
+                        }
                     }
                 }
             }
