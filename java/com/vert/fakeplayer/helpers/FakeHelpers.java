@@ -171,32 +171,59 @@ public class FakeHelpers {
 
         switch (getPlayerGrade(player)) {
             case "S84":
-                // Todo: Need add S84 sets and suffle a random number to select who give to player
-                /**
-                 * 15611 = Moirai Tunic;
-                 * 15614 = Moirai Stockings;
-                 * 15608 = Moirai Circlet;
-                 * 15617 = Moirai Gloves;
-                 * 15620 = Moirai Shoes;
-                 * 15723 = Moirai Ring;
-                 * 15724 = Moirai Earring;
-                 * 15725 = Moirai Necklace;
-                 */
-                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                // Todo: Need add S84 sets
+                if (Rnd.get(0, 1) == 0) {
+                    /**
+                     * 15611 = Moirai Tunic;
+                     * 15614 = Moirai Stockings;
+                     * 15608 = Moirai Circlet;
+                     * 15617 = Moirai Gloves;
+                     * 15620 = Moirai Shoes;
+                     * 15723 = Moirai Ring;
+                     * 15724 = Moirai Earring;
+                     * 15725 = Moirai Necklace;
+                     */
+                    itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                } else {
+                    /**
+                     * 9432 = Dynasty Tunic;
+                     * 9437 = Dynasty Stockings;
+                     * 9438 = Dynasty Circlet;
+                     * 9439 = Dynasty Gloves (Robe);
+                     * 9440 = Dynasty Shoes (Robe);
+                     * 15723 = Moirai Ring;
+                     * 15724 = Moirai Earring;
+                     * 15725 = Moirai Necklace;
+                     */
+                    itemsIds = Arrays.asList(9432, 9437, 9438, 9439, 9440, 15723, 15723, 15724, 15724, 15725);
+                }
                 break;
             case "S80":
-                // Todo: Need add dinasty too and suffle a random number to select who give to player
-                /**
-                 * 15611 = Moirai Tunic;
-                 * 15614 = Moirai Stockings;
-                 * 15608 = Moirai Circlet;
-                 * 15617 = Moirai Gloves;
-                 * 15620 = Moirai Shoes;
-                 * 15723 = Moirai Ring;
-                 * 15724 = Moirai Earring;
-                 * 15725 = Moirai Necklace;
-                 */
-                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                if (Rnd.get(0, 1) == 0) {
+                    /**
+                     * 15611 = Moirai Tunic;
+                     * 15614 = Moirai Stockings;
+                     * 15608 = Moirai Circlet;
+                     * 15617 = Moirai Gloves;
+                     * 15620 = Moirai Shoes;
+                     * 15723 = Moirai Ring;
+                     * 15724 = Moirai Earring;
+                     * 15725 = Moirai Necklace;
+                     */
+                    itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                } else {
+                    /**
+                     * 9432 = Dynasty Tunic;
+                     * 9437 = Dynasty Stockings;
+                     * 9438 = Dynasty Circlet;
+                     * 9439 = Dynasty Gloves (Robe);
+                     * 9440 = Dynasty Shoes (Robe);
+                     * 15723 = Moirai Ring;
+                     * 15724 = Moirai Earring;
+                     * 15725 = Moirai Necklace;
+                     */
+                    itemsIds = Arrays.asList(9432, 9437, 9438, 9439, 9440, 15723, 15723, 15724, 15724, 15725);
+                }
                 break;
             case "S":
                 /**
@@ -278,32 +305,59 @@ public class FakeHelpers {
 
         switch (getPlayerGrade(player)) {
             case "S84":
-                // Todo: Need add S84 sets and suffle a random number to select who give to player
-                /**
-                 * 15611 = Moirai Tunic;
-                 * 15614 = Moirai Stockings;
-                 * 15608 = Moirai Circlet;
-                 * 15617 = Moirai Gloves;
-                 * 15620 = Moirai Shoes;
-                 * 15723 = Moirai Ring;
-                 * 15724 = Moirai Earring;
-                 * 15725 = Moirai Necklace;
-                 */
-                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                // Todo: Need add S84 sets
+                if (Rnd.get(0, 1) == 0) {
+                    /**
+                     * 15610 = Moirai Leather Breastplate;
+                     * 15613 = Moirai Leather Legging;
+                     * 15607 = Moirai Leather Helmet;
+                     * 15616 = Moirai Leather Gloves;
+                     * 15619 = Moirai Leather Boots;
+                     * 15723 = Moirai Ring;
+                     * 15724 = Moirai Earring;
+                     * 15725 = Moirai Necklace;
+                     */
+                    itemsIds = Arrays.asList(15610, 15613, 15607, 15616, 15619, 15723, 15723, 15724, 15724, 15725);
+                } else {
+                    /**
+                     * 9425 = Dynasty Leather Armor;
+                     * 9428 = Dynasty Leather Leggings;
+                     * 9429 = Dynasty Leather Helmet;
+                     * 9430 = Dynasty Leather Gloves;
+                     * 9431 = Dynasty Leather Boots;
+                     * 15723 = Moirai Ring;
+                     * 15724 = Moirai Earring;
+                     * 15725 = Moirai Necklace;
+                     */
+                    itemsIds = Arrays.asList(9425, 9428, 9429, 9430, 9431, 15723, 15723, 15724, 15724, 15725);
+                }
                 break;
             case "S80":
-                // Todo: Need add dinasty too and suffle a random number to select who give to player
-                /**
-                 * 15611 = Moirai Tunic;
-                 * 15614 = Moirai Stockings;
-                 * 15608 = Moirai Circlet;
-                 * 15617 = Moirai Gloves;
-                 * 15620 = Moirai Shoes;
-                 * 15723 = Moirai Ring;
-                 * 15724 = Moirai Earring;
-                 * 15725 = Moirai Necklace;
-                 */
-                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                if (Rnd.get(0, 1) == 0) {
+                    /**
+                     * 15610 = Moirai Leather Breastplate;
+                     * 15613 = Moirai Leather Legging;
+                     * 15607 = Moirai Leather Helmet;
+                     * 15616 = Moirai Leather Gloves;
+                     * 15619 = Moirai Leather Boots;
+                     * 15723 = Moirai Ring;
+                     * 15724 = Moirai Earring;
+                     * 15725 = Moirai Necklace;
+                     */
+                    itemsIds = Arrays.asList(15610, 15613, 15607, 15616, 15619, 15723, 15723, 15724, 15724, 15725);
+                } else {
+                    /**
+                     * 9425 = Dynasty Leather Armor;
+                     * 9428 = Dynasty Leather Leggings;
+                     * 9429 = Dynasty Leather Helmet;
+                     * 9430 = Dynasty Leather Gloves;
+                     * 9431 = Dynasty Leather Boots;
+                     * 15723 = Moirai Ring;
+                     * 15724 = Moirai Earring;
+                     * 15725 = Moirai Necklace;
+                     */
+                    itemsIds = Arrays.asList(9425, 9428, 9429, 9430, 9431, 15723, 15723, 15724, 15724, 15725);
+                }
                 break;
             case "S":
                 /**
@@ -318,62 +372,75 @@ public class FakeHelpers {
                 itemsIds = Arrays.asList(6379, 6380, 6381, 6382, 858, 858, 889, 889, 920);
                 break;
             case "A":
-                /**
-                 * 2407 = Dark Crystal Robe;
-                 * 512 = Dark Crystal Helmet;
-                 * 5767 = Dark Crystal Gloves;
-                 * 5779 = Dark Crystal Boots;
-                 * 862 = Majestic Earring;
-                 * 893 = Majestic Ring;
-                 * 924 = Majestic Necklace;
-                 */
-                itemsIds = Arrays.asList(2407, 512, 5767, 5779, 862, 862, 893, 893, 924);
+                if (Rnd.get(0, 1) == 0) {
+                    /**
+                     * 2385 = Dark Crystal Leather Armor;
+                     * 2389 = Dark Crystal Leggings;
+                     * 512 = Dark Crystal Helmet;
+                     * 5766 = Dark Crystal Gloves (Light);
+                     * 5778 = Dark Crystal Boots (Light);
+                     * 862 = Majestic Earring;
+                     * 893 = Majestic Ring;
+                     * 924 = Majestic Necklace;
+                     */
+                    itemsIds = Arrays.asList(2385, 2389, 512, 5766, 5778, 862, 862, 893, 893, 924);
+                } else {
+                    /**
+                     * 2393 = Tallum Leather Armor;
+                     * 547 = Tallum Helm;
+                     * 5769 = Tallum Gloves (Light);
+                     * 5781 = Tallum Boots (Light);
+                     * 862 = Majestic Earring;
+                     * 893 = Majestic Ring;
+                     * 924 = Majestic Necklace;
+                     */
+                    itemsIds = Arrays.asList(2385, 2389, 512, 5766, 5778, 862, 862, 893, 893, 924);
+                }
                 break;
             case "B":
                 /**
-                 * 2406 = Avadon Robe;
+                 * 2390 = Avadon Leather Armor;
                  * 2415 = Avadon Ciclet;
-                 * 5716 = Avadon Gloves (Robe);
-                 * 5732 = Avadon Boots (Robe);
+                 * 5715 = Avadon Gloves (Light);
+                 * 5731 = Avadon Boots (Light);
                  * 14345 = Earring Of Black Ore;
                  * 14346 = Ring Of Black Ore;
                  * 14347 = Necklace Of Black Ore;
                  */
-                itemsIds = Arrays.asList(2406, 2415, 5716, 5732, 14345, 14345, 14346, 14346, 14347);
+                itemsIds = Arrays.asList(2390, 2415, 5715, 5731, 14345, 14345, 14346, 14346, 14347);
                 break;
             case "C":
                 /**
-                 * 439 = Karmian Tunic;
-                 * 471 = Karmian Stocking;
-                 * 2454 = Karmian Gloves;
-                 * 2430 = Karmian Boots;
+                 * 400 = Theca Leather Armor;
+                 * 420 = Theca Leather Gaiters;
+                 * 2460 = Theca Leather Gloves;
+                 * 2436 = Theca Leather Boots;
                  * 2414 = Full Plate Helmet;
                  * 888 = Blessed Ring;
                  * 857 = Blessed Earring;
                  * 919 = Blessed Necklace;
                  */
-                itemsIds = Arrays.asList(439, 471, 2454, 2430, 2414, 888, 888, 857, 857, 919);
+                itemsIds = Arrays.asList(400, 420, 2460, 2436, 2414, 888, 888, 857, 857, 919);
                 break;
             case "D":
                 /**
-                 * 437 = Mithril Tunic;
-                 * 470 = Mithril Stocking;
-                 * 2450 = Mithril Gloves;
-                 * 2424 = Manticore Skin Boots;
+                 * 437 = Salamander Skin Mail;
+                 * 607 = Ogre Power Gauntlets;
+                 * 2427 = Salamander Skin Boots;
                  * 2411 = Brigandine Helmet;
                  * 881 = Elven Ring;
                  * 850 = Elven Earring;
                  * 913 = Elven Necklace;
                  */
-                itemsIds = Arrays.asList(437, 470, 2450, 2424, 2411, 881, 881, 850, 850, 913);
+                itemsIds = Arrays.asList(437, 607, 2427, 2411, 881, 881, 850, 850, 913);
                 break;
             case "no-grade":
                 /**
-                 * 1101 = Tunic of Devotion;
-                 * 1104 = Stocking of Devotion;
-                 * 44 = Leather Helmet;
+                 * 23 = Wooden Breastplate;
+                 * 2386 = Wooden Gaiters;
+                 * 43 = Wooden helmet;
                  */
-                itemsIds = Arrays.asList(1101, 1104, 44);
+                itemsIds = Arrays.asList(23, 2386, 43);
                 break;
         }
 
@@ -470,7 +537,7 @@ public class FakeHelpers {
     }
 
     public static List<ClassId> getThirdClasses() {
-        // removed summoner classes because fuck those guys
+        // todo: add summoners and kamael classes
         List<ClassId> classes = new ArrayList<>();
 
         /*
@@ -545,7 +612,7 @@ public class FakeHelpers {
     public static void setLevel(FakePlayer player, int level) {
         if (level >= 1 && level <= ExperienceData.getInstance().getMaxLevel()) {
             long pXp = player.getExp();
-            long tXp = ExperienceData.getInstance().getExpForLevel(ExperienceData.getInstance().getMaxLevel());
+            long tXp = ExperienceData.getInstance().getExpForLevel(level);
 
             if (pXp > tXp)
                 player.removeExpAndSp(pXp - tXp, 0);
