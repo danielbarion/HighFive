@@ -32,7 +32,7 @@ public class AITask implements Runnable {
 
     private void adjustPotentialIndexOutOfBounds() {
         if(_to > FakePlayerManager.INSTANCE.getFakePlayersCount()) {
-            _to = 	FakePlayerManager.INSTANCE.getFakePlayersCount();
+            _to = FakePlayerManager.INSTANCE.getFakePlayersCount();
         }
     }
 }

@@ -131,14 +131,14 @@ public abstract class FakePlayerAI {
     {
         if(_fakePlayer.getTarget() == null) {
             L2WorldRegion[] wordRegions =  _fakePlayer.getWorldRegion().getSurroundingRegions();
-            List<L2Object> targets = _fakePlayer.getWorldRegion().getVisibleObjects().values().stream().filter(x-> x.getInstanceType().isType(InstanceType.L2MonsterInstance) || x.getInstanceType().isType(InstanceType.L2Decoy)).collect(Collectors.toList());
+            List<L2Object> targets = _fakePlayer.getWorldRegion().getVisibleObjects().values().stream().filter(x-> x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)).collect(Collectors.toList());
 
             if (targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
                 Arrays.stream(wordRegions).forEach(region -> {
                     if (region.getVisibleObjects().size() > 0) {
                         Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();
                         Collection<L2Object> visibleObjectsValues = visibleObjects.values();
-                        Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x-> x.getInstanceType().isType(InstanceType.L2MonsterInstance) || x.getInstanceType().isType(InstanceType.L2Decoy)).collect(Collectors.toList());
+                        Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x-> x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)).collect(Collectors.toList());
 
                         if (!filteredObjects.isEmpty()) {
                             filteredObjects.stream().forEach(targetInstance -> {
