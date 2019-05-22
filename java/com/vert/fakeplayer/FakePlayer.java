@@ -29,6 +29,7 @@ import static com.vert.fakeplayer.FakePlayerNameManager._log;
 public class FakePlayer extends L2PcInstance {
     private FakePlayerAI _fakeAi;
     private boolean _underControl = false;
+    private L2WorldRegion _initialWorldRegion = null;
 
     public boolean isUnderControl() {
         return _underControl;
@@ -591,6 +592,14 @@ public class FakePlayer extends L2PcInstance {
         {
             _log.log(Level.WARNING, "Exception on deleteMe()" + e.getMessage(), e);
         }
+    }
+
+    public L2WorldRegion getInitialWorldRegion() {
+        return _initialWorldRegion;
+    }
+
+    public void setInitialWorldRegion(L2WorldRegion _initialWorldRegion) {
+        this._initialWorldRegion = _initialWorldRegion;
     }
 
     public void heal() {

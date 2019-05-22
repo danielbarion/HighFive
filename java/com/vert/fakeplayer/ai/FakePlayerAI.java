@@ -41,6 +41,7 @@ public abstract class FakePlayerAI {
     protected final FakePlayer _fakePlayer;
     protected volatile boolean _clientMoving;
     protected volatile boolean _clientAutoAttacking;
+    protected List<L2Object> _targets = new ArrayList<>();
     private long _moveToPawnTimeout;
     protected int _clientMovingToPawnOffset;
     protected boolean _isBusyThinking = false;
@@ -127,30 +128,69 @@ public abstract class FakePlayerAI {
         _fakePlayer.revalidateZone(true);
     }
 
+    protected void getTargetsSurroudingInitialWorldRegion() {
+        L2WorldRegion[] wordRegions = _fakePlayer.getInitialWorldRegion().getSurroundingRegions();
+
+        Arrays.stream(wordRegions).forEach(region -> {
+            Arrays.stream(region.getSurroundingRegions()).forEach(surroudingRegion -> getTargetsInRegion(surroudingRegion));
+        });
+    }
+
+    protected void getTargetsSurroudingWorldRegion() {
+        L2WorldRegion[] wordRegions = _fakePlayer.getInitialWorldRegion().getSurroundingRegions();
+
+        Arrays.stream(wordRegions).forEach(region ->
+            Arrays.stream(region.getSurroundingRegions()).forEach(surroudingRegion ->
+                Arrays.stream(surroudingRegion.getSurroundingRegions()).forEach(secondLevelRegion -> getTargetsInRegion(secondLevelRegion))
+        ));
+    }
+
+    protected void getTargetsInRegion(L2WorldRegion region) {
+        if (region.getVisibleObjects().size() > 0) {
+            Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();
+            Collection<L2Object> visibleObjectsValues = visibleObjects.values();
+            Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x-> x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)).collect(Collectors.toList());
+
+            if (!filteredObjects.isEmpty()) {
+                _targets.addAll(filteredObjects);
+            }
+        }
+    }
+
+    // Radius is not in use, need check if will be used or will stay calc in worldRegion
+    // For radius, use: isInsideRadius2D or another _fakePlayer. radius function
     protected void tryTargetRandomCreatureByTypeInRadius(Class<? extends L2Object> creatureClass, int radius)
     {
         if(_fakePlayer.getTarget() == null) {
-            L2WorldRegion[] wordRegions =  _fakePlayer.getWorldRegion().getSurroundingRegions();
-            List<L2Object> targets = _fakePlayer.getWorldRegion().getVisibleObjects().values().stream().filter(x-> x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)).collect(Collectors.toList());
-
-            if (targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
-                Arrays.stream(wordRegions).forEach(region -> {
-                    if (region.getVisibleObjects().size() > 0) {
-                        Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();
-                        Collection<L2Object> visibleObjectsValues = visibleObjects.values();
-                        Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x-> x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)).collect(Collectors.toList());
-
-                        if (!filteredObjects.isEmpty()) {
-                            filteredObjects.stream().forEach(targetInstance -> {
-                                targets.add(targetInstance);
-                            });
-                        }
-                    }
-                });
+            if (_targets.size() > 0) {
+                // Always clear the target list before start add or _targets will just add more targets
+                _targets.clear();
             }
 
-            if(!targets.isEmpty()) {
-                L2Object target = targets.get(Rnd.get(0, targets.size() -1 ));
+            // Initial Zero Zone Level
+            getTargetsInRegion(_fakePlayer.getInitialWorldRegion());
+
+            // First Zone Level
+            if (_targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
+                getTargetsSurroudingInitialWorldRegion();
+            }
+
+            // Second Zone Level
+            if (_targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
+                getTargetsSurroudingWorldRegion();
+            }
+
+            if (!_targets.isEmpty() && _targets.size() > 1) {
+                // Sort targets to get the closest target
+                Collections.sort(_targets, (WordRegion1, WordRegion2) -> (int) (_fakePlayer.calculateDistance2D(WordRegion1.getX(), WordRegion1.getY(), WordRegion1.getZ()) - _fakePlayer.calculateDistance2D(WordRegion2.getX(), WordRegion2.getY(), WordRegion2.getZ())));
+            }
+
+            if(!_targets.isEmpty()) {
+                // Get a Random Target
+                // L2Object target = targets.get(Rnd.get(0, targets.size() -1 ));
+                // Get the closest Target
+                L2Object target = _targets.get(0);
+
                 if (target.canBeAttacked()) {
                     _fakePlayer.setTarget(target);
                 } else {

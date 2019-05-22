@@ -35,6 +35,7 @@ public enum FakePlayerManager {
         }
 
         activeChar.spawnMe(x, y, z);
+        activeChar.setInitialWorldRegion(activeChar.getWorldRegion());
         activeChar.onPlayerEnter();
         handlePlayerClanOnSpawn(activeChar);
 

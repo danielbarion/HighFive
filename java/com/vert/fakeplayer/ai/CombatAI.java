@@ -3,6 +3,7 @@ package com.vert.fakeplayer.ai;
 import com.l2jmobius.commons.util.Rnd;
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
+import com.l2jmobius.gameserver.model.L2Object;
 import com.l2jmobius.gameserver.model.actor.L2Decoy;
 import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -44,6 +45,7 @@ public abstract class CombatAI extends FakePlayerAI {
     }
 
     protected void tryAttackingUsingFighterOffensiveSkill()	{
+        // Todo: when target is dead, get another target
         if(_fakePlayer.getTarget() != null && (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance)) {
             _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
             if (_fakePlayer.getTarget() != null && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
@@ -52,6 +54,8 @@ public abstract class CombatAI extends FakePlayerAI {
                         Skill skill = getRandomAvaiableFighterSpellForTarget();
                         if(skill != null) {
                             castSpell(skill);
+                        } else {
+                            _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
                         }
                     }
                 }
@@ -181,7 +185,7 @@ public abstract class CombatAI extends FakePlayerAI {
 
             boolean hasReuseHashCode = _fakePlayer.hasSkillReuse(skill.getReuseHashCode());
 
-            if (skill != null && !hasReuseHashCode) {
+            if (skill != null && (!hasReuseHashCode || !_fakePlayer.isSkillDisabled(skill))) {
                 _fakePlayer.setCurrentSkill(skill, !_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE), false);
 
                 while(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
