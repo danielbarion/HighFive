@@ -166,9 +166,7 @@ public abstract class FakePlayerAI {
         }
 
         L2Object target = _targets.get(count);
-
-        System.out.println("isInsideRadius3D: " + _fakePlayer.isInsideRadius3D(target.getX(), target.getY(), target.getZ(), radius));
-
+        
         if (!_fakePlayer.isInsideRadius3D(target.getX(), target.getY(), target.getZ(), radius)) {
             count++;
             target = selectTarget(count, radius);
