@@ -4,6 +4,8 @@ import com.vert.fakeplayer.FakePlayer;
 import com.vert.fakeplayer.FakePlayerManager;
 
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @author vert
@@ -23,7 +25,12 @@ public class AITask implements Runnable {
         adjustPotentialIndexOutOfBounds();
         List<FakePlayer> fakePlayers = FakePlayerManager.INSTANCE.getFakePlayers().subList(_from, _to);
         try {
-            fakePlayers.stream().filter(x-> !x.getFakeAi().isBusyThinking()).forEach(x-> x.getFakeAi().thinkAndAct());
+            if (fakePlayers.size() > 0) {
+                List<FakePlayer> notBusyFakes = fakePlayers.stream().filter(x-> !x.getFakeAi().isBusyThinking()).collect(Collectors.toList());
+                if (notBusyFakes.size() > 0) {
+                    notBusyFakes.forEach(x-> x.getFakeAi().thinkAndAct());
+                }
+            }
         }catch(Exception ex) {
             ex.printStackTrace();
         }

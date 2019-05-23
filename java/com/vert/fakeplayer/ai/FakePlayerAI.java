@@ -157,8 +157,26 @@ public abstract class FakePlayerAI {
         }
     }
 
-    // Radius is not in use, need check if will be used or will stay calc in worldRegion
-    // For radius, use: isInsideRadius2D or another _fakePlayer. radius function
+    protected L2Object selectTarget(int count, int radius) {
+        if (count >= _targets.size()) {
+            count = 0;
+
+            // if already in the final of targets list, get the first item possible
+            return _targets.get(count);
+        }
+
+        L2Object target = _targets.get(count);
+
+        System.out.println("isInsideRadius3D: " + _fakePlayer.isInsideRadius3D(target.getX(), target.getY(), target.getZ(), radius));
+
+        if (!_fakePlayer.isInsideRadius3D(target.getX(), target.getY(), target.getZ(), radius)) {
+            count++;
+            target = selectTarget(count, radius);
+        }
+
+        return target;
+    }
+
     protected void tryTargetRandomCreatureByTypeInRadius(Class<? extends L2Object> creatureClass, int radius)
     {
         if(_fakePlayer.getTarget() == null) {
@@ -189,7 +207,8 @@ public abstract class FakePlayerAI {
                 // Get a Random Target
                 // L2Object target = targets.get(Rnd.get(0, targets.size() -1 ));
                 // Get the closest Target
-                L2Object target = _targets.get(0);
+//                L2Object target = _targets.get(0);
+                L2Object target = selectTarget(0, radius);
 
                 if (target.canBeAttacked()) {
                     _fakePlayer.setTarget(target);
