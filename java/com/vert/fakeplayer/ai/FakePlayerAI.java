@@ -153,7 +153,7 @@ public abstract class FakePlayerAI {
                 (x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)
                         || (x.getInstanceType().isType(InstanceType.L2PcInstance) && (((L2PcInstance) x).getPvpFlag() == 1
                         || ((L2PcInstance) x).getKarma() > 0)))
-                && !x.isInvisible() && (getTargetCurrentHp(x) > 0))
+                && !x.isInvisible() && (getTargetCurrentHp(x) > 0) && (x.getObjectId() != _fakePlayer.getObjectId()))
                 .collect(Collectors.toList());
 
             if (!filteredObjects.isEmpty()) {
