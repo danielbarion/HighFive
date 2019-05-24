@@ -31,7 +31,7 @@ public class GhostSentinelAI extends CombatAI implements IConsumableSpender {
         handleConsumable(_fakePlayer, getArrowId());
         selfSupportBuffs();
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetClass(), FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
         tryAttackingUsingFighterOffensiveSkill();
         setBusyThinking(false);
     }

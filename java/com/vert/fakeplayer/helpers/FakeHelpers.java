@@ -74,11 +74,6 @@ public class FakeHelpers {
         };
     }
 
-
-    public static Class<? extends L2Decoy> getTestTargetClass() {
-        return L2Decoy.class;
-    }
-
     public static int getTestTargetRange() {
         return 2000;
     }

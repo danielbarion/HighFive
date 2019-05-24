@@ -34,7 +34,7 @@ public class SagittariusAI extends CombatAI implements IConsumableSpender {
         selfSupportBuffs();
         handleConsumable(_fakePlayer, getArrowId());
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetClass(), FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
         tryAttackingUsingFighterOffensiveSkill();
         setBusyThinking(false);
     }

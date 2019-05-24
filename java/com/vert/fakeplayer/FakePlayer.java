@@ -430,7 +430,7 @@ public class FakePlayer extends L2PcInstance {
         return true;
     }
 
-    public void forceAutoAttack(L2Object creature) {
+    public void forceAutoAttack() {
         if(this.getTarget() == null) {
             return;
         }
@@ -450,7 +450,7 @@ public class FakePlayer extends L2PcInstance {
             }
         }
 
-        if (getTarget() != null && !getTarget().isAttackable() && !getAccessLevel().allowPeaceAttack()) {
+        if (getTarget() != null && !getTarget().isAttackable() && this.isInsideZone(ZoneId.PEACE) && !getAccessLevel().allowPeaceAttack()) {
             return;
         }
 

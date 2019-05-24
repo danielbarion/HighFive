@@ -1,9 +1,11 @@
 package com.vert.fakeplayer.ai;
 
 import com.l2jmobius.commons.util.Rnd;
+import com.l2jmobius.gameserver.enums.InstanceType;
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
 import com.l2jmobius.gameserver.model.L2Object;
+import com.l2jmobius.gameserver.model.actor.L2Character;
 import com.l2jmobius.gameserver.model.actor.L2Decoy;
 import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -45,9 +47,10 @@ public abstract class CombatAI extends FakePlayerAI {
     }
 
     protected void tryAttackingUsingFighterOffensiveSkill()	{
-        // Todo: when target is dead, get another target
-        if(_fakePlayer.getTarget() != null && (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance)) {
-            _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
+        boolean validInstanceType = (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance || _fakePlayer.getTarget() instanceof L2Character);
+
+        if(_fakePlayer.getTarget() != null && validInstanceType) {
+            _fakePlayer.forceAutoAttack();
             if (_fakePlayer.getTarget() != null && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
                 if(Rnd.nextDouble() < chanceOfUsingSkill()) {
                     if(getOffensiveSpells() != null && !getOffensiveSpells().isEmpty()) {
@@ -55,7 +58,7 @@ public abstract class CombatAI extends FakePlayerAI {
                         if(skill != null) {
                             castSpell(skill);
                         } else {
-                            _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
+                            _fakePlayer.forceAutoAttack();
                         }
                     }
                 }
@@ -183,6 +186,7 @@ public abstract class CombatAI extends FakePlayerAI {
 
             Skill skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
 
+            // todo: high-priority: the reuse validation is not working
             boolean hasReuseHashCode = _fakePlayer.hasSkillReuse(skill.getReuseHashCode());
 
             if (skill != null && (!hasReuseHashCode || !_fakePlayer.isSkillDisabled(skill))) {
@@ -197,7 +201,7 @@ public abstract class CombatAI extends FakePlayerAI {
                 }
 
                 if(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
-                    _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
+                    _fakePlayer.forceAutoAttack();
                     return null;
                 }
 

@@ -32,7 +32,7 @@ public class SoultakerAI extends CombatAI implements IConsumableSpender {
         applyDefaultBuffs();
         handleConsumable(_fakePlayer, boneId);
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetClass(), FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
         tryAttackingUsingMageOffensiveSkill();
         setBusyThinking(false);
     }

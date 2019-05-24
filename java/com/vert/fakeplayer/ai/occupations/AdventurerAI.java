@@ -29,7 +29,7 @@ public class AdventurerAI extends CombatAI {
         setBusyThinking(true);
         applyDefaultBuffs();
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetClass(), FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
         tryAttackingUsingFighterOffensiveSkill();
         setBusyThinking(false);
     }

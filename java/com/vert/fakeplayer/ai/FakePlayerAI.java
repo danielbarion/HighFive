@@ -11,15 +11,14 @@ import com.l2jmobius.gameserver.instancemanager.MapRegionManager;
 import com.l2jmobius.gameserver.instancemanager.TownManager;
 import com.l2jmobius.gameserver.instancemanager.ZoneManager;
 import com.l2jmobius.gameserver.model.*;
-import com.l2jmobius.gameserver.model.actor.L2Character;
-import com.l2jmobius.gameserver.model.actor.L2Decoy;
-import com.l2jmobius.gameserver.model.actor.instance.L2DoorInstance;
-import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
-import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jmobius.gameserver.model.actor.*;
+import com.l2jmobius.gameserver.model.actor.instance.*;
+import com.l2jmobius.gameserver.model.actor.status.CharStatus;
 import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
 import com.l2jmobius.gameserver.model.effects.AbstractEffect;
 import com.l2jmobius.gameserver.model.effects.L2EffectType;
 import com.l2jmobius.gameserver.model.instancezone.Instance;
+import com.l2jmobius.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jmobius.gameserver.model.skills.BuffInfo;
 import com.l2jmobius.gameserver.model.skills.EffectScope;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -31,6 +30,7 @@ import com.vert.fakeplayer.FakePlayer;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static com.l2jmobius.gameserver.model.TeleportWhereType.TOWN;
 
@@ -149,7 +149,12 @@ public abstract class FakePlayerAI {
         if (region.getVisibleObjects().size() > 0) {
             Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();
             Collection<L2Object> visibleObjectsValues = visibleObjects.values();
-            Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x-> x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)).collect(Collectors.toList());
+            Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x ->
+                (x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)
+                        || (x.getInstanceType().isType(InstanceType.L2PcInstance) && (((L2PcInstance) x).getPvpFlag() == 1
+                        || ((L2PcInstance) x).getKarma() > 0)))
+                && !x.isInvisible() && (getTargetCurrentHp(x) > 0))
+                .collect(Collectors.toList());
 
             if (!filteredObjects.isEmpty()) {
                 _targets.addAll(filteredObjects);
@@ -165,8 +170,17 @@ public abstract class FakePlayerAI {
             return _targets.get(count);
         }
 
+        // Get the most bad player (pk or just flagged) if has one
+        if (_targets.stream().anyMatch(item -> (checkIfTargetIsBadPlayer(item)))) {
+            Stream<L2Object> badPlayers = _targets.stream().filter(item -> checkIfTargetIsBadPlayer(item));
+            L2Object badPlayer;
+            badPlayer = badPlayers.sorted(Comparator.comparingInt(player -> ((L2PcInstance) player).getKarma())).collect(Collectors.toList()).get(0);
+
+            return badPlayer;
+        }
+
         L2Object target = _targets.get(count);
-        
+
         if (!_fakePlayer.isInsideRadius3D(target.getX(), target.getY(), target.getZ(), radius)) {
             count++;
             target = selectTarget(count, radius);
@@ -175,7 +189,251 @@ public abstract class FakePlayerAI {
         return target;
     }
 
-    protected void tryTargetRandomCreatureByTypeInRadius(Class<? extends L2Object> creatureClass, int radius)
+    protected double getTargetCurrentHp(L2Object target) {
+        double hp = 0;
+        switch (target.getInstanceType()) {
+            case L2Character:
+                hp = ((L2Character) target).getCurrentHp();
+                break;
+            case L2Npc:
+                hp = ((L2Npc) target).getCurrentHp();
+                break;
+            case L2Playable:
+                hp = ((L2Playable) target).getCurrentHp();
+                break;
+            case L2Summon:
+                hp = ((L2Summon) target).getCurrentHp();
+                break;
+            case L2Decoy:
+                hp = ((L2Decoy) target).getCurrentHp();
+                break;
+            case L2PcInstance:
+                hp = ((L2PcInstance) target).getCurrentHp();
+                break;
+            case L2NpcInstance:
+                hp = ((L2NpcInstance) target).getCurrentHp();
+                break;
+            case L2MerchantInstance:
+                hp = ((L2MerchantInstance) target).getCurrentHp();
+                break;
+            case L2WarehouseInstance:
+                hp = ((L2WarehouseInstance) target).getCurrentHp();
+                break;
+            case L2StaticObjectInstance:
+                hp = ((L2StaticObjectInstance) target).getCurrentHp();
+                break;
+            case L2DoorInstance:
+                hp = ((L2DoorInstance) target).getCurrentHp();
+                break;
+            case L2TerrainObjectInstance:
+                hp = ((L2TerrainObjectInstance) target).getCurrentHp();
+                break;
+            case L2EffectPointInstance:
+                hp = ((L2EffectPointInstance) target).getCurrentHp();
+                break;
+
+            // Summons, Pets, Decoys and Traps
+            case L2ServitorInstance:
+                hp = ((L2ServitorInstance) target).getCurrentHp();
+                break;
+            case L2PetInstance:
+                hp = ((L2PetInstance) target).getCurrentHp();
+                break;
+            case L2BabyPetInstance:
+                hp = ((L2BabyPetInstance) target).getCurrentHp();
+                break;
+            case L2DecoyInstance:
+                hp = ((L2DecoyInstance) target).getCurrentHp();
+                break;
+            case L2TrapInstance:
+                hp = ((L2TrapInstance) target).getCurrentHp();
+                break;
+
+            // Attackable
+            case L2Attackable:
+                hp = ((L2Attackable) target).getCurrentHp();
+                break;
+            case L2GuardInstance:
+                hp = ((L2GuardInstance) target).getCurrentHp();
+                break;
+            case L2QuestGuardInstance:
+                hp = ((L2QuestGuardInstance) target).getCurrentHp();
+                break;
+            case L2MonsterInstance:
+                hp = ((L2MonsterInstance) target).getCurrentHp();
+                break;
+            case L2ChestInstance:
+                hp = ((L2ChestInstance) target).getCurrentHp();
+                break;
+            case L2ControllableMobInstance:
+                hp = ((L2ControllableMobInstance) target).getCurrentHp();
+                break;
+            case L2FeedableBeastInstance:
+                hp = ((L2FeedableBeastInstance) target).getCurrentHp();
+                break;
+            case L2TamedBeastInstance:
+                hp = ((L2TamedBeastInstance) target).getCurrentHp();
+                break;
+            case L2FriendlyMobInstance:
+                hp = ((L2FriendlyMobInstance) target).getCurrentHp();
+                break;
+            case L2RiftInvaderInstance:
+                hp = ((L2RiftInvaderInstance) target).getCurrentHp();
+                break;
+            case L2RaidBossInstance:
+                hp = ((L2RaidBossInstance) target).getCurrentHp();
+                break;
+            case L2GrandBossInstance:
+                hp = ((L2GrandBossInstance) target).getCurrentHp();
+                break;
+
+            // FlyMobs
+            case L2FlyTerrainObjectInstance:
+                hp = ((L2FlyTerrainObjectInstance) target).getCurrentHp();
+                break;
+
+            // Sepulchers
+            case L2SepulcherNpcInstance:
+                hp = ((L2SepulcherNpcInstance) target).getCurrentHp();
+                break;
+            case L2SepulcherMonsterInstance:
+                hp = ((L2SepulcherMonsterInstance) target).getCurrentHp();
+                break;
+
+            // Festival
+            case L2FestivalMonsterInstance:
+                hp = ((L2FestivalMonsterInstance) target).getCurrentHp();
+                break;
+
+            // Vehicles
+            case L2Vehicle:
+                hp = ((L2Vehicle) target).getCurrentHp();
+                break;
+            case L2BoatInstance:
+                hp = ((L2BoatInstance) target).getCurrentHp();
+                break;
+            case L2AirShipInstance:
+                hp = ((L2AirShipInstance) target).getCurrentHp();
+                break;
+            case L2ControllableAirShipInstance:
+                hp = ((L2ControllableAirShipInstance) target).getCurrentHp();
+                break;
+
+            // Siege
+            case L2DefenderInstance:
+                hp = ((L2DefenderInstance) target).getCurrentHp();
+                break;
+            case L2ArtefactInstance:
+                hp = ((L2ArtefactInstance) target).getCurrentHp();
+                break;
+            case L2ControlTowerInstance:
+                hp = ((L2ControlTowerInstance) target).getCurrentHp();
+                break;
+            case L2FlameTowerInstance:
+                hp = ((L2FlameTowerInstance) target).getCurrentHp();
+                break;
+            case L2SiegeFlagInstance:
+                hp = ((L2SiegeFlagInstance) target).getCurrentHp();
+                break;
+
+            // Fort Siege
+            case L2FortCommanderInstance:
+                hp = ((L2FortCommanderInstance) target).getCurrentHp();
+                break;
+
+            // Fort NPCs
+            case L2FortLogisticsInstance:
+                hp = ((L2FortLogisticsInstance) target).getCurrentHp();
+                break;
+            case L2FortManagerInstance:
+                hp = ((L2FortManagerInstance) target).getCurrentHp();
+                break;
+
+            // Seven Signs
+            case L2SignsPriestInstance:
+                hp = ((L2SignsPriestInstance) target).getCurrentHp();
+                break;
+            case L2DawnPriestInstance:
+                hp = ((L2DawnPriestInstance) target).getCurrentHp();
+                break;
+            case L2DuskPriestInstance:
+                hp = ((L2DuskPriestInstance) target).getCurrentHp();
+                break;
+            case L2DungeonGatekeeperInstance:
+                hp = ((L2DungeonGatekeeperInstance) target).getCurrentHp();
+                break;
+
+            // City NPCs
+            case L2AdventurerInstance:
+                hp = ((L2AdventurerInstance) target).getCurrentHp();
+                break;
+            case L2AuctioneerInstance:
+                hp = ((L2AuctioneerInstance) target).getCurrentHp();
+                break;
+            case L2ClanHallManagerInstance:
+                hp = ((L2ClanHallManagerInstance) target).getCurrentHp();
+                break;
+            case L2FishermanInstance:
+                hp = ((L2FishermanInstance) target).getCurrentHp();
+                break;
+            case L2ObservationInstance:
+                hp = ((L2ObservationInstance) target).getCurrentHp();
+                break;
+            case L2OlympiadManagerInstance:
+                hp = ((L2OlympiadManagerInstance) target).getCurrentHp();
+                break;
+            case L2PetManagerInstance:
+                hp = ((L2PetManagerInstance) target).getCurrentHp();
+                break;
+            case L2RaceManagerInstance:
+                hp = ((L2RaceManagerInstance) target).getCurrentHp();
+                break;
+            case L2TeleporterInstance:
+                hp = ((L2TeleporterInstance) target).getCurrentHp();
+                break;
+            case L2TrainerInstance:
+                hp = ((L2TrainerInstance) target).getCurrentHp();
+                break;
+            case L2VillageMasterInstance:
+                hp = ((L2VillageMasterInstance) target).getCurrentHp();
+                break;
+
+            // Doormens
+            case L2DoormenInstance:
+                hp = ((L2DoormenInstance) target).getCurrentHp();
+                break;
+            case L2CastleDoormenInstance:
+                hp = ((L2CastleDoormenInstance) target).getCurrentHp();
+                break;
+            case L2FortDoormenInstance:
+                hp = ((L2FortDoormenInstance) target).getCurrentHp();
+                break;
+            case L2ClanHallDoormenInstance:
+                hp = ((L2ClanHallDoormenInstance) target).getCurrentHp();
+                break;
+
+            // Custom
+            case L2ClassMasterInstance:
+                hp = ((L2ClassMasterInstance) target).getCurrentHp();
+                break;
+            case L2SchemeBufferInstance:
+                hp = ((L2SchemeBufferInstance) target).getCurrentHp();
+                break;
+        }
+
+        return hp;
+    }
+
+    protected boolean checkIfTargetIsBadPlayer(L2Object target) {
+        boolean badPlayer = false;
+        if (target.getInstanceType() == InstanceType.L2PcInstance) {
+            badPlayer = ((L2PcInstance) target).getPvpFlag() == 1 || ((L2PcInstance) target).getKarma() > 0;
+        }
+
+        return badPlayer;
+    }
+
+    protected void tryTargetRandomCreatureByTypeInRadius(int radius)
     {
         if(_fakePlayer.getTarget() == null) {
             if (_targets.size() > 0) {
@@ -201,28 +459,54 @@ public abstract class FakePlayerAI {
                 Collections.sort(_targets, (WordRegion1, WordRegion2) -> (int) (_fakePlayer.calculateDistance2D(WordRegion1.getX(), WordRegion1.getY(), WordRegion1.getZ()) - _fakePlayer.calculateDistance2D(WordRegion2.getX(), WordRegion2.getY(), WordRegion2.getZ())));
             }
 
-            if(!_targets.isEmpty()) {
+            if (!_targets.isEmpty()) {
                 // Get a Random Target
                 // L2Object target = targets.get(Rnd.get(0, targets.size() -1 ));
                 // Get the closest Target
-//                L2Object target = _targets.get(0);
                 L2Object target = selectTarget(0, radius);
 
-                if (target.canBeAttacked()) {
+                // Todo: don't do ks in another player, need check 'target.getActingPlayer()', maybe only in mobs, not boss
+                if (target.canBeAttacked() && (getTargetCurrentHp(target) > 0)) {
                     _fakePlayer.setTarget(target);
                 } else {
                     _fakePlayer.setTarget(null);
                 }
             }
-        }else {
-            if(_fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2MonsterInstance) && ((L2MonsterInstance)_fakePlayer.getTarget()).isDead() || _fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2Decoy) && ((L2Decoy)_fakePlayer.getTarget()).isDead()) {
+        } else {
+
+            // todo: this section of code will be used when test and code Spoil class
+            // todo: maybe this code will not be user right here, but will be used
+//            boolean validInstanceType = (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance || _fakePlayer.getTarget() instanceof L2Character);
+//
+//            if(_fakePlayer.getTarget() != null && validInstanceType) {
+//                if (_fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2MonsterInstance)) {
+//                    L2MonsterInstance target = (L2MonsterInstance) _fakePlayer.getTarget();
+//                    System.out.println("condition 1: " +!(target.getCurrentHp() > 0) + " | condition 2" + !target.isSweepActive());
+//                    if (!(target.getCurrentHp() > 0) && !target.isSweepActive()) {
+//                        _fakePlayer.setTarget(null);
+//                    }
+//                } else if (_fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2Character)) {
+//                    L2Character target = (L2Character) _fakePlayer.getTarget();
+//                    System.out.println("condition 1: " +!(target.getCurrentHp() > 0) + " | condition 2" + !target.isSweepActive());
+//                    if (!(target.getCurrentHp() > 0) && !target.isSweepActive()) {
+//                        _fakePlayer.setTarget(null);
+//                    }
+//                } else if (_fakePlayer.getTarget().getInstanceType().isType(InstanceType.L2Decoy)) {
+//                    L2Decoy target = (L2Decoy) _fakePlayer.getTarget();
+//                    System.out.println("condition 1: " +!(target.getCurrentHp() > 0) + " | condition 2" + !target.isSweepActive());
+//                    if (!(target.getCurrentHp() > 0) && !target.isSweepActive()) {
+//                        _fakePlayer.setTarget(null);
+//                    }
+//                }
+
+            if (_fakePlayer.getTarget() != null && !(getTargetCurrentHp(_fakePlayer.getTarget()) > 0)) {
                 _fakePlayer.setTarget(null);
             }
         }
     }
 
     public void castSpell(Skill skill) {
-        if(!_fakePlayer.isCastingNow()) {
+        if(!_fakePlayer.isCastingNow() || _fakePlayer.isSkillDisabled(skill)) {
             if (skill.getTargetType() == L2TargetType.GROUND)
             {
                 if (maybeMoveToPosition((_fakePlayer).getCurrentSkillWorldPosition(), skill.getCastRange()))
@@ -259,8 +543,8 @@ public abstract class FakePlayerAI {
             }
 
             _fakePlayer.doCast(skill);
-        }else {
-            _fakePlayer.forceAutoAttack(_fakePlayer.getTarget());
+        } else {
+            _fakePlayer.forceAutoAttack();
         }
     }
 
