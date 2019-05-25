@@ -5,7 +5,7 @@ import com.l2jmobius.gameserver.data.xml.impl.AdminData;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
 import com.l2jmobius.gameserver.instancemanager.CursedWeaponsManager;
 import com.l2jmobius.gameserver.model.*;
-import com.l2jmobius.gameserver.model.actor.L2Decoy;
+import com.l2jmobius.gameserver.model.actor.L2Character;
 import com.l2jmobius.gameserver.model.actor.L2Playable;
 import com.l2jmobius.gameserver.model.actor.appearance.PcAppearance;
 import com.l2jmobius.gameserver.model.actor.instance.L2DoorInstance;
@@ -459,9 +459,15 @@ public class FakePlayer extends L2PcInstance {
         }
 
         // GeoData Los Check or dz > 1000
-        if (!GeoEngine.getInstance().canSeeTarget(this,this.getTarget())) {
+        if (!GeoEngine.getInstance().canSeeTarget(this, this.getTarget())) {
             return;
         }
+
+        if (this.isCastingNow()) {
+            return;
+        }
+
+        this.doAttack((L2Character) this.getTarget());
 
         // Notify AI with ATTACK
         getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, this.getTarget());

@@ -51,6 +51,7 @@ public abstract class CombatAI extends FakePlayerAI {
 
         if(_fakePlayer.getTarget() != null && validInstanceType) {
             _fakePlayer.forceAutoAttack();
+
             if (_fakePlayer.getTarget() != null && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
                 if(Rnd.nextDouble() < chanceOfUsingSkill()) {
                     if(getOffensiveSpells() != null && !getOffensiveSpells().isEmpty()) {
@@ -61,6 +62,8 @@ public abstract class CombatAI extends FakePlayerAI {
                             _fakePlayer.forceAutoAttack();
                         }
                     }
+                } else {
+                    _fakePlayer.forceAutoAttack();
                 }
             }
         }
@@ -102,7 +105,7 @@ public abstract class CombatAI extends FakePlayerAI {
         if(playerLevel >= 61 && playerLevel < 76)
             return 1344; // Mithril Arrow
         if(playerLevel >= 76)
-            return 1345; // shining
+            return 1345; // Shinning Arrow
 
         return 0;
     }
@@ -182,14 +185,12 @@ public abstract class CombatAI extends FakePlayerAI {
 
             if (skillIndex == skillListSize) {
                 skillIndex = 0;
+                return null;
             }
 
             Skill skill = _fakePlayer.getKnownSkill(spellsOrdered.get(skillIndex).getSkillId());
 
-            // todo: high-priority: the reuse validation is not working
-            boolean hasReuseHashCode = _fakePlayer.hasSkillReuse(skill.getReuseHashCode());
-
-            if (skill != null && (!hasReuseHashCode || !_fakePlayer.isSkillDisabled(skill))) {
+            if (skill != null && !_fakePlayer.isSkillDisabled(skill)) {
                 _fakePlayer.setCurrentSkill(skill, !_fakePlayer.getTarget().isInsideZone(ZoneId.PEACE), false);
 
                 while(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
