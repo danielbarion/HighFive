@@ -22,7 +22,8 @@ public class AdminFakePlayersVert implements IAdminCommandHandler {
                     "admin_spawnrandom",
                     "admin_deletefake",
                     "admin_spawnenchanter",
-                    "admin_spawnwalker"
+                    "admin_spawnwalker",
+                    "admin_fakespawn"
             };
 
     @Override
@@ -37,6 +38,18 @@ public class AdminFakePlayersVert implements IAdminCommandHandler {
         html.replace("%fakecount%", FakePlayerManager.INSTANCE.getFakePlayersCount());
         html.replace("%taskcount%", FakePlayerTaskManager.INSTANCE.getTaskCount());
         activeChar.sendPacket(html);
+    }
+
+    private void spawnFakePlayer(String occupation, L2PcInstance activeChar) {
+        FakePlayer fakePlayer;
+
+        if (occupation != null) {
+            fakePlayer = FakePlayerManager.INSTANCE.spawnPlayer(occupation, activeChar.getX(),activeChar.getY(),activeChar.getZ());
+        } else {
+            fakePlayer = FakePlayerManager.INSTANCE.spawnPlayer(activeChar.getX(),activeChar.getY(),activeChar.getZ());
+        }
+
+        fakePlayer.assignDefaultAI();
     }
 
     @Override
@@ -87,6 +100,23 @@ public class AdminFakePlayersVert implements IAdminCommandHandler {
             }
             return true;
         }
+
+        if (command.startsWith("admin_fakespawn")) {
+            if(command.contains(" ")) {
+                String args[] = command.split(" ");
+
+                String occupation = args[1];
+                String htm = args[2];
+
+                spawnFakePlayer(occupation, activeChar);
+
+                if(htm.equalsIgnoreCase("htm")) {
+                    showFakeDashboard(activeChar);
+                }
+            }
+            return true;
+        }
+
 		/*if (command.startsWith("admin_takecontrol"))
 		{
 			if(activeChar.getTarget() != null && activeChar.getTarget() instanceof FakePlayer) {

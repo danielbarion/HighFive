@@ -27,6 +27,26 @@ public enum FakePlayerManager {
         FakePlayerTaskManager.INSTANCE.initialise();
     }
 
+    public FakePlayer spawnPlayer(String occupation, int x, int y, int z) {
+        FakePlayer activeChar = FakeHelpers.createFakePlayer(occupation);
+
+        if (Config.PLAYER_SPAWN_PROTECTION > 0) {
+            activeChar.setSpawnProtection(true);
+        }
+
+        activeChar.spawnMe(x, y, z);
+        activeChar.setInitialWorldRegion(activeChar.getWorldRegion());
+        activeChar.onPlayerEnter();
+        handlePlayerClanOnSpawn(activeChar);
+
+//        if (!activeChar.isGM() && (!activeChar.isInSiege() || activeChar.getSiegeState() < 2) && activeChar.isInsideZone(ZoneId.SIEGE)) {
+//            activeChar.teleToLocation(TeleportLocation.TOWN);
+//        }
+
+        activeChar.heal();
+        return activeChar;
+    }
+
     public FakePlayer spawnPlayer(int x, int y, int z) {
         FakePlayer activeChar = FakeHelpers.createRandomFakePlayer();
 

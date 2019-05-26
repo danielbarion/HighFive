@@ -78,6 +78,48 @@ public class FakeHelpers {
         return 2000;
     }
 
+
+
+    public static FakePlayer createFakePlayer(String occupation) {
+        int objectId = IdFactory.getInstance().getNextId();
+        String accountName = "AutoPilot";
+        String playerName = FakePlayerNameManager.INSTANCE.getRandomAvailableName();
+
+        ClassId classId;
+
+        System.out.println(occupation);
+
+        switch (occupation) {
+            case "Saggitarius":
+                classId = ClassId.SAGITTARIUS;
+                break;
+            default:
+                classId = getThirdClasses().get(Rnd.get(0, getThirdClasses().size() - 1));
+                break;
+        }
+
+        final L2PcTemplate template = PlayerTemplateData.getInstance().getTemplate(classId);
+        PcAppearance app = getRandomAppearance(template.getRace());
+        FakePlayer player = new FakePlayer(objectId, template, accountName, app);
+
+        player.setName(playerName);
+        player.setAccessLevel(0);
+
+        // Add player into database table
+//        PlayerInfoTable.getInstance().addPlayer(objectId, accountName, playerName, player.getAccessLevel().getLevel());
+        player.setBaseClass(player.getClassId());
+        setLevel(player, 78);
+        player.rewardSkills();
+
+        giveArmorsByClass(player);
+//        Weapon random enchanted from +7 between +20
+//        giveWeaponsByClass(player,true);
+        giveWeaponsByClass(player,false);
+        player.heal();
+
+        return player;
+    }
+
     public static FakePlayer createRandomFakePlayer() {
         int objectId = IdFactory.getInstance().getNextId();
         String accountName = "AutoPilot";

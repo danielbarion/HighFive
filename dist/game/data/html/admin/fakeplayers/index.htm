@@ -36,6 +36,23 @@
             <tr>
                 <td align="center"><button value="Spawn Random Fake" action="bypass admin_spawnrandom htm" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Fight3None_Down" fore="L2UI_CT1.OlympiadWnd_DF_Fight3None" /></td>
             </tr>
+            <tr>
+                <td align="center">
+                    <img src="L2UI.SquareGray" width=290 height=1>
+                </td>
+            </tr>
+        </table>
+        <table width="290">
+            <tr>
+                <td width=80>Fake Class:</td>
+                <td>
+                    <!--Class name in list max-length need to be <=16 -->
+                    <combobox width=130 var=fakeclass list="Sagittarius;MoonlightSent;" />
+                </td>
+                <td>
+                    <button value="Spawn Fake" action="bypass admin_fakespawn $fakeclass htm" width=80 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+                </td>
+            </tr>
         </table>
     </body>
 </html>
