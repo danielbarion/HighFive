@@ -435,7 +435,7 @@ public abstract class FakePlayerAI {
 
     protected void tryTargetRandomCreatureByTypeInRadius(int radius)
     {
-        if(_fakePlayer.getTarget() == null) {
+        if(_fakePlayer.getTarget() == null || !_fakePlayer.getTarget().getInstanceType().isTypes(InstanceType.L2PcInstance, InstanceType.L2Playable)) {
             if (_targets.size() > 0) {
                 // Always clear the target list before start add or _targets will just add more targets
                 _targets.clear();
@@ -460,14 +460,21 @@ public abstract class FakePlayerAI {
             }
 
             if (!_targets.isEmpty()) {
-                // Get a Random Target
+                // Get a Random Target from the targets array
                 // L2Object target = targets.get(Rnd.get(0, targets.size() -1 ));
-                // Get the closest Target
+
+                // Get the closest Target from the targets array
                 L2Object target = selectTarget(0, radius);
 
                 // Todo: don't do ks in another player, need check 'target.getActingPlayer()', maybe only in mobs, not boss
                 if (target.canBeAttacked() && (getTargetCurrentHp(target) > 0)) {
-                    _fakePlayer.setTarget(target);
+                    if (_fakePlayer.getTarget() != null && checkIfTargetIsBadPlayer(target)) {
+                        _fakePlayer.setTarget(target);
+                    } else if (_fakePlayer.getTarget() == null) {
+                        _fakePlayer.setTarget(target);
+                    } else {
+                        _fakePlayer.setTarget(null);
+                    }
                 } else {
                     _fakePlayer.setTarget(null);
                 }

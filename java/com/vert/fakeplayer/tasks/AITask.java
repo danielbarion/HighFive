@@ -25,16 +25,34 @@ public class AITask implements Runnable {
         adjustPotentialIndexOutOfBounds();
         List<FakePlayer> fakePlayers = FakePlayerManager.INSTANCE.getFakePlayers().subList(_from, _to);
         try {
-            if (fakePlayers.size() > 0) {
-                List<FakePlayer> notBusyFakes = fakePlayers.stream().filter(x-> !x.getFakeAi().isBusyThinking()).collect(Collectors.toList());
-                if (notBusyFakes.size() > 0) {
-                    notBusyFakes.forEach(x-> x.getFakeAi().thinkAndAct());
-                }
-            }
-        }catch(Exception ex) {
+            aiThinkAndAct(fakePlayers);
+        } catch(Exception ex) {
             ex.printStackTrace();
         }
 
+    }
+
+    public void aiThinkAndAct(List<FakePlayer> fakePlayers) {
+        if (fakePlayers.size() > 0) {
+            if (fakePlayers.stream().anyMatch(player -> {
+                if (player != null && player.getFakeAi() != null) {
+                    return !player.getFakeAi().isBusyThinking();
+                }
+
+                return false;
+            })) {
+                List<FakePlayer> notBusyFakes = fakePlayers.stream().filter(player-> {
+                    if (player != null && player.getFakeAi() != null) {
+                        return !player.getFakeAi().isBusyThinking();
+                    }
+
+                    return false;
+                }).collect(Collectors.toList());
+                if (notBusyFakes.size() > 0) {
+                    notBusyFakes.forEach(player-> player.getFakeAi().thinkAndAct());
+                }
+            }
+        }
     }
 
     private void adjustPotentialIndexOutOfBounds() {
