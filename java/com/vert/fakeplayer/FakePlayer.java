@@ -243,7 +243,7 @@ public class FakePlayer extends L2PcInstance {
             }
 
             // Check if the target is attackable
-            if (!target.isAttackable() && !getAccessLevel().allowPeaceAttack()) {
+            if (!target.isAttackable() && !getAccessLevel().allowPeaceAttack() && target != this) {
                 // If target is not attackable, send ActionFailed
                 sendPacket(ActionFailed.STATIC_PACKET);
                 return false;

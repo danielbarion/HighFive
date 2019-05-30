@@ -1,6 +1,7 @@
 package com.vert.fakeplayer.ai;
 
 import com.l2jmobius.commons.util.Rnd;
+import com.l2jmobius.gameserver.data.xml.impl.SkillData;
 import com.l2jmobius.gameserver.enums.InstanceType;
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
@@ -8,6 +9,8 @@ import com.l2jmobius.gameserver.model.L2Object;
 import com.l2jmobius.gameserver.model.actor.L2Character;
 import com.l2jmobius.gameserver.model.actor.L2Decoy;
 import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
+import com.l2jmobius.gameserver.model.skills.BuffInfo;
+import com.l2jmobius.gameserver.model.skills.EffectScope;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.zone.ZoneId;
 
@@ -17,8 +20,11 @@ import com.vert.fakeplayer.models.HealingSpell;
 import com.vert.fakeplayer.models.OffensiveSpell;
 import com.vert.fakeplayer.models.SupportSpell;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
@@ -222,37 +228,37 @@ public abstract class CombatAI extends FakePlayerAI {
     }
 
     protected void selfSupportBuffs() {
-//        List<Integer> activeEffects = Arrays.stream(_fakePlayer.getEffectList().getEffects())
-//                .map(x->x.getSkill().getId())
-//                .collect(Collectors.toList());
-//
-//        for(SupportSpell selfBuff : getSelfSupportSpells()) {
-//            if(activeEffects.contains(selfBuff.getSkillId()))
-//                continue;
-//
-//            Skill skill = SkillTable.getInstance().getInfo(selfBuff.getSkillId(), _fakePlayer.getSkillLevel(selfBuff.getSkillId()));
-//
-//            if(!_fakePlayer.checkUseMagicConditions(skill,true,false))
-//                continue;
-//
-//            switch(selfBuff.getCondition()) {
-//                case LESSHPPERCENT:
-//                    if(Math.round(100.0 / _fakePlayer.getMaxHp() * _fakePlayer.getCurrentHp()) <= selfBuff.getConditionValue()) {
-//                        castSelfSpell(skill);
-//                    }
-//                    break;
-//                case MISSINGCP:
-//                    if(getMissingHealth() >= selfBuff.getConditionValue()) {
-//                        castSelfSpell(skill);
-//                    }
-//                    break;
-//                case NONE:
-//                    castSelfSpell(skill);
-//                default:
-//                    break;
-//            }
-//
-//        }
+        List<Integer> activeEffects = _fakePlayer.getEffectList().getEffects().stream()
+                .map(effect -> effect.getSkill().getId()).collect(Collectors.toList());
+
+        for(SupportSpell selfBuff : getSelfSupportSpells()) {
+            if(activeEffects.contains(selfBuff.getSkillId()))
+                continue;
+
+            Skill skill = SkillData.getInstance().getSkill(selfBuff.getSkillId(), _fakePlayer.getSkillLevel(selfBuff.getSkillId()));
+
+            if(!_fakePlayer.checkUseMagicConditions(skill,true,false)) {
+                continue;
+            }
+
+            switch(selfBuff.getCondition()) {
+                case LESSHPPERCENT:
+                    if(Math.round(100.0 / _fakePlayer.getMaxHp() * _fakePlayer.getCurrentHp()) <= selfBuff.getConditionValue()) {
+                        castSelfSpell(skill);
+                    }
+                    break;
+                case MISSINGCP:
+                    if(getMissingHealth() >= selfBuff.getConditionValue()) {
+                        castSelfSpell(skill);
+                    }
+                    break;
+                case NONE:
+                    castSelfSpell(skill);
+                default:
+                    break;
+            }
+
+        }
     }
 
     private double getMissingHealth() {
