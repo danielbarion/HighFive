@@ -26,49 +26,57 @@ import java.util.*;
  */
 public class FakeHelpers {
     public static int[][] getFighterBuffs() {
-        return new int[][] { { 1204, 2 }, // wind walk
-                { 1040, 3 }, // shield
+        return new int[][] {
+                { 1048, 6 }, // Blessed Soul
+                { 1045, 6 }, // Blessed Body
+                { 1204, 2 }, // Wind Walk
                 { 1035, 4 }, // Mental Shield
-                { 1045, 6 }, // Bless the Body
-                { 1068, 3 }, // might
-                { 1062, 2 }, // besekers
-                { 1086, 2 }, // haste
-                { 1077, 3 }, // focus
+                { 1062, 2 }, // Berserker Spirit
+                { 1086, 2 }, // Haste
+                { 1077, 3 }, // Focus
                 { 1388, 3 }, // Greater Might
-                { 1036, 2 }, // magic barrier
-                { 274, 1 }, // dance of fire
-                { 273, 1 }, // dance of fury
-                { 268, 1 }, // dance of wind
-                { 271, 1 }, // dance of warrior
+                { 1242, 3 }, // Death Whisper
+                { 1036, 2 }, // Magic Barrier
+                { 1268, 4 }, // Vampiric Rage
+                { 274, 1 }, // Dance of Fire
+                { 273, 1 }, // Dance of Fury
+                { 271, 1 }, // Dance of the Warrior
+                { 310, 1 }, // Dance of the Vampire
                 { 267, 1 }, // Song of Warding
+                { 268, 1 }, // Song of Wind
                 { 349, 1 }, // Song of Renewal
-                { 264, 1 }, // song of earth
-                { 269, 1 }, // song of hunter
-                { 364, 1 }, // song of champion
-                { 1363, 1 }, // chant of victory
-                { 4699, 5 } // Blessing of Queen
+                { 264, 1 }, // Song of Earth
+                { 269, 1 }, // Song of Hunter
+                { 364, 1 }, // Song of Champion
+                { 1363, 1 }, // Chant of Victory
+                { 4699, 5 }, // Blessing of Queen
+                { 4703, 4 }, // Gift of Seraphim
+                { 1499, 1 } // Improved Combat
         };
     }
 
     public static int[][] getMageBuffs() {
-        return new int[][] { { 1204, 2 }, // wind walk
-                { 1040, 3 }, // shield
+        return new int[][] {
+                { 1048, 6 }, // Blessed Soul
+                { 1045, 6 }, // Blessed Body
+                { 1204, 2 }, // Wind Walk
+                { 1499, 1 }, // Improved Combat
                 { 1035, 4 }, // Mental Shield
                 { 4351, 6 }, // Concentration
                 { 1036, 2 }, // Magic Barrier
                 { 1045, 6 }, // Bless the Body
                 { 1303, 2 }, // Wild Magic
-                { 1085, 3 }, // acumen
-                { 1062, 2 }, // besekers
-                { 1059, 3 }, // empower
+                { 1085, 3 }, // Acumen
+                { 1062, 2 }, // Berserker Spirit
+                { 1059, 3 }, // Empower
                 { 1389, 3 }, // Greater Shield
-                { 273, 1 }, // dance of the mystic
-                { 276, 1 }, // dance of concentration
+                { 273, 1 }, // Dance of the mystic
+                { 276, 1 }, // Dance of concentration
                 { 365, 1 }, // Dance of Siren
-                { 264, 1 }, // song of earth
-                { 268, 1 }, // song of wind
+                { 268, 1 }, // Song of Wind
                 { 267, 1 }, // Song of Warding
                 { 349, 1 }, // Song of Renewal
+                { 264, 1 }, // Song of Earth
                 { 1413, 1 }, // Magnus\' Chant
                 { 4703, 4 } // Gift of Seraphim
         };
@@ -565,9 +573,11 @@ public class FakeHelpers {
         for (int id : itemIds) {
             player.getInventory().addItem("Weapon", id, 1, player, null);
             L2ItemInstance item = player.getInventory().getItemByItemId(id);
+
             if(randomlyEnchant) {
                 item.setEnchantLevel(Rnd.get(7, 20));
             }
+
             player.getInventory().equipItemAndRecord(item);
             player.getInventory().reloadEquippedItems();
         }
@@ -633,11 +643,12 @@ public class FakeHelpers {
         ais.put(ClassId.DUELIST, DuelistAI.class);
         ais.put(ClassId.GRAND_KHAVATARI, GrandKhavatariAI.class);
         ais.put(ClassId.DREADNOUGHT, DreadnoughtAI.class);
+
         return ais;
     }
 
+    // Todo: check the param "race" and remove him if not needed
     public static PcAppearance getRandomAppearance(Race race) {
-
         Boolean randomSex = Rnd.get(0, 1) == 0;
         int hairStyle = Rnd.get(0, randomSex == false ? 4 : 6);
         int hairColor = Rnd.get(0, 3);
@@ -651,17 +662,20 @@ public class FakeHelpers {
             long pXp = player.getExp();
             long tXp = ExperienceData.getInstance().getExpForLevel(level);
 
-            if (pXp > tXp)
+            if (pXp > tXp) {
                 player.removeExpAndSp(pXp - tXp, 0);
-            else if (pXp < tXp)
+
+            } else if (pXp < tXp) {
                 player.addExpAndSp(tXp - pXp, 0);
+            }
         }
     }
 
     public static Class<? extends FakePlayerAI> getAIbyClassId(ClassId classId) {
         Class<? extends FakePlayerAI> ai = getAllAIs().get(classId);
-        if (ai == null)
+        if (ai == null) {
             return FallbackAI.class;
+        }
 
         return ai;
     }
