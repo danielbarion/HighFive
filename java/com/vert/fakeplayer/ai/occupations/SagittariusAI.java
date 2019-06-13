@@ -99,6 +99,7 @@ public class SagittariusAI extends CombatAI implements IConsumableSpender {
         mappedSkills.add(990);  // Death Shot
         mappedSkills.add(771);  // Flame Hawk
         mappedSkills.add(924);  // Seven Arrow
+        mappedSkills.add(354);  // Hamstring Shot
 
         return mappedSkills.stream().anyMatch(id -> id == skill.getId());
     }
