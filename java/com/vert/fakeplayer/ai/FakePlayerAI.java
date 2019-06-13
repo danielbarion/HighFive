@@ -128,14 +128,6 @@ public abstract class FakePlayerAI {
         _fakePlayer.revalidateZone(true);
     }
 
-    protected void getTargetsSurroudingInitialWorldRegion() {
-        L2WorldRegion[] wordRegions = _fakePlayer.getInitialWorldRegion().getSurroundingRegions();
-
-        Arrays.stream(wordRegions).forEach(region -> {
-            Arrays.stream(region.getSurroundingRegions()).forEach(surroudingRegion -> getTargetsInRegion(surroudingRegion));
-        });
-    }
-
     protected void getTargetsSurroudingWorldRegion() {
         L2WorldRegion[] wordRegions = _fakePlayer.getInitialWorldRegion().getSurroundingRegions();
 
@@ -441,15 +433,7 @@ public abstract class FakePlayerAI {
                 _targets.clear();
             }
 
-            // Initial Zero Zone Level
-            getTargetsInRegion(_fakePlayer.getInitialWorldRegion());
-
-            // First Zone Level
-            if (_targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
-                getTargetsSurroudingInitialWorldRegion();
-            }
-
-            // Second Zone Level
+            // Get Targets
             if (_targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
                 getTargetsSurroudingWorldRegion();
             }
