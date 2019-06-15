@@ -83,7 +83,7 @@ public class FakeHelpers {
     }
 
     public static int getTestTargetRange() {
-        return 2000;
+        return 800;
     }
 
 
@@ -100,6 +100,9 @@ public class FakeHelpers {
         switch (occupation) {
             case "Saggitarius":
                 classId = ClassId.SAGITTARIUS;
+                break;
+            case "MoonlightSent":
+                classId = ClassId.MOONLIGHT_SENTINEL;
                 break;
             default:
                 classId = getThirdClasses().get(Rnd.get(0, getThirdClasses().size() - 1));
@@ -607,11 +610,11 @@ public class FakeHelpers {
         // classes.add(ClassId.SHILLIEN_SAINT);
 
         classes.add(ClassId.SAGITTARIUS);
+        classes.add(ClassId.MOONLIGHT_SENTINEL);
 //        classes.add(ClassId.ARCHMAGE);
 //        classes.add(ClassId.SOULTAKER);
 //        classes.add(ClassId.MYSTIC_MUSE);
 //        classes.add(ClassId.STORM_SCREAMER);
-//        classes.add(ClassId.MOONLIGHT_SENTINEL);
 //        classes.add(ClassId.GHOST_SENTINEL);
 //        classes.add(ClassId.ADVENTURER);
 //        classes.add(ClassId.WIND_RIDER);

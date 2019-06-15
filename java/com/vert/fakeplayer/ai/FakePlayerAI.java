@@ -642,8 +642,7 @@ public abstract class FakePlayerAI {
                         return;
 
                     sendPacket = false;
-                }
-                else if (_fakePlayer.isOnGeodataPath())
+                } else if (_fakePlayer.isOnGeodataPath())
                 {
                     if (System.currentTimeMillis() < _moveToPawnTimeout + 1000)
                         return;
