@@ -4,6 +4,7 @@ import com.l2jmobius.Config;
 import com.l2jmobius.gameserver.instancemanager.ZoneManager;
 import com.l2jmobius.gameserver.model.L2Clan;
 import com.l2jmobius.gameserver.model.L2World;
+import com.l2jmobius.gameserver.model.TeleportWhereType;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.zone.ZoneId;
 import com.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListUpdate;
@@ -39,9 +40,10 @@ public enum FakePlayerManager {
         activeChar.onPlayerEnter();
         handlePlayerClanOnSpawn(activeChar);
 
-//        if (!activeChar.isGM() && (!activeChar.isInSiege() || activeChar.getSiegeState() < 2) && activeChar.isInsideZone(ZoneId.SIEGE)) {
-//            activeChar.teleToLocation(TeleportLocation.TOWN);
-//        }
+        // todo: need test the siege validation
+        if (!activeChar.isGM() && (!activeChar.isInSiege() || activeChar.getSiegeState() < 2) && activeChar.isInsideZone(ZoneId.SIEGE)) {
+            activeChar.teleToLocation(TeleportWhereType.TOWN);
+        }
 
         activeChar.heal();
         return activeChar;
