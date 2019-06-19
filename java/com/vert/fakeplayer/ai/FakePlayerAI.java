@@ -167,6 +167,7 @@ public abstract class FakePlayerAI {
         }
 
         // Get the most bad player (pk or just flagged) if has one
+        // todo: try use filter getFirst()
         if (_targets.stream().anyMatch(item -> (checkIfTargetIsBadPlayer(item)))) {
             Stream<L2Object> badPlayers = _targets.stream().filter(item -> checkIfTargetIsBadPlayer(item));
             L2Object badPlayer;

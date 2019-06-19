@@ -47,7 +47,8 @@ public abstract class CombatAI extends FakePlayerAI {
             Skill skill = _fakePlayer.getKnownSkill(botSkill.getSkillId());
 
             if(skill != null) {
-                castSpell(skill);
+//                castSpell(skill);
+                _fakePlayer.doCast(skill);
             }
         }
     }
@@ -63,7 +64,8 @@ public abstract class CombatAI extends FakePlayerAI {
                     if(getOffensiveSpells() != null && !getOffensiveSpells().isEmpty()) {
                         Skill skill = getRandomAvaiableFighterSpellForTarget();
                         if(skill != null) {
-                            castSpell(skill);
+                            _fakePlayer.doCast(skill);
+//                            castSpell(skill);
                         } else {
                             _fakePlayer.forceAutoAttack();
                         }
