@@ -43,6 +43,7 @@ public enum FakePlayerManager {
         // todo: need test the siege validation
         if (!activeChar.isGM() && (!activeChar.isInSiege() || activeChar.getSiegeState() < 2) && activeChar.isInsideZone(ZoneId.SIEGE)) {
             activeChar.teleToLocation(TeleportWhereType.TOWN);
+            activeChar.sendMessage("You have been teleported to the nearest town.");
         }
 
         activeChar.heal();
