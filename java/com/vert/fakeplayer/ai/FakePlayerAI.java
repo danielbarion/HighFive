@@ -133,7 +133,11 @@ public abstract class FakePlayerAI {
 
         Arrays.stream(wordRegions).forEach(region ->
             Arrays.stream(region.getSurroundingRegions()).forEach(surroudingRegion ->
-                Arrays.stream(surroudingRegion.getSurroundingRegions()).forEach(secondLevelRegion -> getTargetsInRegion(secondLevelRegion))
+                // NOTE: In Varkas this will get + - 3k of targets in every scan
+                // Arrays.stream(surroudingRegion.getSurroundingRegions()).forEach(secondLevelRegion -> getTargetsInRegion(secondLevelRegion))
+
+                // NOTE: In Varkas this will get + - 370 of targets in every scan
+                getTargetsInRegion(surroudingRegion)
         ));
     }
 
