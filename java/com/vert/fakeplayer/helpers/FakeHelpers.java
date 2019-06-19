@@ -98,7 +98,7 @@ public class FakeHelpers {
         System.out.println(occupation);
 
         switch (occupation) {
-            case "Saggitarius":
+            case "Sagittarius":
                 classId = ClassId.SAGITTARIUS;
                 break;
             case "MoonlightSent":
