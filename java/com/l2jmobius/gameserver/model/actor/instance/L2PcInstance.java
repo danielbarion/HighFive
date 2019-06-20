@@ -323,7 +323,7 @@ import com.l2jmobius.gameserver.util.Broadcast;
 import com.l2jmobius.gameserver.util.EnumIntBitmask;
 import com.l2jmobius.gameserver.util.FloodProtectors;
 import com.l2jmobius.gameserver.util.Util;
-import com.vert.fakeplayer.FakePlayer;
+import com.vert.autopilot.FakePlayer;
 
 /**
  * This class represents all player characters in the world.<br>

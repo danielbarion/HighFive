@@ -32,7 +32,7 @@ import com.l2jmobius.gameserver.network.SystemMessageId;
 import com.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import com.l2jmobius.gameserver.network.serverpackets.StopMove;
 import com.l2jmobius.gameserver.util.Util;
-import com.vert.fakeplayer.FakePlayer;
+import com.vert.autopilot.FakePlayer;
 
 public class MoveBackwardToLocation implements IClientIncomingPacket
 {

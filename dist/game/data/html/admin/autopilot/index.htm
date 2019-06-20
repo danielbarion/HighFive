@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" noscrollbar>
+    <head>
+        <meta charset="UTF-8">
+        <title>Autopilot Engine</title>
+    </head>
+    <body>
+        <table border=0 cellpadding=0 cellspacing=0 width=290 background="L2UI_CT1.Windows_DF_TooltipBG">
+            <tr>
+                <td height=20></td>
+            </tr>
+            <tr>
+                <td align=center><font color=696969>LINEAGE II - Fake Players Dashboard</font>
+                    <button value="Help" action="bypass -h admin_html autopilot/help/fakes.htm" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+                </td>
+            </tr>
+            <tr>
+                <td height=20></td>
+            </tr>
+        </table>
+        <table border=0 cellpadding=0 cellspacing=0 width=290 background="L2UI_CT1.Windows_DF_TooltipBG">
+            <tr>
+                <td height=20></td>
+            </tr>
+            <tr>
+                <td align=center><font color=696969>Fake Player count: <font color="LEVEL">%fakecount%</font></font></td>
+            </tr>
+            <tr>
+                <td height=10></td>
+            </tr>
+            <tr>
+                <td align=center><font color=696969>AI Tasks running: <font color="LEVEL">%taskcount%</font></font></td>
+            </tr>
+            <tr>
+                <td height=20></td>
+            </tr>
+        </table>
+        <br>
+        <table width="290">
+            <tr>
+                <td align="center" height=40>
+                    <button value="Spawn Random Fake" action="bypass admin_spawnrandom htm" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Fight3None_Down" fore="L2UI_CT1.OlympiadWnd_DF_Fight3None" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center" height=10>
+                    <img src="L2UI.SquareGray" width=290 height=1>
+                </td>
+            </tr>
+        </table>
+        <table width="290">
+            <tr>
+                <td width=30 height=20>Level</td>
+                <td width=50 height=20>Class</td>
+            </tr>
+            <tr>
+                <td width=30>
+                    <edit width=30 height=12 var=fakelevel />
+                </td>
+                <td>
+                    <!-- Class name in list max-length need to be <=16 -->
+                    <combobox width=120 var=fakeclass list="Sagittarius;MoonlightSent;GhostSentinel;Archmage;MysticMuse;StormScreamer" />
+                </td>
+                <td>
+                    <button value="Spawn Fake" action="bypass admin_fakespawn $fakeclass htm $fakelevel" width=80 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

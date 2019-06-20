@@ -150,7 +150,7 @@ import com.l2jmobius.gameserver.taskmanager.TaskManager;
 import com.l2jmobius.gameserver.ui.Gui;
 import com.l2jmobius.gameserver.util.Broadcast;
 
-import com.vert.fakeplayer.FakePlayerManager;
+import com.vert.autopilot.FakePlayerManager;
 
 public class GameServer
 {
@@ -395,7 +395,7 @@ public class GameServer
 		MonsterRace.getInstance();
 		Lottery.getInstance();
 
-		FakePlayerManager.INSTANCE.initialise();
+		FakePlayerManager.INSTANCE.initialize();
 		
 		SevenSigns.getInstance().spawnSevenSignsNPC();
 		SevenSignsFestival.getInstance();
