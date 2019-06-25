@@ -16,6 +16,7 @@ import com.l2jmobius.gameserver.model.skills.targets.L2TargetType;
 import com.l2jmobius.gameserver.model.zone.ZoneId;
 import com.l2jmobius.gameserver.network.serverpackets.*;
 import com.vert.autopilot.FakePlayer;
+import com.vert.autopilot.helpers.FakeHelpers;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -122,10 +123,6 @@ public abstract class FakePlayerAI {
 
         Arrays.stream(wordRegions).forEach(region ->
             Arrays.stream(region.getSurroundingRegions()).forEach(surroudingRegion ->
-                // NOTE: In Varkas this will get + - 3k of targets in every scan
-                // Arrays.stream(surroudingRegion.getSurroundingRegions()).forEach(secondLevelRegion -> getTargetsInRegion(secondLevelRegion))
-
-                // NOTE: In Varkas this will get + - 370 of targets in every scan
                 getTargetsInRegion(surroudingRegion)
         ));
     }
@@ -135,10 +132,11 @@ public abstract class FakePlayerAI {
             Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();
             Collection<L2Object> visibleObjectsValues = visibleObjects.values();
             Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x ->
-                (x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)
+                    ((x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)
                         || (x.getInstanceType().isType(InstanceType.L2PcInstance) && (((L2PcInstance) x).getPvpFlag() == 1
                         || ((L2PcInstance) x).getKarma() > 0)))
                 && !x.isInvisible() && (getTargetCurrentHp(x) > 0) && (x.getObjectId() != _fakePlayer.getObjectId()))
+                && _fakePlayer.isInsideRadius2D(x.getLocation(), FakeHelpers.getTestTargetRange()))
                 .collect(Collectors.toList());
 
             if (!filteredObjects.isEmpty()) {
@@ -438,9 +436,6 @@ public abstract class FakePlayerAI {
             }
 
             if (!_targets.isEmpty()) {
-                // Get a Random Target from the targets array
-                // L2Object target = targets.get(Rnd.get(0, targets.size() -1 ));
-
                 // Get the closest Target from the targets array
                 L2Object target = selectTarget(0, radius);
 

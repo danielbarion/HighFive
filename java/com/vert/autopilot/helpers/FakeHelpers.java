@@ -81,7 +81,7 @@ public class FakeHelpers {
     }
 
     public static int getTestTargetRange() {
-        return 800;
+        return 2000;
     }
 
     public static FakePlayer createFakePlayer(String occupation, String level) {
