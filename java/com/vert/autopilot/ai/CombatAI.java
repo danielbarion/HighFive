@@ -16,6 +16,7 @@ import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.models.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -76,6 +77,27 @@ public abstract class CombatAI extends FakePlayerAI {
     public void thinkAndAct() {
         handleDeath();
         saveLastCharacterPosition();
+        pickupItemsInGround();
+    }
+
+    protected void pickupItemsInGround() {
+        if (!_fakePlayer.getIsPickingItemInGround()) {
+            getItemsSurroudingCharacterRegion();
+
+            // Sort items to get the closest item
+            Collections.sort(_itemsInGround, (WordRegion1, WordRegion2) -> (int) (_fakePlayer.calculateDistance2D(WordRegion1.getX(), WordRegion1.getY(), WordRegion1.getZ()) - _fakePlayer.calculateDistance2D(WordRegion2.getX(), WordRegion2.getY(), WordRegion2.getZ())));
+
+            if (!_targets.isEmpty()) {
+                if (!_itemsInGround.isEmpty() && _fakePlayer.getTarget() == null) {
+                    _fakePlayer.setIsPickingItemInGround(true);
+                    pickItemsInGround();
+                } else {
+                    _fakePlayer.setIsPickingItemInGround(false);
+                }
+            }
+        } else {
+            pickItemsInGround();
+        }
     }
 
     protected void saveLastCharacterPosition() {

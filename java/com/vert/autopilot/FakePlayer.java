@@ -30,6 +30,7 @@ public class FakePlayer extends L2PcInstance {
     private FakePlayerAI _fakeAi;
     private boolean _underControl = false;
     private L2WorldRegion _initialWorldRegion = null;
+    private boolean _isPickingItemInGround = false;
 
     public boolean isUnderControl() {
         return _underControl;
@@ -612,5 +613,13 @@ public class FakePlayer extends L2PcInstance {
         setCurrentCp(getMaxCp());
         setCurrentHp(getMaxHp());
         setCurrentMp(getMaxMp());
+    }
+
+    public boolean getIsPickingItemInGround() {
+        return _isPickingItemInGround;
+    }
+
+    public void setIsPickingItemInGround(boolean _isPickingItemInGround) {
+        this._isPickingItemInGround = _isPickingItemInGround;
     }
 }

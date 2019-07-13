@@ -9,6 +9,7 @@ import com.l2jmobius.gameserver.instancemanager.MapRegionManager;
 import com.l2jmobius.gameserver.model.*;
 import com.l2jmobius.gameserver.model.actor.*;
 import com.l2jmobius.gameserver.model.actor.instance.*;
+import com.l2jmobius.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jmobius.gameserver.model.skills.BuffInfo;
 import com.l2jmobius.gameserver.model.skills.EffectScope;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -19,6 +20,7 @@ import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.helpers.FakeHelpers;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -32,6 +34,8 @@ public abstract class FakePlayerAI {
     protected volatile boolean _clientMoving;
     protected volatile boolean _clientAutoAttacking;
     protected List<L2Object> _targets = new ArrayList<>();
+    protected List<L2Object> _itemsInGround = new ArrayList<>();
+    private boolean _isPickingItemInGround = false;
     private long _moveToPawnTimeout;
     protected int _clientMovingToPawnOffset;
     protected boolean _isBusyThinking = false;
@@ -127,10 +131,41 @@ public abstract class FakePlayerAI {
         ));
     }
 
+    protected void getItemsSurroudingCharacterRegion() {
+        L2WorldRegion[] wordRegions = _fakePlayer.getWorldRegion().getSurroundingRegions();
+
+        Arrays.stream(wordRegions).forEach(region ->
+            Arrays.stream(region.getSurroundingRegions()).forEach(surroudingRegion ->
+                getItemsOnGroundInRegion(surroudingRegion)
+        ));
+    }
+
+    protected void getItemsOnGroundInRegion(L2WorldRegion region) {
+        if (region.getVisibleObjects().size() > 0) {
+            Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();
+
+            Collection<L2Object> visibleObjectsValues = visibleObjects.values();
+
+            Collection<L2Object> filteredItemsInGround = visibleObjectsValues.stream().filter(item ->
+                    (item.getInstanceType().isType(InstanceType.L2ItemInstance) && checkIfGroundItemMatch(item)))
+                    .collect(Collectors.toList());
+
+            if (!filteredItemsInGround.isEmpty()) {
+                filteredItemsInGround.stream().forEach(item -> {
+                    if (!_itemsInGround.contains(item)) {
+                        _itemsInGround.add(item);
+                    }
+                });
+            }
+        }
+    }
+
     protected void getTargetsInRegion(L2WorldRegion region) {
         if (region.getVisibleObjects().size() > 0) {
             Map<Integer, L2Object> visibleObjects = region.getVisibleObjects();
+            // Visible objects in region
             Collection<L2Object> visibleObjectsValues = visibleObjects.values();
+            // Filter visible objects to get targets
             Collection<L2Object> filteredObjects = visibleObjectsValues.stream().filter(x ->
                     ((x.getInstanceType().isTypes(InstanceType.L2MonsterInstance, InstanceType.L2Decoy)
                         || (x.getInstanceType().isType(InstanceType.L2PcInstance) && (((L2PcInstance) x).getPvpFlag() == 1
@@ -417,8 +452,66 @@ public abstract class FakePlayerAI {
         return badPlayer;
     }
 
+    protected boolean checkIfGroundItemMatch(L2Object item) {
+        // Initialize and add any word fragment of item's name
+        ArrayList<String> listedItems = new ArrayList();
+        /**
+         * Herb's of mana
+         */
+        listedItems.add("Mana");
+        /**
+         * Herb's of life
+         * Life Stones
+         */
+        listedItems.add("Life");
+        /**
+         * Herb of Vitality
+         * All Items with Vitality word
+         */
+        listedItems.add("Vitality");
+        /**
+         * Herb of Restoration
+         */
+        listedItems.add("Restoration");
+        listedItems.add("Adena");
+
+        // Save the value in a variable before return just for debug purposes
+        boolean canPickItem = listedItems.stream().anyMatch(itemNameString -> item.getName().contains(itemNameString));
+
+        return canPickItem;
+    }
+
+    protected void pickItemsInGround() {
+        if (!_itemsInGround.isEmpty()) {
+            pickItem(_itemsInGround.get(0));
+        } else {
+            _fakePlayer.setIsPickingItemInGround(false);
+        }
+    }
+
+    protected void pickItem(L2Object item) {
+        _fakePlayer.setIsPickingItemInGround(true);
+
+        if (_fakePlayer.isInsideRadius2D(item.getLocation(), 800)) {
+            if (!_fakePlayer.isInsideRadius2D(item.getLocation(), 30)) {
+                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, item.getLocation());
+            } else {
+                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_PICK_UP, item);
+                _itemsInGround.remove(item);
+                _fakePlayer.setIsPickingItemInGround(false);
+            }
+        } else {
+            _itemsInGround.remove(item);
+            _fakePlayer.setIsPickingItemInGround(false);
+        }
+    }
+
     protected void tryTargetRandomCreatureByTypeInRadius(int radius)
     {
+        if (_fakePlayer.getIsPickingItemInGround()) {
+            return;
+        }
+
         if(_fakePlayer.getTarget() == null || !_fakePlayer.getTarget().getInstanceType().isTypes(InstanceType.L2PcInstance, InstanceType.L2Playable)) {
             if (_targets.size() > 0) {
                 // Always clear the target list before start add or _targets will just add more targets
@@ -453,7 +546,6 @@ public abstract class FakePlayerAI {
                 }
             }
         } else {
-
             // todo: this section of code will be used when test and code Spoil class
             // todo: maybe this code will not be user right here, but will be used
 //            boolean validInstanceType = (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance || _fakePlayer.getTarget() instanceof L2Character);
