@@ -48,7 +48,11 @@ public class AITask implements Runnable {
                     return false;
                 }).collect(Collectors.toList());
                 if (notBusyFakes.size() > 0) {
-                    notBusyFakes.forEach(player-> player.getFakeAi().thinkAndAct());
+                    notBusyFakes.forEach(player-> {
+                        if (!player.getFakeAi().isBusyThinking()) {
+                            player.getFakeAi().thinkAndAct();
+                        }
+                    });
                 }
             }
         }
