@@ -553,44 +553,106 @@ public class FakeHelpers {
     }
 
     public static void giveWeaponsByClass(FakePlayer player, boolean randomlyEnchant) {
-        List<Integer> itemIds = new ArrayList<>();
+        List<Integer> itemsIds = new ArrayList<>();
+
         switch (player.getClassId()) {
-            case FORTUNE_SEEKER:
-            case GHOST_HUNTER:
-            case WIND_RIDER:
-            case ADVENTURER:
-                itemIds = Arrays.asList(6590);
+            /**
+             * ======================
+             * Initial Mage Classes =
+             * ======================
+             */
+            case MAGE:
+            case ELVEN_MAGE:
+            case DARK_MAGE:
+            case ORC_MAGE:
+                /**
+                 * 6355 = Mage Staff - for Beginners
+                 */
+                itemsIds = Arrays.asList(6355);
                 break;
-            case SAGITTARIUS:
-            case MOONLIGHT_SENTINEL:
-            case GHOST_SENTINEL:
-                itemIds = Arrays.asList(7577);
+
+            /**
+             * ===============
+             * D-Grade Mages =
+             * ===============
+             */
+
+            /**
+             * Single Handed Blunts
+             */
+            case WIZARD:
+            case CLERIC:
+            case ELVEN_WIZARD:
+            case ORACLE:
+            case DARK_WIZARD:
+            case SHILLIEN_ORACLE:
+            case ORC_SHAMAN:
+                /**
+                 * 189 = Staff of Life
+                 */
+                itemsIds = Arrays.asList(189);
                 break;
-            case PHOENIX_KNIGHT:
-            case SWORD_MUSE:
-            case HELL_KNIGHT:
-            case EVA_TEMPLAR:
-            case SHILLIEN_TEMPLAR:
-                itemIds = Arrays.asList(6583, 6377);
+
+            /**
+             * ===================
+             * C-B-A-Grade Mages =
+             * ===================
+             */
+
+            /**
+             * Single Handed Swords
+             */
+            case SORCERER:
+            case NECROMANCER:
+            case WARLOCK:
+            case BISHOP:
+            case PROPHET:
+            case SPELLSINGER:
+            case ELEMENTAL_SUMMONER:
+            case ELDER:
+            case SPELLHOWLER:
+            case PHANTOM_SUMMONER:
+            case SHILLIEN_ELDER:
+            case OVERLORD:
+            case WARCRYER:
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 6313 = Homunkulus's Sword (Acumen)
+                         */
+                        itemsIds = Arrays.asList(6313);
+                        break;
+
+                    case "B":
+                        /**
+                         * 7722 = Sword of Valhala (Acumen)
+                         */
+                        itemsIds = Arrays.asList(7722);
+                        break;
+
+                    case "A":
+                        /**
+                         * 5643 = Sword of Miracles (Acumen)
+                         */
+                        itemsIds = Arrays.asList(5643);
+                        break;
+                }
                 break;
-            case MAESTRO:
-                itemIds = Arrays.asList(6585, 6377);
-                break;
-            case TITAN:
-                itemIds = Arrays.asList(6607);
-                break;
-            case DUELIST:
-            case SPECTRAL_DANCER:
-                itemIds = Arrays.asList(6580);
-                break;
-            case DREADNOUGHT:
-                itemIds = Arrays.asList(6599);
-                break;
+
+            /**
+             * =======================
+             * S-S80-S84-Grade Mages =
+             * =======================
+             */
+
+            /**
+             * Single Handed Swords
+             */
             case ARCHMAGE:
             case SOULTAKER:
-            case HIEROPHANT:
             case ARCANA_LORD:
             case CARDINAL:
+            case HIEROPHANT:
             case MYSTIC_MUSE:
             case ELEMENTAL_MASTER:
             case EVA_SAINT:
@@ -599,15 +661,583 @@ public class FakeHelpers {
             case SHILLIEN_SAINT:
             case DOMINATOR:
             case DOOMCRYER:
-                itemIds = Arrays.asList(6608);
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        if (Rnd.get(0, 1) == 0) {
+                            /**
+                             * 6608 = Arcana Mace
+                             */
+                            itemsIds = Arrays.asList(6608);
+                        } else {
+                            /**
+                             * 9860 = Dynasty Phantom (Acumen)
+                             */
+                            itemsIds = Arrays.asList(9860);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10440 = Icarus Spirit
+                         */
+                        itemsIds = Arrays.asList(10440);
+                        break;
+
+                    case "S84":
+                        int randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14125 = Vesper Buster (Acumen)
+                             */
+                            itemsIds = Arrays.asList(14125);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15856 = Veniplant Sword (Acumen)
+                             */
+                            itemsIds = Arrays.asList(15856);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15900 = Archangel Sword (Acumen)
+                             */
+                            itemsIds = Arrays.asList(15900);
+                        }
+                        break;
+                }
                 break;
-            case GRAND_KHAVATARI:
-                itemIds = Arrays.asList(6602);
+
+            /**
+             * =========================
+             * Initial Fighter Classes =
+             * =========================
+             */
+            case FIGHTER:
+            case ELVEN_FIGHTER:
+            case DARK_FIGHTER:
+            case ORC_FIGHTER:
+            case DWARVEN_FIGHTER:
+            case MALE_SOLDIER:
+            case FEMALE_SOLDIER:
+                /**
+                 * 6354 = Falchion - for Beginners
+                 */
+                itemsIds = Arrays.asList(6354);
                 break;
-            default:
+
+            /**
+             * ==================
+             * D-Grade Fighters =
+             * ==================
+             */
+
+            /**
+             * Sword & Shield
+             */
+            case WARRIOR:
+            case KNIGHT:
+            case ELVEN_KNIGHT:
+            case PALUS_KNIGHT:
+                /**
+                 * 2499 = Elven Long Sword
+                 * 2493 = Brigandine Shield
+                 */
+                itemsIds = Arrays.asList(2499, 2493);
                 break;
+
+            /**
+             * Hammer & Shield
+             */
+            case ORC_RAIDER:
+            case SCAVENGER:
+            case ARTISAN:
+                /**
+                 * 159 = Bonebreaker
+                 * 2493 = Brigandine Shield
+                 */
+                itemsIds = Arrays.asList(159, 2493);
+                break;
+
+            /**
+             * Dagger or Bow
+             */
+            case ROGUE:
+            case ELVEN_SCOUT:
+            case ASSASSIN:
+                if (Rnd.get(0, 1) == 0) {
+                    /**
+                     * 225 = Mithril Dagger
+                     */
+                    itemsIds = Arrays.asList(225);
+                } else {
+                    /**
+                     * 280 = Light Crossbow
+                     */
+                    itemsIds = Arrays.asList(280);
+                }
+                break;
+
+            /**
+             * Fist
+             */
+            case ORC_MONK:
+                /**
+                 * 262 = Scallop Jamadhr
+                 */
+                itemsIds = Arrays.asList(262);
+                break;
+
+            /**
+             * Crossbow
+             */
+            case WARDER:
+                /**
+                 * 9996 = Hand Crossbow
+                 */
+                itemsIds = Arrays.asList(9996);
+                break;
+
+            /**
+             * Ancient Sword
+             */
+            case TROOPER:
+                /**
+                 * 9226 = General's Katzbalger
+                 */
+                itemsIds = Arrays.asList(9226);
+                break;
+
+            /**
+             * ======================
+             * C-B-A-Grade Fighters =
+             * ======================
+             */
+
+            /**
+             * Dual Swords
+             */
+            case GLADIATOR:
+            case BLADEDANCER:
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 2599 = Raid Sword*Raid Sword
+                         */
+                        itemsIds = Arrays.asList(2599);
+                        break;
+
+                    case "B":
+                        /**
+                         * 2626 = Samurai Long Sword*Samurai Long Sword
+                         */
+                        itemsIds = Arrays.asList(2626);
+                        break;
+
+                    case "A":
+                        /**
+                         * 5706 = Damascus*Damascus
+                         */
+                        itemsIds = Arrays.asList(5706);
+                        break;
+                }
+            break;
+
+            /**
+             * Polearms
+             */
+            case WARLORD:
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 4852 = Orcish Poleaxe (Critical Stun)
+                         */
+                        itemsIds = Arrays.asList(4852);
+                        break;
+
+                    case "B":
+                        /**
+                         * 4859 = Lance (Critical Stun)
+                         */
+                        itemsIds = Arrays.asList(4859);
+                        break;
+
+                    case "A":
+                        /**
+                         * 4861 = Halberd (Critical Stun)
+                         */
+                        itemsIds = Arrays.asList(4861);
+                        break;
+                }
+                break;
+
+            /**
+             * Sword & Shield
+             */
+            case PALADIN:
+            case DARK_AVENGER:
+            case TEMPLE_KNIGHT:
+            case SWORDSINGER:
+            case SHILLIEN_KNIGHT:
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 4708 = Samurai Longsword (Focus)
+                         * 2497 = Full Plate Shield
+                         */
+                        itemsIds = Arrays.asList(4708, 2497);
+                        break;
+
+                    case "B":
+                        /**
+                         * 4708 = Keshanberk (Focus)
+                         * 673 = Avadon Shield
+                         */
+                        itemsIds = Arrays.asList(4715, 673);
+                        break;
+
+                    case "A":
+                        /**
+                         * 5648 = Dark Legion's Edge (Health)
+                         * 641 = Dark Crystal Shield
+                         */
+                        itemsIds = Arrays.asList(5648, 641);
+                        break;
+                }
+                break;
+
+            /**
+             * Hammer & Shield
+             */
+            case WARSMITH:
+            case BOUNTY_HUNTER:
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 4745 = Yaksa Mace (Health)
+                         * 2497 = Full Plate Shield
+                         */
+                        itemsIds = Arrays.asList(4745, 2497);
+                        break;
+
+                    case "B":
+                        /**
+                         * 4753 = Art of Battle Axe (Health)
+                         * 673 = Avadon Shield
+                         */
+                        itemsIds = Arrays.asList(4753, 673);
+                        break;
+
+                    case "A":
+                        /**
+                         * 5602 = Elysian (Health)
+                         * 641 = Dark Crystal Shield
+                         */
+                        itemsIds = Arrays.asList(5602, 641);
+                        break;
+                }
+                break;
+
+            /**
+             * Bows
+             */
+            case HAWKEYE:
+            case SILVER_RANGER:
+            case PHANTOM_RANGER:
+                /**
+                 * 4822 = Eminence Bow (Guidance)
+                 */
+                itemsIds = Arrays.asList(4822);
+                break;
+
+            /**
+             * Daggers
+             */
+            case TREASURE_HUNTER:
+            case PLAINS_WALKER:
+            case ABYSS_WALKER:
+                /**
+                 * 4776 = Crystal Dagger (Mortal Strike)
+                 */
+                itemsIds = Arrays.asList(4776);
+                break;
+
+            /**
+             * Fist
+             */
+            case TYRANT:
+                /**
+                 * 4797 = Great Pata (Rsk. Haste)
+                 */
+                itemsIds = Arrays.asList(4797);
+                break;
+
+            /**
+             * Crossbow
+             */
+            case ARBALESTER:
+                /**
+                 * 9301 = Sharpshooter (Guidance)
+                 */
+                itemsIds = Arrays.asList(9301);
+                break;
+
+            /**
+             * Ancient Sword
+             */
+            case BERSERKER:
+                /**
+                 * 9297 = Saber Tooth
+                 */
+                itemsIds = Arrays.asList(9297);
+                break;
+
+            /**
+             * Double Handed Swords
+             */
+            case DESTROYER:
+                /**
+                 * 6347 = Berserker Blade
+                 */
+                itemsIds = Arrays.asList(6347);
+                break;
+
+            /**
+             * Single Handed Swords
+             */
+            case MALE_SOULBREAKER:
+                /**
+                 * 9293 = Admiral's Estoc (Focus)
+                 */
+                itemsIds = Arrays.asList(9293);
+                break;
+
+            /**
+             * Single Handed Swords
+             */
+            case FEMALE_SOULBREAKER:
+                /**
+                 * 9293 = Admiral's Estoc (Focus)
+                 */
+                itemsIds = Arrays.asList(9293);
+                break;
+
+            /**
+             * ==========================
+             * S-S80-S84-Grade Fighters =
+             * ==========================
+             */
+
+            /**
+             * Dual Swords
+             */
+            case DUELIST:
+            case SPECTRAL_DANCER:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        if (Rnd.get(0, 1) == 0) {
+                            /**
+                             * 6580 = Tallum Blade*Dark Legion's Edge
+                             */
+                            itemsIds = Arrays.asList(6580);
+                        } else {
+                            /**
+                             * 10004 = Dynasty Dual Sword
+                             */
+                            itemsIds = Arrays.asList(10004);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10415 = Icarus Dual Sword
+                         */
+                        itemsIds = Arrays.asList(10415);
+                        break;
+
+                    case "S84":
+                        int randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 52 = Vesper Dual Sword
+                             */
+                            itemsIds = Arrays.asList(52);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 16154 = Periel Dual Sword
+                             */
+                            itemsIds = Arrays.asList(16154);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 16158 = Eternal Core Dual Sword
+                             */
+                            itemsIds = Arrays.asList(16158);
+                        }
+                        break;
+                }
+                break;
+
+            /**
+             * Polearms
+             */
+            case DREADNOUGHT:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        if (Rnd.get(0, 1) == 0) {
+                            /**
+                             * 6601 = Saint Spear (Haste)
+                             */
+                            itemsIds = Arrays.asList(6601);
+                        } else {
+                            /**
+                             * 9870 = Dynasty Halberd (Critical Stun)
+                             */
+                            itemsIds = Arrays.asList(9870);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10450 = Icarus Trident (Critical Stun)
+                         */
+                        itemsIds = Arrays.asList(10450);
+                        break;
+
+                    case "S84":
+                        int randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14135 = Vesper Stormer (Haste)
+                             */
+                            itemsIds = Arrays.asList(14135);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15848 = Doubletop Spear (Haste)
+                             */
+                            itemsIds = Arrays.asList(15848);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15889 = Demitelum (Haste)
+                             */
+                            itemsIds = Arrays.asList(15889);
+                        }
+                        break;
+                }
+                break;
+
+            /**
+             * Sword & Shield
+             */
+            case PHOENIX_KNIGHT:
+            case HELL_KNIGHT:
+            case EVA_TEMPLAR:
+            case SWORD_MUSE:
+            case SHILLIEN_TEMPLAR:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        if (Rnd.get(0, 1) == 0) {
+                            /**
+                             * 6583 = Forgotten Blade (Focus)
+                             * 6377 = Imperial Crusader Shield
+                             */
+                            itemsIds = Arrays.asList(6583, 6377);
+                        } else {
+                            /**
+                             * 9854 = Dynasty Sword (Focus)
+                             * 9441 = Dynasty Shield
+                             */
+                            itemsIds = Arrays.asList(9854, 9441);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10434 = Icarus Sawsword (Focus)
+                         * 9441 = Dynasty Shield
+                         */
+                        itemsIds = Arrays.asList(10434, 9441);
+                        break;
+
+                    case "S84":
+                        int randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14120 = Vesper Cutter (Focus)
+                             * 13471 = Vesper Shield
+                             */
+                            itemsIds = Arrays.asList(14120, 13471);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15830 = Periel Sword (Focus)
+                             * 15604 = Vorpal Shield
+                             */
+                            itemsIds = Arrays.asList(15830, 15604);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15871 = Eternal Core Sword (Focus)
+                             * 15587 = Elegia Shield
+                             */
+                            itemsIds = Arrays.asList(15871, 15587);
+                        }
+                        break;
+                }
+                break;
+
+            /**
+             * Hammer & Shield
+             */
+            case MAESTRO:
+            case FORTUNE_SEEKER:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        if (Rnd.get(0, 1) == 0) {
+                            /**
+                             * 6585 = Basalt Battlehammer (Health)
+                             * 6377 = Imperial Crusader Shield
+                             */
+                            itemsIds = Arrays.asList(6585, 6377);
+                        } else {
+                            /**
+                             * 9873 = Dynasty Cudgel (Health)
+                             * 9441 = Dynasty Shield
+                             */
+                            itemsIds = Arrays.asList(9873, 9441);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10454 = Icarus Hammer (Rsk. Focus)
+                         * 9441 = Dynasty Shield
+                         */
+                        itemsIds = Arrays.asList(10454, 9441);
+                        break;
+
+                    case "S84":
+                        int randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14137 = Vesper Avenger (Health)
+                             * 13471 = Vesper Shield
+                             */
+                            itemsIds = Arrays.asList(14137, 13471);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15835 = Vigwik Axe (Health)
+                             * 15604 = Vorpal Shield
+                             */
+                            itemsIds = Arrays.asList(15835, 15604);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15879 = Eversor Mace (Health)
+                             * 15587 = Elegia Shield
+                             */
+                            itemsIds = Arrays.asList(15879, 15587);
+                        }
+                        break;
+                }
+                break;
+
+
         }
-        for (int id : itemIds) {
+        for (int id : itemsIds) {
             player.getInventory().addItem("Weapon", id, 1, player, null);
             L2ItemInstance item = player.getInventory().getItemByItemId(id);
 
