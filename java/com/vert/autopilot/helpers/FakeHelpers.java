@@ -250,74 +250,100 @@ public class FakeHelpers {
 
     public static List<Integer> getMageArmorByGrade(FakePlayer player) {
         List<Integer> itemsIds = new ArrayList<>();
+        int randomNumber;
 
         switch (getPlayerGrade(player)) {
             case "S84":
-                // Todo: Need add S84 sets
-                if (Rnd.get(0, 1) == 0) {
+                randomNumber = Rnd.get(0, 3);
+                if (randomNumber == 0) {
                     /**
-                     * 15611 = Moirai Tunic;
-                     * 15614 = Moirai Stockings;
-                     * 15608 = Moirai Circlet;
-                     * 15617 = Moirai Gloves;
-                     * 15620 = Moirai Shoes;
-                     * 15723 = Moirai Ring;
-                     * 15724 = Moirai Earring;
-                     * 15725 = Moirai Necklace;
+                     * 13434 = Vesper Tunic;
+                     * 13444 = Vesper Stockings;
+                     * 13139 = Vesper Circlet;
+                     * 13445 = Vesper Gloves;
+                     * 13446 = Vesper Shoes;
+                     * 14165 = Vesper Ring;
+                     * 14163 = Vesper Earring;
+                     * 14164 = Vesper Necklace;
                      */
-                    itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
-                } else {
+                    itemsIds = Arrays.asList(13434, 13444, 13139, 13445, 13446, 14165, 14165, 14163, 14163, 14164);
+                } else if (randomNumber == 1) {
                     /**
-                     * 9432 = Dynasty Tunic;
-                     * 9437 = Dynasty Stockings;
-                     * 9438 = Dynasty Circlet;
-                     * 9439 = Dynasty Gloves (Robe);
-                     * 9440 = Dynasty Shoes (Robe);
-                     * 15723 = Moirai Ring;
-                     * 15724 = Moirai Earring;
-                     * 15725 = Moirai Necklace;
+                     * 13437 = Vesper Noble Tunic;
+                     * 13454 = Vesper Noble Stockings;
+                     * 13142 = Vesper Noble Circlet;
+                     * 13455 = Vesper Noble Gloves;
+                     * 13456 = Vesper Noble Shoes;
+                     * 14165 = Vesper Noble Ring;
+                     * 14163 = Vesper Noble Earring;
+                     * 14164 = Vesper Noble Necklace;
                      */
-                    itemsIds = Arrays.asList(9432, 9437, 9438, 9439, 9440, 15723, 15723, 15724, 15724, 15725);
+                    itemsIds = Arrays.asList(13437, 13454, 13142, 13455, 13456, 14165, 14165, 14163, 14163, 14164);
+                } else if (randomNumber == 2) {
+                    /**
+                     * 15594 = Vorpal Tunic;
+                     * 15597 = Vorpal Stockings;
+                     * 15591 = Vorpal Circlet;
+                     * 15600 = Vorpal Gloves;
+                     * 15603 = Vorpal Shoes;
+                     * 15720 = Vorpal Ring;
+                     * 15721 = Vorpal Earring;
+                     * 15722 = Vorpal Necklace;
+                     */
+                    itemsIds = Arrays.asList(15594, 15597, 15591, 15600, 15603, 15720, 15720, 15721, 15721, 15722);
+                } else if (randomNumber == 3) {
+                    /**
+                     * 15577 = Elegia Tunic;
+                     * 15580 = Elegia Stockings;
+                     * 15574 = Elegia Circlet;
+                     * 15583 = Elegia Gloves;
+                     * 15586 = Elegia Shoes;
+                     * 15717 = Elegia Ring;
+                     * 15718 = Elegia Earring;
+                     * 15719 = Elegia Necklace;
+                     */
+                    itemsIds = Arrays.asList(15577, 15580, 15574, 15583, 15586, 15717, 15717, 15718, 15718, 15719);
                 }
                 break;
             case "S80":
-                if (Rnd.get(0, 1) == 0) {
+                /**
+                 * 15611 = Moirai Tunic;
+                 * 15614 = Moirai Stockings;
+                 * 15608 = Moirai Circlet;
+                 * 15617 = Moirai Gloves;
+                 * 15620 = Moirai Shoes;
+                 * 15723 = Moirai Ring;
+                 * 15724 = Moirai Earring;
+                 * 15725 = Moirai Necklace;
+                 */
+                itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
+                break;
+            case "S":
+                randomNumber = Rnd.get(0, 1);
+                if (randomNumber == 0) {
                     /**
-                     * 15611 = Moirai Tunic;
-                     * 15614 = Moirai Stockings;
-                     * 15608 = Moirai Circlet;
-                     * 15617 = Moirai Gloves;
-                     * 15620 = Moirai Shoes;
-                     * 15723 = Moirai Ring;
-                     * 15724 = Moirai Earring;
-                     * 15725 = Moirai Necklace;
+                     * 6383 = Major Arcana Robe;
+                     * 6384 = Major Arcana Helmet;
+                     * 6385 = Major Arcana Gloves;
+                     * 6386 = Major Arcana Boots;
+                     * 858 = Tateossian Earring;
+                     * 889 = Tateossian Ring;
+                     * 920 = Tateossian Necklace;
                      */
-                    itemsIds = Arrays.asList(15611, 15614, 15608, 15617, 15620, 15723, 15723, 15724, 15724, 15725);
-                } else {
+                    itemsIds = Arrays.asList(6383, 6384, 6385, 6386, 858, 858, 889, 889, 920);
+                } else if (randomNumber == 1) {
                     /**
                      * 9432 = Dynasty Tunic;
                      * 9437 = Dynasty Stockings;
                      * 9438 = Dynasty Circlet;
                      * 9439 = Dynasty Gloves (Robe);
                      * 9440 = Dynasty Shoes (Robe);
-                     * 15723 = Moirai Ring;
-                     * 15724 = Moirai Earring;
-                     * 15725 = Moirai Necklace;
+                     * 9457 = Dynasty Ring;
+                     * 9455 = Dynasty Earring;
+                     * 9456 = Dynasty Necklace;
                      */
-                    itemsIds = Arrays.asList(9432, 9437, 9438, 9439, 9440, 15723, 15723, 15724, 15724, 15725);
+                    itemsIds = Arrays.asList(9432, 9437, 9438, 9439, 9440, 9457, 9457, 9455, 9455, 9456);
                 }
-                break;
-            case "S":
-                /**
-                 * 6383 = Major Arcana Robe;
-                 * 6384 = Major Arcana Helmet;
-                 * 6385 = Major Arcana Gloves;
-                 * 6386 = Major Arcana Boots;
-                 * 858 = Tateossian Earring;
-                 * 889 = Tateossian Ring;
-                 * 920 = Tateossian Necklace;
-                 */
-                itemsIds = Arrays.asList(6383, 6384, 6385, 6386, 858, 858, 889, 889, 920);
                 break;
             case "A":
                 /**
