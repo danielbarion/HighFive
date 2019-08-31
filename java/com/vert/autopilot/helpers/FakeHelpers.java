@@ -554,6 +554,7 @@ public class FakeHelpers {
 
     public static void giveWeaponsByClass(FakePlayer player, boolean randomlyEnchant) {
         List<Integer> itemsIds = new ArrayList<>();
+        int randomNumber;
 
         switch (player.getClassId()) {
             /**
@@ -684,7 +685,7 @@ public class FakeHelpers {
                         break;
 
                     case "S84":
-                        int randomNumber = Rnd.get(0, 2);
+                        randomNumber = Rnd.get(0, 2);
                         if (randomNumber == 0) {
                             /**
                              * 14125 = Vesper Buster (Acumen)
@@ -941,10 +942,28 @@ public class FakeHelpers {
             case HAWKEYE:
             case SILVER_RANGER:
             case PHANTOM_RANGER:
-                /**
-                 * 4822 = Eminence Bow (Guidance)
-                 */
-                itemsIds = Arrays.asList(4822);
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 4822 = Eminence Bow (Guidance)
+                         */
+                        itemsIds = Arrays.asList(4822);
+                        break;
+
+                    case "B":
+                        /**
+                         * 4826 = Dark Elven Long Bow (Critical Bleed)
+                         */
+                        itemsIds = Arrays.asList(4826);
+                        break;
+
+                    case "A":
+                        /**
+                         * 5612 = Soul Bow (Quick Recovery)
+                         */
+                        itemsIds = Arrays.asList(5612);
+                        break;
+                }
                 break;
 
             /**
@@ -953,70 +972,169 @@ public class FakeHelpers {
             case TREASURE_HUNTER:
             case PLAINS_WALKER:
             case ABYSS_WALKER:
-                /**
-                 * 4776 = Crystal Dagger (Mortal Strike)
-                 */
-                itemsIds = Arrays.asList(4776);
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 4776 = Crystal Dagger (Mortal Strike)
+                         */
+                        itemsIds = Arrays.asList(4776);
+                        break;
+
+                    case "B":
+                        /**
+                         * 4782 = Demon's Dagger (Mortal Strike)
+                         */
+                        itemsIds = Arrays.asList(4782);
+                        break;
+
+                    case "A":
+                        /**
+                         * 5618 = Soul Separator (Critical Damage)
+                         */
+                        itemsIds = Arrays.asList(5618);
+                        break;
+                }
                 break;
 
             /**
              * Fist
              */
             case TYRANT:
-                /**
-                 * 4797 = Great Pata (Rsk. Haste)
-                 */
-                itemsIds = Arrays.asList(4797);
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 4797 = Great Pata (Rsk. Haste)
+                         */
+                        itemsIds = Arrays.asList(4797);
+                        break;
+
+                    case "B":
+                        /**
+                         * 4803 = Arthro Nail (Rsk. Haste)
+                         */
+                        itemsIds = Arrays.asList(4803);
+                        break;
+
+                    case "A":
+                        /**
+                         * 5625 = Dragon Grinder (Health)
+                         */
+                        itemsIds = Arrays.asList(5625);
+                        break;
+                }
                 break;
 
             /**
              * Crossbow
              */
             case ARBALESTER:
-                /**
-                 * 9301 = Sharpshooter (Guidance)
-                 */
-                itemsIds = Arrays.asList(9301);
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 9301 = Sharpshooter (Guidance)
+                         */
+                        itemsIds = Arrays.asList(9301);
+                        break;
+
+                    case "B":
+                        /**
+                         * 9314 = Peacemaker (Critical Bleed)
+                         */
+                        itemsIds = Arrays.asList(9314);
+                        break;
+
+                    case "A":
+                        /**
+                         * 9350 = Reaper (Quick Recovery)
+                         */
+                        itemsIds = Arrays.asList(9350);
+                        break;
+                }
                 break;
 
             /**
              * Ancient Sword
              */
             case BERSERKER:
-                /**
-                 * 9297 = Saber Tooth
-                 */
-                itemsIds = Arrays.asList(9297);
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 9297 = Saber Tooth
+                         */
+                        itemsIds = Arrays.asList(9297);
+                        break;
+
+                    case "B":
+                        /**
+                         * 9311 = Innominate Victory (Focus)
+                         */
+                        itemsIds = Arrays.asList(9311);
+                        break;
+
+                    case "A":
+                        /**
+                         * 9345 = Undertaker (Health)
+                         */
+                        itemsIds = Arrays.asList(9345);
+                        break;
+                }
                 break;
 
             /**
              * Double Handed Swords
              */
             case DESTROYER:
-                /**
-                 * 6347 = Berserker Blade
-                 */
-                itemsIds = Arrays.asList(6347);
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 6347 = Berserker Blade
+                         */
+                        itemsIds = Arrays.asList(6347);
+                        break;
+
+                    case "B":
+                        /**
+                         * 4725 = Great Sword (Focus)
+                         */
+                        itemsIds = Arrays.asList(4725);
+                        break;
+
+                    case "A":
+                        /**
+                         * 5644 = Dragon Slayer (Health)
+                         */
+                        itemsIds = Arrays.asList(5644);
+                        break;
+                }
                 break;
 
             /**
              * Single Handed Swords
              */
             case MALE_SOULBREAKER:
-                /**
-                 * 9293 = Admiral's Estoc (Focus)
-                 */
-                itemsIds = Arrays.asList(9293);
-                break;
-
-            /**
-             * Single Handed Swords
-             */
             case FEMALE_SOULBREAKER:
-                /**
-                 * 9293 = Admiral's Estoc (Focus)
-                 */
-                itemsIds = Arrays.asList(9293);
+                switch (getPlayerGrade(player)) {
+                    case "C":
+                        /**
+                         * 9293 = Admiral's Estoc (Focus)
+                         */
+                        itemsIds = Arrays.asList(9293);
+                        break;
+
+                    case "B":
+                        /**
+                         * 9306 = Military Fleuret (Focus)
+                         */
+                        itemsIds = Arrays.asList(9306);
+                        break;
+
+                    case "A":
+                        /**
+                         * 9342 = Lacerator (Health)
+                         */
+                        itemsIds = Arrays.asList(9342);
+                        break;
+                }
                 break;
 
             /**
@@ -1053,7 +1171,7 @@ public class FakeHelpers {
                         break;
 
                     case "S84":
-                        int randomNumber = Rnd.get(0, 2);
+                        randomNumber = Rnd.get(0, 2);
                         if (randomNumber == 0) {
                             /**
                              * 52 = Vesper Dual Sword
@@ -1101,7 +1219,7 @@ public class FakeHelpers {
                         break;
 
                     case "S84":
-                        int randomNumber = Rnd.get(0, 2);
+                        randomNumber = Rnd.get(0, 2);
                         if (randomNumber == 0) {
                             /**
                              * 14135 = Vesper Stormer (Haste)
@@ -1156,7 +1274,7 @@ public class FakeHelpers {
                         break;
 
                     case "S84":
-                        int randomNumber = Rnd.get(0, 2);
+                        randomNumber = Rnd.get(0, 2);
                         if (randomNumber == 0) {
                             /**
                              * 14120 = Vesper Cutter (Focus)
@@ -1211,7 +1329,7 @@ public class FakeHelpers {
                         break;
 
                     case "S84":
-                        int randomNumber = Rnd.get(0, 2);
+                        randomNumber = Rnd.get(0, 2);
                         if (randomNumber == 0) {
                             /**
                              * 14137 = Vesper Avenger (Health)
@@ -1235,6 +1353,387 @@ public class FakeHelpers {
                 }
                 break;
 
+            /**
+             * Bow
+             */
+            case SAGITTARIUS:
+            case MOONLIGHT_SENTINEL:
+            case GHOST_SENTINEL:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 6594 = Shining Bow (Focus)
+                             */
+                            itemsIds = Arrays.asList(6594);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 7577 = Draconic Bow (Focus)
+                             */
+                            itemsIds = Arrays.asList(7577);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 9865 = Dynasty Bow (Focus)
+                             */
+                            itemsIds = Arrays.asList(9865);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10445 = Icarus Spitter (Focus)
+                         */
+                        itemsIds = Arrays.asList(10445);
+                        break;
+
+                    case "S84":
+                        randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14149 = Vesper Thrower (Focus)
+                             */
+                            itemsIds = Arrays.asList(14149);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15859 = Skull Carnium Bow (Focus)
+                             */
+                            itemsIds = Arrays.asList(15859);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15093 = Recurve Thorne Bow (Focus)
+                             */
+                            itemsIds = Arrays.asList(15093);
+                        }
+                        break;
+                }
+                break;
+            /**
+             * Daggers
+             */
+            case ADVENTURER:
+            case WIND_RIDER:
+            case GHOST_HUNTER:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 6590 = Angel Slayer (Critical Damage)
+                             */
+                            itemsIds = Arrays.asList(6590);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 9868 = Dynasty Knife (Critical Damage)
+                             */
+                            itemsIds = Arrays.asList(9868);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 13882 = Dynasty Dual Daggers
+                             */
+                            itemsIds = Arrays.asList(13882);
+                        }
+                        break;
+
+                    case "S80":
+                        randomNumber = Rnd.get(0, 1);
+                        if (randomNumber == 0) {
+                            /**
+                             * 10448 = Icarus Disperser (Critical Damage)
+                             */
+                            itemsIds = Arrays.asList(10448);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 13883 = Icarus Dual Daggers
+                             */
+                            itemsIds = Arrays.asList(13883);
+                        }
+                        break;
+
+                    case "S84":
+                        randomNumber = Rnd.get(0, 5);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14127 = Vesper Shaper (Critical Damage)
+                             */
+                            itemsIds = Arrays.asList(14127);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15834 = Skull Edge (Critical Damage)
+                             */
+                            itemsIds = Arrays.asList(15834);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15875 = Mamba Edge (Critical Damage)
+                             */
+                            itemsIds = Arrays.asList(15875);
+                        } else if (randomNumber == 3) {
+                            /**
+                             * 13884 = Vesper Dual Daggers
+                             */
+                            itemsIds = Arrays.asList(13884);
+                        } else if (randomNumber == 4) {
+                            /**
+                             * 16152 = Skull Edge Dual Daggers
+                             */
+                            itemsIds = Arrays.asList(16152);
+                        } else if (randomNumber == 5) {
+                            /**
+                             * 16156 = Mamba Edge Dual Daggers
+                             */
+                            itemsIds = Arrays.asList(16156);
+                        }
+                        break;
+                }
+                break;
+
+            /**
+             * Fist
+             */
+            case GRAND_KHAVATARI:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        randomNumber = Rnd.get(0, 1);
+                        if (randomNumber == 0) {
+                            /**
+                             * 6604 = Demon Splinter (Critical Stun)
+                             */
+                            itemsIds = Arrays.asList(6604);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 9879 = Dynasty Bagh-Nakh (Focus)
+                             */
+                            itemsIds = Arrays.asList(9879);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10459 = Icarus Hand (Focus)
+                         */
+                        itemsIds = Arrays.asList(10459);
+                        break;
+
+                    case "S84":
+                        randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14132 = Vesper Fighter (Critical Stun)
+                             */
+                            itemsIds = Arrays.asList(14132);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15845 = Octo Claw (Critical Stun)
+                             */
+                            itemsIds = Arrays.asList(15845);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15886 = Jade Claw (Critical Stun)
+                             */
+                            itemsIds = Arrays.asList(15886);
+                        }
+                        break;
+                }
+                break;
+
+            /**
+             * Crossbow
+             */
+            case TRICKSTER:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        randomNumber = Rnd.get(0, 1);
+                        if (randomNumber == 0) {
+                            /**
+                             * 9374 = Sarunga (Focus)
+                             */
+                            itemsIds = Arrays.asList(9374);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 9387 = Dynasty Crossbow (Focus)
+                             */
+                            itemsIds = Arrays.asList(9387);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10469 = Icarus Shooter (Focus)
+                         */
+                        itemsIds = Arrays.asList(10469);
+                        break;
+
+                    case "S84":
+                        randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14155 = Vesper Shooter (Focus)
+                             */
+                            itemsIds = Arrays.asList(14155);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15868 = Dominion Crossbow (Focus)
+                             */
+                            itemsIds = Arrays.asList(15868);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15912 = Thorne Crossbow (Focus)
+                             */
+                            itemsIds = Arrays.asList(15912);
+                        }
+                        break;
+                }
+                break;
+
+            /**
+             * Ancient Sword
+             */
+            case DOOMBRINGER:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        randomNumber = Rnd.get(0, 1);
+                        if (randomNumber == 0) {
+                            /**
+                             * 9371 = Gran (Focus)
+                             */
+                            itemsIds = Arrays.asList(9371);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 9381 = Dynasty Ancient Sword (Focus)
+                             */
+                            itemsIds = Arrays.asList(9381);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10464 = Icarus Wingblade (Focus)
+                         */
+                        itemsIds = Arrays.asList(10464);
+                        break;
+
+                    case "S84":
+                        randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14159 = Vesper Nagan (Focus)
+                             */
+                            itemsIds = Arrays.asList(14159);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15866 = Finale Blade (Focus)
+                             */
+                            itemsIds = Arrays.asList(15866);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15907 = Pyseal Blade (Focus)
+                             */
+                            itemsIds = Arrays.asList(15907);
+                        }
+                        break;
+                }
+                break;
+
+            /**
+             * Double Handed Swords
+             */
+            case TITAN:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        randomNumber = Rnd.get(0, 1);
+                        if (randomNumber == 0) {
+                            /**
+                             * 6607 = Heavens Divider (Focus)
+                             */
+                            itemsIds = Arrays.asList(6607);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 9857 = Dynasty Blade (Focus)
+                             */
+                            itemsIds = Arrays.asList(9857);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10437 = Icarus Heavy Arms (Focus)
+                         */
+                        itemsIds = Arrays.asList(10437);
+                        break;
+
+                    case "S84":
+                        randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14123 = Vesper Slasher (Focus)
+                             */
+                            itemsIds = Arrays.asList(14123);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15842 = Feather Eye Blade (Focus)
+                             */
+                            itemsIds = Arrays.asList(15842);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15883 = Lava Saw (Focus)
+                             */
+                            itemsIds = Arrays.asList(15883);
+                        }
+                        break;
+                }
+                break;
+
+            /**
+             * Single Handed Swords
+             */
+            case MALE_SOUL_HOUND:
+            case FEMALE_SOUL_HOUND:
+                switch (getPlayerGrade(player)) {
+                    case "S":
+                        randomNumber = Rnd.get(0, 1);
+                        if (randomNumber == 0) {
+                            /**
+                             * 9367 = Laevateinn (Focus)
+                             */
+                            itemsIds = Arrays.asList(9367);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 9377 = Dynasty Rapier (Focus)
+                             */
+                            itemsIds = Arrays.asList(9377);
+                        }
+                        break;
+
+                    case "S80":
+                        /**
+                         * 10461 = Icarus Stinger (Focus)
+                         */
+                        itemsIds = Arrays.asList(10461);
+                        break;
+
+                    case "S84":
+                        randomNumber = Rnd.get(0, 2);
+                        if (randomNumber == 0) {
+                            /**
+                             * 14153 = Vesper Pincer (Focus)
+                             */
+                            itemsIds = Arrays.asList(14153);
+                        } else if (randomNumber == 1) {
+                            /**
+                             * 15863 = Gemtail Rapier (Focus)
+                             */
+                            itemsIds = Arrays.asList(15863);
+                        } else if (randomNumber == 2) {
+                            /**
+                             * 15904 = Heavenstare Rapier (Focus)
+                             */
+                            itemsIds = Arrays.asList(15904);
+                        }
+                        break;
+                }
+                break;
+
+                //TODO: Add Judicator class
 
         }
         for (int id : itemsIds) {
