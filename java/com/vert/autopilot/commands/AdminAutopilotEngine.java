@@ -12,7 +12,7 @@ import com.vert.autopilot.ai.walkers.GiranWalkerAI;
 /**
  * @author vert
  */
-public class AdminFakePlayersVert implements IAdminCommandHandler {
+public class AdminAutopilotEngine implements IAdminCommandHandler {
     private final String fakesFolder = "data/html/admin/autopilot/";
     private static final String[] ADMIN_COMMANDS =
             {
