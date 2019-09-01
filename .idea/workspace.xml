@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc129728-cfd9-414d-b90e-187aec6e2037" name="Default" comment="Update mage move to location (target) when try cast a skill out of range in the correct place">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/game/log/GMAudit/vert [268483221].txt" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/GMAudit/vert [268483221].txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/accounting.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/accounting.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/error0.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/error1.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error1.log" afterDir="false" />
@@ -10,8 +11,9 @@
       <change beforePath="$PROJECT_DIR$/dist/game/log/error3.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/error4.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error4.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/error5.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/game/log/error6.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/game/log/error7.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error7.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/error8.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error8.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/game/log/error9.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/error9.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/java0.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/java0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/java1.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/java1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/java2.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/java2.log" afterDir="false" />
@@ -22,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/dist/game/log/java7.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/java7.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/java8.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/java8.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/game/log/java9.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/java9.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/game/log/olympiad.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dist/game/log/olympiad.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/login/log/java0.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login/log/java0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/login/log/java1.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login/log/java1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/login/log/java2.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login/log/java2.log" afterDir="false" />
@@ -71,8 +74,8 @@
       <file leaf-file-name="FakeHelpers.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/helpers/FakeHelpers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="321" column="45" lean-forward="true" selection-start-line="321" selection-start-column="45" selection-end-line="321" selection-end-column="45" />
+            <state relative-caret-position="408">
+              <caret line="643" column="46" lean-forward="true" selection-start-line="643" selection-start-column="46" selection-end-line="643" selection-end-column="46" />
               <folding>
                 <element signature="docComment;class#FakeHelpers#0" />
                 <element signature="method#getFighterBuffs#0;class#FakeHelpers#0" />
@@ -82,6 +85,7 @@
                 <element signature="method#getFakeSelectedLevel#0;class#FakeHelpers#0" />
                 <element signature="method#createRandomFakePlayer#0;class#FakeHelpers#0" />
                 <element signature="method#giveArmorsByClass#0;class#FakeHelpers#0" />
+                <element signature="method#getMageArmorByGrade#0;class#FakeHelpers#0" />
                 <element signature="method#getLightArmorByGrade#0;class#FakeHelpers#0" />
                 <element signature="method#getPlayerGrade#0;class#FakeHelpers#0" />
                 <element signature="method#giveWeaponsByClass#0;class#FakeHelpers#0" />
@@ -98,7 +102,7 @@
       <file leaf-file-name="ClassId.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/base/ClassId.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="2856">
               <caret line="187" column="21" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="21" />
             </state>
           </provider>
@@ -258,6 +262,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,9 +310,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,7 +472,8 @@
       <workItem from="1566653946884" duration="4895000" />
       <workItem from="1566659258948" duration="34000" />
       <workItem from="1566742077250" duration="17482000" />
-      <workItem from="1567256952575" duration="13107000" />
+      <workItem from="1567256952575" duration="16906000" />
+      <workItem from="1567348039289" duration="3877000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor sagittarius ai and combat ai and finish archers ai">
       <created>1561065878363</created>
@@ -603,11 +608,32 @@
       <option name="project" value="LOCAL" />
       <updated>1567273428162</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add s84 mage armors and move DY to S grade instead S80">
+      <created>1567276418422</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1567276418422</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add s84 sets for light classes and move DY to S instead S80">
+      <created>1567277173655</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1567277173655</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fix one ring and one earring that are not equiped when create a fake player">
+      <created>1567349853601</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1567349853601</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369564000" />
+    <option name="totallyTimeSpent" value="377240000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -636,14 +662,14 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.17011128" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.17130366" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.17488076" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49782136" visible="true" weight="0.19793323" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" sideWeight="0.5009074" side_tool="true" weight="0.17488076" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49801272" visible="true" weight="0.23202614" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49801272" visible="true" weight="0.24291939" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
@@ -709,7 +735,10 @@
     <MESSAGE value="Update mage move to location (target) when try cast a skill out of range in the correct place" />
     <MESSAGE value="[WIP] Start map all classes items by grade and class (60%)" />
     <MESSAGE value="Finish all classes except judicator weapons by grade and class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish all classes except judicator weapons by grade and class" />
+    <MESSAGE value="Add s84 mage armors and move DY to S grade instead S80" />
+    <MESSAGE value="Add s84 sets for light classes and move DY to S instead S80" />
+    <MESSAGE value="Fix one ring and one earring that are not equiped when create a fake player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix one ring and one earring that are not equiped when create a fake player" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -724,7 +753,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="472" />
+      <option name="time" value="480" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -745,12 +774,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/game/data/html/admin/admhelp.htm">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/game/data/html/admin/reload.htm">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/game/data/html/admin/documentation.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-242" />
@@ -1038,29 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="518" column="13" lean-forward="true" selection-start-line="518" selection-start-column="13" selection-end-line="518" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#FakePlayerAI#0" />
-            <element signature="method#FakePlayerAI#0;class#FakePlayerAI#0" />
-            <element signature="method#applyDefaultBuffs#0;class#FakePlayerAI#0" />
-            <element signature="method#handleDeath#0;class#FakePlayerAI#0" />
-            <element signature="method#teleportToLocation#0;class#FakePlayerAI#0" />
-            <element signature="method#getTargetsSurroudingWorldRegion#0;class#FakePlayerAI#0" />
-            <element signature="method#getItemsOnGroundInRegion#0;class#FakePlayerAI#0" />
-            <element signature="method#getTargetsInRegion#0;class#FakePlayerAI#0" />
-            <element signature="method#selectTarget#0;class#FakePlayerAI#0" />
-            <element signature="method#getTargetCurrentHp#0;class#FakePlayerAI#0" />
-            <element signature="method#checkIfTargetIsBadPlayer#0;class#FakePlayerAI#0" />
-            <element signature="method#checkIfGroundItemMatch#0;class#FakePlayerAI#0" />
-            <element signature="method#castSpell#0;class#FakePlayerAI#0" />
-            <element signature="method#castSelfSpell#0;class#FakePlayerAI#0" />
-            <element signature="method#toVillageOnDeath#0;class#FakePlayerAI#0" />
-            <element signature="method#clientStopMoving#0;class#FakePlayerAI#0" />
-            <element signature="method#checkTargetLost#0;class#FakePlayerAI#0" />
-            <element signature="method#maybeMoveToPosition#0;class#FakePlayerAI#0" />
-            <element signature="method#moveToPawn#0;class#FakePlayerAI#0" />
-            <element signature="method#moveTo#0;class#FakePlayerAI#0" />
-            <element signature="method#maybeMoveToPawn#0;class#FakePlayerAI#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,15 +1142,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/base/ClassId.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="2856">
           <caret line="187" column="21" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/itemcontainer/PcInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="481" column="26" selection-start-line="481" selection-start-column="26" selection-end-line="481" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/handler/AdminCommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/helpers/FakeHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="321" column="45" lean-forward="true" selection-start-line="321" selection-start-column="45" selection-end-line="321" selection-end-column="45" />
+        <state relative-caret-position="408">
+          <caret line="643" column="46" lean-forward="true" selection-start-line="643" selection-start-column="46" selection-end-line="643" selection-end-column="46" />
           <folding>
             <element signature="docComment;class#FakeHelpers#0" />
             <element signature="method#getFighterBuffs#0;class#FakeHelpers#0" />
@@ -1160,6 +1174,7 @@
             <element signature="method#getFakeSelectedLevel#0;class#FakeHelpers#0" />
             <element signature="method#createRandomFakePlayer#0;class#FakeHelpers#0" />
             <element signature="method#giveArmorsByClass#0;class#FakeHelpers#0" />
+            <element signature="method#getMageArmorByGrade#0;class#FakeHelpers#0" />
             <element signature="method#getLightArmorByGrade#0;class#FakeHelpers#0" />
             <element signature="method#getPlayerGrade#0;class#FakeHelpers#0" />
             <element signature="method#giveWeaponsByClass#0;class#FakeHelpers#0" />

@@ -223,7 +223,7 @@ public class FakeHelpers {
             case SHILLIEN_TEMPLAR:
             case TITAN:
             case MAESTRO:
-                itemIds = Arrays.asList(6373, 6374, 6375, 6376, 6378, 858, 858, 889, 889, 920);
+                itemIds = getHeavyArmorByGrade(player);
                 break;
             case SAGITTARIUS:
             case ADVENTURER:
@@ -442,14 +442,14 @@ public class FakeHelpers {
                     itemsIds = Arrays.asList(13433, 13441, 13138, 13442, 13443, 14165, 14165, 14163, 14163, 14164);
                 } else if (randomNumber == 1) {
                     /**
-                     * 13436 = Vesper Leather Breastplate;
-                     * 13451 = Vesper Leather Leggings;
-                     * 13141 = Vesper Leather Helmet;
-                     * 13452 = Vesper Leather Gloves;
-                     * 13453 = Vesper Leather Boots;
-                     * 14165 = Vesper Noble Ring;
-                     * 14163 = Vesper Noble Earring;
-                     * 14164 = Vesper Noble Necklace;
+                     * 13436 = Vesper Noble Leather Breastplate;
+                     * 13451 = Vesper Noble Leather Leggings;
+                     * 13141 = Vesper Noble Leather Helmet;
+                     * 13452 = Vesper Noble Leather Gloves;
+                     * 13453 = Vesper Noble Leather Boots;
+                     * 14165 = Vesper Ring;
+                     * 14163 = Vesper Earring;
+                     * 14164 = Vesper Necklace;
                      */
                     itemsIds = Arrays.asList(13136, 13451, 13141, 13452, 13453, 14165, 14165, 14163, 14163, 14164);
                 } else if (randomNumber == 2) {
@@ -519,7 +519,8 @@ public class FakeHelpers {
                 }
                 break;
             case "A":
-                if (Rnd.get(0, 1) == 0) {
+                randomNumber = Rnd.get(0, 1);
+                if (randomNumber == 0) {
                     /**
                      * 2385 = Dark Crystal Leather Armor;
                      * 2389 = Dark Crystal Leggings;
@@ -531,7 +532,7 @@ public class FakeHelpers {
                      * 924 = Majestic Necklace;
                      */
                     itemsIds = Arrays.asList(2385, 2389, 512, 5766, 5778, 862, 862, 893, 893, 924);
-                } else {
+                } else if (randomNumber == 1) {
                     /**
                      * 2393 = Tallum Leather Armor;
                      * 547 = Tallum Helm;
@@ -541,7 +542,7 @@ public class FakeHelpers {
                      * 893 = Majestic Ring;
                      * 924 = Majestic Necklace;
                      */
-                    itemsIds = Arrays.asList(2385, 2389, 512, 5766, 5778, 862, 862, 893, 893, 924);
+                    itemsIds = Arrays.asList(2393, 547, 5769, 5781, 862, 862, 893, 893, 924);
                 }
                 break;
             case "B":
@@ -588,6 +589,180 @@ public class FakeHelpers {
                  * 43 = Wooden helmet;
                  */
                 itemsIds = Arrays.asList(23, 2386, 43);
+                break;
+        }
+
+        return itemsIds;
+    }
+
+    public static List<Integer> getHeavyArmorByGrade(FakePlayer player) {
+        List<Integer> itemsIds = new ArrayList<>();
+        int randomNumber;
+
+        switch (getPlayerGrade(player)) {
+            case "S84":
+                randomNumber = Rnd.get(0, 3);
+                if (randomNumber == 0) {
+                    /**
+                     * 13432 = Vesper Breastplate;
+                     * 13438 = Vesper Gaiters;
+                     * 13137 = Vesper Helmet;
+                     * 13439 = Vesper Gauntlet;
+                     * 13440 = Vesper Boots;
+                     * 14165 = Vesper Ring;
+                     * 14163 = Vesper Earring;
+                     * 14164 = Vesper Necklace;
+                     */
+                    itemsIds = Arrays.asList(13432, 13438, 13137, 13439, 13440, 14165, 14165, 14163, 14163, 14164);
+                } else if (randomNumber == 1) {
+                    /**
+                     * 13435 = Vesper Noble Breastplate;
+                     * 13448 = Vesper Noble Gaiters;
+                     * 13140 = Vesper Noble Helmet;
+                     * 13449 = Vesper Noble Gauntlet;
+                     * 13450 = Vesper Noble Boots;
+                     * 14165 = Vesper Ring;
+                     * 14163 = Vesper Earring;
+                     * 14164 = Vesper Necklace;
+                     */
+                    itemsIds = Arrays.asList(13435, 13448, 13140, 13449, 13450, 14165, 14165, 14163, 14163, 14164);
+                } else if (randomNumber == 2) {
+                    /**
+                     * 15592 = Vorpal Breastplate;
+                     * 15595 = Vorpal Gaiters;
+                     * 15589 = Vorpal Helmet;
+                     * 15598 = Vorpal Gauntlet;
+                     * 15601 = Vorpal Boots;
+                     * 15720 = Vorpal Ring;
+                     * 15721 = Vorpal Earring;
+                     * 15722 = Vorpal Necklace;
+                     */
+                    itemsIds = Arrays.asList(15593, 15596, 15590, 15602, 15603, 15720, 15720, 15721, 15721, 15722);
+                } else if (randomNumber == 3) {
+                    /**
+                     * 15575 = Elegia Breastplate;
+                     * 15578 = Elegia Gaiters;
+                     * 15572 = Elegia Helmet;
+                     * 15581 = Elegia Gauntlet;
+                     * 15584 = Elegia Boots;
+                     * 15717 = Elegia Ring;
+                     * 15718 = Elegia Earring;
+                     * 15719 = Elegia Necklace;
+                     */
+                    itemsIds = Arrays.asList(15576, 15579, 15573, 15582, 15585, 15717, 15717, 15718, 15718, 15719);
+                }
+                break;
+            case "S80":
+                /**
+                 * 15609 = Moirai Breastplate;
+                 * 15612 = Moirai Gaiters;
+                 * 15606 = Moirai Helmet;
+                 * 15615 = Moirai Gauntlets;
+                 * 15618 = Moirai Boots;
+                 * 15723 = Moirai Ring;
+                 * 15724 = Moirai Earring;
+                 * 15725 = Moirai Necklace;
+                 */
+                itemsIds = Arrays.asList(15609, 15612, 15606, 15615, 15618, 15723, 15723, 15724, 15724, 15725);
+                break;
+            case "S":
+                randomNumber = Rnd.get(0, 1);
+                if (randomNumber == 0) {
+                    /**
+                     * 6373 = Imperial Crusader Breastplate;
+                     * 6374 = Imperial Crusader Gaiters;
+                     * 6378 = Imperial Crusader Helmet;
+                     * 6375 = Imperial Crusader Gauntlets;
+                     * 6376 = Imperial Crusader Boots;
+                     * 858 = Tateossian Earring;
+                     * 889 = Tateossian Ring;
+                     * 920 = Tateossian Necklace;
+                     */
+                    itemsIds = Arrays.asList(6373, 6374, 6378, 6375, 6376, 858, 858, 889, 889, 920);
+                } else if (randomNumber == 1) {
+                    /**
+                     * 9416 = Dynasty Breastplate;
+                     * 9421 = Dynasty Gaiters;
+                     * 9422 = Dynasty Helmet;
+                     * 9423 = Dynasty Gauntlets (Heavy);
+                     * 9424 = Dynasty Boots (Heavy);
+                     * 9457 = Dynasty Ring;
+                     * 9455 = Dynasty Earring;
+                     * 9456 = Dynasty Necklace;
+                     */
+                    itemsIds = Arrays.asList(9425, 9421, 9422, 9423, 9424, 9457, 9457, 9455, 9455, 9456);
+                }
+                break;
+            case "A":
+                randomNumber = Rnd.get(0, 1);
+                if (randomNumber == 0) {
+                    /**
+                     * 365 = Dark Crystal Breastplate;
+                     * 388 = Dark Crystal Gaiters;
+                     * 512 = Dark Crystal Helmet;
+                     * 5765 = Dark Crystal Gloves (Heavy);
+                     * 5777 = Dark Crystal Boots (Heavy);
+                     * 862 = Majestic Earring;
+                     * 893 = Majestic Ring;
+                     * 924 = Majestic Necklace;
+                     */
+                    itemsIds = Arrays.asList(365, 388, 512, 5765, 5777, 862, 862, 893, 893, 924);
+                } else if (randomNumber == 1) {
+                    /**
+                     * 2382 = Tallum Plate Armor;
+                     * 547 = Tallum Helm;
+                     * 5768 = Tallum Gloves (Heavy);
+                     * 5780 = Tallum Boots (Heavy);
+                     * 862 = Majestic Earring;
+                     * 893 = Majestic Ring;
+                     * 924 = Majestic Necklace;
+                     */
+                    itemsIds = Arrays.asList(2382, 547, 5768, 5780, 862, 862, 893, 893, 924);
+                }
+                break;
+            case "B":
+                /**
+                 * 2376 = Avadon Breatsplate;
+                 * 2415 = Avadon Ciclet;
+                 * 5714 = Avadon Gloves (Heavy);
+                 * 5730 = Avadon Boots (Light);
+                 * 14345 = Earring Of Black Ore;
+                 * 14346 = Ring Of Black Ore;
+                 * 14347 = Necklace Of Black Ore;
+                 */
+                itemsIds = Arrays.asList(2376, 2415, 5714, 5730, 14345, 14345, 14346, 14346, 14347);
+                break;
+            case "C":
+                /**
+                 * 356 = Full Plate Armor;
+                 * 2468 = Full Plate Gauntlets;
+                 * 2438 = Full Plate Boots;
+                 * 2414 = Full Plate Helmet;
+                 * 888 = Blessed Ring;
+                 * 857 = Blessed Earring;
+                 * 919 = Blessed Necklace;
+                 */
+                itemsIds = Arrays.asList(356, 2468, 2438, 2414, 888, 888, 857, 857, 919);
+                break;
+            case "D":
+                /**
+                 * 352 = Brigandine Tunic;
+                 * 2378 = Brigandine Gaiters;
+                 * 2427 = Salamander Skin Boots;
+                 * 2411 = Brigandine Helmet;
+                 * 881 = Elven Ring;
+                 * 850 = Elven Earring;
+                 * 913 = Elven Necklace;
+                 */
+                itemsIds = Arrays.asList(352, 2378, 2427, 2411, 881, 881, 850, 850, 913);
+                break;
+            case "no-grade":
+                /**
+                 * 23 = Wooden Breastplate;
+                 * 2386 = Wooden Gaiters;
+                 * 43 = Leather helmet;
+                 */
+                itemsIds = Arrays.asList(23, 2386, 44);
                 break;
         }
 
