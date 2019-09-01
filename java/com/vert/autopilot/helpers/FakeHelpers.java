@@ -17,6 +17,7 @@ import com.vert.autopilot.ai.FallbackAI;
 import com.vert.autopilot.ai.occupations.*;
 
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * @author vert
@@ -239,10 +240,22 @@ public class FakeHelpers {
         }
         for (int id : itemIds) {
             player.getInventory().addItem("Armors", id, 1, player, null);
-            L2ItemInstance item = player.getInventory().getItemByItemId(id);
+
+            List<L2ItemInstance> playerItemsList = player.getInventory().getItemsByItemId(id);
+            L2ItemInstance item = null;
+
+            for (L2ItemInstance playerItem : playerItemsList) {
+                if (!playerItem.isEquipped()) {
+                    item = playerItem;
+                }
+            }
+
             // @Todo: check this line in FakeHelpers
             // enchant the item??
-            player.getInventory().equipItemAndRecord(item);
+
+            if (item != null) {
+                player.getInventory().equipItemAndRecord(item);
+            }
             player.getInventory().reloadEquippedItems();
             player.broadcastCharInfo();
         }
