@@ -198,11 +198,50 @@ public class FakeHelpers {
     public static void giveArmorsByClass(FakePlayer player) {
         List<Integer> itemIds = new ArrayList<>();
         switch (player.getClassId()) {
+            /**
+             * Initial Mage Classes
+             */
+            case MAGE:
+            case ELVEN_MAGE:
+            case DARK_MAGE:
+            case ORC_MAGE:
+
+            /**
+             * 1 Job Mage Classes
+             */
+            case WIZARD:
+            case CLERIC:
+            case ELVEN_WIZARD:
+            case ORACLE:
+            case DARK_WIZARD:
+            case SHILLIEN_ORACLE:
+            case ORC_SHAMAN:
+
+            /**
+             * 2 Job Mage Classes
+             */
+            case SORCERER:
+            case NECROMANCER:
+            case WARLOCK:
+            case BISHOP:
+            case PROPHET:
+            case SPELLSINGER:
+            case ELEMENTAL_SUMMONER:
+            case ELDER:
+            case SPELLHOWLER:
+            case PHANTOM_SUMMONER:
+            case SHILLIEN_ELDER:
+            case OVERLORD:
+            case WARCRYER:
+
+            /**
+             * 3 Job Mage Classes
+             */
             case ARCHMAGE:
             case SOULTAKER:
-            case HIEROPHANT:
             case ARCANA_LORD:
             case CARDINAL:
+            case HIEROPHANT:
             case MYSTIC_MUSE:
             case ELEMENTAL_MASTER:
             case EVA_SAINT:
@@ -213,26 +252,102 @@ public class FakeHelpers {
             case DOOMCRYER:
                 itemIds = getMageArmorByGrade(player);
                 break;
+
+            /**
+             * 1 Job Heavy Classes
+             */
+            case WARRIOR:
+            case KNIGHT:
+            case ELVEN_KNIGHT:
+            case PALUS_KNIGHT:
+            case ORC_RAIDER:
+            case SCAVENGER:
+            case ARTISAN:
+
+            /**
+             * 2 Job Heavy Classes
+             */
+            case GLADIATOR:
+            case BLADEDANCER:
+            case WARLORD:
+            case PALADIN:
+            case DARK_AVENGER:
+            case TEMPLE_KNIGHT:
+            case SWORDSINGER:
+            case SHILLIEN_KNIGHT:
+            case WARSMITH:
+            case BOUNTY_HUNTER:
+            case DESTROYER:
+
+            /**
+             * 3 Job Heavy Classes
+             */
             case DUELIST:
+            case SPECTRAL_DANCER:
             case DREADNOUGHT:
             case PHOENIX_KNIGHT:
-            case SWORD_MUSE:
             case HELL_KNIGHT:
-            case SPECTRAL_DANCER:
             case EVA_TEMPLAR:
+            case SWORD_MUSE:
             case SHILLIEN_TEMPLAR:
-            case TITAN:
             case MAESTRO:
+            case FORTUNE_SEEKER:
+            case TITAN:
                 itemIds = getHeavyArmorByGrade(player);
                 break;
+
+            /**
+             * Initial Fighter Classes
+             * They Will receive Light armor
+             * because of Kamaels
+             */
+            case FIGHTER:
+            case ELVEN_FIGHTER:
+            case DARK_FIGHTER:
+            case ORC_FIGHTER:
+            case DWARVEN_FIGHTER:
+            case MALE_SOLDIER:
+            case FEMALE_SOLDIER:
+
+            /**
+             * 1 Job Light Classes
+             */
+            case ROGUE:
+            case ELVEN_SCOUT:
+            case ASSASSIN:
+            case ORC_MONK:
+            case WARDER:
+            case TROOPER:
+
+            /**
+             * 2 Job Light Classes
+             */
+            case HAWKEYE:
+            case SILVER_RANGER:
+            case PHANTOM_RANGER:
+            case TREASURE_HUNTER:
+            case PLAINS_WALKER:
+            case ABYSS_WALKER:
+            case TYRANT:
+            case ARBALESTER:
+            case BERSERKER:
+            case MALE_SOULBREAKER:
+            case FEMALE_SOULBREAKER:
+
+            /**
+             * 3 Job Light Classes
+             */
             case SAGITTARIUS:
+            case MOONLIGHT_SENTINEL:
+            case GHOST_SENTINEL:
             case ADVENTURER:
             case WIND_RIDER:
-            case MOONLIGHT_SENTINEL:
             case GHOST_HUNTER:
-            case GHOST_SENTINEL:
-            case FORTUNE_SEEKER:
             case GRAND_KHAVATARI:
+            case TRICKSTER:
+            case DOOMBRINGER:
+            case MALE_SOUL_HOUND:
+            case FEMALE_SOUL_HOUND:
                 itemIds = getLightArmorByGrade(player);
                 break;
             default:
