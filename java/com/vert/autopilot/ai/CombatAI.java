@@ -51,6 +51,10 @@ public abstract class CombatAI extends FakePlayerAI {
         boolean validInstanceType = (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance || _fakePlayer.getTarget() instanceof L2Character);
 
         if(_fakePlayer.getTarget() != null && validInstanceType) {
+            if (_fakePlayer.getIsMovingToPickItem()) {
+                return;
+            }
+
             _fakePlayer.forceAutoAttack();
 
             if (_fakePlayer.getTarget() != null && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
@@ -74,11 +78,16 @@ public abstract class CombatAI extends FakePlayerAI {
     public void thinkAndAct() {
         handleDeath();
         saveLastCharacterPosition();
-        pickupItemsInGround();
+
+        // todo: improve pick items logic
+        // need do tests to check the flow
+        // need to improve the flow to be more "human"
+        /** default disabled because this need to be more tested **/
+        // pickupItemsInGround();
     }
 
     protected void pickupItemsInGround() {
-        if (!_fakePlayer.getIsPickingItemInGround()) {
+        if (!_fakePlayer.getIsPickingItemInGround() && _fakePlayer.getItemToPick() == null && !_fakePlayer.getIsMovingToPickItem()) {
             getItemsSurroudingCharacterRegion();
 
             // Sort items to get the closest item

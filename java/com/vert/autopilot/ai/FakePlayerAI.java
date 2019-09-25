@@ -20,7 +20,6 @@ import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.helpers.FakeHelpers;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -35,7 +34,6 @@ public abstract class FakePlayerAI {
     protected volatile boolean _clientAutoAttacking;
     protected List<L2Object> _targets = new ArrayList<>();
     protected List<L2Object> _itemsInGround = new ArrayList<>();
-    private boolean _isPickingItemInGround = false;
     private long _moveToPawnTimeout;
     protected int _clientMovingToPawnOffset;
     protected boolean _isBusyThinking = false;
@@ -486,29 +484,39 @@ public abstract class FakePlayerAI {
             pickItem(_itemsInGround.get(0));
         } else {
             _fakePlayer.setIsPickingItemInGround(false);
+            _fakePlayer.setItemToPick(null);
         }
     }
 
     protected void pickItem(L2Object item) {
         _fakePlayer.setIsPickingItemInGround(true);
+        _fakePlayer.setItemToPick(item);
+        L2ItemInstance currentItem = (L2ItemInstance) item;
+        Boolean canPickCurrentItem = (currentItem.getDropProtection().isProtected() && currentItem.getDropProtection().getOwner() == _fakePlayer) || !currentItem.getDropProtection().isProtected();
 
-        if (_fakePlayer.isInsideRadius2D(item.getLocation(), 800)) {
-            if (!_fakePlayer.isInsideRadius2D(item.getLocation(), 30)) {
-                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, item.getLocation());
+        // note: add a config if fake pick just own items or every item
+        if ((currentItem.getOwnerId() == _fakePlayer.getObjectId() || canPickCurrentItem) &&  !_fakePlayer.getItemToPick().isInvisible() &&_fakePlayer.isInsideRadius2D(_fakePlayer.getItemToPick().getLocation(), 800)) {
+            if (!_fakePlayer.isInsideRadius2D(_fakePlayer.getItemToPick().getLocation(), 10) && !_fakePlayer.getIsMovingToPickItem()) {
+                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, _fakePlayer.getItemToPick().getLocation());
+                _fakePlayer.setIsMovingToPickItem(true);
             } else {
-                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_PICK_UP, item);
-                _itemsInGround.remove(item);
+                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_PICK_UP, _fakePlayer.getItemToPick());
+                _itemsInGround.remove(_fakePlayer.getItemToPick());
                 _fakePlayer.setIsPickingItemInGround(false);
+                _fakePlayer.setIsMovingToPickItem(false);
+                _fakePlayer.setItemToPick(null);
             }
         } else {
             _itemsInGround.remove(item);
             _fakePlayer.setIsPickingItemInGround(false);
+            _fakePlayer.setIsMovingToPickItem(false);
+            _fakePlayer.setItemToPick(null);
         }
     }
 
     protected void tryTargetRandomCreatureByTypeInRadius(int radius)
     {
-        if (_fakePlayer.getIsPickingItemInGround()) {
+        if (_fakePlayer.getIsPickingItemInGround() || _fakePlayer.getIsMovingToPickItem()) {
             return;
         }
 

@@ -31,6 +31,8 @@ public class FakePlayer extends L2PcInstance {
     private boolean _underControl = false;
     private L2WorldRegion _initialWorldRegion = null;
     private boolean _isPickingItemInGround = false;
+    private L2Object _itemToPick = null;
+    private boolean _isMovingToPickItem = false;
 
     public boolean isUnderControl() {
         return _underControl;
@@ -621,5 +623,21 @@ public class FakePlayer extends L2PcInstance {
 
     public void setIsPickingItemInGround(boolean _isPickingItemInGround) {
         this._isPickingItemInGround = _isPickingItemInGround;
+    }
+
+    public L2Object getItemToPick() {
+        return _itemToPick;
+    }
+
+    public void setItemToPick(L2Object _itemToPick) {
+        this._itemToPick = _itemToPick;
+    }
+
+    public boolean getIsMovingToPickItem() {
+        return _isMovingToPickItem;
+    }
+
+    public void setIsMovingToPickItem(boolean _isMovingToPickItem) {
+        this._isMovingToPickItem = _isMovingToPickItem;
     }
 }
