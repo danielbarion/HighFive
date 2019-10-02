@@ -90,7 +90,7 @@ public class FakeHelpers {
         String accountName = "AutoPilot";
         String playerName = FakePlayerNameManager.INSTANCE.getRandomAvailableName();
 
-        ClassId classId = getFakeSelectedClass(occupation);
+        ClassId classId = getFakeSelectedClass(occupation, getFakeSelectedLevel(level));
 
         final L2PcTemplate template = PlayerTemplateData.getInstance().getTemplate(classId);
         PcAppearance app = getRandomAppearance(template.getRace());
@@ -114,31 +114,105 @@ public class FakeHelpers {
         return player;
     }
 
-    public static ClassId getFakeSelectedClass(String occupation) {
-        ClassId classId;
+    public static ClassId getFakeSelectedClass(String occupation, int level) {
+        ClassId classId = null;
 
-        switch (occupation) {
-            case "Sagittarius":
-                classId = ClassId.SAGITTARIUS;
-                break;
-            case "MoonlightSent":
-                classId = ClassId.MOONLIGHT_SENTINEL;
-                break;
-            case "GhostSentinel":
-                classId = ClassId.GHOST_SENTINEL;
-                break;
-            case "Archmage":
-                classId = ClassId.ARCHMAGE;
-                break;
-            case "MysticMuse":
-                classId = ClassId.MYSTIC_MUSE;
-                break;
-            case "StormScreamer":
-                classId = ClassId.STORM_SCREAMER;
-                break;
-            default:
-                classId = getThirdClasses().get(Rnd.get(0, getThirdClasses().size() - 1));
-                break;
+        if (level >= 76) {
+            switch (occupation) {
+                case "Sagittarius":
+                    classId = ClassId.SAGITTARIUS;
+                    break;
+                case "MoonlightSent":
+                    classId = ClassId.MOONLIGHT_SENTINEL;
+                    break;
+                case "GhostSentinel":
+                    classId = ClassId.GHOST_SENTINEL;
+                    break;
+                case "Archmage":
+                    classId = ClassId.ARCHMAGE;
+                    break;
+                case "MysticMuse":
+                    classId = ClassId.MYSTIC_MUSE;
+                    break;
+                case "StormScreamer":
+                    classId = ClassId.STORM_SCREAMER;
+                    break;
+                default:
+                    classId = getThirdClasses().get(Rnd.get(0, getThirdClasses().size() - 1));
+                    break;
+            }
+        } else if (level >= 40 && level < 76) {
+            switch (occupation) {
+                case "Sagittarius":
+                    classId = ClassId.HAWKEYE;
+                    break;
+                case "MoonlightSent":
+                    classId = ClassId.SILVER_RANGER;
+                    break;
+                case "GhostSentinel":
+                    classId = ClassId.PHANTOM_RANGER;
+                    break;
+                case "Archmage":
+                    classId = ClassId.SORCERER;
+                    break;
+                case "MysticMuse":
+                    classId = ClassId.SPELLSINGER;
+                    break;
+                case "StormScreamer":
+                    classId = ClassId.SPELLHOWLER;
+                    break;
+                default:
+                    classId = getSecondClasses().get(Rnd.get(0, getSecondClasses().size() - 1));
+                    break;
+            }
+        } else if (level >= 20 && level < 40) {
+            switch (occupation) {
+                case "Sagittarius":
+                    classId = ClassId.ROGUE;
+                    break;
+                case "MoonlightSent":
+                    classId = ClassId.ELVEN_SCOUT;
+                    break;
+                case "GhostSentinel":
+                    classId = ClassId.ASSASSIN;
+                    break;
+                case "Archmage":
+                    classId = ClassId.WIZARD;
+                    break;
+                case "MysticMuse":
+                    classId = ClassId.ELVEN_WIZARD;
+                    break;
+                case "StormScreamer":
+                    classId = ClassId.DARK_WIZARD;
+                    break;
+                default:
+                    classId = getFirstClasses().get(Rnd.get(0, getFirstClasses().size() - 1));
+                    break;
+            }
+        } else if (level < 20) {
+            switch (occupation) {
+                case "Sagittarius":
+                    classId = ClassId.FIGHTER;
+                    break;
+                case "MoonlightSent":
+                    classId = ClassId.ELVEN_FIGHTER;
+                    break;
+                case "GhostSentinel":
+                    classId = ClassId.DARK_FIGHTER;
+                    break;
+                case "Archmage":
+                    classId = ClassId.MAGE;
+                    break;
+                case "MysticMuse":
+                    classId = ClassId.ELVEN_MAGE;
+                    break;
+                case "StormScreamer":
+                    classId = ClassId.DARK_MAGE;
+                    break;
+                default:
+                    classId = getBaseClasses().get(Rnd.get(0, getBaseClasses().size() - 1));
+                    break;
+            }
         }
 
         return classId;
@@ -2142,6 +2216,53 @@ public class FakeHelpers {
 //        classes.add(ClassId.DUELIST);
 //        classes.add(ClassId.GRAND_KHAVATARI);
 //        classes.add(ClassId.DREADNOUGHT);
+
+        return classes;
+    }
+
+    public static List<ClassId> getSecondClasses() {
+        // When a new class is added into getThirdClasses, need to be added here
+        List<ClassId> classes = new ArrayList<>();
+
+        classes.add(ClassId.HAWKEYE);
+        classes.add(ClassId.SILVER_RANGER);
+        classes.add(ClassId.PHANTOM_RANGER);
+        classes.add(ClassId.SORCERER);
+        classes.add(ClassId.SPELLSINGER);
+        classes.add(ClassId.SPELLHOWLER);
+
+        return classes;
+    }
+
+    public static List<ClassId> getFirstClasses() {
+        // When a new class is added into getThirdClasses, need to be added here
+        List<ClassId> classes = new ArrayList<>();
+
+        classes.add(ClassId.ROGUE);
+        classes.add(ClassId.ELVEN_SCOUT);
+        classes.add(ClassId.ASSASSIN);
+        classes.add(ClassId.WIZARD);
+        classes.add(ClassId.ELVEN_WIZARD);
+        classes.add(ClassId.DARK_WIZARD);
+
+        return classes;
+    }
+
+    public static List<ClassId> getBaseClasses() {
+        // When a new class is added into getThirdClasses, need to be added here
+        List<ClassId> classes = new ArrayList<>();
+
+        classes.add(ClassId.FIGHTER);
+        classes.add(ClassId.MAGE);
+        classes.add(ClassId.ELVEN_FIGHTER);
+        classes.add(ClassId.ELVEN_MAGE);
+        classes.add(ClassId.DARK_FIGHTER);
+        classes.add(ClassId.DARK_MAGE);
+        //classes.add(ClassId.ORC_FIGHTER);
+        //classes.add(ClassId.ORC_MAGE);
+        //classes.add(ClassId.DWARVEN_FIGHTER);
+        //classes.add(ClassId.MALE_SOLDIER);
+        //classes.add(ClassId.FEMALE_SOLDIER);
 
         return classes;
     }
