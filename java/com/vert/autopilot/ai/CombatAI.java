@@ -2,6 +2,7 @@ package com.vert.autopilot.ai;
 
 import com.l2jmobius.commons.util.Rnd;
 import com.l2jmobius.gameserver.ai.CtrlIntention;
+import com.l2jmobius.gameserver.data.xml.impl.PlayerTemplateData;
 import com.l2jmobius.gameserver.data.xml.impl.SkillData;
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
@@ -9,14 +10,22 @@ import com.l2jmobius.gameserver.model.L2Object;
 import com.l2jmobius.gameserver.model.actor.L2Character;
 import com.l2jmobius.gameserver.model.actor.L2Decoy;
 import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
+import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
+import com.l2jmobius.gameserver.model.base.ClassId;
+import com.l2jmobius.gameserver.model.itemcontainer.PcInventory;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.zone.ZoneId;
 
 import com.vert.autopilot.FakePlayer;
+import com.vert.autopilot.helpers.FakeHelpers;
 import com.vert.autopilot.models.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
+
+import static com.vert.autopilot.helpers.FakeHelpers.getFakeSelectedClass;
+import static com.vert.autopilot.helpers.FakeHelpers.giveArmorsByClass;
+import static com.vert.autopilot.helpers.FakeHelpers.giveWeaponsByClass;
 
 /**
  * @author vert
@@ -75,21 +84,23 @@ public abstract class CombatAI extends FakePlayerAI {
         }
     }
 
-    void checkRangeForAnAttackAndAttack(Skill skill) {
-        double distanceFromTarget = _fakePlayer.calculateDistance2D(_fakePlayer.getTarget().getLocation());
+    protected void checkRangeForAnAttackAndAttack(Skill skill) {
+        if (_fakePlayer.getTarget() != _fakePlayer) {
+            double distanceFromTarget = _fakePlayer.calculateDistance2D(_fakePlayer.getTarget().getLocation());
 
-        if (skill != null) {
-            if (_fakePlayer.getMagicalAttackRange(skill) >= distanceFromTarget) {
-                _fakePlayer.stopMove(_fakePlayer.getLocation());
-                _fakePlayer.doCast(skill);
+            if (skill != null) {
+                if (_fakePlayer.getMagicalAttackRange(skill) >= distanceFromTarget) {
+                    _fakePlayer.stopMove(_fakePlayer.getLocation());
+                    _fakePlayer.doCast(skill);
+                } else {
+                    _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, _fakePlayer.getTarget().getLocation());
+                }
             } else {
-                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, _fakePlayer.getTarget().getLocation());
-            }
-        } else {
-            if (distanceFromTarget > _fakePlayer.getPhysicalAttackRange()) {
-                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, _fakePlayer.getTarget());
-            } else {
-                _fakePlayer.forceAutoAttack();
+                if (distanceFromTarget > _fakePlayer.getPhysicalAttackRange()) {
+                    _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, _fakePlayer.getTarget());
+                } else {
+                    _fakePlayer.forceAutoAttack();
+                }
             }
         }
     }
@@ -98,12 +109,53 @@ public abstract class CombatAI extends FakePlayerAI {
     public void thinkAndAct() {
         handleDeath();
         saveLastCharacterPosition();
+        checkOccupationAndItems();
 
         // todo: improve pick items logic
         // need do tests to check the flow
         // need to improve the flow to be more "human"
         /** default disabled because this need to be more tested **/
         // pickupItemsInGround();
+    }
+
+    /**
+     * This method check the fake player level and occupation
+     * and update his occupation and items when needed
+     */
+    protected void checkOccupationAndItems() {
+        ClassId classId = getFakeSelectedClass(_fakePlayer.getOccupation(), _fakePlayer.getLevel());
+        System.out.println(_fakePlayer.getClassId() + " | " + classId + " | " + _fakePlayer.getFinalClassId());
+
+        if (_fakePlayer.getClassId() != null && _fakePlayer.getOccupation() != null && _fakePlayer.getClassId() != classId) {
+
+            _fakePlayer.setBaseClass(classId);
+            _fakePlayer.setLearningClass(classId);
+            _fakePlayer.setClassId(classId.getId());
+            _fakePlayer.rewardSkills();
+            _fakePlayer.addAutoSoulShot(getShotId());
+
+            removeOldItems();
+
+            giveArmorsByClass(_fakePlayer);
+            giveWeaponsByClass(_fakePlayer,false);
+
+            _fakePlayer.assignDefaultAI();
+            _fakePlayer.heal();
+            _fakePlayer.setTarget(null);
+
+            // When update fake player appearance, need broadcast the user info.
+            _fakePlayer.broadcastUserInfo();
+        }
+    }
+
+    protected void removeOldItems() {
+        PcInventory inventory = _fakePlayer.getInventory();
+
+        Arrays.stream(inventory.getItems()).forEach(item -> {
+            if (item.isArmor() || item.isWeapon() && item.isEquipped()) {
+                inventory.destroyItem("L2ItemInstance", item, _fakePlayer, null);
+            }
+        });
     }
 
     protected void pickupItemsInGround() {

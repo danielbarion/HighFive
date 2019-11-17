@@ -64,8 +64,8 @@ public class AdminAutopilotEngine implements IAdminCommandHandler {
 
         if(command.startsWith("admin_deletefake")) {
             if(activeChar.getTarget() != null && activeChar.getTarget() instanceof FakePlayer) {
-                FakePlayer fakePlayer = (FakePlayer)activeChar.getTarget();
-                fakePlayer.despawnPlayer();
+                FakePlayer fakePlayer = (FakePlayer) activeChar.getTarget();
+                FakePlayerManager.INSTANCE.despawnFakePlayer(fakePlayer.getObjectId());
             }
             return true;
         }

@@ -31,14 +31,13 @@ import static com.l2jmobius.gameserver.model.TeleportWhereType.TOWN;
 public abstract class FakePlayerAI {
     protected final FakePlayer _fakePlayer;
     protected volatile boolean _clientMoving;
-    protected volatile boolean _clientAutoAttacking;
     protected List<L2Object> _targets = new ArrayList<>();
     protected List<L2Object> _itemsInGround = new ArrayList<>();
     private long _moveToPawnTimeout;
     protected int _clientMovingToPawnOffset;
     protected boolean _isBusyThinking = false;
     protected int iterationsOnDeath = 0;
-    private final int toVillageIterationsOnDeath = 10;
+    private final int toVillageIterationsOnDeath = -1;
 
     public FakePlayerAI(FakePlayer character)
     {
@@ -82,7 +81,7 @@ public abstract class FakePlayerAI {
 
     protected void handleDeath() {
         if(_fakePlayer.isDead()) {
-            if(iterationsOnDeath >= toVillageIterationsOnDeath) {
+            if(iterationsOnDeath >= toVillageIterationsOnDeath || toVillageIterationsOnDeath == -1) {
                 toVillageOnDeath();
             }
             iterationsOnDeath++;

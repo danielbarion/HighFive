@@ -34,6 +34,8 @@ public class FakePlayer extends L2PcInstance {
     private L2Object _itemToPick = null;
     private boolean _isMovingToPickItem = false;
     private ClassId _finalClassId = null;
+    // This "occupation" are the selected occupation when create the fake
+    private String _occupation = null;
 
      public FakePlayer(int objectId, L2PcTemplate template, String accountName, PcAppearance app)
     {
@@ -640,5 +642,13 @@ public class FakePlayer extends L2PcInstance {
 
     public void setFinalClassId(ClassId _finalClassId) {
         this._finalClassId = _finalClassId;
+    }
+
+    public String getOccupation() {
+        return _occupation;
+    }
+
+    public void setOccupation(String _occupation) {
+        this._occupation = _occupation;
     }
 }

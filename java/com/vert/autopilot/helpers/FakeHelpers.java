@@ -15,6 +15,7 @@ import com.vert.autopilot.FakePlayerNameManager;
 import com.vert.autopilot.ai.FakePlayerAI;
 import com.vert.autopilot.ai.FallbackAI;
 import com.vert.autopilot.ai.occupations.*;
+import com.vert.autopilot.ai.occupations.first.RogueAI;
 import com.vert.autopilot.ai.occupations.initial.*;
 
 import java.util.*;
@@ -103,6 +104,7 @@ public class FakeHelpers {
         // Add player into database table
 //        PlayerInfoTable.getInstance().addPlayer(objectId, accountName, playerName, player.getAccessLevel().getLevel());
         player.setFinalClassId(finalClassId);
+        player.setOccupation(occupation);
         player.setBaseClass(player.getClassId());
         setLevel(player, getFakeSelectedLevel(level));
         player.rewardSkills();
@@ -763,7 +765,7 @@ public class FakeHelpers {
                 break;
             case "D":
                 /**
-                 * 437 = Salamander Skin Mail;
+                 * 396 = Salamander Skin Mail;
                  * 607 = Ogre Power Gauntlets;
                  * 2427 = Salamander Skin Boots;
                  * 2411 = Brigandine Helmet;
@@ -771,7 +773,7 @@ public class FakeHelpers {
                  * 850 = Elven Earring;
                  * 913 = Elven Necklace;
                  */
-                itemsIds = Arrays.asList(437, 607, 2427, 2411, 881, 881, 850, 850, 913);
+                itemsIds = Arrays.asList(396, 607, 2427, 2411, 881, 881, 850, 850, 913);
                 break;
             case "no-grade":
                 /**
@@ -1194,12 +1196,22 @@ public class FakeHelpers {
             case ROGUE:
             case ELVEN_SCOUT:
             case ASSASSIN:
-                if (Rnd.get(0, 1) == 0) {
+                List<ClassId> archerClasses = new ArrayList<>();
+                archerClasses.add(ClassId.SAGITTARIUS);
+                archerClasses.add(ClassId.MOONLIGHT_SENTINEL);
+                archerClasses.add(ClassId.GHOST_SENTINEL);
+
+                List<ClassId> daggerClasses = new ArrayList<>();
+                daggerClasses.add(ClassId.ADVENTURER);
+                daggerClasses.add(ClassId.WIND_RIDER);
+                daggerClasses.add(ClassId.GHOST_HUNTER);
+
+                if (daggerClasses.stream().anyMatch(daggerClass -> daggerClass == player.getFinalClassId())) {
                     /**
                      * 225 = Mithril Dagger
                      */
                     itemsIds = Arrays.asList(225);
-                } else {
+                } else if (archerClasses.stream().anyMatch(archerClass -> archerClass == player.getFinalClassId())) {
                     /**
                      * 280 = Light Crossbow
                      */
@@ -2283,6 +2295,12 @@ public class FakeHelpers {
         // Dark Elf
         ais.put(ClassId.DARK_FIGHTER, DarkElfFighterAI.class);
         ais.put(ClassId.DARK_MAGE, DarkElfMysticAI.class);
+
+        /**
+         * 1 Job Occupations
+         */
+        // Human
+        ais.put(ClassId.ROGUE, RogueAI.class);
 
         // -----------------------------------------------------
         // 3 Job Occupations
