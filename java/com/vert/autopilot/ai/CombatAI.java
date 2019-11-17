@@ -39,37 +39,57 @@ public abstract class CombatAI extends FakePlayerAI {
                 return;
             }
 
-            if (_fakePlayer.isInsideRadius3D(_fakePlayer.getTarget().getX(), _fakePlayer.getTarget().getY(), _fakePlayer.getTarget().getZ(), skill.getCastRange())) {
-                _fakePlayer.doCast(skill);
-            } else if (!_fakePlayer.isCastingNow()) {
-                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, _fakePlayer.getTarget().getLocation());
-            }
+            // Log for Debug
+            // System.out.println("Distance from target: " + _fakePlayer.calculateDistance2D(_fakePlayer.getTarget().getLocation()));
+            // System.out.println("Magical Attack Range: " + _fakePlayer.getMagicalAttackRange(skill));
+            checkRangeForAnAttackAndAttack(skill);
         }
     }
 
     protected void tryAttackingUsingFighterOffensiveSkill()	{
         boolean validInstanceType = (_fakePlayer.getTarget() instanceof L2Decoy || _fakePlayer.getTarget() instanceof L2MonsterInstance || _fakePlayer.getTarget() instanceof L2Character);
+        Skill skill = null;
 
         if(_fakePlayer.getTarget() != null && validInstanceType) {
             if (_fakePlayer.getIsMovingToPickItem()) {
                 return;
             }
 
-            _fakePlayer.forceAutoAttack();
-
             if (_fakePlayer.getTarget() != null && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
+                // Log for Debug
+                // System.out.println("Distance from target: " + _fakePlayer.calculateDistance2D(_fakePlayer.getTarget().getLocation()));
+
                 if(Rnd.nextDouble() < chanceOfUsingSkill()) {
                     if(getOffensiveSpells() != null && !getOffensiveSpells().isEmpty()) {
-                        Skill skill = getRandomAvaiableFighterSpellForTarget();
-                        if(skill != null) {
-                            _fakePlayer.doCast(skill);
-                        } else {
-                            _fakePlayer.forceAutoAttack();
-                        }
+                        skill = getRandomAvaiableFighterSpellForTarget();
+                        // Log for Debug
+                        // System.out.println("Magical Attack Range: " + _fakePlayer.getMagicalAttackRange(skill));
+                        checkRangeForAnAttackAndAttack(skill);
                     }
                 } else {
-                    _fakePlayer.forceAutoAttack();
+                    // Log for Debug
+                    // System.out.println("Physical Attack Range: " + _fakePlayer.getPhysicalAttackRange());
+                    checkRangeForAnAttackAndAttack(skill);
                 }
+            }
+        }
+    }
+
+    void checkRangeForAnAttackAndAttack(Skill skill) {
+        double distanceFromTarget = _fakePlayer.calculateDistance2D(_fakePlayer.getTarget().getLocation());
+
+        if (skill != null) {
+            if (_fakePlayer.getMagicalAttackRange(skill) >= distanceFromTarget) {
+                _fakePlayer.stopMove(_fakePlayer.getLocation());
+                _fakePlayer.doCast(skill);
+            } else {
+                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, _fakePlayer.getTarget().getLocation());
+            }
+        } else {
+            if (distanceFromTarget > _fakePlayer.getPhysicalAttackRange()) {
+                _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, _fakePlayer.getTarget());
+            } else {
+                _fakePlayer.forceAutoAttack();
             }
         }
     }

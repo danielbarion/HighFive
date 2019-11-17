@@ -15,9 +15,9 @@ import com.vert.autopilot.FakePlayerNameManager;
 import com.vert.autopilot.ai.FakePlayerAI;
 import com.vert.autopilot.ai.FallbackAI;
 import com.vert.autopilot.ai.occupations.*;
+import com.vert.autopilot.ai.occupations.initial.*;
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * @author vert
@@ -91,6 +91,7 @@ public class FakeHelpers {
         String playerName = FakePlayerNameManager.INSTANCE.getRandomAvailableName();
 
         ClassId classId = getFakeSelectedClass(occupation, getFakeSelectedLevel(level));
+        ClassId finalClassId = getFakeSelectedClass(occupation, 86);
 
         final L2PcTemplate template = PlayerTemplateData.getInstance().getTemplate(classId);
         PcAppearance app = getRandomAppearance(template.getRace());
@@ -101,6 +102,7 @@ public class FakeHelpers {
 
         // Add player into database table
 //        PlayerInfoTable.getInstance().addPlayer(objectId, accountName, playerName, player.getAccessLevel().getLevel());
+        player.setFinalClassId(finalClassId);
         player.setBaseClass(player.getClassId());
         setLevel(player, getFakeSelectedLevel(level));
         player.rewardSkills();
@@ -2269,6 +2271,21 @@ public class FakeHelpers {
 
     public static Map<ClassId, Class<? extends FakePlayerAI>> getAllAIs() {
         Map<ClassId, Class<? extends FakePlayerAI>> ais = new HashMap<>();
+        /**
+         * Base Occupations
+         */
+        // Human
+        ais.put(ClassId.FIGHTER, HumanFighterAI.class);
+        ais.put(ClassId.MAGE, HumanMysticAI.class);
+        // Elf
+        ais.put(ClassId.ELVEN_FIGHTER, ElfFighterAI.class);
+        ais.put(ClassId.ELVEN_MAGE, ElfMysticAI.class);
+        // Dark Elf
+        ais.put(ClassId.DARK_FIGHTER, DarkElfFighterAI.class);
+        ais.put(ClassId.DARK_MAGE, DarkElfMysticAI.class);
+
+        // -----------------------------------------------------
+        // 3 Job Occupations
         ais.put(ClassId.STORM_SCREAMER, StormScreamerAI.class);
         ais.put(ClassId.MYSTIC_MUSE, MysticMuseAI.class);
         ais.put(ClassId.ARCHMAGE, ArchmageAI.class);

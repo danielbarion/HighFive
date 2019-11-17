@@ -11,6 +11,7 @@ import com.l2jmobius.gameserver.model.actor.appearance.PcAppearance;
 import com.l2jmobius.gameserver.model.actor.instance.L2DoorInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
+import com.l2jmobius.gameserver.model.base.ClassId;
 import com.l2jmobius.gameserver.model.olympiad.OlympiadManager;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.skills.targets.L2TargetType;
@@ -28,19 +29,11 @@ import static com.vert.autopilot.FakePlayerNameManager._log;
 
 public class FakePlayer extends L2PcInstance {
     private FakePlayerAI _fakeAi;
-    private boolean _underControl = false;
     private L2WorldRegion _initialWorldRegion = null;
     private boolean _isPickingItemInGround = false;
     private L2Object _itemToPick = null;
     private boolean _isMovingToPickItem = false;
-
-    public boolean isUnderControl() {
-        return _underControl;
-    }
-
-    public void setUnderControl(boolean underControl) {
-        _underControl = underControl;
-    }
+    private ClassId _finalClassId = null;
 
      public FakePlayer(int objectId, L2PcTemplate template, String accountName, PcAppearance app)
     {
@@ -639,5 +632,13 @@ public class FakePlayer extends L2PcInstance {
 
     public void setIsMovingToPickItem(boolean _isMovingToPickItem) {
         this._isMovingToPickItem = _isMovingToPickItem;
+    }
+
+    public ClassId getFinalClassId() {
+        return _finalClassId;
+    }
+
+    public void setFinalClassId(ClassId _finalClassId) {
+        this._finalClassId = _finalClassId;
     }
 }
