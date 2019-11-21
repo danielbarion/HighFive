@@ -22,6 +22,7 @@ import com.vert.autopilot.models.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static com.vert.autopilot.helpers.FakeHelpers.getFakeSelectedClass;
 import static com.vert.autopilot.helpers.FakeHelpers.giveArmorsByClass;
@@ -124,7 +125,8 @@ public abstract class CombatAI extends FakePlayerAI {
      */
     protected void checkOccupationAndItems() {
         ClassId classId = getFakeSelectedClass(_fakePlayer.getOccupation(), _fakePlayer.getLevel());
-        System.out.println(_fakePlayer.getClassId() + " | " + classId + " | " + _fakePlayer.getFinalClassId());
+        L2Object oldTarget = _fakePlayer.getTarget();
+//        System.out.println(_fakePlayer.getClassId() + " | " + classId + " | " + _fakePlayer.getFinalClassId());
 
         if (_fakePlayer.getClassId() != null && _fakePlayer.getOccupation() != null && _fakePlayer.getClassId() != classId) {
 
@@ -132,6 +134,17 @@ public abstract class CombatAI extends FakePlayerAI {
             _fakePlayer.setLearningClass(classId);
             _fakePlayer.setClassId(classId.getId());
             _fakePlayer.rewardSkills();
+
+            /**
+             * Disable any active SoulShot before equip another weapon.
+             * This is necessary  because magicians are activating SS from another
+             * grade and doesn't give damage to anyone.
+             */
+            for (int soulShotId : _fakePlayer.getAutoSoulShot())
+            {
+                _fakePlayer.removeAutoSoulShot(soulShotId);
+            }
+
             _fakePlayer.addAutoSoulShot(getShotId());
 
             removeOldItems();
@@ -141,7 +154,7 @@ public abstract class CombatAI extends FakePlayerAI {
 
             _fakePlayer.assignDefaultAI();
             _fakePlayer.heal();
-            _fakePlayer.setTarget(null);
+            _fakePlayer.setTarget(oldTarget);
 
             // When update fake player appearance, need broadcast the user info.
             _fakePlayer.broadcastUserInfo();

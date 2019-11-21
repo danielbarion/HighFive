@@ -15,7 +15,7 @@ import com.vert.autopilot.FakePlayerNameManager;
 import com.vert.autopilot.ai.FakePlayerAI;
 import com.vert.autopilot.ai.FallbackAI;
 import com.vert.autopilot.ai.occupations.*;
-import com.vert.autopilot.ai.occupations.first.RogueAI;
+import com.vert.autopilot.ai.occupations.first.*;
 import com.vert.autopilot.ai.occupations.initial.*;
 
 import java.util.*;
@@ -95,7 +95,7 @@ public class FakeHelpers {
         ClassId finalClassId = getFakeSelectedClass(occupation, 86);
 
         final L2PcTemplate template = PlayerTemplateData.getInstance().getTemplate(classId);
-        PcAppearance app = getRandomAppearance(template.getRace());
+        PcAppearance app = getRandomAppearance();
         FakePlayer player = new FakePlayer(objectId, template, accountName, app);
 
         player.setName(playerName);
@@ -252,7 +252,7 @@ public class FakeHelpers {
         ClassId classId = getThirdClasses().get(Rnd.get(0, getThirdClasses().size() - 1));
 
         final L2PcTemplate template = PlayerTemplateData.getInstance().getTemplate(classId);
-        PcAppearance app = getRandomAppearance(template.getRace());
+        PcAppearance app = getRandomAppearance();
         FakePlayer player = new FakePlayer(objectId, template, accountName, app);
 
         player.setName(playerName);
@@ -2299,8 +2299,20 @@ public class FakeHelpers {
         /**
          * 1 Job Occupations
          */
-        // Human
+        // Human - Fighter
         ais.put(ClassId.ROGUE, RogueAI.class);
+        // Human - Mystic
+        ais.put(ClassId.WIZARD, WizardAI.class);
+
+        // Elf - Fighter
+        ais.put(ClassId.ELVEN_SCOUT, ElvenScoutAI.class);
+        // Elf - Mystic
+        ais.put(ClassId.ELVEN_WIZARD, ElvenWizardAI.class);
+
+        // Dark Elf - Fighter
+        ais.put(ClassId.ASSASSIN, AssassinAI.class);
+        // Dark Elf - Mystic
+        ais.put(ClassId.DARK_WIZARD, DarkWizardAI.class);
 
         // -----------------------------------------------------
         // 3 Job Occupations
@@ -2324,8 +2336,7 @@ public class FakeHelpers {
         return ais;
     }
 
-    // Todo: check the param "race" and remove him if not needed
-    public static PcAppearance getRandomAppearance(Race race) {
+    public static PcAppearance getRandomAppearance() {
         Boolean randomSex = Rnd.get(0, 1) == 0;
         int hairStyle = Rnd.get(0, randomSex == false ? 4 : 6);
         int hairColor = Rnd.get(0, 3);
