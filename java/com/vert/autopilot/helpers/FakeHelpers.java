@@ -7,6 +7,7 @@ import com.l2jmobius.gameserver.idfactory.IdFactory;
 import com.l2jmobius.gameserver.model.actor.appearance.PcAppearance;
 import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
 import com.l2jmobius.gameserver.model.base.ClassId;
+import com.l2jmobius.gameserver.model.itemcontainer.PcInventory;
 import com.l2jmobius.gameserver.model.items.instance.L2ItemInstance;
 
 import com.vert.autopilot.FakePlayer;
@@ -20,6 +21,8 @@ import com.vert.autopilot.ai.occupations.second.*;
 import com.vert.autopilot.ai.occupations.third.*;
 
 import java.util.*;
+
+import static com.vert.autopilot.helpers.FakeHelpers.addPlayerItemsByClass;
 
 /**
  * @author vert
@@ -110,10 +113,7 @@ public class FakeHelpers {
         setLevel(player, getFakeSelectedLevel(level));
         player.rewardSkills();
 
-        giveArmorsByClass(player);
-//        Weapon random enchanted from +7 between +20
-//        giveWeaponsByClass(player,true);
-        giveWeaponsByClass(player,false);
+        addPlayerItemsByClass(player);
         player.rechargeShots(true, true);
         player.heal();
 
@@ -266,10 +266,7 @@ public class FakeHelpers {
         setLevel(player, 78);
         player.rewardSkills();
 
-        giveArmorsByClass(player);
-//        Weapon random enchanted from +7 between +20
-//        giveWeaponsByClass(player,true);
-        giveWeaponsByClass(player,false);
+        addPlayerItemsByClass(player);
         player.rechargeShots(true, true);
         player.heal();
 
@@ -2377,6 +2374,44 @@ public class FakeHelpers {
         int faceId = Rnd.get(0, 2);
 
         return new PcAppearance((byte) faceId, (byte) hairColor, (byte) hairStyle, randomSex);
+    }
+
+    public static void changePlayerOccupation(FakePlayer player, ClassId classId) {
+        player.setBaseClass(classId);
+        player.setLearningClass(classId);
+        player.setClassId(classId.getId());
+        player.rewardSkills();
+    }
+
+    public static void removeOldItems(FakePlayer player) {
+        /**
+         * Get inventory items.
+         */
+        PcInventory inventory = player.getInventory();
+
+        /**
+         * Disable any active SoulShot before equip another weapon.
+         * This is necessary  because magicians are activating SS from another
+         * grade when recharge shots and doesn't give damage to anyone.
+         */
+        for (int soulShotId : player.getAutoSoulShot())
+        {
+            player.removeAutoSoulShot(soulShotId);
+        }
+
+        /**
+         * Remove All equipped weapon, armor and jewels from character.
+         */
+        Arrays.stream(inventory.getItems()).forEach(item -> {
+            if (item.isArmor() || item.isWeapon() && item.isEquipped()) {
+                inventory.destroyItem("L2ItemInstance", item, player, null);
+            }
+        });
+    }
+
+    public static void addPlayerItemsByClass(FakePlayer player) {
+        giveArmorsByClass(player);
+        giveWeaponsByClass(player,false);
     }
 
     public static void setLevel(FakePlayer player, int level) {

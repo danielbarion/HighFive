@@ -24,9 +24,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static com.vert.autopilot.helpers.FakeHelpers.getFakeSelectedClass;
-import static com.vert.autopilot.helpers.FakeHelpers.giveArmorsByClass;
-import static com.vert.autopilot.helpers.FakeHelpers.giveWeaponsByClass;
+import static com.vert.autopilot.helpers.FakeHelpers.*;
 
 /**
  * @author vert
@@ -133,21 +131,17 @@ public abstract class CombatAI extends FakePlayerAI {
             /**
              * Update fake player occupation.
              */
-            _fakePlayer.setBaseClass(classId);
-            _fakePlayer.setLearningClass(classId);
-            _fakePlayer.setClassId(classId.getId());
-            _fakePlayer.rewardSkills();
+            changePlayerOccupation(_fakePlayer, classId);
 
             /**
              * Remove Old equipped items.
              */
-            removeOldItems();
+            removeOldItems(_fakePlayer);
 
             /**
              * Add new items.
              */
-            giveArmorsByClass(_fakePlayer);
-            giveWeaponsByClass(_fakePlayer,false);
+            addPlayerItemsByClass(_fakePlayer);
 
             /**
              * Add and active soul shots.
@@ -164,32 +158,6 @@ public abstract class CombatAI extends FakePlayerAI {
              */
             _fakePlayer.broadcastUserInfo();
         }
-    }
-
-    protected void removeOldItems() {
-        /**
-         * Get inventory items.
-         */
-        PcInventory inventory = _fakePlayer.getInventory();
-
-        /**
-         * Disable any active SoulShot before equip another weapon.
-         * This is necessary  because magicians are activating SS from another
-         * grade when recharge shots and doesn't give damage to anyone.
-         */
-        for (int soulShotId : _fakePlayer.getAutoSoulShot())
-        {
-            _fakePlayer.removeAutoSoulShot(soulShotId);
-        }
-
-        /**
-         * Remove All equipped weapon, armor and jewels from character.
-         */
-        Arrays.stream(inventory.getItems()).forEach(item -> {
-            if (item.isArmor() || item.isWeapon() && item.isEquipped()) {
-                inventory.destroyItem("L2ItemInstance", item, _fakePlayer, null);
-            }
-        });
     }
 
     protected void pickupItemsInGround() {
