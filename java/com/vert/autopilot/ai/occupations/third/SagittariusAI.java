@@ -1,4 +1,4 @@
-package com.vert.autopilot.ai.occupations;
+package com.vert.autopilot.ai.occupations.third;
 
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -16,8 +16,8 @@ import java.util.List;
 /**
  * @author vert
  */
-public class GhostSentinelAI extends CombatAI implements IConsumableSpender {
-    public GhostSentinelAI(FakePlayer character)
+public class SagittariusAI extends CombatAI implements IConsumableSpender {
+    public SagittariusAI(FakePlayer character)
     {
         super(character);
     }
@@ -28,8 +28,8 @@ public class GhostSentinelAI extends CombatAI implements IConsumableSpender {
         super.thinkAndAct();
         setBusyThinking(true);
         applyDefaultBuffs();
-        handleConsumable(_fakePlayer, getArrowId());
         selfSupportBuffs();
+        handleConsumable(_fakePlayer, getArrowId());
         handleShots();
         tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
         tryAttackingUsingFighterOffensiveSkill();
@@ -75,10 +75,9 @@ public class GhostSentinelAI extends CombatAI implements IConsumableSpender {
         mappedSkills.add(19);  // Double Shot
         mappedSkills.add(987);  // Multiple Shot
         mappedSkills.add(990);  // Death Shot
-        mappedSkills.add(369);  // Evade Shot
+        mappedSkills.add(771);  // Flame Hawk
         mappedSkills.add(924);  // Seven Arrow
-        mappedSkills.add(773);  // Ghost Piercing
-        mappedSkills.add(314);  // Fatal Counter
+        mappedSkills.add(354);  // Hamstring Shot
 
         return mappedSkills.stream().anyMatch(id -> id == skill.getId());
     }

@@ -29,6 +29,13 @@
       <change beforePath="$PROJECT_DIR$/dist/login/log/java2.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login/log/java2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/login/log/java3.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login/log/java3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/ai/CombatAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/ai/CombatAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/ArchmageAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/ArchmageAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/GhostSentinelAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/GhostSentinelAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/MoonlightSentinelAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/MoonlightSentinelAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/MysticMuseAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/MysticMuseAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/SagittariusAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/SagittariusAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/SoultakerAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/SoultakerAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/StormScreamerAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/StormScreamerAI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/com/vert/autopilot/helpers/FakeHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/vert/autopilot/helpers/FakeHelpers.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -51,24 +58,34 @@
       <file leaf-file-name="FakeHelpers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/helpers/FakeHelpers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="2323" column="52" selection-start-line="2323" selection-start-column="52" selection-end-line="2323" selection-end-column="52" />
+            <state relative-caret-position="463">
+              <caret line="272" column="41" selection-start-line="272" selection-start-column="41" selection-end-line="272" selection-end-column="41" />
               <folding>
                 <element signature="docComment;class#FakeHelpers#0" />
                 <element signature="method#getFighterBuffs#0;class#FakeHelpers#0" />
                 <element signature="method#getMageBuffs#0;class#FakeHelpers#0" />
+                <element signature="e#4144#4177#0" />
+                <element signature="e#4560#4613#0" />
+                <element signature="method#getFakeSelectedClass#0;class#FakeHelpers#0" />
                 <element signature="method#getFakeSelectedLevel#0;class#FakeHelpers#0" />
-                <element signature="method#createRandomFakePlayer#0;class#FakeHelpers#0" />
+                <element signature="e#9788#9821#0" />
+                <element signature="e#10091#10144#0" />
                 <element signature="method#giveArmorsByClass#0;class#FakeHelpers#0" />
+                <element signature="e#14986#15026#0" />
                 <element signature="method#getMageArmorByGrade#0;class#FakeHelpers#0" />
                 <element signature="method#getLightArmorByGrade#0;class#FakeHelpers#0" />
                 <element signature="method#getHeavyArmorByGrade#0;class#FakeHelpers#0" />
                 <element signature="method#getPlayerGrade#0;class#FakeHelpers#0" />
                 <element signature="method#giveWeaponsByClass#0;class#FakeHelpers#0" />
                 <element signature="method#getThirdClasses#0;class#FakeHelpers#0" />
+                <element signature="e#81343#81379#0" />
+                <element signature="e#81832#81874#0" />
                 <element signature="method#getSecondClasses#0;class#FakeHelpers#0" />
                 <element signature="method#getFirstClasses#0;class#FakeHelpers#0" />
                 <element signature="method#getBaseClasses#0;class#FakeHelpers#0" />
+                <element signature="e#83560#83595#0" />
+                <element signature="method#getAllAIs#0;class#FakeHelpers#0" />
+                <element signature="e#86352#86408#0" />
                 <element signature="method#getRandomAppearance#0;class#FakeHelpers#0" />
                 <element signature="method#setLevel#0;class#FakeHelpers#0" />
                 <element signature="method#getAIbyClassId#0;class#FakeHelpers#0" />
@@ -77,11 +94,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassId.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/base/ClassId.java">
+      <file leaf-file-name="CombatAI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/CombatAI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="151" column="58" selection-start-line="151" selection-start-column="45" selection-end-line="151" selection-end-column="58" />
+            <state relative-caret-position="345">
+              <caret line="154" column="53" lean-forward="true" selection-start-line="154" selection-start-column="53" selection-end-line="154" selection-end-column="53" />
+              <folding>
+                <element signature="docComment;class#CombatAI#0" />
+                <element signature="method#tryAttackingUsingMageOffensiveSkill#0;class#CombatAI#0" />
+                <element signature="method#tryAttackingUsingFighterOffensiveSkill#0;class#CombatAI#0" />
+                <element signature="method#checkRangeForAnAttackAndAttack#0;class#CombatAI#0" />
+                <element signature="method#thinkAndAct#0;class#CombatAI#0" />
+                <element signature="docComment;method#checkOccupationAndItems#0;class#CombatAI#0" />
+                <element signature="method#pickupItemsInGround#0;class#CombatAI#0" />
+                <element signature="method#saveLastCharacterPosition#0;class#CombatAI#0" />
+                <element signature="method#getShotId#0;class#CombatAI#0" />
+                <element signature="method#getArrowId#0;class#CombatAI#0" />
+                <element signature="method#handleShots#0;class#CombatAI#0" />
+                <element signature="method#getRandomAvaiableHealingSpellForTarget#0;class#CombatAI#0" />
+                <element signature="method#getRandomAvaiableMageSpellForTarget#0;class#CombatAI#0" />
+                <element signature="method#waitAndPickAvailablePrioritisedSpell#0;class#CombatAI#0" />
+                <element signature="method#getRandomAvaiableFighterSpellForTarget#0;class#CombatAI#0" />
+                <element signature="method#selfSupportBuffs#0;class#CombatAI#0" />
+                <element signature="method#getOffensiveSpells#0;class#CombatAI#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +125,8 @@
       <file leaf-file-name="L2PcInstance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/actor/instance/L2PcInstance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9474" lean-forward="true" selection-start-line="9474" selection-end-line="9480" selection-end-column="9" />
+            <state relative-caret-position="268">
+              <caret line="9392" selection-start-line="9392" selection-end-line="9392" />
               <folding>
                 <element signature="e#49152#49153#0" expanded="true" />
                 <element signature="e#49189#49190#0" expanded="true" />
@@ -107,55 +143,95 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CombatAI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/CombatAI.java">
+      <file leaf-file-name="L2Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/items/L2Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="138" column="39" selection-start-line="138" selection-start-column="39" selection-end-line="138" selection-end-column="39" />
+            <state relative-caret-position="200">
+              <caret line="924" selection-start-line="924" selection-end-line="924" />
               <folding>
-                <element signature="docComment;class#CombatAI#0" />
-                <element signature="method#tryAttackingUsingFighterOffensiveSkill#0;class#CombatAI#0" />
-                <element signature="method#checkRangeForAnAttackAndAttack#0;class#CombatAI#0" />
-                <element signature="method#thinkAndAct#0;class#CombatAI#0" />
-                <element signature="docComment;method#checkOccupationAndItems#0;class#CombatAI#0" />
-                <element signature="method#removeOldItems#0;class#CombatAI#0" />
-                <element signature="method#pickupItemsInGround#0;class#CombatAI#0" />
-                <element signature="method#saveLastCharacterPosition#0;class#CombatAI#0" />
-                <element signature="method#getArrowId#0;class#CombatAI#0" />
-                <element signature="method#getRandomAvaiableHealingSpellForTarget#0;class#CombatAI#0" />
-                <element signature="method#getRandomAvaiableMageSpellForTarget#0;class#CombatAI#0" />
-                <element signature="method#waitAndPickAvailablePrioritisedSpell#0;class#CombatAI#0" />
-                <element signature="method#getRandomAvaiableFighterSpellForTarget#0;class#CombatAI#0" />
-                <element signature="method#selfSupportBuffs#0;class#CombatAI#0" />
-                <element signature="method#getOffensiveSpells#0;class#CombatAI#0" />
+                <element signature="e#23260#23261#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RogueAI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/RogueAI.java">
+      <file leaf-file-name="L2ItemInstance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/items/instance/L2ItemInstance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="17">
+              <caret line="567" selection-start-line="567" selection-end-line="567" />
               <folding>
-                <element signature="docComment;class#RogueAI#0" />
-                <element signature="method#thinkAndAct#0;class#RogueAI#0" />
-                <element signature="method#getSelfSupportSpells#0;class#RogueAI#0" />
-                <element signature="method#classOffensiveSkillsId#0;class#RogueAI#0" />
+                <element signature="e#17833#17834#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WizardAI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/WizardAI.java">
+      <file leaf-file-name="ItemContainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/itemcontainer/ItemContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="238">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="L2Character.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/actor/L2Character.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="4650" column="12" selection-start-line="4650" selection-start-column="12" selection-end-line="4650" selection-end-column="12" />
               <folding>
-                <element signature="method#getSelfSupportSpells#0;class#WizardAI#0" />
-                <element signature="method#classOffensiveSkillsId#0;class#WizardAI#0" />
+                <element signature="e#50822#50823#0" expanded="true" />
+                <element signature="e#50852#50853#0" expanded="true" />
+                <element signature="e#106998#106999#0" expanded="true" />
+                <element signature="e#107026#107027#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="L2Object.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/L2Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="447" column="24" lean-forward="true" selection-start-line="447" selection-start-column="24" selection-end-line="447" selection-end-column="24" />
+              <folding>
+                <element signature="e#11068#11269#0" />
+                <element signature="e#13543#13544#0" expanded="true" />
+                <element signature="e#13604#13605#0" expanded="true" />
+                <element signature="e#18327#18328#0" expanded="true" />
+                <element signature="e#18382#18383#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FakePlayerAI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/FakePlayerAI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding>
+                <element signature="docComment;class#FakePlayerAI#0" />
+                <element signature="method#FakePlayerAI#0;class#FakePlayerAI#0" />
+                <element signature="method#teleportToLocation#0;class#FakePlayerAI#0" />
+                <element signature="method#getTargetsSurroudingWorldRegion#0;class#FakePlayerAI#0" />
+                <element signature="method#getItemsSurroudingCharacterRegion#0;class#FakePlayerAI#0" />
+                <element signature="method#getItemsOnGroundInRegion#0;class#FakePlayerAI#0" />
+                <element signature="method#selectTarget#0;class#FakePlayerAI#0" />
+                <element signature="method#getTargetCurrentHp#0;class#FakePlayerAI#0" />
+                <element signature="method#checkIfTargetIsBadPlayer#0;class#FakePlayerAI#0" />
+                <element signature="method#checkIfGroundItemMatch#0;class#FakePlayerAI#0" />
+                <element signature="method#castSpell#0;class#FakePlayerAI#0" />
+                <element signature="method#castSelfSpell#0;class#FakePlayerAI#0" />
+                <element signature="method#toVillageOnDeath#0;class#FakePlayerAI#0" />
+                <element signature="method#clientStopMoving#0;class#FakePlayerAI#0" />
+                <element signature="method#checkTargetLost#0;class#FakePlayerAI#0" />
+                <element signature="method#maybeMoveToPosition#0;class#FakePlayerAI#0" />
+                <element signature="method#moveToPawn#0;class#FakePlayerAI#0" />
+                <element signature="method#moveTo#0;class#FakePlayerAI#0" />
+                <element signature="method#maybeMoveToPawn#0;class#FakePlayerAI#0" />
               </folding>
             </state>
           </provider>
@@ -164,8 +240,8 @@
       <file leaf-file-name="FakePlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/FakePlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="49" column="31" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding>
                 <element signature="method#FakePlayer#0;class#FakePlayer#0" />
                 <element signature="e#2336#2337#0" expanded="true" />
@@ -206,7 +282,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>herb</find>
       <find>pickup</find>
       <find>map</find>
       <find>.map</find>
@@ -236,6 +311,7 @@
       <find>437</find>
       <find>enter world</find>
       <find>recall</find>
+      <find>soulshot</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Daniel\Downloads\L2J_Mobius_CT_2.6_HighFive\dist\game\data\stats\skills</dir>
@@ -254,14 +330,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/com/vert/fakeplayer/ai/occupations/GrandKhavatariAI.java" />
-        <option value="$PROJECT_DIR$/java/com/vert/fakeplayer/ai/occupations/MysticMuseAI.java" />
-        <option value="$PROJECT_DIR$/java/com/vert/fakeplayer/ai/occupations/SoultakerAI.java" />
-        <option value="$PROJECT_DIR$/java/com/vert/fakeplayer/ai/occupations/TitanAI.java" />
-        <option value="$PROJECT_DIR$/java/com/vert/fakeplayer/ai/occupations/WindRiderAI.java" />
-        <option value="$PROJECT_DIR$/java/com/vert/fakeplayer/ai/FallbackAI.java" />
-        <option value="$PROJECT_DIR$/dist/game/config/Character.ini" />
-        <option value="$PROJECT_DIR$/dist/game/data/html/admin/fakeplayers/help/fakes.html" />
         <option value="$PROJECT_DIR$/java/com/l2jmobius/gameserver/GameServer.java" />
         <option value="$PROJECT_DIR$/java/com/vert/fakeplayer/FakePlayerNameManager.java" />
         <option value="$PROJECT_DIR$/java/com/vert/fakeplayer/FakePlayerTaskManager.java" />
@@ -303,6 +371,14 @@
         <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/WizardAI.java" />
         <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/ElvenWizardAI.java" />
         <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/DarkWizardAI.java" />
+        <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/HawkeyeAI.java" />
+        <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/SilverRangerAI.java" />
+        <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/PhantomRangerAI.java" />
+        <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/SorcererAI.java" />
+        <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/SoultakerAI.java" />
+        <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/SpellHowlerAI.java" />
+        <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/NecromancerAI.java" />
+        <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/SpellSingerAI.java" />
         <option value="$PROJECT_DIR$/java/com/vert/autopilot/helpers/FakeHelpers.java" />
         <option value="$PROJECT_DIR$/java/com/vert/autopilot/ai/CombatAI.java" />
       </list>
@@ -380,26 +456,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="autopilot" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-              <item name="occupations" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="L2J_Mobius_CT_2.6_HighFive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="L2J_Mobius_CT_2.6_HighFive" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="autopilot" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-              <item name="occupations" type="462c0819:PsiDirectoryNode" />
-              <item name="initial" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="L2J_Mobius_CT_2.6_HighFive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="L2J_Mobius_CT_2.6_HighFive" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="autopilot" type="462c0819:PsiDirectoryNode" />
               <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -427,6 +483,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vert.autopilot.ai.occupations.second" />
       <recent name="com.vert.autopilot.ai.occupations.first" />
       <recent name="com.vert.autopilot.ai.occupations.initial" />
       <recent name="com.vert.autopilot.ai" />
@@ -581,7 +638,7 @@
       <workItem from="1573918610236" duration="8810000" />
       <workItem from="1573951406488" duration="11209000" />
       <workItem from="1574003101400" duration="6521000" />
-      <workItem from="1574349499376" duration="5454000" />
+      <workItem from="1574349499376" duration="10976000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor sagittarius ai and combat ai and finish archers ai">
       <created>1561065878363</created>
@@ -786,11 +843,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574013685098</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add Some first classes and improve change occupation method">
+      <created>1574357191836</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1574357191836</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="428228000" />
+    <option name="totallyTimeSpent" value="433750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,7 +890,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" sideWeight="0.5009074" side_tool="true" weight="0.17488076" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49801272" visible="true" weight="0.46514162" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49801272" visible="true" weight="0.3191721" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
@@ -872,7 +936,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Start add archmage class and add validation to empty level when spawn a fake player" />
     <MESSAGE value="[WIP] Archmage class and mage ai's methods" />
     <MESSAGE value="Update mage move to location (target) when try cast a skill out of range" />
     <MESSAGE value="Start add archmage class and fix" />
@@ -897,7 +960,8 @@
     <MESSAGE value="[WIP] All grade classes AI's" />
     <MESSAGE value="Add initial base IA's (human, elf, dark elf) and add method to check range before attack" />
     <MESSAGE value="Add feature to switch class when need change occupation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add feature to switch class when need change occupation" />
+    <MESSAGE value="Add Some first classes and improve change occupation method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Some first classes and improve change occupation method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -912,7 +976,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="580" />
+      <option name="time" value="587" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -933,132 +997,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/actor/templates/L2CharTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2142">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/FakePlayerTaskManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/tasks/AITaskRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/itemcontainer/PcInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="481" column="26" selection-start-line="481" selection-start-column="26" selection-end-line="481" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/handler/AdminCommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/game/data/scripts/handlers/MasterHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="438" column="12" selection-start-line="438" selection-start-column="12" selection-end-line="438" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/PickItemsAI.java" />
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/commons/concurrent/RunnableWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/tasks/AITask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/events/ListenersContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/items/L2Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/L2Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="799" column="18" selection-start-line="799" selection-start-column="18" selection-end-line="799" selection-end-column="18" />
-          <folding>
-            <element signature="e#13543#13544#0" expanded="true" />
-            <element signature="e#13604#13605#0" expanded="true" />
-            <element signature="e#18327#18328#0" expanded="true" />
-            <element signature="e#18382#18383#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/ai/L2PlayerAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="190" column="19" lean-forward="true" selection-start-line="190" selection-start-column="19" selection-end-line="190" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/CardinalAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/AdventurerAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/ArchmageAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/FallbackAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/ai/AbstractAI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3468">
@@ -1108,13 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/MysticMuseAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="65" column="38" lean-forward="true" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/initial/ElfMysticAI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1143,13 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/SagittariusAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="73" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/network/clientpackets/EnterWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -1164,24 +1088,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/items/instance/L2ItemInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1355" column="65" selection-start-line="1355" selection-start-column="51" selection-end-line="1355" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/game/data/scripts/handlers/admincommandhandlers/AdminTeleport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="178" column="43" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/itemcontainer/ItemContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="437" column="32" selection-start-line="437" selection-start-column="32" selection-end-line="437" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1245,10 +1155,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/FakePlayerAI.java">
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/WizardAI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="534" selection-start-line="534" selection-end-line="534" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="method#getSelfSupportSpells#0;class#WizardAI#0" />
+            <element signature="method#classOffensiveSkillsId#0;class#WizardAI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/HawkeyeAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+          <folding>
+            <element signature="method#thinkAndAct#0;class#HawkeyeAI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/SilverRangerAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/PhantomRangerAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/RogueAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#RogueAI#0" />
+            <element signature="method#thinkAndAct#0;class#RogueAI#0" />
+            <element signature="method#getSelfSupportSpells#0;class#RogueAI#0" />
+            <element signature="method#classOffensiveSkillsId#0;class#RogueAI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/NecromancerAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+          <folding>
+            <element signature="docComment;class#NecromancerAI#0" />
+            <element signature="method#thinkAndAct#0;class#NecromancerAI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/SpellSingerAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="65" column="60" lean-forward="true" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+          <folding>
+            <element signature="method#getSelfSupportSpells#0;class#SpellSingerAI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/SpellHowlerAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="70" column="51" lean-forward="true" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/second/SorcererAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="57" column="59" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/SagittariusAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/MysticMuseAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/MoonlightSentinelAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/ArchmageAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/GhostSentinelAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/StormScreamerAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-278">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/third/SoultakerAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="docComment;class#SoultakerAI#0" />
+            <element signature="method#thinkAndAct#0;class#SoultakerAI#0" />
+            <element signature="method#classOffensiveSkillsId#0;class#SoultakerAI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/base/ClassId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/FakePlayerAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           <folding>
             <element signature="docComment;class#FakePlayerAI#0" />
             <element signature="method#FakePlayerAI#0;class#FakePlayerAI#0" />
@@ -1273,34 +1327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/WizardAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="method#getSelfSupportSpells#0;class#WizardAI#0" />
-            <element signature="method#classOffensiveSkillsId#0;class#WizardAI#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/occupations/first/RogueAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding>
-            <element signature="docComment;class#RogueAI#0" />
-            <element signature="method#thinkAndAct#0;class#RogueAI#0" />
-            <element signature="method#getSelfSupportSpells#0;class#RogueAI#0" />
-            <element signature="method#classOffensiveSkillsId#0;class#RogueAI#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/FakePlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding>
             <element signature="method#FakePlayer#0;class#FakePlayer#0" />
             <element signature="e#2336#2337#0" expanded="true" />
@@ -1326,10 +1356,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/handler/IItemHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/itemcontainer/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1893" column="16" selection-start-line="1893" selection-start-column="16" selection-end-line="1893" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/skills/Skill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="883" column="19" selection-start-line="883" selection-start-column="19" selection-end-line="883" selection-end-column="19" />
+          <folding>
+            <element signature="e#23567#23568#0" expanded="true" />
+            <element signature="e#23592#23593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/L2Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="447" column="24" lean-forward="true" selection-start-line="447" selection-start-column="24" selection-end-line="447" selection-end-column="24" />
+          <folding>
+            <element signature="e#11068#11269#0" />
+            <element signature="e#13543#13544#0" expanded="true" />
+            <element signature="e#13604#13605#0" expanded="true" />
+            <element signature="e#18327#18328#0" expanded="true" />
+            <element signature="e#18382#18383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/actor/L2Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="3583" column="12" selection-start-line="3583" selection-start-column="12" selection-end-line="3583" selection-end-column="12" />
+        <state relative-caret-position="345">
+          <caret line="4650" column="12" selection-start-line="4650" selection-start-column="12" selection-end-line="4650" selection-end-column="12" />
           <folding>
             <element signature="e#50822#50823#0" expanded="true" />
             <element signature="e#50852#50853#0" expanded="true" />
@@ -1339,10 +1415,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/helpers/FakeHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="272" column="41" selection-start-line="272" selection-start-column="41" selection-end-line="272" selection-end-column="41" />
+          <folding>
+            <element signature="docComment;class#FakeHelpers#0" />
+            <element signature="method#getFighterBuffs#0;class#FakeHelpers#0" />
+            <element signature="method#getMageBuffs#0;class#FakeHelpers#0" />
+            <element signature="e#4144#4177#0" />
+            <element signature="e#4560#4613#0" />
+            <element signature="method#getFakeSelectedClass#0;class#FakeHelpers#0" />
+            <element signature="method#getFakeSelectedLevel#0;class#FakeHelpers#0" />
+            <element signature="e#9788#9821#0" />
+            <element signature="e#10091#10144#0" />
+            <element signature="method#giveArmorsByClass#0;class#FakeHelpers#0" />
+            <element signature="e#14986#15026#0" />
+            <element signature="method#getMageArmorByGrade#0;class#FakeHelpers#0" />
+            <element signature="method#getLightArmorByGrade#0;class#FakeHelpers#0" />
+            <element signature="method#getHeavyArmorByGrade#0;class#FakeHelpers#0" />
+            <element signature="method#getPlayerGrade#0;class#FakeHelpers#0" />
+            <element signature="method#giveWeaponsByClass#0;class#FakeHelpers#0" />
+            <element signature="method#getThirdClasses#0;class#FakeHelpers#0" />
+            <element signature="e#81343#81379#0" />
+            <element signature="e#81832#81874#0" />
+            <element signature="method#getSecondClasses#0;class#FakeHelpers#0" />
+            <element signature="method#getFirstClasses#0;class#FakeHelpers#0" />
+            <element signature="method#getBaseClasses#0;class#FakeHelpers#0" />
+            <element signature="e#83560#83595#0" />
+            <element signature="method#getAllAIs#0;class#FakeHelpers#0" />
+            <element signature="e#86352#86408#0" />
+            <element signature="method#getRandomAppearance#0;class#FakeHelpers#0" />
+            <element signature="method#setLevel#0;class#FakeHelpers#0" />
+            <element signature="method#getAIbyClassId#0;class#FakeHelpers#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/itemcontainer/ItemContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/items/instance/L2ItemInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="567" selection-start-line="567" selection-end-line="567" />
+          <folding>
+            <element signature="e#17833#17834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/items/L2Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="924" selection-start-line="924" selection-end-line="924" />
+          <folding>
+            <element signature="e#23260#23261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/actor/instance/L2PcInstance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9474" lean-forward="true" selection-start-line="9474" selection-end-line="9480" selection-end-column="9" />
+        <state relative-caret-position="268">
+          <caret line="9392" selection-start-line="9392" selection-end-line="9392" />
           <folding>
             <element signature="e#49152#49153#0" expanded="true" />
             <element signature="e#49189#49190#0" expanded="true" />
@@ -1358,54 +1498,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/l2jmobius/gameserver/model/base/ClassId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="151" column="58" selection-start-line="151" selection-start-column="45" selection-end-line="151" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/helpers/FakeHelpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="2323" column="52" selection-start-line="2323" selection-start-column="52" selection-end-line="2323" selection-end-column="52" />
-          <folding>
-            <element signature="docComment;class#FakeHelpers#0" />
-            <element signature="method#getFighterBuffs#0;class#FakeHelpers#0" />
-            <element signature="method#getMageBuffs#0;class#FakeHelpers#0" />
-            <element signature="method#getFakeSelectedLevel#0;class#FakeHelpers#0" />
-            <element signature="method#createRandomFakePlayer#0;class#FakeHelpers#0" />
-            <element signature="method#giveArmorsByClass#0;class#FakeHelpers#0" />
-            <element signature="method#getMageArmorByGrade#0;class#FakeHelpers#0" />
-            <element signature="method#getLightArmorByGrade#0;class#FakeHelpers#0" />
-            <element signature="method#getHeavyArmorByGrade#0;class#FakeHelpers#0" />
-            <element signature="method#getPlayerGrade#0;class#FakeHelpers#0" />
-            <element signature="method#giveWeaponsByClass#0;class#FakeHelpers#0" />
-            <element signature="method#getThirdClasses#0;class#FakeHelpers#0" />
-            <element signature="method#getSecondClasses#0;class#FakeHelpers#0" />
-            <element signature="method#getFirstClasses#0;class#FakeHelpers#0" />
-            <element signature="method#getBaseClasses#0;class#FakeHelpers#0" />
-            <element signature="method#getRandomAppearance#0;class#FakeHelpers#0" />
-            <element signature="method#setLevel#0;class#FakeHelpers#0" />
-            <element signature="method#getAIbyClassId#0;class#FakeHelpers#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/vert/autopilot/ai/CombatAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="138" column="39" selection-start-line="138" selection-start-column="39" selection-end-line="138" selection-end-column="39" />
+        <state relative-caret-position="345">
+          <caret line="154" column="53" lean-forward="true" selection-start-line="154" selection-start-column="53" selection-end-line="154" selection-end-column="53" />
           <folding>
             <element signature="docComment;class#CombatAI#0" />
+            <element signature="method#tryAttackingUsingMageOffensiveSkill#0;class#CombatAI#0" />
             <element signature="method#tryAttackingUsingFighterOffensiveSkill#0;class#CombatAI#0" />
             <element signature="method#checkRangeForAnAttackAndAttack#0;class#CombatAI#0" />
             <element signature="method#thinkAndAct#0;class#CombatAI#0" />
             <element signature="docComment;method#checkOccupationAndItems#0;class#CombatAI#0" />
-            <element signature="method#removeOldItems#0;class#CombatAI#0" />
             <element signature="method#pickupItemsInGround#0;class#CombatAI#0" />
             <element signature="method#saveLastCharacterPosition#0;class#CombatAI#0" />
+            <element signature="method#getShotId#0;class#CombatAI#0" />
             <element signature="method#getArrowId#0;class#CombatAI#0" />
+            <element signature="method#handleShots#0;class#CombatAI#0" />
             <element signature="method#getRandomAvaiableHealingSpellForTarget#0;class#CombatAI#0" />
             <element signature="method#getRandomAvaiableMageSpellForTarget#0;class#CombatAI#0" />
             <element signature="method#waitAndPickAvailablePrioritisedSpell#0;class#CombatAI#0" />

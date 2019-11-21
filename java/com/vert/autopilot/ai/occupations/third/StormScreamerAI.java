@@ -1,4 +1,4 @@
-package com.vert.autopilot.ai.occupations;
+package com.vert.autopilot.ai.occupations.third;
 
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -16,8 +16,8 @@ import java.util.List;
 /**
  * @author vert
  */
-public class MysticMuseAI extends CombatAI {
-    public MysticMuseAI(FakePlayer character)
+public class StormScreamerAI extends CombatAI {
+    public StormScreamerAI(FakePlayer character)
     {
         super(character);
     }
@@ -56,9 +56,10 @@ public class MysticMuseAI extends CombatAI {
     @Override
     protected List<SupportSpell> getSelfSupportSpells() {
         List<SupportSpell> _selfSupportSpells = new ArrayList<>();
-        _selfSupportSpells.add(new SupportSpell(1238, 1)); // Freezing Skin
-        _selfSupportSpells.add(new SupportSpell(1493, 1)); // Frost Armor
-        _selfSupportSpells.add(new SupportSpell(1286, 1)); // Seed of Water
+        _selfSupportSpells.add(new SupportSpell(1287, 1)); // Seed of Wind
+        _selfSupportSpells.add(new SupportSpell(1494, 1)); // Hurricane Armor
+        // Over power but spent too mutch mana, commented for a while.
+        // _selfSupportSpells.add(new SupportSpell(1457, 1)); // Empowering Echo
         return _selfSupportSpells;
     }
 
@@ -66,12 +67,12 @@ public class MysticMuseAI extends CombatAI {
     protected boolean classOffensiveSkillsId(Skill skill) {
         ArrayList<Integer> mappedSkills = new ArrayList<>();
 
-        // mappedSkills.add(1071); // Surrender To Water
-        mappedSkills.add(1235); // Hydro Blast
-        mappedSkills.add(1265); // Solar Flare
-        mappedSkills.add(1340); // Light Vortex
-        mappedSkills.add(1342); // Ice Vortex
-        mappedSkills.add(1455); // Throne of Ice
+        // mappedSkills.add(1074); // Surrender To Wind
+        mappedSkills.add(1239); // Hurricane
+        mappedSkills.add(1341); // Wind Vortex
+        mappedSkills.add(1343); // Dark Vortex
+        mappedSkills.add(1458); // Throne of Wind
+        // mappedSkills.add(1234); // Vampiric Claw
 
         return mappedSkills.stream().anyMatch(id -> id == skill.getId());
     }

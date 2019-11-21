@@ -126,44 +126,65 @@ public abstract class CombatAI extends FakePlayerAI {
     protected void checkOccupationAndItems() {
         ClassId classId = getFakeSelectedClass(_fakePlayer.getOccupation(), _fakePlayer.getLevel());
         L2Object oldTarget = _fakePlayer.getTarget();
-//        System.out.println(_fakePlayer.getClassId() + " | " + classId + " | " + _fakePlayer.getFinalClassId());
+        // For Debug
+        // System.out.println(_fakePlayer.getClassId() + " | " + classId + " | " + _fakePlayer.getFinalClassId());
 
         if (_fakePlayer.getClassId() != null && _fakePlayer.getOccupation() != null && _fakePlayer.getClassId() != classId) {
-
+            /**
+             * Update fake player occupation.
+             */
             _fakePlayer.setBaseClass(classId);
             _fakePlayer.setLearningClass(classId);
             _fakePlayer.setClassId(classId.getId());
             _fakePlayer.rewardSkills();
 
             /**
-             * Disable any active SoulShot before equip another weapon.
-             * This is necessary  because magicians are activating SS from another
-             * grade and doesn't give damage to anyone.
+             * Remove Old equipped items.
              */
-            for (int soulShotId : _fakePlayer.getAutoSoulShot())
-            {
-                _fakePlayer.removeAutoSoulShot(soulShotId);
-            }
-
-            _fakePlayer.addAutoSoulShot(getShotId());
-
             removeOldItems();
 
+            /**
+             * Add new items.
+             */
             giveArmorsByClass(_fakePlayer);
             giveWeaponsByClass(_fakePlayer,false);
+
+            /**
+             * Add and active soul shots.
+             */
+            _fakePlayer.addAutoSoulShot(getShotId());
+            _fakePlayer.rechargeShots(true, true);
 
             _fakePlayer.assignDefaultAI();
             _fakePlayer.heal();
             _fakePlayer.setTarget(oldTarget);
 
-            // When update fake player appearance, need broadcast the user info.
+            /**
+             * Broadcast the updated fake player appearance.
+             */
             _fakePlayer.broadcastUserInfo();
         }
     }
 
     protected void removeOldItems() {
+        /**
+         * Get inventory items.
+         */
         PcInventory inventory = _fakePlayer.getInventory();
 
+        /**
+         * Disable any active SoulShot before equip another weapon.
+         * This is necessary  because magicians are activating SS from another
+         * grade when recharge shots and doesn't give damage to anyone.
+         */
+        for (int soulShotId : _fakePlayer.getAutoSoulShot())
+        {
+            _fakePlayer.removeAutoSoulShot(soulShotId);
+        }
+
+        /**
+         * Remove All equipped weapon, armor and jewels from character.
+         */
         Arrays.stream(inventory.getItems()).forEach(item -> {
             if (item.isArmor() || item.isWeapon() && item.isEquipped()) {
                 inventory.destroyItem("L2ItemInstance", item, _fakePlayer, null);

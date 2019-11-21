@@ -1,4 +1,4 @@
-package com.vert.autopilot.ai.occupations;
+package com.vert.autopilot.ai.occupations.third;
 
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -7,7 +7,6 @@ import com.vert.autopilot.ai.CombatAI;
 import com.vert.autopilot.ai.interfaces.IConsumableSpender;
 import com.vert.autopilot.helpers.FakeHelpers;
 import com.vert.autopilot.models.HealingSpell;
-import com.vert.autopilot.models.OffensiveSpell;
 import com.vert.autopilot.models.SupportSpell;
 
 import java.util.ArrayList;
@@ -17,10 +16,8 @@ import java.util.List;
 /**
  * @author vert
  */
-public class SoultakerAI extends CombatAI implements IConsumableSpender {
-    private final int boneId = 2508;
-
-    public SoultakerAI(FakePlayer character)
+public class MoonlightSentinelAI extends CombatAI implements IConsumableSpender {
+    public MoonlightSentinelAI(FakePlayer character)
     {
         super(character);
     }
@@ -31,33 +28,29 @@ public class SoultakerAI extends CombatAI implements IConsumableSpender {
         super.thinkAndAct();
         setBusyThinking(true);
         applyDefaultBuffs();
-        handleConsumable(_fakePlayer, boneId);
+        handleConsumable(_fakePlayer, getArrowId());
+        selfSupportBuffs();
         handleShots();
         tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
-        tryAttackingUsingMageOffensiveSkill();
+        tryAttackingUsingFighterOffensiveSkill();
         setBusyThinking(false);
+    }
+
+    @Override
+    protected double chanceOfUsingSkill() {
+        return 0.15;
     }
 
     @Override
     protected ShotType getShotType()
     {
-        return ShotType.BLESSED_SPIRITSHOTS;
-    }
-
-    @Override
-    protected List<OffensiveSpell> getOffensiveSpells()
-    {
-        List<OffensiveSpell> _offensiveSpells = new ArrayList<>();
-        _offensiveSpells.add(new OffensiveSpell(1234, 1));
-        _offensiveSpells.add(new OffensiveSpell(1148, 2));
-        _offensiveSpells.add(new OffensiveSpell(1343, 3));
-        return _offensiveSpells;
+        return ShotType.SOULSHOTS;
     }
 
     @Override
     protected int[][] getBuffs()
     {
-        return FakeHelpers.getMageBuffs();
+        return FakeHelpers.getFighterBuffs();
     }
 
     @Override
@@ -68,11 +61,24 @@ public class SoultakerAI extends CombatAI implements IConsumableSpender {
 
     @Override
     protected List<SupportSpell> getSelfSupportSpells() {
-        return Collections.emptyList();
+        List<SupportSpell> _selfSupportSpells = new ArrayList<>();
+        _selfSupportSpells.add(new SupportSpell(99, 1));
+        return _selfSupportSpells;
     }
 
     @Override
     protected boolean classOffensiveSkillsId(Skill skill) {
-        return false;
+        ArrayList<Integer> mappedSkills = new ArrayList<>();
+
+        mappedSkills.add(101); // Stun
+        mappedSkills.add(343); // Lethal Shot
+        mappedSkills.add(19);  // Double Shot
+        mappedSkills.add(987);  // Multiple Shot
+        mappedSkills.add(990);  // Death Shot
+        mappedSkills.add(369);  // Evade Shot
+        mappedSkills.add(924);  // Seven Arrow
+        mappedSkills.add(772);  // Arrow Rain
+
+        return mappedSkills.stream().anyMatch(id -> id == skill.getId());
     }
 }

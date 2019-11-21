@@ -3,7 +3,6 @@ package com.vert.autopilot.helpers;
 import com.l2jmobius.commons.util.Rnd;
 import com.l2jmobius.gameserver.data.xml.impl.ExperienceData;
 import com.l2jmobius.gameserver.data.xml.impl.PlayerTemplateData;
-import com.l2jmobius.gameserver.enums.Race;
 import com.l2jmobius.gameserver.idfactory.IdFactory;
 import com.l2jmobius.gameserver.model.actor.appearance.PcAppearance;
 import com.l2jmobius.gameserver.model.actor.templates.L2PcTemplate;
@@ -17,6 +16,8 @@ import com.vert.autopilot.ai.FallbackAI;
 import com.vert.autopilot.ai.occupations.*;
 import com.vert.autopilot.ai.occupations.first.*;
 import com.vert.autopilot.ai.occupations.initial.*;
+import com.vert.autopilot.ai.occupations.second.*;
+import com.vert.autopilot.ai.occupations.third.*;
 
 import java.util.*;
 
@@ -113,6 +114,7 @@ public class FakeHelpers {
 //        Weapon random enchanted from +7 between +20
 //        giveWeaponsByClass(player,true);
         giveWeaponsByClass(player,false);
+        player.rechargeShots(true, true);
         player.heal();
 
         return player;
@@ -268,6 +270,7 @@ public class FakeHelpers {
 //        Weapon random enchanted from +7 between +20
 //        giveWeaponsByClass(player,true);
         giveWeaponsByClass(player,false);
+        player.rechargeShots(true, true);
         player.heal();
 
         return player;
@@ -2314,15 +2317,46 @@ public class FakeHelpers {
         // Dark Elf - Mystic
         ais.put(ClassId.DARK_WIZARD, DarkWizardAI.class);
 
-        // -----------------------------------------------------
-        // 3 Job Occupations
-        ais.put(ClassId.STORM_SCREAMER, StormScreamerAI.class);
-        ais.put(ClassId.MYSTIC_MUSE, MysticMuseAI.class);
+        /**
+         * 2 Job Occupations
+         */
+        // Human - Fighter
+        ais.put(ClassId.HAWKEYE, HawkeyeAI.class);
+        // Human - Mystic
+        ais.put(ClassId.SORCERER, SorcererAI.class);
+        ais.put(ClassId.NECROMANCER, NecromancerAI.class);
+
+        // Elf - Fighter
+        ais.put(ClassId.SILVER_RANGER, SilverRangerAI.class);
+        // Elf - Mystic
+        ais.put(ClassId.SPELLSINGER, SpellSingerAI.class);
+
+        // Dark Elf - Fighter
+        ais.put(ClassId.PHANTOM_RANGER, PhantomRangerAI.class);
+        // Dark Elf - Mystic
+        ais.put(ClassId.SPELLHOWLER, SpellHowlerAI.class);
+
+        /**
+         * 3 Job Occupations
+         */
+        // Human - Fighter
+        ais.put(ClassId.SAGITTARIUS, SagittariusAI.class);
+        // Human - Mystic
         ais.put(ClassId.ARCHMAGE, ArchmageAI.class);
         ais.put(ClassId.SOULTAKER, SoultakerAI.class);
-        ais.put(ClassId.SAGITTARIUS, SagittariusAI.class);
+
+        // Elf - Fighter
         ais.put(ClassId.MOONLIGHT_SENTINEL, MoonlightSentinelAI.class);
+        // Elf - Mystic
+        ais.put(ClassId.MYSTIC_MUSE, MysticMuseAI.class);
+
+        // Dark Elf - Fighter
         ais.put(ClassId.GHOST_SENTINEL, GhostSentinelAI.class);
+        // Dark Elf - Mystic
+        ais.put(ClassId.STORM_SCREAMER, StormScreamerAI.class);
+
+        // -----------------------------------------------------
+        // 3 Job Occupations - Not implemented 100% and verified
         ais.put(ClassId.ADVENTURER, AdventurerAI.class);
         ais.put(ClassId.WIND_RIDER, WindRiderAI.class);
         ais.put(ClassId.GHOST_HUNTER, GhostHunterAI.class);

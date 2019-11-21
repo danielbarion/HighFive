@@ -1,4 +1,4 @@
-package com.vert.autopilot.ai.occupations;
+package com.vert.autopilot.ai.occupations.third;
 
 import com.l2jmobius.gameserver.enums.ShotType;
 
