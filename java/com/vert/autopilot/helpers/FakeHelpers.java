@@ -2412,6 +2412,7 @@ public class FakeHelpers {
     public static void addPlayerItemsByClass(FakePlayer player) {
         giveArmorsByClass(player);
         giveWeaponsByClass(player,false);
+        player.setEquipGrade(getPlayerGrade(player));
     }
 
     public static void setLevel(FakePlayer player, int level) {

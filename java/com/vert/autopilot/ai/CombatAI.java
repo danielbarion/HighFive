@@ -108,7 +108,8 @@ public abstract class CombatAI extends FakePlayerAI {
     public void thinkAndAct() {
         handleDeath();
         saveLastCharacterPosition();
-        checkOccupationAndItems();
+        checkOccupation();
+        checkItemsGrade();
 
         // todo: improve pick items logic
         // need do tests to check the flow
@@ -121,12 +122,23 @@ public abstract class CombatAI extends FakePlayerAI {
      * This method check the fake player level and occupation
      * and update his occupation and items when needed
      */
-    protected void checkOccupationAndItems() {
+    protected void checkOccupation() {
+        /**
+         * Get the selected class id to compare with the current class id of fake player.
+         */
         ClassId classId = getFakeSelectedClass(_fakePlayer.getOccupation(), _fakePlayer.getLevel());
+        /**
+         * Save the last target to set him correctly after change occupation.
+         */
         L2Object oldTarget = _fakePlayer.getTarget();
+
+
         // For Debug
         // System.out.println(_fakePlayer.getClassId() + " | " + classId + " | " + _fakePlayer.getFinalClassId());
 
+        /**
+         * Check if need update fake player occupation.
+         */
         if (_fakePlayer.getClassId() != null && _fakePlayer.getOccupation() != null && _fakePlayer.getClassId() != classId) {
             /**
              * Update fake player occupation.
@@ -134,20 +146,14 @@ public abstract class CombatAI extends FakePlayerAI {
             changePlayerOccupation(_fakePlayer, classId);
 
             /**
-             * Remove Old equipped items.
+             * Check, remove and add new items to the fake player.
              */
-            removeOldItems(_fakePlayer);
-
-            /**
-             * Add new items.
-             */
-            addPlayerItemsByClass(_fakePlayer);
+            checkItemsGrade();
 
             /**
              * Add and active soul shots.
              */
-            _fakePlayer.addAutoSoulShot(getShotId());
-            _fakePlayer.rechargeShots(true, true);
+            reloadSoulShot();
 
             _fakePlayer.assignDefaultAI();
             _fakePlayer.heal();
@@ -158,6 +164,31 @@ public abstract class CombatAI extends FakePlayerAI {
              */
             _fakePlayer.broadcastUserInfo();
         }
+    }
+
+    /**
+     * Check and update fake player items when needed.
+     */
+    protected void checkItemsGrade() {
+        if (getPlayerGrade(_fakePlayer) != _fakePlayer.getEquipGrade()) {
+            /**
+             * Remove Old equipped items.
+             */
+            removeOldItems(_fakePlayer);
+
+            /**
+             * Add new items.
+             */
+            addPlayerItemsByClass(_fakePlayer);
+        }
+    }
+
+    /**
+     * Reload soul shot.
+     */
+    protected void reloadSoulShot() {
+        _fakePlayer.addAutoSoulShot(getShotId());
+        _fakePlayer.rechargeShots(true, true);
     }
 
     protected void pickupItemsInGround() {
@@ -180,6 +211,10 @@ public abstract class CombatAI extends FakePlayerAI {
         }
     }
 
+    /**
+     * Save the last character position to prevent bug
+     * when move the player close to the edges.
+     */
     protected void saveLastCharacterPosition() {
         int lastX = _fakePlayer.getLastServerPosition().getX();
         int lastY = _fakePlayer.getLastServerPosition().getY();
@@ -421,8 +456,7 @@ public abstract class CombatAI extends FakePlayerAI {
 
     protected abstract ShotType getShotType();
 
-    protected List<OffensiveSpell> getOffensiveSpells()
-    {
+    protected List<OffensiveSpell> getOffensiveSpells() {
         List<OffensiveSpell> _offensiveSpells = new ArrayList<>();
 
         this._fakePlayer.getSkills().values().stream().forEach(skill -> {
