@@ -1,4 +1,4 @@
-package com.vert.autopilot.ai.occupations.initial;
+package com.vert.autopilot.ai.occupations.base;
 
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -6,6 +6,7 @@ import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.ai.CombatAI;
 import com.vert.autopilot.ai.interfaces.IConsumableSpender;
 import com.vert.autopilot.helpers.FakeHelpers;
+import com.vert.autopilot.helpers.FarmHelpers;
 import com.vert.autopilot.models.HealingSpell;
 import com.vert.autopilot.models.SupportSpell;
 
@@ -31,7 +32,7 @@ public class HumanFighterAI extends CombatAI implements IConsumableSpender {
         //TODO: Remove the get arrow and add potion
         handleConsumable(_fakePlayer, getArrowId());
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FarmHelpers.getTestTargetRange());
         tryAttackingUsingFighterOffensiveSkill();
         setBusyThinking(false);
     }
@@ -50,7 +51,7 @@ public class HumanFighterAI extends CombatAI implements IConsumableSpender {
     @Override
     protected int[][] getBuffs()
     {
-        return FakeHelpers.getFighterBuffs();
+        return FarmHelpers.getFighterBuffs();
     }
 
     @Override

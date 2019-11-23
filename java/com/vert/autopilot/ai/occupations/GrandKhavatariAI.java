@@ -5,6 +5,7 @@ import com.l2jmobius.gameserver.model.skills.Skill;
 import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.ai.CombatAI;
 import com.vert.autopilot.helpers.FakeHelpers;
+import com.vert.autopilot.helpers.FarmHelpers;
 import com.vert.autopilot.models.HealingSpell;
 import com.vert.autopilot.models.OffensiveSpell;
 import com.vert.autopilot.models.SupportSpell;
@@ -29,7 +30,7 @@ public class GrandKhavatariAI extends CombatAI {
         setBusyThinking(true);
         applyDefaultBuffs();
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FarmHelpers.getTestTargetRange());
         tryAttackingUsingFighterOffensiveSkill();
         setBusyThinking(false);
     }
@@ -60,7 +61,7 @@ public class GrandKhavatariAI extends CombatAI {
     @Override
     protected int[][] getBuffs()
     {
-        return FakeHelpers.getFighterBuffs();
+        return FarmHelpers.getFighterBuffs();
     }
 
     @Override

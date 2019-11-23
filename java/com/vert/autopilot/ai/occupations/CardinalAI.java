@@ -8,6 +8,7 @@ import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.ai.CombatAI;
 import com.vert.autopilot.ai.interfaces.IHealer;
 import com.vert.autopilot.helpers.FakeHelpers;
+import com.vert.autopilot.helpers.FarmHelpers;
 import com.vert.autopilot.models.HealingSpell;
 import com.vert.autopilot.models.OffensiveSpell;
 import com.vert.autopilot.models.SupportSpell;
@@ -32,7 +33,7 @@ public class CardinalAI extends CombatAI implements IHealer {
         setBusyThinking(true);
         applyDefaultBuffs();
         handleShots();
-        tryTargetingLowestHpTargetInRadius(_fakePlayer, FakePlayer.class, FakeHelpers.getTestTargetRange());
+        tryTargetingLowestHpTargetInRadius(_fakePlayer, FakePlayer.class, FarmHelpers.getTestTargetRange());
         tryHealingTarget(_fakePlayer);
         setBusyThinking(false);
     }
@@ -61,7 +62,7 @@ public class CardinalAI extends CombatAI implements IHealer {
     @Override
     protected int[][] getBuffs()
     {
-        return FakeHelpers.getMageBuffs();
+        return FarmHelpers.getMageBuffs();
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.vert.autopilot.ai.occupations.initial;
+package com.vert.autopilot.ai.occupations.base;
 
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.model.skills.Skill;
@@ -6,8 +6,8 @@ import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.ai.CombatAI;
 import com.vert.autopilot.ai.interfaces.IConsumableSpender;
 import com.vert.autopilot.helpers.FakeHelpers;
+import com.vert.autopilot.helpers.FarmHelpers;
 import com.vert.autopilot.models.HealingSpell;
-import com.vert.autopilot.models.OffensiveSpell;
 import com.vert.autopilot.models.SupportSpell;
 
 import java.util.ArrayList;
@@ -17,10 +17,8 @@ import java.util.List;
 /**
  * @author vert
  */
-public class HumanMysticAI extends CombatAI implements IConsumableSpender {
-    private final int boneId = 2508;
-
-    public HumanMysticAI(FakePlayer character)
+public class ElfFighterAI extends CombatAI implements IConsumableSpender {
+    public ElfFighterAI(FakePlayer character)
     {
         super(character);
     }
@@ -31,24 +29,29 @@ public class HumanMysticAI extends CombatAI implements IConsumableSpender {
         super.thinkAndAct();
         setBusyThinking(true);
         applyDefaultBuffs();
-        //TODO: Remove the bone and add potion
-        handleConsumable(_fakePlayer, boneId);
+        //TODO: Remove the get arrow and add potion
+        handleConsumable(_fakePlayer, getArrowId());
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
-        tryAttackingUsingMageOffensiveSkill();
+        tryTargetRandomCreatureByTypeInRadius(FarmHelpers.getTestTargetRange());
+        tryAttackingUsingFighterOffensiveSkill();
         setBusyThinking(false);
+    }
+
+    @Override
+    protected double chanceOfUsingSkill() {
+        return 0.75;
     }
 
     @Override
     protected ShotType getShotType()
     {
-        return ShotType.BLESSED_SPIRITSHOTS;
+        return ShotType.SOULSHOTS;
     }
 
     @Override
     protected int[][] getBuffs()
     {
-        return FakeHelpers.getMageBuffs();
+        return FarmHelpers.getFighterBuffs();
     }
 
     @Override
@@ -66,9 +69,9 @@ public class HumanMysticAI extends CombatAI implements IConsumableSpender {
     protected boolean classOffensiveSkillsId(Skill skill) {
         ArrayList<Integer> mappedSkills = new ArrayList<>();
 
-        mappedSkills.add(1177); // Wind Strike
-        mappedSkills.add(1184); // Ice Bolt
-        mappedSkills.add(1147); // Vampire Touch
+        mappedSkills.add(3); // Power Strike
+        mappedSkills.add(16); // Mortal Blow
+        mappedSkills.add(56); // Power Shot
 
         return mappedSkills.stream().anyMatch(id -> id == skill.getId());
     }

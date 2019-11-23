@@ -18,6 +18,7 @@ import com.l2jmobius.gameserver.model.zone.ZoneId;
 import com.l2jmobius.gameserver.network.serverpackets.*;
 import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.helpers.FakeHelpers;
+import com.vert.autopilot.helpers.FarmHelpers;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -36,8 +37,9 @@ public abstract class FakePlayerAI {
     private long _moveToPawnTimeout;
     protected int _clientMovingToPawnOffset;
     protected boolean _isBusyThinking = false;
-    protected int iterationsOnDeath = 0;
-    private final int toVillageIterationsOnDeath = -1;
+    protected int _iterationsOnDeath = 0;
+    private final int _toVillageIterationsOnDeath = -1;
+    protected boolean _walkingInTown = false;
 
     public FakePlayerAI(FakePlayer character)
     {
@@ -81,14 +83,14 @@ public abstract class FakePlayerAI {
 
     protected void handleDeath() {
         if(_fakePlayer.isDead()) {
-            if(iterationsOnDeath >= toVillageIterationsOnDeath || toVillageIterationsOnDeath == -1) {
+            if(_iterationsOnDeath >= _toVillageIterationsOnDeath || _toVillageIterationsOnDeath == -1) {
                 toVillageOnDeath();
             }
-            iterationsOnDeath++;
+            _iterationsOnDeath++;
             return;
         }
 
-        iterationsOnDeath = 0;
+        _iterationsOnDeath = 0;
     }
 
     public void setBusyThinking(boolean thinking) {
@@ -168,7 +170,7 @@ public abstract class FakePlayerAI {
                         || (x.getInstanceType().isType(InstanceType.L2PcInstance) && (((L2PcInstance) x).getPvpFlag() == 1
                         || ((L2PcInstance) x).getKarma() > 0)))
                 && !x.isInvisible() && (getTargetCurrentHp(x) > 0) && (x.getObjectId() != _fakePlayer.getObjectId()))
-                && _fakePlayer.isInsideRadius2D(x.getLocation(), FakeHelpers.getTestTargetRange()))
+                && _fakePlayer.isInsideRadius2D(x.getLocation(), FarmHelpers.getTestTargetRange()))
                 .collect(Collectors.toList());
 
             if (!filteredObjects.isEmpty()) {
@@ -526,7 +528,8 @@ public abstract class FakePlayerAI {
             }
 
             // Get Targets
-            if (_targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
+            if (_targets.isEmpty()) {
+//            if (_targets.isEmpty() && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
                 getTargetsSurroudingWorldRegion();
             }
 
@@ -542,6 +545,8 @@ public abstract class FakePlayerAI {
                 // Todo: don't do ks in another player, need check 'target.getActingPlayer()', maybe only in mobs, not boss
                 if (target.canBeAttacked() && (getTargetCurrentHp(target) > 0)) {
                     if (_fakePlayer.getTarget() != null && checkIfTargetIsBadPlayer(target)) {
+                        _fakePlayer.setTarget(target);
+                    } else if (_fakePlayer.getTarget() != null && _fakePlayer.getTarget().getInstanceType() == InstanceType.L2MonsterInstance) {
                         _fakePlayer.setTarget(target);
                     } else if (_fakePlayer.getTarget() == null) {
                         _fakePlayer.setTarget(target);
@@ -819,6 +824,36 @@ public abstract class FakePlayerAI {
         }
 
         return false;
+    }
+
+    protected boolean isWalkingInTown() {
+        return _walkingInTown;
+    }
+
+    protected void setWalkingInTown(boolean walkingInTown) {
+        this._walkingInTown = walkingInTown;
+    }
+
+    protected void townFlow() {
+        boolean isInsideTown = _fakePlayer.isInsidePeaceZone(_fakePlayer);
+        String characterClosestTownName = MapRegionManager.getInstance().getClosestTownName(_fakePlayer);
+        L2MapRegion characterMapRegion = MapRegionManager.getInstance().getMapRegion(_fakePlayer);
+
+
+        if (isInsideTown) {
+            setWalkingInTown(true);
+        } else {
+            setWalkingInTown(false);
+        }
+
+//        _fakePlayer.isInsideZone(MapRegionManager.getInstance().getMapRegionByName("Cedric's_Training_Hall").);
+
+
+//        System.out.println("Closest Town Name: " + characterClosestTownName);
+//        System.out.println("Region Name: " + cedrics);
+
+        // Cedrics place, where fighter humans born.
+        System.out.println("Region Name: " + _fakePlayer.isInsideRadius3D(-71402, 258315, -3112, 400));
     }
 
     public abstract void thinkAndAct();

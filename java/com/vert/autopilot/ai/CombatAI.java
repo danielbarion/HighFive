@@ -63,7 +63,10 @@ public abstract class CombatAI extends FakePlayerAI {
                 return;
             }
 
-            if (_fakePlayer.getTarget() != null && !_fakePlayer.isInsideZone(ZoneId.PEACE)) {
+            /**
+             * This validation need to check if target are a Gremlin because base zones are not chaotic zones.
+             */
+            if (_fakePlayer.getTarget() != null && (!_fakePlayer.isInsideZone(ZoneId.PEACE) || _fakePlayer.getTarget().getName().equalsIgnoreCase("Gremlin"))) {
                 // Log for Debug
                 // System.out.println("Distance from target: " + _fakePlayer.calculateDistance2D(_fakePlayer.getTarget().getLocation()));
 
@@ -108,6 +111,7 @@ public abstract class CombatAI extends FakePlayerAI {
     public void thinkAndAct() {
         handleDeath();
         saveLastCharacterPosition();
+        townFlow();
         checkOccupation();
         checkItemsGrade();
 

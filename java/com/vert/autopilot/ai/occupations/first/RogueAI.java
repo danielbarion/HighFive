@@ -6,6 +6,7 @@ import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.ai.CombatAI;
 import com.vert.autopilot.ai.interfaces.IConsumableSpender;
 import com.vert.autopilot.helpers.FakeHelpers;
+import com.vert.autopilot.helpers.FarmHelpers;
 import com.vert.autopilot.models.HealingSpell;
 import com.vert.autopilot.models.OffensiveSpell;
 import com.vert.autopilot.models.SupportSpell;
@@ -32,7 +33,7 @@ public class RogueAI extends CombatAI implements IConsumableSpender {
         selfSupportBuffs();
         handleConsumable(_fakePlayer, getArrowId());
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FarmHelpers.getTestTargetRange());
         tryAttackingUsingFighterOffensiveSkill();
         setBusyThinking(false);
     }
@@ -51,7 +52,7 @@ public class RogueAI extends CombatAI implements IConsumableSpender {
     @Override
     protected int[][] getBuffs()
     {
-        return FakeHelpers.getFighterBuffs();
+        return FarmHelpers.getFighterBuffs();
     }
 
     @Override

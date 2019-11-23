@@ -6,6 +6,7 @@ import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.ai.CombatAI;
 import com.vert.autopilot.ai.interfaces.IConsumableSpender;
 import com.vert.autopilot.helpers.FakeHelpers;
+import com.vert.autopilot.helpers.FarmHelpers;
 import com.vert.autopilot.models.HealingSpell;
 import com.vert.autopilot.models.SupportSpell;
 
@@ -33,7 +34,7 @@ public class DarkWizardAI extends CombatAI implements IConsumableSpender {
         //TODO: Remove the bone and add potion
         handleConsumable(_fakePlayer, boneId);
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FarmHelpers.getTestTargetRange());
         tryAttackingUsingMageOffensiveSkill();
         setBusyThinking(false);
     }
@@ -47,7 +48,7 @@ public class DarkWizardAI extends CombatAI implements IConsumableSpender {
     @Override
     protected int[][] getBuffs()
     {
-        return FakeHelpers.getMageBuffs();
+        return FarmHelpers.getMageBuffs();
     }
 
     @Override

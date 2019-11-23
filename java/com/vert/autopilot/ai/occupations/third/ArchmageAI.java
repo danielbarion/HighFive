@@ -6,6 +6,7 @@ import com.l2jmobius.gameserver.model.skills.Skill;
 import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.ai.CombatAI;
 import com.vert.autopilot.helpers.FakeHelpers;
+import com.vert.autopilot.helpers.FarmHelpers;
 import com.vert.autopilot.models.HealingSpell;
 import com.vert.autopilot.models.SupportSpell;
 
@@ -30,7 +31,7 @@ public class ArchmageAI extends CombatAI {
         applyDefaultBuffs();
         selfSupportBuffs();
         handleShots();
-        tryTargetRandomCreatureByTypeInRadius(FakeHelpers.getTestTargetRange());
+        tryTargetRandomCreatureByTypeInRadius(FarmHelpers.getTestTargetRange());
         tryAttackingUsingMageOffensiveSkill();
         setBusyThinking(false);
     }
@@ -44,7 +45,7 @@ public class ArchmageAI extends CombatAI {
     @Override
     protected int[][] getBuffs()
     {
-        return FakeHelpers.getMageBuffs();
+        return FarmHelpers.getMageBuffs();
     }
 
     @Override
