@@ -1,5 +1,6 @@
 package com.vert.autopilot.ai.occupations.third;
 
+import com.l2jmobius.gameserver.ai.CtrlIntention;
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.vert.autopilot.FakePlayer;
@@ -30,6 +31,12 @@ public class SoultakerAI extends CombatAI implements IConsumableSpender {
     public void thinkAndAct()
     {
         super.thinkAndAct();
+
+        if (!canDoThinkAndActFlow()) {
+            _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
+            return;
+        }
+
         setBusyThinking(true);
         applyDefaultBuffs();
         handleConsumable(_fakePlayer, boneId);

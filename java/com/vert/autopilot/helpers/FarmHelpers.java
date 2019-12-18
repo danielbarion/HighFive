@@ -1,7 +1,9 @@
 package com.vert.autopilot.helpers;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.vert.autopilot.farm.BaseFarmPlace;
+import com.vert.autopilot.farm.CedricsTrainingHall;
+
+import java.util.ArrayList;
 
 /**
  * @author vert
@@ -69,12 +71,10 @@ public class FarmHelpers {
         return 2000;
     }
 
-    public static Map<String, String> getMappedPlaces() {
-        Map<String, String> mappedPlaces = new HashMap<>();
+    public static ArrayList<BaseFarmPlace> getMappedPlaces() {
+        ArrayList<BaseFarmPlace> mappedPlaces = new ArrayList<>();
 
-//        ArrayList
-
-//        mappedPlaces.put("test", );
+        mappedPlaces.add(new CedricsTrainingHall());
 
         return mappedPlaces;
     }

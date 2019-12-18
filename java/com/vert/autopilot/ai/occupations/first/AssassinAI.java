@@ -1,5 +1,6 @@
 package com.vert.autopilot.ai.occupations.first;
 
+import com.l2jmobius.gameserver.ai.CtrlIntention;
 import com.l2jmobius.gameserver.enums.ShotType;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.vert.autopilot.FakePlayer;
@@ -27,6 +28,12 @@ public class AssassinAI extends CombatAI implements IConsumableSpender {
     public void thinkAndAct()
     {
         super.thinkAndAct();
+
+        if (!canDoThinkAndActFlow()) {
+            _fakePlayer.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
+            return;
+        }
+
         setBusyThinking(true);
         applyDefaultBuffs();
         selfSupportBuffs();

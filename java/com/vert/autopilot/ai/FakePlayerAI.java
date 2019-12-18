@@ -5,16 +5,20 @@ import com.l2jmobius.gameserver.ai.CtrlIntention;
 import com.l2jmobius.gameserver.data.xml.impl.SkillData;
 import com.l2jmobius.gameserver.enums.InstanceType;
 import com.l2jmobius.gameserver.geoengine.GeoEngine;
+import com.l2jmobius.gameserver.handler.IItemHandler;
+import com.l2jmobius.gameserver.handler.ItemHandler;
 import com.l2jmobius.gameserver.instancemanager.MapRegionManager;
 import com.l2jmobius.gameserver.model.*;
 import com.l2jmobius.gameserver.model.actor.*;
 import com.l2jmobius.gameserver.model.actor.instance.*;
+import com.l2jmobius.gameserver.model.items.L2EtcItem;
 import com.l2jmobius.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jmobius.gameserver.model.skills.BuffInfo;
 import com.l2jmobius.gameserver.model.skills.EffectScope;
 import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.model.skills.targets.L2TargetType;
 import com.l2jmobius.gameserver.model.zone.ZoneId;
+import com.l2jmobius.gameserver.network.clientpackets.UseItem;
 import com.l2jmobius.gameserver.network.serverpackets.*;
 import com.vert.autopilot.FakePlayer;
 import com.vert.autopilot.helpers.FakeHelpers;
@@ -40,6 +44,7 @@ public abstract class FakePlayerAI {
     protected int _iterationsOnDeath = 0;
     private final int _toVillageIterationsOnDeath = -1;
     protected boolean _walkingInTown = false;
+    protected boolean _isEscapingToTown = false;
 
     public FakePlayerAI(FakePlayer character)
     {
@@ -834,26 +839,61 @@ public abstract class FakePlayerAI {
         this._walkingInTown = walkingInTown;
     }
 
+    protected boolean getIsEscapingToTown() {
+        return _isEscapingToTown;
+    }
+
+    protected void setIsEscapingToTown(boolean _isEscapingToTown) {
+        this._isEscapingToTown = _isEscapingToTown;
+    }
+
+    protected boolean canDoThinkAndActFlow() {
+        /**
+         * This method contains all blockers of "think and act" flow.
+         */
+        if (getIsEscapingToTown()) {
+            return false;
+        }
+
+        return true;
+    }
+
     protected void townFlow() {
         boolean isInsideTown = _fakePlayer.isInsidePeaceZone(_fakePlayer);
-        String characterClosestTownName = MapRegionManager.getInstance().getClosestTownName(_fakePlayer);
-        L2MapRegion characterMapRegion = MapRegionManager.getInstance().getMapRegion(_fakePlayer);
+        // String characterClosestTownName = MapRegionManager.getInstance().getClosestTownName(_fakePlayer);
+        // L2MapRegion characterMapRegion = MapRegionManager.getInstance().getMapRegion(_fakePlayer);
 
+        // System.out.println("Closest Town Name: " + characterClosestTownName);
 
         if (isInsideTown) {
+            if (getIsEscapingToTown()) {
+                setIsEscapingToTown(false);
+            }
+
             setWalkingInTown(true);
         } else {
             setWalkingInTown(false);
         }
 
-//        _fakePlayer.isInsideZone(MapRegionManager.getInstance().getMapRegionByName("Cedric's_Training_Hall").);
+        FarmHelpers.getMappedPlaces().forEach(place -> {
+            boolean isPlayerHere = place.isPlayerHere(_fakePlayer);
+            boolean playerCanFarmInThisPlace = place.playerCanFarmInThisPlace(_fakePlayer);
+            if (!playerCanFarmInThisPlace && isPlayerHere) {
 
+                /**
+                 * Remove this comment:
+                 * Está funcionando, mas o ideal seria o CedricsTrainingHall ter
+                 * um caminho (com um offset) pro player ir andando pra cidade...
+                 */
+                final Skill escape = SkillData.getInstance().getSkill(1050, 1);
+                _fakePlayer.doCast(escape);
+                setIsEscapingToTown(true);
+            }
 
-//        System.out.println("Closest Town Name: " + characterClosestTownName);
-//        System.out.println("Region Name: " + cedrics);
-
-        // Cedrics place, where fighter humans born.
-        System.out.println("Region Name: " + _fakePlayer.isInsideRadius3D(-71402, 258315, -3112, 400));
+//            System.out.println(place.getName());
+//            System.out.println("Player can farm in this place: " + playerCanFarmInThisPlace);
+//            System.out.println("Is player here: " + isPlayerHere);
+        });
     }
 
     public abstract void thinkAndAct();
